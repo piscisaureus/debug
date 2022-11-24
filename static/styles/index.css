@@ -1,0 +1,10 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    background: var(--gray-12);
+  }
+}
+
+body {
+  display: grid;
+  place-content: center;
+}

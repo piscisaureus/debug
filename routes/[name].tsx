@@ -19,7 +19,7 @@ export default function PostPage(props: PageProps<Post>) {
   return (
     <>
       <Head>
-        <IndexHead/>
+        <IndexHead post={post}/>
       </Head>
       <body>
         <h1>{props.params.name}</h1>

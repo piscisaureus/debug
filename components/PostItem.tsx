@@ -5,7 +5,7 @@ export default function PostItem(props: { post: Post }) {
   const { post } = props
 
   return (
-    <li class="post">
+    <li class="post-item">
       <a href={`/${post.id}`}>
         <h3>
           {post.title}

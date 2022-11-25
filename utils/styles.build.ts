@@ -4,6 +4,7 @@ import postcssImport from 'npm:postcss-import'
 import importUrl from 'npm:postcss-import-url'
 import importGlob from 'npm:postcss-import-ext-glob'
 import cssnano from 'npm:cssnano'
+import { debounce } from '$std/async/mod.ts'
 
 const config = {
   plugins: [
@@ -18,10 +19,14 @@ const config = {
 }
 
 export async function watchAndBuildStyles() {
-  const watcher = Deno.watchFs('./styles/')
+  const watcher = Deno.watchFs(['./styles/', './components/'])
+  const protectedBuildCall = debounce(
+    () => buildStyles(),
+    200,
+  )
   
   for await (const event of watcher)
-    buildStyles()
+    protectedBuildCall()
 }
 
 export async function buildStyles() {

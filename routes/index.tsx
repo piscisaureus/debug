@@ -1,10 +1,11 @@
 import { Handlers, PageProps } from '$fresh/server.ts'
 import { Head } from '$fresh/runtime.ts'
-import { getPosts, Post } from '../utils/posts.ts'
+import { getPosts, Post } from '~/utils/posts.ts'
 
 // import Counter from '../islands/Counter.tsx'
-import PageMeta from '../components/PageMeta.tsx'
-import PostItem from '../components/PostItem/PostItem.tsx'
+import PageMeta from '~/components/PageMeta.tsx'
+import Nav from '~/components/Nav/Nav.tsx'
+import PostItem from '~/components/PostItem/PostItem.tsx'
 
 export const handler: Handlers<Post[]> = {
   async GET(_req, ctx) {
@@ -21,6 +22,7 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
       <Head>
         <PageMeta/>
       </Head>
+      <Nav/>
       <main>
         <h1>Open Props</h1>
         {/*<Counter start={0} />*/}

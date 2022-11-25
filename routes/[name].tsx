@@ -1,8 +1,8 @@
 import { Handlers, PageProps } from '$fresh/server.ts'
 import { Head } from '$fresh/runtime.ts'
 
-import { getPost, Post } from '../utils/posts.ts'
-import PageMeta from '../components/PageMeta.tsx'
+import { getPost, Post } from '~/utils/posts.ts'
+import PageMeta from '~/components/PageMeta.tsx'
 
 export const handler: Handlers<Post[]> = {
   async GET(_req, ctx) {

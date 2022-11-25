@@ -1,5 +1,5 @@
-import { getPosts, getPost } from './posts.ts'
 import { assert, assertEquals } from '$std/testing/asserts.ts'
+import { getPosts, getPost } from './posts.ts'
 
 Deno.test("load post", async () => {
   const slug = 'first'

@@ -1,0 +1,13 @@
+@layer design, base, components, demo;
+@import "third-party.css" layer(base);
+
+:root {
+  @media (prefers-color-scheme: dark) {
+    background: var(--gray-12);
+  }
+}
+
+body {
+  display: grid;
+  place-content: center;
+}

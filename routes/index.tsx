@@ -21,13 +21,13 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
       <Head>
         <IndexHead/>
       </Head>
-      <div>
+      <main>
         <h1>Open Props</h1>
         {/*<Counter start={0} />*/}
         <ul>
           {posts.map((post) => <PostItem post={post} />)}
         </ul>
-      </div>
+      </main>
     </>
   )
 }

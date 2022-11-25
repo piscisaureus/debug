@@ -16,15 +16,7 @@ export default function IndexHead(props: { post: Post }) {
       <link rel="icon" href="/favicon.ico" sizes="any"/>
       <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
 
-      <style>
-        @layer design, base, components, demo;
-
-        @import 'https://unpkg.com/open-props' layer(design.system);
-        @import 'https://unpkg.com/open-props/normalize.min.css' layer(base);
-        @import 'https://unpkg.com/open-props/buttons.min.css' layer(base);
-      </style>
-
-      <link rel="stylesheet" href="/styles/index.css"/>
+      <link rel="stylesheet" href="/style.css"/>
     </>
   )
 }

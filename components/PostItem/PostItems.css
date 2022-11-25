@@ -1,0 +1,10 @@
+.post-items {
+  display: grid;
+  gap: var(--size-2);
+  list-style-type: none;
+  padding-inline-start: 0;
+
+  & > li {
+    background: var(--surface-2);
+  }
+}

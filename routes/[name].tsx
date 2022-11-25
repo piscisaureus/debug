@@ -1,8 +1,8 @@
 import { Handlers, PageProps } from '$fresh/server.ts'
 import { Head } from '$fresh/runtime.ts'
-import { getPost, Post } from '../utils/posts.ts'
 
-import IndexHead from '../components/IndexHead.tsx'
+import { getPost, Post } from '../utils/posts.ts'
+import PageMeta from '../components/PageMeta.tsx'
 
 export const handler: Handlers<Post[]> = {
   async GET(_req, ctx) {
@@ -19,10 +19,15 @@ export default function PostPage(props: PageProps<Post>) {
   return (
     <>
       <Head>
-        <IndexHead post={post}/>
+        <PageMeta post={post}/>
       </Head>
       <body>
         <h1>{props.params.name}</h1>
+        <time>{new Date(post.publishedAt).toLocaleDateString("en-us", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })}</time>
         {<p>{post.snippet}</p>}
         <div
           dangerouslySetInnerHTML={{ __html: post.content }}

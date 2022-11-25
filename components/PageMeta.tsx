@@ -1,7 +1,7 @@
 import { JSX } from 'preact'
 import { Post } from '../utils/posts.ts'
 
-export default function IndexHead(props: { post: Post }) {
+export default function PageMeta(props: { post: Post }) {
   return (
     <>
       <title>{props?.post?.title || "Adam Argyle"}</title>

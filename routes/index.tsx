@@ -3,8 +3,8 @@ import { Head } from '$fresh/runtime.ts'
 import { getPosts, Post } from '../utils/posts.ts'
 
 // import Counter from '../islands/Counter.tsx'
-import IndexHead from '../components/IndexHead.tsx'
-import PostItem from '../components/PostItem.tsx'
+import PageMeta from '../components/PageMeta.tsx'
+import PostItem from '../components/PostItem/PostItem.tsx'
 
 export const handler: Handlers<Post[]> = {
   async GET(_req, ctx) {
@@ -19,12 +19,12 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
   return (
     <>
       <Head>
-        <IndexHead/>
+        <PageMeta/>
       </Head>
       <main>
         <h1>Open Props</h1>
         {/*<Counter start={0} />*/}
-        <ul>
+        <ul class="post-items">
           {posts.map((post) => <PostItem post={post} />)}
         </ul>
       </main>

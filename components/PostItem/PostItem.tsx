@@ -1,5 +1,5 @@
 import { JSX } from 'preact'
-import { Post } from '../../utils/posts.ts'
+import { Post } from '~/utils/posts.ts'
 
 export default function PostItem(props: { post: Post }) {
   const { post } = props

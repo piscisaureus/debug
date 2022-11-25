@@ -1,0 +1,5 @@
+.page-nav {
+  display: flex;
+  place-items: center;
+  gap: var(--size-3);
+}

@@ -3,6 +3,7 @@ import { Head } from '$fresh/runtime.ts'
 
 import { getPost, Post } from '~/utils/posts.ts'
 import PageMeta from '~/components/PageMeta.tsx'
+import Nav from '~/components/Nav/Nav.tsx'
 
 export const handler: Handlers<Post[]> = {
   async GET(_req, ctx) {
@@ -22,6 +23,7 @@ export default function PostPage(props: PageProps<Post>) {
         <PageMeta post={post}/>
       </Head>
       <body>
+        <Nav/>
         <h1>{props.params.name}</h1>
         <time>{new Date(post.publishedAt).toLocaleDateString("en-us", {
           year: "numeric",

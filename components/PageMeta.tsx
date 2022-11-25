@@ -1,5 +1,6 @@
 import { JSX } from 'preact'
-import { Post } from '../utils/posts.ts'
+import { Post } from '~/utils/posts.ts'
+import PageIcons from '~/components/Icons/PageIcons.tsx'
 
 export default function PageMeta(props: { post: Post }) {
   return (
@@ -17,6 +18,7 @@ export default function PageMeta(props: { post: Post }) {
       <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
 
       <link rel="stylesheet" href="/style.css"/>
+      <PageIcons/>
     </>
   )
 }

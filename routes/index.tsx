@@ -24,7 +24,6 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
       </Head>
       <Nav/>
       <main>
-        <h1>Open Props</h1>
         {/*<Counter start={0} />*/}
         <ul class="post-items">
           {posts.map((post) => <PostItem post={post} />)}

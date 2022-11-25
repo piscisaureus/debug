@@ -1,14 +1,12 @@
 @layer design, base, components, demo;
 @import "third-party.css" layer(base);
+@import "icons.css" layer(base);
 @import-glob "../components/**/*.css"; /* layer(components) */
 
 :root {
-  @media (prefers-color-scheme: dark) {
-    background: var(--gray-12);
-  }
-}
+  --surface-0: white;
 
-body {
-  display: grid;
-  place-content: center;
+  @media (prefers-color-scheme: dark) {
+    --surface-1: var(--gray-12);
+  }
 }

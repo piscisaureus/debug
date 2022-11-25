@@ -7,9 +7,7 @@ export default function PostItem(props: { post: Post }) {
   return (
     <li class="post-item">
       <a href={`/${post.id}`}>
-        <h3>
-          {post.title}
-        </h3>
+        <h3>{post.title}</h3>
         <time>
           {new Date(post.publishedAt).toLocaleDateString("en-us", {
             year: "numeric",
@@ -17,10 +15,8 @@ export default function PostItem(props: { post: Post }) {
             day: "numeric",
           })}
         </time>
-        <div>
-          {post.snippet}
-        </div>
       </a>
+      <p>{post.snippet}</p>
     </li>
   )
 }

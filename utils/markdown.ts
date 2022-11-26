@@ -8,8 +8,38 @@ hljs.registerLanguage('javascript', javascript)
 hljs.registerLanguage('css', css)
 
 marked.setOptions({
-  highlight: (code, lang, cb) =>
+  highlight: (code, lang, cb) => {
     hljs.highlight(code, {language: lang}).value
+  },
+})
+
+marked.use({
+  renderer: {
+    image: (href, title, text) => {
+      if (href.includes('codepen')) {
+        return `
+          <iframe 
+            height="300" 
+            style="width: 100%;" 
+            scrolling="no" 
+            title="${title}" 
+            src="${href}?default-tab=css%2Cresult&editable=true&theme-id=43079" 
+            frameborder="no" 
+            loading="lazy" 
+            allowtransparency="true" 
+            allowfullscreen="true"
+          >
+            See the Pen <a href="${href}">
+            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        `
+      }
+      else {
+        return `<img src="${href}" alt="${text}" title="${title}" />`
+      }
+    },
+  }
 })
 
 export default marked.parse

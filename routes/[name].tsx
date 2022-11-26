@@ -20,6 +20,7 @@ export default function PostPage(props: PageProps<Post>) {
     <>
       <Head>
         <PageMeta post={props.post}/>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
       </Head>
       <body>
         <PostDetail post={props.data}/>

@@ -4,14 +4,18 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--size-3);
-  padding: var(--size-5);
+  padding-inline: var(--size-5);
+  padding-block: var(--size-3);
   box-shadow: var(--shadow-3);
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: var(--layer-1);
 
   &::before {
     content: '';
     position: absolute;
     inset: 0;
+    clip-path: inset(125% 0% -100% 0%);
     background: linear-gradient(
       to right, 
       hsl(50 100% 50%), 

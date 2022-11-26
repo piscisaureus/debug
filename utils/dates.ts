@@ -4,5 +4,5 @@ import { formatDistance, isToday } from 'npm:date-fns'
 export function relDate(date) {
   return isToday(new Date(date), new Date())
     ? 'today'
-    : formatDistance(new Date(date), new Date())
+    : formatDistance(new Date(date), new Date()) + ' ago'
 }

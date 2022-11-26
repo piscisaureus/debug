@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
-  gap: var(--size-5);
-  margin: var(--size-5);
+  gap: var(--size-2);
+  padding-block: var(--size-2);
   list-style-type: none;
   padding-inline-start: 0;
 
@@ -16,9 +16,8 @@
   display: grid;
   gap: var(--size-2);
   background: var(--surface-1);
-  border-radius: var(--radius-3);
   box-shadow: var(--shadow-5);
-  padding-block: var(--size-3);
+  padding-block: var(--size-4);
   padding-inline: var(--size-5);
 
   & > a {

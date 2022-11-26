@@ -1,13 +1,15 @@
 @layer design, base, components, demo;
+
 @import "third-party.css" layer(base);
 @import "icons.css" layer(base);
+@import "markdown.css" layer(components);
 @import-glob "../components/**/*.css"; /* layer(components) */
 
 :root {
   background: var(--surface-2);
   --surface-1: white;
 
-  @media (prefers-color-scheme: dark) {
+  @media (--OSdark) {
     --surface-1: var(--gray-12);
     background: var(--gray-10);
   }

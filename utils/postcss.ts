@@ -1,19 +1,26 @@
 import postcss from '$deno/x/postcss/mod.js'
-import postcssNesting from 'npm:postcss-nesting'
-import postcssImport from 'npm:postcss-import'
+import cssNesting from 'npm:postcss-nesting'
+import customMediaPlugin from 'npm:postcss-custom-media'
+import inlineImports from 'npm:postcss-import'
 import importUrl from 'npm:postcss-import-url'
 import importGlob from 'npm:postcss-import-ext-glob'
 import cssnano from 'npm:cssnano'
 import { debounce } from '$std/async/mod.ts'
+import { customMedia } from './custom-media.ts'
 
 const config = {
   plugins: [
+    customMediaPlugin({
+      importFrom: [{
+        customMedia
+      }]
+    }),
     importGlob(),
-    postcssImport({
+    inlineImports({
       path: ['styles'],
     }),
     importUrl(),
-    postcssNesting(),
+    cssNesting(),
     cssnano(),
   ]
 }

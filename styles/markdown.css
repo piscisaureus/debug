@@ -17,7 +17,7 @@ pre {
 .language-css {
   & code { color: var(--gray-6) }
   & .hljs-selector-tag { color: var(--link) }
-  & .hljs-attribute { color: var(--link-visited) }
-  & .hljs-keyword { color: var(--cyan-4); }
+  & .hljs-attribute,
+  & .hljs-keyword { color: var(--link-visited) }
   & .hljs-string { color: var(--text-1) }
 }

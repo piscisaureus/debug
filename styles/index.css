@@ -4,9 +4,11 @@
 @import-glob "../components/**/*.css"; /* layer(components) */
 
 :root {
-  --surface-0: white;
+  background: var(--surface-2);
+  --surface-1: white;
 
   @media (prefers-color-scheme: dark) {
     --surface-1: var(--gray-12);
+    background: var(--gray-10);
   }
 }

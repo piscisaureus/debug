@@ -1,0 +1,23 @@
+.markdown {
+  display: grid;
+  gap: var(--size-3);
+}
+
+pre {
+  overflow: auto;
+  background: var(--surface-1);
+  padding: var(--size-3);
+  border-radius: var(--radius-3);
+
+  @media (--OSdark) {
+    background: var(--gray-11);
+  }
+}
+
+.language-css {
+  & code { color: var(--gray-6) }
+  & .hljs-selector-tag { color: var(--link) }
+  & .hljs-attribute { color: var(--link-visited) }
+  & .hljs-keyword { color: var(--cyan-4); }
+  & .hljs-string { color: var(--text-1) }
+}

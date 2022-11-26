@@ -11,7 +11,7 @@ hljs.registerLanguage('css', css)
 
 marked.setOptions({
   highlight: (code, lang, cb) => {
-    hljs.highlight(code, {language: lang}).value
+    return hljs.highlight(code, {language: lang}).value
   },
 })
 

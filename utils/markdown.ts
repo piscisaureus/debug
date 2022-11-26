@@ -4,6 +4,8 @@ import hljs from 'npm:highlight.js/lib/core'
 import javascript from 'npm:highlight.js/lib/languages/javascript'
 import css from 'npm:highlight.js/lib/languages/css'
 
+import { picPaths } from '~/islands/Pic.tsx'
+
 hljs.registerLanguage('javascript', javascript)
 hljs.registerLanguage('css', css)
 
@@ -34,6 +36,10 @@ marked.use({
             on <a href="https://codepen.io">CodePen</a>.
           </iframe>
         `
+      }
+      else if (href.includes('argyleink')) {
+        const { full, placeholder } = picPaths(href)
+        return `<img src="${full}" alt="${text}" title="${title}" />`
       }
       else {
         return `<img src="${href}" alt="${text}" title="${title}" />`

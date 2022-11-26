@@ -13,8 +13,7 @@ export default function Pic(props: iPic) {
   const [loaded, setLoaded] = useState(0)
 
   const state = {loaded: false}
-  const full = [urlbase, props.src].join('/')
-  const placeholder = [urlbase, lqip, props.src].join('/')
+  const { full, placeholder } = picPaths(props.src)
 
   if (IS_BROWSER) {
     const preloader = new Image()
@@ -32,4 +31,11 @@ export default function Pic(props: iPic) {
       style={!loaded && 'inline-size: 100%'}
     />
   )
+}
+
+export function picPaths(src) {
+  return {
+    full:         [urlbase, src].join('/'),
+    placeholder:  [urlbase, lqip, src].join('/'),
+  }
 }

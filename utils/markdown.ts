@@ -3,14 +3,18 @@ import hljs from 'npm:highlight.js/lib/core'
 
 import javascript from 'npm:highlight.js/lib/languages/javascript'
 import css from 'npm:highlight.js/lib/languages/css'
+import html from 'npm:highlight.js/lib/languages/xml'
 
 import { picPaths } from '~/islands/Pic.tsx'
 
 hljs.registerLanguage('javascript', javascript)
 hljs.registerLanguage('css', css)
+hljs.registerLanguage('xml', html)
 
 marked.setOptions({
   highlight: (code, lang, cb) => {
+    if (!lang) return
+    if (lang === 'html') lang = 'xml'
     return hljs.highlight(code, {language: lang}).value
   },
 })

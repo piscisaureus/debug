@@ -1,4 +1,3 @@
-import { JSX } from 'preact'
 import { Post } from '~/utils/posts.ts'
 
 export default function PostItem(props: { post: Post }) {

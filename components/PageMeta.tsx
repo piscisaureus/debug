@@ -1,4 +1,3 @@
-import { JSX } from 'preact'
 import { Post } from '~/utils/posts.ts'
 import PageIcons from '~/components/Icons/PageIcons.tsx'
 

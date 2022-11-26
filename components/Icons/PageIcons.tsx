@@ -1,5 +1,3 @@
-
-import { JSX } from 'preact'
 import RSSIcon from './rss.tsx'
 
 export default function PageIcons() {

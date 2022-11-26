@@ -1,8 +1,21 @@
 ---
 title: This is my 2nd blog post!
-published_at: 2022-13-04T15:00:00.000Z
+published_at: 2022-11-23
 snippet: Stuff and things.
 ---
 
 ### hi
-foo
+
+foo and **stuff**
+
+```css
+.classname {
+  background: hotpink;
+}
+```
+
+```js
+function foo() {
+  console.log('bar')
+}
+```

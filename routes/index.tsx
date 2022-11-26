@@ -2,7 +2,6 @@ import { Handlers, PageProps } from '$fresh/server.ts'
 import { Head } from '$fresh/runtime.ts'
 import { getPosts, Post } from '~/utils/posts.ts'
 
-// import Counter from '../islands/Counter.tsx'
 import PageMeta from '~/components/PageMeta.tsx'
 import Nav from '~/components/Nav/Nav.tsx'
 import PostItem from '~/components/PostItem/PostItem.tsx'
@@ -24,7 +23,6 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
       </Head>
       <Nav/>
       <main>
-        {/*<Counter start={0} />*/}
         <ul class="post-items">
           {posts.map((post) => <PostItem post={post} />)}
         </ul>

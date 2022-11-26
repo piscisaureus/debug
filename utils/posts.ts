@@ -7,6 +7,8 @@ export interface Post {
   publishedAt: Date;
   snippet: string;
   content: string;
+  hero: string;
+  heroAlt: string;
 }
 
 export async function getPosts(): Promise<Post[]> {
@@ -34,9 +36,8 @@ export async function getPost(slug: string): Promise<Post | null> {
     text = await Deno.readTextFile(`./posts/${slug}.md`)
   } 
   catch (err) {
-    if (err instanceof Deno.errors.NotFound) {
+    if (err instanceof Deno.errors.NotFound)
       return null
-    }
     throw err
   }
 
@@ -49,5 +50,7 @@ export async function getPost(slug: string): Promise<Post | null> {
     publishedAt: new Date(params.published_at),
     content: body,
     snippet: params.snippet,
+    hero: params.hero || null,
+    heroAlt: params.hero_alt || null,
   }
 }

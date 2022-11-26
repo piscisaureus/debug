@@ -7,6 +7,7 @@ import 'https://esm.sh/prismjs/components/prism-diff'
 import { getPost, Post } from '~/utils/posts.ts'
 import PageMeta from '~/components/PageMeta.tsx'
 import Nav from '~/components/Nav/Nav.tsx'
+import Pic from '~/islands/Pic.tsx'
 
 export const handler: Handlers<Post[]> = {
   async GET(_req, ctx) {
@@ -30,7 +31,7 @@ export default function PostPage(props: PageProps<Post>) {
       <body>
         <Nav/>
         {post.hero &&
-          <img src={post.hero}/>
+          <Pic src={post.hero} alt={post.heroAlt}/>
         }
         <h1>{post.title}</h1>
         <time>{new Date(post.publishedAt).toLocaleDateString("en-us", {

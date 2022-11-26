@@ -1,6 +1,6 @@
 import { Post } from '~/utils/posts.ts'
 import { relDate } from '~/utils/dates.ts'
-import Image from '~/islands/Image.tsx'
+import Pic from '~/islands/Pic.tsx'
 
 export default function PostItem(props: { post: Post }) {
   const { post } = props
@@ -13,7 +13,7 @@ export default function PostItem(props: { post: Post }) {
       </a>
       {post.hero &&
         <figure>
-          <Image src={post.hero} alt={post.heroAlt}/>
+          <Pic src={post.hero} alt={post.heroAlt}/>
         </figure>
       }
       <p>{post.snippet}</p>

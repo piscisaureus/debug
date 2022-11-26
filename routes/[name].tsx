@@ -1,13 +1,10 @@
 import { Handlers, PageProps } from '$fresh/server.ts'
 import { Head } from '$fresh/runtime.ts'
-import { CSS, render } from 'https://deno.land/x/gfm/mod.ts'
-import 'https://esm.sh/prismjs/components/prism-css'
-import 'https://esm.sh/prismjs/components/prism-diff'
 
+// import { CSS } from 'https://deno.land/x/gfm/mod.ts'
 import { getPost, Post } from '~/utils/posts.ts'
 import PageMeta from '~/components/PageMeta.tsx'
-import Nav from '~/components/Nav/Nav.tsx'
-import Pic from '~/islands/Pic.tsx'
+import PostDetail from '~/components/PostDetail/PostDetail.tsx'
 
 export const handler: Handlers<Post[]> = {
   async GET(_req, ctx) {
@@ -19,30 +16,13 @@ export const handler: Handlers<Post[]> = {
 }
 
 export default function PostPage(props: PageProps<Post>) {
-  const post = props.data
-  const html = render(post.content);
-
   return (
     <>
       <Head>
-        <PageMeta post={post}/>
-        <style dangerouslySetInnerHTML={{ __html: CSS }} />
+        <PageMeta post={props.post}/>
       </Head>
       <body>
-        <Nav/>
-        {post.hero &&
-          <Pic src={post.hero} alt={post.heroAlt}/>
-        }
-        <h1>{post.title}</h1>
-        <time>{new Date(post.publishedAt).toLocaleDateString("en-us", {
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-        })}</time>
-        {<p>{post.snippet}</p>}
-        <main class="markdown-body"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        <PostDetail post={props.data}/>
       </body>
     </>
   )

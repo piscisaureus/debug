@@ -7,10 +7,8 @@ export default function PostItem(props: { post: Post }) {
 
   return (
     <li class="post-item">
-      <a href={`/${post.id}`}>
-        <h3>{post.title}</h3>
-        <time>{relDate(post.publishedAt)}</time>
-      </a>
+      <a href={`/${post.id}`}>{post.title}</a>
+      <time>{relDate(post.publishedAt)}</time>
       {post.hero &&
         <figure>
           <Pic src={post.hero} alt={post.heroAlt}/>

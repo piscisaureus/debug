@@ -21,7 +21,7 @@ export default function PostDetail({post}) {
         {<p>{post.snippet}</p>}
       </header>
 
-      <main class="markdown"
+      <main class="block-stack"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
       <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>

@@ -55,7 +55,10 @@ export async function getPost(slug: string) {
 
   const { attrs:frontmatter, body } = extract(text)
   const content = parse(body)
-  const tags = frontmatter.tags.split(',').map(tag => tag.trim())
+  const tags = frontmatter.tags
+    .split(',')
+    .map(tag => tag.trim())
+  tags.unshift(frontmatter.type)
   
   if (frontmatter.type === 'tweet') {
     return {

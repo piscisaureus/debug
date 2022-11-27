@@ -3,16 +3,18 @@
 }
 
 .tag {
-  color: var(--indigo-10);
+  background-color: var(--indigo-0);
+  color: var(--indigo-8);
   font-size: var(--font-size-0);
   text-transform: uppercase;
-  border: var(--border-size-1) solid var(--indigo-5);
-  padding-inline: var(--size-3);
-  padding-block: var(--size-1);
+  border: var(--border-size-1) solid var(--indigo-1);
+  padding-inline: var(--size-2);
   border-radius: var(--radius-round);
+  letter-spacing: var(--font-letterspacing-3);
 
   @media (--OSdark) {
-    border-color: var(--indigo-5);
-    color: var(--indigo-3);
+    background-color: var(--indigo-12);
+    border-color: var(--indigo-10);
+    color: var(--indigo-2);
   }
 }

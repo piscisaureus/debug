@@ -3,6 +3,10 @@
   gap: var(--size-3);
 }
 
+p:empty {
+  display: none;
+}
+
 pre {
   overflow: auto;
   background: var(--surface-1);

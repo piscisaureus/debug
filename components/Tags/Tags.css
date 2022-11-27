@@ -1,8 +1,8 @@
-.tags {
+.Tags {
   gap: var(--size-2);
 }
 
-.tag {
+.Tag {
   background-color: var(--indigo-0);
   color: var(--indigo-8);
   font-size: var(--font-size-0);

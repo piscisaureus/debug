@@ -5,7 +5,7 @@ export default function Persona(props) {
 
   return (
     <Pic 
-      class="persona" 
+      class="Persona" 
       width="50" 
       src={'w_250,c_thumb,f_auto/'+persona.avatar} 
       alt={persona.avatarAlt}

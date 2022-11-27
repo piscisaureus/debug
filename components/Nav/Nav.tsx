@@ -1,6 +1,6 @@
 export default function Nav(props) {
   return (
-    <nav class="page-nav">
+    <nav class="Nav">
       <a href="/">
         <img src="favicon.svg" width="24" alt="A skull icon icon with a flipped up bill on a hotpink hat."/>
       </a>

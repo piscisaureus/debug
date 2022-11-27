@@ -1,53 +1,18 @@
 import { Post } from '~/utils/posts.ts'
-import { relDate } from '~/utils/dates.ts'
-
-import Pic from '~/islands/Pic.tsx'
-
-import Tags from '~/components/Tags/Tags.tsx'
-import Persona from '~/components/Persona/Persona.tsx'
+import Blog from '~/components/PostItem/Blog.tsx'
+import Tweet from '~/components/PostItem/Tweet.tsx'
 
 export default function PostItem(props: { post: Post }) {
   const { post } = props
  
   if (post.type === 'blog') {
     return (
-      <li class="post-item">
-        <Persona persona={post.persona}/>
-        <header class="inline-wrap">
-          <span>
-            <span class="username">{post.persona.name}</span>
-            <span>@{post.persona.handle}</span>
-          </span>
-          <time>{relDate(post.publishedAt)}</time>
-        </header>
-        <Tags tags={post.tags}/>
-        {post.hero &&
-          <figure>
-            <Pic src={post.hero} alt={post.heroAlt}/>
-          </figure>
-        }
-        <p>{post.snippet}</p>
-      </li>
+      <Blog post={post}/>
     )  
   }
   else if (post.type === 'tweet') {
     return (
-      <li class="post-item">
-        <Persona persona={post.persona}/>
-        <header class="inline-wrap">
-          <span>
-            <span class="username">{post.persona.name}</span>
-            <span>@{post.persona.handle}</span>
-          </span>
-          <time>{relDate(post.publishedAt)}</time>
-        </header>
-        <Tags tags={post.tags}/>
-        <p dangerouslySetInnerHTML={{ __html: post.content }}/>
-        {post.media.length &&
-          <span>has media</span>
-        }
-        <a href={`/${post.slug}`}>Read ></a>
-      </li>
+      <Tweet post={post}/>
     )
   }
 }

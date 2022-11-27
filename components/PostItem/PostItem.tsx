@@ -10,11 +10,11 @@ export default function PostItem(props: { post: Post }) {
   if (post.type === 'blog') {
     return (
       <li class="post-item">
-        <img class="persona" src="favicon.svg" width="40" alt="A skull icon icon with a flipped up bill on a hotpink hat."/>
+        <img class="persona" src={post.persona.avatar} width="40" alt={post.persona.avatarAlt} />
         <header class="inline-wrap">
           <span>
-            <span class="username">Someone</span>
-            <span>@{post.persona}</span>
+            <span class="username">{post.persona.name}</span>
+            <span>@{post.persona.handle}</span>
           </span>
           <time>{relDate(post.publishedAt)}</time>
         </header>
@@ -31,11 +31,11 @@ export default function PostItem(props: { post: Post }) {
   else if (post.type === 'tweet') {
     return (
       <li class="post-item">
-        <img class="persona" src="favicon.svg" width="40" alt="A skull icon icon with a flipped up bill on a hotpink hat."/>
+        <img class="persona" src={post.persona.avatar} width="40" alt={post.persona.avatarAlt} />
         <header class="inline-wrap">
           <span>
-            <span class="username">Someone</span>
-            <span>@{post.persona}</span>
+            <span class="username">{post.persona.name}</span>
+            <span>@{post.persona.handle}</span>
           </span>
           <time>{relDate(post.publishedAt)}</time>
         </header>

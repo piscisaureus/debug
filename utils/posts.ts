@@ -1,6 +1,7 @@
 import { extract } from '$std/encoding/front_matter.ts'
 import { join } from '$std/path/mod.ts'
 import parse from '~/utils/markdown.ts'
+import personas from '~/utils/persona.ts'
 
 interface Post {
   slug: string;
@@ -55,6 +56,8 @@ export async function getPost(slug: string) {
 
   const { attrs:frontmatter, body } = extract(text)
   const content = parse(body)
+  const persona = personas[frontmatter.persona]
+
   const tags = frontmatter.tags
     .split(',')
     .map(tag => tag.trim())
@@ -64,7 +67,7 @@ export async function getPost(slug: string) {
     return {
       type: 'tweet',
       slug,
-      persona: frontmatter.persona,
+      persona,
       publishedAt: new Date(frontmatter.published_at),
       tags,
       content,
@@ -75,7 +78,7 @@ export async function getPost(slug: string) {
     return {
       type: 'blog',
       slug,
-      persona: frontmatter.persona,
+      persona,
       publishedAt: new Date(frontmatter.published_at),
       tags,
       title: frontmatter.title,

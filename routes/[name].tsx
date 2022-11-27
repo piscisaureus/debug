@@ -1,7 +1,6 @@
 import { Handlers, PageProps } from '$fresh/server.ts'
 import { Head } from '$fresh/runtime.ts'
 
-// import { CSS } from 'https://deno.land/x/gfm/mod.ts'
 import { getPost, Post } from '~/utils/posts.ts'
 import PageMeta from '~/components/PageMeta.tsx'
 import PostDetail from '~/components/PostDetail/PostDetail.tsx'

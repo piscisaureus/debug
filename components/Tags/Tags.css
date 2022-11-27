@@ -1,0 +1,9 @@
+.tags {
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--size-2);
+}
+
+.tag {
+  border: 1px solid var(--indigo-5);
+}

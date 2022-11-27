@@ -1,14 +1,26 @@
 import { extract } from '$std/encoding/front_matter.ts'
 import { join } from '$std/path/mod.ts'
+import parse from '~/utils/markdown.ts'
 
-export interface Post {
-  id: string;
-  title: string;
+interface Post {
+  slug: string;
+  persona: string; // type Persona
   publishedAt: Date;
-  snippet: string;
+  tags?: string[]; // type?
   content: string;
-  hero: string;
-  heroAlt: string;
+}
+
+export interface Blog extends Post {
+  type: 'blog',
+  title: string;
+  snippet?: string;
+  hero?: string;
+  heroAlt?: string;
+}
+
+export interface Tweet extends Post {
+  type: 'tweet',
+  media?: object[];
 }
 
 export async function getPosts(): Promise<Post[]> {
@@ -28,7 +40,7 @@ export async function getPosts(): Promise<Post[]> {
   return posts
 }
 
-export async function getPost(slug: string): Promise<Post | null> {
+export async function getPost(slug: string) {
   let text: string
   // todo: pull from a cache
 
@@ -41,16 +53,33 @@ export async function getPost(slug: string): Promise<Post | null> {
     throw err
   }
 
-  const { attrs, body } = extract(text)
-  const params = attrs as Record<string, string>
-
-  return {
-    id: slug,
-    title: params.title,
-    publishedAt: new Date(params.published_at),
-    content: body,
-    snippet: params.snippet,
-    hero: params.hero || null,
-    heroAlt: params.hero_alt || null,
+  const { attrs:frontmatter, body } = extract(text)
+  const content = parse(body)
+  const tags = frontmatter.tags.split(',').map(tag => tag.trim())
+  
+  if (frontmatter.type === 'tweet') {
+    return {
+      type: 'tweet',
+      slug,
+      persona: frontmatter.persona,
+      publishedAt: new Date(frontmatter.published_at),
+      tags,
+      content,
+      media: [frontmatter.media_1],
+    }
+  }
+  else if (frontmatter.type === 'blog') {
+    return {
+      type: 'blog',
+      slug,
+      persona: frontmatter.persona,
+      publishedAt: new Date(frontmatter.published_at),
+      tags,
+      title: frontmatter.title,
+      content,
+      snippet: frontmatter.snippet,
+      hero: frontmatter.hero,
+      heroAlt: frontmatter.hero_alt,
+    }
   }
 }

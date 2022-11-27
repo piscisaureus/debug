@@ -1,12 +1,9 @@
 import { render } from 'https://deno.land/x/gfm/mod.ts'
-import parse from '~/utils/markdown.ts'
 
 import Nav from '~/components/Nav/Nav.tsx'
 import Pic from '~/islands/Pic.tsx'
 
 export default function PostDetail({post}) {
-  const html = parse(post.content)
-
   return (
     <>
       <Nav title={post.title}/>
@@ -25,7 +22,7 @@ export default function PostDetail({post}) {
       </header>
 
       <main class="markdown"
-        dangerouslySetInnerHTML={{ __html: html }}
+        dangerouslySetInnerHTML={{ __html: post.content }}
       />
       <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     </>

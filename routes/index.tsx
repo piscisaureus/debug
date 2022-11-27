@@ -23,7 +23,7 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
       </Head>
       <Nav/>
       <main>
-        <ul class="post-items">
+        <ul class="PostItems">
           {posts.map((post) => <PostItem post={post} />)}
         </ul>
       </main>

@@ -1,6 +1,6 @@
 .post-items {
   display: grid;
-  grid-auto-rows: auto;
+  grid-template-columns: 100%;
   justify-content: center;
   gap: var(--size-2);
   padding-block: var(--size-2);

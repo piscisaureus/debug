@@ -1,0 +1,6 @@
+.persona {
+  aspect-ratio: var(--ratio-square);
+  border-radius: var(--radius-round);
+  background: var(--surface-3);
+  object-fit: cover;
+}

@@ -57,12 +57,7 @@ export async function getPost(slug: string) {
   const { attrs:frontmatter, body } = extract(text)
   const content = parse(body)
   const persona = personas[frontmatter.persona]
-
-  // todo: switch to yaml array
-  const tags = frontmatter.tags
-    .split(',')
-    .map(tag => tag.trim())
-  tags.unshift(frontmatter.type)
+  frontmatter.tags.unshift(frontmatter.type)
 
   if (frontmatter.type === 'tweet') {
     return {
@@ -70,7 +65,7 @@ export async function getPost(slug: string) {
       slug,
       persona,
       publishedAt: new Date(frontmatter.published_at),
-      tags,
+      tags: frontmatter.tags,
       content,
       media: frontmatter.media,
     }
@@ -81,7 +76,7 @@ export async function getPost(slug: string) {
       slug,
       persona,
       publishedAt: new Date(frontmatter.published_at),
-      tags,
+      tags: frontmatter.tags,
       title: frontmatter.title,
       content,
       snippet: frontmatter.snippet,

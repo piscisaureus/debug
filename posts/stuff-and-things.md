@@ -9,7 +9,8 @@ media:
     alt: some title
   - src: https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull_x0bviq.png
     alt: some title
-tags: css
+tags: 
+  - css
 ---
 
 a rad [#CSS](https://twitter.com/hashtag/css) one-liner for your hot topics

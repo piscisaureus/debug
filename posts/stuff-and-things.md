@@ -9,8 +9,6 @@ tags: awesome, rad
 
 a rad [#CSS](https://twitter.com/hashtag/css) one-liner for your hot topics
 
-![](https://media1.giphy.com/media/b0HYKHINjL32qEsoJt/giphy.gif?cid=ecf05e470xzt877ojokmkub40d6kk0paaufim6fm41294pjd&rid=giphy.gif&ct=g)
-
 ```css
 @layer demo {
   h1 {
@@ -18,5 +16,3 @@ a rad [#CSS](https://twitter.com/hashtag/css) one-liner for your hot topics
   }
 }
 ```
-
-![](https://codepen.io/argyleink/embed/preview/YzveomK)

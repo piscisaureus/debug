@@ -11,7 +11,9 @@ tags: awesome, rad, feature
 
 ![](v1669432177/argyleink/text-emphasized.png)
 
+![](https://media1.giphy.com/media/b0HYKHINjL32qEsoJt/giphy.gif?cid=ecf05e470xzt877ojokmkub40d6kk0paaufim6fm41294pjd&rid=giphy.gif&ct=g)
 
+![](https://codepen.io/argyleink/embed/preview/YzveomK)
 
 1.  Bird
 1.  McHale
@@ -48,4 +50,3 @@ _single underscores_
 **double asterisks**
 
 __double underscores__
-

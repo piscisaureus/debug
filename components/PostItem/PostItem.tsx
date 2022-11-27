@@ -10,9 +10,14 @@ export default function PostItem(props: { post: Post }) {
   if (post.type === 'blog') {
     return (
       <li class="post-item">
-        <a href={`/${post.slug}`}>{post.title}</a>
-        <span>{post.persona}</span>
-        <time>{relDate(post.publishedAt)}</time>
+        <img class="persona" src="favicon.svg" width="40" alt="A skull icon icon with a flipped up bill on a hotpink hat."/>
+        <header class="inline-wrap">
+          <span>
+            <span class="username">Someone</span>
+            <span>@{post.persona}</span>
+          </span>
+          <time>{relDate(post.publishedAt)}</time>
+        </header>
         <Tags tags={post.tags}/>
         {post.hero &&
           <figure>
@@ -23,16 +28,23 @@ export default function PostItem(props: { post: Post }) {
       </li>
     )  
   }
-  else {
+  else if (post.type === 'tweet') {
     return (
       <li class="post-item">
-        <a href={`/${post.slug}`}>{post.persona}</a>
-        <time>{relDate(post.publishedAt)}</time>
+        <img class="persona" src="favicon.svg" width="40" alt="A skull icon icon with a flipped up bill on a hotpink hat."/>
+        <header class="inline-wrap">
+          <span>
+            <span class="username">Someone</span>
+            <span>@{post.persona}</span>
+          </span>
+          <time>{relDate(post.publishedAt)}</time>
+        </header>
+        <Tags tags={post.tags}/>
+        <p dangerouslySetInnerHTML={{ __html: post.content }}/>
         {post.media.length &&
           <span>has media</span>
         }
-        <p dangerouslySetInnerHTML={{ __html: post.content }}></p>
-        <Tags tags={post.tags}/>
+        <a href={`/${post.slug}`}>Read ></a>
       </li>
     )
   }

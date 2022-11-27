@@ -1,0 +1,27 @@
+.MediaScroller {
+  display: flex;
+  gap: var(--size-3);
+  padding-block-end: var(--size-3);
+  overflow-x: auto;
+  overscroll-behavior: contain;
+  aspect-ratio: var(--ratio-widescreen);
+
+  @nest .PostItem & {
+    --_inline-offset: calc(var(--size-5) * 2 + var(--_avatar-column-size));
+    
+    scroll-snap-type: x mandatory;
+    grid-column: span 2;
+    margin-inline: calc(var(--size-5) * -1);
+    padding-inline-start: var(--_inline-offset);
+    scroll-padding-inline: var(--_inline-offset);
+
+    & :is(img,video) {
+      scroll-snap-align: start;
+    }
+
+    & > div {
+      inline-size: 150px;
+      flex-shrink: 0;
+    }
+  }
+}

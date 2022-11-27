@@ -1,8 +1,10 @@
 import { Post } from '~/utils/posts.ts'
 import { relDate } from '~/utils/dates.ts'
 
-import Tags from '~/components/Tags/Tags.tsx'
 import Pic from '~/islands/Pic.tsx'
+
+import Tags from '~/components/Tags/Tags.tsx'
+import Persona from '~/components/Persona/Persona.tsx'
 
 export default function PostItem(props: { post: Post }) {
   const { post } = props
@@ -10,7 +12,7 @@ export default function PostItem(props: { post: Post }) {
   if (post.type === 'blog') {
     return (
       <li class="post-item">
-        <img class="persona" src={post.persona.avatar} width="40" alt={post.persona.avatarAlt} />
+        <Persona persona={post.persona}/>
         <header class="inline-wrap">
           <span>
             <span class="username">{post.persona.name}</span>
@@ -31,7 +33,7 @@ export default function PostItem(props: { post: Post }) {
   else if (post.type === 'tweet') {
     return (
       <li class="post-item">
-        <img class="persona" src={post.persona.avatar} width="40" alt={post.persona.avatarAlt} />
+        <Persona persona={post.persona}/>
         <header class="inline-wrap">
           <span>
             <span class="username">{post.persona.name}</span>

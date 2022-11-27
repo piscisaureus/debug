@@ -2,6 +2,7 @@
 
 @import "third-party.css" layer(base);
 @import "icons.css" layer(base);
+@import "utilities.css" layer(base);
 @import "markdown.css" layer(components);
 @import-glob "../components/**/*.css"; /* layer(components) */
 
@@ -10,7 +11,7 @@
   --surface-1: white;
 
   @media (--OSdark) {
-    --surface-1: var(--gray-12);
-    background: var(--gray-10);
+    --surface-1: var(--gray-10);
+    background: var(--gray-12);
   }
 }

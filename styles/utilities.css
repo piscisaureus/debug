@@ -1,0 +1,6 @@
+.inline-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--size-2);
+}

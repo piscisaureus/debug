@@ -15,6 +15,7 @@ export default function PageMeta(props: { post: Post }) {
 
       <link rel="icon" href="/favicon.ico" sizes="any"/>
       <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+      <link rel="preconnect" href="https://res.cloudinary.com/"/>
 
       <link rel="stylesheet" href="/style.css"/>
       <PageIcons/>

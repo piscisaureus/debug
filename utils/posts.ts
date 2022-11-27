@@ -62,7 +62,7 @@ export async function getPost(slug: string) {
     .split(',')
     .map(tag => tag.trim())
   tags.unshift(frontmatter.type)
-  
+
   if (frontmatter.type === 'tweet') {
     return {
       type: 'tweet',
@@ -71,7 +71,7 @@ export async function getPost(slug: string) {
       publishedAt: new Date(frontmatter.published_at),
       tags,
       content,
-      media: [frontmatter.media_1],
+      media: frontmatter.media,
     }
   }
   else if (frontmatter.type === 'blog') {

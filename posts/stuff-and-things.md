@@ -2,8 +2,13 @@
 type: tweet
 persona: csspodcast
 published_at: 2022-11-23
-media_1: https://media1.giphy.com/media/b0HYKHINjL32qEsoJt/giphy.gif?cid=ecf05e470xzt877ojokmkub40d6kk0paaufim6fm41294pjd&rid=giphy.gif&ct=g
-media_1_alt: retro wave
+media:
+  - src: https://media1.giphy.com/media/b0HYKHINjL32qEsoJt/giphy.gif?cid=ecf05e470xzt877ojokmkub40d6kk0paaufim6fm41294pjd&rid=giphy.gif&ct=g
+    alt: some title
+  - src: https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523746/argyleink/02792930683795.562e8a59042c9_ddfsqb.png
+    alt: some title
+  - src: https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull_x0bviq.png
+    alt: some title
 tags: css
 ---
 

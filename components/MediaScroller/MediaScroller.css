@@ -20,7 +20,7 @@
     }
 
     & > div {
-      inline-size: 150px;
+      inline-size: 75%;
       flex-shrink: 0;
     }
   }

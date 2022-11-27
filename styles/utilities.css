@@ -4,3 +4,8 @@
   align-items: center;
   gap: var(--size-2);
 }
+
+.block-stack {
+  display: grid;
+  gap: var(--size-3);
+}

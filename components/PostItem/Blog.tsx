@@ -9,7 +9,7 @@ export default function BlogPost(props: { post: Post }) {
   const {post} = props
 
   return (
-    <li class="post-item">
+    <li class="PostItem">
       <Persona persona={post.persona}/>
       <header class="inline-wrap">
         <span>

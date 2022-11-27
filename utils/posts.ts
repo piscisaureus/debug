@@ -58,6 +58,7 @@ export async function getPost(slug: string) {
   const content = parse(body)
   const persona = personas[frontmatter.persona]
 
+  // todo: switch to yaml array
   const tags = frontmatter.tags
     .split(',')
     .map(tag => tag.trim())

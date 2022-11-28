@@ -1,0 +1,9 @@
+/* .Pic {
+  &[data-state="loading"] {
+    
+  }
+
+  &[data-state="loaded"] {
+    animation: var(--animation-fade-out) reverse;
+  }
+} */

@@ -5,6 +5,7 @@
 @import "utilities.css" layer(base);
 @import "markdown.css" layer(components);
 @import-glob "../components/**/*.css"; /* layer(components) */
+@import-glob "../islands/**/*.css"; /* layer(components) */
 
 :root {
   background: var(--surface-2);

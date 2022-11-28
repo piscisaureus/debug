@@ -26,11 +26,13 @@ const config = {
 }
 
 export async function watchAndBuildStyles() {
-  const watcher = Deno.watchFs(['./styles/', './components/'])
-  const protectedBuildCall = debounce(
-    () => buildStyles(),
-    200,
-  )
+  const watcher = Deno.watchFs([
+    './styles/', 
+    './components/', 
+    './islands/',
+  ])
+
+  const protectedBuildCall = debounce(buildStyles, 200)
   
   for await (const event of watcher)
     protectedBuildCall()

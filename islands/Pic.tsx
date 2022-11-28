@@ -25,7 +25,7 @@ export default function Pic(props) {
       src={loaded ? full : placeholder} 
       width={props.width}
       height={props.height}
-      className={props.class}
+      className={`Pic ${props.class || ''}`}
     />
   )
 }

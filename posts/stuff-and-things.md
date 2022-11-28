@@ -7,7 +7,7 @@ media:
     alt: some title
   - src: https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523746/argyleink/02792930683795.562e8a59042c9_ddfsqb.png
     alt: some title
-  - src: https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull_x0bviq.png
+  - src: https://res.cloudinary.com/dnpmdb8r8/image/upload/gui-skull.png
     alt: some title
 tags: 
   - css

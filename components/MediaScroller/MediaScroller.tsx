@@ -3,7 +3,7 @@ export default function MediaScroller({media}) {
     <div class="MediaScroller">
       <overscroll-effect></overscroll-effect>
       {media.map(item => (
-        <img src={item.src} alt={item.alt}/>
+        <img loading="lazy" src={item.src} alt={item.alt}/>
       ))}
       <overscroll-effect></overscroll-effect>
     </div>

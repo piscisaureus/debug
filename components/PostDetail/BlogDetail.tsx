@@ -17,21 +17,24 @@ export default function BlogDetail({post}) {
           width={post.hero.width}
         />
       }
-      <header>
-        <Persona persona={post.persona}/>
+      <main class="BlogDetail block-stack">
+        <header class="block-stack">
+          <Persona persona={post.persona}/>
 
-        <time>{new Date(post.publishedAt).toLocaleDateString("en-us", {
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-        })}</time>
-        <Tags tags={post.tags}/>
-        {<p>{post.snippet}</p>}
-      </header>
+          <time>{new Date(post.publishedAt).toLocaleDateString("en-us", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })}</time>
+          <Tags tags={post.tags}/>
+          {<p>{post.snippet}</p>}
+        </header>
 
-      <main class="block-stack"
-        dangerouslySetInnerHTML={{ __html: post.content }}
-      />
+        <article 
+          class="block-stack"
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        />
+      </main>
       <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     </>
   )

@@ -27,6 +27,9 @@ export default function BlogPost({post}) {
         </figure>
       }
       <p>{post.snippet}</p>
+      <footer>
+        <a href={`/${post.slug}`}>Full article</a>
+      </footer>
     </li>
   )
 }

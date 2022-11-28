@@ -22,6 +22,19 @@ marked.setOptions({
 marked.use({
   renderer: {
     image: (href, title, text) => {
+      let opts = {}
+
+      if (title?.includes('$$')) {
+        const [__title,extract] = title.split('$$')
+
+        opts = extract.split(',')
+          .map(item => {
+            let [a,b] = item.split(':')
+            return {[a]:b}
+          })[0]
+
+        title = __title
+      }
       if (href.includes('codepen')) {
         return `
           <iframe 
@@ -43,7 +56,14 @@ marked.use({
       }
       else if (href.includes('argyleink')) {
         const { full } = picPaths({src: href})
-        return `<img src="${full}" alt="${text}" title="${title}" />`
+        return `<img 
+          loading="lazy" 
+          src="${full}" 
+          alt="${text}" 
+          title="${title}" 
+          ${opts.width && `width="${opts.width}" `}
+          ${opts.height && `height="${opts.height}" `}
+        />`
       }
       else {
         return `<img loading="lazy" src="${href}" alt="${text}" title="${title}" />`

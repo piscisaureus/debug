@@ -19,7 +19,7 @@ export default function Tweet({post}) {
       <Tags tags={post.tags}/>
       <p dangerouslySetInnerHTML={{ __html: post.content }}/>
       {post.media.length && <MediaScroller media={post.media}/>}
-      <a href={`/${post.slug}`}>Read ></a>
+      <a href={`/${post.slug}`}>Share</a>
     </li>
   )
 }

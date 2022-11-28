@@ -30,7 +30,7 @@ export default function Pic(props) {
   )
 }
 
-export function picPaths({src, cloudinary}) {
+export function picPaths({src, cloudinary}:{src:string, cloudinary?:string}) {
   return {
     full: cloudinary 
             ? [urlbase, cloudinary, src].join('/') 

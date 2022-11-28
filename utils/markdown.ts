@@ -12,7 +12,7 @@ hljs.registerLanguage('css', css)
 hljs.registerLanguage('xml', html)
 
 marked.setOptions({
-  highlight: (code, lang, cb) => {
+  highlight: (code, lang) => {
     if (!lang) return
     if (lang === 'html') lang = 'xml'
     return hljs.highlight(code, {language: lang}).value
@@ -42,11 +42,11 @@ marked.use({
         `
       }
       else if (href.includes('argyleink')) {
-        const { full, placeholder } = picPaths(href)
+        const { full } = picPaths({src: href})
         return `<img src="${full}" alt="${text}" title="${title}" />`
       }
       else {
-        return `<img src="${href}" alt="${text}" title="${title}" />`
+        return `<img loading="lazy" src="${href}" alt="${text}" title="${title}" />`
       }
     },
   }

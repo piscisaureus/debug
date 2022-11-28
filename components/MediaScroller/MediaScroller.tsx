@@ -1,8 +1,8 @@
-export default function MediaScroller(props) {
+export default function MediaScroller({media}) {
   return (
     <div class="MediaScroller">
       <div></div>
-      {props.media.map(item => (
+      {media.map(item => (
         <img src={item.src} alt={item.alt}/>
       ))}
       <div></div>

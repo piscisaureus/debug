@@ -1,13 +1,10 @@
-import { Post } from '~/utils/posts.ts'
 import { relDate } from '~/utils/dates.ts'
 
 import Pic from '~/islands/Pic.tsx'
 import Tags from '~/components/Tags/Tags.tsx'
 import Persona from '~/components/Persona/Persona.tsx'
 
-export default function BlogPost(props: { post: Post }) {
-  const {post} = props
-
+export default function BlogPost({post}) {
   return (
     <li class="PostItem">
       <Persona persona={post.persona}/>

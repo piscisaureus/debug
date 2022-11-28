@@ -1,8 +1,6 @@
 import Pic from '~/islands/Pic.tsx'
 
-export default function Persona(props) {
-  const { persona } = props
-
+export default function Persona({ persona }) {
   return (
     <Pic 
       class="Persona" 

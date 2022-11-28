@@ -1,7 +1,7 @@
-export default function Tags(props) {
+export default function Tags({tags}) {
   return (
     <div class="Tags inline-wrap">
-      {props.tags.map(tag => (
+      {tags.map(tag => (
         <span class="Tag">{tag}</span>
       ))}
     </div>

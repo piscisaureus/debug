@@ -1,10 +1,9 @@
-import { Post } from '~/utils/posts.ts'
 import PageIcons from '~/components/Icons/PageIcons.tsx'
 
-export default function PageMeta(props: { post: Post }) {
+export default function PageMeta({post}) {
   return (
     <>
-      <title>{props?.post?.title || "Adam Argyle"}</title>
+      <title>{post?.title || "Adam Argyle"}</title>
       <meta charset="utf-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <meta name="mobile-web-app-capable" content="yes"/>

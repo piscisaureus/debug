@@ -1,9 +1,8 @@
 import { extract } from '$std/encoding/front_matter.ts'
-import { join } from '$std/path/mod.ts'
 import parse from '~/utils/markdown.ts'
 import personas from '~/utils/persona.ts'
 
-interface Post {
+export interface Post {
   slug: string;
   persona: string; // type Persona
   publishedAt: Date;
@@ -11,12 +10,18 @@ interface Post {
   content: string;
 }
 
+export interface Hero {
+  height: number,
+  width: number;
+  src: string;
+  alt?: string;
+}
+
 export interface Blog extends Post {
   type: 'blog',
   title: string;
   snippet?: string;
-  hero?: string;
-  heroAlt?: string;
+  hero: Hero;
 }
 
 export interface Tweet extends Post {

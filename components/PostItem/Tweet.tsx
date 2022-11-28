@@ -1,6 +1,5 @@
 import { relDate } from '~/utils/dates.ts'
 
-import Pic from '~/islands/Pic.tsx'
 import Tags from '~/components/Tags/Tags.tsx'
 import Persona from '~/components/Persona/Persona.tsx'
 import MediaScroller from '~/components/MediaScroller/MediaScroller.tsx'

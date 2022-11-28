@@ -1,11 +1,10 @@
-import { relDate } from '~/utils/dates.ts'
-
+import { Blog } from '~/utils/posts.ts'
 import Nav from '~/components/Nav/Nav.tsx'
 import Persona from '~/components/Persona/Persona.tsx'
 import Tags from '~/components/Tags/Tags.tsx'
 import Pic from '~/islands/Pic.tsx'
 
-export default function BlogDetail({post}) {
+export default function BlogDetail({ post }: { post: Blog }) {
   return (
     <>
       <Nav title={post.title}/>

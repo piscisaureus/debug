@@ -19,7 +19,7 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
   return (
     <>
       <Head>
-        <PageMeta/>
+        <PageMeta post={{title:"Adam Argyle"}}/>
       </Head>
       <Nav/>
       <main>

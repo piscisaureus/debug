@@ -7,5 +7,7 @@ export default function PostItem({post}) {
       return <BlogPost post={post}/>
     case 'tweet':
       return <Tweet post={post}/>
+    default:
+      return <Tweet post={post}/>
   }
 }

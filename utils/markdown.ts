@@ -12,7 +12,7 @@ hljs.registerLanguage('css', css)
 hljs.registerLanguage('xml', html)
 
 marked.setOptions({
-  highlight: (code, lang) => {
+  highlight: (code:string, lang:string) => {
     if (!lang) return
     if (lang === 'html') lang = 'xml'
     return hljs.highlight(code, {language: lang}).value
@@ -21,7 +21,7 @@ marked.setOptions({
 
 marked.use({
   renderer: {
-    image: (href, title, text) => {
+    image: (href:string, title:string, text:string) => {
       let opts = {}
 
       if (title?.includes('$$')) {

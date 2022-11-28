@@ -34,7 +34,7 @@ export async function watchAndBuildStyles() {
 
   const protectedBuildCall = debounce(buildStyles, 200)
   
-  for await (const event of watcher)
+  for await (const _event of watcher)
     protectedBuildCall()
 }
 

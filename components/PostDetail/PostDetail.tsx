@@ -7,5 +7,7 @@ export default function PostDetail({post}) {
       return <BlogDetail post={post}/>
     case 'tweet':
       return <TweetDetail post={post}/>
+    default:
+      return <TweetDetail post={post}/>
   }
 }

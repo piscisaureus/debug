@@ -32,7 +32,9 @@ export default function Pic(props) {
 
 export function picPaths({src, cloudinary}) {
   return {
-    full:         [urlbase, cloudinary, src].join('/'),
-    placeholder:  [urlbase, lqip, src].join('/'),
+    full: cloudinary 
+            ? [urlbase, cloudinary, src].join('/') 
+            : [urlbase, src].join('/'),
+    placeholder: [urlbase, lqip, src].join('/'),
   }
 }

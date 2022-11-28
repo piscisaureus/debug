@@ -28,10 +28,10 @@ marked.use({
         const [__title,extract] = title.split('$$')
 
         opts = extract.split(',')
-          .map(item => {
+          .reduce((acc, item) => {
             let [a,b] = item.split(':')
-            return {[a]:b}
-          })[0]
+            return {...acc, ...{[a]:b}}
+          }, {})
 
         title = __title
       }
@@ -62,7 +62,7 @@ marked.use({
           alt="${text}" 
           title="${title}" 
           ${opts.width && `width="${opts.width}" `}
-          ${opts.height && `height="${opts.height}" `}
+          ${opts.height && `height="${opts.height}"`}
         />`
       }
       else {

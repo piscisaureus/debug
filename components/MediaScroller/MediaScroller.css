@@ -19,7 +19,7 @@
       scroll-snap-align: start;
     }
 
-    & > div {
+    & > overscroll-effect {
       inline-size: 75%;
       flex-shrink: 0;
     }

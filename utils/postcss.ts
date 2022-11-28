@@ -6,13 +6,13 @@ import importUrl from 'npm:postcss-import-url'
 import importGlob from 'npm:postcss-import-ext-glob'
 import cssnano from 'npm:cssnano'
 import { debounce } from '$std/async/mod.ts'
-import { customMedia } from './custom-media.ts'
+import { CustomMedia } from 'npm:open-props/esm/media'
 
 const config = {
   plugins: [
     customMediaPlugin({
       importFrom: [{
-        customMedia
+        CustomMedia
       }]
     }),
     importGlob(),

@@ -829,6 +829,7 @@
       "highlight.js": "highlight.js@11.6.0",
       "image-size": "image-size@1.0.2",
       "marked": "marked@4.2.3",
+      "open-props": "open-props@1.5.1",
       "postcss-custom-media": "postcss-custom-media@8.0.2",
       "postcss-import": "postcss-import@15.0.0",
       "postcss-import-ext-glob": "postcss-import-ext-glob@2.0.1",
@@ -1427,6 +1428,10 @@
       },
       "object-keys@0.4.0": {
         "integrity": "sha512-ncrLw+X55z7bkl5PnUvHwFK9FcGuFYo9gtjws2XtSzL+aZ8tm830P60WJ0dSmFVaSalWieW5MD7kEdnXda9yJw==",
+        "dependencies": {}
+      },
+      "open-props@1.5.1": {
+        "integrity": "sha512-FA1T/0neIXWaJToPhS4HjBrgEFOeVOAUls9cOe1ME1BV4G25sIKdRNdZhzNNgOQ2RtfuZCTGtSKVnhjdD4Gzvg==",
         "dependencies": {}
       },
       "outdent@0.8.0": {

@@ -43,6 +43,7 @@ export async function getPosts(): Promise<Post[]> {
 
 export async function getPost(slug: string) {
   let text: string
+  console.info(`GET: posts/${slug}`)
   // todo: pull from a cache
 
   try {

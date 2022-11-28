@@ -4,9 +4,11 @@ export default function Persona({ persona }) {
   return (
     <Pic 
       class="Persona" 
-      width="50" 
-      src={'w_250,c_thumb,f_auto/'+persona.avatar} 
-      alt={persona.avatarAlt}
+      width={persona.img.width}
+      height={persona.img.height}
+      src={persona.img.src}
+      cloudinary="w_250,c_thumb,f_auto" 
+      alt={persona.img.alt}
      />
   )
 }

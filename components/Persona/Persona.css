@@ -1,4 +1,5 @@
 .Persona {
+  inline-size: 50px;
   aspect-ratio: var(--ratio-square);
   border-radius: var(--radius-round);
   background: var(--surface-3);

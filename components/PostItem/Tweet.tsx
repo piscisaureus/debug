@@ -5,7 +5,7 @@ import Tags from '~/components/Tags/Tags.tsx'
 import Persona from '~/components/Persona/Persona.tsx'
 import MediaScroller from '~/components/MediaScroller/MediaScroller.tsx'
 
-export default function BlogPost({post}) {
+export default function Tweet({post}) {
   return (
     <li class="PostItem">
       <Persona persona={post.persona}/>

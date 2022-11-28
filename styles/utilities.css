@@ -15,5 +15,6 @@
 
 .block-stack {
   display: grid;
+  justify-items: start;
   gap: var(--size-3);
 }

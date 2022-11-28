@@ -18,7 +18,12 @@ export default function BlogPost({post}) {
       <Tags tags={post.tags}/>
       {post.hero &&
         <figure>
-          <Pic src={post.hero} alt={post.heroAlt}/>
+          <Pic 
+            src={post.hero.src} 
+            alt={post.hero.alt}
+            height={post.hero.height}
+            width={post.hero.width}
+          />
         </figure>
       }
       <p>{post.snippet}</p>

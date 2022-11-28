@@ -4,13 +4,16 @@ persona: argyleink
 title: This is my first blog post!
 published_at: 2022-11-26
 snippet: This is an excerpt of my first blog post.
-hero: v1669432177/argyleink/text-emphasized.png
-hero_alt: Made this with AI
+hero:
+  src: argyleink/text-emphasized.png
+  alt: Text emphasized alt text example
+  width: 999
+  height: 496
 tags: 
   - test
 ---
 
-![](v1669432177/argyleink/text-emphasized.png)
+![](argyleink/text-emphasized.png)
 
 ![](https://media1.giphy.com/media/b0HYKHINjL32qEsoJt/giphy.gif?cid=ecf05e470xzt877ojokmkub40d6kk0paaufim6fm41294pjd&rid=giphy.gif&ct=g)
 

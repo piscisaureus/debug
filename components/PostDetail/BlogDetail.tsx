@@ -10,7 +10,12 @@ export default function BlogDetail({post}) {
     <>
       <Nav title={post.title}/>
       {post.hero &&
-        <Pic src={post.hero} alt={post.heroAlt}/>
+        <Pic 
+          src={post.hero.src} 
+          alt={post.hero.alt}
+          height={post.hero.height}
+          width={post.hero.width}
+        />
       }
       <header>
         <Persona persona={post.persona}/>

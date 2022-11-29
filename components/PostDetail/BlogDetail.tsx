@@ -9,12 +9,16 @@ export default function BlogDetail({ post }: { post: Blog }) {
     <>
       <Nav title={post.title}/>
       {post.hero &&
-        <Pic 
-          src={post.hero.src} 
-          alt={post.hero.alt}
-          height={post.hero.height}
-          width={post.hero.width}
-        />
+        <header class="BlogHero">
+          <div>
+            <Pic 
+              src={post.hero.src} 
+              alt={post.hero.alt}
+              height={post.hero.height}
+              width={post.hero.width}
+            />
+          </div>
+        </header>
       }
       <main class="BlogDetail block-stack">
         <header class="block-stack">

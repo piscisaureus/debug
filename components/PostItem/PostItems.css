@@ -1,4 +1,6 @@
 .PostItems {
+  max-inline-size: var(--size-content-3);
+  margin-inline: auto;
   display: grid;
   grid-template-columns: 100%;
   justify-content: center;

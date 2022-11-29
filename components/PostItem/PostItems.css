@@ -4,80 +4,21 @@
   display: grid;
   grid-template-columns: 100%;
   justify-content: center;
-  gap: var(--size-2);
-  padding-block: var(--size-2);
+  justify-items: start; 
+  gap: var(--size-fluid-3);
   list-style-type: none;
   padding-inline-start: 0;
+  padding-block-end: var(--size-10);
 
   @media (--md-n-above) {
-    grid-template-columns:var(--size-content-2);
+    grid-template-columns: var(--size-content-2);
   }
 
   @media (--lg-n-above) {
-    grid-template-columns:var(--size-content-3);
+    grid-template-columns: var(--size-content-3);
   }
 
   & > li {
     max-inline-size: inherit;
-  }
-}
-
-.PostItem {
-  --_avatar-column-size: 50px;
-
-  display: grid;
-  grid-template-columns: var(--_avatar-column-size) 1fr;
-  gap: var(--size-2) var(--size-5);
-  background: var(--surface-1);
-  box-shadow: var(--shadow-5);
-  padding-block: var(--size-4);
-  padding-inline: var(--size-5);
-  border-radius: var(--radius-conditional-3);
-
-  & > * {
-    grid-column: 2;
-  }
-
-  & > .Persona {
-    grid-column: 1;
-    grid-row: span 2;
-  }
-
-  & > a {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  & h3 {
-    font-size: var(--font-size-2);
-  }
-
-  & > figure {
-    margin-block: var(--size-3);
-  }
-
-  & > header {
-    align-items: baseline;
-    justify-content: space-between;
-    color: var(--text-2);
-
-    & time {
-      font-size: var(--font-size-0);
-    }
-
-    & .username {
-      color: var(--text-1);
-      font-weight: var(--font-weight-7);
-    }
-  }
-
-  & pre {
-    background: var(--gray-0);
-
-    @media (--OSdark) {
-      background: var(--gray-11);
-    }
   }
 }

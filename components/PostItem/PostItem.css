@@ -1,0 +1,70 @@
+.PostItem {
+  --_avatar-column-size: 40px;
+
+  display: grid;
+  grid-template-columns: var(--_avatar-column-size) 1fr;
+  gap: var(--size-2) var(--size-3);
+  background: var(--surface-1);
+  box-shadow: var(--shadow-5);
+  padding: var(--size-3);
+  border-radius: var(--radius-3);
+  margin-inline: var(--size-inline-1);
+
+  @media (--md-n-above) {
+    --_avatar-column-size: 50px;
+    gap: var(--size-2) var(--size-5);
+    padding-block: var(--size-4);
+    padding-inline: var(--size-5);
+  }
+
+  /* todo: remove share icon from tweet when in detail */
+
+  & > * {
+    grid-column: 2;
+  }
+
+  & > .Persona {
+    grid-column: 1;
+    grid-row: span 2;
+  }
+
+  & > footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: var(--size-3);
+    margin-block-start: var(--size-3);
+  }
+
+  & h3 {
+    font-size: var(--font-size-2);
+  }
+
+  & > figure {
+    margin-block: var(--size-3);
+  }
+
+  & > header {
+    align-items: baseline;
+    justify-content: space-between;
+    color: var(--text-2);
+
+    & time {
+      font-size: var(--font-size-0);
+    }
+
+    & .username {
+      color: var(--text-1);
+      font-weight: var(--font-weight-7);
+    }
+  }
+
+  & pre {
+    background: var(--gray-0);
+
+    @media (--OSdark) {
+      background: var(--gray-11);
+    }
+  }
+}

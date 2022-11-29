@@ -18,3 +18,9 @@
   justify-items: start;
   gap: var(--size-3);
 }
+
+:is(.visually-hidden, .sr-only) {
+  inline-size: 0;
+  block-size: 0;
+  overflow: hidden;
+}

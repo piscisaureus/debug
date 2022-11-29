@@ -6,7 +6,7 @@ import MediaScroller from '~/components/MediaScroller/MediaScroller.tsx'
 
 export default function Tweet({post}) {
   return (
-    <li class="PostItem">
+    <li tabindex="0" class="PostItem" data-tags={post.tags.join(' ')}>
       <Persona persona={post.persona}/>
       <header class="inline-wrap">
         <span>
@@ -15,10 +15,23 @@ export default function Tweet({post}) {
         </span>
         <time>{relDate(post.publishedAt)}</time>
       </header>
-      <Tags tags={post.tags}/>
+      <Tags tags={post.tags.filter(tag => !tag.includes('tweet'))}/>
       <p dangerouslySetInnerHTML={{ __html: post.content }}/>
-      {post.media.length && <MediaScroller media={post.media}/>}
-      <a href={`/${post.slug}`}>Share</a>
+      {post.media?.length && <MediaScroller media={post.media}/>}
+      <footer>
+        <a href={`/${post.slug}`}>
+          <div class="sr-only">Share a direct link to this post</div>
+          <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">
+            <use href="#share"/>
+          </svg>
+        </a>
+        <a href="#">
+          <div class="sr-only">Like this post</div>
+          <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">
+            <use href="#heart"/>
+          </svg>
+        </a>
+      </footer>
     </li>
   )
 }

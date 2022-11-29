@@ -3,25 +3,28 @@
   gap: var(--size-3);
   padding-block-end: var(--size-3);
   overflow-x: auto;
-  overscroll-behavior: contain;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
   aspect-ratio: var(--ratio-widescreen);
 
+  & > overscroll-effect {
+    inline-size: 25%;
+    flex-shrink: 0;
+  }
+
+  /* todo: if 1 child, fit it's width */
+
   @nest .PostItem & {
-    --_inline-offset: calc(var(--size-5) * 2 + var(--_avatar-column-size));
+    --_inline-offset: calc(var(--size-inline-1) * 2 + var(--_avatar-column-size));
     
-    scroll-snap-type: x mandatory;
     grid-column: span 2;
-    margin-inline: calc(var(--size-5) * -1);
+    margin-inline: calc(var(--size-inline-1) * -1);
     padding-inline-start: var(--_inline-offset);
     scroll-padding-inline: var(--_inline-offset);
 
     & :is(img,video) {
       scroll-snap-align: start;
-    }
-
-    & > overscroll-effect {
-      inline-size: 75%;
-      flex-shrink: 0;
+      max-inline-size: min-content;
     }
   }
 }

@@ -6,7 +6,7 @@ import Persona from '~/components/Persona/Persona.tsx'
 
 export default function BlogPost({post}) {
   return (
-    <li class="PostItem">
+    <li tabindex="0" class="PostItem" data-tags={post.tags.join(' ')}>
       <Persona persona={post.persona}/>
       <header class="inline-wrap">
         <span>
@@ -15,7 +15,7 @@ export default function BlogPost({post}) {
         </span>
         <time>{relDate(post.publishedAt)}</time>
       </header>
-      <Tags tags={post.tags}/>
+      <Tags tags={post.tags.filter(tag => !tag.includes('blog'))}/>
       {post.hero &&
         <figure>
           <Pic 

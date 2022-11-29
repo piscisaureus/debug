@@ -3,6 +3,7 @@
   max-inline-size: calc(var(--size-content-3) * 1.5);
   margin-inline: auto;
   padding-block-end: var(--size-fluid-4);
+  padding-inline: var(--size-inline-1);
 
   & > header {
     column-gap: var(--size-8);
@@ -11,21 +12,30 @@
     margin-block-end: var(--size-fluid-4);
     margin-inline: var(--size-3);
 
+    @media (--md-n-below) {
+      justify-items: end;
+    }
+
     & > * {
       grid-column: 2;
     }
 
     & > img {
-      --_avatar-size: calc(var(--size-content-1) * .75);
+      --_avatar-size: calc(var(--size-content-1) * .5);
       grid-column: 1;
-      grid-row: span 4;
+      grid-row: span 3;
       inline-size: var(--_avatar-size);
       margin-block-start: calc(var(--_avatar-size) / 2 * -1);
       outline: var(--size-2) solid var(--surface-document);
+
+      @media (--md-n-above) {
+        --_avatar-size: calc(var(--size-content-1) * .75);
+      }
     }
 
     & > time {
       padding-block-start: var(--size-3);
+      color: var(--text-2);
     }
 
     & > p {
@@ -34,9 +44,12 @@
       padding-block: var(--size-3);
       padding-inline: var(--size-5);
       background-color: var(--surface-1);
-      border: var(--border-size-1) solid var(--surface-2);
       border-radius: var(--radius-2);
       box-shadow: var(--shadow-2);
+
+      @media (--md-n-below) {
+        grid-column: -1/1;
+      }
     }
   }
 
@@ -44,10 +57,19 @@
     background: var(--surface-1);
     border-radius: var(--radius-3);
     padding: var(--size-7);
+    gap: var(--size-7);
 
     & img {
       justify-self: center;
       border-radius: var(--radius-3);
     }
+
+    & p {
+      font-size: var(--font-size-3);
+    }
+  }
+
+  & pre {
+    max-inline-size: 100%;
   }
 }

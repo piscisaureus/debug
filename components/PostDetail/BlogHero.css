@@ -1,7 +1,6 @@
 .BlogHero {
   display: flex;
   justify-content: center;
-  margin-block-start: var(--size-3);
   margin-inline: var(--size-3);
 
   @media (--md-n-above) {

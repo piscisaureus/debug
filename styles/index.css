@@ -10,11 +10,20 @@
 :root {
   --surface-document: var(--surface-2);
   --surface-1: white;
+  --size-inline-1: var(--size-3);
 
   background: var(--surface-document);
 
   @media (--OSdark) {
     --surface-document: var(--gray-12);
     --surface-1: var(--gray-10);
+  }
+
+  @media (--md-n-above) {
+    --size-inline-1: var(--size-5);
+  }
+
+  @media (--lg-n-above) {
+    --size-inline-1: var(--size-7);
   }
 }

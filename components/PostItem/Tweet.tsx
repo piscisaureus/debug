@@ -21,7 +21,7 @@ export default function Tweet({post}) {
       {
         post.media?.length && post.media?.length === 1
           ? <figure>
-              <img src={post.media[0].src}/>
+              <Pic {...post.media[0]}/>
             </figure>
           : post.media?.length && <MediaScroller media={post.media}/>
       }

@@ -5,10 +5,10 @@ const urlbase = 'https://res.cloudinary.com/dnpmdb8r8/image/upload'
 const lqip = 'e_blur:2000,c_thumb,f_auto,q_auto:low'
 
 export interface Pic {
-  height: number,
-  width: number;
   src: string;
   alt?: string;
+  height?: number,
+  width?: number;
   class?: string;
 }
 
@@ -22,8 +22,6 @@ export default function Pic(props:Pic) {
     preloader.src = full
     preloader.onload = () => setLoaded(1)  
   }
-
-  // todo: look to see if it's a cloudinary image
 
   return (
     <img 
@@ -39,10 +37,15 @@ export default function Pic(props:Pic) {
 }
 
 export function picPaths({src, cloudinary}:{src:string, cloudinary?:string}) {
-  return {
-    full: cloudinary 
-            ? [urlbase, cloudinary, src].join('/') 
-            : [urlbase, src].join('/'),
-    placeholder: [urlbase, lqip, src].join('/'),
-  }
+  const isCloudinary = src.indexOf('argyleink/') === 0
+
+  if (!isCloudinary)
+    return {full: src, placeholder: src}
+  else
+    return {
+      full: cloudinary 
+              ? [urlbase, cloudinary, src].join('/') 
+              : [urlbase, src].join('/'),
+      placeholder: [urlbase, lqip, src].join('/'),
+    }
 }

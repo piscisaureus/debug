@@ -1,10 +1,11 @@
+import Pic from '~/islands/Pic.tsx'
+
 export default function MediaScroller({media}) {
   return (
     <div class="MediaScroller">
       <overscroll-effect/>
-      {media.map(item => (
-        // todo: if pic
-        <img loading="lazy" {...item}/>
+      {media.map((item:Pic) => (
+        <Pic {...item}/>
       ))}
       <overscroll-effect/>
     </div>

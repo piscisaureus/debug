@@ -5,8 +5,8 @@
 @import "utilities.css" layer(base.utilities);
 @import "markdown.css" layer(components.markdown);
 @import "syntax-highlighting.css" layer(components.syntax);
-@import-glob "../components/**/*.css";
-@import-glob "../islands/**/*.css";
+@import-glob "../components/**/*.css" layer(components.fresh);
+@import-glob "../islands/**/*.css" layer(components.fresh);
 
 :root {
   --surface-document: var(--surface-2);

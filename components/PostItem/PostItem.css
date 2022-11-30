@@ -6,15 +6,15 @@
   gap: var(--size-2) var(--size-3);
   background: var(--surface-1);
   box-shadow: var(--shadow-5);
-  padding: var(--size-3);
+  padding: var(--size-inline-1);
   border-radius: var(--radius-3);
+  border: var(--border-size-1) solid transparent;
   margin-inline: var(--size-inline-1);
 
   @media (--md-n-above) {
     --_avatar-column-size: 50px;
     gap: var(--size-2) var(--size-5);
     padding-block: var(--size-4);
-    padding-inline: var(--size-5);
   }
 
   /* todo: remove share icon from tweet when in detail */
@@ -41,8 +41,19 @@
     font-size: var(--font-size-2);
   }
 
+  & code {
+    padding-block: .1rem var(--size-1);
+    padding-inline: var(--size-1);
+  }
+
   & > figure {
     margin-block: var(--size-3);
+  }
+
+  & > section {
+    margin-block: var(--size-2) var(--size-4);
+    display: grid;
+    gap: var(--size-3);
   }
 
   & > header {
@@ -65,6 +76,22 @@
 
     @media (--OSdark) {
       background: var(--gray-11);
+    }
+  }
+
+  &:has(figure) {
+    & > footer, & > figure, & > p {
+      grid-column: span 2;
+    }
+
+    & > figure {
+      margin-inline: calc(var(--size-inline-1) * -1);
+    }
+  }
+
+  &[data-tags*="blog"] {
+    & > footer {
+      justify-content: start;
     }
   }
 }

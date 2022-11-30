@@ -5,6 +5,10 @@
   padding-block-end: var(--size-fluid-4);
   padding-inline: var(--size-inline-1);
 
+  @nest :not(.BlogHero) + & {
+    margin-top: 25vh;
+  }
+
   & > header {
     column-gap: var(--size-8);
     row-gap: var(--size-2);
@@ -36,6 +40,7 @@
     & > time {
       padding-block-start: var(--size-3);
       color: var(--text-2);
+      line-height: 1;
     }
 
     & > p {
@@ -45,6 +50,7 @@
       padding-inline: var(--size-5);
       background-color: var(--surface-1);
       border-radius: var(--radius-2);
+      border: 1px solid transparent;
       box-shadow: var(--shadow-2);
 
       @media (--md-n-below) {
@@ -54,6 +60,7 @@
   }
 
   & > article {
+    border: 1px solid transparent;
     background: var(--surface-1);
     border-radius: var(--radius-3);
     padding: var(--size-7);

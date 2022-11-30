@@ -1,5 +1,6 @@
 import { relDate } from '~/utils/dates.ts'
 
+import Pic from '~/islands/Pic.tsx'
 import Tags from '~/components/Tags/Tags.tsx'
 import Persona from '~/components/Persona/Persona.tsx'
 import MediaScroller from '~/components/MediaScroller/MediaScroller.tsx'
@@ -16,8 +17,14 @@ export default function Tweet({post}) {
         <time>{relDate(post.publishedAt)}</time>
       </header>
       <Tags tags={post.tags.filter(tag => !tag.includes('tweet'))}/>
-      <p dangerouslySetInnerHTML={{ __html: post.content }}/>
-      {post.media?.length && <MediaScroller media={post.media}/>}
+      {post.content && <section dangerouslySetInnerHTML={{ __html: post.content }} />}
+      {
+        post.media?.length && post.media?.length === 1
+          ? <figure>
+              <img src={post.media[0].src}/>
+            </figure>
+          : post.media?.length && <MediaScroller media={post.media}/>
+      }
       <footer>
         <a href={`/${post.slug}`}>
           <div class="sr-only">Share a direct link to this post</div>

@@ -1,9 +1,10 @@
 @layer design, base, components, demo;
 
 @import "third-party.css" layer(base);
-@import "icons.css" layer(base);
-@import "utilities.css" layer(base);
-@import "markdown.css" layer(components);
+@import "icons.css" layer(base.icons);
+@import "utilities.css" layer(base.utilities);
+@import "markdown.css" layer(components.markdown);
+@import "syntax-highlighting.css" layer(components.syntax);
 @import-glob "../components/**/*.css";
 @import-glob "../islands/**/*.css";
 

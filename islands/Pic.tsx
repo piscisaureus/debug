@@ -4,18 +4,26 @@ import { IS_BROWSER } from '$fresh/runtime.ts'
 const urlbase = 'https://res.cloudinary.com/dnpmdb8r8/image/upload'
 const lqip = 'e_blur:2000,c_thumb,f_auto,q_auto:low'
 
-export default function Pic(props) {
-  const [loaded, setLoaded] = useState(0)
+export interface Pic {
+  height: number,
+  width: number;
+  src: string;
+  alt?: string;
+  class?: string;
+}
 
-  const state = {loaded: false}
-
+export default function Pic(props:Pic) {
+  const [ loaded, setLoaded ] = useState(0)
   const { full, placeholder } = picPaths(props)
 
   if (IS_BROWSER) {
+    // get image size and add the props to cloudinary mods to the full src
     const preloader = new Image()
     preloader.src = full
     preloader.onload = () => setLoaded(1)  
   }
+
+  // todo: look to see if it's a cloudinary image
 
   return (
     <img 

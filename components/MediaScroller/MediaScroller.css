@@ -25,6 +25,7 @@
     & :is(img,video) {
       scroll-snap-align: start;
       max-inline-size: min-content;
+      border-radius: var(--radius-3);
     }
   }
 }

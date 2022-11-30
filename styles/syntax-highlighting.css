@@ -1,0 +1,23 @@
+.language-css {
+  & code { color: var(--gray-6) }
+  & .hljs-selector-tag,
+  & .hljs-selector-pseudo { color: var(--link) }
+  & .hljs-attribute,
+  & .hljs-keyword,
+  & .hljs-selector-class { color: var(--link-visited) }
+  & .hljs-string { color: var(--text-1) }
+}
+
+:is(.language-html, .language-xml) {
+  & code { color: var(--gray-6) }
+  & .hljs-name { color: var(--link) }
+  & .hljs-attr { color: var(--link-visited) }
+  & .hljs-string { color: var(--text-1) }
+}
+
+.language-js {
+  & code { color: var(--gray-6) }
+  & .hljs-keyword { color: var(--link) }
+  & .hljs-variable { color: var(--link-visited) }
+  & .hljs-string { color: var(--text-1) }
+}

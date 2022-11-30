@@ -12,7 +12,7 @@ const config = {
   plugins: [
     customMediaPlugin({
       importFrom: [{
-        CustomMedia
+        customMedia: CustomMedia
       }]
     }),
     importGlob(),

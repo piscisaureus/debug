@@ -37,7 +37,7 @@ export default function Pic(props:Pic) {
 }
 
 export function picPaths({src, cloudinary}:{src:string, cloudinary?:string}) {
-  const isCloudinary = src.indexOf('argyleink/') === 0
+  const isCloudinary = src.indexOf('argyleink/') >= 0
 
   if (!isCloudinary)
     return {full: src, placeholder: src}

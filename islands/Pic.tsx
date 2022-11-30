@@ -10,6 +10,7 @@ export interface Pic {
   height?: number,
   width?: number;
   class?: string;
+  cloudinary?: string;
 }
 
 export default function Pic(props:Pic) {

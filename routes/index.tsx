@@ -27,6 +27,31 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
           {posts.map((post) => <PostItem post={post} />)}
         </ul>
       </main>
+      <style dangerouslySetInnerHTML={{ __html: `.PostItem {
+          view-timeline: el-entering-and-exiting;
+          animation: 1s linear fade-in-on-enter--fade-out-on-exit forwards;
+          animation-timeline: el-entering-and-exiting;
+        }
+        @keyframes fade-in-on-enter--fade-out-on-exit {
+          enter 0% {
+            opacity: 0;
+            transform: translateY(50%) scale(0.9);
+          }
+          enter 100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+          exit 0% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+          exit 100% {
+            opacity: 0;
+            transform: translateY(-50%) scale(0.9);
+          }
+        }
+        ` }}
+        />
     </>
   )
 }

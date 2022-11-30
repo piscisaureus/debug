@@ -17,6 +17,7 @@ export default function PageMeta({post}) {
       <link rel="preconnect" href="https://res.cloudinary.com/"/>
 
       <link rel="stylesheet" href="/style.css"/>
+      <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
       <PageIcons/>
     </>
   )

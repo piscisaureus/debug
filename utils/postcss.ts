@@ -5,6 +5,8 @@ import inlineImports from 'npm:postcss-import'
 import importUrl from 'npm:postcss-import-url'
 import importGlob from 'npm:postcss-import-ext-glob@2.1.1'
 import cssnano from 'npm:cssnano'
+import OpenProps from 'open-props'
+import jitProps from 'npm:postcss-jit-props'
 import { debounce } from '$std/async/mod.ts'
 import { CustomMedia } from 'npm:open-props/esm/media'
 
@@ -21,6 +23,7 @@ const config = {
     }),
     importUrl(),
     cssNesting(),
+    jitProps(OpenProps),
     cssnano(),
   ]
 }

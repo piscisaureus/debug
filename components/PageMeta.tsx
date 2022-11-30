@@ -15,7 +15,8 @@ export default function PageMeta({post}) {
       <link rel="icon" href="/favicon.ico" sizes="any"/>
       <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
       <link rel="preconnect" href="https://res.cloudinary.com/"/>
-
+      
+      {/* <style dangerouslySetInnerHTML={{__html:`@layer design, base, components, demo;`}}></style> */}
       <link rel="stylesheet" href="/style.css"/>
       <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
       <PageIcons/>

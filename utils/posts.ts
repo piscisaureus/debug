@@ -29,10 +29,11 @@ export interface Tweet extends Post {
   media?: object[];
 }
 
+const cache = new Map()
+
 export async function getPosts(): Promise<Post[]> {
   const files = Deno.readDir("./posts")
   const promises = []
-  // todo cache dir read
 
   for await (const file of files) {
     const slug = file.name.replace(".md", "")
@@ -48,16 +49,22 @@ export async function getPosts(): Promise<Post[]> {
 
 export async function getPost(slug: string) {
   let text: string
-  console.info(`GET: posts/${slug}`)
-  // todo: pull from a cache
 
-  try {
-    text = await Deno.readTextFile(`./posts/${slug}.md`)
-  } 
-  catch (err) {
-    if (err instanceof Deno.errors.NotFound)
-      return null
-    throw err
+  if (cache.get(slug)) {
+    console.info(`GET (CACHE): posts/${slug}`)
+    text = cache.get(slug)
+  }
+  else {
+    try {
+      console.info(`GET: posts/${slug}`)
+      text = await Deno.readTextFile(`./posts/${slug}.md`)
+      cache.set(slug, text)
+    } 
+    catch (err) {
+      if (err instanceof Deno.errors.NotFound)
+        return null
+      throw err
+    }
   }
 
   const { attrs:frontmatter, body } = extract(text)

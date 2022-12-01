@@ -1,12 +1,12 @@
-@import "https://unpkg.com/open-props/normalize.min.css";
-@import "https://unpkg.com/open-props/buttons.min.css";
-@import "icons.css";
-@import "utilities.css";
+@import "https://unpkg.com/open-props/normalize.min.css" layer(base.normalize);
+/* @import "https://unpkg.com/open-props/buttons.min.css" layer(base.buttons); */
+@import "icons.css" layer(base.icons);
+@import "utilities.css" layer(base.utilities);
 
-@import "markdown.css";
-@import "syntax-highlighting.css";
-@import-glob "../components/**/*.css";
-@import-glob "../islands/**/*.css";
+@import "markdown.css" layer(components.markdown);
+@import "syntax-highlighting.css" layer(components.syntax);
+@import-glob "../components/**/*.css" layer(components.fresh);
+@import-glob "../islands/**/*.css" layer(components.fresh);
 
 :root {
   --surface-document: var(--surface-2);

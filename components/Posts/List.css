@@ -7,7 +7,7 @@
   justify-items: start; 
   gap: var(--size-fluid-3);
   list-style-type: none;
-  margin-inline: var(--size-inline-1);
+  padding-inline: var(--size-inline-1);
   padding-block-end: var(--size-10);
 
   @media (--md-n-above) {

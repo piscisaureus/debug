@@ -3,6 +3,9 @@
   justify-content: center;
   margin-inline: var(--size-3);
 
+  position: relative;
+  z-index: -1;
+
   @media (--md-n-above) {
     margin-block-start: var(--size-5);
     margin-inline: var(--size-5);

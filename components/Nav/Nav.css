@@ -7,9 +7,11 @@
   padding-block: var(--size-3);
   /* background-color: var(--surface-1); */
   /* box-shadow: var(--shadow-3); */
-  /* position: sticky;
+
+  position: sticky;
   top: 0;
-  z-index: var(--layer-1); */
+  z-index: var(--layer-1);
+  opacity: 0;
 
   & > a:first-of-type {
     flex-grow: 1;

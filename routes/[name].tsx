@@ -3,7 +3,7 @@ import { Head } from '$fresh/runtime.ts'
 
 import { getPost, Post } from '~/utils/posts.ts'
 import PageMeta from '~/components/PageMeta.tsx'
-import PostDetail from '~/components/PostDetail/PostDetail.tsx'
+import PostDetail from '~/components/Posts/Detail.tsx'
 
 export const handler: Handlers<Post[]> = {
   async GET(_req, ctx) {

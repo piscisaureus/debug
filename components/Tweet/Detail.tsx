@@ -1,5 +1,5 @@
 import Nav from '~/components/Nav/Nav.tsx'
-import Tweet from '~/components/PostItem/Tweet.tsx'
+import Tweet from '~/components/Tweet/Card.tsx'
 
 export default function TweetDetail({post}) {
   return (
@@ -16,7 +16,6 @@ export default function TweetDetail({post}) {
         </header>
         <Tweet post={post}/>
       </main>
-
       <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     </>
   )

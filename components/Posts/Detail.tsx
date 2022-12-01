@@ -1,5 +1,5 @@
-import BlogDetail from '~/components/PostDetail/BlogDetail.tsx'
-import TweetDetail from '~/components/PostDetail/TweetDetail.tsx'
+import BlogDetail from '~/components/Blog/Detail.tsx'
+import TweetDetail from '~/components/Tweet/Detail.tsx'
 
 export default function PostDetail({post}) {
   switch (post.type) {

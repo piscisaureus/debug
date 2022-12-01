@@ -38,6 +38,24 @@ export default function BlogDetail({ post }: { post: Blog }) {
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
       </main>
+      {/*todo reduced motion*/}
+      <style dangerouslySetInnerHTML={{ __html: `
+        .BlogHero {
+          animation: 1s linear blog-transition forwards;
+          animation-timeline: document-timeline;
+        }
+        @keyframes blog-transition {
+          exit 0% {
+            opacity: 1;
+            transform: scale(1);
+          }
+          exit 50%, exit 100% {
+            opacity: 0;
+            transform: scale(0.9) translateY(50%);
+          }
+        }
+        ` }}
+      />
       <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     </>
   )

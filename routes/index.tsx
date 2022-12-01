@@ -4,7 +4,7 @@ import { getPosts, Post } from '~/utils/posts.ts'
 
 import PageMeta from '~/components/PageMeta.tsx'
 import Nav from '~/components/Nav/Nav.tsx'
-import PostItem from '~/components/PostItem/PostItem.tsx'
+import PostItem from '~/components/Posts/Item.tsx'
 
 export const handler: Handlers<Post[]> = {
   async GET(_req, ctx) {
@@ -27,12 +27,14 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
           {posts.map((post) => <PostItem post={post} />)}
         </ul>
       </main>
-      <style dangerouslySetInnerHTML={{ __html: `.PostItem {
-          view-timeline: el-entering-and-exiting;
-          animation: 1s linear fade-in-on-enter--fade-out-on-exit forwards;
-          animation-timeline: el-entering-and-exiting;
+      {/*todo reduced motion*/}
+      <style dangerouslySetInnerHTML={{ __html: `
+        .PostItem {
+          view-timeline: enter-n-exit;
+          animation: 1s linear list-transition forwards;
+          animation-timeline: enter-n-exit;
         }
-        @keyframes fade-in-on-enter--fade-out-on-exit {
+        @keyframes list-transition {
           enter 0% {
             opacity: 0;
             transform: scale(0.9);
@@ -41,17 +43,15 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
             opacity: 1;
             transform: scale(1);
           }
-          exit 0% {
+          exit 75% {
             opacity: 1;
-            transform: scale(1);
           }
           exit 100% {
             opacity: 0;
-            transform: scale(0.9);
           }
         }
         ` }}
-        />
+      />
     </>
   )
 }

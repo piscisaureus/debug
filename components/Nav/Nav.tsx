@@ -17,6 +17,24 @@ export default function Nav(props) {
           <use href="#rss"/>
         </svg>
       </a>
+      <style dangerouslySetInnerHTML={{ __html: `
+        html {
+          view-timeline: document-timeline;
+        }
+        .Nav {
+          animation: 1s linear nav-transition forwards;
+          animation-timeline: document-timeline;
+        }
+        @keyframes nav-transition {
+          exit 0% {
+            opacity: 0;
+          }
+          exit 10%, exit 100% {
+            opacity: 1;
+          }
+        }
+        ` }}
+      />
     </nav>
   )
 }

@@ -37,6 +37,8 @@ export default function BlogDetail({ post }: { post: Blog }) {
           class="block-stack"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
+
+        {/*todo: <aside> of headings (see observable settings page)*/}
       </main>
       {/*todo reduced motion*/}
       <style dangerouslySetInnerHTML={{ __html: `

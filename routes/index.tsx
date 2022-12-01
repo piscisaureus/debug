@@ -22,7 +22,9 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
         <PageMeta post={{title:"Adam Argyle"}}/>
       </Head>
       <Nav/>
+      {/*todo: list.tsx component*/}
       <main>
+        {/*todo: <aside> with topics and tags */}
         <ul class="PostItems">
           {posts.map((post) => <PostItem post={post} />)}
         </ul>

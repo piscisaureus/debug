@@ -9,7 +9,7 @@
   padding: var(--size-inline-1);
   border-radius: var(--radius-3);
   border: var(--border-size-1) solid transparent;
-  margin-inline: var(--size-inline-1);
+  cursor: auto;
 
   @media (--md-n-above) {
     --_avatar-column-size: 50px;

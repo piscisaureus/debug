@@ -35,19 +35,19 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
         @keyframes fade-in-on-enter--fade-out-on-exit {
           enter 0% {
             opacity: 0;
-            transform: translateY(50%) scale(0.9);
+            transform: scale(0.9);
           }
           enter 100% {
             opacity: 1;
-            transform: translateY(0);
+            transform: scale(1);
           }
           exit 0% {
             opacity: 1;
-            transform: translateY(0);
+            transform: scale(1);
           }
           exit 100% {
             opacity: 0;
-            transform: translateY(-50%) scale(0.9);
+            transform: scale(0.9);
           }
         }
         ` }}

@@ -9,6 +9,8 @@ import PostItem from '~/components/Posts/Item.tsx'
 export const handler: Handlers<Post[]> = {
   async GET(_req, ctx) {
     const posts = await getPosts()
+    if (!posts)
+      return new Response("Post not found", { status: 404 })
     return ctx.render(posts)
   }
 }

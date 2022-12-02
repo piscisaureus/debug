@@ -17,8 +17,10 @@ tags:
 ---
 [Grid](https://developer.mozilla.org/docs/Web/CSS/grid) and 
 [Subgrid](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Subgrid) 
-layout slots with [named areas](https://developer.mozilla.org/docs/Web/CSS/grid-template-areas) are rad 🤘💀
+layout slots  
+with [named areas](https://developer.mozilla.org/docs/Web/CSS/grid-template-areas) are rad 🤘💀
 
-Place things by name like status bar, page title, search, tab bar, and home bar.  
+Placing things by name like search, tab bar, and home bar can be sweet.
 
-[Try it](https://codepen.io/argyleink/pen/gOKXKYQ) on Codepen! (experiment in Canary, Safari Tech Preview or Firefox)
+[Try it](https://codepen.io/argyleink/pen/gOKXKYQ) on Codepen!  
+(experiment in Canary, Safari Tech Preview or Firefox)

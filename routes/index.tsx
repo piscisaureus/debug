@@ -1,6 +1,6 @@
 import { Handlers, PageProps } from '$fresh/server.ts'
 import { Head } from '$fresh/runtime.ts'
-import { getPosts, Post } from '~/utils/posts.ts'
+import { getPosts, getTags, Post } from '~/utils/posts.ts'
 
 import PageMeta from '~/components/PageMeta.tsx'
 import Nav from '~/components/Nav/Nav.tsx'
@@ -17,6 +17,7 @@ export const handler: Handlers<Post[]> = {
 
 export default function BlogIndexPage(props: PageProps<Post[]>) {
   const posts = props.data
+  const tags = getTags()
 
   return (
     <>
@@ -26,7 +27,9 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
       <Nav/>
       {/*todo: list.tsx component*/}
       <main>
-        {/*todo: <aside> with topics and tags */}
+        <aside>
+          {tags.map((tag) => <a href={`#${tag}`}>{tag}</a>)}
+        </aside>
         <ul class="PostItems">
           {posts.map((post) => <PostItem post={post} />)}
         </ul>

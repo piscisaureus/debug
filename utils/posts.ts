@@ -30,6 +30,7 @@ export interface Tweet extends Post {
 }
 
 const cache = new Map()
+const unique_total_tags = new Set()
 
 export async function getPosts(): Promise<Post[]> {
   const files = Deno.readDir("./posts")
@@ -41,9 +42,12 @@ export async function getPosts(): Promise<Post[]> {
   }
 
   const posts = await Promise.all(promises) as Post[]
+
   posts.sort((a, b) => 
     b.publishedAt.getTime() - a.publishedAt.getTime())
   
+  setTagsInformation(posts)
+
   return posts
 }
 
@@ -97,4 +101,14 @@ export async function getPost(slug: string) {
       heroAlt: frontmatter.hero_alt,
     }
   }
+}
+
+function setTagsInformation(posts: Post[]) {
+  for (const post of posts)
+    for (const tag of post.tags)
+      unique_total_tags.add(tag)
+}
+
+export function getTags() {
+  return Array.from(unique_total_tags)
 }

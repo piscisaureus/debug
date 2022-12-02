@@ -18,6 +18,12 @@
     grid-template-columns: var(--size-content-3);
   }
 
+  @supports (grid-template-rows: masonry) {
+    max-inline-size: 75vw;
+    grid-template-columns: repeat(auto-fit, minmax(var(--size-content-2), 1fr));
+    grid-template-rows: masonry;
+  }
+
   & > li {
     max-inline-size: inherit;
   }

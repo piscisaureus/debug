@@ -4,7 +4,7 @@ export default function Aside(tags) {
   return (
     <aside class="TopicsAside">
       {getTags().map((tag) => 
-        <a href={`#${tag}`}>{tag}</a>)}
+        <a href={`#${tag}`}>(1) {tag}</a>)}
     </aside>
   )
 }

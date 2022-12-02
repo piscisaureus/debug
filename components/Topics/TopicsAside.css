@@ -1,0 +1,10 @@
+.TopicsAside {
+  display: inline-grid;
+  gap: var(--size-5);
+  border-inline-end: var(--border-size-2) solid var(--surface-3);
+  padding-inline-end: var(--size-5);
+
+  position: sticky;
+  top: 30vh;
+  left: var(--size-inline-1);
+}

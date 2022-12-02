@@ -1,5 +1,7 @@
 @import "https://unpkg.com/open-props/normalize.min.css" layer(base.normalize);
 /* @import "https://unpkg.com/open-props/buttons.min.css" layer(base.buttons); */
+@import "https://unpkg.com/open-props/theme.light.switch.min.css" layer(base.theme);
+@import "https://unpkg.com/open-props/theme.dark.switch.min.css" layer(base.theme);
 @import "icons.css" layer(base.icons);
 @import "utilities.css" layer(base.utilities);
 
@@ -8,23 +10,25 @@
 @import-glob "../components/**/*.css" layer(components.fresh);
 @import-glob "../islands/**/*.css" layer(components.fresh);
 
-:root {
-  --surface-document: var(--surface-2);
-  --surface-1: white;
-  --size-inline-1: var(--size-3);
+@layer overrides {
+  :root {
+    --surface-document: var(--surface-2);
+    --surface-1: white;
+    --size-inline-1: var(--size-3);
 
-  background: var(--surface-document);
+    background: var(--surface-document);
 
-  @media (--OSdark) {
-    --surface-document: var(--gray-12);
-    --surface-1: var(--gray-10);
-  }
+    &[data-theme="dark"] {
+      --surface-document: var(--gray-12);
+      --surface-1: var(--gray-10);
+    }
 
-  @media (--md-n-above) {
-    --size-inline-1: var(--size-5);
-  }
+    @media (--md-n-above) {
+      --size-inline-1: var(--size-5);
+    }
 
-  @media (--lg-n-above) {
-    --size-inline-1: var(--size-7);
+    @media (--lg-n-above) {
+      --size-inline-1: var(--size-7);
+    }
   }
 }

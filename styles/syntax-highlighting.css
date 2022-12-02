@@ -1,9 +1,9 @@
 .language-css {
   & code { color: var(--gray-6) }
-  & .hljs-selector-tag,
   & .hljs-selector-pseudo { color: var(--link) }
   & .hljs-attribute,
   & .hljs-keyword,
+  & .hljs-selector-tag,
   & .hljs-selector-class { color: var(--link-visited) }
   & .hljs-string { color: var(--text-1) }
 }

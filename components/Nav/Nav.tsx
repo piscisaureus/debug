@@ -1,3 +1,5 @@
+import ThemeSwitch from '~/components/ThemeSwitch/ThemeSwitch.tsx'
+
 export default function Nav(props) {
   return (
     <nav class="Nav">
@@ -6,6 +8,7 @@ export default function Nav(props) {
       </a>
       {/*<h1>{props?.title || 'Home'}</h1>*/}
       {/*todo: theme switch */}
+      <ThemeSwitch/>
       <a href="https://twitter.com/argyleink">
         <div class="sr-only">Follow me on Twitter</div>
         <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 30 30">
@@ -29,9 +32,11 @@ export default function Nav(props) {
         @keyframes nav-transition {
           exit 0% {
             opacity: 0;
+            transform: scale(.98);
           }
-          exit 10%, exit 100% {
+          exit 2%, exit 100% {
             opacity: 1;
+            transform: scale(1);
           }
         }
         ` }}

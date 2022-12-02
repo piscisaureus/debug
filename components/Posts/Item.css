@@ -45,7 +45,7 @@
   }
 
   & code {
-    padding-block: .1rem var(--size-1);
+    padding-block: 0;
     padding-inline: var(--size-1);
   }
 
@@ -74,10 +74,10 @@
     }
   }
 
-  & pre {
+  & pre, & code {
     background: var(--gray-0);
 
-    @media (--OSdark) {
+    @nest [data-theme="dark"] & {
       background: var(--gray-11);
     }
   }

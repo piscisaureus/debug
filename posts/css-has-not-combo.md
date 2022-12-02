@@ -6,7 +6,7 @@ tags:
   - css
 ---
 
-use `:has()` for when an element doesn't have some other element as a child, like a card without a heading 🤓
+use [`:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:has) for when an element doesn't have some other element as a child, like a card without a heading 🤓
 
 ```css
 .card {

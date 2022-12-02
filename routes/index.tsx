@@ -40,8 +40,8 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
         }
         @keyframes list-transition {
           enter 0% {
-            opacity: 0;
-            transform: scale(0.9);
+            opacity: .25;
+            transform: scale(0.75);
           }
           enter 100% {
             opacity: 1;

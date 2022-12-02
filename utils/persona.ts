@@ -1,4 +1,14 @@
 const personas = {
+  admin: {
+    img: {
+      src: "argyleink/olliolli.gif",
+      alt: "",
+      width: 382,
+      height: 382,
+    },
+    handle: "admin",
+    name: "Web Master",
+  },
   google: {
     img: {
       src: "argyleink/google-avatar.jpg",
@@ -6,8 +16,8 @@ const personas = {
       width: 400,
       height: 400,
     },
-    handle: "googler",
-    name: "Adam",
+    handle: "Google",
+    name: "DevRel",
   },
   argyleink: {
     img: {
@@ -16,8 +26,8 @@ const personas = {
       width: 382,
       height: 382,
     },
-    handle: "admin",
-    name: "Adam Argyle",
+    handle: "argyleink",
+    name: "Adam",
   },
   pops: {
     img: {
@@ -31,10 +41,10 @@ const personas = {
   },
   csspodcast: {
     img: {
-      src: "argyleink/podcast-headshot.jpg",
+      src: "argyleink/csspodcast.jpg",
       alt: "",
-      width: 1021,
-      height: 1021,
+      width: 2000,
+      height: 2000,
     },
     handle: "theCSSpodcast",
     name: "Adam",
@@ -46,7 +56,7 @@ const personas = {
       width: 1211,
       height: 681,
     },
-    handle: "GUIavatar",
+    handle: "GUIchallenges",
     name: "Adam",
   }
 }

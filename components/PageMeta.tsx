@@ -11,6 +11,7 @@ export default function PageMeta({post}) {
       <meta name="theme-color" content="Canvas" media="(prefers-color-scheme: dark)"/>
       <meta name="description" content="🙂"/>
       <meta name="color-scheme" content="dark light"/>
+      <script src="theme-switch.js"></script>
 
       <link rel="icon" href="/favicon.ico" sizes="any"/>
       <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>

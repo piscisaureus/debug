@@ -8,7 +8,11 @@ pre {
   padding: var(--size-3);
   border-radius: var(--radius-3);
 
-  @media (--OSdark) {
+  @nest [data-theme="dark"] & {
     background: var(--gray-11);
   }
+}
+
+a:has(code) {
+  text-underline-offset: 3px;
 }

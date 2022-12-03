@@ -38,8 +38,7 @@ marked.use({
       if (href.includes('codepen')) {
         return `
           <iframe 
-            height="300" 
-            style="width: 100%; aspect-ratio: var(--ratio-widescreen);" 
+            class="codepen-embed" 
             scrolling="no" 
             title="${title}" 
             src="${href}?default-tab=css%2Cresult&editable=true&theme-id=43079" 

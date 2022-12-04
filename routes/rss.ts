@@ -12,7 +12,7 @@ export const handler: Handlers<Post[]> = {
       return new Response("Feed not found", { status: 404 })
 
     return new Response(xml, {
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/rss+xml" },
     })
   }
 }

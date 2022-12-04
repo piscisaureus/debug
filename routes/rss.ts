@@ -20,10 +20,10 @@ export const handler: Handlers<Post[]> = {
 function makeRSS(posts:Post[]) {
   let feed = new RSS({
     title: 'Adam Argyle',
-    description: 'description',
+    description: 'Web design & development tips & tricks',
     feed_url: 'https://a.nerdy.dev/rss',
     site_url: 'https://a.nerdy.dev',
-    image_url: 'https://a.nerdy.dev/favicon.svg',
+    image_url: 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png',
     webMaster: 'Adam Argyle',
     copyright: new Date().getFullYear() + ' Adam Argyle',
     language: 'en',

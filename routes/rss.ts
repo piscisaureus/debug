@@ -24,7 +24,7 @@ function makeRSS(posts:Post[]) {
     feed_url: 'https://a.nerdy.dev/rss',
     site_url: 'https://a.nerdy.dev',
     image_url: 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png',
-    webMaster: 'Adam Argyle',
+    webMaster: 'atom@argyleink.com',
     copyright: new Date().getFullYear() + ' Adam Argyle',
     language: 'en',
     categories: ['CSS','HTML','JavaScript','Front-End','Design'],

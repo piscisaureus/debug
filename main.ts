@@ -8,6 +8,5 @@ import { start } from '$fresh/server.ts'
 import manifest from './fresh.gen.ts'
 import {buildStyles} from './utils/postcss.ts'
 
-buildStyles()
-
 await start(manifest, { port: 3030 });
+buildStyles()

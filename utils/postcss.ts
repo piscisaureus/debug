@@ -1,14 +1,14 @@
 import postcss from '$deno/x/postcss/mod.js'
-import cssNesting from 'npm:postcss-nesting'
-import customMediaPlugin from 'npm:postcss-custom-media'
-import inlineImports from 'npm:postcss-import@15.0.1'
-import importUrl from 'npm:postcss-import-url@7.1.0'
-import importGlob from 'npm:postcss-import-ext-glob@2.1.1'
-import cssnano from 'npm:cssnano'
+import cssNesting from 'https://esm.sh/postcss-nesting'
+import customMediaPlugin from 'https://esm.sh/postcss-custom-media@8.x.x'
+import inlineImports from 'https://esm.sh/postcss-import@15.0.1'
+import importUrl from 'https://esm.sh/postcss-import-url@7.1.0'
+import importGlob from 'https://esm.sh/postcss-import-ext-glob@2.1.1'
+// import cssnano from 'http://esm.sh/cssnano'
 import OpenProps from 'open-props'
-import jitProps from 'npm:postcss-jit-props@1.0.8'
+import jitProps from 'https://esm.sh/postcss-jit-props@1.0.8'
 import { debounce } from '$std/async/mod.ts'
-import { CustomMedia } from 'npm:open-props/esm/media'
+import { CustomMedia } from 'https://esm.sh/open-props/esm/media'
 
 const config = {
   plugins: [
@@ -27,7 +27,7 @@ const config = {
       ...OpenProps,
       layer: 'base.props',
     }),
-    cssnano(),
+    // cssnano(),
   ]
 }
 

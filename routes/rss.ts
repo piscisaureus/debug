@@ -1,6 +1,6 @@
 import { HandlerContext } from '$fresh/server.ts'
 import { getPosts, Post } from '~/utils/posts.ts'
-import RSS from 'npm:rss'
+import RSS from 'https://esm.sh/rss'
 
 export const handler: Handlers<Post[]> = {
   async GET(_req, ctx) {

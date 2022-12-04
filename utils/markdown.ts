@@ -1,21 +1,14 @@
-import * as marked from 'npm:marked'
-import hljs from 'npm:highlight.js/lib/core'
+import * as marked from 'https://unpkg.com/marked/lib/marked.esm.js'
+import * as hljs from 'https://unpkg.com/@highlightjs/cdn-assets/es/highlight.js'
 
-import javascript from 'npm:highlight.js/lib/languages/javascript'
-import css from 'npm:highlight.js/lib/languages/css'
-import html from 'npm:highlight.js/lib/languages/xml'
-
+const highlight = hljs.default.highlight
 import { picPaths } from '~/islands/Pic.tsx'
-
-hljs.registerLanguage('javascript', javascript)
-hljs.registerLanguage('css', css)
-hljs.registerLanguage('xml', html)
 
 marked.setOptions({
   highlight: (code:string, lang:string) => {
     if (!lang) return
     if (lang === 'html') lang = 'xml'
-    return hljs.highlight(code, {language: lang}).value
+    return highlight(code, {language: lang}).value
   },
 })
 

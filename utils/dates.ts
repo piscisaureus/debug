@@ -1,5 +1,5 @@
-import { formatDistance, isToday } from 'npm:date-fns'
-// import { en } from 'npm:date-fns/locale'
+import { formatDistance, isToday } from 'https://esm.sh/date-fns'
+// import { en } from 'https://unpkg.com/date-fns/esm/locale'
 
 export function relDate(date:string) {
   return isToday(new Date(date), new Date())

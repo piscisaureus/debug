@@ -11,6 +11,14 @@
 @import-glob "../components/**/*.css" layer(components.fresh);
 @import-glob "../islands/**/*.css" layer(components.fresh);
 
+@layer base.normalize {
+  p {
+    font-size: var(--font-size-3);
+    letter-spacing: var(--font-letterspacing-2);
+    font-weight: var(--font-weight-2);
+  }
+}
+
 @layer overrides {
   :root {
     --surface-document: var(--surface-2);
@@ -31,11 +39,5 @@
     @media (--lg-n-above) {
       --size-inline-1: var(--size-7);
     }
-  }
-
-  p {
-    font-size: var(--font-size-3);
-    letter-spacing: var(--font-letterspacing-2);
-    font-weight: var(--font-weight-2);
   }
 }

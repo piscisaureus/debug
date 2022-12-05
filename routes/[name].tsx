@@ -1,11 +1,11 @@
 import { Handlers, PageProps } from '$fresh/server.ts'
 import { Head } from '$fresh/runtime.ts'
 
-import { getPost, Post } from '~/utils/posts.ts'
+import { getPost, IBlog, ITweet, IPost } from '~/utils/posts.ts'
 import PageMeta from '~/components/PageMeta.tsx'
 import PostDetail from '~/components/Posts/Detail.tsx'
 // todo: custom 404 page
-export const handler: Handlers<Post[]> = {
+export const handler: Handlers<IBlog | ITweet[]> = {
   async GET(_req, ctx) {
     const post = await getPost(ctx.params.name)
     if (!post)
@@ -14,11 +14,19 @@ export const handler: Handlers<Post[]> = {
   }
 }
 
-export default function PostPage(props: PageProps<Post>) {
+export default function PostPage(props: PageProps<IBlog | ITweet>) {
+  const title = props.data.type === 'blog'
+    ? props.data.title
+    : props.data.publishedAt.toLocaleDateString("en-us", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })
+
   return (
     <>
       <Head>
-        <PageMeta post={props.post}/>
+        <PageMeta title={title} />
         <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
       </Head>
       <body>

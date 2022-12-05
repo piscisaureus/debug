@@ -1,13 +1,15 @@
-import Blog from '~/components/Blog/Card.tsx'
-import Tweet from '~/components/Tweet/Card.tsx'
+import { Blog, Tweet } from '~/utils/posts.ts'
 
-export default function PostItem({post}) {
+import BlogCard from '~/components/Blog/Card.tsx'
+import TweetCard from '~/components/Tweet/Card.tsx'
+
+export default function PostItem({post}: {post:Blog | Tweet}) {
   switch (post.type) {
     case 'blog':
-      return <Blog post={post}/>
+      return <BlogCard post={post}/>
     case 'tweet':
-      return <Tweet post={post}/>
+      return <TweetCard post={post}/>
     default:
-      return <Tweet post={post}/>
+      return <TweetCard post={post}/>
   }
 }

@@ -1,9 +1,9 @@
-import { HandlerContext } from '$fresh/server.ts'
-import { getPosts, Post } from '~/utils/posts.ts'
+import { Handlers } from '$fresh/server.ts'
+import { getPosts, IPost } from '~/utils/posts.ts'
 import RSS from 'https://esm.sh/rss'
 
-export const handler: Handlers<Post[]> = {
-  async GET(_req, ctx) {
+export const handler: Handlers<IPost[]> = {
+  async GET() {
     // todo: cache
     const posts = await getPosts()
     const xml = makeRSS(posts).xml()
@@ -17,8 +17,8 @@ export const handler: Handlers<Post[]> = {
   }
 }
 
-function makeRSS(posts:Post[]) {
-  let feed = new RSS({
+function makeRSS(posts:IPost[]) {
+  const feed = new RSS({
     title: 'Adam Argyle',
     description: 'Web design & development tips & tricks',
     feed_url: 'https://a.nerdy.dev/rss',
@@ -29,15 +29,17 @@ function makeRSS(posts:Post[]) {
     language: 'en',
     categories: ['CSS','HTML','JavaScript','Front-End','Design'],
     pubDate: new Date(),
-    ttl: '60',
+    ttl: 60,
   })
    
-  for (let post of posts.slice(0, 10)) {
+  for (const post of posts.slice(0, 10)) {
     feed.item({
       title:  post.slug,
       description: post.content,
       url: 'https://a.nerdy.dev/'+post.slug, // link to the item
-      categories: post.tags,
+      categories: post?.tags?.length != 0
+        ? post.tags
+        : ['post'],
       author: post.persona.name,
       date: post.publishedAt,
     })

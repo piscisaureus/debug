@@ -1,38 +1,40 @@
 import { extract } from '$std/encoding/front_matter.ts'
-import parse from '~/utils/markdown.ts'
-import personas from '~/utils/persona.ts'
 
-export interface Post {
+import { ITags } from '~/components/Tags/Tags.tsx'
+import parse from '~/utils/markdown.ts'
+import personas, {IPersona} from '~/utils/persona.ts'
+
+export interface IPost {
   slug: string;
-  persona: string; // type Persona
+  persona: IPersona;
   publishedAt: Date;
-  tags?: string[]; // type?
+  tags?: ITags;
   content: string;
 }
 
-export interface Hero {
+export interface IHero {
   height: number,
   width: number;
   src: string;
   alt?: string;
 }
 
-export interface Blog extends Post {
+export interface IBlog extends IPost {
   type: 'blog',
   title: string;
   snippet?: string;
-  hero: Hero;
+  hero: IHero;
 }
 
-export interface Tweet extends Post {
+export interface ITweet extends IPost {
   type: 'tweet',
-  media?: object[];
+  media?: IHero[];
 }
 
 const cache = new Map()
 const unique_total_tags = new Set()
 
-export async function getPosts(): Promise<Post[]> {
+export async function getPosts(): Promise<IPost[]> {
   const files = Deno.readDir("./posts")
   const promises = []
 
@@ -41,7 +43,7 @@ export async function getPosts(): Promise<Post[]> {
     promises.push(getPost(slug))
   }
 
-  const posts = await Promise.all(promises) as Post[]
+  const posts = await Promise.all(promises) as IPost[]
 
   posts.sort((a, b) => 
     b.publishedAt.getTime() - a.publishedAt.getTime())
@@ -73,7 +75,7 @@ export async function getPost(slug: string) {
 
   const { attrs:frontmatter, body } = extract(text)
   const content = parse(body)
-  const persona = personas[frontmatter.persona]
+  const persona = personas.get(frontmatter.persona as string)
 
   if (!frontmatter.tags) frontmatter.tags = []
   frontmatter.tags.unshift(frontmatter.type)
@@ -83,7 +85,7 @@ export async function getPost(slug: string) {
       type: 'tweet',
       slug,
       persona,
-      publishedAt: new Date(frontmatter.published_at),
+      publishedAt: new Date(frontmatter.published_at as string),
       tags: frontmatter.tags,
       content,
       media: frontmatter.media,
@@ -94,21 +96,21 @@ export async function getPost(slug: string) {
       type: 'blog',
       slug,
       persona,
-      publishedAt: new Date(frontmatter.published_at),
+      publishedAt: new Date(frontmatter.published_at as string),
       tags: frontmatter.tags,
       title: frontmatter.title,
       content,
       snippet: frontmatter.snippet,
       hero: frontmatter.hero,
-      heroAlt: frontmatter.hero_alt,
     }
   }
 }
 
-function setTagsInformation(posts: Post[]) {
+function setTagsInformation(posts: IPost[]) {
   for (const post of posts)
-    for (const tag of post.tags)
-      unique_total_tags.add(tag)
+    if (post && post.tags)
+      for (const tag of post.tags)
+        unique_total_tags.add(tag)
 }
 
 export function getTags() {

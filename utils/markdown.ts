@@ -1,6 +1,8 @@
 import * as marked from 'https://unpkg.com/marked/lib/marked.esm.js'
 import * as hljs from 'https://unpkg.com/@highlightjs/cdn-assets/es/highlight.js'
 
+import { IHero } from '~/utils/posts.ts'
+
 const highlight = hljs.default.highlight
 import { picPaths } from '~/islands/Pic.tsx'
 
@@ -15,10 +17,10 @@ marked.setOptions({
 marked.use({
   renderer: {
     image: (href:string, title:string, text:string) => {
-      let opts = {}
+      let opts = {} as IHero
 
       if (title?.includes('$$')) {
-        const [__title,extract] = title.split('$$')
+        const [__title, extract] = title.split('$$')
 
         opts = extract.split(',')
           .reduce((acc, item) => {

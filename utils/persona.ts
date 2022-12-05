@@ -1,3 +1,11 @@
+import { IHero } from '~/utils/posts.ts'
+
+export interface IPersona {
+  img: IHero;
+  handle: string;
+  name: string;
+}
+
 const personas = {
   admin: {
     img: {
@@ -61,4 +69,4 @@ const personas = {
   }
 }
 
-export default personas
+export default new Map(Object.entries(personas))

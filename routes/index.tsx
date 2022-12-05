@@ -1,11 +1,11 @@
 import { Handlers, PageProps } from '$fresh/server.ts'
 import { Head } from '$fresh/runtime.ts'
-import { getPosts, getTags, Post } from '~/utils/posts.ts'
+import { getPosts, IPost } from '~/utils/posts.ts'
 
 import PageMeta from '~/components/PageMeta.tsx'
 import HomePage from '~/components/Home/Home.tsx'
 
-export const handler: Handlers<Post[]> = {
+export const handler: Handlers<IPost[]> = {
   async GET(_req, ctx) {
     const posts = await getPosts()
     if (!posts)
@@ -14,13 +14,13 @@ export const handler: Handlers<Post[]> = {
   }
 }
 
-export default function BlogIndexPage(props: PageProps<Post[]>) {
+export default function BlogIndexPage(props: PageProps<IPost[]>) {
   const posts = props.data
 
   return (
     <>
       <Head>
-        <PageMeta post={{title:"Adam Argyle"}}/>
+        <PageMeta title="Adam Argyle"/>
       </Head>
       <body>
         <HomePage posts={posts}/>

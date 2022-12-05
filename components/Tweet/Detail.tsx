@@ -1,10 +1,11 @@
+import { ITweet } from '~/utils/posts.ts'
 import Nav from '~/components/Nav/Nav.tsx'
 import Tweet from '~/components/Tweet/Card.tsx'
 
-export default function TweetDetail({post}) {
+export default function TweetDetail({post}:{post:ITweet}) {
   return (
     <>
-      <Nav title={post.title}/>
+      <Nav/>
 
       <main class="center-center">
         <header>

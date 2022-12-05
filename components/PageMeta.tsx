@@ -1,9 +1,9 @@
 import PageIcons from '~/components/Icons/PageIcons.tsx'
 
-export default function PageMeta({post}) {
+export default function PageMeta({title}:{title:string}) {
   return (
     <>
-      <title>{post?.title}</title>
+      <title>{title}</title>
       <meta charSet="utf-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <meta name="mobile-web-app-capable" content="yes"/>
@@ -17,7 +17,6 @@ export default function PageMeta({post}) {
       <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
       <link rel="preconnect" href="https://res.cloudinary.com/"/>
       
-      {/* <style dangerouslySetInnerHTML={{__html:`@layer design, base, components, demo;`}}></style> */}
       <link rel="stylesheet" href="/style.css"/>
       <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
       <PageIcons/>

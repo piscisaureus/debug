@@ -1,13 +1,15 @@
-import BlogDetail from '~/components/Blog/Detail.tsx'
-import TweetDetail from '~/components/Tweet/Detail.tsx'
+import { IBlog, ITweet } from '~/utils/posts.ts'
 
-export default function PostDetail({post}) {
+import Blog from '~/components/Blog/Detail.tsx'
+import Tweet from '~/components/Tweet/Detail.tsx'
+
+export default function PostDetail({post}: {post:IBlog | ITweet}) {
   switch (post.type) {
     case 'blog':
-      return <BlogDetail post={post}/>
+      return <Blog post={post}/>
     case 'tweet':
-      return <TweetDetail post={post}/>
+      return <Tweet post={post}/>
     default:
-      return <TweetDetail post={post}/>
+      return <Tweet post={post}/>
   }
 }

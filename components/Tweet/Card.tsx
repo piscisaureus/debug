@@ -1,15 +1,17 @@
 import { relDate } from '~/utils/dates.ts'
+import { ITweet } from '~/utils/posts.ts'
 
 import Pic from '~/islands/Pic.tsx'
 import Tags from '~/components/Tags/Tags.tsx'
 import Persona from '~/components/Persona/Persona.tsx'
 import MediaScroller from '~/components/MediaScroller/MediaScroller.tsx'
 
-export default function Tweet({post}) {
-  const tags = post.tags.filter(tag => !tag.includes('tweet'))
+export default function Tweet({post}:{post:ITweet}) {
+  const tags = post.tags && post.tags.filter(tag => !tag.includes('tweet'))
+  const tabindex = 0
 
   return (
-    <li tabindex="0" class="PostItem" data-tags={post.tags.join(' ')}>
+    <li tabIndex={tabindex} class="PostItem" data-tags={tags.join(' ')}>
       <Persona persona={post.persona}/>
       <header class="inline-wrap">
         <span>

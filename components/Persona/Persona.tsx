@@ -1,6 +1,7 @@
 import Pic from '~/islands/Pic.tsx'
+import { IPersona } from '~/utils/persona.ts'
 
-export default function Persona({ persona }) {
+export default function Persona({ persona }: { persona: IPersona }) {
   return (
     <Pic 
       class="Persona" 

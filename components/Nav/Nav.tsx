@@ -1,13 +1,11 @@
 import ThemeSwitch from '~/components/ThemeSwitch/ThemeSwitch.tsx'
 
-export default function Nav(props) {
+export default function Nav() {
   return (
     <nav class="Nav">
       <a href="/">
         <img src="favicon.svg" width="24" alt="A skull icon icon with a flipped up bill on a hotpink hat."/>
       </a>
-      {/*<h1>{props?.title || 'Home'}</h1>*/}
-      {/*todo: theme switch */}
       <ThemeSwitch/>
       <a href="https://twitter.com/argyleink">
         <div class="sr-only">Follow me on Twitter</div>

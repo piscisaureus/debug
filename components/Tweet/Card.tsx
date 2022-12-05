@@ -6,6 +6,8 @@ import Persona from '~/components/Persona/Persona.tsx'
 import MediaScroller from '~/components/MediaScroller/MediaScroller.tsx'
 
 export default function Tweet({post}) {
+  const tags = post.tags.filter(tag => !tag.includes('tweet'))
+
   return (
     <li tabindex="0" class="PostItem" data-tags={post.tags.join(' ')}>
       <Persona persona={post.persona}/>
@@ -16,7 +18,7 @@ export default function Tweet({post}) {
         </span>
         <time>{relDate(post.publishedAt)}</time>
       </header>
-      <Tags tags={post.tags.filter(tag => !tag.includes('tweet'))}/>
+      {tags.length > 0 && <Tags tags={tags}/>}
       {post.content && <section dangerouslySetInnerHTML={{ __html: post.content }} />}
       {
         post.media?.length && post.media?.length === 1

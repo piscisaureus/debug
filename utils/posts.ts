@@ -74,6 +74,8 @@ export async function getPost(slug: string) {
   const { attrs:frontmatter, body } = extract(text)
   const content = parse(body)
   const persona = personas[frontmatter.persona]
+
+  if (!frontmatter.tags) frontmatter.tags = []
   frontmatter.tags.unshift(frontmatter.type)
 
   if (frontmatter.type === 'tweet') {

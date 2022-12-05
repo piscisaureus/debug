@@ -22,5 +22,5 @@ with [named areas](https://developer.mozilla.org/docs/Web/CSS/grid-template-area
 
 Placing things by name like search, tab bar, and home bar can be sweet.
 
-[Try it](https://codepen.io/argyleink/pen/gOKXKYQ) on Codepen!  
-(experiment in Canary, Safari Tech Preview or Firefox)
+[Try it](https://codepen.io/argyleink/pen/gOKXKYQ)  
+<small>(experiment in Canary, Safari Tech Preview or Firefox)</small>

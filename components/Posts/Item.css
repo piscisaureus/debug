@@ -82,6 +82,30 @@
     }
   }
 
+  & blockquote {
+    border-color: var(--surface-2);
+    padding-block-end: 0;
+
+    &::before {
+      content: '❞';
+      display: flex;
+      color: var(--surface-4);
+      font-size: var(--font-size-8);
+      line-height: .5;
+    }
+  }
+
+  & cite {
+    display: inline-block;
+    border: none;
+    padding-inline: 0;
+    margin-block-start: var(--size-3);
+
+    &::before {
+      content: '~ ';
+    }
+  }
+
   &:has(figure) {
     & > footer, & > figure, & > p {
       grid-column: span 2;

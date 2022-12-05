@@ -5,6 +5,7 @@
 @import "icons.css" layer(base.icons);
 @import "utilities.css" layer(base.utilities);
 
+@import "links.css" layer(components.links);
 @import "markdown.css" layer(components.markdown);
 @import "syntax-highlighting.css" layer(components.syntax);
 @import-glob "../components/**/*.css" layer(components.fresh);
@@ -30,5 +31,11 @@
     @media (--lg-n-above) {
       --size-inline-1: var(--size-7);
     }
+  }
+
+  p {
+    font-size: var(--font-size-3);
+    letter-spacing: var(--font-letterspacing-2);
+    font-weight: var(--font-weight-2);
   }
 }

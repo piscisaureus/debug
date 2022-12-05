@@ -1,5 +1,6 @@
 .TopicsAside {
   display: inline-grid;
+  display: none;
   gap: var(--size-5);
   border-inline-end: var(--border-size-2) solid var(--surface-3);
   padding-inline-end: var(--size-5);

@@ -17,4 +17,4 @@ use [`:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:has) for when a
 }
 ```
 
-try on [Codepen](https://codepen.io/argyleink/pen/yLExaLy)!
+[Codepen](https://codepen.io/argyleink/pen/yLExaLy)

@@ -1,0 +1,22 @@
+a {
+  &:where(
+    [href*="github.com"],
+    [href*="css-tricks.com"],
+    [href*="codepen.io"],
+    [href*="uxdesign.cc"],
+    [href*="web.dev"],
+    [href*="developer.mozilla.org"]
+  ) {
+    padding-inline-start: var(--size-7);
+    background-size: var(--size-4) var(--size-4);
+    background-repeat: no-repeat;
+    background-position: calc(var(--size-4) / 4) center;
+  }
+
+  &[href*="github.com"]{ background-image: url(https://www.google.com/s2/favicons?domain=github.com) }
+  &[href*="css-tricks.com"]{ background-image: url(https://www.google.com/s2/favicons?domain=css-tricks.com) }
+  &[href*="codepen.io"]{ background-image: url(https://www.google.com/s2/favicons?domain=codepen.io) }
+  &[href*="uxdesign.cc"] { background-image: url(https://www.google.com/s2/favicons?domain=uxdesign.cc) }
+  &[href*="web.dev"] { background-image: url(https://www.google.com/s2/favicons?domain=web.dev) }
+  &[href*="developer.mozilla.org"] { background-image: url(https://www.google.com/s2/favicons?domain=developer.mozilla.org) }
+}

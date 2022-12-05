@@ -7,12 +7,10 @@ tags:
 ---
 
 a design tool is like a workspace with 
-pre-squeezed paints ready.. so convenient!
+pre-squeezed paints ready.
 
 bummer is..  
-who picked that brand of paint?  
-what if it's low end?  
-how does one inquire about more brands?  
+many artists have a preference in their paint and ink brands. 
 
-many artists have a preference in their paint and ink brands, 
-graphic designers don't tho?
+soon web browsers will offer the choice,
+will graphic design tools??

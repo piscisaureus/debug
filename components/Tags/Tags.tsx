@@ -1,9 +1,5 @@
 export interface ITags extends Array<string> {
-  tags: ITag[]
-}
-
-export interface ITag {
-  tag: string
+  tags: string[]
 }
 
 export default function Tags({tags}:{tags:ITags}) {

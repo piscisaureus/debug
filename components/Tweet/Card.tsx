@@ -1,5 +1,7 @@
 import { relDate } from '~/utils/dates.ts'
+
 import { ITweet } from '~/utils/posts.ts'
+import { ITags } from '~/components/Tags/Tags.tsx'
 
 import Pic from '~/islands/Pic.tsx'
 import Tags from '~/components/Tags/Tags.tsx'
@@ -7,7 +9,7 @@ import Persona from '~/components/Persona/Persona.tsx'
 import MediaScroller from '~/components/MediaScroller/MediaScroller.tsx'
 
 export default function Tweet({post}:{post:ITweet}) {
-  const tags = post.tags && post.tags.filter(tag => !tag.includes('tweet'))
+  const tags = post.tags ? post.tags.filter(tag => !tag.includes('tweet')) : []
   const tabindex = 0
 
   return (
@@ -20,7 +22,7 @@ export default function Tweet({post}:{post:ITweet}) {
         </span>
         <time>{relDate(post.publishedAt)}</time>
       </header>
-      {tags.length > 0 && <Tags tags={tags}/>}
+      {tags.length > 0 && <Tags tags={tags as ITags}/>}
       {post.content && <section dangerouslySetInnerHTML={{ __html: post.content }} />}
       {
         post.media?.length && post.media?.length === 1

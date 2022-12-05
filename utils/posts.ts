@@ -73,7 +73,7 @@ export async function getPost(slug: string) {
     }
   }
 
-  const { attrs:frontmatter, body } = extract(text)
+  const { attrs:frontmatter, body }: {attrs:any, body:string} = extract(text)
   const content = parse(body)
   const persona = personas.get(frontmatter.persona as string)
 

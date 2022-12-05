@@ -5,12 +5,12 @@ import { getPost, IBlog, ITweet, IPost } from '~/utils/posts.ts'
 import PageMeta from '~/components/PageMeta.tsx'
 import PostDetail from '~/components/Posts/Detail.tsx'
 // todo: custom 404 page
-export const handler: Handlers<IBlog | ITweet[]> = {
+export const handler: Handlers<IBlog | ITweet> = {
   async GET(_req, ctx) {
     const post = await getPost(ctx.params.name)
     if (!post)
       return new Response("Post not found", { status: 404 })
-    return ctx.render(post)
+    return ctx.render(post as IBlog | ITweet)
   }
 }
 

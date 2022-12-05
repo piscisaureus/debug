@@ -21,22 +21,35 @@ function makeRSS(posts:IPost[]) {
   const feed = new RSS({
     title: 'Adam Argyle',
     description: 'Web design & development tips & tricks',
-    feed_url: 'https://a.nerdy.dev/rss',
-    site_url: 'https://a.nerdy.dev',
+    feed_url: 'https://nerd.deno.dev/rss',
+    site_url: 'https://nerd.deno.dev',
     image_url: 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png',
-    webMaster: 'atom@argyleink.com',
+    webMaster: 'Adam Argyle: atom@argyleink.com',
     copyright: new Date().getFullYear() + ' Adam Argyle',
     language: 'en',
     categories: ['CSS','HTML','JavaScript','Front-End','Design'],
     pubDate: new Date(),
     ttl: 60,
+    custom_namespaces: {
+      'webfeeds': 'http://webfeeds.org/rss/1.0'
+    },
+    custom_elements: [
+      {'webfeeds:logo': 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png'},
+      {'webfeeds:icon': 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png'},
+      {'webfeeds:cover image': 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png'},
+      {'webfeeds:accentColor': '#000000'},
+      {'webfeeds:related': [
+        {'itunes:layout': 'card'},
+        {'itunes:target': 'browser'}
+      ]},
+    ]
   })
    
   for (const post of posts.slice(0, 10)) {
     feed.item({
-      title:  post.slug,
+      title:  post.slug.replaceAll('-', ' '),
       description: post.content,
-      url: 'https://a.nerdy.dev/'+post.slug, // link to the item
+      url: 'https://nerd.deno.dev/'+post.slug, // link to the item
       categories: post?.tags?.length != 0
         ? post.tags
         : ['post'],

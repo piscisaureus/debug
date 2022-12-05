@@ -24,6 +24,25 @@ export default function BlogIndexPage(props: PageProps<IPost[]>) {
       </Head>
       <body>
         <HomePage posts={posts}/>
+        <script dangerouslySetInnerHTML={{ __html: `
+          document.querySelectorAll('.PostItem').forEach((post) => {
+            post.onclick = async e => {
+              if (!e.target.classList.contains('PostItem')) return
+
+              post.style.viewTransitionName = 'post-item'
+              
+              if (document.startViewTransition) {
+                document.startViewTransition(() => {
+                  window.location.href = e.target.querySelector('footer a:first-of-type').getAttribute('href')
+                })
+              }
+              else {
+                window.location.href = e.target.querySelector('footer a:first-of-type').getAttribute('href')
+              }
+            }
+          })
+        `}}>
+        </script>
       </body>
     </>  
   )

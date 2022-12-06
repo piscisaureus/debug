@@ -1,10 +1,10 @@
-import { Post } from '~/utils/posts.ts'
+import { IPost, IBlog, INote } from '~/utils/posts.ts'
 
 import Nav from '~/components/Nav/Nav.tsx'
 import PostItem from '~/components/Posts/Item.tsx'
 import TopicsAside from '~/components/Topics/Aside.tsx'
 
-export default function Home({ posts }: { posts: Post[] }) {
+export default function Home({ posts }: { posts: IPost[] }) {
   return (
     <>
       <Nav/>
@@ -14,12 +14,21 @@ export default function Home({ posts }: { posts: Post[] }) {
         <ul class="PostList">
           {posts.map((post) => 
             <li>
-              <PostItem post={post} />
+              <PostItem post={post as IBlog | INote} />
             </li>
           )}
         </ul>
       </main>
       {/*todo reduced motion*/}
+      <script dangerouslySetInnerHTML={{ __html: `
+        document.querySelectorAll('.PostItem').forEach((post) => {
+          post.onclick = async e => {
+            if (e.target.nodeName === 'A' || e.target.closest('a')) return
+            window.location.href = post.querySelector('footer a:first-of-type').getAttribute('href')
+          }
+        })
+      `}}>
+      </script>
       <style dangerouslySetInnerHTML={{ __html: `
         .PostItem {
           view-timeline: enter-n-exit;

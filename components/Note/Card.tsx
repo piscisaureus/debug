@@ -13,7 +13,7 @@ export default function Note({post}:{post:INote}) {
   const tabindex = 0
 
   return (
-    <article tabIndex={tabindex} class="PostItem" data-tags={tags.join(' ')}>
+    <article class="PostItem" style={`view-transition-name: ${post.slug}`} tabIndex={tabindex} data-tags={tags.join(' ')}>
       <Persona persona={post.persona}/>
       <header class="inline-wrap">
         <span>

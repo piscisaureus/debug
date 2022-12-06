@@ -12,15 +12,15 @@
 @import-glob "../islands/**/*.css" layer(components.fresh);
 
 @layer base.normalize {
+  body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+
   p {
     font-size: var(--font-size-3);
     letter-spacing: var(--font-letterspacing-2);
     font-weight: var(--font-weight-2);
-  }
-
-  body {
-    display: grid;
-    grid-template-rows: auto 1fr;
   }
 }
 
@@ -46,3 +46,20 @@
     }
   }
 }
+
+/* ::view-transition-new(root) {
+  animation: var(--animation-fade-out), var(--animation-slide-out-right);
+} */
+/* ::view-transition-new(root) {
+  animation: var(--animation-fade-out), var(--animation-scale-down);
+} */
+
+/* ::view-transition-old(*),
+::view-transition-new(*) {
+  animation-duration: 2s;
+} */
+
+/* ::view-transition-new(graphic-design-tool-paint-brands),
+::view-transition-old(graphic-design-tool-paint-brands) {
+  animation-timing-function: cubic-bezier(.5,1.25,.75,1.25);
+} */

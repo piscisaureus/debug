@@ -12,14 +12,6 @@
   cursor: auto;
   contain: layout;
 
-  &:is(:focus, :focus-within) {
-    view-transition-name: post-item;
-  }
-
-  @nest main > & {
-    view-transition-name: post-item;
-  }
-
   @media (--md-n-above) {
     --_avatar-column-size: 50px;
     gap: var(--size-2) var(--size-5);

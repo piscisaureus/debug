@@ -1,7 +1,6 @@
 import { getTags } from '~/utils/posts.ts'
-import { ITags } from '~/components/Tags/Tags.tsx'
 
-export default function Aside(tags:ITags[]) {
+export default function Aside() {
   return (
     <aside class="TopicsAside">
       {getTags().map((tag) => 

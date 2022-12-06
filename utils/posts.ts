@@ -27,7 +27,7 @@ export interface IBlog extends IPost {
 }
 
 export interface INote extends IPost {
-  type: 'Note',
+  type: 'note',
   media?: IHero[];
 }
 

@@ -29,7 +29,7 @@ export default function BlogIndexPage(props: PageProps<IPost[]>) {
             post.onclick = async e => {
               if (!e.target.classList.contains('PostItem')) return
 
-              post.style.viewTransitionName = 'post-item'
+              // post.style.viewTransitionName = 'post-item'
               
               if (document.startViewTransition) {
                 document.startViewTransition(() => {

@@ -1,10 +1,7 @@
-import { useState } from "preact/hooks"
-import { IS_BROWSER } from '$fresh/runtime.ts'
-
 export default function ThemeSwitch() {
   return (
     <button 
-      class="ThemeSwitch" 
+      class="ThemeSwitch icon-button" 
       id="theme-toggle" 
       title="Toggles light & dark" 
       aria-label="auto" 

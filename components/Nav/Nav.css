@@ -1,7 +1,7 @@
 .Nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
   gap: var(--size-3);
   padding-inline: var(--size-inline-1);
   padding-block: var(--size-3);
@@ -14,7 +14,7 @@
   contain: layout;
 
   & > a:first-of-type {
-    flex-grow: 1;
+    margin-inline-end: auto;
   }
 
   /* &::before {

@@ -34,7 +34,7 @@ export default function BlogPost({post}:{post:IBlog}) {
       }
       <p>{post.snippet}</p>
       <footer>
-        <a href={`/${post.slug}`}>Full article</a>
+        <a href={`/${post.slug}`} class="icon-button">Full article</a>
       </footer>
     </article>
   )

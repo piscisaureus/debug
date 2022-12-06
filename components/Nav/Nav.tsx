@@ -3,11 +3,11 @@ import ThemeSwitch from '~/components/ThemeSwitch/ThemeSwitch.tsx'
 export default function Nav() {
   return (
     <nav class="Nav">
-      <a href="/">
+      <a href="/" class="icon-button">
         <img src="favicon.svg" width="24" alt="A skull icon icon with a flipped up bill on a hotpink hat."/>
       </a>
       <ThemeSwitch/>
-      <a href="/rss">
+      <a href="/rss" class="icon-button">
         <div class="sr-only">Follow my RSS feed</div>
         <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">
           <use href="#rss"/>

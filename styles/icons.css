@@ -1,3 +1,13 @@
 .filled-icon {
   fill: var(--text-2);
 }
+
+.icon-button {
+  padding: var(--size-2);
+  aspect-ratio: var(--ratio-square);
+
+  &:hover {
+    box-shadow: inset 0 0 5em var(--surface-2);
+    border-radius: var(--radius-round);
+  }
+}

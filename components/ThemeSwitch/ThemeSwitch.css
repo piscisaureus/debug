@@ -1,11 +1,11 @@
 .ThemeSwitch {
-  --size: 20px;
+  --size: 40px;
   --icon-fill: var(--text-2);
   --icon-fill-hover: var(--text-1);
 
   background: none;
   border: none;
-  padding: 0;
+  padding: calc(var(--size-2) + 2px);
 
   inline-size: var(--size);
   block-size: var(--size);

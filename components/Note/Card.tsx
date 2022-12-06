@@ -32,13 +32,13 @@ export default function Note({post}:{post:INote}) {
           : post.media?.length && <MediaScroller media={post.media}/>
       }
       <footer>
-        <a href={`/${post.slug}`}>
+        <a href={`/${post.slug}`} class="icon-button">
           <div class="sr-only">Share a direct link to this post</div>
           <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">
             <use href="#share"/>
           </svg>
         </a>
-        <a href="#">
+        <a href="#" class="icon-button">
           <div class="sr-only">Like this post</div>
           <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">
             <use href="#heart"/>

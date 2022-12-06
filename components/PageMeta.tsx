@@ -1,6 +1,6 @@
 import PageIcons from '~/components/Icons/PageIcons.tsx'
 
-export default function PageMeta({title, prerenderables=[]}:{title:string, prerenderables:string[]}) {
+export default function PageMeta({title, prerenderables=[]}:{title:string, prerenderables?:string[]}) {
   return (
     <>
       <title>{title}</title>

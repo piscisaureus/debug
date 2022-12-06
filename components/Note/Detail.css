@@ -14,4 +14,8 @@
   @media (--lg-n-above) {
     grid-template-columns: var(--size-content-3);
   }
+
+  & > header {
+    text-align: center;
+  }
 }

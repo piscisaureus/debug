@@ -1,8 +1,8 @@
-import { ITweet } from '~/utils/posts.ts'
+import { INote } from '~/utils/posts.ts'
 import Nav from '~/components/Nav/Nav.tsx'
-import Tweet from '~/components/Tweet/Card.tsx'
+import Note from '~/components/Note/Card.tsx'
 
-export default function TweetDetail({post}:{post:ITweet}) {
+export default function NoteDetail({post}:{post:INote}) {
   return (
     <>
       <Nav/>
@@ -15,7 +15,7 @@ export default function TweetDetail({post}:{post:ITweet}) {
             day: "numeric",
           })}</time>
         </header>
-        <Tweet post={post}/>
+        <Note post={post}/>
       </main>
     </>
   )

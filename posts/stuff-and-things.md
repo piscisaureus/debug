@@ -1,5 +1,5 @@
 ---
-type: tweet
+type: note
 persona: argyleink
 published_at: 2022-11-23
 tags: 

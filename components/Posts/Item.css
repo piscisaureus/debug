@@ -29,7 +29,7 @@
   &:nth-child(odd)  { transform-origin: 125% 100% }
   &:nth-child(even) { transform-origin: -25% 100% }
 
-  /* todo: remove share icon from tweet when in detail */
+  /* todo: remove share icon from Note when in detail */
 
   & > * {
     grid-column: 2;

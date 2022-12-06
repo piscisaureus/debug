@@ -1,5 +1,5 @@
 ---
-type: tweet
+type: note
 persona: google
 published_at: 2022-12-6
 ---

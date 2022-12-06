@@ -1,6 +1,6 @@
 import { relDate } from '~/utils/dates.ts'
 
-import { ITweet } from '~/utils/posts.ts'
+import { INote } from '~/utils/posts.ts'
 import { ITags } from '~/components/Tags/Tags.tsx'
 
 import Pic from '~/islands/Pic.tsx'
@@ -8,8 +8,8 @@ import Tags from '~/components/Tags/Tags.tsx'
 import Persona from '~/components/Persona/Persona.tsx'
 import MediaScroller from '~/components/MediaScroller/MediaScroller.tsx'
 
-export default function Tweet({post}:{post:ITweet}) {
-  const tags = post.tags ? post.tags.filter(tag => !tag.includes('tweet')) : []
+export default function Note({post}:{post:INote}) {
+  const tags = post.tags ? post.tags.filter(tag => !tag.includes('Note')) : []
   const tabindex = 0
 
   return (

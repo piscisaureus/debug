@@ -9,7 +9,7 @@ import Persona from '~/components/Persona/Persona.tsx'
 import MediaScroller from '~/components/MediaScroller/MediaScroller.tsx'
 
 export default function Note({post}:{post:INote}) {
-  const tags = post.tags ? post.tags.filter(tag => !tag.includes('Note')) : []
+  const tags = post.tags ? post.tags.filter(tag => !tag.includes('note')) : []
   const tabindex = 0
 
   return (

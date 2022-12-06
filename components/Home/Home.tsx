@@ -11,8 +11,12 @@ export default function Home({ posts }: { posts: Post[] }) {
       {/*todo: list.tsx component*/}
       <main class="Home">
         <TopicsAside/>
-        <ul class="PostItems">
-          {posts.map((post) => <PostItem post={post} />)}
+        <ul class="PostList">
+          {posts.map((post) => 
+            <li>
+              <PostItem post={post} />
+            </li>
+          )}
         </ul>
       </main>
       {/*todo reduced motion*/}

@@ -1,0 +1,17 @@
+.PostDetail {
+  max-inline-size: var(--size-content-3);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 100%;
+  place-content: center;
+  gap: var(--size-3);
+  margin-block-end: var(--size-10);
+
+  @media (--md-n-above) {
+    grid-template-columns: var(--size-content-2);
+  }
+
+  @media (--lg-n-above) {
+    grid-template-columns: var(--size-content-3);
+  }
+}

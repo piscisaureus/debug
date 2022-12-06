@@ -17,6 +17,11 @@
     letter-spacing: var(--font-letterspacing-2);
     font-weight: var(--font-weight-2);
   }
+
+  body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
 }
 
 @layer overrides {

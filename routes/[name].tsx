@@ -27,7 +27,7 @@ export default function PostPage(props: PageProps<IBlog | ITweet>) {
     <>
       <Head>
         <PageMeta title={title} />
-        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"/>
       </Head>
       <body>
         <PostDetail post={props.data}/>

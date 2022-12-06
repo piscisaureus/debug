@@ -13,7 +13,7 @@ export default function Tweet({post}:{post:ITweet}) {
   const tabindex = 0
 
   return (
-    <li tabIndex={tabindex} class="PostItem" data-tags={tags.join(' ')}>
+    <article tabIndex={tabindex} class="PostItem" data-tags={tags.join(' ')}>
       <Persona persona={post.persona}/>
       <header class="inline-wrap">
         <span>
@@ -45,6 +45,6 @@ export default function Tweet({post}:{post:ITweet}) {
           </svg>
         </a>
       </footer>
-    </li>
+    </article>
   )
 }

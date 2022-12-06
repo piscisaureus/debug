@@ -7,7 +7,7 @@ export default function TweetDetail({post}:{post:ITweet}) {
     <>
       <Nav/>
 
-      <main class="center-center">
+      <main class="PostDetail">
         <header>
           <time>{new Date(post.publishedAt).toLocaleDateString("en-us", {
             year: "numeric",
@@ -17,7 +17,6 @@ export default function TweetDetail({post}:{post:ITweet}) {
         </header>
         <Tweet post={post}/>
       </main>
-      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     </>
   )
 }

@@ -1,4 +1,4 @@
-.PostItems {
+.PostList {
   max-inline-size: var(--size-content-3);
   margin-inline: auto;
   display: grid;

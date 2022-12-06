@@ -58,6 +58,7 @@ export default function BlogDetail({ post }: { post: Blog }) {
         }
         ` }}
       />
+      <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
     </>
   )
 }

@@ -26,8 +26,8 @@ export interface IBlog extends IPost {
   hero: IHero;
 }
 
-export interface ITweet extends IPost {
-  type: 'tweet',
+export interface INote extends IPost {
+  type: 'Note',
   media?: IHero[];
 }
 
@@ -80,9 +80,9 @@ export async function getPost(slug: string) {
   if (!frontmatter.tags) frontmatter.tags = []
   frontmatter.tags.unshift(frontmatter.type)
 
-  if (frontmatter.type === 'tweet') {
+  if (frontmatter.type === 'note') {
     return {
-      type: 'tweet',
+      type: 'note',
       slug,
       persona,
       publishedAt: new Date(frontmatter.published_at as string),

@@ -1,5 +1,5 @@
-import * as marked from 'https://unpkg.com/marked/lib/marked.esm.js'
-import * as hljs from 'https://unpkg.com/@highlightjs/cdn-assets/es/highlight.js'
+import * as marked from "https://esm.sh/marked@4.2.3/lib/marked.esm.js"
+import * as hljs from "https://esm.sh/@highlightjs/cdn-assets@11.7.0/es/highlight.js"
 
 const highlight = hljs.default.highlight
 import { picPaths } from '~/islands/Pic.tsx'

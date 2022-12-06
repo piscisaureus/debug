@@ -1,13 +1,12 @@
 import { IPost, IBlog, INote } from '~/utils/posts.ts'
 
-import Nav from '~/components/Nav/Nav.tsx'
 import PostItem from '~/components/Posts/Item.tsx'
 import TopicsAside from '~/components/Topics/Aside.tsx'
 
 export default function Home({ posts }: { posts: IPost[] }) {
   return (
     <>
-      <Nav/>
+      
       {/*todo: list.tsx component*/}
       <main class="Home">
         <TopicsAside/>
@@ -19,6 +18,7 @@ export default function Home({ posts }: { posts: IPost[] }) {
           )}
         </ul>
       </main>
+      
       {/*todo reduced motion*/}
       <script dangerouslySetInnerHTML={{ __html: `
         document.querySelectorAll('.PostItem').forEach((post) => {

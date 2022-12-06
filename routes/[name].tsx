@@ -1,9 +1,13 @@
 import { Handlers, PageProps } from '$fresh/server.ts'
 import { Head } from '$fresh/runtime.ts'
 
-import { getPost, IBlog, INote, IPost } from '~/utils/posts.ts'
+import { getPost, IBlog, INote } from '~/utils/posts.ts'
+
+import Nav from '~/components/Nav/Nav.tsx'
+import Footer from '~/components/Footer/Footer.tsx'
 import PageMeta from '~/components/PageMeta.tsx'
 import PostDetail from '~/components/Posts/Detail.tsx'
+
 // todo: custom 404 page
 export const handler: Handlers<IBlog | INote> = {
   async GET(_req, ctx) {
@@ -30,7 +34,9 @@ export default function PostPage(props: PageProps<IBlog | INote>) {
         <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"/>
       </Head>
       <body>
+        <Nav/>
         <PostDetail post={props.data}/>
+        <Footer/>
       </body>
     </>
   )

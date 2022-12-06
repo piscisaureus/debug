@@ -4,19 +4,15 @@ import Note from '~/components/Note/Card.tsx'
 
 export default function NoteDetail({post}:{post:INote}) {
   return (
-    <>
-      <Nav/>
-
-      <main class="PostDetail">
-        <header>
-          <time>{new Date(post.publishedAt).toLocaleDateString("en-us", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-          })}</time>
-        </header>
-        <Note post={post}/>
-      </main>
-    </>
+    <main class="PostDetail">
+      <header>
+        <time>{new Date(post.publishedAt).toLocaleDateString("en-us", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })}</time>
+      </header>
+      <Note post={post}/>
+    </main>
   )
 }

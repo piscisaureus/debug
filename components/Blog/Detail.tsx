@@ -1,13 +1,14 @@
-import { Blog } from '~/utils/posts.ts'
-import Nav from '~/components/Nav/Nav.tsx'
+import { IBlog } from '~/utils/posts.ts'
+
 import Persona from '~/components/Persona/Persona.tsx'
-import Tags from '~/components/Tags/Tags.tsx'
+import Tags, { ITags } from '~/components/Tags/Tags.tsx'
 import Pic from '~/islands/Pic.tsx'
 
-export default function BlogDetail({ post }: { post: Blog }) {
+export default function BlogDetail({ post }: { post: IBlog }) {
+  const tags = post.tags ? post.tags.filter(tag => !tag.includes('blog')) : []
+
   return (
     <>
-      <Nav title={post.title}/>
       {post.hero &&
         <header class="BlogHero">
           <div>
@@ -29,7 +30,7 @@ export default function BlogDetail({ post }: { post: Blog }) {
             month: "long",
             day: "numeric",
           })}</time>
-          <Tags tags={post.tags}/>
+          {tags.length > 0 && <Tags tags={tags as ITags}/>}
           {<p>{post.snippet}</p>}
         </header>
 

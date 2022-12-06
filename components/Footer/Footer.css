@@ -1,0 +1,5 @@
+.Footer {
+  flex-direction: row;
+  padding-block: var(--size-10);
+  gap: var(--size-5);
+}

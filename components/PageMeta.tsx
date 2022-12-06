@@ -26,7 +26,7 @@ export default function PageMeta({title, prerenderables=[]}:{title:string, prere
            "prerender": [
              {
                "source": "list",
-               "urls": [${prerenderables.map(post => `"/${post.slug}"`).join(',')}]
+               "urls": [${prerenderables.map(url => `"/${url}"`).join(',')}]
              }
            ]
          }

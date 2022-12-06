@@ -20,7 +20,7 @@ export default function BlogIndexPage(props: PageProps<IPost[]>) {
   return (
     <>
       <Head>
-        <PageMeta title="Adam Argyle"/>
+        <PageMeta title="Adam Argyle" prerenderables={posts.slice(0,5)}/>
       </Head>
       <body>
         <HomePage posts={posts}/>

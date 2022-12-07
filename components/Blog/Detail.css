@@ -74,4 +74,8 @@
   & pre {
     max-inline-size: 100%;
   }
+
+  & a {
+    word-break: break-all;
+  }
 }

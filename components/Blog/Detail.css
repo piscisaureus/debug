@@ -81,4 +81,9 @@
   & a {
     word-break: break-all;
   }
+
+  & .read-time {
+    display: flex;
+    gap: var(--size-2);
+  }
 }

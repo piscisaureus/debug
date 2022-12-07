@@ -4,6 +4,7 @@ import ShareIcon from './share.tsx'
 import HeartIcon from './heart.tsx'
 import GithubIcon from './github.tsx'
 import ArrowIcon from './arrow.tsx'
+import ClockIcon from './clock.tsx'
 
 export default function PageIcons() {
   return (
@@ -31,6 +32,10 @@ export default function PageIcons() {
       <symbol id="arrow">
         <title>Arrow Icon</title>
         <ArrowIcon/>
+      </symbol>
+      <symbol id="clock">
+        <title>Clock Icon</title>
+        <ClockIcon/>
       </symbol>
     </svg>
   )

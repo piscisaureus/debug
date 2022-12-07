@@ -1,3 +1,5 @@
+import readingTime from 'https://esm.sh/reading-time'
+
 import { IBlog } from '~/utils/posts.ts'
 
 import Persona from '~/components/Persona/Persona.tsx'
@@ -31,6 +33,12 @@ export default function BlogDetail({ post }: { post: IBlog }) {
             month: "long",
             day: "numeric",
           })}</time>
+          <span class="read-time">
+            <svg aria-hidden class="filled-icon" width="20" height="20" viewBox="0 0 24 24">
+              <use href="#clock"/>
+            </svg>
+            {readingTime(post.content).text}
+            </span>
           {tags.length > 0 && <Tags tags={tags as ITags}/>}
           <p style={`view-transition-name: ${post.slug}-snippet`}>{post.snippet}</p>
         </header>

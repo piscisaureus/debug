@@ -29,6 +29,7 @@
   & > .Persona {
     grid-column: 1;
     grid-row: span 2;
+    z-index: 1;
   }
 
   & > footer {

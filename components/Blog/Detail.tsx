@@ -40,7 +40,10 @@ export default function BlogDetail({ post }: { post: IBlog }) {
             {readingTime(post.content).text}
             </span>
           {tags.length > 0 && <Tags tags={tags as ITags}/>}
-          <p style={`view-transition-name: ${post.slug}-snippet`}>{post.snippet}</p>
+          <p 
+            style={`view-transition-name: ${post.slug}-snippet`}
+            dangerouslySetInnerHTML={{ __html: post.snippet as string }}
+          />
         </header>
 
         <article 

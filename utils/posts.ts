@@ -100,7 +100,7 @@ export async function getPost(slug: string) {
       tags: frontmatter.tags,
       title: frontmatter.title,
       content,
-      snippet: frontmatter.snippet,
+      snippet: parse(frontmatter.snippet),
       hero: frontmatter.hero,
     }
   }

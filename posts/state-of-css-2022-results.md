@@ -4,7 +4,7 @@ persona: argyleink
 title: State of CSS 2022 Results are in!
 published_at: 2022-12-07T05:22:38.847
 snippet: |
-  I didn't have any expectations going into this, but sure came out feeling proud: The CSS Podcast, Open Props, Learn CSS, Nesting.. all toppin the charts 🙂
+  I didn't have any expectations going into this, but sure came out feeling proud: [The CSS Podcast](https://pod.link/thecsspodcast), [Open Props](https://open-props.style/), [Learn CSS](https://web.dev/learn/css/), [Nesting](https://www.w3.org/TR/css-nesting-1/).. all toppin the charts 🙂
 hero:
   src: argyleink/state-of-css-open-props.png
   alt: Text emphasized alt text example

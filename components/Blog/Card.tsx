@@ -33,7 +33,10 @@ export default function BlogPost({post}:{post:IBlog}) {
           />
         </figure>
       }
-      <p style={`view-transition-name: ${post.slug}-snippet`}>{post.snippet}</p>
+      <p 
+        style={`view-transition-name: ${post.slug}-snippet`} 
+        dangerouslySetInnerHTML={{ __html: post.snippet as string }} 
+      />
       <footer>
         <a href={`/${post.slug}`}>Full article</a>
       </footer>

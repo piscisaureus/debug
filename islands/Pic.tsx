@@ -10,6 +10,7 @@ export interface Pic {
   height?: number,
   width?: number;
   class?: string;
+  style?: string;
   cloudinary?: string;
 }
 
@@ -32,6 +33,7 @@ export default function Pic(props:Pic) {
       src={loaded ? full : placeholder} 
       width={props.width}
       height={props.height}
+      style={props.style}
       className={`Pic ${props.class || ''}`}
     />
   )

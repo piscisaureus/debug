@@ -1,7 +1,7 @@
 import Pic from '~/islands/Pic.tsx'
 import { IPersona } from '~/utils/persona.ts'
 
-export default function Persona({ persona }: { persona: IPersona }) {
+export default function Persona({ persona, style }: { persona: IPersona, style?: string }) {
   return (
     <Pic 
       class="Persona" 
@@ -10,6 +10,7 @@ export default function Persona({ persona }: { persona: IPersona }) {
       src={persona.img.src}
       cloudinary="w_250,c_thumb,f_auto" 
       alt={persona.img.alt}
+      style={style}
      />
   )
 }

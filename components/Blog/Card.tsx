@@ -12,8 +12,8 @@ export default function BlogPost({post}:{post:IBlog}) {
   const tabindex = 0
 
   return (
-    <article class="PostItem" style={`view-transition-name: ${post.slug}`} tabIndex={tabindex} data-tags={post.tags?.join(' ')}>
-      <Persona persona={post.persona}/>
+    <article class="PostItem" tabIndex={tabindex} style={`view-transition-name: ${post.slug}`} data-tags={post.tags?.join(' ')}>
+      <Persona persona={post.persona} style={`view-transition-name: ${post.slug}-avatar`}/>
       <header class="inline-wrap">
         <span>
           <span class="username">{post.persona.name}</span>
@@ -29,10 +29,11 @@ export default function BlogPost({post}:{post:IBlog}) {
             alt={post.hero.alt}
             height={post.hero.height}
             width={post.hero.width}
+            style={`view-transition-name: ${post.slug}-hero`}
           />
         </figure>
       }
-      <p>{post.snippet}</p>
+      <p style={`view-transition-name: ${post.slug}-snippet`}>{post.snippet}</p>
       <footer>
         <a href={`/${post.slug}`}>Full article</a>
       </footer>

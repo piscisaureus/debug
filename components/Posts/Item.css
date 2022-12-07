@@ -41,6 +41,10 @@
     margin-block-start: var(--size-3);
   }
 
+  & > p {
+    contain: layout;
+  }
+
   & h3 {
     font-size: var(--font-size-2);
   }

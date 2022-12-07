@@ -17,13 +17,14 @@ export default function BlogDetail({ post }: { post: IBlog }) {
               alt={post.hero.alt}
               height={post.hero.height}
               width={post.hero.width}
+              style={`view-transition-name: ${post.slug}-hero`}
             />
           </div>
         </header>
       }
       <main class="BlogDetail block-stack">
         <header class="block-stack">
-          <Persona persona={post.persona}/>
+          <Persona persona={post.persona} style={`view-transition-name: ${post.slug}-avatar`}/>
 
           <time>{new Date(post.publishedAt).toLocaleDateString("en-us", {
             year: "numeric",
@@ -31,11 +32,12 @@ export default function BlogDetail({ post }: { post: IBlog }) {
             day: "numeric",
           })}</time>
           {tags.length > 0 && <Tags tags={tags as ITags}/>}
-          {<p>{post.snippet}</p>}
+          <p style={`view-transition-name: ${post.slug}-snippet`}>{post.snippet}</p>
         </header>
 
         <article 
           class="block-stack"
+          style={`view-transition-name: ${post.slug}`}
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 

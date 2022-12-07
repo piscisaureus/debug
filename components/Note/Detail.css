@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: 100%;
   place-content: center;
+  place-items: center;
   gap: var(--size-3);
   margin-block-end: var(--size-10);
 

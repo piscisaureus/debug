@@ -3,6 +3,7 @@ import TwitterIcon from './twitter.tsx'
 import ShareIcon from './share.tsx'
 import HeartIcon from './heart.tsx'
 import GithubIcon from './github.tsx'
+import ArrowIcon from './arrow.tsx'
 
 export default function PageIcons() {
   return (
@@ -26,6 +27,10 @@ export default function PageIcons() {
       <symbol id="github">
         <title>Github Icon</title>
         <GithubIcon/>
+      </symbol>
+      <symbol id="arrow">
+        <title>Arrow Icon</title>
+        <ArrowIcon/>
       </symbol>
     </svg>
   )

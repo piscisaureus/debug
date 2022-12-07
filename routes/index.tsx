@@ -25,7 +25,7 @@ export default function BlogIndexPage(props: PageProps<IPost[]>) {
       <Head>
         <PageMeta title="Adam Argyle" prerenderables={posts.slice(0,5).map(post => post.slug)}/>
       </Head>
-      <body>
+      <body page-type="home">
         <Nav/>
         <HomePage posts={posts}/>
         <Footer/>

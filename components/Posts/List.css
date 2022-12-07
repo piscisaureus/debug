@@ -26,5 +26,6 @@
 
   & > li {
     max-inline-size: inherit;
+    padding-inline-start: 0;
   }
 }

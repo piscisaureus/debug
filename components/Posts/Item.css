@@ -3,7 +3,7 @@
 
   display: grid;
   grid-template-columns: var(--_avatar-column-size) 1fr;
-  gap: var(--size-2) var(--size-3);
+  gap: var(--size-2) var(--size-inline-1);
   background: var(--surface-1);
   box-shadow: var(--shadow-5);
   padding: var(--size-inline-1);
@@ -14,7 +14,6 @@
 
   @media (--md-n-above) {
     --_avatar-column-size: 50px;
-    gap: var(--size-2) var(--size-5);
     padding-block: var(--size-4);
   }
 

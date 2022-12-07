@@ -14,7 +14,7 @@
 
   @media (--md-n-above) {
     --_avatar-column-size: 50px;
-    padding-block: var(--size-4);
+    padding-block: var(--size-inline-1) var(--size-4);
   }
 
   &:nth-child(odd)  { transform-origin: 125% 100% }

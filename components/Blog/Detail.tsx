@@ -28,6 +28,7 @@ export default function BlogDetail({ post }: { post: IBlog }) {
         <header class="block-stack">
           <Persona persona={post.persona} style={`view-transition-name: ${post.slug}-avatar`}/>
 
+          <h1>{post.title}</h1>
           <time>{new Date(post.publishedAt).toLocaleDateString("en-us", {
             year: "numeric",
             month: "long",
@@ -38,12 +39,12 @@ export default function BlogDetail({ post }: { post: IBlog }) {
               <use href="#clock"/>
             </svg>
             {readingTime(post.content).text}
-            </span>
+          </span>
           {tags.length > 0 && <Tags tags={tags as ITags}/>}
-          <p 
+          {/* <p 
             style={`view-transition-name: ${post.slug}-snippet`}
             dangerouslySetInnerHTML={{ __html: post.snippet as string }}
-          />
+          /> */}
         </header>
 
         <article 

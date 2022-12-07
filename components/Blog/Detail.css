@@ -25,6 +25,31 @@
       grid-column: 2;
     }
 
+    & > h1 {
+      --color-1: var(--cyan-5);
+      --color-2: var(--indigo-5);
+      --color-3: var(--purple-5);
+      --color-4: var(--indigo-5);
+      --color-5: var(--cyan-5);
+    
+      margin-block-start: var(--size-3);
+      background: linear-gradient(
+        to top right, 
+        var(--color-1) 19%, 
+        transparent 19%, transparent 20%, 
+        var(--color-2) 20%, var(--color-2)  39%,
+        transparent 39%, transparent 40%, 
+        var(--color-3) 40%, var(--color-3) 59% ,
+        transparent 59%, transparent 60%, 
+        var(--color-4) 60%, var(--color-4) 79%,
+        transparent 79%, transparent 80%, 
+        var(--color-5) 80%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
     & > img {
       --_avatar-size: calc(var(--size-content-1) * .5);
       grid-column: 1;
@@ -39,7 +64,6 @@
     }
 
     & > time {
-      padding-block-start: var(--size-3);
       color: var(--text-2);
       line-height: 1;
     }
@@ -47,7 +71,6 @@
     & > p {
       font-size: var(--size-font-0);
       max-inline-size: var(--size-content-2);
-      padding-block-end: var(--size-3);
       contain: layout;
 
       @media (--md-n-below) {
@@ -58,9 +81,9 @@
 
   & > article {
     border: 1px solid transparent;
-    background: var(--surface-1);
+    /* background: var(--surface-1);
+    padding: var(--size-7); */
     border-radius: var(--radius-3);
-    padding: var(--size-7);
     gap: var(--size-7);
     contain: layout;
 
@@ -71,6 +94,11 @@
 
     & p {
       line-height: var(--font-lineheight-4);
+    }
+
+    & :is(h2, h3, h4) {
+      margin-block-start: var(--size-fluid-3);
+      margin-block-end: calc(var(--size-5) * -1);
     }
   }
 

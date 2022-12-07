@@ -4,7 +4,7 @@ export default function Nav({layout}: {layout?: string}) {
   return (
     <nav class="Nav">
       {layout === 'detail'
-        ? <a href="/" class="icon-button">
+        ? <a href="/" class="icon-button" id="back-to-home">
             <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">
               <use href="#arrow"/>
             </svg>
@@ -20,6 +20,15 @@ export default function Nav({layout}: {layout?: string}) {
           <use href="#rss"/>
         </svg>
       </a>
+      <script dangerouslySetInnerHTML={{ __html: `
+        document.getElementById('back-to-home')?.addEventListener('click', e => {
+          if (window.history.length > 2) {
+            e.preventDefault()
+            window.history.back()
+          }
+        })
+        ` }}
+      />
       {/* <style dangerouslySetInnerHTML={{ __html: `
         html {
           view-timeline: document-timeline;

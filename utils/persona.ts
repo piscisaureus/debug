@@ -35,7 +35,7 @@ const personas = {
       height: 382,
     },
     handle: "argyleink",
-    name: "Adam",
+    name: "adam",
   },
   pops: {
     img: {

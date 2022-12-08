@@ -87,7 +87,7 @@
     gap: var(--size-7);
     contain: layout;
 
-    & img {
+    & :is(img, video) {
       justify-self: center;
       border-radius: var(--radius-3);
     }

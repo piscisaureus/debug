@@ -62,6 +62,7 @@ export default function BlogDetail({ post }: { post: IBlog }) {
           animation-timeline: hero-timeline;
           view-timeline: hero-timeline;
         }
+        /* todo: don't animate avatar on mobile */
         .BlogDetail > header > img:first-child {
           animation: 1s linear blog-author forwards;
           animation-timeline: hero-timeline;

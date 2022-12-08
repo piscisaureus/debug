@@ -19,4 +19,8 @@
   & > header {
     text-align: center;
   }
+
+  & > article {
+    margin-inline: var(--size-inline-1);
+  }
 }

@@ -41,7 +41,7 @@ marked.use({
             class="codepen-embed" 
             scrolling="no" 
             title="${title}" 
-            src="${href}?default-tab=css%2Cresult&editable=true&theme-id=43079" 
+            src="${href}?default-tab=result&editable=true&theme-id=43079" 
             frameborder="no" 
             loading="lazy" 
             allowtransparency="true" 

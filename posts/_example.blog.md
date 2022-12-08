@@ -1,14 +1,14 @@
 ---
 type: blog
-persona: argyleink
+persona: admin
 title: This is my first blog post!
 published_at: 2022-11-26
 snippet: This is an excerpt of my first blog post.
 hero:
-  src: argyleink/text-emphasized.png
+  src: argyleink/skull-card.png
   alt: Text emphasized alt text example
-  width: 999
-  height: 496
+  width: 1366
+  height: 768
 tags: 
   - test
 ---

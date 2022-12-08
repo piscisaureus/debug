@@ -9,10 +9,10 @@ export interface IPersona {
 const personas = {
   admin: {
     img: {
-      src: "argyleink/olliolli.gif",
+      src: "argyleink/css3-8bit.gif",
       alt: "",
-      width: 382,
-      height: 382,
+      width: 512,
+      height: 512,
     },
     handle: "admin",
     name: "Web Master",

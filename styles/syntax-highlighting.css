@@ -1,23 +1,35 @@
+:root {
+  --_hljs-color-1: var(--link);
+  --_hljs-color-2: var(--link-visited);
+  --_hljs-color-subdued: var(--gray-6);
+  --_hljs-color-read: var(--text-1);
+}
+
 .language-css {
-  & code { color: var(--gray-6) }
-  & .hljs-selector-pseudo { color: var(--link) }
-  & .hljs-attribute,
+  &code { color: var(--_hljs-color-read) }
+  & .hljs-comment { color: var(--_hljs-color-subdued); font-style: italic; }
+  & .hljs-selector-pseudo,
   & .hljs-keyword,
-  & .hljs-selector-tag,
-  & .hljs-selector-class { color: var(--link-visited) }
-  & .hljs-string { color: var(--text-1) }
+  & .hljs-built_in { color: var(--_hljs-color-1) }
+  & .hljs-attribute,
+  & .hljs-selector-class,
+  & .hljs-attr { color: var(--_hljs-color-2) }
+  & .hljs-string { color: var(--_hljs-color-read) }
 }
 
 :is(.language-html, .language-xml) {
-  & code { color: var(--gray-6) }
-  & .hljs-name { color: var(--link) }
-  & .hljs-attr { color: var(--link-visited) }
-  & .hljs-string { color: var(--text-1) }
+  & code { color: var(--_hljs-color-subdued) }
+  & .hljs-comment { color: var(--_hljs-color-subdued); font-style: italic; }
+  & .hljs-name { color: var(--_hljs-color-1) }
+  & .hljs-attr { color: var(--_hljs-color-2) }
+  & .hljs-string { color: var(--_hljs-color-read) }
 }
 
 .language-js {
-  & code { color: var(--gray-6) }
-  & .hljs-keyword { color: var(--link) }
-  & .hljs-variable { color: var(--link-visited) }
-  & .hljs-string { color: var(--text-1) }
+  & code { color: var(--_hljs-color-subdued) }
+  & .hljs-comment { color: var(--_hljs-color-subdued); font-style: italic; }
+  & .hljs-keyword { color: var(--_hljs-color-1) }
+  & .hljs-variable,
+  & .hljs-title { color: var(--_hljs-color-2) }
+  & .hljs-string { color: var(--_hljs-color-read) }
 }

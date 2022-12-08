@@ -9,8 +9,10 @@ export default function Nav({layout}: {layout?: string}) {
               <use href="#arrow"/>
             </svg>
           </a>
-        : <a href="/" class="icon-button">
-            <img src="favicon.svg" width="24" alt="A skull icon icon with a flipped up bill on a hotpink hat."/>
+        : <a href="/" class="gui-skull icon-button">
+            <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 447 428">
+              <use href="#skull"/>
+            </svg>
           </a>
       }
       <ThemeSwitch/>

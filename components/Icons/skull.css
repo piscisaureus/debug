@@ -1,0 +1,12 @@
+.gui-skull > svg {
+  --skull-outline: white;
+  --eyes-and-hat: #8929ff;
+  --hat: #e662e6;
+
+  stroke-width: 8px;
+  stroke: #8929ff;
+
+  @nest [data-theme="dark"] & {
+    --hat: var(--cyan-3);
+  }
+}

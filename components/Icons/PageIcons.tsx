@@ -5,6 +5,7 @@ import HeartIcon from './heart.tsx'
 import GithubIcon from './github.tsx'
 import ArrowIcon from './arrow.tsx'
 import ClockIcon from './clock.tsx'
+import SkullIcon from './skull.tsx'
 
 export default function PageIcons() {
   return (
@@ -36,6 +37,10 @@ export default function PageIcons() {
       <symbol id="clock">
         <title>Clock Icon</title>
         <ClockIcon/>
+      </symbol>
+      <symbol id="skull">
+        <title>GUI Challenges Icon</title>
+        <SkullIcon/>
       </symbol>
     </svg>
   )

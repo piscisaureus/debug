@@ -8,8 +8,8 @@ snippet: |
 hero:
   src: argyleink/state-of-css-2022-logo.png
   alt: State of CSS Logo
-  width: 1596
-  height: 956
+  width: 2784
+  height: 952
 tags: 
   - css
 ---

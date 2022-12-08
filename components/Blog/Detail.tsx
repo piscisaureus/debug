@@ -59,16 +59,17 @@ export default function BlogDetail({ post }: { post: IBlog }) {
       <style dangerouslySetInnerHTML={{ __html: `
         .BlogHero {
           animation: 1s linear blog-transition forwards;
-          animation-timeline: document-timeline;
+          animation-timeline: hero-timeline;
+          view-timeline: hero-timeline;
         }
         @keyframes blog-transition {
-          exit 0% {
+          exit -25% {
             opacity: 1;
             transform: scale(1);
           }
           exit 50%, exit 100% {
             opacity: 0;
-            transform: scale(0.9) translateY(50%);
+            transform: scale(0.9) translateY(10vh);
           }
         }
         ` }}

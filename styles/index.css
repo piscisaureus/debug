@@ -12,6 +12,10 @@
 @import-glob "../islands/**/*.css" layer(components.fresh);
 
 @layer base.normalize {
+  html {
+    view-timeline: document-timeline;
+  }
+
   body {
     display: grid;
     grid-template-rows: auto 1fr;

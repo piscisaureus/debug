@@ -2,7 +2,9 @@ import * as marked from "https://esm.sh/marked@4.2.3/lib/marked.esm.js"
 import * as hljs from "https://esm.sh/@highlightjs/cdn-assets@11.7.0/es/highlight.js"
 
 const highlight = hljs.default.highlight
+
 import { picPaths } from '~/islands/Pic.tsx'
+import { videoPaths } from '~/components/Video/Video.tsx'
 
 interface MarkdownImage {
   height?: number,
@@ -54,15 +56,34 @@ marked.use({
         `
       }
       else if (href.includes('argyleink')) {
-        const { full } = picPaths({src: href})
-        return `<img 
-          loading="lazy" 
-          src="${full}" 
-          alt="${text}" 
-          title="${title}" 
-          ${opts.width && `width="${opts.width}" `}
-          ${opts.height && `height="${opts.height}"`}
-        />`
+        if (href.includes('.mp4')) {
+          const {src, poster} = videoPaths(href)
+
+          return `<video 
+            src=${src} 
+            ${opts.width && `width="${opts.width}" `}
+            ${opts.height && `height="${opts.height}"`}
+            alt="${text} "
+            poster="${poster}"
+            controls 
+            preload="true"
+            loop
+            muted 
+            allowFullScreen
+          />`
+        }
+        else {
+          const { full } = picPaths({src: href})
+
+          return `<img 
+            loading="lazy" 
+            src="${full}" 
+            alt="${text}" 
+            title="${title}" 
+            ${opts.width && `width="${opts.width}" `}
+            ${opts.height && `height="${opts.height}"`}
+          />`
+        }
       }
       else {
         return `<img loading="lazy" src="${href}" alt="${text}" title="${title}" />`

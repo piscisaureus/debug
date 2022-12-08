@@ -62,6 +62,10 @@ export default function BlogDetail({ post }: { post: IBlog }) {
           animation-timeline: hero-timeline;
           view-timeline: hero-timeline;
         }
+        .BlogDetail > header > img:first-child {
+          animation: 1s linear blog-author forwards;
+          animation-timeline: hero-timeline;
+        }
         @keyframes blog-transition {
           exit -25% {
             opacity: 1;
@@ -70,6 +74,14 @@ export default function BlogDetail({ post }: { post: IBlog }) {
           exit 50%, exit 100% {
             opacity: 0;
             transform: scale(0.9) translateY(10vh);
+          }
+        }
+        @keyframes blog-author {
+          exit -25% {
+            transform: scale(1);
+          }
+          exit 50%, exit 100% {
+            transform: scale(0.8) translateY(10vh);
           }
         }
         ` }}

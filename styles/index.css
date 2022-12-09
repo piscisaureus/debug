@@ -20,7 +20,7 @@
     grid-template-rows: auto 1fr;
   }
 
-  p {
+  p, q {
     font-size: var(--font-size-3);
     letter-spacing: var(--font-letterspacing-2);
     font-weight: var(--font-weight-2);

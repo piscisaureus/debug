@@ -11,10 +11,11 @@
   & .hljs-selector-pseudo,
   & .hljs-keyword,
   & .hljs-built_in { color: var(--_hljs-color-1) }
-  & .hljs-attribute,
   & .hljs-selector-class,
-  & .hljs-attr { color: var(--_hljs-color-2) }
-  & .hljs-string { color: var(--_hljs-color-read) }
+  & .hljs-selector-tag { color: var(--_hljs-color-2) }
+  & .hljs-string,
+  & .hljs-attr,
+  & .hljs-attribute { color: var(--_hljs-color-read) }
 }
 
 :is(.language-html, .language-xml) {

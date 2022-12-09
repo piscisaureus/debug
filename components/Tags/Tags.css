@@ -13,8 +13,8 @@
   letter-spacing: var(--font-letterspacing-3);
 
   @nest [data-theme="dark"] & {
-    background-color: var(--indigo-12);
-    border-color: var(--indigo-10);
+    background-color: hsl(var(--indigo-12-hsl) / 50%);
+    border-color: hsl(var(--indigo-12-hsl) / 75%);
     color: var(--indigo-2);
   }
 }

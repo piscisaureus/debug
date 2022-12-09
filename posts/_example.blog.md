@@ -13,27 +13,30 @@ tags:
   - test
 ---
 
-<details>
-  <summary>open and close this</summary>
-  
-  stuff and things
-</details>
+<q>
+  a regular quote with regular sized content
+  <cite>Adam Argyle</cite>
+</q>
 
-![](w_400/argyleink/gui-skull.png "Title $$width:400,height:411")
+<!-- ![](w_400/argyleink/gui-skull.png "Title $$width:400,height:411")
 
 ![](https://media1.giphy.com/media/b0HYKHINjL32qEsoJt/giphy.gif?cid=ecf05e470xzt877ojokmkub40d6kk0paaufim6fm41294pjd&rid=giphy.gif&ct=g)
 
 ![](https://codepen.io/argyleink/embed/preview/YzveomK)
 
-![](argyleink/media-ranges-looper.mp4 "Title $$width:2366,height:1080")
+![](argyleink/media-ranges-looper.mp4 "Title $$width:2366,height:1080") -->
 
 1.  Bird
 1.  McHale
 1.  Parish
 
+-  Bird
+-  McHale
+-  Parish
+
 ```html
 <div class="footer">
-  &copy; 2004 Foo Corporation
+  2040 Foo Corporation
   <!-- comment example -->
 </div>
 
@@ -43,6 +46,10 @@ tags:
   <li>Parish</li>
 </ol>
 ```
+
+<q class="warning">
+  i'm a **warning** quote
+</q>
 
 Regular Markdown syntax is not processed within code blocks. E.g.,
 asterisks are just literal asterisks within a code block. This means
@@ -64,6 +71,10 @@ it's also easy to use Markdown to write about Markdown's own syntax.
   }
 }
 ```
+
+<q class="info">
+  i'm an info quote that hopefully goes multiline because it rambles a bit and stuff n things
+</q>
 
 ```js
 const foo = () => {
@@ -88,3 +99,9 @@ _single underscores_
 **double asterisks**
 
 __double underscores__
+
+<details>
+  <summary>open and close this</summary>
+  
+  stuff and things
+</details>

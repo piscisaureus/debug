@@ -58,16 +58,16 @@ export default function BlogDetail({ post }: { post: IBlog }) {
       {/*todo reduced motion*/}
       <style dangerouslySetInnerHTML={{ __html: `
         .BlogHero {
-          animation: 1s linear blog-transition forwards;
+          animation: 1s linear hero-scroll-effect forwards;
           animation-timeline: hero-timeline;
           view-timeline: hero-timeline;
         }
         /* todo: don't animate avatar on mobile */
         .BlogDetail > header > img:first-child {
-          animation: 1s linear blog-author forwards;
+          animation: 1s linear author-scroll-effect forwards;
           animation-timeline: hero-timeline;
         }
-        @keyframes blog-transition {
+        @keyframes hero-scroll-effect {
           exit -25% {
             opacity: 1;
             transform: scale(1);
@@ -77,7 +77,7 @@ export default function BlogDetail({ post }: { post: IBlog }) {
             transform: scale(0.9) translateY(10vh);
           }
         }
-        @keyframes blog-author {
+        @keyframes author-scroll-effect {
           exit -25% {
             transform: scale(1);
           }
@@ -87,7 +87,6 @@ export default function BlogDetail({ post }: { post: IBlog }) {
         }
         ` }}
       />
-      <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
     </>
   )
 }

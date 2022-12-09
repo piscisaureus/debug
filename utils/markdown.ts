@@ -23,6 +23,16 @@ marked.setOptions({
 
 marked.use({
   renderer: {
+    heading: (text:string, level:number, raw:string) => {
+      const slug = text.toLowerCase().replaceAll(' ', '-')
+
+      return `
+        <h${level}>
+          <a name="${slug}" href="#${slug}">#</a>
+          ${text}
+        </h${level}>
+       `
+    },
     image: (href:string, title:string, text:string) => {
       let opts = {} as MarkdownImage
 

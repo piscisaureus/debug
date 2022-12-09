@@ -13,6 +13,25 @@ export default function Footer() {
           <use href="#github"/>
         </svg>
       </a>
+      <style dangerouslySetInnerHTML={{ __html: `
+        .Footer {
+          animation: 1s linear footer-scroll-effect forwards;
+          animation-timeline: page-footer;
+          view-timeline: page-footer;
+        }
+        @keyframes footer-scroll-effect {
+          enter 0% {
+            opacity: 0;
+            transform: scale(0.5) translateY(10vh);
+          }
+          enter 100% {
+            opacity: 1;
+            transform: scale(1)  translateY(0);
+          }
+        }
+        ` }}
+      />
+      <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"/>
     </footer>
   )
 }

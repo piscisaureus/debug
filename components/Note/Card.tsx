@@ -3,10 +3,9 @@ import { relDate } from '~/utils/dates.ts'
 import { INote } from '~/utils/posts.ts'
 import { ITags } from '~/components/Tags/Tags.tsx'
 
-import Pic from '~/islands/Pic.tsx'
 import Tags from '~/components/Tags/Tags.tsx'
 import Persona from '~/components/Persona/Persona.tsx'
-import MediaScroller from '~/components/MediaScroller/MediaScroller.tsx'
+import Media from '~/components/Posts/Media.tsx'
 
 export default function Note({post}:{post:INote}) {
   const tags = post.tags ? post.tags.filter(tag => !tag.includes('note')) : []
@@ -24,13 +23,7 @@ export default function Note({post}:{post:INote}) {
       </header>
       {tags.length > 0 && <Tags tags={tags as ITags}/>}
       {post.content && <section dangerouslySetInnerHTML={{ __html: post.content }} />}
-      {
-        post.media?.length && post.media?.length === 1
-          ? <figure>
-              <Pic {...post.media[0]}/>
-            </figure>
-          : post.media?.length && <MediaScroller media={post.media}/>
-      }
+      {post.media?.length && <Media media={post.media}/>}
       <footer>
         <a href={`/${post.slug}`} class="icon-button">
           <div class="sr-only">Share a direct link to this post</div>

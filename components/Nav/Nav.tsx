@@ -32,9 +32,6 @@ export default function Nav({layout}: {layout?: string}) {
         ` }}
       />
       {/* <style dangerouslySetInnerHTML={{ __html: `
-        html {
-          view-timeline: document-timeline;
-        }
         .Nav {
           animation: 1s linear nav-transition forwards;
           animation-timeline: document-timeline;

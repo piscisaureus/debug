@@ -25,6 +25,8 @@ tags:
 
 ![](https://codepen.io/argyleink/embed/preview/YzveomK)
 
+![](argyleink/media-ranges-looper.mp4 "Title $$width:2366,height:1080")
+
 1.  Bird
 1.  McHale
 1.  Parish

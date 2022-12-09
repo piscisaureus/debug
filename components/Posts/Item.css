@@ -41,6 +41,13 @@
     contain: layout;
   }
 
+  & h2 {
+    font-size: var(--font-size-4);
+    margin-bottom: calc(var(--size-2) * -1);
+    margin-top: var(--size-3);
+    grid-column: -1 / 1;
+  }
+
   & h3 {
     font-size: var(--font-size-2);
   }

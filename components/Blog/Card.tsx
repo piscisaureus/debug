@@ -22,6 +22,7 @@ export default function BlogPost({post}:{post:IBlog}) {
         <time>{relDate(post.publishedAt)}</time>
       </header>
       {tags.length > 0 && <Tags tags={tags as ITags}/>}
+      <h2>{post.title}</h2>
       {post.hero &&
         <figure>
           <Pic 

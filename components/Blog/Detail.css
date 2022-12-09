@@ -108,7 +108,8 @@
       padding-inline: var(--size-6);
       background-color: var(--surface-1);
       border-radius: var(--radius-3);
-      filter: drop-shadow(0px 4px 4px hsl(0 0% 0% / 10%));
+      /* filter: drop-shadow(0px 4px 4px hsl(0 0% 0% / 10%)); */
+      box-shadow: var(--shadow-2);
       position: relative;
 
       &::before {
@@ -136,10 +137,11 @@
 
       & > cite {
         border: none;
-        background: var(--surface-2);
+        background: var(--surface-1);
+        box-shadow: var(--shadow-2);
         color: var(--text-1);
         position: absolute;
-        inset-inline-end: 1ch;
+        inset-inline-end: var(--size-3);
         inset-block-end: -2ex;
         padding-inline: var(--size-3);
         border-radius: var(--radius-3);

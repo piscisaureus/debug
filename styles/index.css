@@ -2,7 +2,6 @@
 /* @import "https://unpkg.com/open-props/buttons.min.css" layer(base.buttons); */
 @import "https://unpkg.com/open-props/theme.light.switch.min.css" layer(base.theme);
 @import "https://unpkg.com/open-props/theme.dark.switch.min.css" layer(base.theme);
-@import "icons.css" layer(base.icons);
 @import "utilities.css" layer(base.utilities);
 
 @import "links.css" layer(components.links);

@@ -28,7 +28,7 @@
   will-change: transform;
   animation: 
     fade-in .3s ease,
-    slide-in .3s ease,
+    slide-in .3s var(--ease-elastic-1),
     fade-out .3s ease var(--_duration);
 
   @media (--motionOK) {

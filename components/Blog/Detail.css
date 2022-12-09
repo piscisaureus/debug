@@ -101,6 +101,7 @@
 
       &:not(:hover) > a {
         opacity: .15;
+        scroll-margin-top: max(5vh, 90px);
       }
     }
 

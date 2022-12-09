@@ -56,7 +56,7 @@
       grid-row: span 3;
       inline-size: var(--_avatar-size);
       margin-block-start: calc(var(--_avatar-size) / 2 * -1);
-      outline: var(--size-2) solid var(--surface-document);
+      box-shadow: 0 0 0 var(--size-2) var(--surface-document);
 
       @media (--md-n-above) {
         --_avatar-size: calc(var(--size-content-1) * .75);
@@ -97,8 +97,7 @@
     & :is(h2, h3, h4, h6, h6) {
       margin-block-start: var(--size-fluid-3);
       margin-block-end: calc(var(--size-5) * -1);
-      /* scroll-margin-block-start: 8vh;
-      scroll-snap-align: start; */
+      scroll-margin-block-start: max(5vh, 90px);
 
       &:not(:hover) > a {
         opacity: .15;

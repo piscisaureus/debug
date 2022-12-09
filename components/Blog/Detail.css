@@ -98,10 +98,6 @@
       margin-block-start: var(--size-fluid-3);
       margin-block-end: calc(var(--size-5) * -1);
 
-      & > a {
-        scroll-margin-block-start: 90px;
-      }
-
       &:not(:hover) > a {
         opacity: .15;
       }

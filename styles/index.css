@@ -13,6 +13,7 @@
 @layer base.normalize {
   html {
     view-timeline: document-timeline;
+    scroll-padding-block-start: 90px;
   }
 
   body {

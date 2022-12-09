@@ -22,7 +22,7 @@ export default function Nav({layout}: {layout?: string}) {
           <use href="#rss"/>
         </svg>
       </a>
-      <script dangerouslySetInnerHTML={{ __html: `
+      {/* <script dangerouslySetInnerHTML={{ __html: `
         document.getElementById('back-to-home')?.addEventListener('click', e => {
           if (window.history.length > 2) {
             e.preventDefault()
@@ -30,7 +30,7 @@ export default function Nav({layout}: {layout?: string}) {
           }
         })
         ` }}
-      />
+      /> */}
       {/* <style dangerouslySetInnerHTML={{ __html: `
         .Nav {
           animation: 1s linear nav-transition forwards;

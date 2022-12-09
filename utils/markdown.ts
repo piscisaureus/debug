@@ -28,8 +28,8 @@ marked.use({
 
       return `
         <h${level}>
-          <a name="${slug}" href="#${slug}">#</a>
           ${text}
+          <a name="${slug}" href="#${slug}">#</a>
         </h${level}>
        `
     },

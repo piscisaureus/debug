@@ -97,11 +97,13 @@
     & :is(h2, h3, h4, h6, h6) {
       margin-block-start: var(--size-fluid-3);
       margin-block-end: calc(var(--size-5) * -1);
-      scroll-margin-block-start: max(5vh, 90px);
+
+      & > a {
+        scroll-margin-block-start: 90px;
+      }
 
       &:not(:hover) > a {
         opacity: .15;
-        scroll-margin-top: max(5vh, 90px);
       }
     }
 

@@ -5,6 +5,7 @@
 @import "utilities.css" layer(base.utilities);
 
 @import "links.css" layer(components.links);
+@import "toast.css" layer(components.toast);
 @import "markdown.css" layer(components.markdown);
 @import "syntax-highlighting.css" layer(components.syntax);
 @import-glob "../components/**/*.css" layer(components.fresh);
@@ -67,3 +68,4 @@
 ::view-transition-old(graphic-design-tool-paint-brands) {
   animation-timing-function: cubic-bezier(.5,1.25,.75,1.25);
 } */
+

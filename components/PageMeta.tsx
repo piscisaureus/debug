@@ -22,6 +22,8 @@ export default function PageMeta({title, prerenderables=[]}:{title:string, prere
       <link rel="preconnect" href="https://www.google.com/s2/"/>
       <link rel="stylesheet" href="/style.css"/>
 
+      <script async src="/toast.js"/>
+
       <script type="speculationrules" dangerouslySetInnerHTML={{ __html: `
          {
            "prerender": [

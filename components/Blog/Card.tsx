@@ -12,7 +12,7 @@ export default function BlogPost({post}:{post:IBlog}) {
   const tabindex = 0
 
   return (
-    <article class="PostItem" tabIndex={tabindex} style={`view-transition-name: ${post.slug}`} data-tags={post.tags?.join(' ')}>
+    <article class="PostItem" data-slug={post.slug} tabIndex={tabindex} style={`view-transition-name: ${post.slug}`} data-tags={post.tags?.join(' ')}>
       <Persona persona={post.persona} style={`view-transition-name: ${post.slug}-avatar`}/>
       <header class="inline-wrap">
         <span>

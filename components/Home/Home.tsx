@@ -22,9 +22,9 @@ export default function Home({ posts }: { posts: IPost[] }) {
       {/*todo reduced motion*/}
       <script dangerouslySetInnerHTML={{ __html: `
         document.querySelectorAll('.PostItem').forEach((post) => {
-          post.onclick = async e => {
+          post.onclick = e => {
             if (e.target.nodeName === 'A' || e.target.closest('a')) return
-            window.location.href = post.querySelector('footer a:first-of-type').getAttribute('href')
+            window.location.href = post.getAttribute('data-slug')
           }
         })
       `}}>

@@ -8,11 +8,10 @@ import Tags from '~/components/Tags/Tags.tsx'
 import Persona from '~/components/Persona/Persona.tsx'
 
 export default function BlogPost({post}:{post:IBlog}) {
-  const tags = post.tags ? post.tags.filter(tag => !tag.includes('blog')) : []
   const tabindex = 0
 
   return (
-    <article class="PostItem" data-slug={post.slug} tabIndex={tabindex} style={`view-transition-name: ${post.slug}`} data-tags={post.tags?.join(' ')}>
+    <article class="PostItem blogpost" data-slug={post.slug} tabIndex={tabindex} style={`view-transition-name: ${post.slug}`} data-tags={post.tags?.join(' ')}>
       <Persona persona={post.persona} style={`view-transition-name: ${post.slug}-avatar`}/>
       <header class="inline-wrap">
         <span>
@@ -21,7 +20,7 @@ export default function BlogPost({post}:{post:IBlog}) {
         </span>
         <time>{relDate(post.publishedAt)}</time>
       </header>
-      {tags.length > 0 && <Tags tags={tags as ITags}/>}
+      {post.tags.length > 0 && <Tags tags={post.tags as ITags}/>}
       <h2>{post.title}</h2>
       {post.hero &&
         <figure>

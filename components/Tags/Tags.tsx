@@ -6,7 +6,7 @@ export default function Tags({tags}:{tags:ITags}) {
   return (
     <div class="Tags inline-wrap">
       {tags.map(tag => (
-        <span class="Tag">{tag}</span>
+        <span class="Tag" data-topic={tag}>{tag}</span>
       ))}
     </div>
   )

@@ -8,11 +8,10 @@ import Persona from '~/components/Persona/Persona.tsx'
 import Media from '~/components/Posts/Media.tsx'
 
 export default function Note({post}:{post:INote}) {
-  const tags = post.tags ? post.tags.filter(tag => !tag.includes('note')) : []
   const tabindex = 0
 
   return (
-    <article class="PostItem" style={`view-transition-name: ${post.slug}`} data-slug={post.slug} tabIndex={tabindex} data-tags={tags.join(' ')}>
+    <article class="PostItem note" style={`view-transition-name: ${post.slug}`} data-slug={post.slug} tabIndex={tabindex} data-topics={post.tags.join(' ')}>
       <Persona persona={post.persona}/>
       <header class="inline-wrap">
         <span>
@@ -21,7 +20,7 @@ export default function Note({post}:{post:INote}) {
         </span>
         <time>{relDate(post.publishedAt)}</time>
       </header>
-      {tags.length > 0 && <Tags tags={tags as ITags}/>}
+      {post.tags.length > 0 && <Tags tags={post.tags as ITags}/>}
       {post.content && <section dangerouslySetInnerHTML={{ __html: post.content }} />}
       {post.media?.length && <Media media={post.media}/>}
       <footer>

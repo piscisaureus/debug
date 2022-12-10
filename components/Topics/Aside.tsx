@@ -1,10 +1,16 @@
 import { getTags } from '~/utils/posts.ts'
 
 export default function Aside() {
+  const tags = getTags()
+
   return (
     <aside class="TopicsAside">
-      {getTags().map((tag) => 
-        <a href={`#${tag}`}>(1) {tag}</a>)}
+      {Array.from(tags.keys()).filter(tag => tag !== 'test').map(tag => 
+        <a href={`#${tag}`}>
+          {tag}
+          <span>{tags.get(tag)}</span>
+        </a>
+      )}
     </aside>
   )
 }

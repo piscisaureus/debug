@@ -6,7 +6,6 @@ import TopicsAside from '~/components/Topics/Aside.tsx'
 export default function Home({ posts }: { posts: IPost[] }) {
   return (
     <>
-      
       {/*todo: list.tsx component*/}
       <main class="Home">
         <TopicsAside/>

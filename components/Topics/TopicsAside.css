@@ -1,11 +1,43 @@
 .TopicsAside {
   display: inline-grid;
   display: none;
-  gap: var(--size-5);
-  border-inline-end: var(--border-size-2) solid var(--surface-3);
-  padding-inline-end: var(--size-5);
+  align-items: center;
+  gap: var(--size-1);
 
   position: sticky;
-  top: 30vh;
-  left: var(--size-inline-1);
+  inset-block-start: 20vh;
+  inset-inline-start: var(--size-3);
+
+  & > a {
+    color: var(--text-2);
+    padding-block: var(--size-1);
+    padding-inline: var(--size-4) var(--size-2);
+    font-size: var(--font-size-3);
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--size-4);
+    border-radius: var(--radius-round);
+
+    &:not(:hover) {
+      text-transform: capitalize;
+    }
+
+    &:hover {
+      color: var(--text-1);
+      background: var(--surface-1);
+      text-decoration: none;
+    }
+
+    & > span {
+      background: var(--surface-document);
+      aspect-ratio: 1;
+      height: 3ch;
+      width: 3ch;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+  }
 }

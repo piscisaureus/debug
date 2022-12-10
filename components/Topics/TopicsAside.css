@@ -1,6 +1,6 @@
 .TopicsAside {
   display: inline-grid;
-  display: none;
+  /* display: none; */
   align-items: center;
   gap: var(--size-1);
 

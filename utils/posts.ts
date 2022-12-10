@@ -32,7 +32,7 @@ export interface INote extends IPost {
 }
 
 const cache = new Map()
-const unique_total_tags = new Set()
+const tags = new Map()
 
 export async function getPosts(): Promise<IPost[]> {
   const files = Deno.readDir("./posts")
@@ -48,7 +48,8 @@ export async function getPosts(): Promise<IPost[]> {
   posts.sort((a, b) => 
     b.publishedAt.getTime() - a.publishedAt.getTime())
   
-  setTagsInformation(posts)
+  if (tags.size === 0)
+    setTagsInformation(posts)
 
   return posts
 }
@@ -110,9 +111,11 @@ function setTagsInformation(posts: IPost[]) {
   for (const post of posts)
     if (post && post.tags)
       for (const tag of post.tags)
-        unique_total_tags.add(tag)
+        tags.has(tag)
+          ? tags.set(tag, tags.get(tag)+1)
+          : tags.set(tag, 1)
 }
 
 export function getTags() {
-  return Array.from(unique_total_tags)
+  return tags
 }

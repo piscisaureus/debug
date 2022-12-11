@@ -8,12 +8,12 @@
   inset-block-start: max(72px, 15vh);
   inset-inline-start: var(--size-2);
 
-  @media (--md-n-below) {
-    display: none
-  }
-
   @supports(selector(:has(*))) {
     display: inline-grid;
+  }
+
+  @media (--md-n-below) {
+    display: none
   }
 
   & > a {

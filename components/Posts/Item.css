@@ -1,6 +1,7 @@
 .PostItem {
   --_avatar-column-size: 40px;
 
+  max-inline-size: max-content;
   display: grid;
   grid-template-columns: var(--_avatar-column-size) 1fr;
   gap: var(--size-2) var(--size-inline-1);

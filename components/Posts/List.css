@@ -1,28 +1,29 @@
 .PostList {
   max-inline-size: var(--size-content-3);
   margin-inline: auto;
-  display: grid;
-  grid-template-columns: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   justify-items: start; 
+  place-self: start;
   gap: var(--size-fluid-3);
   list-style-type: none;
   padding-inline: var(--size-inline-1);
   padding-block-end: var(--size-10);
 
   @media (--md-n-above) {
-    grid-template-columns: var(--size-content-2);
+    flex-basis: var(--size-content-2);
   }
 
   @media (--lg-n-above) {
-    grid-template-columns: var(--size-content-3);
+    flex-basis: var(--size-content-3);
   }
 
-  @supports (grid-template-rows: masonry) {
+  /* @supports (grid-template-rows: masonry) {
     max-inline-size: 75vw;
     grid-template-columns: repeat(auto-fit, minmax(var(--size-content-2), 1fr));
     grid-template-rows: masonry;
-  }
+  } */
 
   & > li {
     max-inline-size: inherit;

@@ -1,4 +1,22 @@
 .Home {
   display: grid;
-  grid-template-columns: var(--size-content-1) 1fr;
+  gap: var(--size-inline-1);
+  grid-template-columns: [feed] 1fr;
+
+  @media (--md-n-above) {
+    grid-template-columns: 
+      [aside] var(--size-content-1) 
+      [feed] 1fr 
+    ;
+    margin-block-start: var(--size-5);
+  }
+
+  @media (--lg-n-above) {
+    grid-template-columns: 
+      [aside] var(--size-content-1) 
+      [feed] 1fr 
+      [symmetry] var(--size-content-1)
+    ;
+    margin-block-start: var(--size-9);
+  }
 }

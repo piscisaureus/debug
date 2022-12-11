@@ -1,0 +1,4 @@
+.Home {
+  display: grid;
+  grid-template-columns: var(--size-content-1) 1fr;
+}

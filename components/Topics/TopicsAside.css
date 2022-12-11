@@ -2,10 +2,11 @@
   display: inline-grid;
   /* display: none; */
   align-items: center;
+  align-self: start;
   gap: var(--size-1);
 
   position: sticky;
-  inset-block-start: 20vh;
+  inset-block-start: 72px;
   inset-inline-start: var(--size-3);
 
   & > a {

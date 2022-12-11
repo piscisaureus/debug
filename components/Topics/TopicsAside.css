@@ -1,5 +1,5 @@
 .TopicsAside {
-  display: inline-grid;
+  display: none;
   align-items: center;
   align-self: start;
   gap: var(--size-1);
@@ -10,6 +10,10 @@
 
   @media (--md-n-below) {
     display: none
+  }
+
+  @supports(selector(:has(*))) {
+    display: inline-grid;
   }
 
   & > a {

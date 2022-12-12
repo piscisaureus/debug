@@ -6,7 +6,7 @@
 
   position: sticky;
   inset-block-start: max(72px, 15vh);
-  inset-inline-start: var(--size-inline-1);
+  inset-inline-start: calc(var(--size-inline-1) - var(--size-3));
 
   @supports(selector(:has(*))) {
     display: inline-grid;

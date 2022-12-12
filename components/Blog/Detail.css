@@ -91,6 +91,10 @@
 
     & p {
       line-height: var(--font-lineheight-4);
+
+      &:first-of-type::first-line {
+        font-size: var(--font-size-4);
+      }
     }
 
     & :is(h2, h3, h4, h6, h6) {

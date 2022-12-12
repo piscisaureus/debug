@@ -54,7 +54,6 @@ function OgMeta({title, description, image, video, gif}:{title:string, descripti
       <meta property="og:type" content="article" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
       <meta property='og:image' content={gif} />
       <meta property='og:video' content={video} />
       <meta property="og:url" content="https://nerd.deno.dev" />
@@ -62,7 +61,6 @@ function OgMeta({title, description, image, video, gif}:{title:string, descripti
 
       <meta name="twitter:title" content={title}/>
       <meta name="twitter:description" content={description}/>
-      <meta name="twitter:image" content={image}/>
       <meta name="twitter:image" content={gif}/>
       <meta name="twitter:video" content={video}/>
       <meta name="twitter:site" content="@argyleink"/>

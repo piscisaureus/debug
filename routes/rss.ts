@@ -28,21 +28,21 @@ function makeRSS(posts:IPost[]) {
     copyright: new Date().getFullYear() + ' Adam Argyle',
     language: 'en',
     categories: ['CSS','HTML','JavaScript','Front-End','Design'],
-    lastBuildDate: new Date(posts[0].publishedAt).toUTCString(),
+    lastBuildDate: posts[0].publishedAt,
     ttl: 60,
-    custom_namespaces: {
-      'webfeeds': 'http://webfeeds.org/rss/1.0'
-    },
-    custom_elements: [
-      {'webfeeds:logo': 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png'},
-      {'webfeeds:icon': 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png'},
-      {'webfeeds:cover image': 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png'},
-      {'webfeeds:accentColor': '#000000'},
-      {'webfeeds:related': [
-        {'itunes:layout': 'card'},
-        {'itunes:target': 'browser'}
-      ]},
-    ]
+    // custom_namespaces: {
+    //   'webfeeds': 'http://webfeeds.org/rss/1.0'
+    // },
+    // custom_elements: [
+    //   {'webfeeds:logo': 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png'},
+    //   {'webfeeds:icon': 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png'},
+    //   {'webfeeds:cover image': 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png'},
+    //   {'webfeeds:accentColor': '#000000'},
+    //   {'webfeeds:related': [
+    //     {'itunes:layout': 'card'},
+    //     {'itunes:target': 'browser'}
+    //   ]},
+    // ]
   })
    
   for (const post of posts.slice(0, 10)) {
@@ -55,6 +55,7 @@ function makeRSS(posts:IPost[]) {
         : ['post'],
       author: post.persona.name,
       pubDate: post.publishedAt,
+      date: post.publishedAt,
     })
   }
    

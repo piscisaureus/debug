@@ -25,19 +25,16 @@ function makeRSS(posts:IPost[]) {
     feed_url: 'https://nerd.deno.dev/rss',
     site_url: 'https://nerd.deno.dev',
     image_url: 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png',
-    image: {
-      url: 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png',
-      title: 'Adam Argyle', 
-      link: 'https://nerd.deno.dev',
-      width: '32',
-      height: '32',
-    },
     webMaster: 'atom@argyleink.com (Adam Argyle)',
     copyright: new Date().getFullYear() + ' Adam Argyle',
     language: 'en',
     categories: ['CSS','HTML','JavaScript','Front-End','Design'],
     pubDate: posts[0].publishedAt,
     ttl: 60,
+    custom_elements: [
+      {icon: 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png'},
+      {logo: 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png'},
+    ]
   })
    
   for (const post of posts.slice(0, 10)) {

@@ -1,4 +1,5 @@
 import { Handlers } from '$fresh/server.ts'
+import { titleCase } from "$deno/x/case/mod.ts"
 import { getPosts, IPost } from '~/utils/posts.ts'
 import RSS from 'https://esm.sh/rss'
 
@@ -41,7 +42,7 @@ function makeRSS(posts:IPost[]) {
    
   for (const post of posts.slice(0, 10)) {
     feed.item({
-      title:  post?.title || post.slug.replaceAll('-', ' '),
+      title:  post?.title || titleCase(post.slug.replaceAll('-', ' ')),
       description: post.content,
       url: 'https://nerd.deno.dev/'+post.slug,
       categories: post?.tags?.length != 0

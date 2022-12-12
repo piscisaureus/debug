@@ -4,6 +4,8 @@ export default function PageMeta(props) {
   const {title, prerenderables=[]}:{title:string, prerenderables?:string[]} = props
   const description = 'Website for Adam Argyle: Teacher, Speaker, CSSWG member, creator of Open Props and VisBug.'
   const image = 'https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png'
+  const gif = 'https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/og_gif.gif'
+  const video = 'https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/og_mp4.mp4'
   
   return (
     <>
@@ -16,7 +18,7 @@ export default function PageMeta(props) {
       <meta name="description" content={description}/>
 
       <meta name="color-scheme" content="dark light"/>
-      <OgMeta {...props} image={image} />
+      <OgMeta {...props} image={image} video={video} gif={gif} />
 
       <script src="theme-switch.js"></script>
 
@@ -46,19 +48,23 @@ export default function PageMeta(props) {
   )
 }
 
-function OgMeta({title, description, image}:{title:string, description:string, image:string}) {
+function OgMeta({title, description, image, video, gif}:{title:string, description:string, image:string, video:string, gif:string}) {
   return (
     <>
       <meta property="og:type" content="article" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
+      <meta property='og:image' content={gif} />
+      <meta property='og:video' content={video} />
       <meta property="og:url" content="https://nerd.deno.dev" />
       <meta property="og:site_name" content="Adam's Indie Social Feed" />
 
       <meta name="twitter:title" content={title}/>
       <meta name="twitter:description" content={description}/>
       <meta name="twitter:image" content={image}/>
+      <meta name="twitter:image" content={gif}/>
+      <meta name="twitter:video" content={video}/>
       <meta name="twitter:site" content="@argyleink"/>
       <meta name="twitter:creator" content="@argyleink"/>
     </>

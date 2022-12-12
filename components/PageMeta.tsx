@@ -4,7 +4,7 @@ export default function PageMeta(props) {
   const {title, prerenderables=[]}:{title:string, prerenderables?:string[]} = props
   const description = 'Website for Adam Argyle: Teacher, Speaker, CSSWG member, creator of Open Props and VisBug.'
   const image = 'https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png'
-  const gif = 'https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/og_gif.gif'
+  const gif = 'https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/og_gif.gif'
   const video = 'https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/og_mp4.mp4'
   
   return (

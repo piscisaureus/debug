@@ -28,7 +28,7 @@ function makeRSS(posts:IPost[]) {
     copyright: new Date().getFullYear() + ' Adam Argyle',
     language: 'en',
     categories: ['CSS','HTML','JavaScript','Front-End','Design'],
-    lastBuildDate: posts[0].publishedAt,
+    pubDate: posts[0].publishedAt,
     ttl: 60,
     // custom_namespaces: {
     //   'webfeeds': 'http://webfeeds.org/rss/1.0'
@@ -49,10 +49,10 @@ function makeRSS(posts:IPost[]) {
     feed.item({
       title:  post.slug.replaceAll('-', ' '),
       description: post.content,
-      url: 'https://nerd.deno.dev/'+post.slug, // link to the item
-      categories: post?.tags?.length != 0
-        ? post.tags
-        : ['post'],
+      url: 'https://nerd.deno.dev/'+post.slug,
+      // categories: post?.tags?.length != 0
+      //   ? post.tags
+      //   : ['post'],
       author: post.persona.name,
       pubDate: post.publishedAt,
       date: post.publishedAt,

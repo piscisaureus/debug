@@ -46,7 +46,7 @@ export default function PageMeta(props) {
   )
 }
 
-function OgMeta({title, description, image}) {
+function OgMeta({title, description, image}:{title:string, description:string, image:string}) {
   return (
     <>
       <meta property="og:type" content="article" />

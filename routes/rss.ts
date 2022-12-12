@@ -28,7 +28,7 @@ function makeRSS(posts:IPost[]) {
     copyright: new Date().getFullYear() + ' Adam Argyle',
     language: 'en',
     categories: ['CSS','HTML','JavaScript','Front-End','Design'],
-    pubDate: new Date(posts[0].publishedAt).toUTCString(),
+    lastBuildDate: new Date(posts[0].publishedAt).toUTCString(),
     ttl: 60,
     custom_namespaces: {
       'webfeeds': 'http://webfeeds.org/rss/1.0'
@@ -54,7 +54,7 @@ function makeRSS(posts:IPost[]) {
         ? post.tags
         : ['post'],
       author: post.persona.name,
-      date: post.publishedAt,
+      pubDate: post.publishedAt,
     })
   }
    

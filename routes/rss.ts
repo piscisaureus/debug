@@ -24,25 +24,25 @@ function makeRSS(posts:IPost[]) {
     feed_url: 'https://nerd.deno.dev/rss',
     site_url: 'https://nerd.deno.dev',
     image_url: 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png',
-    webMaster: 'Adam Argyle: atom@argyleink.com',
+    webMaster: 'atom@argyleink.com (Adam Argyle)',
     copyright: new Date().getFullYear() + ' Adam Argyle',
     language: 'en',
     categories: ['CSS','HTML','JavaScript','Front-End','Design'],
     pubDate: posts[0].publishedAt,
     ttl: 60,
-    // custom_namespaces: {
-    //   'webfeeds': 'http://webfeeds.org/rss/1.0'
-    // },
-    // custom_elements: [
-    //   {'webfeeds:logo': 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png'},
-    //   {'webfeeds:icon': 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png'},
-    //   {'webfeeds:cover image': 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png'},
-    //   {'webfeeds:accentColor': '#000000'},
-    //   {'webfeeds:related': [
-    //     {'itunes:layout': 'card'},
-    //     {'itunes:target': 'browser'}
-    //   ]},
-    // ]
+    custom_namespaces: {
+      'webfeeds': 'http://webfeeds.org/rss/1.0'
+    },
+    custom_elements: [
+      {'webfeeds:logo': 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png'},
+      {'webfeeds:icon': 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png'},
+      {'webfeeds:cover image': 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png'},
+      {'webfeeds:accentColor': '#000000'},
+      {'webfeeds:related': [
+        {'itunes:layout': 'card'},
+        {'itunes:target': 'browser'}
+      ]},
+    ]
   })
    
   for (const post of posts.slice(0, 10)) {
@@ -50,9 +50,9 @@ function makeRSS(posts:IPost[]) {
       title:  post.slug.replaceAll('-', ' '),
       description: post.content,
       url: 'https://nerd.deno.dev/'+post.slug,
-      // categories: post?.tags?.length != 0
-      //   ? post.tags
-      //   : ['post'],
+      categories: post?.tags?.length != 0
+        ? post.tags
+        : ['post'],
       author: post.persona.name,
       pubDate: post.publishedAt,
       date: post.publishedAt,

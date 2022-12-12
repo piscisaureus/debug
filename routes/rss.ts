@@ -41,7 +41,7 @@ function makeRSS(posts:IPost[]) {
    
   for (const post of posts.slice(0, 10)) {
     feed.item({
-      title:  post.slug.replaceAll('-', ' '),
+      title:  post?.title || post.slug.replaceAll('-', ' '),
       description: post.content,
       url: 'https://nerd.deno.dev/'+post.slug,
       categories: post?.tags?.length != 0

@@ -18,7 +18,7 @@ it's just 50% lightness in that color space.
 
 ![](argyleink/luminance-vs-lightness.jpg "$$width:2492,height:2360")
 
-50% lightness in LCH is built around human lightness perception 👍🏻
+50% lightness in LCH is built around human lightness perception.
 
 ![](https://codepen.io/argyleink/embed/preview/zYaRoRN)
 

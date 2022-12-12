@@ -16,7 +16,7 @@ export default function PageMeta({title, prerenderables=[]}:{title:string, prere
 
       <link rel="icon" href="/favicon.ico" sizes="any"/>
       <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
-      <link rel="alternate" type="application/rss+xml" href="https://nerdy.dev/rss" title="RSS Feed for Adam Argyle: Web design & development tips & tricks"/>
+      <link rel="alternate" type="application/rss+xml" href="https://nerd.deno.dev/rss" title="RSS Feed for Adam Argyle: Web design & development tips & tricks"/>
 
       <link rel="preconnect" href="https://res.cloudinary.com/"/>
       <link rel="preconnect" href="https://www.google.com/s2/"/>

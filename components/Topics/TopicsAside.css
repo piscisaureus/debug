@@ -8,6 +8,9 @@
   inset-block-start: max(72px, 15vh);
   inset-inline-start: calc(var(--size-inline-1) - var(--size-3));
 
+  view-transition-name: site-topics;
+  contain: layout;
+
   @supports(selector(:has(*))) {
     display: inline-grid;
   }

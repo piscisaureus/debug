@@ -34,6 +34,8 @@ export interface INote extends IPost {
 const cache = new Map()
 const tags = new Map()
 
+export let totalPosts = 0
+
 export async function getPosts(): Promise<IPost[]> {
   const files = Deno.readDir("./posts")
   const promises = []
@@ -48,8 +50,10 @@ export async function getPosts(): Promise<IPost[]> {
   posts.sort((a, b) => 
     b.publishedAt.getTime() - a.publishedAt.getTime())
   
-  if (tags.size === 0)
+  if (tags.size === 0) {
+    totalPosts = posts.length
     setTagsInformation(posts)
+  }
 
   return posts
 }

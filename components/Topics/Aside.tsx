@@ -1,4 +1,4 @@
-import { getTags } from '~/utils/posts.ts'
+import { getTags, totalPosts } from '~/utils/posts.ts'
 
 export default function Aside() {
   const tags = getTags()
@@ -16,7 +16,7 @@ export default function Aside() {
           <use href="#icon.home"/>
         </svg>
         <span>all</span>
-        <span class="TopicCount">{tags.size}</span>
+        <span class="TopicCount">{totalPosts}</span>
       </a>
       {orderedKeys.map((tag:string) => 
         <a id={tag} href={`#${tag}`}>

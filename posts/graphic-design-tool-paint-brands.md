@@ -3,7 +3,7 @@ type: note
 persona: argyleink
 published_at: 2022-12-03
 tags: 
-  - color
+  - css
 ---
 
 a design tool is like a workspace with 

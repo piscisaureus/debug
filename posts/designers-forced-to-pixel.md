@@ -3,7 +3,6 @@ type: note
 persona: argyleink
 published_at: 2021-11-10
 tags: 
-  - design
   - css
 ---
 

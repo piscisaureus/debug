@@ -6,12 +6,12 @@ export default function Nav({layout}: {layout?: string}) {
       {layout === 'detail'
         ? <a href="/" class="icon-button" id="back-to-home">
             <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">
-              <use href="#arrow"/>
+              <use href="#icon.arrow"/>
             </svg>
           </a>
         : <a href="/" class="gui-skull icon-button">
             <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 447 428">
-              <use href="#skull"/>
+              <use href="#icon.skull"/>
             </svg>
           </a>
       }
@@ -19,7 +19,7 @@ export default function Nav({layout}: {layout?: string}) {
       <a href="/rss" class="icon-button">
         <div class="sr-only">Follow my RSS feed</div>
         <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">
-          <use href="#rss"/>
+          <use href="#icon.rss"/>
         </svg>
       </a>
       {/* <script dangerouslySetInnerHTML={{ __html: `

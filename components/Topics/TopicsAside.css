@@ -6,7 +6,7 @@
 
   position: sticky;
   inset-block-start: max(72px, 15vh);
-  inset-inline-start: var(--size-2);
+  inset-inline-start: var(--size-inline-1);
 
   @supports(selector(:has(*))) {
     display: inline-grid;
@@ -21,8 +21,7 @@
     font-size: var(--font-size-3);
     display: inline-flex;
     align-items: center;
-    justify-content: space-between;
-    gap: var(--size-4);
+    gap: var(--size-3);
     padding-inline-start: var(--size-4);
     margin-inline-start: calc(var(--size-4) * -1);
     border-radius: var(--radius-round);
@@ -37,12 +36,25 @@
       background: var(--surface-1);
       text-decoration: none;
 
-      & > span {
+      & > .TopicCount {
         background: var(--surface-document);
       }
     }
 
+    & > svg {
+      flex-shrink: 0;
+    }
+
     & > span {
+      flex: 2;
+    }
+
+    & > .filled-icon {
+      fill: var(--gray-6);
+    }
+
+    & > .TopicCount {
+      flex-grow: 0;
       aspect-ratio: var(--ratio-square);
       block-size: 3ch;
       inline-size: 3ch;

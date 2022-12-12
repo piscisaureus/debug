@@ -4,13 +4,13 @@ export default function Footer() {
       <a href="https://twitter.com/argyleink" class="icon-button">
         <div class="sr-only">Follow me on Twitter</div>
         <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 30 30">
-          <use href="#twitter"/>
+          <use href="#icon.twitter"/>
         </svg>
       </a>
       <a href="https://github.com/argyleink" class="icon-button">
         <div class="sr-only">Follow me on Github</div>
         <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">
-          <use href="#github"/>
+          <use href="#icon.github"/>
         </svg>
       </a>
       <style dangerouslySetInnerHTML={{ __html: `

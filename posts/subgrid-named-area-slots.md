@@ -13,7 +13,7 @@ media:
     height: 2116
 tags: 
   - css
-  - codepen
+  - git
 ---
 [Grid](https://developer.mozilla.org/docs/Web/CSS/grid) and 
 [Subgrid](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Subgrid) 

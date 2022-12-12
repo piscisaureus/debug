@@ -36,7 +36,7 @@ export default function BlogDetail({ post }: { post: IBlog }) {
           })}</time>
           <span class="read-time">
             <svg aria-hidden class="filled-icon" width="20" height="20" viewBox="0 0 24 24">
-              <use href="#clock"/>
+              <use href="#icon.clock"/>
             </svg>
             {readingTime(post.content).text}
           </span>

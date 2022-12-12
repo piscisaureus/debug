@@ -11,7 +11,6 @@ hero:
   height: 550
 tags: 
   - css
-  - color
 ---
 
 50% lightness in HSL is almost never 50% as humans see it; 

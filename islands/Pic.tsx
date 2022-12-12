@@ -35,6 +35,7 @@ export default function Pic(props:Pic) {
       height={props.height}
       style={props.style}
       className={`Pic ${props.class || ''}`}
+      decoding="async"
     />
   )
 }

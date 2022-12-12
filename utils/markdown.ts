@@ -90,6 +90,7 @@ marked.use({
             src="${full}" 
             alt="${text}" 
             title="${title}" 
+            decoding="async"
             ${opts.width && `width="${opts.width}" `}
             ${opts.height && `height="${opts.height}"`}
           />`

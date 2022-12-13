@@ -11,9 +11,8 @@ tags:
   - speaking
 ---
 
-**New In CSS**
+**What's New In CSS**
 
 [Spoke](https://webdirections.org/hover/speakers/adam-argyle.php) at 
-[Hover Conf 2021](https://webdirections.org/blog/web-directions-hover-21-session-spotlight-whats-new-in-css-2021/).
-
-[slides](https://2021-hover-conf-new-in-css.netlify.app/)
+[Hover Conf 2021](https://webdirections.org/blog/web-directions-hover-21-session-spotlight-whats-new-in-css-2021/).  
+[Checkout the slides](https://2021-hover-conf-new-in-css.netlify.app/).

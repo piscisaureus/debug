@@ -13,10 +13,12 @@ export default function PageMeta(props) {
       <meta charSet="utf-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <meta name="mobile-web-app-capable" content="yes"/>
+      <meta name="apple-mobile-web-app-status-bar-style" content="default" />
       <meta name="theme-color" content="deeppink" media="(prefers-color-scheme: light)"/>
       <meta name="theme-color" content="Canvas" media="(prefers-color-scheme: dark)"/>
       <meta name="description" content={description}/>
 
+      <link rel="manifest" href="/manifest.json"/>
       <meta name="color-scheme" content="dark light"/>
       <OgMeta {...props} description={description} video={video} gif={gif} />
 

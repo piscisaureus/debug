@@ -1,0 +1,28 @@
+{
+  "name": "ArgyleInk",
+  "short_name": "ArgyleInk",
+  "start_url": "/?utm_medium=PWA&utm_source=launcher",
+  "scope": "/",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#030507",
+  "theme_color": "#91a7ff",
+  "icons": [
+    {
+      "src": "/pwa-icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+  "categories": ["CSS","HTML","JavaScript","Front-End","Design"],
+  "description": "Website for Adam Argyle: Teacher, Speaker, CSSWG member, and creator of Open Props and VisBug.",
+  "lang": "en",
+  "screenshots": [
+    {
+      "src": "/pwa.png",
+      "type": "image/png",
+      "sizes": "720x540",
+      "form_factor": "wide"
+    }
+  ]
+}

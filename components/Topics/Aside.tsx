@@ -11,7 +11,7 @@ export default function Aside() {
 
   return (
     <aside class="TopicsAside">
-      <a id="all" href="#all" class="active">
+      <a id="all" href="#all">
         <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">
           <use href="#icon.home"/>
         </svg>
@@ -45,6 +45,10 @@ export default function Aside() {
         }
       `}}/> */}
       <script dangerouslySetInnerHTML={{ __html: `
+        if (document.startViewTransition) {
+          document.getElementById('all').classList.add('active')
+        }
+
         document.querySelector('.TopicsAside').addEventListener('click', e => {
           if (document.startViewTransition) {
             e.preventDefault()

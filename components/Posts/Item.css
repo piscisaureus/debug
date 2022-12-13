@@ -35,6 +35,8 @@
     grid-column: 1;
     grid-row: span 2;
     z-index: 1;
+    position: sticky;
+    inset-block-start: var(--size-inline-1);
   }
 
   & > footer {

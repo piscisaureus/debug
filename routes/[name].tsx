@@ -1,5 +1,6 @@
 import { Handlers, PageProps } from '$fresh/server.ts'
 import { Head } from '$fresh/runtime.ts'
+import { titleCase } from "$deno/x/case/mod.ts"
 
 import { getPost, IBlog, INote } from '~/utils/posts.ts'
 
@@ -17,13 +18,16 @@ export const handler: Handlers<IBlog | INote> = {
 }
 
 export default function PostPage(props: PageProps<IBlog | INote>) {
+  // todo: use locale
+  const date = props.data.publishedAt.toLocaleDateString("en-us", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  })
+
   const title = props.data.type === 'blog'
-    ? props.data.title
-    : props.data.publishedAt.toLocaleDateString("en-us", {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-      })
+    ? props.data.title + ' · ' + date
+    : titleCase(props.data.slug.replaceAll('-', ' ')) + ' · ' + date
 
   return (
     <>

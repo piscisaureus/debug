@@ -1,6 +1,6 @@
 const web_cache = 'web-app-cache-v1.0'
 const filesToCache = [
-  '/',
+  '/index.html',
   '/style.css',
   '/theme-switch.js'
 ]
@@ -8,20 +8,15 @@ const filesToCache = [
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(web_cache)
-      .then((cache)=> {
-        return cache.addAll(filesToCache)
-      })
+      .then((cache)=> cache.addAll(filesToCache))
+      .then(self.skipWaiting())
   )
 })
 
+self.addEventListener('activate', event => {
+    console.log('WORKER: activate event in progress.');
+})
+
 self.addEventListener('fetch', function(e) {
-	e.respondWith(
-		caches.match(e.request)
-			.then(function(response) {
-				if ( response ) {
-					console.log("[ServiceWorker] Found in Cache", e.request.url, response)
-					return response
-				}
-			}) 
-	)
+	console.log('WORKER: Fetching', e.request)
 })

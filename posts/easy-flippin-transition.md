@@ -17,4 +17,4 @@ document.startViewTransition(() => {
 })
 ```
 
-Game changer.
+**Game changer.**

@@ -6,8 +6,8 @@ export default function Aside() {
     .sort((a:string, b:string) => a.localeCompare(b))
     .filter((tag:string) => !Array.from(['test','blog','note']).includes(tag))
 
-  orderedKeys.unshift('note')
   orderedKeys.unshift('blog')
+  orderedKeys.unshift('note')
 
   return (
     <aside class="TopicsAside">

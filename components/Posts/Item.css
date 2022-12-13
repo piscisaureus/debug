@@ -39,6 +39,21 @@
     inset-block-start: var(--size-inline-1);
   }
 
+  & ol {
+    padding: 0;
+  }
+
+  & li {
+    font-size: var(--font-size-3);
+    letter-spacing: var(--font-letterspacing-2);
+    font-weight: var(--font-weight-2);
+    padding: 0;
+
+    &::marker {
+      color: var(--gray-6);
+    }
+  }
+
   & > footer {
     display: flex;
     align-items: center;
@@ -127,7 +142,8 @@
 
   & hr {
     margin-block: var(--size-4);
-    border-color: var(--surface-2);
+    background-color: var(--surface-2);
+    block-size: 1px;
   }
 
   & cite {
@@ -139,6 +155,11 @@
     &::before {
       content: '~ ';
     }
+  }
+
+  & iframe {
+    max-inline-size: 100%;
+    aspect-ratio: var(--ratio-widescreen);
   }
 
   &:has(figure) {

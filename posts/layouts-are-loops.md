@@ -6,4 +6,4 @@ tags:
   - css
 ---
 
-layouts are loops.
+layouts **are** loops.

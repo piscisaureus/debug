@@ -33,8 +33,6 @@ function makeRSS(posts:IPost[]) {
     ttl: 60,
     custom_namespaces: {
       'media': 'http://search.yahoo.com/mrss/',
-      'sy': 'http://purl.org/rss/1.0/modules/syndication/',
-      'slash': "http://purl.org/rss/1.0/modules/slash/",
     },
     custom_elements: [
       {icon: 'https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png'},

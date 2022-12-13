@@ -11,7 +11,7 @@ export default function Aside() {
 
   return (
     <aside class="TopicsAside">
-      <a id="all" href="#all">
+      <a id="all" href="#all" class="active">
         <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">
           <use href="#icon.home"/>
         </svg>
@@ -50,7 +50,12 @@ export default function Aside() {
             e.preventDefault()
             e.stopPropagation()
             document.startViewTransition(() => {
-              const topic = e.target.closest('a').id
+              const link = e.target.closest('a')
+              const topic = link.id
+
+              document.querySelector('.TopicsAside .active').classList.remove('active')
+              link.classList.add('active')
+
               document.querySelectorAll('.PostList > li').forEach(li => {
                 let hasTopic = li.querySelector('[data-topic="'+topic+'"]')
                 li.style.display = hasTopic || topic === 'all' ? 'block' : 'none'

@@ -34,7 +34,7 @@
       text-transform: capitalize;
     }
 
-    &:is(:hover,:target,:focus-visible) {
+    &:is(:hover,:target,:focus-visible,.active) {
       color: var(--text-1);
       background: var(--surface-1);
       text-decoration: none;

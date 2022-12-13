@@ -34,13 +34,13 @@ export default function PageMeta(props) {
 
       <script async src="/toast.js"/>
 
-      <script dangerouslySetInnerHTML={{ __html: `
+      {/* <script dangerouslySetInnerHTML={{ __html: `
         if ('serviceWorker' in navigator) {
           window.addEventListener('load', function() {
             navigator.serviceWorker.register('/service-worker.js');
           });
         }   
-      `}}/>
+      `}}/> */}
 
          {
            "prerender": [

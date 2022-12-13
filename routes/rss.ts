@@ -7,7 +7,7 @@ export const handler: Handlers<IPost[]> = {
   async GET() {
     // todo: cache
     const posts = await getPosts()
-    const xml = makeRSS(posts).xml()
+    const xml = makeRSS(posts).xml({indent: true})
 
     if (!posts)
       return new Response("Feed not found", { status: 404 })
@@ -24,16 +24,21 @@ function makeRSS(posts:IPost[]) {
     description: 'Web design & development tips & tricks',
     feed_url: 'https://nerd.deno.dev/rss',
     site_url: 'https://nerd.deno.dev',
-    image_url: 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png',
+    image_url: 'https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png',
     webMaster: 'atom@argyleink.com (Adam Argyle)',
     copyright: new Date().getFullYear() + ' Adam Argyle',
     language: 'en',
     categories: ['CSS','HTML','JavaScript','Front-End','Design'],
     pubDate: posts[0].publishedAt,
     ttl: 60,
+    custom_namespaces: {
+      'media': 'http://search.yahoo.com/mrss/',
+      'sy': 'http://purl.org/rss/1.0/modules/syndication/',
+      'slash': "http://purl.org/rss/1.0/modules/slash/",
+    },
     custom_elements: [
-      {icon: 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png'},
-      {logo: 'https://res.cloudinary.com/dnpmdb8r8/image/upload/v1669523666/argyleink/gui-skull.png'},
+      {icon: 'https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png'},
+      {logo: 'https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png'},
     ]
   })
    

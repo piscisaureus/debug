@@ -9,6 +9,7 @@ import Persona from '~/components/Persona/Persona.tsx'
 
 export default function BlogPost({post}:{post:IBlog}) {
   const tabindex = 0
+  post.tags = post.tags as ITags || []
 
   return (
     <article class="PostItem blogpost" data-slug={post.slug} tabIndex={tabindex} style={`view-transition-name: ${post.slug}`} data-tags={post.tags?.join(' ')}>

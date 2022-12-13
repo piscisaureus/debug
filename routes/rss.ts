@@ -41,15 +41,17 @@ function makeRSS(posts:IPost[]) {
   })
    
   for (const post of posts.slice(0, 10)) {
+    // @ts-ignore: Unreachable code error
+    const title = post?.title || titleCase(post.slug.replaceAll('-', ' '))
+    
     feed.item({
-      title:  post?.title || titleCase(post.slug.replaceAll('-', ' ')),
+      title:  title,
       description: post.content,
       url: 'https://nerd.deno.dev/'+post.slug,
       categories: post?.tags?.length != 0
         ? post.tags
         : ['note'],
       author: post.persona.name,
-      pubDate: post.publishedAt,
       date: post.publishedAt,
     })
   }

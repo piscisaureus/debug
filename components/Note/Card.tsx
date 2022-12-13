@@ -9,6 +9,7 @@ import Media from '~/components/Posts/Media.tsx'
 
 export default function Note({post}:{post:INote}) {
   const tabindex = 0
+  post.tags = post.tags as ITags || []
 
   return (
     <article class="PostItem note" style={`view-transition-name: ${post.slug}`} data-slug={post.slug} tabIndex={tabindex} data-topics={post.tags.join(' ')}>
@@ -20,7 +21,7 @@ export default function Note({post}:{post:INote}) {
         </span>
         <time>{relDate(post.publishedAt)}</time>
       </header>
-      {post.tags.length > 0 && <Tags tags={post.tags as ITags}/>}
+      {post.tags.length > 0 && <Tags tags={post.tags}/>}
       {post.content && <section dangerouslySetInnerHTML={{ __html: post.content }} />}
       {post.media?.length && <Media media={post.media}/>}
       <footer>

@@ -1,6 +1,6 @@
 import PageIcons from '~/components/Icons/PageIcons.tsx'
 
-export default function PageMeta(props) {
+export default function PageMeta(props:any) {
   const {title, prerenderables=[]}:{title:string, prerenderables?:string[]} = props
   const description = 'Website for Adam Argyle: Teacher, Speaker, CSSWG member, and creator of Open Props and VisBug.'
   const image = 'https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png'

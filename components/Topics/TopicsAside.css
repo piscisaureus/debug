@@ -11,7 +11,7 @@
   view-transition-name: site-topics;
   contain: layout;
 
-  @supports(selector(:has(*))) {
+  @supports(selector(:has(+ *))) {
     display: inline-grid;
   }
 

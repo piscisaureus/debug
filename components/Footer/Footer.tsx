@@ -31,7 +31,7 @@ export default function Footer() {
         }
         ` }}
       />
-      <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"/>
+      {/* <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"/> */}
     </footer>
   )
 }

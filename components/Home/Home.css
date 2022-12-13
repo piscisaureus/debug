@@ -16,8 +16,9 @@
       grid-template-columns: 
         [aside] var(--size-content-1) 
         [feed] 1fr 
-        [symmetry] var(--size-content-1)
       ;
+      max-width: max-content;
+      margin-inline: auto;
       margin-block-start: var(--size-9);
     }
   }

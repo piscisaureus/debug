@@ -2,7 +2,7 @@ import PageIcons from '~/components/Icons/PageIcons.tsx'
 
 export default function PageMeta(props) {
   const {title, prerenderables=[]}:{title:string, prerenderables?:string[]} = props
-  const description = 'Website for Adam Argyle: Teacher, Speaker, CSSWG member, creator of Open Props and VisBug.'
+  const description = 'Website for Adam Argyle: Teacher, Speaker, CSSWG member, and creator of Open Props and VisBug.'
   const image = 'https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png'
   const gif = 'https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/og_gif.gif'
   const video = 'https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/og_mp4.mp4'
@@ -18,7 +18,7 @@ export default function PageMeta(props) {
       <meta name="description" content={description}/>
 
       <meta name="color-scheme" content="dark light"/>
-      <OgMeta {...props} image={image} video={video} gif={gif} />
+      <OgMeta {...props} description={description} video={video} gif={gif} />
 
       <script src="theme-switch.js"></script>
 
@@ -48,7 +48,7 @@ export default function PageMeta(props) {
   )
 }
 
-function OgMeta({title, description, image, video, gif}:{title:string, description:string, image:string, video:string, gif:string}) {
+function OgMeta({title, description, video, gif}:{title:string, description:string, video:string, gif:string}) {
   return (
     <>
       <meta property="og:type" content="article" />

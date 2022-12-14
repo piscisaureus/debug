@@ -32,13 +32,20 @@
     & p {
       line-height: var(--font-lineheight-4);
 
-      &:first-of-type::first-line {
-        font-size: var(--font-size-4);
-        font-weight: var(--font-weight-4);
-        color: var(--indigo-7);
-
-        @media (--OSdark) {
-          color: var(--cyan-6);
+      &:first-of-type {
+        &::first-letter {
+          font-size: 6.5ex;
+          font-size: 2lh;
+          font-weight: var(--font-weight-8);
+          float: left;
+          float: start;
+          line-height: 1;
+          margin-inline-end: var(--size-1);
+          text-transform: uppercase;
+        }
+        &::first-line {
+          font-size: var(--font-size-4);
+          font-weight: var(--font-weight-4);
         }
       }
     }

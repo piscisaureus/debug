@@ -42,6 +42,7 @@ export default function PageMeta(props:any) {
         }   
       `}}/>
 
+      {/* <script type="speculationrules" dangerouslySetInnerHTML={{ __html: `
          {
            "prerender": [
              {
@@ -50,7 +51,7 @@ export default function PageMeta(props:any) {
              }
            ]
          }
-       `}}/>
+       `}}/> */}
       {/* <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script> */}
       <PageIcons/>
     </>

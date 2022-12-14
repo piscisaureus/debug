@@ -778,6 +778,11 @@
     "https://esm.sh/reading-time@1.5.0": "623fdb33613f70f5359760fda292730f8c45218e02963176ac44201e0593ec97",
     "https://esm.sh/rss@1.2.2": "66ced136bcb0dddababdf574b040553e45f0725bfd95e75b97a70c3ea9b91631",
     "https://esm.sh/sanitize-html@2.7.0": "586094901100ab498020a2814aa63751bcd1358e86cbf500369e8cb622211840",
+    "https://esm.sh/shiki-es@0.1.2": "5c66a03c221b81e2b889d30286cf96e2eaca94a8354a8add2c01f94f8fb924cd",
+    "https://esm.sh/shiki@0.11.1": "19eaecf1f0e04ee8dd4bbaa9a7991bb4ddacbd380456637387f338921a94ab74",
+    "https://esm.sh/shiki@0.11.1/dist/index.browser.mjs": "1156d57c6810813fedfd31357a149f895b1790dcce96ede20953dba15383660b",
+    "https://esm.sh/shiki@0.11.1/dist/index.esm": "fac57487b98f3ff086d8f06e8e169738ee8f28e556baa89869c4885531750480",
+    "https://esm.sh/shiki@0.11.1/dist/index.unpkg.iife": "2a67693bbce7f02248b6661658ca51616e35771b25046cedfe52591c8fbc9422",
     "https://esm.sh/stable/preact@10.11.0/deno/hooks.js": "48b7674c1f0c2a0f8a0f758b786f5bc15ba0f7a4f3a356ecc783848f1e4a1c55",
     "https://esm.sh/stable/preact@10.11.0/deno/jsx-runtime.js": "b5a8e96758c20b5dea05802c6f6962b8a95bfdbd476eb4ea51cf3234f6e09271",
     "https://esm.sh/stable/preact@10.11.0/deno/preact.js": "071b515099e5dff2fe56768be62644e32fab702b194171357ccc4d7d1210144a",
@@ -1050,6 +1055,16 @@
     "https://esm.sh/v99/safer-buffer@2.1.2/deno/safer-buffer.js": "70ff19ed6c857ed344fd1302e4ab6ab5fe745f47dbfdea1cb17381b57883d15d",
     "https://esm.sh/v99/sanitize-html@2.7.0/deno/sanitize-html.js": "0a3916deaebb60853733209e7da0c3ea7bb2e74f5b352306c47b76c1ce1f7e49",
     "https://esm.sh/v99/saxes@6.0.0/deno/saxes.js": "6c4a2895de550d0eab166a49714aa4b892e12ac0518d33c270a7f4579bc3a25b",
+    "https://esm.sh/v99/shiki-es@0.1.2/deno/shiki-es.js": "47566c81234dac0c1c8a06e35af5e93c36f2a8fb1fb370ec2ab0e4a26fe68ef3",
+    "https://esm.sh/v99/shiki-es@0.1.2/dist/shiki.d.ts": "f5c08721db46d42d5ed250f6c9db7b780859d3071ba9551a3858cbb151e62ec0",
+    "https://esm.sh/v99/shiki@0.11.1/deno/dist/index.browser.mjs.js": "6b62d03485742877cb5f2da4c9b9c71263f2d5c62eca972bc3c9648204a4e441",
+    "https://esm.sh/v99/shiki@0.11.1/deno/dist/index.esm.js": "bd613a39a3da721d1d9b898de9a71bed3659d6437f1c70692b21b50d8adb8eaf",
+    "https://esm.sh/v99/shiki@0.11.1/deno/dist/index.unpkg.iife.js": "b2f2910abfe278057eb192866e5df8e9838a8a02b250988dc4d38dc4946acba0",
+    "https://esm.sh/v99/shiki@0.11.1/deno/shiki.js": "3d48fd9ad41bd979c01f731f23856ff31741a7c2d02a6c16d99fabf102209118",
+    "https://esm.sh/v99/shiki@0.11.1/dist/index.browser.mjs~.d.ts": "854cdc32752c20a63ea380b17a93c803d6d1e06fa939fdc231732a7b35e8a906",
+    "https://esm.sh/v99/shiki@0.11.1/dist/index.d.ts": "787c00041aa50a22e343cd2628bd6eef5c320fe8aff5e5e922c557739a387021",
+    "https://esm.sh/v99/shiki@0.11.1/dist/index.esm~.d.ts": "854cdc32752c20a63ea380b17a93c803d6d1e06fa939fdc231732a7b35e8a906",
+    "https://esm.sh/v99/shiki@0.11.1/dist/index.unpkg.iife~.d.ts": "854cdc32752c20a63ea380b17a93c803d6d1e06fa939fdc231732a7b35e8a906",
     "https://esm.sh/v99/source-map-js@1.0.2/deno/source-map-js.js": "2dcfe0b26c7bc926fe619d644cad9e74f079a69a4e5ccacc39849d305dc5626e",
     "https://esm.sh/v99/source-map-js@1.0.2/source-map.d.ts": "e1d24eb7d0ac71a5a0d0f9cc64d2ce859dc015cb85c16434d20ec91b182d4ee6",
     "https://esm.sh/v99/source-map@0.6.1/deno/lib/array-set.js": "9f50e53b5c1b8f7363a0aea9843bd94ea3919dd3287a73d7852098251e7bfd28",
@@ -1070,6 +1085,18 @@
     "https://esm.sh/v99/universalify@0.2.0/deno/universalify.js": "69f7ec014c7623aa1a89395ad535fc15fbe2ad47499ae756b5ef3f3937ab3bcb",
     "https://esm.sh/v99/url-parse@1.5.10/deno/url-parse.js": "1e0003d66a1fd87364d44a6ee6eae9a32d846da62b08348e765e240275a61bd8",
     "https://esm.sh/v99/util-deprecate@1.0.2/deno/util-deprecate.js": "465830ef20bb4e16da7d89898a5359736a8639c450e10db4fb3634bfbd8dd987",
+    "https://esm.sh/v99/vscode-oniguruma@1.6.2/deno/vscode-oniguruma.js": "8acac685ce2bcd21e0bdfc9fd918dc666d9c547d40e412c2721ce0ebfb5fdb10",
+    "https://esm.sh/v99/vscode-oniguruma@1.7.0/deno/vscode-oniguruma.js": "bccbacdad9f577a9113abfee9b049c9ae8c6c3b9ed0daa24fc387c941098eed5",
+    "https://esm.sh/v99/vscode-textmate@6.0.0/deno/vscode-textmate.js": "089e36b49abb2fc4c31e77c7a034913ccf78aa04cf0e12029903b77a152cc098",
+    "https://esm.sh/v99/vscode-textmate@6.0.0/release/main.d.ts": "7fc5ea2c08c5467a10bf6a770addb7efb1347eb18e83b900cd9761d1f1c703c2",
+    "https://esm.sh/v99/vscode-textmate@6.0.0/release/types.d.ts": "7a5dda11bfe8c8eb75faff8cc8ab9f7efb2eb871f1de46c7d68bd8bd4c93cd68",
+    "https://esm.sh/v99/vscode-textmate@7.0.3/release/encodedTokenAttributes.d.ts": "d17c71fad51537af3805127714dc8ed91b1dc31375c52994ea10cecb45f12ed3",
+    "https://esm.sh/v99/vscode-textmate@7.0.3/release/main.d.ts": "445180b31c89e0b7bd1fbdc71b20d09a7b722190c3328438d9dcdd107ea40159",
+    "https://esm.sh/v99/vscode-textmate@7.0.3/release/onigLib.d.ts": "22b4bc52a0f747bbf593590e4df0a6990794324f6f8386dba6d51fbdde242425",
+    "https://esm.sh/v99/vscode-textmate@7.0.3/release/rawGrammar.d.ts": "83c67bc5bd90db92c5bd6e20749037d87433eaa57f8721ce732ccaead9040a9f",
+    "https://esm.sh/v99/vscode-textmate@7.0.3/release/rule.d.ts": "97b999c6c3bac366d629c17d90eef571b9e512f4bec78de580e7d834f400aaa9",
+    "https://esm.sh/v99/vscode-textmate@7.0.3/release/theme.d.ts": "f3c40e0e387c052a2da1725ae948c446be333b56ef99d0fe2a4b2fc03e4ec67d",
+    "https://esm.sh/v99/vscode-textmate@7.0.3/release/utils.d.ts": "3cb0da8ee1b6bc242ffe9d727e816a36fed0ddbb7fa741a41dc3d661b2ab463e",
     "https://esm.sh/v99/w3c-xmlserializer@4.0.0/deno/w3c-xmlserializer.js": "a7955a547ac0104a0ea418a495216eb519444eb5d3bee0761c1413bc4e9935dc",
     "https://esm.sh/v99/webidl-conversions@7.0.0/deno/webidl-conversions.js": "b73b16a0649b90b81cad4046cc13ced8bc85f8eff48a87d69e0ea9ae503e49b8",
     "https://esm.sh/v99/whatwg-encoding@2.0.0/deno/whatwg-encoding.js": "5578306c060c5ecb666d2793ef0407d89306c69885627105d23903b4470d7d37",
@@ -1670,7 +1697,9 @@
       "postcss-preset-env": "postcss-preset-env@7.8.3_postcss@8.4.19",
       "probe-image-size": "probe-image-size@7.2.3",
       "pygmentize-bundled": "pygmentize-bundled@2.3.0",
-      "rss": "rss@1.2.2"
+      "rss": "rss@1.2.2",
+      "shiki": "shiki@0.11.1",
+      "shiki-es": "shiki-es@0.1.2"
     },
     "packages": {
       "@babel/runtime@7.20.1": {
@@ -2186,6 +2215,10 @@
       },
       "isarray@0.0.1": {
         "integrity": "sha512-D2S+3GLxWH+uhrNEcoh/fnmYeP8E8/zHl644d/jdA0g2uyXvy3sb0qxotE+ne0LtccHknQzWwZEzhak7oJ0COQ==",
+        "dependencies": {}
+      },
+      "jsonc-parser@3.2.0": {
+        "integrity": "sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==",
         "dependencies": {}
       },
       "lilconfig@2.0.6": {
@@ -2916,6 +2949,18 @@
         "integrity": "sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==",
         "dependencies": {}
       },
+      "shiki-es@0.1.2": {
+        "integrity": "sha512-eqtfk8idlYlSLAn0gp0Ly2+FbKc2d78IddigHSS4iHAnpXoY2kdRzyFGZOdi6TvemYMnRhZBi1HsSqZc5eNKqg==",
+        "dependencies": {}
+      },
+      "shiki@0.11.1": {
+        "integrity": "sha512-EugY9VASFuDqOexOgXR18ZV+TbFrQHeCpEYaXamO+SZlsnT/2LxuLBX25GGtIrwaEVFXUAbUQ601SWE2rMwWHA==",
+        "dependencies": {
+          "jsonc-parser": "jsonc-parser@3.2.0",
+          "vscode-oniguruma": "vscode-oniguruma@1.7.0",
+          "vscode-textmate": "vscode-textmate@6.0.0"
+        }
+      },
       "source-map-js@1.0.2": {
         "integrity": "sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==",
         "dependencies": {}
@@ -2999,6 +3044,14 @@
       },
       "util-deprecate@1.0.2": {
         "integrity": "sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==",
+        "dependencies": {}
+      },
+      "vscode-oniguruma@1.7.0": {
+        "integrity": "sha512-L9WMGRfrjOhgHSdOYgCt/yRMsXzLDJSL7BPrOZt73gU0iWO4mpqzqQzOz5srxqTvMBaR0XZTSrVWo4j55Rc6cA==",
+        "dependencies": {}
+      },
+      "vscode-textmate@6.0.0": {
+        "integrity": "sha512-gu73tuZfJgu+mvCSy4UZwd2JXykjK9zAZsfmDeut5dx/1a7FeTk0XwJsSuqQn+cuMCGVbIBfl+s53X4T19DnzQ==",
         "dependencies": {}
       },
       "xml@1.0.1": {

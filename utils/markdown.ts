@@ -1,7 +1,7 @@
 import * as marked from "https://esm.sh/marked@4.2.3/lib/marked.esm.js"
-import * as hljs from "https://esm.sh/@highlightjs/cdn-assets@11.7.0/es/highlight.js"
+import {getHighlighter} from "https://esm.sh/shiki-es"
 
-const highlight = hljs.default.highlight
+const highlighter = await getHighlighter({theme: 'css-variables'})
 
 import { picPaths } from '~/islands/Pic.tsx'
 import { videoPaths } from '~/components/Video/Video.tsx'
@@ -17,7 +17,7 @@ marked.setOptions({
   highlight: (code:string, lang:string) => {
     if (!lang) return
     if (lang === 'html') lang = 'xml'
-    return highlight(code, {language: lang}).value
+    return highlighter.codeToHtml(code, {lang})
   },
 })
 

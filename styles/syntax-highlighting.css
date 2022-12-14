@@ -1,36 +1,53 @@
 :root {
-  --_hljs-color-1: var(--link);
-  --_hljs-color-2: var(--link-visited);
-  --_hljs-color-subdued: var(--gray-6);
-  --_hljs-color-read: var(--text-1);
+  --_syntax-color-1: var(--link);
+  --_syntax-color-2: var(--link-visited);
+  --_syntax-color-3: var(--cyan-9);
+  --_syntax-color-read: var(--text-1);
+  --_syntax-color-subdued: var(--text-2);
+
+  @media (--OSdark) {
+     --_syntax-color-3: var(--cyan-2);
+  }
+}
+
+[style$="color: var(--shiki-token-comment)"] {
+  --shiki-token-comment: var(--gray-6);
+  font-style: italic;
+}
+
+[class*="language-"] {
+  display: grid;
 }
 
 .language-css {
-  &code { color: var(--_hljs-color-read) }
-  & .hljs-comment { color: var(--_hljs-color-subdued); font-style: italic; }
-  & .hljs-selector-pseudo,
-  & .hljs-keyword,
-  & .hljs-built_in { color: var(--_hljs-color-1) }
-  & .hljs-selector-class,
-  & .hljs-selector-tag { color: var(--_hljs-color-2) }
-  & .hljs-string,
-  & .hljs-attr,
-  & .hljs-attribute { color: var(--_hljs-color-read) }
+  --shiki-color-text: var(--_syntax-color-read);
+  --shiki-token-constant: var(--_syntax-color-read);
+  --shiki-token-string: var(--_syntax-color-read);
+  --shiki-token-keyword: var(--_syntax-color-1);
+  --shiki-token-function: var(--_syntax-color-2);
+  --shiki-token-string-expression: var(--_syntax-color-read);
+  --shiki-token-punctuation: var(--_syntax-color-3);
+  --shiki-token-link: var(--_syntax-color-1);
 }
 
 :is(.language-html, .language-xml) {
-  & code { color: var(--_hljs-color-subdued) }
-  & .hljs-comment { color: var(--_hljs-color-subdued); font-style: italic; }
-  & .hljs-name { color: var(--_hljs-color-1) }
-  & .hljs-attr { color: var(--_hljs-color-2) }
-  & .hljs-string { color: var(--_hljs-color-read) }
+  --shiki-color-text: var(--_syntax-color-subdued);
+  --shiki-token-constant: var(--_syntax-color-read);
+  --shiki-token-string: var(--_syntax-color-read);
+  --shiki-token-keyword: var(--_syntax-color-2);
+  --shiki-token-function: var(--_syntax-color-1);
+  --shiki-token-string-expression: var(--_syntax-color-2);
+  --shiki-token-punctuation: var(--_syntax-color-3);
+  --shiki-token-link: var(--_syntax-color-1);
 }
 
 .language-js {
-  & code { color: var(--_hljs-color-subdued) }
-  & .hljs-comment { color: var(--_hljs-color-subdued); font-style: italic; }
-  & .hljs-keyword { color: var(--_hljs-color-1) }
-  & .hljs-variable,
-  & .hljs-title { color: var(--_hljs-color-2) }
-  & .hljs-string { color: var(--_hljs-color-read) }
+  --shiki-color-text: var(--_syntax-color-read);
+  --shiki-token-constant: var(--_syntax-color-3);
+  --shiki-token-string: var(--_syntax-color-read);
+  --shiki-token-keyword: var(--_syntax-color-1);
+  --shiki-token-function: var(--_syntax-color-2);
+  --shiki-token-string-expression: var(--_syntax-color-read);
+  --shiki-token-punctuation: var(--_syntax-color-3);
+  --shiki-token-link: var(--_syntax-color-1);
 }

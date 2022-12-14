@@ -42,6 +42,15 @@
       & > .TopicCount {
         background: var(--surface-document);
       }
+
+      &:nth-child(1) > .filled-icon { fill: var(--link) }
+      &:nth-child(2) > .filled-icon { fill: var(--purple-6) }
+      &:nth-child(3) > .filled-icon { fill: var(--violet-6) }
+      &:nth-child(4) > .filled-icon { fill: var(--indigo-6) }
+      &:nth-child(5) > .filled-icon { fill: var(--cyan-6) }
+      &:nth-child(6) > .filled-icon { fill: var(--teal-6) }
+      &:nth-child(7) > .filled-icon { fill: var(--lime-6) }
+      &:nth-child(8) > .filled-icon { fill: var(--orange-6) }
     }
 
     & > svg {

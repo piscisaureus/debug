@@ -1,22 +1,30 @@
-const web_cache = 'web-app-cache-v1.0'
-const filesToCache = [
-  '/index.html',
-  '/style.css',
-  '/theme-switch.js'
-]
+self.addEventListener('install', (event) => {
+  self.skipWaiting()
+})
 
-self.addEventListener('install', function(event) {
+self.addEventListener('activate', (event) => {
+  self.clients.claim()
   event.waitUntil(
-    caches.open(web_cache)
-      .then((cache)=> cache.addAll(filesToCache))
-      .then(self.skipWaiting())
+    (async () => {
+      if ('navigationPreload' in self.registration) {
+        await self.registration.navigationPreload.enable()
+      }
+    })()
   )
 })
 
-self.addEventListener('activate', event => {
-    console.log('WORKER: activate event in progress.');
-})
-
-self.addEventListener('fetch', function(e) {
-	console.log('WORKER: Fetching', e.request)
+self.addEventListener('fetch', (event) => {
+  event.respondWith(
+    (async () => {
+      try {
+        const response = await event.preloadResponse
+        if (response) {
+          return response
+        }
+        return fetch(event.request)
+      } catch {
+        return new Response('Offline')
+      }
+    })()
+  )
 })

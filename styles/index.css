@@ -8,6 +8,7 @@
 @import "toast.css" layer(components.toast);
 @import "markdown.css" layer(components.markdown);
 @import "syntax-highlighting.css" layer(components.syntax);
+@import "neon.css" layer(components.p3);
 @import-glob "../components/**/*.css" layer(components.fresh);
 @import-glob "../islands/**/*.css" layer(components.fresh);
 

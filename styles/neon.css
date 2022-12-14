@@ -1,0 +1,25 @@
+:root {
+  --neon-red: var(--red-6);
+  --neon-cyan: var(--cyan-6);
+  --neon-pink: var(--pink-4);
+  --neon-purple: var(--purple-6);
+  --neon-blue: var(--indigo-6);
+  --neon-green: var(--lime-6);
+  --neon-orange: var(--orange-6);
+  --neon-yellow: var(--yellow-3);
+}
+
+@media (dynamic-range: high) {
+  @supports (color: color(display-p3 0 0 0)) {
+    :root {
+      --neon-red: color(display-p3 1 0 0);
+      --neon-cyan: color(display-p3 0 0.75 1);
+      --neon-pink: color(display-p3 1 0 1);
+      --neon-purple: color(display-p3 .5 0 1);
+      --neon-blue: color(display-p3 0 0 1);
+      --neon-green: color(display-p3 0 1 0);
+      --neon-orange: color(display-p3 1 .5 0);
+      --neon-yellow: color(display-p3 1 1 0);
+    }
+  }
+}

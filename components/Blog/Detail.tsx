@@ -4,9 +4,10 @@ import { IBlog } from '~/utils/posts.ts'
 
 import Persona from '~/components/Persona/Persona.tsx'
 import Tags, { ITags } from '~/components/Tags/Tags.tsx'
+import TableOfContents from '~/components/TableOfContents/TableOfContents.tsx'
 import Pic from '~/islands/Pic.tsx'
 
-export default function BlogDetail({ post }: { post: IBlog }) {
+export default function BlogDetail({ post, toc }: { post: IBlog, toc: [] }) {
   const tags = post.tags ? post.tags.filter(tag => !tag.includes('blog')) : []
 
   return (
@@ -24,28 +25,29 @@ export default function BlogDetail({ post }: { post: IBlog }) {
           </div>
         </header>
       }
-      <main class="BlogDetail block-stack">
-        <header class="block-stack">
-          <Persona persona={post.persona} style={`view-transition-name: ${post.slug}-avatar`}/>
+      <section class="BlogMeta block-stack">
+        <Persona persona={post.persona} style={`view-transition-name: ${post.slug}-avatar`}/>
 
-          <h1>{post.title}</h1>
-          <time>{new Date(post.publishedAt).toLocaleDateString("en-us", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-          })}</time>
-          <span class="read-time">
-            <svg aria-hidden class="filled-icon" width="20" height="20" viewBox="0 0 24 24">
-              <use href="#icon.clock"/>
-            </svg>
-            {readingTime(post.content).text}
-          </span>
-          {tags.length > 0 && <Tags tags={tags as ITags}/>}
-          {/* <p 
-            style={`view-transition-name: ${post.slug}-snippet`}
-            dangerouslySetInnerHTML={{ __html: post.snippet as string }}
-          /> */}
-        </header>
+        <h1>{post.title}</h1>
+        <time>{new Date(post.publishedAt).toLocaleDateString("en-us", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })}</time>
+        <span class="read-time">
+          <svg aria-hidden class="filled-icon" width="20" height="20" viewBox="0 0 24 24">
+            <use href="#icon.clock"/>
+          </svg>
+          {readingTime(post.content).text}
+        </span>
+        {tags.length > 0 && <Tags tags={tags as ITags}/>}
+        {/* <p 
+          style={`view-transition-name: ${post.slug}-snippet`}
+          dangerouslySetInnerHTML={{ __html: post.snippet as string }}
+        /> */}
+      </section>
+      <main class="BlogDetail block-stack">
+        <TableOfContents toc={toc}/>
 
         <article 
           class="block-stack"
@@ -63,7 +65,7 @@ export default function BlogDetail({ post }: { post: IBlog }) {
           view-timeline: hero-timeline;
         }
         /* todo: don't animate avatar on mobile */
-        .BlogDetail > header > img:first-child {
+        .BlogMeta > img:first-child {
           animation: 1s linear author-scroll-effect forwards;
           animation-timeline: hero-timeline;
         }

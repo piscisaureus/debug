@@ -32,14 +32,9 @@ export default function PostPage(props: PageProps<IBlog | INote>) {
     ? props.data.title + ' · ' + date
     : titleCase(props.data.slug.replaceAll('-', ' ')) + ' · ' + date
 
-  if (isBlog) {
-    const dom = new DOMParser().parseFromString(props.data.content, 'text/html')
-    dom?.querySelectorAll('h2').forEach(h2 => {
-      const baseText = h2.textContent.trim()
-      const finalText = baseText.substr(0, baseText.indexOf('\n'))
-      console.log(finalText)
-    })
-  }
+  const tableOfContents = isBlog
+    ? extractTOC(props.data.content)
+    : null
 
   return (
     <>
@@ -49,9 +44,27 @@ export default function PostPage(props: PageProps<IBlog | INote>) {
       </Head>
       <body page-type="detail">
         <Nav layout="detail"/>
-        <PostDetail post={props.data}/>
+        <PostDetail post={props.data} toc={tableOfContents}/>
         <Footer/>
       </body>
     </>
   )
+}
+
+function extractTOC(markdown:string) {
+  const dom = new DOMParser().parseFromString(markdown, 'text/html')
+  const headers = dom?.querySelectorAll('h1,h2,h3,h4,h5,h6')
+
+ const tableOfContents = Array.from(headers).map((header:Element) => {
+    const baseText = header.textContent.trim()
+    const text = baseText.substr(0, baseText.indexOf('\n'))
+    const level = header.nodeName
+
+    return {
+      text,
+      level,
+    }
+  })
+
+  return tableOfContents
 }

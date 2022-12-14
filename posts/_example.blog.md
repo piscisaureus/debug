@@ -13,18 +13,27 @@ tags:
   - test
 ---
 
+## first headline of the post
+<!-- note: no code in headers -->
+
+this should start large as the first line. then it should wrap and not be large text. that's the test at least.
+
 <q>
   a regular quote with regular sized content
   <cite>Adam Argyle</cite>
 </q>
 
-<!-- ![](w_400/argyleink/gui-skull.png "Title $$width:400,height:411")
+### Images
+
+![](w_400/argyleink/gui-skull.png "Title $$width:400,height:411")
 
 ![](https://media1.giphy.com/media/b0HYKHINjL32qEsoJt/giphy.gif?cid=ecf05e470xzt877ojokmkub40d6kk0paaufim6fm41294pjd&rid=giphy.gif&ct=g)
 
 ![](https://codepen.io/argyleink/embed/preview/YzveomK)
 
-![](argyleink/media-ranges-looper.mp4 "Title $$width:2366,height:1080") -->
+![](argyleink/media-ranges-looper.mp4 "Title $$width:2366,height:1080")
+
+## lists
 
 1.  Bird
 1.  McHale
@@ -33,6 +42,8 @@ tags:
 -  Bird
 -  McHale
 -  Parish
+
+### some random tests
 
 ```html
 <div class="footer">
@@ -76,6 +87,8 @@ it's also easy to use Markdown to write about Markdown's own syntax.
   i'm an info quote that hopefully goes multiline because it rambles a bit and stuff n things
 </q>
 
+## more random stuff
+
 ```js
 const foo = () => {
   // comment
@@ -92,7 +105,11 @@ export function relDate(date:Date) {
 }
 ```
 
+### deeper header
+
 *single asterisks*
+
+#### even deeper
 
 _single underscores_
 

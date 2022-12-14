@@ -1,0 +1,19 @@
+.TableOfContents {
+  display: none;
+  flex-direction: column;
+  gap: var(--size-2);
+  align-items: start;
+  margin-block-start: var(--size-10);
+
+  position: sticky;
+  top: 20vh;
+
+  @media (width >= 900px) {
+    display: flex;
+  }
+
+  & a:not(:hover) {
+    color: var(--text-2);
+    text-transform: capitalize;
+  }
+}

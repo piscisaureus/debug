@@ -31,22 +31,22 @@
 
     & p {
       line-height: var(--font-lineheight-4);
+    }
 
-      &:first-of-type {
-        &::first-letter {
-          font-size: 6.5ex;
-          font-size: 2lh;
-          font-weight: var(--font-weight-8);
-          float: left;
-          float: start;
-          line-height: 1;
-          margin-inline-end: var(--size-1);
-          text-transform: uppercase;
-        }
-        &::first-line {
-          font-size: var(--font-size-4);
-          font-weight: var(--font-weight-4);
-        }
+    & > p:first-of-type {
+      &::first-letter {
+        font-size: 6.5ex;
+        font-size: 2lh;
+        font-weight: var(--font-weight-8);
+        float: left;
+        float: start;
+        line-height: 1;
+        margin-inline-end: var(--size-1);
+        text-transform: uppercase;
+      }
+      &::first-line {
+        font-size: var(--font-size-4);
+        font-weight: var(--font-weight-4);
       }
     }
 

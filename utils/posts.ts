@@ -61,13 +61,13 @@ export async function getPosts(): Promise<IPost[]> {
 export async function getPost(slug: string) {
   let text: string
 
-  if (cache.get(slug)) {
-    console.info(`GET (CACHE): posts/${slug}`)
-    text = cache.get(slug)
-  }
-  else {
+  // if (cache.get(slug + 'foo')) {
+  //   console.info(`GET (CACHE): posts/${slug}`)
+  //   text = cache.get(slug)
+  // }
+  // else {
     try {
-      console.info(`GET: posts/${slug}`)
+      // console.info(`GET: posts/${slug}`)
       text = await Deno.readTextFile(`./posts/${slug}.md`)
       cache.set(slug, text)
     } 
@@ -76,7 +76,7 @@ export async function getPost(slug: string) {
         return null
       throw err
     }
-  }
+  // }
 
   const { attrs:frontmatter, body }: {attrs:any, body:string} = extract(text)
   const content = parse(body)

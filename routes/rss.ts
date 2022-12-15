@@ -22,8 +22,8 @@ function makeRSS(posts:IPost[]) {
   const feed = new RSS({
     title: 'Adam Argyle',
     description: 'Web design & development tips & tricks',
-    feed_url: 'https://nerd.deno.dev/rss',
-    site_url: 'https://nerd.deno.dev',
+    feed_url: 'https://nerdy.dev/rss',
+    site_url: 'https://nerdy.dev',
     image_url: 'https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png',
     webMaster: 'atom@argyleink.com (Adam Argyle)',
     copyright: new Date().getFullYear() + ' Adam Argyle',
@@ -47,7 +47,7 @@ function makeRSS(posts:IPost[]) {
     feed.item({
       title:  title,
       description: post.content,
-      url: 'https://nerd.deno.dev/'+post.slug,
+      url: 'https://nerdy.dev/'+post.slug,
       categories: post?.tags?.length != 0
         ? post.tags
         : ['note'],

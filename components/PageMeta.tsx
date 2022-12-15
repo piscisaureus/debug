@@ -26,7 +26,7 @@ export default function PageMeta(props:any) {
 
       <link rel="icon" href="/favicon.ico" sizes="any"/>
       <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
-      <link rel="alternate" type="application/rss+xml" href="https://nerd.deno.dev/rss" title="RSS Feed for Adam Argyle: Web design & development tips & tricks"/>
+      <link rel="alternate" type="application/rss+xml" href="https://nerdy.dev/rss" title="RSS Feed for Adam Argyle: Web design & development tips & tricks"/>
 
       <link rel="preconnect" href="https://res.cloudinary.com/"/>
       <link rel="preconnect" href="https://www.google.com/s2/"/>
@@ -66,7 +66,7 @@ function OgMeta({title, description, video, gif}:{title:string, description:stri
       <meta property="og:description" content={description} />
       <meta property='og:image' content={gif} />
       <meta property='og:video' content={video} />
-      <meta property="og:url" content="https://nerd.deno.dev" />
+      <meta property="og:url" content="https://nerdy.dev" />
       <meta property="og:site_name" content="Adam's Indie Social Feed" />
 
       <meta name="twitter:title" content={title}/>

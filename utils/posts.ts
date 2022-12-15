@@ -42,6 +42,7 @@ export async function getPosts(): Promise<IPost[]> {
 
   for await (const file of files) {
     const slug = file.name.replace(".md", "")
+    if (slug.indexOf('_example') === 0) continue
     promises.push(getPost(slug))
   }
 

@@ -4,7 +4,7 @@
 @import "https://unpkg.com/open-props/theme.dark.switch.min.css" layer(base.theme);
 @import "utilities.css" layer(base.utilities);
 
-@import "links.css" layer(components.links);
+/* @import "links.css" layer(components.links); */
 @import "toast.css" layer(components.toast);
 @import "markdown.css" layer(components.markdown);
 @import "syntax-highlighting.css" layer(components.syntax);

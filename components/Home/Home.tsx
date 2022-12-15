@@ -29,8 +29,10 @@ export default function Home({ posts }: { posts: IPost[] }) {
       `}}>
       </script>
       <style dangerouslySetInnerHTML={{ __html: `
-        .PostItem {
+        .PostList > li {
           view-timeline: list-item-scroll-effect;
+        }
+        .PostItem {
           animation: 1s linear list-transition forwards;
           animation-timeline: list-item-scroll-effect;
         }

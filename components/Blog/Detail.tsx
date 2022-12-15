@@ -60,13 +60,15 @@ export default function BlogDetail({ post, toc }: { post: IBlog, toc: [] }) {
       {/*todo reduced motion*/}
       <style dangerouslySetInnerHTML={{ __html: `
         .BlogHero {
-          animation: 1s linear hero-scroll-effect forwards;
-          animation-timeline: hero-timeline;
           view-timeline: hero-timeline;
+        }
+        .BlogHero img {
+          animation: 1s linear hero-scroll-effect;
+          animation-timeline: hero-timeline;
         }
         /* todo: don't animate avatar on mobile */
         .BlogMeta > img:first-child {
-          animation: 1s linear author-scroll-effect forwards;
+          animation: 1s linear author-scroll-effect;
           animation-timeline: hero-timeline;
         }
         @keyframes hero-scroll-effect {

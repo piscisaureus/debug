@@ -40,6 +40,12 @@ export default function BlogPost({post}:{post:IBlog}) {
       />
       <footer>
         <a href={`/${post.slug}`}>Full article</a>
+        <a href="#" class="icon-button like-button">
+          <div class="sr-only">Like this post</div>
+          <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">
+            <use href="#icon.heart"/>
+          </svg>
+        </a>
       </footer>
     </article>
   )

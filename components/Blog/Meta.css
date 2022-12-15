@@ -3,7 +3,7 @@
   padding-inline: var(--size-inline-1);
   column-gap: var(--size-8);
   row-gap: var(--size-2);
-  grid-template-columns: auto minmax(0, var(--size-content-2));
+  grid-template-columns: auto minmax(0, var(--size-content-3));
   margin-block-end: var(--size-fluid-4);
 
   & > * {

@@ -15,16 +15,18 @@ export default function Footer() {
       </a>
       <style dangerouslySetInnerHTML={{ __html: `
         .Footer {
-          animation: 1s linear footer-scroll-effect forwards;
-          animation-timeline: page-footer;
           view-timeline: page-footer;
+        }
+        .Footer > a {
+          animation: 1s linear footer-scroll-effect both;
+          animation-timeline: page-footer;
         }
         @keyframes footer-scroll-effect {
           enter 0% {
             opacity: 0;
             transform: scale(0.5) translateY(10vh);
           }
-          enter 100% {
+          enter 100%, 100% {
             opacity: 1;
             transform: scale(1)  translateY(0);
           }

@@ -63,16 +63,16 @@ export default function BlogDetail({ post, toc }: { post: IBlog, toc: [] }) {
           view-timeline: hero-timeline;
         }
         .BlogHero img {
-          animation: 1s linear hero-scroll-effect;
+          animation: 1s linear hero-scroll-effect both;
           animation-timeline: hero-timeline;
         }
         /* todo: don't animate avatar on mobile */
         .BlogMeta > img:first-child {
-          animation: 1s linear author-scroll-effect;
+          animation: 1s linear author-scroll-effect both;
           animation-timeline: hero-timeline;
         }
         @keyframes hero-scroll-effect {
-          exit -25% {
+          exit -5%, 0% {
             opacity: 1;
             transform: scale(1);
           }
@@ -82,7 +82,7 @@ export default function BlogDetail({ post, toc }: { post: IBlog, toc: [] }) {
           }
         }
         @keyframes author-scroll-effect {
-          exit -25% {
+          exit -5%, 0% {
             transform: scale(1);
           }
           exit 50%, exit 100% {

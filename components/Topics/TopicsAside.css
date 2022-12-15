@@ -5,7 +5,7 @@
   gap: var(--size-1);
 
   position: sticky;
-  inset-block-start: max(72px, 15vh);
+  inset-block-start: calc(72px + var(--size-5));
   inset-inline-start: calc(var(--size-inline-1) - var(--size-3));
 
   view-transition-name: site-topics;
@@ -13,6 +13,10 @@
 
   @supports(selector(:has(+ *))) {
     display: inline-grid;
+  }
+
+  @media (--lg-n-above) {
+    inset-block-start: calc(72px + var(--size-9));
   }
 
   @media (--md-n-below) {

@@ -124,9 +124,4 @@
   & a {
     word-break: break-word;
   }
-
-  & .read-time {
-    display: flex;
-    gap: var(--size-2);
-  }
 }

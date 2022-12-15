@@ -14,6 +14,11 @@
     }
   }
 
+  & .read-time {
+    display: flex;
+    gap: var(--size-2);
+  }
+
   & > h1 {
     --color-1: var(--cyan-5);
     --color-2: var(--indigo-5);

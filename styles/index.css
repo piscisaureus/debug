@@ -28,6 +28,10 @@
     letter-spacing: var(--font-letterspacing-2);
     font-weight: var(--font-weight-2);
   }
+
+  a {
+    font-weight: var(--font-weight-3);
+  }
 }
 
 @layer overrides {

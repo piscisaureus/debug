@@ -4,16 +4,15 @@ persona: argyleink
 published_at: 2022-12-01
 media:
   - src: argyleink/subgrid-dark.jpg
-    alt: some title
+    alt: Screenshot of grid devtools over a dark themed mobile layout
     width: 1648
     height: 2204
   - src: argyleink/subgrid-light.jpg
-    alt: some title
+    alt: Screenshot of grid devtools over a light themed mobile layout
     width: 1652
     height: 2116
 tags: 
   - css
-  - git
 ---
 [Grid](https://developer.mozilla.org/docs/Web/CSS/grid) and 
 [Subgrid](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Subgrid) 

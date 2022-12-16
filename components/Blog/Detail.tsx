@@ -5,6 +5,7 @@ import { IBlog } from '~/utils/posts.ts'
 import Persona from '~/components/Persona/Persona.tsx'
 import Tags, { ITags } from '~/components/Tags/Tags.tsx'
 import TableOfContents from '~/components/TableOfContents/TableOfContents.tsx'
+import Footer from '~/components/Footer/Footer.tsx'
 import Pic from '~/islands/Pic.tsx'
 
 export default function BlogDetail({ post, toc }: { post: IBlog, toc: [] }) {
@@ -55,7 +56,7 @@ export default function BlogDetail({ post, toc }: { post: IBlog, toc: [] }) {
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
-        {/*todo: <aside> of headings (see observable settings page)*/}
+        <Footer/>
       </main>
       {/*todo reduced motion*/}
       <style dangerouslySetInnerHTML={{ __html: `

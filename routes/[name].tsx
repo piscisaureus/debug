@@ -6,7 +6,6 @@ import { DOMParser } from 'https://deno.land/x/deno_dom/deno-dom-wasm.ts'
 import { getPost, IBlog, INote } from '~/utils/posts.ts'
 
 import Nav from '~/components/Nav/Nav.tsx'
-import Footer from '~/components/Footer/Footer.tsx'
 import PageMeta from '~/components/PageMeta.tsx'
 import PostDetail from '~/components/Posts/Detail.tsx'
 
@@ -45,7 +44,6 @@ export default function PostPage(props: PageProps<IBlog | INote>) {
       <body page-type="detail">
         <Nav layout="detail"/>
         <PostDetail post={props.data} toc={tableOfContents}/>
-        <Footer/>
       </body>
     </>
   )

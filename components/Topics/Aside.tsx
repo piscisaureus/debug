@@ -11,7 +11,7 @@ export default function Aside() {
 
   return (
     <aside class="TopicsAside">
-      <a id="all" href="#all">
+      <a id="all" href="#" aria-selected="true">
         <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">
           <use href="#icon.home"/>
         </svg>
@@ -45,25 +45,30 @@ export default function Aside() {
         }
       `}}/> */}
       <script dangerouslySetInnerHTML={{ __html: `
-        if (document.startViewTransition) {
-          document.getElementById('all').classList.add('active')
-        }
-
         document.querySelector('.TopicsAside').addEventListener('click', e => {
+          e.preventDefault()
+          e.stopPropagation()
+
+          const link = e.target.closest('a')
+          if (!link) return
+
+          const topic = link.id
+
+          document.querySelector('.TopicsAside [aria-selected="true"]').removeAttribute('aria-selected')
+          link.setAttribute('aria-selected', true)
+
           if (document.startViewTransition) {
-            e.preventDefault()
-            e.stopPropagation()
             document.startViewTransition(() => {
-              const link = e.target.closest('a')
-              const topic = link.id
-
-              document.querySelector('.TopicsAside .active').classList.remove('active')
-              link.classList.add('active')
-
               document.querySelectorAll('.PostList > li').forEach(li => {
                 let hasTopic = li.querySelector('[data-topic="'+topic+'"]')
                 li.style.display = hasTopic || topic === 'all' ? 'block' : 'none'
               })
+            })
+          }
+          else {
+            document.querySelectorAll('.PostList > li').forEach(li => {
+              let hasTopic = li.querySelector('[data-topic="'+topic+'"]')
+              li.style.display = hasTopic || topic === 'all' ? 'block' : 'none'
             })
           }
         })

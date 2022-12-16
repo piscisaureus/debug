@@ -38,7 +38,7 @@
       text-transform: capitalize;
     }
 
-    &:is(:hover,:target,:focus-visible,.active) {
+    &:is(:hover,:target,:focus-visible,[aria-selected="true"]) {
       color: var(--text-1);
       background: var(--surface-1);
       text-decoration: none;

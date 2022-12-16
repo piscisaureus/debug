@@ -22,4 +22,8 @@
       margin-block-start: var(--size-9);
     }
   }
+
+  & .Footer {
+    grid-column: 2;
+  }
 }

@@ -117,6 +117,10 @@
     grid-column: 2;
   }
 
+  & > .Footer {
+    justify-self: center;
+  }
+
   & pre {
     max-inline-size: 100%;
   }

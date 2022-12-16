@@ -1,6 +1,7 @@
 import { IPost, IBlog, INote } from '~/utils/posts.ts'
 
 import PostItem from '~/components/Posts/Item.tsx'
+import Footer from '~/components/Footer/Footer.tsx'
 import TopicsAside from '~/components/Topics/Aside.tsx'
 
 export default function Home({ posts }: { posts: IPost[] }) {
@@ -16,6 +17,7 @@ export default function Home({ posts }: { posts: IPost[] }) {
             </li>
           )}
         </ul>
+        <Footer/>
       </main>
       
       {/*todo reduced motion*/}

@@ -16,7 +16,7 @@ export default function Nav({layout}: {layout?: string}) {
             </svg>
           </a>
       }
-      <NavFilter/>
+      {layout !== 'detail' && <NavFilter/>}
       <ThemeSwitch/>
       <a href="/rss" class="icon-button">
         <div class="sr-only">Follow my RSS feed</div>

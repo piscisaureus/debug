@@ -13,8 +13,4 @@
   @media (--md-n-above) {
     display: none;
   }
-
-  @nest [page-type="detail"] & {
-    display: none;
-  }
 }

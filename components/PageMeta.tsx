@@ -42,17 +42,16 @@ export default function PageMeta(props:any) {
         }   
       `}}/>
 
-      {/* <script type="speculationrules" dangerouslySetInnerHTML={{ __html: `
-         {
-           "prerender": [
-             {
-               "source": "list",
-               "urls": [${prerenderables.map(url => `"/${url}"`).join(',')}]
-             }
-           ]
-         }
-       `}}/> */}
-      {/* <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script> */}
+      <script type="speculationrules" dangerouslySetInnerHTML={{ __html: `
+        {
+          "prerender": [
+            {
+              "source": "list",
+              "urls": [${prerenderables.map(url => `"/${url}"`).join(',')}]
+            }
+          ]
+        }
+      `}}/>
       <PageIcons/>
     </>
   )

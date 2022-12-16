@@ -17,9 +17,10 @@
     padding-block: var(--size-inline-1) var(--size-4);
   }
 
+  @nest .PostDetail & footer,
   & .like-button {
     display: none;
-  }
+  } 
 
   & > * {
     grid-column: 2;

@@ -4,7 +4,7 @@ persona: admin
 published_at: 2022-12-15
 ---
 
-Domains moved 👍  
+Domain's moved 👍  
 
 Soft launch of [nerdy.dev](#) successful 🤘💀   
 

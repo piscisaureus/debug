@@ -7,10 +7,8 @@ tags:
 ---
 
 a design tool is like a workspace with 
-pre-squeezed paints ready.
-
-bummer is..  
+pre-squeezed paints ready. **bummer is**.. 
 many artists have a preference in their paint and ink brands. 
 
 soon web browsers will offer the choice,
-will graphic design tools??
+will graphic design tools?

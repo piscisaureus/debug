@@ -12,4 +12,3 @@ tags:
 ---
 
 Released [Kung Fury](https://github.com/argyleink/Kung-Fury-Theme)! A syntax highlight theme.
-

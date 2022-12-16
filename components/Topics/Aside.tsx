@@ -33,17 +33,6 @@ export default function Aside() {
             display: none;
           }`
       }).join('\n')}}/>
-      {/* <style dangerouslySetInnerHTML={{ __html: `
-        ::view-transition-old(state-of-css-2022-results),
-        ::view-transition-old(lch-luminance-vs-hsl-lightness) {
-          animation: var(--animation-scale-down), var(--animation-fade-out);
-        }
-
-        ::view-transition-new(state-of-css-2022-results),
-        ::view-transition-new(lch-luminance-vs-hsl-lightness) {
-          animation: var(--animation-scale-down) reverse, var(--animation-fade-in);
-        }
-      `}}/> */}
       <script dangerouslySetInnerHTML={{ __html: `
         document.querySelector('.TopicsAside').addEventListener('click', e => {
           e.preventDefault()

@@ -1,0 +1,33 @@
+import { getTags, totalPosts } from '~/utils/posts.ts'
+
+export default function NavFilter() {
+  const tags = getTags()
+  const orderedKeys = Array.from(tags.keys())
+    .sort((a:string, b:string) => a.localeCompare(b))
+    .filter((tag:string) => !Array.from(['test','blog','note']).includes(tag))
+
+  orderedKeys.unshift('blog')
+  orderedKeys.unshift('note')
+
+  return (
+    <>
+      <select id="TopicsFilterMobile" class="TopicsAsideMobile">
+        <option value="all" selected>all ({totalPosts})</option>
+        {orderedKeys.map((tag:string) => 
+          <option value={tag}>{tag} ({tags.get(tag)})</option>
+        )}
+      </select>
+      <script dangerouslySetInnerHTML={{ __html: `
+        document.querySelector('#TopicsFilterMobile').addEventListener('input', e => {
+          const topic = e.target.value
+          
+          document.querySelectorAll('.PostList > li').forEach(li => {
+            let hasTopic = li.querySelector('[data-topic="'+topic+'"]')
+            li.style.display = hasTopic || topic === 'all' ? 'block' : 'none'
+          })
+        })
+      ` }}
+      />
+    </>
+  )
+}

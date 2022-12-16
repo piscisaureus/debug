@@ -1,0 +1,16 @@
+.TopicsAsideMobile {
+  --icon-arrow-down: url(https://api.iconify.design/ic:keyboard-arrow-down.svg?color=%23adb5bd);
+
+  appearance: none;
+  margin-inline-end: auto;
+
+  background-color: #0000;
+  background-repeat: no-repeat;
+  background-image: var(--icon-arrow-down);
+  background-position: calc(100% - 1ch) center;
+  background-size: 3ex;
+
+  @media (--md-n-above) {
+    display: none;
+  }
+}

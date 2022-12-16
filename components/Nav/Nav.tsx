@@ -1,4 +1,5 @@
 import ThemeSwitch from '~/components/ThemeSwitch/ThemeSwitch.tsx'
+import NavFilter from '~/components/Topics/NavFilter.tsx'
 
 export default function Nav({layout}: {layout?: string}) {
   return (
@@ -15,6 +16,7 @@ export default function Nav({layout}: {layout?: string}) {
             </svg>
           </a>
       }
+      <NavFilter/>
       <ThemeSwitch/>
       <a href="/rss" class="icon-button">
         <div class="sr-only">Follow my RSS feed</div>

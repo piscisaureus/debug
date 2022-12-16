@@ -14,7 +14,9 @@
   contain: layout;
 
   & > a:first-of-type {
-    margin-inline-end: auto;
+    @media (--md-n-above) {
+      margin-inline-end: auto;
+    }
 
     @nest [page-type="detail"] & {
       view-transition-name: site-nav-home;

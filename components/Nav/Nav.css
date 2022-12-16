@@ -13,6 +13,12 @@
   view-transition-name: site-nav;
   contain: layout;
 
+  transition: translate .3s var(--ease-3);
+
+  &[scroll-direction="down"] {
+    translate: 0 -100%;
+  }
+
   & > a:first-of-type {
     @media (--md-n-above) {
       margin-inline-end: auto;

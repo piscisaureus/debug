@@ -23,7 +23,9 @@
     }
   }
 
-  & .Footer {
-    grid-column: 2;
+  @media (--md-n-above) {
+    & .Footer {
+      grid-column: 2;
+    }
   }
 }

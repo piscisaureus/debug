@@ -1,6 +1,6 @@
 ---
 type: note
-persona: google
+persona: argyleink
 published_at: 2021-12-01
 media:
   - src: argyleink/open-props-social.jpg

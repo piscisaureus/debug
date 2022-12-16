@@ -21,6 +21,7 @@
     @nest [page-type="detail"] & {
       view-transition-name: site-nav-home;
       contain: layout;
+      margin-inline-end: auto;
     }
   }
 

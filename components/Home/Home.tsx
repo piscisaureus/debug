@@ -7,7 +7,6 @@ import TopicsAside from '~/components/Topics/Aside.tsx'
 export default function Home({ posts }: { posts: IPost[] }) {
   return (
     <>
-      {/*todo: list.tsx component*/}
       <main class="Home">
         <TopicsAside/>
         <ul class="PostList">
@@ -19,17 +18,21 @@ export default function Home({ posts }: { posts: IPost[] }) {
         </ul>
         <Footer/>
       </main>
-      
-      {/*todo reduced motion*/}
       <script dangerouslySetInnerHTML={{ __html: `
-        document.querySelectorAll('.PostItem').forEach((post) => {
-          post.onclick = e => {
-            if (e.target.nodeName === 'A' || e.target.closest('a')) return
-            window.location.href = post.getAttribute('data-slug')
-          }
-        })
+        document.querySelector('.PostList').onclick = handleActivate
+        document.querySelector('.PostList').onkeyup = e => {
+          if (e.key === 'Enter') handleActivate(e)
+        }
+
+        function handleActivate(e) {
+          if (e.target.nodeName === 'A' || e.target.closest('a') || e.target.classList.contains('PostList')) 
+            return
+          window.location.href = e.target.closest('.PostItem').getAttribute('data-slug')
+        }
       `}}>
       </script>
+
+      {/*todo reduced motion*/}
       <style dangerouslySetInnerHTML={{ __html: `
         .PostList > li {
           view-timeline: list-item-scroll-effect;

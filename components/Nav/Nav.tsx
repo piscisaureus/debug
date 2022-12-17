@@ -56,14 +56,10 @@ export default function Nav({layout}: {layout?: string}) {
         const nav = document.querySelector('.Nav')
         document.addEventListener('scroll', e => {
           const st = window.pageYOffset || document.documentElement.scrollTop
-          
-          if (st > e.target.lastScrollTop){
-            nav.setAttribute('scroll-direction', 'down')
-          } 
-          else {
-            nav.setAttribute('scroll-direction', 'up')
-          }
-
+          const direction = st > e.target.lastScrollTop
+            ? 'down'
+            : 'up'
+          nav.setAttribute('scroll-direction', direction)
           e.target.lastScrollTop = st <= 0 ? 0 : st
         }, false)
         ` }}

@@ -9,7 +9,6 @@
   position: sticky;
   top: 0;
   z-index: var(--layer-1);
-  overflow: hidden;
 
   view-transition-name: site-nav;
   contain: layout;

@@ -14,10 +14,10 @@
   contain: layout;
 
   & > * {
-    &:nth-child(2) { transition-delay: 50ms }
-    &:nth-child(3) { transition-delay: 100ms }
-    &:nth-child(4) { transition-delay: 150ms }
-    &:nth-child(5) { transition-delay: 200ms }
+    &:nth-child(2) { transition-delay: 0s, 0s, 50ms }
+    &:nth-child(3) { transition-delay: 0s, 0s, 100ms }
+    &:nth-child(4) { transition-delay: 0s, 0s, 150ms }
+    &:nth-child(5) { transition-delay: 0s, 0s, 200ms }
   }
 
   &[scroll-direction="down"] > * {
@@ -26,7 +26,10 @@
 
   @media (--motionOK) {
     & > * {
-      transition: translate .3s var(--ease-3);
+      transition: 
+        outline-offset 145ms var(--ease-2),
+        box-shadow .5s var(--ease-out-4),
+        translate .3s var(--ease-3);
     }
   }
 

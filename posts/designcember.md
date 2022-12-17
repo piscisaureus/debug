@@ -4,7 +4,7 @@ persona: google
 published_at: 2021-12-10
 media:
   - src: argyleink/designcember.png
-    alt: some title
+    alt: Designcember written in red festive cursive on a light blue snowy background
     width: 1357
     height: 685
 tags: 

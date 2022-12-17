@@ -4,7 +4,7 @@ persona: google
 published_at: 2022-10-31
 media:
   - src: argyleink/chrometober.png
-    alt: some title
+    alt: A screenshot of the spooky book cover
     width: 1055
     height: 533
 tags: 

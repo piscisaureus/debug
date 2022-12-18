@@ -11,7 +11,7 @@ tags:
   - media
 ---
 
-[Thinking on ways to solve **card stacks**](https://www.youtube.com/watch?v=m4DKhRJeYx4&list=PLNYkxOF6rcIAaV1wwI9540OC_3XoIzMjQ)  
+**Thinking on ways to solve** [card stacks](https://www.youtube.com/watch?v=m4DKhRJeYx4&list=PLNYkxOF6rcIAaV1wwI9540OC_3XoIzMjQ)  
 
 In this [GUI Challenge](https://goo.gle/GUIchallenges), 
 [I](https://www.youtube.com/channel/UCBGr3ZMcV5jke40_Wrv3fNA) 

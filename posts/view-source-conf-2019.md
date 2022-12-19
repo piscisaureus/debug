@@ -8,7 +8,7 @@ media:
     width: 633
     height: 280
 tags: 
-  - speaking
+  - talks
 ---
 
 [Corner at View Source Conf](https://2019.viewsourceconf.org/) in Amsterdam

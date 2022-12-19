@@ -3,7 +3,7 @@ type: note
 persona: argyleink
 published_at: 2013-3-23
 tags: 
-  - speaking
+  - talks
 ---
 
 Recorded my first set of tutorial videos. They were on 

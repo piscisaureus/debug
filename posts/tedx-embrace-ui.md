@@ -3,7 +3,7 @@ type: note
 persona: argyleink
 published_at: 2014-3-26
 tags: 
-  - speaking
+  - talks
   - media
 ---
 

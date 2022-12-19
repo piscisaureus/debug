@@ -83,7 +83,7 @@ export default function PageIcons() {
         <title>Git Icon</title>
         <GitIcon/>
       </symbol>
-      <symbol id="icon.speaking">
+      <symbol id="icon.talks">
         <title>Speaking Icon</title>
         <SpeakingIcon/>
       </symbol>

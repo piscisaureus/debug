@@ -3,7 +3,7 @@ type: note
 persona: google
 published_at: 2021-3-12
 tags: 
-  - speaking
+  - talks
 ---
 
 **Great Developer Tools**

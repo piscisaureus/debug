@@ -8,7 +8,7 @@ media:
     width: 1236
     height: 577
 tags: 
-  - speaking
+  - talks
   - media
 ---
 

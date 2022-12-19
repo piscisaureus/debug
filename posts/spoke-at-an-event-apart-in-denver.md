@@ -8,7 +8,7 @@ media:
     width: 930
     height: 282
 tags: 
-  - speaking
+  - talks
 ---
 
 **Oh snap!**

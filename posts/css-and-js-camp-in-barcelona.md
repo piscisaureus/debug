@@ -3,7 +3,7 @@ type: note
 persona: google
 published_at: 2019-3-12
 tags: 
-  - speaking
+  - talks
   - media
 ---
 

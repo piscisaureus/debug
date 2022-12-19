@@ -8,7 +8,7 @@ media:
     width: 778
     height: 259
 tags: 
-  - speaking
+  - talks
 ---
 
 Spoke at [HTML5 DevConf](http://html5devconf.com) in San Francisco

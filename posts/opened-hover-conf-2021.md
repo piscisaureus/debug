@@ -8,7 +8,7 @@ media:
     width: 900
     height: 341
 tags: 
-  - speaking
+  - talks
 ---
 
 **What's New In CSS**

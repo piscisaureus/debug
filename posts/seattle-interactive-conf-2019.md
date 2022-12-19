@@ -8,7 +8,7 @@ media:
     width: 1366
     height: 601
 tags: 
-  - speaking
+  - talks
 ---
 
 **Deceiving For Good**  

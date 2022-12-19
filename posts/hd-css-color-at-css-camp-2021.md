@@ -8,7 +8,7 @@ media:
     width: 1354
     height: 511
 tags: 
-  - speaking
+  - talks
 ---
 
 **HD CSS Color**  

@@ -3,14 +3,22 @@
 
   appearance: none;
   margin-inline-end: auto;
+  padding-inline-end: 2.75rem;
 
-  background-color: #0000;
   background-repeat: no-repeat;
   background-image: var(--icon-arrow-down);
   background-position: calc(100% - 1ch) center;
   background-size: 3ex;
 
+  &:not(:focus-visible) {
+    background-color: #0000;
+  }
+
   @media (--md-n-above) {
     display: none;
+  }
+
+  & option {
+    background: var(--surface-document);
   }
 }

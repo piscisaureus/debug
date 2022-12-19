@@ -10,7 +10,7 @@
     animation-timing-function: var(--ease-squish-3);
 
     &[open] {
-      animation: var(--animation-slide-in-up) forwards;
+      animation: var(--animation-scale-up) forwards;
     }
   }
 

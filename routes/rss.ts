@@ -1,6 +1,7 @@
 import { Handlers } from '$fresh/server.ts'
 import { titleCase } from "$deno/x/case/mod.ts"
 import { getPosts, IPost } from '~/utils/posts.ts'
+import { urlbase } from '~/islands/Pic.tsx'
 import RSS from 'https://esm.sh/rss'
 
 export const handler: Handlers<IPost[]> = {
@@ -44,7 +45,7 @@ function makeRSS(posts:IPost[]) {
     // @ts-ignore: Unreachable code error
     const title = post?.title || titleCase(post.slug.replaceAll('-', ' '))
     
-    feed.item({
+    const futureXMLItemObject = {
       title:  title,
       description: post.content,
       url: 'https://nerdy.dev/'+post.slug,
@@ -52,8 +53,20 @@ function makeRSS(posts:IPost[]) {
         ? post.tags
         : ['note'],
       author: post.persona.name,
-      date: post.publishedAt,
-    })
+      date: post.publishedAt
+    }
+
+    if (post?.media?.length) {
+      futureXMLItemObject.enclosure = {
+        url: urlbase + '/' + post.media[0].src
+      }
+
+      futureXMLItemObject.custom_elements = [
+        {'media:thumbnail': { _attr: { url: urlbase + '/' + post.media[0].src}}},
+      ]
+    }
+
+    feed.item(futureXMLItemObject)
   }
    
   return feed

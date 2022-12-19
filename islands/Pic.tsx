@@ -1,7 +1,7 @@
 import { useState } from "preact/hooks"
 import { IS_BROWSER } from '$fresh/runtime.ts'
 
-const urlbase = 'https://res.cloudinary.com/dnpmdb8r8/image/upload'
+export const urlbase = 'https://res.cloudinary.com/dnpmdb8r8/image/upload'
 const lqip = 'e_blur:2000,c_thumb,f_auto,q_auto:low'
 
 export interface Pic {

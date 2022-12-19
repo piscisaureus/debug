@@ -12,6 +12,7 @@ export const handler: Handlers<IPost[]> = {
   async GET(_req, ctx) {
     const posts = await getPosts()
     if (!posts) return ctx.renderNotFound()
+
     return ctx.render(posts)
   }
 }

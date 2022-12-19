@@ -7,10 +7,11 @@ import Tags, { ITags } from '~/components/Tags/Tags.tsx'
 import TableOfContents from '~/components/TableOfContents/TableOfContents.tsx'
 import Footer from '~/components/Footer/Footer.tsx'
 import Pic from '~/islands/Pic.tsx'
+import { getLocaleString } from '~/utils/locale.ts'
 
 export default function BlogDetail({ post, toc }: { post: IBlog, toc: [] }) {
   const tags = post.tags ? post.tags.filter(tag => !tag.includes('blog')) : []
-
+  
   return (
     <>
       {post.hero &&
@@ -30,7 +31,7 @@ export default function BlogDetail({ post, toc }: { post: IBlog, toc: [] }) {
         <Persona persona={post.persona} style={`view-transition-name: ${post.slug}-avatar`}/>
 
         <h1>{post.title}</h1>
-        <time>{new Date(post.publishedAt).toLocaleDateString("en-us", {
+        <time>{new Date(post.publishedAt).toLocaleDateString(getLocaleString(), {
           year: "numeric",
           month: "long",
           day: "numeric",

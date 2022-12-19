@@ -1,0 +1,31 @@
+.Modal {
+  display: grid;
+  padding: 0;
+  position: fixed;
+  inset: 0;
+  transition: opacity .5s var(--ease-3);
+
+  @media (--motionOK) {
+    animation: var(--animation-scale-down) forwards;
+    animation-timing-function: var(--ease-squish-3);
+
+    &[open] {
+      animation: var(--animation-slide-in-up) forwards;
+    }
+  }
+
+  &:not([open]) {
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  &[loading] {
+    visibility: hidden;
+  }
+
+  & img {
+    max-block-size: 100vh;
+    max-block-size: 100svh;
+    max-inline-size: 100vw;
+  }
+}

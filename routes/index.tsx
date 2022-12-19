@@ -4,6 +4,7 @@ import { Head } from '$fresh/runtime.ts'
 import { getPosts, IPost } from '~/utils/posts.ts'
 
 import Nav from '~/components/Nav/Nav.tsx'
+import Modal from '~/islands/Modal.tsx'
 import PageMeta from '~/components/PageMeta.tsx'
 import HomePage from '~/components/Home/Home.tsx'
 
@@ -26,6 +27,7 @@ export default function BlogIndexPage(props: PageProps<IPost[]>) {
       <body page-type="home">
         <Nav/>
         <HomePage posts={posts}/>
+        <Modal/>
       </body>
     </>  
   )

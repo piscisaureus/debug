@@ -1,13 +1,31 @@
 import { useEffect } from "preact/hooks"
 import { IS_BROWSER } from '$fresh/runtime.ts'
 
-export default function Dialog(props) {
+export default function Dialog() {
   useEffect(() => {
     upgrade(this.base)
+    document.addEventListener('click', handleClick.bind(this))
   }, [])
 
+  const handleClick = e => {
+    if (e.target.nodeName !== 'IMG') return
+    
+    e.stopPropagation()
+    e.preventDefault()
+
+    const dialog = this.base
+    dialog.innerHTML = e.target.outerHTML
+
+    const dialogImg = dialog.querySelector('img')
+    dialogImg.src = dialogImg.hasAttribute('data-full')
+      ? dialogImg.getAttribute('data-full')
+      : dialogImg.getAttribute('src')
+    dialogImg.className = null
+    dialog.showModal()
+  }
+
   return (
-    <dialog class="Modal" loading onClick={lightDismiss} ref={this.ref}/>
+    <dialog class="Modal" loading onClick={lightDismiss}/>
   )
 }
 

@@ -27,7 +27,6 @@ export default function Pic(props:Pic) {
 
   return (
     <img 
-      onClick={handleClick}
       loading="lazy"
       data-state={loaded ? 'loaded' : 'loading'}
       data-full={full}
@@ -40,21 +39,6 @@ export default function Pic(props:Pic) {
       decoding="async"
     />
   )
-}
-
-function handleClick(e) {
-  e.stopPropagation()
-  e.preventDefault()
-
-  const dialog = document.querySelector('.Modal')
-  if (!dialog) return
-
-  dialog.innerHTML = e.target.outerHTML
-
-  const dialogImg = dialog.querySelector('img')
-  dialogImg.src = dialogImg.getAttribute('data-full')
-  dialogImg.className = null
-  dialog.showModal()
 }
 
 export function picPaths({src, cloudinary}:{src:string, cloudinary?:string}) {

@@ -1,5 +1,4 @@
 import { useEffect } from "preact/hooks"
-import { IS_BROWSER } from '$fresh/runtime.ts'
 
 export default function Dialog() {
   useEffect(() => {
@@ -55,7 +54,6 @@ const dialogClose = async ({target:dialog}) => {
 }
 
 async function upgrade(dialog) {
-  // dialog.addEventListener('click', lightDismiss)
   dialog.addEventListener('close', dialogClose)
 
   // track opening

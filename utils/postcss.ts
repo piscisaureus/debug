@@ -9,7 +9,7 @@ import importGlob from 'https://esm.sh/postcss-import-ext-glob@2.1.1'
 import OpenProps from 'open-props'
 import jitProps from 'https://esm.sh/postcss-jit-props@1.0.8'
 import { debounce } from '$std/async/mod.ts'
-import { CustomMedia } from 'https://esm.sh/open-props/esm/media'
+import { CustomMedia } from 'https://esm.sh/open-props/src/media'
 
 const config = {
   plugins: [

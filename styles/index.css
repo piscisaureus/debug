@@ -15,7 +15,11 @@
 @layer base.normalize {
   html {
     view-timeline: document-timeline;
-    scroll-padding-block-start: 90px;
+
+    &:has(.PostList .PostItem:focus-visible) {
+      scroll-snap-type: y mandatory;
+      scroll-padding-block-start: 72px;
+    }
   }
 
   body {

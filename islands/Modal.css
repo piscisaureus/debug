@@ -6,11 +6,13 @@
   transition: opacity .5s var(--ease-3);
 
   @media (--motionOK) {
-    animation: var(--animation-scale-down) forwards;
-    animation-timing-function: var(--ease-squish-3);
+    transform: scale(.9);
+    transition: 
+      opacity .5s var(--ease-3),
+      transform .5s var(--ease-elastic-3);
 
     &[open] {
-      animation: var(--animation-scale-up) forwards;
+      transform: scale(1);
     }
   }
 

@@ -10,41 +10,34 @@ export default function Aside() {
   orderedKeys.unshift('note')
 
   return (
-    <aside class="TopicsAside">
-      <a id="all" href="#" aria-selected="true">
+    <fieldset class="TopicsAside">
+      <label for="all">
         <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">
           <use href="#icon.home"/>
         </svg>
         <span>all</span>
         <span class="TopicCount">{totalPosts}</span>
-      </a>
+        <input checked type="radio" id="all" name="topics" value="all"/>
+      </label>
       {orderedKeys.map((tag:string) => 
-        <a id={tag} href={`#${tag}`}>
+        <label for={tag}>
           <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">
-            <use href={`#icon.${tag.replaceAll(' ', '-')}`}/>
+            <use href={`#icon.${tag}`}/>
           </svg>
           <span>{tag}</span>
           <span class="TopicCount">{tags.get(tag)}</span>
-        </a>
+          <input type="radio" id={tag} name="topics" value={tag}/>
+        </label>
       )}
       <style dangerouslySetInnerHTML={{ __html: Array.from(tags.keys()).map(topic => {
         return `
-          html:has(#${topic}:target) .PostList > li:not(:has([data-topic="${topic}"])) {
+          html:has(#${topic}:checked) .PostList > li:not(:has([data-topic="${topic}"])) {
             display: none;
           }`
       }).join('\n')}}/>
       <script dangerouslySetInnerHTML={{ __html: `
-        document.querySelector('.TopicsAside').addEventListener('click', e => {
-          e.preventDefault()
-          e.stopPropagation()
-
-          const link = e.target.closest('a')
-          if (!link) return
-
-          const topic = link.id
-
-          document.querySelector('.TopicsAside [aria-selected="true"]').removeAttribute('aria-selected')
-          link.setAttribute('aria-selected', true)
+        document.querySelector('.TopicsAside').addEventListener('change', e => {
+          const topic = e.target.value
 
           if (document.startViewTransition) {
             document.startViewTransition(() => {
@@ -63,6 +56,6 @@ export default function Aside() {
         })
         ` }}
       />
-    </aside>
+    </fieldset>
   )
 }

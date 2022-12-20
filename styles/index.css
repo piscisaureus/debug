@@ -18,7 +18,11 @@
 
     &:has(.PostList .PostItem:focus-visible) {
       scroll-snap-type: y mandatory;
-      scroll-padding-block-start: 72px;
+      scroll-padding-block-start: calc(72px + var(--size-5));
+
+      @media (--lg-n-above) {
+        scroll-padding-block-start: calc(72px + var(--size-9));
+      }
     }
   }
 

@@ -2,13 +2,13 @@ import { IPost, IBlog, INote } from '~/utils/posts.ts'
 
 import PostItem from '~/components/Posts/Item.tsx'
 import Footer from '~/components/Footer/Footer.tsx'
-import TopicsAside from '~/components/Topics/Aside.tsx'
+import Topics from '~/components/Topics/Topics.tsx'
 
 export default function Home({ posts }: { posts: IPost[] }) {
   return (
     <>
       <main class="Home">
-        <TopicsAside/>
+        <Topics/>
         <ul class="PostList">
           {posts.map((post) => 
             <li>

@@ -8,10 +8,6 @@
   gap: var(--size-3);
   margin-block-end: var(--size-10);
 
-  @media (--md-n-above) {
-    grid-template-columns: var(--size-content-2);
-  }
-
   @media (--lg-n-above) {
     grid-template-columns: var(--size-content-3);
   }

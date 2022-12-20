@@ -9,12 +9,16 @@
   box-shadow: var(--shadow-5);
   padding: var(--size-inline-1);
   border-radius: var(--radius-3);
-  border: var(--border-size-1) solid transparent;
+  border: 0px solid transparent;
   contain: layout;
 
   @media (--md-n-above) {
     --_avatar-column-size: 50px;
     padding-block: var(--size-inline-1) var(--size-4);
+  }
+
+  @media (forced-colors: active) {
+    border-width: var(--border-size-1);
   }
 
   &:focus-visible {
@@ -176,6 +180,33 @@
 
     & > figure {
       margin-inline: calc(var(--size-inline-1) * -1);
+    }
+  }
+
+  &:has(section > pre) {
+    & > section {
+      display: contents;
+
+      & > *:not(pre) {
+        grid-column: 2;
+      }
+    }
+
+    & section > pre {
+      max-inline-size: initial;
+      border-radius: 0;
+      grid-column: 1 / -1;
+      margin-inline: calc(var(--size-inline-1) * -1);
+
+      & > code {
+        @media (--sm-n-above) {
+          margin-inline-start: calc(var(--_avatar-column-size) + var(--size-inline-1));
+        }
+
+        & > pre {
+          padding-inline-start: 0;
+        }
+      }
     }
   }
 

@@ -21,6 +21,10 @@
       margin-inline: auto;
       margin-block-start: var(--size-9);
     }
+
+    @media (height <= 500px) {
+      margin-block-start: 0;
+    }
   }
 
   @media (--md-n-above) {

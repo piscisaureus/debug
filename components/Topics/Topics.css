@@ -7,7 +7,7 @@
   gap: var(--size-1);
 
   position: sticky;
-  inset-block-start: calc(72px + var(--size-5));
+  inset-block-start: calc(var(--nav-height) + var(--size-5));
   inset-inline-start: calc(var(--size-inline-1) - var(--size-3));
 
   view-transition-name: site-topics;
@@ -18,11 +18,19 @@
   }
 
   @media (--lg-n-above) {
-    inset-block-start: calc(72px + var(--size-9));
+    inset-block-start: calc(var(--nav-height) + var(--size-9));
   }
 
   @media (--md-n-below) {
     display: none
+  }
+
+  @media (height <= 500px) {
+    max-block-size: calc(100vh - var(--nav-height));
+    overflow: auto;
+    inset-block-start: var(--nav-height);
+    padding-block-end: var(--size-2);
+    padding-inline-end: var(--size-2);
   }
 
   & > label {

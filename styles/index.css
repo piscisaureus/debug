@@ -14,14 +14,15 @@
 
 @layer base.normalize {
   html {
+    --nav-height: 72px;
     view-timeline: document-timeline;
 
     &:has(.PostList .PostItem:focus-visible) {
       scroll-snap-type: y mandatory;
-      scroll-padding-block-start: calc(72px + var(--size-5));
+      scroll-padding-block-start: calc(var(--nav-height) + var(--size-5));
 
       @media (--lg-n-above) {
-        scroll-padding-block-start: calc(72px + var(--size-9));
+        scroll-padding-block-start: calc(var(--nav-height) + var(--size-9));
       }
     }
   }

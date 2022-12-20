@@ -29,14 +29,14 @@
     margin-block-start: var(--size-3);
     background: linear-gradient(
       to top right, 
-      var(--color-1) 19%, 
-      transparent 19%, transparent 20%, 
-      var(--color-2) 20%, var(--color-2)  39%,
-      transparent 39%, transparent 40%, 
-      var(--color-3) 40%, var(--color-3) 59% ,
-      transparent 59%, transparent 60%, 
-      var(--color-4) 60%, var(--color-4) 79%,
-      transparent 79%, transparent 80%, 
+      var(--color-1) calc(19% - 1px), 
+      transparent 19%, transparent calc(20% - 1px), 
+      var(--color-2) 20%, var(--color-2) calc(39% - 1px),
+      transparent 39%, transparent calc(40% - 1px), 
+      var(--color-3) 40%, var(--color-3) calc(59% - 1px),
+      transparent 59%, transparent calc(60% - 1px), 
+      var(--color-4) 60%, var(--color-4) calc(79% - 1px),
+      transparent 79%, transparent calc(80% - 1px), 
       var(--color-5) 80%
     );
     background-clip: text;

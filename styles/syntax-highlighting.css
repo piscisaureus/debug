@@ -1,12 +1,14 @@
 :root {
-  --_syntax-color-1: var(--link);
-  --_syntax-color-2: var(--link-visited);
-  --_syntax-color-3: var(--cyan-9);
+  --_syntax-color-1: var(--pink-9);
+  --_syntax-color-2: var(--blue-9);
+  --_syntax-color-3: var(--purple-9);
   --_syntax-color-read: var(--text-1);
   --_syntax-color-subdued: var(--text-2);
 
   @media (--OSdark) {
-     --_syntax-color-3: var(--cyan-2);
+    --_syntax-color-1: var(--pink-2);
+    --_syntax-color-2: var(--blue-2);
+    --_syntax-color-3: var(--purple-2);
   }
 }
 

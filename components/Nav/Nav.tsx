@@ -34,7 +34,8 @@ export default function Nav({layout}: {layout?: string}) {
           const direction = st > e.target.lastScrollTop
             ? 'down'
             : 'up'
-          nav.setAttribute('scroll-direction', direction)
+          if (Math.abs(st - e.target.lastScrollTop) > 10)
+            nav.setAttribute('scroll-direction', direction)
           e.target.lastScrollTop = st <= 0 ? 0 : st
         }, {passive: true})
         ` }}

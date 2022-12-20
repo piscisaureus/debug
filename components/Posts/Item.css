@@ -92,7 +92,6 @@
   }
 
   & code {
-    padding-block: 0;
     padding-inline: var(--size-1);
   }
 

@@ -1,0 +1,9 @@
+#skip-link {
+  position: absolute;
+  opacity: 0;
+  transition: opacity .3s var(--ease-3);
+
+  &:focus {
+    opacity: 1;
+  }
+}

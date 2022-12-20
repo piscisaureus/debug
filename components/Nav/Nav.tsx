@@ -4,6 +4,7 @@ import NavFilter from '~/components/Topics/NavFilter.tsx'
 export default function Nav({layout}: {layout?: string}) {
   return (
     <>
+      {layout !== 'detail' && <a id="skip-link" href='#feed'>Skip to main feed</a>}
       <nav class="Nav">
         {layout === 'detail'
           ? <a href="/" class="icon-button" id="back-to-home">

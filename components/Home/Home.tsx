@@ -9,7 +9,7 @@ export default function Home({ posts }: { posts: IPost[] }) {
     <>
       <main class="Home">
         <Topics/>
-        <ul class="PostList">
+        <ul class="PostList" id="feed">
           {posts.map((post) => 
             <li>
               <PostItem post={post as IBlog | INote} />

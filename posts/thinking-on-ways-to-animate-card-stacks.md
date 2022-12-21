@@ -1,6 +1,6 @@
 ---
 type: note
-persona: google
+persona: guichallenges
 published_at: 2022-11-23
 media:
   - src: argyleink/gui-cardstack.jpg

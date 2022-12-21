@@ -9,9 +9,9 @@ import Footer from '~/components/Footer/Footer.tsx'
 import Pic from '~/islands/Pic.tsx'
 import { getLocaleString } from '~/utils/locale.ts'
 
-export default function BlogDetail({ post, toc }: { post: IBlog, toc: [] }) {
+export default function BlogDetail({ post, toc, mentions }: { post: IBlog, toc: [], mentions:[] }) {
   const tags = post.tags ? post.tags.filter(tag => !tag.includes('blog')) : []
-  
+
   return (
     <>
       {post.hero &&
@@ -43,6 +43,7 @@ export default function BlogDetail({ post, toc }: { post: IBlog, toc: [] }) {
           {readingTime(post.content).text}
         </span>
         {tags.length > 0 && <Tags tags={tags as ITags}/>}
+        {mentions?.length > 0 && <p>Mentions ({mentions.length})</p>}
         {/* <p 
           style={`view-transition-name: ${post.slug}-snippet`}
           dangerouslySetInnerHTML={{ __html: post.snippet as string }}

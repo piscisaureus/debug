@@ -24,11 +24,13 @@ export interface IBlog extends IPost {
   title: string;
   snippet?: string;
   hero: IHero;
+  mentions: [];
 }
 
 export interface INote extends IPost {
   type: 'note',
   media?: IHero[];
+  mentions: [];
 }
 
 const cache = new Map()

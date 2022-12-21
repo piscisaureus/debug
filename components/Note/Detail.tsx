@@ -2,7 +2,7 @@ import { INote } from '~/utils/posts.ts'
 import Note from '~/components/Note/Card.tsx'
 import { getLocaleString } from '~/utils/locale.ts'
 
-export default function NoteDetail({post}:{post:INote}) {
+export default function NoteDetail({post, mentions}:{post:INote, mentions:[]}) {
   return (
     <main class="PostDetail">
       <header>
@@ -13,6 +13,7 @@ export default function NoteDetail({post}:{post:INote}) {
         })}</time>
       </header>
       <Note post={post}/>
+      {mentions?.length > 0 && <p>Mentions ({mentions.length})</p>}
     </main>
   )
 }

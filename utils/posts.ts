@@ -62,7 +62,7 @@ export async function getPosts(): Promise<IPost[]> {
 export async function getPost(slug: string) {
   let text: string
 
-  if (cache.get(slug)) {
+  if (cache.has(slug)) {
     text = cache.get(slug)
   }
   else {

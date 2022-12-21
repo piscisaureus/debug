@@ -32,7 +32,6 @@ function makeRSS(posts:IPost[]) {
     copyright: new Date().getFullYear() + ' Adam Argyle',
     language: 'en',
     categories: ['CSS','HTML','JavaScript','Front-End','Design'],
-    // pubDate: posts[0].publishedAt,
     ttl: 60,
     custom_namespaces: {
       'media': 'http://search.yahoo.com/mrss/',
@@ -54,7 +53,7 @@ function makeRSS(posts:IPost[]) {
       categories: post?.tags?.length != 0
         ? post.tags
         : ['note'],
-      author: post.persona.name,
+      author: post.persona.name + '@' + post.persona.handle,
       date: post.publishedAt
     }
 

@@ -3,7 +3,7 @@
 
   max-inline-size: max-content;
   display: grid;
-  grid-template-columns: var(--_avatar-column-size) 1fr;
+  grid-template-columns: var(--_avatar-column-size) minmax(1ch,1fr);
   gap: var(--size-2) var(--size-inline-1);
   background: var(--surface-1);
   box-shadow: var(--shadow-5);
@@ -93,6 +93,7 @@
 
   & code {
     padding-inline: var(--size-1);
+    white-space: break-spaces;
   }
 
   & > figure {

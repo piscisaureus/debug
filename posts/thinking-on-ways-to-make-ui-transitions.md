@@ -1,6 +1,6 @@
 ---
 type: note
-persona: google
+persona: guichallenges
 published_at: 2022-10-26
 media:
   - src: argyleink/gui-transitions.jpg

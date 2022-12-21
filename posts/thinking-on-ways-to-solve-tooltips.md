@@ -1,6 +1,6 @@
 ---
 type: note
-persona: google
+persona: guichallenges
 published_at: 2022-10-05
 media:
   - src: argyleink/gui-tooltips.jpg

@@ -3,11 +3,11 @@
 
   appearance: none;
   margin-inline-end: auto;
-  padding-inline-end: 2.75rem;
+  padding-inline-end: 1.75rem;
 
   background-repeat: no-repeat;
   background-image: var(--icon-arrow-down);
-  background-position: calc(100% - 1ch) center;
+  background-position: calc(100% - .25ch) center;
   background-size: 3ex;
 
   &:not(:focus-visible) {

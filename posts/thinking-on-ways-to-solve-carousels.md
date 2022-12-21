@@ -1,6 +1,6 @@
 ---
 type: note
-persona: google
+persona: guichallenges
 published_at: 2022-7-27
 media:
   - src: argyleink/gui-carousels.jpg

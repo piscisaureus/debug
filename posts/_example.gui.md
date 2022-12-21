@@ -1,6 +1,6 @@
 ---
 type: note
-persona: google
+persona: guichallenges
 published_at: 2022-8-24
 media:
   - src: argyleink/.jpg

@@ -71,6 +71,7 @@ function OgMeta({title, description, video, gif}:{title:string, description:stri
       <meta property="og:url" content="https://nerdy.dev" />
       <meta property="og:site_name" content="Adam's Indie Social Feed" />
 
+      <meta name="twitter:card" content="summary_large_image"/>
       <meta name="twitter:title" content={title}/>
       <meta name="twitter:description" content={description}/>
       <meta name="twitter:image" content={gif}/>

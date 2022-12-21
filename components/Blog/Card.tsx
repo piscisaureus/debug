@@ -15,7 +15,7 @@ export default function BlogPost({post}:{post:IBlog}) {
     <article class="PostItem blogpost" data-slug={post.slug} tabIndex={tabindex} style={`view-transition-name: ${post.slug}`} data-tags={post.tags?.join(' ')}>
       <Persona persona={post.persona} style={`view-transition-name: ${post.slug}-avatar`}/>
       <header class="inline-wrap">
-        <span>
+        <span class="truncate">
           <span class="username">{post.persona.name}</span>
           <span>@{post.persona.handle}</span>
         </span>

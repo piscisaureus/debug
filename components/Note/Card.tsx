@@ -15,7 +15,7 @@ export default function Note({post}:{post:INote}) {
     <article class="PostItem note" style={`view-transition-name: ${post.slug}`} data-slug={post.slug} tabIndex={tabindex} data-topics={post.tags.join(' ')}>
       <Persona persona={post.persona}/>
       <header class="inline-wrap">
-        <span>
+        <span class="truncate">
           <span class="username">{post.persona.name}</span>
           <span>@{post.persona.handle}</span>
         </span>

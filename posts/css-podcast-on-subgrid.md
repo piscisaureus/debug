@@ -5,7 +5,7 @@ published_at: 2022-11-08
 media:
   - src: argyleink/css-podcast-subgrid.png
     alt: Una and Adam sitting in recording chairs smiling over an 80s backdrop with a title saying subgrid.
-    width: 1920
+    width: 1280
     height: 720
 tags: 
   - css

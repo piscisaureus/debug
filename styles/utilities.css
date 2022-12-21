@@ -24,3 +24,9 @@
   block-size: 0;
   overflow: hidden;
 }
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

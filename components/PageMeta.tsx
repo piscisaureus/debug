@@ -22,6 +22,9 @@ export default function PageMeta(props:any) {
       <meta name="color-scheme" content="dark light"/>
       <OgMeta {...props} description={description} video={video} gif={gif} />
 
+      <link rel="webmention" href="https://webmention.io/nerdy.dev/webmention" />
+      <link rel="pingback" href="https://webmention.io/nerdy.dev/xmlrpc" />
+
       <script src="theme-switch.js"></script>
 
       <link rel="icon" href="/favicon.ico" sizes="any"/>

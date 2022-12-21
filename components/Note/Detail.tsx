@@ -1,6 +1,8 @@
 import { INote } from '~/utils/posts.ts'
-import Note from '~/components/Note/Card.tsx'
 import { getLocaleString } from '~/utils/locale.ts'
+
+import Note from '~/components/Note/Card.tsx'
+import Mentions from '~/components/Mentions/Mentions.tsx'
 
 export default function NoteDetail({post, mentions}:{post:INote, mentions:[]}) {
   return (
@@ -13,7 +15,7 @@ export default function NoteDetail({post, mentions}:{post:INote, mentions:[]}) {
         })}</time>
       </header>
       <Note post={post}/>
-      {mentions?.length > 0 && <p>Mentions ({mentions.length})</p>}
+      {mentions?.length > 0 && <Mentions mentions={mentions}/>}
     </main>
   )
 }

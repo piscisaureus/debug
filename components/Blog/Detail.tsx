@@ -1,13 +1,15 @@
 import readingTime from 'https://esm.sh/reading-time'
 
 import { IBlog } from '~/utils/posts.ts'
+import { getLocaleString } from '~/utils/locale.ts'
 
 import Persona from '~/components/Persona/Persona.tsx'
 import Tags, { ITags } from '~/components/Tags/Tags.tsx'
 import TableOfContents from '~/components/TableOfContents/TableOfContents.tsx'
 import Footer from '~/components/Footer/Footer.tsx'
+import Mentions from '~/components/Mentions/Mentions.tsx'
+
 import Pic from '~/islands/Pic.tsx'
-import { getLocaleString } from '~/utils/locale.ts'
 
 export default function BlogDetail({ post, toc, mentions }: { post: IBlog, toc: [], mentions:[] }) {
   const tags = post.tags ? post.tags.filter(tag => !tag.includes('blog')) : []
@@ -43,7 +45,7 @@ export default function BlogDetail({ post, toc, mentions }: { post: IBlog, toc: 
           {readingTime(post.content).text}
         </span>
         {tags.length > 0 && <Tags tags={tags as ITags}/>}
-        {mentions?.length > 0 && <p>Mentions ({mentions.length})</p>}
+        {mentions?.length > 0 && <Mentions mentions={mentions}/>}
         {/* <p 
           style={`view-transition-name: ${post.slug}-snippet`}
           dangerouslySetInnerHTML={{ __html: post.snippet as string }}

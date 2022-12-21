@@ -14,7 +14,9 @@ export const handler: Handlers<IPost[]> = {
       return new Response("Feed not found", { status: 404 })
 
     return new Response(xml, {
-      headers: { "Content-Type": "application/rss+xml" },
+      headers: { 
+        "Content-Type": "application/rss+xml",
+      },
     })
   }
 }
@@ -30,7 +32,7 @@ function makeRSS(posts:IPost[]) {
     copyright: new Date().getFullYear() + ' Adam Argyle',
     language: 'en',
     categories: ['CSS','HTML','JavaScript','Front-End','Design'],
-    pubDate: posts[0].publishedAt,
+    // pubDate: posts[0].publishedAt,
     ttl: 60,
     custom_namespaces: {
       'media': 'http://search.yahoo.com/mrss/',

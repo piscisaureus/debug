@@ -54,6 +54,14 @@
     padding: 0;
   }
 
+  & ul {
+    gap: 0;
+
+    & > li:not(:hover) {
+      list-style-type: circle;
+    }
+  }
+
   & li {
     font-size: var(--font-size-3);
     letter-spacing: var(--font-letterspacing-2);
@@ -93,7 +101,6 @@
 
   & code {
     padding-inline: var(--size-1);
-    white-space: break-spaces;
   }
 
   & > figure {

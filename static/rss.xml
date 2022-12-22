@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
     <channel>
         <title><![CDATA[Adam Argyle]]></title>
-        <description><![CDATA[Web design & development tips & tricks]]></description>
+        <description><![CDATA[RSS Feed for Adam Argyle: Web design & development tips & tricks: CSS, JS, HTML, Design, & UX.]]></description>
         <link>https://nerdy.dev</link>
         <image>
             <url>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</url>
@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 22 Dec 2022 04:41:59 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 22 Dec 2022 05:18:35 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2022 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,33 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Things Css Could Still Use In 2023]]></title>
+            <description><![CDATA[<p><a href="https://chriscoyier.net/2022/12/21/things-css-could-still-use-heading-into-2023/">Things CSS Could Still Use Heading Into 2023</a></p>
+<blockquote>
+<p>Just a couple of ideas!<br><cite><a href="https://chriscoyier.net">Chris Coyier</a></cite></p>
+</blockquote>
+<hr>
+
+<p>Couple of <strong>great ideas</strong>..!<br><small>and they all have demos</small></p>
+<ul>
+<li>Styleable resize handles</li>
+<li>Regions</li>
+<li>Standardized multi-line</li>
+<li>Mixins &amp; extends</li>
+<li>Inline truncation</li>
+<li>Animate to auto</li>
+<li>Nesting 😎</li>
+</ul>
+<p>It&#39;s <strong>missing one thing</strong> tho: <a href="https://twitter.com/argyleink/status/1531423959362678785?lang=en"><code>text-wrap: balance</code></a></p>
+]]></description>
+            <link>https://nerdy.dev/things-css-could-still-use-in-2023</link>
+            <guid isPermaLink="true">https://nerdy.dev/things-css-could-still-use-in-2023</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Thu, 22 Dec 2022 05:00:05 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[CSS Anchor API is lookin rad!]]></title>
             <description><![CDATA[<p>I often feel intimidated initially by new CSS things.. I&#39;ve been putting off the new <a href="https://tabatkins.github.io/specs/css-anchor-position/">CSS Anchor</a> api stuff cuz it looked scary. </p>
@@ -262,16 +289,6 @@
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
             <pubDate>Wed, 07 Dec 2022 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Five Years At Google]]></title>
-            <description><![CDATA[<p>5 years at Google 🎉</p>
-]]></description>
-            <link>https://nerdy.dev/five-years-at-google</link>
-            <guid isPermaLink="true">https://nerdy.dev/five-years-at-google</guid>
-            <category><![CDATA[note]]></category>
-            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
-            <pubDate>Tue, 06 Dec 2022 08:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>

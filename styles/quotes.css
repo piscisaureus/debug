@@ -34,7 +34,7 @@ q {
 
   & > cite {
     display: flex;
-    gap: 1ch;
+    gap: var(--size-2);
     align-items: center;
     border: none;
     background: var(--surface-1);

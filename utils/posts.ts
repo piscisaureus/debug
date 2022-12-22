@@ -64,8 +64,9 @@ export async function getPosts(): Promise<IPost[]> {
 export async function getPost(slug: string) {
   let text: string
 
-  if (cache.has(slug)) {
+  if (Deno.env.get("IS_PROD") && cache.has(slug)) {
     text = cache.get(slug)
+    console.log('cached fetch: ' + slug)
   }
   else {
     try {

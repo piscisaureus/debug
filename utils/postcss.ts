@@ -5,7 +5,7 @@ import mqRanges from 'https://esm.sh/postcss-media-minmax'
 import inlineImports from 'https://esm.sh/postcss-import@15.0.1'
 import importUrl from 'https://esm.sh/postcss-import-url@7.1.0'
 import importGlob from 'https://esm.sh/postcss-import-ext-glob@2.1.1'
-// import cssnano from 'http://esm.sh/cssnano'
+import cssnano from 'npm:cssnano'
 import OpenProps from 'open-props'
 import jitProps from 'https://esm.sh/postcss-jit-props@1.0.8'
 import { debounce } from '$std/async/mod.ts'
@@ -29,7 +29,7 @@ const config = {
       ...OpenProps,
       layer: 'base.props',
     }),
-    // cssnano(),
+    cssnano(),
   ]
 }
 

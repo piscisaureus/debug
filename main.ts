@@ -8,9 +8,6 @@ import { start } from '$fresh/server.ts'
 import manifest from './fresh.gen.ts'
 import {getLocale} from '~/utils/locale.ts'
 
-// import {buildStyles} from './utils/postcss.ts'
-// buildStyles()
-
 await start(manifest, { port: 3030, render: (ctx, render) => {
   ctx.lang = getLocale().code
   render()

@@ -20,7 +20,7 @@ export default function Nav({layout}: {layout?: string}) {
         }
         {layout !== 'detail' && <NavFilter/>}
         <ThemeSwitch/>
-        <a href="/rss" class="icon-button">
+        <a href="/rss.xml" class="icon-button">
           <div class="sr-only">Follow my RSS feed</div>
           <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">
             <use href="#icon.rss"/>

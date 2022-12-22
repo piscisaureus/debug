@@ -29,7 +29,7 @@ export default function PageMeta(props:any) {
 
       <link rel="icon" href="/favicon.ico" sizes="any"/>
       <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
-      <link rel="alternate" type="application/rss+xml" href="https://nerdy.dev/rss" title="RSS Feed for Adam Argyle: Web design & development tips & tricks"/>
+      <link rel="alternate" type="application/rss+xml" href="https://nerdy.dev/rss.xml" title="RSS Feed for Adam Argyle: Web design & development tips & tricks: CSS, JS, HTML, Design, & UX."/>
 
       <link rel="preconnect" href="https://res.cloudinary.com/"/>
       <link rel="stylesheet" href="/style.css"/>

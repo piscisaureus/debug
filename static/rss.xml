@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title><![CDATA[Adam Argyle]]></title>
+        <description><![CDATA[Web design & development tips & tricks]]></description>
+        <link>https://nerdy.dev</link>
+        <image>
+            <url>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</url>
+            <title>Adam Argyle</title>
+            <link>https://nerdy.dev</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Thu, 22 Dec 2022 04:41:59 GMT</lastBuildDate>
+        <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
+        <copyright><![CDATA[2022 Adam Argyle]]></copyright>
+        <language><![CDATA[en]]></language>
+        <webMaster><![CDATA[atom@argyleink.com (Adam Argyle)]]></webMaster>
+        <ttl>60</ttl>
+        <category><![CDATA[CSS]]></category>
+        <category><![CDATA[HTML]]></category>
+        <category><![CDATA[JavaScript]]></category>
+        <category><![CDATA[Front-End]]></category>
+        <category><![CDATA[Design]]></category>
+        <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
+        <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[CSS Anchor API is lookin rad!]]></title>
+            <description><![CDATA[<p>I often feel intimidated initially by new CSS things.. I&#39;ve been putting off the new <a href="https://tabatkins.github.io/specs/css-anchor-position/">CSS Anchor</a> api stuff cuz it looked scary. </p>
+<p>But <strong>not 15m minutes</strong> into actually sitting with it, <strong>and I&#39;m stoked</strong>.</p>
+<p><video 
+            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/css-anchor.mp4 
+            width="833" 
+            height="490"
+            alt=" "
+            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/css-anchor.jpg"
+            controls 
+            preload="true"
+            loop
+            muted 
+            allowFullScreen
+          /></p>
+
+        <h2>
+          basics
+          <a name="basics" href="#basics">#</a>
+        </h2>
+       <p>You need something to anchor to, just like you need a <a href="https://www.w3.org/TR/css-contain-3/#container-name">named container</a> or a <a href="https://www.w3.org/TR/scroll-animations-1/#view-timeline-name">view-timeline</a>.</p>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.some-non-floating-element</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">anchor-name</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">--side</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p>Next, assign some element&#39;s positions to that anchor. Let&#39;s say we want to put a floating element underneath that non-floating one. We&#39;d want the top of the floating thing to be touching the bottom of the anchor:</p>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.tooltippy</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">position</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">absolute</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">top</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">anchor(--side bottom</span><span style="color: var(--shiki-color-text)">);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* top of this touches the bottom of that */</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p>Then, we want the left side of this tooltip to align with the left side of the anchor:</p>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.tooltippy</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">left</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">anchor(--side left</span><span style="color: var(--shiki-color-text)">);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* left of this touches the left of that */</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p>Now it&#39;s aligned with it: left aligned and under!</p>
+
+        <h2>
+          Resources
+          <a name="resources" href="#resources">#</a>
+        </h2>
+       <p>Dig in:</p>
+<ol>
+<li><a href="https://jhey.dev/links/">Jhey</a> has a <a href="https://codepen.io/collection/qOEKVN">fantanstic anchor() collection</a> on Codepen</li>
+<li>He also covers anchoring in a piece on the <a href="https://developer.chrome.com/blog/">Chrome Developers Blog</a> called <a href="https://developer.chrome.com/blog/pop-ups-theyre-making-a-resurgence/#anchoring-under-development">Popups They&#39;re Making A Resurgence</a></li>
+<li><a href="https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/">Official Explainer</a></li>
+<li><a href="https://tabatkins.github.io/specs/css-anchor-position/">Official Spec</a></li>
+</ol>
+]]></description>
+            <link>https://nerdy.dev/css-anchor-api-is-lookin-rad</link>
+            <guid isPermaLink="true">https://nerdy.dev/css-anchor-api-is-lookin-rad</guid>
+            <category><![CDATA[blog]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Tue, 20 Dec 2022 23:04:09 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Conditional Snapping With Has]]></title>
+            <description><![CDATA[<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">html</span><span style="color: var(--shiki-token-function)">:has</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-function)">.CertainItem:focus-visible</span><span style="color: var(--shiki-color-text)">) {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">scroll-snap-type</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">y mandatory</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">scroll-padding-block-start</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">100</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: var(--shiki-token-function)">.CertainItem:focus-visible</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">scroll-snap-align</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">start</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p>On demand with <code>:has()</code>,<br>when a certain item is focused..   </p>
+<p><strong>snap dat item into a nice position</strong>.</p>
+]]></description>
+            <link>https://nerdy.dev/conditional-snapping-with-has</link>
+            <guid isPermaLink="true">https://nerdy.dev/conditional-snapping-with-has</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Mon, 19 Dec 2022 23:10:29 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Hustle And Logical Flow]]></title>
+            <description><![CDATA[<p><strong>Logical Properties</strong><br>Learn once, works everywhere.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties">MDN</a> · 
+<a href="https://web.dev/learn/css/logical-properties/">Learn CSS</a> · 
+<a href="https://web.dev/logical-property-shorthands/">web.dev</a> · 
+<a href="https://pod.link/thecsspodcast/episode/e2673c5db0efc8cfda5090ac2f11cbd3">The CSS Podcast</a></p>
+]]></description>
+            <link>https://nerdy.dev/hustle-and-logical-flow</link>
+            <guid isPermaLink="true">https://nerdy.dev/hustle-and-logical-flow</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Mon, 19 Dec 2022 22:10:39 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/logical-flow.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/logical-flow.png"/>
+        </item>
+        <item>
+            <title><![CDATA[Hazzah A Soft Launch]]></title>
+            <description><![CDATA[<p>Domain&#39;s moved 👍  </p>
+<p>Soft launch of <a href="#">nerdy.dev</a> successful 🤘💀   </p>
+<p>Still more work. Expect change!</p>
+]]></description>
+            <link>https://nerdy.dev/hazzah-a-soft-launch</link>
+            <guid isPermaLink="true">https://nerdy.dev/hazzah-a-soft-launch</guid>
+            <category><![CDATA[note]]></category>
+            <dc:creator><![CDATA[Web Master@admin]]></dc:creator>
+            <pubDate>Thu, 15 Dec 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Lh Unit Is Rad For Dropcaps]]></title>
+            <description><![CDATA[<p>Need a dropcap?<br><a href="https://caniuse.com/mdn-css_types_length_lh">Try</a> the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length#:~:text=to%20render%20it.-,lh,-Experimental"><code>lh</code></a> unit 🤓</p>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">::first-of-type::first-letter</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">line-height</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">font-size</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">3lh</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">float</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">start</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+]]></description>
+            <link>https://nerdy.dev/lh-unit-is-rad-for-dropcaps</link>
+            <guid isPermaLink="true">https://nerdy.dev/lh-unit-is-rad-for-dropcaps</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Wed, 14 Dec 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Bramus Shares A Few Has Super Powers]]></title>
+            <description><![CDATA[<p><a href="https://www.bram.us/">Bramus</a> is blogging awesome ways to use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:has"><code>:has()</code></a> 🤓</p>
+<ol>
+<li><a href="https://brm.us/css-islands">CSS Islands with <code>:has()</code></a></li>
+<li><a href="https://brm.us/css-has-child-count">Target parents with a certain number of children</a></li>
+</ol>
+<p>It&#39;s a good idea to follow Bramus&#39;s <a href="https://www.bram.us/feed/">RSS</a> or <a href="https://twitter.com/bramus">Twitter</a></p>
+]]></description>
+            <link>https://nerdy.dev/bramus-shares-a-few-has-super-powers</link>
+            <guid isPermaLink="true">https://nerdy.dev/bramus-shares-a-few-has-super-powers</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Tue, 13 Dec 2022 00:00:00 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bramus.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bramus.png"/>
+        </item>
+        <item>
+            <title><![CDATA[Easy Flippin Transition]]></title>
+            <description><![CDATA[<p>In ~1 minute you can have <a href="https://aerotwist.com/blog/flip-your-animations/">FLIP</a>-like animation on your page with <a href="https://developer.chrome.com/docs/web-platform/view-transitions/">View Transitions</a>.</p>
+<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-constant)">document</span><span style="color: var(--shiki-token-function)">.startViewTransition</span><span style="color: var(--shiki-color-text)">(() </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">// modify the dom</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">// - hide stuff</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">// - move stuff</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">// - whatever!</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">})</span></span></code></pre>
+</code></pre>
+<p><strong>Game changer.</strong></p>
+]]></description>
+            <link>https://nerdy.dev/easy-flippin-transition</link>
+            <guid isPermaLink="true">https://nerdy.dev/easy-flippin-transition</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[js]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Mon, 12 Dec 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Layouts Are Loops]]></title>
+            <description><![CDATA[<p>layouts <strong>are</strong> loops.</p>
+]]></description>
+            <link>https://nerdy.dev/layouts-are-loops</link>
+            <guid isPermaLink="true">https://nerdy.dev/layouts-are-loops</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Sat, 10 Dec 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[State of CSS 2022 Results are in!]]></title>
+            <description><![CDATA[
+        <h2>
+          Missing or Painful
+          <a name="missing-or-painful" href="#missing-or-painful">#</a>
+        </h2>
+       <p>Very validating to see CSS Nesting at the top of the <a href="https://2022.stateofcss.com/en-US/usage/#missing_features_freeform">Missing Features</a> chart 🤓</p>
+<p><img 
+            loading="lazy" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload//argyleink/state-of-css-missing.png" 
+            alt="" 
+            title="Title " 
+            decoding="async"
+            width="1112" 
+            height="597"
+          /></p>
+<p>Then again here for top <a href="https://2022.stateofcss.com/en-US/usage/#other_pain_points_freeform">Pain Points</a>!</p>
+<p><img 
+            loading="lazy" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload//argyleink/state-of-css-pain-points.png" 
+            alt="" 
+            title="Title " 
+            decoding="async"
+            width="1111" 
+            height="577"
+          /></p>
+
+        <h2>
+          Learn CSS Shoutout
+          <a name="learn-css-shoutout" href="#learn-css-shoutout">#</a>
+        </h2>
+       <p><a href="https://una.im/">Una</a> and I <strong>worked hard</strong> to create complimentary content for <a href="https://pod.link/thecsspodcast">our podcast</a> and I&#39;m super happy to see it has resonated with the community. </p>
+<p><img 
+            loading="lazy" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload//argyleink/state-of-css-learn-css.png" 
+            alt="" 
+            title="Title " 
+            decoding="async"
+            width="1063" 
+            height="313"
+          /></p>
+
+        <h2>
+          Open Props Shoutout
+          <a name="open-props-shoutout" href="#open-props-shoutout">#</a>
+        </h2>
+       <p>I was super excited and surprised by <a href="https://open-props.style/">Open Props</a> topping the charts for the &quot;Other Tools&quot; category. Folks had to hand write this as it wasn&#39;t just a checkbox that could be checked, making me even more surprised since it was high effort in comparison.</p>
+<p><img 
+            loading="lazy" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload//argyleink/state-of-css-open-props.png" 
+            alt="" 
+            title="Title " 
+            decoding="async"
+            width="1105" 
+            height="496"
+          /></p>
+<p>Thanks y&#39;all for all this!</p>
+]]></description>
+            <link>https://nerdy.dev/state-of-css-2022-results</link>
+            <guid isPermaLink="true">https://nerdy.dev/state-of-css-2022-results</guid>
+            <category><![CDATA[blog]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Wed, 07 Dec 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Five Years At Google]]></title>
+            <description><![CDATA[<p>5 years at Google 🎉</p>
+]]></description>
+            <link>https://nerdy.dev/five-years-at-google</link>
+            <guid isPermaLink="true">https://nerdy.dev/five-years-at-google</guid>
+            <category><![CDATA[note]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Tue, 06 Dec 2022 08:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

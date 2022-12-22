@@ -1,31 +1,34 @@
-import { Handlers } from '$fresh/server.ts'
+import { debounce } from '$std/async/mod.ts'
+import RSS from 'https://esm.sh/rss'
 import { titleCase } from "$deno/x/case/mod.ts"
+
 import { getPosts, IPost } from '~/utils/posts.ts'
 import { urlbase } from '~/islands/Pic.tsx'
-import RSS from 'https://esm.sh/rss'
 
-export const handler: Handlers<IPost[]> = {
-  async GET() {
-    // todo: cache
-    const posts = await getPosts()
-    const xml = makeRSS(posts).xml({indent: true})
+export async function watchAndBuildRSS() {
+  const watcher = Deno.watchFs([
+    './posts/',
+  ])
 
-    if (!posts)
-      return new Response("Feed not found", { status: 404 })
+  const protectedBuildCall = debounce(buildRSS, 200)
+  
+  for await (const _event of watcher)
+    protectedBuildCall()
+}
 
-    return new Response(xml, {
-      headers: { 
-        "Content-Type": "application/rss+xml",
-      },
-    })
-  }
+export async function buildRSS() {
+  const posts = await getPosts()
+  const xml = makeRSS(posts).xml({indent: true})
+
+  Deno.writeTextFile("./static/rss.xml", xml)
+  console.log('rss updated')
 }
 
 function makeRSS(posts:IPost[]) {
   const feed = new RSS({
     title: 'Adam Argyle',
-    description: 'Web design & development tips & tricks',
-    feed_url: 'https://nerdy.dev/rss',
+    description: 'RSS Feed for Adam Argyle: Web design & development tips & tricks: CSS, JS, HTML, Design, & UX.',
+    feed_url: 'https://nerdy.dev/rss.xml',
     site_url: 'https://nerdy.dev',
     image_url: 'https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png',
     webMaster: 'atom@argyleink.com (Adam Argyle)',

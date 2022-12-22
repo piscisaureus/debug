@@ -6,7 +6,7 @@
   "display": "fullscreen",
   "orientation": "any",
   "background_color": "#030507",
-  "theme_color": "#91a7ff",
+  "theme_color": "#030507",
   "icons": [
     {
       "src": "/pwa-icon.svg",

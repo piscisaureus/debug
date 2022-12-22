@@ -67,56 +67,6 @@
       & h3 { font-size: var(--font-size-4) }
       & h4 { font-size: var(--font-size-3) }
     }
-
-    & q {
-      max-inline-size: var(--size-content-2);
-      padding: var(--size-4);
-      padding-inline: var(--size-6);
-      background-color: var(--surface-1);
-      border-radius: var(--radius-3);
-      /* filter: drop-shadow(0px 4px 4px hsl(0 0% 0% / 10%)); */
-      box-shadow: var(--shadow-2);
-      position: relative;
-
-      &::before {
-        content: url("https://api.iconify.design/mingcute:quote-right-fill.svg?color=%23495057");
-        position: absolute;
-        inset-inline-start: 0;
-        inset-block-start: 0;
-        transform: translateX(-50%) translateY(-50%);
-        background-color: var(--surface-document);
-        padding: var(--size-3);
-        clip-path: circle(40%);
-      }
-
-      &.warning::before {
-        content: url("https://api.iconify.design/mdi:lightning-bolt.svg?color=%2300ff00");
-      }
-
-      &.info::before {
-        content: url("https://api.iconify.design/material-symbols:rocket-launch-rounded.svg?color=%235c7cfa");
-      }
-
-      &::after {
-        display: none;
-      }
-
-      & > cite {
-        border: none;
-        background: var(--surface-1);
-        box-shadow: var(--shadow-2);
-        color: var(--text-1);
-        position: absolute;
-        inset-inline-end: var(--size-3);
-        inset-block-end: -2ex;
-        padding-inline: var(--size-3);
-        border-radius: var(--radius-3);
-        font-size: var(--font-size-1);
-        font-weight: var(--font-weight-4);
-        line-height: var(--font-lineheight-5);
-        font-style: normal;
-      }
-    }
   }
 
   & > aside {

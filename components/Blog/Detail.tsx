@@ -6,7 +6,6 @@ import { getLocaleString } from '~/utils/locale.ts'
 import Persona from '~/components/Persona/Persona.tsx'
 import Tags, { ITags } from '~/components/Tags/Tags.tsx'
 import TableOfContents from '~/components/TableOfContents/TableOfContents.tsx'
-import Footer from '~/components/Footer/Footer.tsx'
 import Mentions from '~/components/Mentions/Mentions.tsx'
 
 import Pic from '~/islands/Pic.tsx'
@@ -45,14 +44,13 @@ export default function BlogDetail({ post, toc, mentions }: { post: IBlog, toc: 
           {readingTime(post.content).text}
         </span>
         {tags.length > 0 && <Tags tags={tags as ITags}/>}
-        {mentions?.length > 0 && <Mentions mentions={mentions}/>}
         {/* <p 
           style={`view-transition-name: ${post.slug}-snippet`}
           dangerouslySetInnerHTML={{ __html: post.snippet as string }}
         /> */}
       </section>
       <main class="BlogDetail block-stack">
-        <TableOfContents toc={toc}/>
+        <TableOfContents toc={toc} hasMentions={mentions.length >= 1}/>
 
         <article 
           class="block-stack"
@@ -60,7 +58,7 @@ export default function BlogDetail({ post, toc, mentions }: { post: IBlog, toc: 
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
-        <Footer/>
+        {mentions?.length > 0 && <Mentions mentions={mentions}/>}
       </main>
       {/*todo reduced motion*/}
       <style dangerouslySetInnerHTML={{ __html: `

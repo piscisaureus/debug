@@ -1,6 +1,29 @@
 const cache = new Map()
 const base = 'https://webmention.io/api/mentions.jf2?'
 
+export interface IMention {
+  type: string,
+  author: {
+    type: string,
+    name: string,
+    photo: string,
+    url: string,
+  },
+  url: string,
+  published: Date,
+  "wm-received": Date,
+  "wm-id": number,
+  "wm-source": string,
+  "wm-target": string,
+  content: {
+    html: string,
+    text: string,
+  },
+  "mention-of": string,
+  "wm-property": string,
+  "wm-private": boolean,
+}
+
 export async function allMentions():Promise<[]> {
   const domain = 'nerdy.dev'
   const token = 'HZvGv05WrxQObrjtTHRn7w'
@@ -9,7 +32,6 @@ export async function allMentions():Promise<[]> {
   const data = await fetch(path)
   const json = await data.json()
 
-  console.log(json.children)
   return json.children
 }
 
@@ -33,5 +55,3 @@ export async function aMention(slug:string):Promise<[]> {
 
   return json.children
 }
-
-aMention('https://nerdy.dev/css-anchor-api-is-lookin-rad')

@@ -24,17 +24,6 @@ export interface IMention {
   "wm-private": boolean,
 }
 
-export async function allMentions():Promise<[]> {
-  const domain = 'nerdy.dev'
-  const token = 'HZvGv05WrxQObrjtTHRn7w'
-  const path = `${base}domain=${domain}&token=${token}`
-
-  const data = await fetch(path)
-  const json = await data.json()
-
-  return json.children
-}
-
 export async function aMention(slug:string):Promise<[]> {
   const path = `${base}target=https://nerdy.dev/${slug}`
   const data = await fetch(path)

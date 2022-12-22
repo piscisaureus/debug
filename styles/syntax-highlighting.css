@@ -12,6 +12,18 @@
   }
 }
 
+[data-theme="light"] {
+  --_syntax-color-1: var(--pink-9);
+  --_syntax-color-2: var(--blue-9);
+  --_syntax-color-3: var(--purple-9);
+}
+
+[data-theme="dark"] {
+  --_syntax-color-1: var(--pink-2);
+  --_syntax-color-2: var(--blue-2);
+  --_syntax-color-3: var(--purple-2);
+}
+
 [style$="color: var(--shiki-token-comment)"] {
   --shiki-token-comment: var(--gray-6);
   font-style: italic;

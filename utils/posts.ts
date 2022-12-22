@@ -66,7 +66,6 @@ export async function getPost(slug: string) {
 
   if (Deno.env.get("IS_PROD") && cache.has(slug)) {
     text = cache.get(slug)
-    console.log('cached fetch: ' + slug)
   }
   else {
     try {

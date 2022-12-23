@@ -138,11 +138,14 @@
     @nest [data-theme="dark"] & {
       background: var(--gray-11);
     }
+
+    @media (--OSdark) {
+      background: var(--gray-11);
+    }
   }
 
   & blockquote {
     border: none;
-    max-inline-size: 80%;
     padding-inline-start: 0;
     padding-block-end: 0;
 

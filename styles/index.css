@@ -57,6 +57,17 @@
 
     background: var(--surface-document);
 
+    @media (--OSdark) {
+      --surface-document: var(--gray-12);
+      --surface-1: var(--gray-10);
+
+      @media (dynamic-range: high) {
+        @supports (color: color(display-p3 0 0 0)) {
+          --surface-document: color(display-p3 0.001 0.015 0.03);
+        }
+      }
+    }
+
     &[data-theme="dark"] {
       --surface-document: var(--gray-12);
       --surface-1: var(--gray-10);

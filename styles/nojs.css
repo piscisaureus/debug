@@ -1,0 +1,14 @@
+body:not([nojs]) .nojs {
+  display: none;
+}
+
+[nojs] {
+  & .ThemeSwitch,
+  & .share-button {
+    display: none;
+  }
+
+  & .PostItem {
+    cursor: auto;
+  }
+}

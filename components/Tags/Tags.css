@@ -12,6 +12,12 @@
   border-radius: var(--radius-round);
   letter-spacing: var(--font-letterspacing-3);
 
+  @media (--OSdark) {
+    background-color: hsl(var(--indigo-12-hsl) / 50%);
+    border-color: hsl(var(--indigo-12-hsl) / 75%);
+    color: var(--indigo-2);
+  }
+
   @nest [data-theme="dark"] & {
     background-color: hsl(var(--indigo-12-hsl) / 50%);
     border-color: hsl(var(--indigo-12-hsl) / 75%);

@@ -28,7 +28,9 @@ export default function Nav({layout}: {layout?: string}) {
         </a>
       </nav>
       <script dangerouslySetInnerHTML={{ __html: `
+        document.body.removeAttribute('nojs')
         const nav = document.querySelector('.Nav')
+
         document.addEventListener('scroll', e => {
           const st = window.pageYOffset || document.documentElement.scrollTop
           const direction = st > e.target.lastScrollTop

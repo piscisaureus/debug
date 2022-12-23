@@ -45,7 +45,7 @@ export default function PostPage(props: PageProps<IBlog | INote>) {
         <PageMeta title={title} />
         <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"/>
       </Head>
-      <body page-type="detail">
+      <body page-type="detail" nojs>
         <Nav layout="detail"/>
         <PostDetail 
           post={props.data} 

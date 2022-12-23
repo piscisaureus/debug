@@ -25,6 +25,7 @@ export default function Note({post}:{post:INote}) {
       {post.content && <section dangerouslySetInnerHTML={{ __html: post.content }} />}
       {post.media?.length && <Media media={post.media}/>}
       <footer>
+        <a class="nojs" href={`/${post.slug}`}>Full note</a>
         <a href={`javascript: navigator.clipboard.writeText(window.location.href + "${post.slug}");Toast("Link <b>copied!</b>")`} class="icon-button share-button">
           <div class="sr-only">Share a direct link to this post</div>
           <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">

@@ -53,8 +53,9 @@ export async function getPosts(): Promise<IPost[]> {
   posts.sort((a, b) => 
     b.publishedAt.getTime() - a.publishedAt.getTime())
   
-  if (tags.size === 0) {
+  if (totalPosts !== posts.length) {
     totalPosts = posts.length
+    tags.clear()
     setTagsInformation(posts)
   }
 

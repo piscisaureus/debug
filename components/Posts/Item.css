@@ -183,6 +183,10 @@
     aspect-ratio: var(--ratio-widescreen);
   }
 
+  & details {
+    justify-self: start;
+  }
+
   &:has(figure) {
     & > footer, & > figure, & > p {
       grid-column: span 2;

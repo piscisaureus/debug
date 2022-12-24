@@ -11,14 +11,17 @@ tags:
 <cite><a href="https://chriscoyier.net">Chris Coyier</a></cite>
 <hr>
 
-Couple of **great ideas**..!  
-<small>and they all have demos</small>
-- Styleable resize handles
-- Regions
-- Standardized multi-line
-- Mixins & extends
-- Inline truncation
-- Animate to auto
-- Nesting 😎
+<details>
+  <summary>They're great ideas</summary>  
 
-It's **missing one thing** tho: [`text-wrap: balance`](https://twitter.com/argyleink/status/1531423959362678785?lang=en)
+  - Styleable resize handles
+  - Regions
+  - Standardized multi-line
+  - Mixins & extends
+  - Inline truncation
+  - Animate to auto
+  - Nesting 😎
+</details>
+
+**Missing one thing**:  
+[`text-wrap: balance`](https://twitter.com/argyleink/status/1531423959362678785?lang=en)

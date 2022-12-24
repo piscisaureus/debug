@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 22 Dec 2022 05:18:35 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 24 Dec 2022 06:41:37 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2022 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -23,6 +23,19 @@
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
         <item>
+            <title><![CDATA[Individual Transforms]]></title>
+            <description><![CDATA[<p><a href="https://web.dev/css-individual-transform-properties/">Individual transforms</a> are <strong>rad</strong>.<br><small>when you don&#39;t need to manage the order</small></p>
+]]></description>
+            <link>https://nerdy.dev/individual-transforms</link>
+            <guid isPermaLink="true">https://nerdy.dev/individual-transforms</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Sat, 24 Dec 2022 06:36:29 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/individual-transforms-infinite.mp4" length="0" type="video/mp4"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/individual-transforms-infinite.mp4"/>
+        </item>
+        <item>
             <title><![CDATA[Things Css Could Still Use In 2023]]></title>
             <description><![CDATA[<p><a href="https://chriscoyier.net/2022/12/21/things-css-could-still-use-heading-into-2023/">Things CSS Could Still Use Heading Into 2023</a></p>
 <blockquote>
@@ -30,7 +43,9 @@
 </blockquote>
 <hr>
 
-<p>Couple of <strong>great ideas</strong>..!<br><small>and they all have demos</small></p>
+<details>
+  <summary>They're great ideas</summary>  
+
 <ul>
 <li>Styleable resize handles</li>
 <li>Regions</li>
@@ -40,7 +55,9 @@
 <li>Animate to auto</li>
 <li>Nesting 😎</li>
 </ul>
-<p>It&#39;s <strong>missing one thing</strong> tho: <a href="https://twitter.com/argyleink/status/1531423959362678785?lang=en"><code>text-wrap: balance</code></a></p>
+</details>
+
+<p><strong>Missing one thing</strong>:<br><a href="https://twitter.com/argyleink/status/1531423959362678785"><code>text-wrap: balance</code></a></p>
 ]]></description>
             <link>https://nerdy.dev/things-css-could-still-use-in-2023</link>
             <guid isPermaLink="true">https://nerdy.dev/things-css-could-still-use-in-2023</guid>
@@ -223,72 +240,6 @@
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
             <pubDate>Sat, 10 Dec 2022 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[State of CSS 2022 Results are in!]]></title>
-            <description><![CDATA[
-        <h2>
-          Missing or Painful
-          <a name="missing-or-painful" href="#missing-or-painful">#</a>
-        </h2>
-       <p>Very validating to see CSS Nesting at the top of the <a href="https://2022.stateofcss.com/en-US/usage/#missing_features_freeform">Missing Features</a> chart 🤓</p>
-<p><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload//argyleink/state-of-css-missing.png" 
-            alt="" 
-            title="Title " 
-            decoding="async"
-            width="1112" 
-            height="597"
-          /></p>
-<p>Then again here for top <a href="https://2022.stateofcss.com/en-US/usage/#other_pain_points_freeform">Pain Points</a>!</p>
-<p><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload//argyleink/state-of-css-pain-points.png" 
-            alt="" 
-            title="Title " 
-            decoding="async"
-            width="1111" 
-            height="577"
-          /></p>
-
-        <h2>
-          Learn CSS Shoutout
-          <a name="learn-css-shoutout" href="#learn-css-shoutout">#</a>
-        </h2>
-       <p><a href="https://una.im/">Una</a> and I <strong>worked hard</strong> to create complimentary content for <a href="https://pod.link/thecsspodcast">our podcast</a> and I&#39;m super happy to see it has resonated with the community. </p>
-<p><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload//argyleink/state-of-css-learn-css.png" 
-            alt="" 
-            title="Title " 
-            decoding="async"
-            width="1063" 
-            height="313"
-          /></p>
-
-        <h2>
-          Open Props Shoutout
-          <a name="open-props-shoutout" href="#open-props-shoutout">#</a>
-        </h2>
-       <p>I was super excited and surprised by <a href="https://open-props.style/">Open Props</a> topping the charts for the &quot;Other Tools&quot; category. Folks had to hand write this as it wasn&#39;t just a checkbox that could be checked, making me even more surprised since it was high effort in comparison.</p>
-<p><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload//argyleink/state-of-css-open-props.png" 
-            alt="" 
-            title="Title " 
-            decoding="async"
-            width="1105" 
-            height="496"
-          /></p>
-<p>Thanks y&#39;all for all this!</p>
-]]></description>
-            <link>https://nerdy.dev/state-of-css-2022-results</link>
-            <guid isPermaLink="true">https://nerdy.dev/state-of-css-2022-results</guid>
-            <category><![CDATA[blog]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Wed, 07 Dec 2022 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>

@@ -21,7 +21,8 @@ tags:
   - Inline truncation
   - Animate to auto
   - Nesting 😎
+  
 </details>
 
 **Missing one thing**:  
-[`text-wrap: balance`](https://twitter.com/argyleink/status/1531423959362678785?lang=en)
+[`text-wrap: balance`](https://twitter.com/argyleink/status/1531423959362678785)

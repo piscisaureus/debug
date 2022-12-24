@@ -114,6 +114,10 @@
     &:has(> p:only-child) {
       margin-block: 0;
     }
+
+    & :is(img, video) {
+      border-radius: var(--radius-3);
+    }
   }
 
   & > header {

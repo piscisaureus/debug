@@ -608,6 +608,9 @@
     "https://esm.sh/marked@4.2.3/lib/marked.esm.js": "3df0056373d9c40c8fcd253f255f93b26630bc2fa9ecdf55e8ad17d2a8b2db6a",
     "https://esm.sh/open-props@1.5.3/src/media": "0ad407ae15bb8586d53134749fd1c986e18c828abe638a48deeb0824d63b53b1",
     "https://esm.sh/pirsch-sdk@2.0.2": "da014343ffc11d890265e9d9eead4d024ca234bf8fa3e45fa80884401840ae9c",
+    "https://esm.sh/pirsch-sdk@2.0.2/web": "18b3dd017a962e3a2516a3846ed1fa756dcd13b9f8204e8c650944dc553c9992",
+    "https://esm.sh/pirsch-sdk@2.0.2?bundle": "2548e6e316e4ab80689fc46449dde586cfcf21502ff8e060851cba64bfb4c251",
+    "https://esm.sh/pirsch-sdk@2.0.2?target=deno": "da014343ffc11d890265e9d9eead4d024ca234bf8fa3e45fa80884401840ae9c",
     "https://esm.sh/postcss-custom-media@8.0.2": "bd1db32a22748b0dd2b67a1b520820d7e33cce43bb2e098697ce3b6e89c5164f",
     "https://esm.sh/postcss-import-ext-glob@2.1.1": "321ca24c3753cf097ba7e58fe8ea2fbf02677ca01c30792b62656ee2c6924c14",
     "https://esm.sh/postcss-import-url@7.1.0": "257e0b9cdffa5522dab36429329b18e990ca1ce021252a2d15f9127fd3686617",
@@ -1474,9 +1477,14 @@
     "https://esm.sh/v102/pirsch-sdk@2.0.2/common.d.ts": "300353731d337bb8a56a9ee82dd81027a65da4f49648afd8dd417edb8bfbff77",
     "https://esm.sh/v102/pirsch-sdk@2.0.2/constants.d.ts": "b2489507d362f31cee454a514dcbfbe44c18d0b715f8fe2f8d63f221969b5e92",
     "https://esm.sh/v102/pirsch-sdk@2.0.2/core.d.ts": "233a57bd7c022995481b7f6bdd4115513d0afd0684f7d25792a1b9132a42b927",
+    "https://esm.sh/v102/pirsch-sdk@2.0.2/deno/common.js": "bb4a2dbb51a4bab5e013d844381f7d17aac9f84e939da9d591efc33ef1ab4ae6",
+    "https://esm.sh/v102/pirsch-sdk@2.0.2/deno/constants.js": "5b1203cdf47474e9b6f03b0f8fa7c0a36d2296193010ae96148213de2068014e",
+    "https://esm.sh/v102/pirsch-sdk@2.0.2/deno/pirsch-sdk.bundle.js": "7bd84ab93d04b9e17a0505c8509fdfed102b198e7f4f15da249947bd7f5aae3d",
     "https://esm.sh/v102/pirsch-sdk@2.0.2/deno/pirsch-sdk.js": "5bf40826130bfcab614243a1a8e5a823055e8bcd4751cfc0e0768c258de52f9d",
+    "https://esm.sh/v102/pirsch-sdk@2.0.2/deno/web.js": "7582f8865dd21f50d1932a9e37d2bfdc5ca3c4a9808b16ca9d50ae804eb53f23",
     "https://esm.sh/v102/pirsch-sdk@2.0.2/index.d.ts": "f39850c78eca324cd93aed1f511573a4b47f201ad87b91c7b566cf8d254535a3",
     "https://esm.sh/v102/pirsch-sdk@2.0.2/types.d.ts": "ee5a6b6e84f9c2a0cd4a80073ea213188ebb6c730f71a67cab37be51ffdceb70",
+    "https://esm.sh/v102/pirsch-sdk@2.0.2/web.d.ts": "9ea1aec2d6c72557aa971430fd565b5260d215f15f24f30dee45d6f1b18d3a32",
     "https://esm.sh/v99/@csstools/selector-specificity@2.0.2/deno/selector-specificity.js": "e2a4ab13c5d77426ff113dd0e114f8a3180def86f8f44ceb7adc7ed1f50731c2",
     "https://esm.sh/v99/@nodelib/fs.scandir@2.1.5/deno/fs.scandir.js": "7bbc0ff2399ae83779e5059a386a4232d5c651ed2367fb08ca6276a9fe9ffaee",
     "https://esm.sh/v99/@nodelib/fs.stat@2.0.5/deno/fs.stat.js": "841f01486bcad7d0471aea52b4d3cb9e89d098de20d42d44f3880a8b2c416338",
@@ -1591,7 +1599,8 @@
     "https://esm.sh/v99/vscode-textmate@7.0.3/release/theme.d.ts": "f3c40e0e387c052a2da1725ae948c446be333b56ef99d0fe2a4b2fc03e4ec67d",
     "https://esm.sh/v99/vscode-textmate@7.0.3/release/utils.d.ts": "3cb0da8ee1b6bc242ffe9d727e816a36fed0ddbb7fa741a41dc3d661b2ab463e",
     "https://esm.sh/v99/xml@1.0.1/deno/xml.js": "a23e24e7f09a763582348786897b6eb2e4423150b4d5e0f1cff2cd7ce9af9385",
-    "https://unpkg.com/open-props@1.5.1/dist/open-props.module.js": "d570e98220451992a7d496bb1e5a22202829677943c13d52bea5c75c47a22288"
+    "https://unpkg.com/open-props@1.5.1/dist/open-props.module.js": "d570e98220451992a7d496bb1e5a22202829677943c13d52bea5c75c47a22288",
+    "https://unpkg.com/pirsch-sdk@2.0.2/index.js": "eb885cbbdc375875dcf8ff8ef20ce4672d59830ae492a3079772b5609afe852d"
   },
   "npm": {
     "specifiers": {

@@ -3,7 +3,7 @@ import { Head } from '$fresh/runtime.ts'
 import { titleCase } from "$deno/x/case/mod.ts"
 import { DOMParser } from '$deno/x/deno_dom/deno-dom-wasm.ts'
 
-import AnalyticsClient from '~/utils/analytics.ts'
+import hit from '~/utils/analytics.ts'
 import { getPost, IBlog, INote } from '~/utils/posts.ts'
 import { getLocaleString } from '~/utils/locale.ts'
 import { aMention } from '~/utils/webmentions.ts'
@@ -21,13 +21,11 @@ export const handler: Handlers<IBlog | INote> = {
     post.mentions = await aMention(post.slug)
 
     if (Deno.env.get('IS_PROD')) {
-      AnalyticsClient.hit({
+      hit({
         title: post.slug,
         url: _req.url,
         ip: ctx.remoteAddr.hostname,
         user_agent: _req.headers.get('User-Agent'),
-      }).catch(error => {
-        console.error(error);
       })
     }
 

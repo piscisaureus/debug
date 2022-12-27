@@ -221,8 +221,8 @@
           margin-inline-start: calc(var(--_avatar-column-size) + var(--size-inline-1));
         }
 
-        & > pre {
-          padding-inline-start: 0;
+        & > pre, & > pre > code {
+          padding: 0;
         }
       }
     }

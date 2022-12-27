@@ -24,5 +24,5 @@ tags:
   
 </details>
 
-**Missing one thing**:  
+**Missing one thing**! 
 [`text-wrap: balance`](https://twitter.com/argyleink/status/1531423959362678785)

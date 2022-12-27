@@ -1,4 +1,4 @@
-import { Pirsch } from 'npm:pirsch-sdk'
+import { Pirsch } from 'https://esm.sh/pirsch-sdk'
 
 let AnalyticsClient = null
 

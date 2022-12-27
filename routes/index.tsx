@@ -1,6 +1,7 @@
 import { Handlers, PageProps } from '$fresh/server.ts'
 import { Head } from '$fresh/runtime.ts'
 
+import AnalyticsClient from '~/utils/analytics.ts'
 import { getPosts, IPost } from '~/utils/posts.ts'
 
 import Nav from '~/components/Nav/Nav.tsx'
@@ -12,6 +13,17 @@ export const handler: Handlers<IPost[]> = {
   async GET(_req, ctx) {
     const posts = await getPosts()
     if (!posts) return ctx.renderNotFound()
+
+    if (Deno.env.get('IS_PROD')) {
+      AnalyticsClient.hit({
+        title: 'Home',
+        url: _req.url,
+        ip: ctx.remoteAddr.hostname,
+        user_agent: _req.headers.get('User-Agent'),
+      }).catch(error => {
+        console.error(error);
+      })
+    }
 
     return ctx.render(posts)
   }

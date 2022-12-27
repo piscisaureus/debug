@@ -39,7 +39,7 @@
   --shiki-token-string: var(--_syntax-color-read);
   --shiki-token-keyword: var(--_syntax-color-1);
   --shiki-token-function: var(--_syntax-color-2);
-  --shiki-token-string-expression: var(--_syntax-color-read);
+  --shiki-token-string-expression: var(--_syntax-color-2);
   --shiki-token-punctuation: var(--_syntax-color-3);
   --shiki-token-link: var(--_syntax-color-1);
 }

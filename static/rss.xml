@@ -9,11 +9,11 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 24 Dec 2022 06:41:37 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 27 Dec 2022 22:47:11 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2022 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
-        <webMaster><![CDATA[atom@argyleink.com (Adam Argyle)]]></webMaster>
+        <webMaster><![CDATA[adam.is@nerdy.dev (Adam Argyle)]]></webMaster>
         <ttl>60</ttl>
         <category><![CDATA[CSS]]></category>
         <category><![CDATA[HTML]]></category>
@@ -57,7 +57,11 @@
 </ul>
 </details>
 
-<p><strong>Missing one thing</strong>:<br><a href="https://twitter.com/argyleink/status/1531423959362678785"><code>text-wrap: balance</code></a></p>
+<p><strong>Missing</strong> <a href="https://twitter.com/argyleink/status/1531423959362678785"><code>text-wrap</code></a> tho!</p>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">h2</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">h3</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">text-wrap</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">balance</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
 ]]></description>
             <link>https://nerdy.dev/things-css-could-still-use-in-2023</link>
             <guid isPermaLink="true">https://nerdy.dev/things-css-could-still-use-in-2023</guid>

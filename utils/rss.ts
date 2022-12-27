@@ -31,7 +31,7 @@ function makeRSS(posts:IPost[]) {
     feed_url: 'https://nerdy.dev/rss.xml',
     site_url: 'https://nerdy.dev',
     image_url: 'https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png',
-    webMaster: 'atom@argyleink.com (Adam Argyle)',
+    webMaster: 'adam.is@nerdy.dev (Adam Argyle)',
     copyright: new Date().getFullYear() + ' Adam Argyle',
     language: 'en',
     categories: ['CSS','HTML','JavaScript','Front-End','Design'],

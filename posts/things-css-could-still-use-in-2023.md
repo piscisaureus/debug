@@ -24,5 +24,10 @@ tags:
   
 </details>
 
-**Missing one thing**! 
-[`text-wrap: balance`](https://twitter.com/argyleink/status/1531423959362678785)
+**Missing** [`text-wrap`](https://twitter.com/argyleink/status/1531423959362678785) tho!
+
+```css
+h1, h2, h3 {
+  text-wrap: balance;
+}
+```  

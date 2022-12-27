@@ -4,7 +4,7 @@ let AnalyticsClient = null
 
 if (Deno.env.get("IS_PROD")) {
   AnalyticsClient = new Pirsch({
-    hostname: "localhost:3030",
+    hostname: "nerdy.dev",
     protocol: "https",
     clientId: Deno.env.get("PirschClientId"),
     clientSecret: Deno.env.get("PirschSecret"),

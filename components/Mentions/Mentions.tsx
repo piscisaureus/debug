@@ -1,5 +1,6 @@
 import { IMention } from '~/utils/webmentions.ts'
 
+import LikesList from '~/components/LikeList/LikeList.tsx'
 import Pic from '~/islands/Pic.tsx'
 
 export default function Mentions({mentions}:{mentions:IMention[]}) {
@@ -11,23 +12,7 @@ export default function Mentions({mentions}:{mentions:IMention[]}) {
       <h2>
         Web Mentions <a name="comments" href="#comments">#</a>
       </h2>
-      {likes.length &&
-        <section>
-          <span>{likes.length} likes</span>
-          <ul class="LikeList">
-            {likes.map((like) => (
-              <li title={like.author.name}>
-                <Pic 
-                  src={like.author.photo} 
-                  alt={like.author.name}
-                  height={24}
-                  width={24}
-                />
-              </li>
-            ))}
-          </ul>
-        </section>
-      }
+      {likes.length && <LikesList likes={likes}/>}
       {comments.length && comments.map((mention) => 
         <div class="Mention">
           <q>

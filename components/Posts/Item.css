@@ -40,10 +40,6 @@
     display: none;
   }
 
-  &.blogpost [data-topic="blog"] {
-    display: none;
-  }
-
   & > .Persona {
     grid-column: 1;
     grid-row: span 2;

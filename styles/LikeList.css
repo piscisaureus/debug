@@ -1,0 +1,15 @@
+.LikeList {
+  display: flex;
+  list-style-type: none;
+  padding-inline-start: 0;
+
+  & > li {
+    padding: 0;
+    margin-inline-end: -24px;
+
+    & img {
+      border-radius: var(--radius-round);
+      aspect-ratio: var(--ratio-square);
+    }
+  }
+}

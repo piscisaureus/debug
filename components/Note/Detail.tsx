@@ -15,6 +15,7 @@ export default function NoteDetail({post, mentions}:{post:INote, mentions:[]}) {
         })}</time>
       </header>
       <Note post={post}/>
+      <hr/>
       {mentions?.length > 0 && <Mentions mentions={mentions}/>}
     </main>
   )

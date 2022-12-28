@@ -3,15 +3,35 @@ import { IMention } from '~/utils/webmentions.ts'
 import Pic from '~/islands/Pic.tsx'
 
 export default function Mentions({mentions}:{mentions:IMention[]}) {
+  const comments = mentions.filter(mention => ['mention-of','repost-of','in-reply-to'].includes(mention['wm-property']))
+  const likes = mentions.filter(mention => ['like-of'].includes(mention['wm-property']))
+  console.log(likes)
   return (
     <section class="Mentions">
       <h2>
         Web Mentions <a name="comments" href="#comments">#</a>
       </h2>
-      {mentions.map((mention) => 
+      {likes.length &&
+        <section>
+          <span>{likes.length} likes</span>
+          <ul class="LikeList">
+            {likes.map((like) => (
+              <li title={like.author.name}>
+                <Pic 
+                  src={like.author.photo} 
+                  alt={like.author.name}
+                  height={24}
+                  width={24}
+                />
+              </li>
+            ))}
+          </ul>
+        </section>
+      }
+      {comments.length && comments.map((mention) => 
         <div class="Mention">
           <q>
-            <div dangerouslySetInnerHTML={{ __html: mention.content.html }} />
+            <div dangerouslySetInnerHTML={{ __html: mention.content.html || mention.content.text }} />
             <cite>
               <a href={mention.author.url}>
                 <Pic 

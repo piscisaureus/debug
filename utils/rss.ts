@@ -52,7 +52,7 @@ function makeRSS(posts:IPost[]) {
     const futureXMLItemObject = {
       title:  title,
       description: post.content,
-      url: 'https://nerdy.dev/'+post.slug,
+      url: 'https://nerdy.dev/'+post.slug+'?utm_source=rss',
       categories: post?.tags?.length != 0
         ? post.tags
         : ['note'],
@@ -61,13 +61,33 @@ function makeRSS(posts:IPost[]) {
     }
 
     if (post?.media?.length) {
-      futureXMLItemObject.enclosure = {
-        url: urlbase + '/' + post.media[0].src
-      }
+      const media = urlbase + '/' + post.media[0].src
+      const [item] = post.media
+
+      futureXMLItemObject.enclosure = { url: media }
 
       futureXMLItemObject.custom_elements = [
-        {'media:thumbnail': { _attr: { url: urlbase + '/' + post.media[0].src}}},
+        {'media:thumbnail': { _attr: { url: media}}},
       ]
+
+      if (media.includes('mp4')) {
+        futureXMLItemObject.description = `
+          <video style="display: none" src="${media}" alt="${item.alt}" height="${item.height}"  width="${item.width}" />
+        ` + futureXMLItemObject.description
+      }
+      else {
+        futureXMLItemObject.description = `
+          <img style="display: none" src="${media}" alt="${item.alt}" height="${item.height}"  width="${item.width}" />
+        ` + futureXMLItemObject.description
+      }
+    }
+
+    if (post?.hero) {
+      const media = urlbase + '/' + post.hero.src
+
+      futureXMLItemObject.description = `
+        <img style="display: none" src="${media}" alt="${post.hero.alt}" height="${post.hero.height}"  width="${post.hero.width}" />
+      ` + futureXMLItemObject.description
     }
 
     feed.item(futureXMLItemObject)

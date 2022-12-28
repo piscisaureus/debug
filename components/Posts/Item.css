@@ -224,10 +224,6 @@
       & > code {
         padding: 0;
 
-        @media (--sm-n-above) {
-          margin-inline-start: calc(var(--_avatar-column-size) + var(--size-inline-1));
-        }
-
         & > pre, & > pre > code {
           border-radius: 0;
         }
@@ -238,6 +234,11 @@
 
         & > pre {
           padding: var(--size-3);
+
+          @media (--sm-n-above) {
+            --column-plus-padding-and-gap: calc(var(--_avatar-column-size) + calc(var(--size-inline-1) * 2));
+            padding-inline-start: var(--column-plus-padding-and-gap);
+          }
         }
       }
     }

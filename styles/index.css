@@ -55,9 +55,13 @@
   }
 
   p, q, li {
-    font-size: var(--font-size-3);
+    font-size: var(--font-size-2);
     letter-spacing: var(--font-letterspacing-2);
     font-weight: var(--font-weight-2);
+
+    @media (--md-n-above) {
+      font-size: var(--font-size-3);
+    }
   }
 
   summary {

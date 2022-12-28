@@ -2,6 +2,7 @@
   --_avatar-column-size: 40px;
 
   max-inline-size: max-content;
+  font-size: var(--font-size-2);
   display: grid;
   grid-template-columns: var(--_avatar-column-size) minmax(1ch,1fr);
   gap: var(--size-2) var(--size-inline-1);
@@ -15,6 +16,7 @@
   @media (--md-n-above) {
     --_avatar-column-size: 50px;
     padding-block: var(--size-inline-1) var(--size-4);
+    font-size: var(--font-size-3);
   }
 
   @media (forced-colors: active) {
@@ -63,9 +65,6 @@
   }
 
   & li {
-    font-size: var(--font-size-3);
-    letter-spacing: var(--font-letterspacing-2);
-    font-weight: var(--font-weight-2);
     padding: 0;
 
     &::marker {
@@ -104,6 +103,10 @@
 
   & > figure {
     margin-block: var(--size-3);
+
+    & + footer {
+      margin-block-start: 0;
+    }
   }
 
   & > section {
@@ -212,19 +215,29 @@
     }
 
     & section > pre {
+      padding: 0;
       max-inline-size: initial;
       border-radius: 0;
       grid-column: 1 / -1;
       margin-inline: calc(var(--size-inline-1) * -1);
 
       & > code {
+        padding: 0;
+
         @media (--sm-n-above) {
           margin-inline-start: calc(var(--_avatar-column-size) + var(--size-inline-1));
         }
 
         & > pre, & > pre > code {
-          padding: 0;
           border-radius: 0;
+        }
+
+        & > pre > code {
+          padding: 0;
+        }
+
+        & > pre {
+          padding: var(--size-3);
         }
       }
     }

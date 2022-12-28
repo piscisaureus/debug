@@ -14,8 +14,8 @@ export default function PageMeta(props:any) {
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <meta name="mobile-web-app-capable" content="yes"/>
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-      <meta name="theme-color" content="deeppink" media="(prefers-color-scheme: light)"/>
-      <meta name="theme-color" content="Canvas" media="(prefers-color-scheme: dark)"/>
+      <meta name="theme-color" content="#e9ecef" media="(prefers-color-scheme: light)"/>
+      <meta name="theme-color" content="#030507" media="(prefers-color-scheme: dark)"/>
       <meta name="description" content={description}/>
 
       <link rel="manifest" href="/manifest.json"/>

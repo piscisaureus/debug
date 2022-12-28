@@ -16,7 +16,9 @@ async function getToken() {
   const data = await response.json()
   state.set('token', data.access_token)
 }
-getToken()
+
+if (Deno.env.get("IS_PROD"))
+  getToken()
 
 export function recordRequest(title, {request, context}) {
   hit({

@@ -1,7 +1,7 @@
 import { Handlers, PageProps } from '$fresh/server.ts'
 import { Head } from '$fresh/runtime.ts'
 
-import hit from '~/utils/analytics.ts'
+import { recordRequest } from '~/utils/analytics.ts'
 import { getPosts, IPost } from '~/utils/posts.ts'
 
 import Nav from '~/components/Nav/Nav.tsx'
@@ -10,20 +10,14 @@ import PageMeta from '~/components/PageMeta.tsx'
 import HomePage from '~/components/Home/Home.tsx'
 
 export const handler: Handlers<IPost[]> = {
-  async GET(_req, ctx) {
+  async GET(request, context) {
     const posts = await getPosts()
-    if (!posts) return ctx.renderNotFound()
+    if (!posts) return context.renderNotFound()
 
-    if (Deno.env.get('IS_PROD')) {
-      hit({
-        title: 'Home',
-        url: _req.url,
-        ip: ctx.remoteAddr.hostname,
-        user_agent: _req.headers.get('User-Agent'),
-      })
-    }
+    if (Deno.env.get('IS_PROD'))
+      recordRequest('/index', {request, context})
 
-    return ctx.render(posts)
+    return context.render(posts)
   }
 }
 

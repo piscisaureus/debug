@@ -5,19 +5,23 @@ import Pic from '~/islands/Pic.tsx'
 export default function Mentions({mentions}:{mentions:IMention[]}) {
   return (
     <section class="Mentions">
-      <h2 id="comments">Web Mentions ({mentions.length})</h2>
+      <h2>
+        Web Mentions <a name="comments" href="#comments">#</a>
+      </h2>
       {mentions.map((mention) => 
         <div class="Mention">
           <q>
             <div dangerouslySetInnerHTML={{ __html: mention.content.html }} />
             <cite>
-              <Pic 
-                src={mention.author.photo} 
-                alt={mention.author.name}
-                height="24"
-                width="24"
-              />
-              <span>{mention.author.name}</span>
+              <a href={mention.author.url}>
+                <Pic 
+                  src={mention.author.photo} 
+                  alt={mention.author.name}
+                  height={24}
+                  width={24}
+                />
+              </a>
+              <a href={mention.url}>{mention.author.name}</a>
             </cite>
           </q>
         </div>

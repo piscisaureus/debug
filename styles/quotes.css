@@ -50,7 +50,7 @@ q {
     line-height: var(--font-lineheight-5);
     font-style: normal;
 
-    & > img {
+    & img {
       border-radius: var(--radius-round);
       overflow: hidden;
     }

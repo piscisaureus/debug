@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 27 Dec 2022 22:47:11 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 Dec 2022 16:47:39 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2022 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -23,11 +23,32 @@
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
         <item>
-            <title><![CDATA[Individual Transforms]]></title>
-            <description><![CDATA[<p><a href="https://web.dev/css-individual-transform-properties/">Individual transforms</a> are <strong>rad</strong>.<br><small>when you don&#39;t need to manage the order</small></p>
+            <title><![CDATA[Thinking On Ways To Do Ui Physics Effects]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-physics.jpg" alt="GUI Challenges character next to a set of controls for mass, tension, friction and start velocity" height="720"  width="1280" />
+        <p><a href="https://youtube.com/watch?v=eamAHF71ZN4">Thinking on ways to do <strong>UI Physics</strong></a>  </p>
+<p>In this <a href="https://goo.gle/GUIchallenges">GUI Challenge</a>, 
+<a href="https://www.youtube.com/channel/UCBGr3ZMcV5jke40_Wrv3fNA">I</a> use <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame">requestAnimationFrame</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/--*">custom properties</a> to make bouncy and jelloey springy UI effects.</p>
+<p><a href="https://gui-challenges.web.app/spring-physics/dist/">demo</a> · 
+<a href="https://github.com/argyleink/gui-challenges">source</a></p>
 ]]></description>
-            <link>https://nerdy.dev/individual-transforms</link>
-            <guid isPermaLink="true">https://nerdy.dev/individual-transforms</guid>
+            <link>https://nerdy.dev/thinking-on-ways-to-do-UI-physics-effects?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/thinking-on-ways-to-do-UI-physics-effects?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[media]]></category>
+            <dc:creator><![CDATA[Adam@GUIchallenges]]></dc:creator>
+            <pubDate>Wed, 28 Dec 2022 15:52:44 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-physics.jpg" length="0" type="image/jpeg"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-physics.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Individual Transforms]]></title>
+            <description><![CDATA[
+          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/individual-transforms-infinite.mp4" alt="Infinite video example of a CSS snippet changing between syntax options." height="1080"  width="2366" />
+        <p><a href="https://web.dev/css-individual-transform-properties/">Individual transforms</a> are <strong>rad</strong>.<br><small>when you don&#39;t need to manage the order</small></p>
+]]></description>
+            <link>https://nerdy.dev/individual-transforms?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/individual-transforms?utm_source=rss</guid>
             <category><![CDATA[note]]></category>
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
@@ -63,8 +84,8 @@
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 ]]></description>
-            <link>https://nerdy.dev/things-css-could-still-use-in-2023</link>
-            <guid isPermaLink="true">https://nerdy.dev/things-css-could-still-use-in-2023</guid>
+            <link>https://nerdy.dev/things-css-could-still-use-in-2023?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/things-css-could-still-use-in-2023?utm_source=rss</guid>
             <category><![CDATA[note]]></category>
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
@@ -72,7 +93,9 @@
         </item>
         <item>
             <title><![CDATA[CSS Anchor API is lookin rad!]]></title>
-            <description><![CDATA[<p>I often feel intimidated initially by new CSS things.. I&#39;ve been putting off the new <a href="https://tabatkins.github.io/specs/css-anchor-position/">CSS Anchor</a> api stuff cuz it looked scary. </p>
+            <description><![CDATA[
+        <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-anchor-hero.png" alt="A bar chart shown with 2 popups anchored to the smallest and largest bars." height="414"  width="1063" />
+      <p>I often feel intimidated initially by new CSS things.. I&#39;ve been putting off the new <a href="https://tabatkins.github.io/specs/css-anchor-position/">CSS Anchor</a> api stuff cuz it looked scary. </p>
 <p>But <strong>not 15m minutes</strong> into actually sitting with it, <strong>and I&#39;m stoked</strong>.</p>
 <p><video 
             src=https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/css-anchor.mp4 
@@ -123,8 +146,8 @@
 <li><a href="https://tabatkins.github.io/specs/css-anchor-position/">Official Spec</a></li>
 </ol>
 ]]></description>
-            <link>https://nerdy.dev/css-anchor-api-is-lookin-rad</link>
-            <guid isPermaLink="true">https://nerdy.dev/css-anchor-api-is-lookin-rad</guid>
+            <link>https://nerdy.dev/css-anchor-api-is-lookin-rad?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/css-anchor-api-is-lookin-rad?utm_source=rss</guid>
             <category><![CDATA[blog]]></category>
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
@@ -144,8 +167,8 @@
 <p>On demand with <code>:has()</code>,<br>when a certain item is focused..   </p>
 <p><strong>snap dat item into a nice position</strong>.</p>
 ]]></description>
-            <link>https://nerdy.dev/conditional-snapping-with-has</link>
-            <guid isPermaLink="true">https://nerdy.dev/conditional-snapping-with-has</guid>
+            <link>https://nerdy.dev/conditional-snapping-with-has?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/conditional-snapping-with-has?utm_source=rss</guid>
             <category><![CDATA[note]]></category>
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
@@ -153,14 +176,16 @@
         </item>
         <item>
             <title><![CDATA[Hustle And Logical Flow]]></title>
-            <description><![CDATA[<p><strong>Logical Properties</strong><br>Learn once, works everywhere.</p>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/logical-flow.png" alt="some title" height="1384"  width="1920" />
+        <p><strong>Logical Properties</strong><br>Learn once, works everywhere.</p>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties">MDN</a> · 
 <a href="https://web.dev/learn/css/logical-properties/">Learn CSS</a> · 
 <a href="https://web.dev/logical-property-shorthands/">web.dev</a> · 
 <a href="https://pod.link/thecsspodcast/episode/e2673c5db0efc8cfda5090ac2f11cbd3">The CSS Podcast</a></p>
 ]]></description>
-            <link>https://nerdy.dev/hustle-and-logical-flow</link>
-            <guid isPermaLink="true">https://nerdy.dev/hustle-and-logical-flow</guid>
+            <link>https://nerdy.dev/hustle-and-logical-flow?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/hustle-and-logical-flow?utm_source=rss</guid>
             <category><![CDATA[note]]></category>
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
@@ -174,8 +199,8 @@
 <p>Soft launch of <a href="#">nerdy.dev</a> successful 🤘💀   </p>
 <p>Still more work. Expect change!</p>
 ]]></description>
-            <link>https://nerdy.dev/hazzah-a-soft-launch</link>
-            <guid isPermaLink="true">https://nerdy.dev/hazzah-a-soft-launch</guid>
+            <link>https://nerdy.dev/hazzah-a-soft-launch?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/hazzah-a-soft-launch?utm_source=rss</guid>
             <category><![CDATA[note]]></category>
             <dc:creator><![CDATA[Web Master@admin]]></dc:creator>
             <pubDate>Thu, 15 Dec 2022 00:00:00 GMT</pubDate>
@@ -190,8 +215,8 @@
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 ]]></description>
-            <link>https://nerdy.dev/lh-unit-is-rad-for-dropcaps</link>
-            <guid isPermaLink="true">https://nerdy.dev/lh-unit-is-rad-for-dropcaps</guid>
+            <link>https://nerdy.dev/lh-unit-is-rad-for-dropcaps?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/lh-unit-is-rad-for-dropcaps?utm_source=rss</guid>
             <category><![CDATA[note]]></category>
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
@@ -199,15 +224,17 @@
         </item>
         <item>
             <title><![CDATA[Bramus Shares A Few Has Super Powers]]></title>
-            <description><![CDATA[<p><a href="https://www.bram.us/">Bramus</a> is blogging awesome ways to use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:has"><code>:has()</code></a> 🤓</p>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bramus.png" alt="Bram.us - a rather geekly/technical weblog, est. 2001" height="146"  width="829" />
+        <p><a href="https://www.bram.us/">Bramus</a> is blogging awesome ways to use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:has"><code>:has()</code></a> 🤓</p>
 <ol>
 <li><a href="https://brm.us/css-islands">CSS Islands with <code>:has()</code></a></li>
 <li><a href="https://brm.us/css-has-child-count">Target parents with a certain number of children</a></li>
 </ol>
 <p>It&#39;s a good idea to follow Bramus&#39;s <a href="https://www.bram.us/feed/">RSS</a> or <a href="https://twitter.com/bramus">Twitter</a></p>
 ]]></description>
-            <link>https://nerdy.dev/bramus-shares-a-few-has-super-powers</link>
-            <guid isPermaLink="true">https://nerdy.dev/bramus-shares-a-few-has-super-powers</guid>
+            <link>https://nerdy.dev/bramus-shares-a-few-has-super-powers?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/bramus-shares-a-few-has-super-powers?utm_source=rss</guid>
             <category><![CDATA[note]]></category>
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
@@ -227,23 +254,12 @@
 </code></pre>
 <p><strong>Game changer.</strong></p>
 ]]></description>
-            <link>https://nerdy.dev/easy-flippin-transition</link>
-            <guid isPermaLink="true">https://nerdy.dev/easy-flippin-transition</guid>
+            <link>https://nerdy.dev/easy-flippin-transition?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/easy-flippin-transition?utm_source=rss</guid>
             <category><![CDATA[note]]></category>
             <category><![CDATA[js]]></category>
             <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
             <pubDate>Mon, 12 Dec 2022 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Layouts Are Loops]]></title>
-            <description><![CDATA[<p>layouts <strong>are</strong> loops.</p>
-]]></description>
-            <link>https://nerdy.dev/layouts-are-loops</link>
-            <guid isPermaLink="true">https://nerdy.dev/layouts-are-loops</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Sat, 10 Dec 2022 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>

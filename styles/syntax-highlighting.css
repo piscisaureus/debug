@@ -19,9 +19,9 @@
 }
 
 [data-theme="dark"] {
-  --_syntax-color-1: var(--pink-2);
+  --_syntax-color-1: var(--neon-purple);
   --_syntax-color-2: var(--blue-2);
-  --_syntax-color-3: var(--purple-2);
+  --_syntax-color-3: hotpink;
 }
 
 [style$="color: var(--shiki-token-comment)"] {

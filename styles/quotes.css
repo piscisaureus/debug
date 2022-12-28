@@ -43,7 +43,7 @@ q {
     position: absolute;
     inset-inline-end: var(--size-3);
     inset-block-end: -2ex;
-    padding-inline: var(--size-1) var(--size-2);
+    padding-inline: var(--size-3);
     border-radius: var(--radius-3);
     font-size: var(--font-size-1);
     font-weight: var(--font-weight-4);
@@ -53,6 +53,10 @@ q {
     & img {
       border-radius: var(--radius-round);
       overflow: hidden;
+    }
+
+    &:has(img) {
+      padding-inline: var(--size-1) var(--size-2);
     }
   }
 }

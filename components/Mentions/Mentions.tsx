@@ -5,7 +5,7 @@ import Pic from '~/islands/Pic.tsx'
 export default function Mentions({mentions}:{mentions:IMention[]}) {
   const comments = mentions.filter(mention => ['mention-of','repost-of','in-reply-to'].includes(mention['wm-property']))
   const likes = mentions.filter(mention => ['like-of'].includes(mention['wm-property']))
-  console.log(likes)
+  
   return (
     <section class="Mentions">
       <h2>

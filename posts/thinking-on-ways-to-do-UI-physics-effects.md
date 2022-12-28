@@ -11,7 +11,7 @@ tags:
   - media
 ---
 
-[Thinking on ways to do **UI Physics**](https://youtube.com/watch?v=eamAHF71ZN4)  
+[Thinking on ways to do **UI Physics**](https://www.youtube.com/watch?v=eamAHF71ZN4&list=PLNYkxOF6rcIAaV1wwI9540OC_3XoIzMjQ)  
 
 In this [GUI Challenge](https://goo.gle/GUIchallenges), 
 [I](https://www.youtube.com/channel/UCBGr3ZMcV5jke40_Wrv3fNA) use [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame) and [custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) to make bouncy and jelloey springy UI effects.

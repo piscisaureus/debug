@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 28 Dec 2022 16:47:39 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 Dec 2022 17:57:11 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2022 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -26,7 +26,7 @@
             <title><![CDATA[Thinking On Ways To Do Ui Physics Effects]]></title>
             <description><![CDATA[
           <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-physics.jpg" alt="GUI Challenges character next to a set of controls for mass, tension, friction and start velocity" height="720"  width="1280" />
-        <p><a href="https://youtube.com/watch?v=eamAHF71ZN4">Thinking on ways to do <strong>UI Physics</strong></a>  </p>
+        <p><a href="https://www.youtube.com/watch?v=eamAHF71ZN4&list=PLNYkxOF6rcIAaV1wwI9540OC_3XoIzMjQ">Thinking on ways to do <strong>UI Physics</strong></a>  </p>
 <p>In this <a href="https://goo.gle/GUIchallenges">GUI Challenge</a>, 
 <a href="https://www.youtube.com/channel/UCBGr3ZMcV5jke40_Wrv3fNA">I</a> use <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame">requestAnimationFrame</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/--*">custom properties</a> to make bouncy and jelloey springy UI effects.</p>
 <p><a href="https://gui-challenges.web.app/spring-physics/dist/">demo</a> · 

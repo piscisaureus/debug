@@ -25,7 +25,7 @@ export default function Home({ posts }: { posts: IPost[] }) {
         }
 
         function handleActivate(e) {
-          if (e.target.nodeName === 'A' || e.target.nodeName === 'IMG' || e.target.nodeName === 'SUMMARY' || e.target.closest('a') || e.target.classList.contains('PostList')) 
+          if (e.target.nodeName === 'A' || e.target.nodeName === 'IMG' || e.target.nodeName === 'VIDEO' || e.target.nodeName === 'SUMMARY' || e.target.closest('a') || e.target.classList.contains('PostList')) 
             return
           window.location.href = e.target.closest('.PostItem').getAttribute('data-slug')
         }

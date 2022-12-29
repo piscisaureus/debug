@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 29 Dec 2022 05:43:07 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 29 Dec 2022 15:41:25 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2022 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -24,7 +24,7 @@
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
         <item>
             <title><![CDATA[Media Query Ranges]]></title>
-            <description><![CDATA[<p><a href="https://web.dev/css-individual-transform-properties/">Media Query Ranges</a> </p>
+            <description><![CDATA[<p><a href="https://www.bram.us/2021/10/26/media-queries-level-4-media-query-range-contexts/">Media Query Ranges</a> </p>
 <p><video 
             src=https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/media-ranges-looper.mp4 
             width="2366" 

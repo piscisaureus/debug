@@ -1,4 +1,4 @@
-import Pic from '~/islands/Pic.tsx'
+import Pic from '~/components/Pic/Pic.tsx'
 
 export default function MediaScroller({media}) {
   return (

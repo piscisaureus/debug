@@ -3,7 +3,7 @@ import { relDate } from '~/utils/dates.ts'
 import { IBlog } from '~/utils/posts.ts'
 import { ITags } from '~/components/Tags/Tags.tsx'
 
-import Pic from '~/islands/Pic.tsx'
+import Pic from '~/components/Pic/Pic.tsx'
 import Tags from '~/components/Tags/Tags.tsx'
 import Persona from '~/components/Persona/Persona.tsx'
 

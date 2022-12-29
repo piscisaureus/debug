@@ -8,7 +8,7 @@ import Tags, { ITags } from '~/components/Tags/Tags.tsx'
 import TableOfContents from '~/components/TableOfContents/TableOfContents.tsx'
 import Mentions from '~/components/Mentions/Mentions.tsx'
 
-import Pic from '~/islands/Pic.tsx'
+import Pic from '~/components/Pic/Pic.tsx'
 
 export default function BlogDetail({ post, toc, mentions }: { post: IBlog, toc: [], mentions:[] }) {
   const tags = post.tags ? post.tags.filter(tag => !tag.includes('blog')) : []

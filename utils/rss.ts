@@ -3,7 +3,7 @@ import RSS from 'https://esm.sh/rss'
 import { titleCase } from "$deno/x/case/mod.ts"
 
 import { getPosts, IPost } from '~/utils/posts.ts'
-import { urlbase } from '~/islands/Pic.tsx'
+import { urlbase } from '~/components/Pic/Pic.tsx'
 
 export async function watchAndBuildRSS() {
   const watcher = Deno.watchFs([

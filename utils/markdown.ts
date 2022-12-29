@@ -3,7 +3,7 @@ import {getHighlighter} from "https://esm.sh/shiki-es"
 
 const highlighter = await getHighlighter({theme: 'css-variables'})
 
-import { picPaths } from '~/islands/Pic.tsx'
+import { picPaths } from '~/components/Pic/Pic.tsx'
 import { videoPaths } from '~/components/Video/Video.tsx'
 
 interface MarkdownImage {

@@ -1,4 +1,4 @@
-import Pic from '~/islands/Pic.tsx'
+import Pic from '~/components/Pic/Pic.tsx'
 import { IPersona } from '~/utils/persona.ts'
 
 export default function Persona({ persona, style }: { persona: IPersona, style?: string }) {

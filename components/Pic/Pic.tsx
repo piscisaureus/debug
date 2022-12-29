@@ -1,8 +1,6 @@
-import { useState } from "preact/hooks"
-import { IS_BROWSER } from '$fresh/runtime.ts'
-
 export const urlbase = 'https://res.cloudinary.com/dnpmdb8r8/image/upload'
-const lqip = 'e_blur:2000,c_thumb,f_auto,q_auto:low'
+const optimizations = 'f_auto,w_auto,dpr_auto,q_auto'
+const lqip = 'e_blur:2000,c_thumb,f_auto,w_auto,dpr_auto,q_auto:low'
 
 export interface Pic {
   src: string;
@@ -15,23 +13,14 @@ export interface Pic {
 }
 
 export default function Pic(props:Pic) {
-  const [ loaded, setLoaded ] = useState(0)
   const { full, custom, placeholder } = picPaths(props)
-
-  if (IS_BROWSER) {
-    // get image size and add the props to cloudinary mods to the full src
-    const preloader = new Image()
-    preloader.src = custom
-    preloader.onload = () => setLoaded(1)  
-  }
 
   return (
     <img 
       loading="lazy"
-      data-state={loaded ? 'loaded' : 'loading'}
       data-full={full}
       alt={props.alt}
-      src={loaded ? custom : placeholder} 
+      src={custom} 
       width={props.width}
       height={props.height}
       style={props.style}
@@ -48,10 +37,10 @@ export function picPaths({src, cloudinary}:{src:string, cloudinary?:string}) {
     return {full: src, custom: src, placeholder: src}
   else
     return {
-      full: [urlbase, 'f_auto', src].join('/'),
+      full: [urlbase, optimizations, src].join('/'),
       custom: cloudinary 
-              ? [urlbase, cloudinary + ',f_auto', src].join('/') 
-              : [urlbase, 'f_auto', src].join('/'),
+              ? [urlbase, cloudinary + ',' + optimizations, src].join('/') 
+              : [urlbase, optimizations, src].join('/'),
       placeholder: [urlbase, lqip, src].join('/'),
     }
 }

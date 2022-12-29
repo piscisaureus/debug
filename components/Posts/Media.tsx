@@ -1,6 +1,6 @@
 import { IHero } from '~/utils/posts.ts'
 
-import Pic from '~/islands/Pic.tsx'
+import Pic from '~/components/Pic/Pic.tsx'
 import Video from '~/components/Video/Video.tsx'
 import MediaScroller from '~/components/MediaScroller/MediaScroller.tsx'
 

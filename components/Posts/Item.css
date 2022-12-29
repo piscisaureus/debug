@@ -137,11 +137,15 @@
   & pre, & code {
     background: var(--gray-0);
 
-    @nest [data-theme="dark"] & {
+    @media (--OSdark) {
       background: var(--gray-11);
     }
 
-    @media (--OSdark) {
+    @nest [data-theme="light"] & {
+      background: var(--gray-0);
+    }
+
+    @nest [data-theme="dark"] & {
       background: var(--gray-11);
     }
   }

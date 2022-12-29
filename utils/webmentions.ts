@@ -42,5 +42,6 @@ export async function aMention(slug:string):Promise<[]> {
     }
   }
 
-  return json.children
+  return json.children.sort((a, b) => 
+    new Date(a['wm-received']) - new Date(b['wm-received']))
 }

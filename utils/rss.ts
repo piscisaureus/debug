@@ -60,6 +60,15 @@ function makeRSS(posts:IPost[]) {
       date: post.publishedAt
     }
 
+    if (post?.hero) {
+      const media = urlbase + '/' + post.hero.src
+
+      futureXMLItemObject.enclosure = { 
+        url: media,
+        alt: post.hero.alt,
+      }
+    }
+
     if (post?.media?.length) {
       const media = urlbase + '/' + post.media[0].src
       const [item] = post.media

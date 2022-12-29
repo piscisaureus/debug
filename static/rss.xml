@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 29 Dec 2022 18:57:39 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 29 Dec 2022 22:19:18 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2022 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,92 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Gradient hue interpolation]]></title>
+            <description><![CDATA[
+        <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-hue-interpolation.png" alt="A gradient from blue to purple is shown represented 4 ways, shorter, longer, increasing and decreasing." height="1148"  width="2144" />
+      <p>When a gradient needs to transition from one color to the next, it takes the <a href="https://www.w3.org/TR/css-color-4/#hue-shorter">shortest</a> route it can. But what if the result of that stinks?</p>
+<p><img 
+            loading="lazy" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,w_auto,dpr_auto,q_auto/argyleink/gradient-hue-distance.png" 
+            alt="" 
+            title="A circle gradient representing all hues and is white in the center, where a smaller inner circle shows the difference between shorter and longer routes " 
+            decoding="async"
+            width="389" 
+            height="388"
+          /></p>
+
+        <h3>
+          Hue interpolation
+          <a name="hue-interpolation" href="#hue-interpolation">#</a>
+        </h3>
+       <p>That&#39;s where new CSS gradient syntax from <a href="https://www.w3.org/TR/css-color-4">Color 4</a> for <a href="https://www.w3.org/TR/css-color-4/#hue-interpolation">hue interpolation</a> comes in. Here I specify the gradient takes the <a href="https://www.w3.org/TR/css-color-4/#hue-longer">longer</a> route:</p>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.gradient-with-hue-interpolation-specified</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">linear-gradient</span><span style="color: var(--shiki-token-constant)">(</span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-keyword)">to</span><span style="color: var(--shiki-token-constant)"> right in hsl longer hue</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">    oklch(63</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 0.3 317)</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">    oklch(63</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 0.2 255</span><span style="color: var(--shiki-color-text)">)</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  );</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p>It&#39;s almost like the browser has been Zoolander this whole time, it would only turn right 😂</p>
+<iframe src="https://giphy.com/embed/12npFVlmZoXN4Y" width="480" height="399" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+<p>Here&#39;s 2 demo&#39;s that use <a href="https://colorjs.io/">ColorJS</a> to help illustrate the effects of this hue interpolation choice. Aka, demo&#39;s that help the browser turn left hehe.</p>
+
+        <h3>
+          Blue to Purple example
+          <a name="blue-to-purple-example" href="#blue-to-purple-example">#</a>
+        </h3>
+       <p>A soft intro example into the topic:</p>
+<p>
+          <iframe 
+            class="codepen-embed" 
+            scrolling="no" 
+            title="null" 
+            src="https://codepen.io/argyleink/embed/preview/GRGPxEJ?default-tab=result&editable=true&theme-id=43079" 
+            frameborder="no" 
+            loading="lazy" 
+            allowtransparency="true" 
+            allowfullscreen="true"
+          >
+            See the Pen <a href="https://codepen.io/argyleink/embed/preview/GRGPxEJ">
+            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        </p>
+
+        <h3>
+          Interactive demo
+          <a name="interactive-demo" href="#interactive-demo">#</a>
+        </h3>
+       <p>This one let&#39;s you pick the colors and number of steps:</p>
+<p>
+          <iframe 
+            class="codepen-embed" 
+            scrolling="no" 
+            title="null" 
+            src="https://codepen.io/argyleink/embed/preview/JjZajmb?default-tab=result&editable=true&theme-id=43079" 
+            frameborder="no" 
+            loading="lazy" 
+            allowtransparency="true" 
+            allowfullscreen="true"
+          >
+            See the Pen <a href="https://codepen.io/argyleink/embed/preview/JjZajmb">
+            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        </p>
+<p>So so many more color tools coming to the browser!</p>
+]]></description>
+            <link>https://nerdy.dev/gradients-going-the-shorter-longer-increasing-or-decreasing-route?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/gradients-going-the-shorter-longer-increasing-or-decreasing-route?utm_source=rss</guid>
+            <category><![CDATA[blog]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Thu, 29 Dec 2022 21:48:22 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-hue-interpolation.png" length="0" type="image/png"/>
+        </item>
         <item>
             <title><![CDATA[Media Query Ranges]]></title>
             <description><![CDATA[<p><a href="https://www.bram.us/2021/10/26/media-queries-level-4-media-query-range-contexts/">Media Query Ranges</a> </p>
@@ -179,6 +265,7 @@
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
             <pubDate>Tue, 20 Dec 2022 23:04:09 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-anchor-hero.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Conditional Snapping With Has]]></title>
@@ -248,26 +335,6 @@
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
             <pubDate>Wed, 14 Dec 2022 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Bramus Shares A Few Has Super Powers]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bramus.png" alt="Bram.us - a rather geekly/technical weblog, est. 2001" height="146"  width="829" />
-        <p><a href="https://www.bram.us/">Bramus</a> is blogging awesome ways to use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:has"><code>:has()</code></a> 🤓</p>
-<ol>
-<li><a href="https://brm.us/css-islands">CSS Islands with <code>:has()</code></a></li>
-<li><a href="https://brm.us/css-has-child-count">Target parents with a certain number of children</a></li>
-</ol>
-<p>It&#39;s a good idea to follow Bramus&#39;s <a href="https://www.bram.us/feed/">RSS</a> or <a href="https://twitter.com/bramus">Twitter</a></p>
-]]></description>
-            <link>https://nerdy.dev/bramus-shares-a-few-has-super-powers?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/bramus-shares-a-few-has-super-powers?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
-            <pubDate>Tue, 13 Dec 2022 00:00:00 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bramus.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bramus.png"/>
         </item>
     </channel>
 </rss>

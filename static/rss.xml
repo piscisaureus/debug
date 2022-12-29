@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 28 Dec 2022 17:57:11 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 29 Dec 2022 05:43:07 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2022 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,33 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Media Query Ranges]]></title>
+            <description><![CDATA[<p><a href="https://web.dev/css-individual-transform-properties/">Media Query Ranges</a> </p>
+<p><video 
+            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/media-ranges-looper.mp4 
+            width="2366" 
+            height="1080"
+            alt=" "
+            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/media-ranges-looper.jpg"
+            controls 
+            preload="true"
+            loop
+            muted 
+            allowFullScreen
+          /></p>
+<p>I find this so much more readable.</p>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@media</span><span style="color: var(--shiki-color-text)"> (</span><span style="color: var(--shiki-token-constant)">width</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">&lt;=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">720</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-color-text)">) {}</span></span></code></pre>
+</code></pre>
+<p><a href="https://caniuse.com/css-media-range-syntax">Caniuse</a> says we&#39;re waitin on Safari to bring it from TechP to Stable; aka plugin still required 😭</p>
+]]></description>
+            <link>https://nerdy.dev/media-query-ranges?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/media-query-ranges?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Thu, 29 Dec 2022 05:43:51 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Thinking On Ways To Do Ui Physics Effects]]></title>
             <description><![CDATA[
@@ -241,25 +268,6 @@
             <pubDate>Tue, 13 Dec 2022 00:00:00 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bramus.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bramus.png"/>
-        </item>
-        <item>
-            <title><![CDATA[Easy Flippin Transition]]></title>
-            <description><![CDATA[<p>In ~1 minute you can have <a href="https://aerotwist.com/blog/flip-your-animations/">FLIP</a>-like animation on your page with <a href="https://developer.chrome.com/docs/web-platform/view-transitions/">View Transitions</a>.</p>
-<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-constant)">document</span><span style="color: var(--shiki-token-function)">.startViewTransition</span><span style="color: var(--shiki-color-text)">(() </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">// modify the dom</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">// - hide stuff</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">// - move stuff</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">// - whatever!</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">})</span></span></code></pre>
-</code></pre>
-<p><strong>Game changer.</strong></p>
-]]></description>
-            <link>https://nerdy.dev/easy-flippin-transition?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/easy-flippin-transition?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[js]]></category>
-            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
-            <pubDate>Mon, 12 Dec 2022 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>

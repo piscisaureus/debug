@@ -64,7 +64,10 @@ function makeRSS(posts:IPost[]) {
       const media = urlbase + '/' + post.media[0].src
       const [item] = post.media
 
-      futureXMLItemObject.enclosure = { url: media }
+      futureXMLItemObject.enclosure = { 
+        url: media,
+        alt: item.alt,
+      }
 
       futureXMLItemObject.custom_elements = [
         {'media:thumbnail': { _attr: { url: media}}},

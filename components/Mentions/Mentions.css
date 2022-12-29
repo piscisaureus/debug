@@ -1,6 +1,7 @@
 .Mentions {
   display: grid;
-  gap: var(--size-7);  
+  gap: var(--size-7); 
+  padding-inline: var(--size-inline-1);
 }
 
 .Mention {

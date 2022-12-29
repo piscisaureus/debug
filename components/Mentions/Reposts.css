@@ -1,4 +1,4 @@
-.LikeList {
+.Reposts {
   display: flex;
   list-style-type: none;
   padding-inline-start: 0;
@@ -6,6 +6,16 @@
   & > li {
     padding: 0;
     margin-inline-end: -24px;
+    transition: translate .8s var(--ease-squish-3);
+
+    &:hover {
+      translate: 0 -5px;
+    }
+
+    & > a {
+      padding: 0;
+      margin: 0;
+    }
 
     & img {
       border-radius: var(--radius-round);

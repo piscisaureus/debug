@@ -58,7 +58,14 @@ export default function BlogDetail({ post, toc, mentions }: { post: IBlog, toc: 
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
-        {mentions?.length > 0 && <Mentions mentions={mentions}/>}
+        {mentions?.length > 0 && 
+          <section class="Mentions">
+            <h2>
+              Web Mentions <a name="comments" href="#comments">#</a>
+            </h2>
+            <Mentions mentions={mentions}/>
+          </section>
+        }
       </main>
       {/*todo reduced motion*/}
       <style dangerouslySetInnerHTML={{ __html: `

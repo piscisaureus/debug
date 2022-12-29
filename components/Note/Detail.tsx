@@ -14,9 +14,13 @@ export default function NoteDetail({post, mentions}:{post:INote, mentions:[]}) {
           day: "numeric",
         })}</time>
       </header>
+
       <Note post={post}/>
-      <hr/>
-      {mentions?.length > 0 && <Mentions mentions={mentions}/>}
+      {mentions?.length > 0 && 
+        <section class="Mentions">
+          <Mentions mentions={mentions}/>
+        </section>
+      }
     </main>
   )
 }

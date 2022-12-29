@@ -1,29 +1,32 @@
 import { IMention } from '~/utils/webmentions.ts'
 
-import LikesList from '~/components/LikeList/LikeList.tsx'
-import Pic from '~/islands/Pic.tsx'
+import Likes from './Likes.tsx'
+import Reposts from './Reposts.tsx'
 
 export default function Mentions({mentions}:{mentions:IMention[]}) {
-  const comments = mentions.filter(mention => ['mention-of','repost-of','in-reply-to'].includes(mention['wm-property']))
+  const comments = mentions.filter(mention => ['mention-of','in-reply-to'].includes(mention['wm-property']))
+  const reposts = mentions.filter(mention => ['repost-of'].includes(mention['wm-property']))
   const likes = mentions.filter(mention => ['like-of'].includes(mention['wm-property']))
   
   return (
-    <section class="Mentions">
-      <h2>
-        Web Mentions <a name="comments" href="#comments">#</a>
-      </h2>
-      {likes.length && <LikesList likes={likes}/>}
-      {comments.length && comments.map((mention) => 
+    <>
+      <div class="block-stack">
+        {likes.length >= 1 && <Likes likes={likes}/>}
+        {reposts.length >= 1 && <Reposts reposts={reposts}/>}
+      </div>
+      {comments.length >= 1 && comments.map((mention) => 
         <div class="Mention">
           <q>
             <div dangerouslySetInnerHTML={{ __html: mention.content.html || mention.content.text }} />
             <cite>
               <a href={mention.author.url}>
-                <Pic 
+                <img 
                   src={mention.author.photo} 
                   alt={mention.author.name}
                   height={24}
                   width={24}
+                  loading="lazy"
+                  decoding="async"
                 />
               </a>
               <a href={mention.url}>{mention.author.name}</a>
@@ -31,7 +34,7 @@ export default function Mentions({mentions}:{mentions:IMention[]}) {
           </q>
         </div>
       )}
-    </section>
+    </>
   )
 }
 

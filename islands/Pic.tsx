@@ -48,10 +48,10 @@ export function picPaths({src, cloudinary}:{src:string, cloudinary?:string}) {
     return {full: src, custom: src, placeholder: src}
   else
     return {
-      full: [urlbase, src].join('/'),
+      full: [urlbase, 'f_auto', src].join('/'),
       custom: cloudinary 
-              ? [urlbase, cloudinary, src].join('/') 
-              : [urlbase, src].join('/'),
+              ? [urlbase, cloudinary + ',f_auto', src].join('/') 
+              : [urlbase, 'f_auto', src].join('/'),
       placeholder: [urlbase, lqip, src].join('/'),
     }
 }

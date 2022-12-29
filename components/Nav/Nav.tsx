@@ -7,12 +7,12 @@ export default function Nav({layout}: {layout?: string}) {
       {layout !== 'detail' && <a id="skip-link" href='#feed'>Skip to main feed</a>}
       <nav class="Nav">
         {layout === 'detail'
-          ? <a href="/" class="icon-button" id="back-to-home">
+          ? <a href="/" title="Back home" class="icon-button" id="back-to-home">
               <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">
                 <use href="#icon.arrow"/>
               </svg>
             </a>
-          : <a href="/" class="gui-skull icon-button">
+          : <a href="/" title="Home" class="gui-skull icon-button">
               <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 447 428">
                 <use href="#icon.skull"/>
               </svg>

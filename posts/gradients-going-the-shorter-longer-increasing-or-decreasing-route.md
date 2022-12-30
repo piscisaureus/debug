@@ -33,7 +33,7 @@ That's where new CSS gradient syntax from [Color 4](https://www.w3.org/TR/css-co
 
 It's almost like the browser has been Zoolander this whole time, it would only turn right 😂
 
-<iframe src="https://giphy.com/embed/12npFVlmZoXN4Y" width="480" height="399" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+![](http://www.quickmeme.com/img/2f/2f8b255da81c3885d819a9f639fa37407837dfb14aa5502cda3efaac5d74c923.jpg)
 
 Here's 2 demo's that use [ColorJS](https://colorjs.io/) to help illustrate the effects of this hue interpolation choice. Aka, demo's that help the browser turn left hehe.
 

@@ -42,6 +42,14 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+
+    @media (--xs-n-below) {
+      font-size: var(--font-size-6);
+    }
+
+    @media (--xxs-n-below) {
+      font-size: var(--font-size-5);
+    }
   }
 
   & > img {

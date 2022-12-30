@@ -61,7 +61,7 @@ export default function BlogDetail({ post, toc, mentions }: { post: IBlog, toc: 
         {mentions?.length > 0 && 
           <section class="Mentions">
             <h2>
-              Web Mentions <a name="comments" href="#comments">#</a>
+              Mentions <a name="comments" href="#comments">#</a>
             </h2>
             <Mentions mentions={mentions}/>
           </section>

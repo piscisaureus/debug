@@ -5,7 +5,7 @@
   grid-template-columns: 100%;
   place-content: center;
   place-items: center;
-  gap: var(--size-3);
+  gap: var(--size-fluid-5);
   margin-block-end: var(--size-10);
 
   @media (--lg-n-above) {

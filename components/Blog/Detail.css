@@ -9,7 +9,7 @@
   contain: layout;
 
   @nest :not(.BlogHero) + .BlogMeta + & {
-    margin-top: 20vh;
+    margin-block-start: 20vh;
   }
 
   @media (width >= 900px) {

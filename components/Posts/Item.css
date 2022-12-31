@@ -84,8 +84,7 @@
   & h2 {
     max-inline-size: 100%;
     font-size: var(--font-size-4);
-    margin-bottom: calc(var(--size-2) * -1);
-    margin-top: var(--size-3);
+    margin-block: var(--size-3) calc(var(--size-2) * -1);
     grid-column: -1 / 1;
   }
 

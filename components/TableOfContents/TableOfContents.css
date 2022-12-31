@@ -14,7 +14,7 @@
   padding-block-end: var(--size-2);
   padding-inline-end: var(--size-2);
 
-  @media (width >= 900px) {
+  @container (min-inline-size: 900px) {
     display: flex;
   }
 

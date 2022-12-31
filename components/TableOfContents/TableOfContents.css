@@ -6,7 +6,13 @@
   margin-block-start: var(--size-10);
 
   position: sticky;
-  top: 20vh;
+  inset-block-start: calc(var(--nav-height) + var(--size-5));
+
+  max-block-size: calc(100vh - var(--nav-height) - var(--size-5));
+  max-block-size: calc(100dvb - var(--nav-height) - var(--size-5));
+  overflow: auto;
+  padding-block-end: var(--size-2);
+  padding-inline-end: var(--size-2);
 
   @media (width >= 900px) {
     display: flex;

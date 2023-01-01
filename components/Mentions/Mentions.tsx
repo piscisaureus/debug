@@ -9,7 +9,7 @@ export default function Mentions({mentions}:{mentions:IMention[]}) {
     .filter(mention => mention?.content?.html)
   const reposts = mentions.filter(mention => ['repost-of'].includes(mention['wm-property']))
   const likes = mentions.filter(mention => ['like-of'].includes(mention['wm-property']))
-  console.log(comments)
+  
   return (
     <>
       <div class="block-stack">

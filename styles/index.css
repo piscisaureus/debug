@@ -43,6 +43,20 @@
       ;
       background-attachment: fixed;
     }
+
+    @nest [data-theme="light"] &:has(.BlogDetail) {
+      background-image: linear-gradient(to bottom,
+        #fff 100vh, 
+        300vh, 
+        var(--surface-2)
+      );
+
+      background-image: linear-gradient(to bottom,
+        #fff 100vb, 
+        300vb, 
+        var(--surface-2)
+      );
+    }
   }
 
   p, q, li {

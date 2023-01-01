@@ -23,7 +23,6 @@
 
   & > article {
     grid-row: 1;
-    border: 1px solid transparent;
     border-radius: var(--radius-3);
     gap: var(--size-7);
     contain: layout;
@@ -81,7 +80,15 @@
     max-inline-size: 100%;
   }
 
+  & > article > pre {
+    padding: 0;
+  }
+
   & a {
     word-break: break-word;
+  }
+
+  & ol > li:hover::marker {
+    font-weight: var(--font-weight-8);
   }
 }

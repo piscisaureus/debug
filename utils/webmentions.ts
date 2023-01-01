@@ -25,7 +25,7 @@ export interface IMention {
 }
 
 export async function aMention(slug:string):Promise<[]> {
-  const path = `${base}target=https://nerdy.dev/${slug}`
+  const path = `${base}target=https://nerdy.dev/${slug}&sort-dir=up&per-page=500`
   const data = await fetch(path)
   let json
 
@@ -41,7 +41,6 @@ export async function aMention(slug:string):Promise<[]> {
       throw err
     }
   }
-
-  return json.children.sort((a, b) => 
-    new Date(a['wm-received']) - new Date(b['wm-received']))
+  
+  return json.children
 }

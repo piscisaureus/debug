@@ -98,11 +98,11 @@ A small preview of my `index.css` file. Spoiler, it's [layers](https://developer
 @import-glob "../components/**/*.css" layer(components.fresh);
 @import-glob "../islands/**/*.css" layer(components.fresh);
 
-@layer base.normalize-overrides {...}
-@layer overrides {...}
+@layer base.normalize-overrides {…}
+@layer overrides {…}
 ```
 
-**It's 3 layers**: base, components, overrides. Names sublayers for easier debugging and organization.
+**It's 3 layers**: base, components, overrides. Named sublayers for easier debugging and organization.
 
 With that in place, I match a classname to a component name and that's pretty much it. I have global styles and component styles, all sharing the props and [JIT Props](https://github.com/GoogleChromeLabs/postcss-jit-props) makes sure I only ship the props I use. Good stuff.
 
@@ -116,7 +116,7 @@ Hopefully you noticed there was no "flash of an unwanted color scheme" (FOAUCS) 
 
 ![](argyleink/theme-switch-overview.mp4 "Demo of the theme switch features $$width:1922,height:1082")
 
-So many sites strobe light my face with the light theme when the page loads (I'm generally in dark mode), and it makes me feel like a vampire who just got blasted with a sun ray. Sometime they blast me on every single page load.. 😱
+So many sites strobe light my face with the light theme when the page loads (I'm generally in dark mode), and it makes me feel like a vampire who just got blasted with a sun ray. Sometime they blast me on every single page load… 😱
 
 To make this feature, I followed my own [Theme Switch GUI Challenge](https://web.dev/building-a-theme-switch-component/)! I just integrated it into Fresh 🙂
 
@@ -136,7 +136,7 @@ I really like the idea of aggregating mentions of my site's work onto this site 
 
 I think the result is cool. I feel like it's peer to peer in nature but with a good amount of optional content filtering from the owner side.
 
-I'm not in any [webrings](https://en.wikipedia.org/wiki/Webring) yet.. should I be?
+I'm not in any [webrings](https://en.wikipedia.org/wiki/Webring) yet… should I be?
 
 ## multiple personas
 
@@ -192,7 +192,7 @@ I really like minimal URLs and with Deno + Fresh it was really easy. I appreciat
 
 I went with [Pirsch](https://pirsch.io/), and am happy! Cost seems right so they stay alive, great APIs and SDKs, and a really nice dashboard that's simple but powerful.
 
-I reeeeeeally didn't want to run some open source containers on the cloud and host my own analytics.. just not my kind of Tuesday night activity. Aka, I'm down with a couple extra bucks for a managed solution.
+I reeeeeeally didn't want to run some open source containers on the cloud and host my own analytics… just not my kind of Tuesday night activity. Aka, I'm down with a couple extra bucks for a managed solution.
 
 ### progressive web app
 
@@ -251,7 +251,7 @@ I try to be respectful with the media delivery:
 - multiple formats (webp, avif, etc)
 - compressed
 - delivered from CDNs near you
-- videos always offer controls and only loops on demand
+- videos always offer controls and only loop on demand
 
 ### pride moment
 

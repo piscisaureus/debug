@@ -36,13 +36,14 @@ q {
     display: flex;
     gap: var(--size-2);
     align-items: center;
+    justify-self: end;
     border: none;
     background: var(--surface-2);
     box-shadow: var(--shadow-2);
     color: var(--text-1);
-    position: absolute;
-    inset-inline-end: var(--size-3);
-    inset-block-end: -2ex;
+    position: relative;
+    inset-block-end: -3.5ex;
+    margin-top: -1.5ex;
     padding-inline: var(--size-3);
     border-radius: var(--radius-3);
     font-size: var(--font-size-1);

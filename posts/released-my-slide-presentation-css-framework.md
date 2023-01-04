@@ -3,7 +3,7 @@ type: note
 persona: argyleink
 published_at: 2019-07-02
 media:
-  - src: v1671215153/argyleink/slyd.gif
+  - src: v1672815325/argyleink/slyd.gif
     alt: Short gif swiping through slides to show a preview of how it works
     width: 1281
     height: 646

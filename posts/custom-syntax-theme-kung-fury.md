@@ -3,7 +3,7 @@ type: note
 persona: argyleink
 published_at: 2018-09-12
 media:
-  - src: argyleink/kung-fury-car.gif
+  - src: v1672815593/argyleink/kung-fury-car.mp4
     alt: A neon lit car
     width: 636
     height: 288

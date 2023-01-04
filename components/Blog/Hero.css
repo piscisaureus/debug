@@ -15,6 +15,5 @@
   & img {
     border-radius: var(--radius-5);
     box-shadow: var(--shadow-5);
-    contain: layout;
   }
 }

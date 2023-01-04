@@ -11,7 +11,6 @@
   padding: var(--size-inline-1);
   border-radius: var(--radius-3);
   border: 0px solid transparent;
-  contain: layout;
 
   @media (--md-n-above) {
     --_avatar-column-size: 50px;
@@ -75,10 +74,6 @@
     flex-wrap: wrap;
     gap: var(--size-3);
     margin-block-start: var(--size-3);
-  }
-
-  & > p {
-    contain: layout;
   }
 
   & h2 {

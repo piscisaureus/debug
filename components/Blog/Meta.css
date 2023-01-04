@@ -73,7 +73,6 @@
   & > p {
     font-size: var(--size-font-0);
     max-inline-size: var(--size-content-2);
-    contain: layout;
 
     @media (--md-n-below) {
       grid-column: -1/1;

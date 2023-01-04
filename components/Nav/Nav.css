@@ -39,8 +39,6 @@
     }
 
     @nest [page-type="detail"] & {
-      view-transition-name: site-nav-home;
-      contain: layout;
       margin-inline-end: auto;
     }
   }
@@ -68,8 +66,4 @@
   & > h1 {
     font-size: var(--font-size-5);
   }
-}
-
-::view-transition-new(site-nav-home) {
-  animation: var(--animation-slide-in-left);
 }

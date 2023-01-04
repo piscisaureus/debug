@@ -24,7 +24,6 @@
     grid-row: 1;
     border-radius: var(--radius-3);
     gap: var(--size-7);
-    contain: layout;
 
     & :is(img, video) {
       justify-self: center;

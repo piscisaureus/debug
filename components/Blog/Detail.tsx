@@ -71,7 +71,7 @@ export default function BlogDetail({ post, toc, mentions }: { post: IBlog, toc: 
           animation-timeline: hero-timeline;
         }
         /* todo: don't animate avatar on mobile */
-        .BlogMeta > img:first-child {
+        .BlogMeta > .Persona {
           animation: 1s linear author-scroll-effect both;
           animation-timeline: hero-timeline;
         }

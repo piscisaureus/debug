@@ -9,7 +9,7 @@ export interface IPersona {
 const personas = {
   admin: {
     img: {
-      src: "argyleink/css3-8bit.gif",
+      src: "argyleink/css3-8bit.mp4",
       alt: "",
       width: 512,
       height: 512,
@@ -29,7 +29,7 @@ const personas = {
   },
   argyleink: {
     img: {
-      src: "argyleink/olliolli.gif",
+      src: "argyleink/olliolli.mp4",
       alt: "",
       width: 382,
       height: 382,

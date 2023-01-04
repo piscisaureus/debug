@@ -12,8 +12,8 @@ export default function BlogPost({post}:{post:IBlog}) {
   post.tags = post.tags as ITags || []
 
   return (
-    <article class="PostItem blogpost" data-slug={post.slug} tabIndex={tabindex} style={`view-transition-name: ${post.slug}`} data-tags={post.tags?.join(' ')}>
-      <Persona persona={post.persona} style={`view-transition-name: ${post.slug}-avatar`}/>
+    <article class="PostItem blogpost" data-slug={post.slug} tabIndex={tabindex} data-tags={post.tags?.join(' ')}>
+      <Persona persona={post.persona}/>
       <header class="inline-wrap">
         <span class="truncate">
           <span class="username">{post.persona.name}</span>
@@ -30,12 +30,10 @@ export default function BlogPost({post}:{post:IBlog}) {
             alt={post.hero.alt}
             height={post.hero.height}
             width={post.hero.width}
-            style={`view-transition-name: ${post.slug}-hero`}
           />
         </figure>
       }
       <p 
-        style={`view-transition-name: ${post.slug}-snippet`} 
         dangerouslySetInnerHTML={{ __html: post.snippet as string }} 
       />
       <footer>

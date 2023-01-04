@@ -6,7 +6,6 @@
   padding-block-end: var(--size-fluid-4);
   padding-inline: var(--size-inline-1);
   gap: var(--size-8);
-  contain: layout;
 
   @nest :not(.BlogHero) + .BlogMeta + & {
     margin-block-start: 20vh;

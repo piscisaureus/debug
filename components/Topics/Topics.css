@@ -10,9 +10,6 @@
   inset-block-start: calc(var(--nav-height) + var(--size-5));
   inset-inline-start: calc(var(--size-inline-1) - var(--size-3));
 
-  view-transition-name: site-topics;
-  contain: layout;
-
   @supports(selector(:has(*))) {
     display: inline-grid;
   }

@@ -12,7 +12,7 @@ export default function Note({post}:{post:INote}) {
   post.tags = post.tags as ITags || []
 
   return (
-    <article class="PostItem note" style={`view-transition-name: ${post.slug}`} data-slug={post.slug} tabIndex={tabindex} data-topics={post.tags.join(' ')}>
+    <article class="PostItem note" data-slug={post.slug} tabIndex={tabindex} data-topics={post.tags.join(' ')}>
       <Persona persona={post.persona}/>
       <header class="inline-wrap">
         <span class="truncate">

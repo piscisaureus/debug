@@ -23,13 +23,12 @@ export default function BlogDetail({ post, toc, mentions }: { post: IBlog, toc: 
               alt={post.hero.alt}
               height={post.hero.height}
               width={post.hero.width}
-              style={`view-transition-name: ${post.slug}-hero`}
             />
           </div>
         </header>
       }
       <section class="BlogMeta block-stack">
-        <Persona persona={post.persona} style={`view-transition-name: ${post.slug}-avatar`}/>
+        <Persona persona={post.persona}/>
 
         <h1>{post.title}</h1>
         <time>{new Date(post.publishedAt).toLocaleDateString(getLocaleString(), {
@@ -44,17 +43,12 @@ export default function BlogDetail({ post, toc, mentions }: { post: IBlog, toc: 
           {readingTime(post.content).text}
         </span>
         {tags.length > 0 && <Tags tags={tags as ITags}/>}
-        {/* <p 
-          style={`view-transition-name: ${post.slug}-snippet`}
-          dangerouslySetInnerHTML={{ __html: post.snippet as string }}
-        /> */}
       </section>
       <main class="BlogDetail block-stack">
         <TableOfContents toc={toc} hasMentions={mentions.length >= 1}/>
 
         <article 
           class="block-stack"
-          style={`view-transition-name: ${post.slug}`}
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 

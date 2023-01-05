@@ -8,7 +8,7 @@ tags:
 
 [Media Query Ranges](https://www.bram.us/2021/10/26/media-queries-level-4-media-query-range-contexts/) 
 
-![](argyleink/media-ranges-looper.mp4 "Infinite video example of a CSS snippet changing between syntax options. $$width:2366,height:1080")
+![](f_auto/argyleink/media-ranges-looper.mp4 "Infinite video example of a CSS snippet changing between syntax options. $$width:2366,height:1080")
 
 I find this so much more readable.
 

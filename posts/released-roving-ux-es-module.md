@@ -3,7 +3,7 @@ type: note
 persona: argyleink
 published_at: 2018-04-01
 media:
-  - src: v1672815086/argyleink/roving-ux.mp4
+  - src: f_auto/v1672815086/argyleink/roving-ux.mp4
     alt: A short gif showing arrow key support in a list of images
     width: 1290
     height: 732

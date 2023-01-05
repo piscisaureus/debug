@@ -6,7 +6,7 @@ export default function Persona({ persona, style }: { persona: IPersona, style?:
     persona.img.src.includes('mp4')
       ? <video 
           class="Persona" 
-          src={'https://res.cloudinary.com/dnpmdb8r8/video/upload/w_150,q_auto/'+persona.img.src} 
+          src={'https://res.cloudinary.com/dnpmdb8r8/video/upload/w_150,q_auto,f_auto/'+persona.img.src} 
           width={persona.img.width}
           height={persona.img.height}
           muted autoplay loop

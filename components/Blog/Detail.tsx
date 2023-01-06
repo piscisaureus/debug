@@ -45,7 +45,7 @@ export default function BlogDetail({ post, toc, mentions }: { post: IBlog, toc: 
         {tags.length > 0 && <Tags tags={tags as ITags}/>}
       </section>
       <main class="BlogDetail block-stack">
-        <TableOfContents toc={toc} hasMentions={mentions.length >= 1}/>
+        {toc.length !== 0 && <TableOfContents toc={toc} hasMentions={mentions.length >= 1}/>}
 
         <article 
           class="block-stack"

@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 06 Jan 2023 06:46:27 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 06 Jan 2023 16:58:00 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,68 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[New CSS Relative Units]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/sizing-units.png" alt="H1 shown using the vmin sizing, with a dropdown element for choosing a different unit." height="229"  width="1088" />
+        <p>CSS has had an explosion of new length units, how many of them do you know? Test your skills in <a href="https://codepen.io/argyleink/pen/oNxbNzy">this Codepen</a>, or just explore and see what&#39;s changed since you last looked.</p>
+<p>
+          <iframe 
+            class="codepen-embed" 
+            scrolling="no" 
+            title="null" 
+            src="https://codepen.io/argyleink/embed/preview/oNxbNzy?default-tab=result&editable=true&theme-id=43079" 
+            frameborder="no" 
+            loading="lazy" 
+            allowtransparency="true" 
+            allowfullscreen="true"
+          >
+            See the Pen <a href="https://codepen.io/argyleink/embed/preview/oNxbNzy">
+            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        </p>
+
+        <h2>
+          What&#39;re these good for?
+          <a name="what&#39;re-these-good-for?" href="#what&#39;re-these-good-for?">#</a>
+        </h2>
+       <p>This site uses the line height <code>lh</code> unit for the drop cap at the beginning of the article! Go ahead and inspect it, but I&#39;ll also paste a snippet of it here:</p>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">::first-letter</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">font-size</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">7</span><span style="color: var(--shiki-token-keyword)">ex</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">font-size</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">2lh</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">float</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">start</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p>I get to set the font-size to the exact amount of text lines I want the drop cap to span. <strong>Pretty rad</strong>. Then, since I placed it after a more stable unit, it&#39;ll only use this newer unit if the browser understands. Thanks Cascade.</p>
+
+        <h2>
+          A note on the cap unit
+          <a name="a-note-on-the-cap-unit" href="#a-note-on-the-cap-unit">#</a>
+        </h2>
+       <p>Maybe you&#39;re <a href="https://seek-oss.github.io/capsize/">already using</a> a <code>cap</code> (capital letter) unit? Or maybe you knew this has been in Firefox for over a year 👀</p>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">font-size</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">5cap</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p>Chrome doesn&#39;t support <code>cap</code> yet.</p>
+<p>I also asked about <code>rcap</code>, which seems like a logical friend for the relative unit to have a root relative counterpart.</p>
+
+        <h2>
+          44 units, oh my!
+          <a name="44-units,-oh-my!" href="#44-units,-oh-my!">#</a>
+        </h2>
+       <p>This brings us to a total of <strong>44 CSS length units</strong>. And I don&#39;t think we&#39;re done yet!</p>
+]]></description>
+            <link>https://nerdy.dev/new-relative-units-ric-rex-rlh-and-rch?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/new-relative-units-ric-rex-rlh-and-rch?utm_source=rss</guid>
+            <category><![CDATA[blog]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Fri, 06 Jan 2023 16:57:53 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/sizing-units.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/sizing-units.png"/>
+        </item>
         <item>
             <title><![CDATA[Collections are coo]]></title>
             <description><![CDATA[
@@ -236,6 +298,7 @@
             preload="true"
             loop
             muted 
+            playsinline 
             allowFullScreen
           /></p>
 <p>So many sites strobe light my face with the light theme when the page loads (I&#39;m generally in dark mode), and it makes me feel like a vampire who just got blasted with a sun ray. Sometime they blast me on every single page load… 😱</p>
@@ -406,6 +469,7 @@
             preload="true"
             loop
             muted 
+            playsinline 
             allowFullScreen
           /></p>
 
@@ -562,6 +626,7 @@
             preload="true"
             loop
             muted 
+            playsinline 
             allowFullScreen
           /></p>
 <p>I find this so much more readable.</p>
@@ -661,6 +726,7 @@
             preload="true"
             loop
             muted 
+            playsinline 
             allowFullScreen
           /></p>
 
@@ -729,25 +795,6 @@
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
             <pubDate>Mon, 19 Dec 2022 23:10:29 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Hustle And Logical Flow]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/logical-flow.png" alt="some title" height="1384"  width="1920" />
-        <p><strong>Logical Properties</strong><br>Learn once, works everywhere.</p>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties">MDN</a> · 
-<a href="https://web.dev/learn/css/logical-properties/">Learn CSS</a> · 
-<a href="https://web.dev/logical-property-shorthands/">web.dev</a> · 
-<a href="https://pod.link/thecsspodcast/episode/e2673c5db0efc8cfda5090ac2f11cbd3">The CSS Podcast</a></p>
-]]></description>
-            <link>https://nerdy.dev/hustle-and-logical-flow?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/hustle-and-logical-flow?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
-            <pubDate>Mon, 19 Dec 2022 22:10:39 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/logical-flow.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/logical-flow.png"/>
         </item>
     </channel>
 </rss>

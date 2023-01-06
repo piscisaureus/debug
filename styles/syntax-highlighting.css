@@ -7,9 +7,9 @@
   --shiki-token-comment: var(--gray-7);
 
   @media (--OSdark) {
-    --_syntax-color-1: var(--neon-purple);
-    --_syntax-color-2: var(--blue-2);
-    --_syntax-color-3: hotpink;
+    --_syntax-color-1: var(--link-visited);
+    --_syntax-color-2: var(--neon-cyan);
+    --_syntax-color-3: var(--neon-pink);
     --shiki-token-comment: var(--gray-6);
   }
 }
@@ -22,9 +22,9 @@
 }
 
 [data-theme="dark"] {
-  --_syntax-color-1: var(--neon-purple);
-  --_syntax-color-2: var(--blue-2);
-  --_syntax-color-3: hotpink;
+  --_syntax-color-1: var(--link-visited);
+  --_syntax-color-2: var(--neon-cyan);
+  --_syntax-color-3: var(--neon-pink);
   --shiki-token-comment: var(--gray-6);
 }
 

@@ -36,13 +36,13 @@
 
     & > p:first-of-type {
       &::first-letter {
-        font-size: 6.5ex;
+        font-size: 7ex;
         font-size: 2lh;
         font-weight: var(--font-weight-8);
         float: left;
         float: start;
-        line-height: 1;
-        margin-inline-end: var(--size-1);
+        line-height: .85;
+        margin-inline-end: var(--size-2);
         text-transform: uppercase;
       }
       &::first-line {

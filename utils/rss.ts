@@ -60,22 +60,21 @@ function makeRSS(posts:IPost[]) {
       date: post.publishedAt
     }
 
-    if (post?.hero) {
-      const media = urlbase + '/' + post.hero.src
+    let hero = null
 
-      futureXMLItemObject.enclosure = { 
-        url: media,
-        alt: post.hero.alt,
-      }
+    if (post?.hero) {
+      hero = post.hero
+    }
+    else if (post?.media?.length) {
+      hero = post.media[0]
     }
 
-    if (post?.media?.length) {
-      const media = urlbase + '/' + post.media[0].src
-      const [item] = post.media
+    if (hero) {
+      const media = urlbase + '/' + hero.src
 
       futureXMLItemObject.enclosure = { 
         url: media,
-        alt: item.alt,
+        alt: hero.alt,
       }
 
       futureXMLItemObject.custom_elements = [
@@ -84,22 +83,14 @@ function makeRSS(posts:IPost[]) {
 
       if (media.includes('mp4')) {
         futureXMLItemObject.description = `
-          <video style="display: none" src="${media}" alt="${item.alt}" height="${item.height}"  width="${item.width}" />
+          <video style="display: none" src="${media}" alt="${hero.alt}" height="${hero.height}"  width="${hero.width}" />
         ` + futureXMLItemObject.description
       }
       else {
         futureXMLItemObject.description = `
-          <img style="display: none" src="${media}" alt="${item.alt}" height="${item.height}"  width="${item.width}" />
+          <img style="display: none" src="${media}" alt="${hero.alt}" height="${hero.height}"  width="${hero.width}" />
         ` + futureXMLItemObject.description
       }
-    }
-
-    if (post?.hero) {
-      const media = urlbase + '/' + post.hero.src
-
-      futureXMLItemObject.description = `
-        <img style="display: none" src="${media}" alt="${post.hero.alt}" height="${post.hero.height}"  width="${post.hero.width}" />
-      ` + futureXMLItemObject.description
     }
 
     feed.item(futureXMLItemObject)

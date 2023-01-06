@@ -9,9 +9,9 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 01 Jan 2023 00:22:08 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 06 Jan 2023 06:46:27 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
-        <copyright><![CDATA[2022 Adam Argyle]]></copyright>
+        <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
         <webMaster><![CDATA[adam.is@nerdy.dev (Adam Argyle)]]></webMaster>
         <ttl>60</ttl>
@@ -23,10 +23,104 @@
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
         <item>
+            <title><![CDATA[Collections are coo]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/collections-are-coo.png" alt="CSS selector being compared to a set of JS array methods, doing the same thing." height="511"  width="1351" />
+        <p>A fun benefit of always assuming something in your code is an array or collection, is that when its empty, no worries.</p>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.button</span><span style="color: var(--shiki-color-text)"> {}</span></span></code></pre>
+</code></pre>
+<p><strong>This is a default feature of CSS.</strong> It beautifully handles an empty set of results, iterating over each match when they do arrive. It&#39;s rad, and most CSS selectors work under this assumption; selecting collections.</p>
+<p>Javascript can do this empty handling too:</p>
+<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">let</span><span style="color: var(--shiki-color-text)"> buttons </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> []</span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">buttons</span><span style="color: var(--shiki-token-function)">.forEach</span><span style="color: var(--shiki-color-text)">(item </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">console</span><span style="color: var(--shiki-token-function)">.log</span><span style="color: var(--shiki-color-text)">(item)) </span></span>
+<span class="line"><span style="color: var(--shiki-token-comment)">// no logs</span></span></code></pre>
+</code></pre>
+<p>So can JSX, cuz &quot;it&#39;s just Javascript&quot; and <code>.map()</code> is an array method like <code>forEach()</code>:</p>
+<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">{</span><span style="color: var(--shiki-token-constant)">buttons</span><span style="color: var(--shiki-token-function)">.map</span><span style="color: var(--shiki-color-text)">(({text}) </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> (</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  &lt;</span><span style="color: var(--shiki-token-string-expression)">button</span><span style="color: var(--shiki-color-text)">&gt;{text}&lt;/</span><span style="color: var(--shiki-token-string-expression)">button</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">))}</span></span>
+<span class="line"><span style="color: var(--shiki-token-comment)">// no &lt;button&gt;&#39;s</span></span></code></pre>
+</code></pre>
+<p>And I&#39;m not trying to wage war on if statements, but they stink.</p>
+<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">if</span><span style="color: var(--shiki-color-text)"> (buttons) {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">// do stuff</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p>Nothing wrong with if statements, you just need to remember to put them in there, they can stack up, nest, and more… or else the dumb computer will try and do an operation on something that doesn&#39;t exist.</p>
+<p>We <em>can</em> get all existential now, which I do enjoy:</p>
+<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-constant)">buttons</span><span style="color: var(--shiki-color-text)">?.text</span></span></code></pre>
+</code></pre>
+<p>Anyway…</p>
+<p>My brain thinks its fun to think about how similar CSS can be to other languages and where it&#39;s got some really killer features. It&#39;s currently back on a kick about how nice it is to work with collections.</p>
+
+        <h2>
+          Collections everywhere
+          <a name="collections-everywhere" href="#collections-everywhere">#</a>
+        </h2>
+       <p><a href="https://chrome.google.com/webstore/detail/visbug/cdockenadnadldjbbgcallicgledbeoc?hl=en">VisBug</a> works alot this way under the hood, always assuming the user has selected multiple things or the effects of their change have multiple targets. Taught me alot about systems built on arrays.</p>
+<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">document</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-function)">.querySelectorAll</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;.button&#39;</span><span style="color: var(--shiki-color-text)">)</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-function)">.forEach</span><span style="color: var(--shiki-color-text)">(item </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> </span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">console</span><span style="color: var(--shiki-token-function)">.log</span><span style="color: var(--shiki-color-text)">(item))</span></span></code></pre>
+</code></pre>
+<p>I always have a fun time in that codebase, and it&#39;s hard to crash VisBug because of it.</p>
+
+        <h2>
+          Array hayday
+          <a name="array-hayday" href="#array-hayday">#</a>
+        </h2>
+       <p>I feel arrays are most popular in <a href="https://rxjs.dev">RxJS</a> and <a href="https://github.com/fantasyland/fantasy-land">Functional Programming</a>. It&#39;s something I miss about those styles and tools. </p>
+<q class="info">
+  Fun fact too, RxJS had SQL alias's so you could use select() instead of map(). Don't get me started on how CSS is like SQL!
+</q>
+
+<p><strong>But no one really talks about how CSS is like these.</strong><br><small>I guess <a href="https://www.youtube.com/watch?v=tfw0qv63ZUQ&list=PLpT5nMxKrUl9EWrkCbRDqn-H4E-l1di47">I have</a> before</small></p>
+
+        <h2>
+          Is it apples and oranges and I&#39;m trippin?
+          <a name="is-it-apples-and-oranges-and-i&#39;m-trippin?" href="#is-it-apples-and-oranges-and-i&#39;m-trippin?">#</a>
+        </h2>
+       <p>Just look at this comparison of CSS and JS, selecting the same things!</p>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.dark</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">.button</span><span style="color: var(--shiki-color-text)"> {}</span></span></code></pre>
+</code></pre>
+<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">let</span><span style="color: var(--shiki-color-text)"> buttons </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> []</span></span>
+<span class="line"><span style="color: var(--shiki-token-keyword)">let</span><span style="color: var(--shiki-color-text)"> dark_buttons </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">buttons</span><span style="color: var(--shiki-token-function)">.filter</span><span style="color: var(--shiki-color-text)">(button </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> </span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">button</span><span style="color: var(--shiki-token-function)">.closest</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;.dark&#39;</span><span style="color: var(--shiki-color-text)">))</span></span></code></pre>
+</code></pre>
+<p><strong>Peep how powerful and succinct CSS is!</strong></p>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.blog</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">&gt;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">h2</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">backgroundColor</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(200 100</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 90</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(200 82</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 15</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> { assignStyle</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> directDescendants</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> byAttr } </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;./utils.js&#39;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: var(--shiki-color-text)">blogs</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-function)">.flatMap</span><span style="color: var(--shiki-color-text)">(directDescendants)</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-function)">.filter</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-function)">byAttr</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;nodeName&#39;</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;h2&#39;</span><span style="color: var(--shiki-color-text)">))</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-function)">.forEach</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-function)">assignStyle</span><span style="color: var(--shiki-color-text)">({</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    backgroundColor</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;hsl(200 100% 90%)&#39;</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;hsl(200 82% 15%)&#39;</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  }))</span></span></code></pre>
+</code></pre>
+<p>So yeah, even though it wasn&#39;t intuitive for me at first, treating more things as collections or observables that yield values over time, I like the resilience of the code. The way it&#39;ll be evaluated and decide on its own not to run the loop. The way it doesn&#39;t care. </p>
+<p><strong>I like it when code doesn&#39;t have to care.</strong></p>
+]]></description>
+            <link>https://nerdy.dev/collections-are-coo?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/collections-are-coo?utm_source=rss</guid>
+            <category><![CDATA[blog]]></category>
+            <category><![CDATA[css]]></category>
+            <category><![CDATA[js]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Fri, 06 Jan 2023 06:46:19 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/collections-are-coo.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/collections-are-coo.png"/>
+        </item>
+        <item>
             <title><![CDATA[New Year, New Site]]></title>
             <description><![CDATA[
-        <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/new-site-2023.png" alt="Background grid of 2023's and the GUI Skull logo in the middle" height="669"  width="1920" />
-      
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/new-site-2023.png" alt="Background grid of 2023's and the GUI Skull logo in the middle" height="669"  width="1920" />
+        
         <h2>
           I&#39;ve joined the indie web
           <a name="i&#39;ve-joined-the-indie-web" href="#i&#39;ve-joined-the-indie-web">#</a>
@@ -48,7 +142,7 @@
        <p>After much testing and research, I chose to invest in <a href="https://deno.land">Deno</a> and their <a href="https://fresh.deno.dev">Fresh</a> framework. I appreciate their investment in web standards and focus on being minimal. </p>
 <p><img 
             loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/deno-fresh.png" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,w_auto,dpr_auto,q_auto/argyleink/deno-fresh.png" 
             alt="" 
             title="The next-gen web framework built for speed, reliability and simplicity " 
             decoding="async"
@@ -58,7 +152,7 @@
 <p>It&#39;s also a server side rendered framework, at the edge, which means I can fix my site within seconds and don&#39;t have to wait for long static build and deploy times. Deno Fresh also caches at the edge, just in time 😍</p>
 <p><img 
             loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/fresh-features.png" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,w_auto,dpr_auto,q_auto/argyleink/fresh-features.png" 
             alt="" 
             title="A screenshot of the feature list from the Deno Fresh website " 
             decoding="async"
@@ -117,10 +211,10 @@
 <span class="line"><span style="color: var(--shiki-token-keyword)">@import-glob</span><span style="color: var(--shiki-color-text)"> &quot;../components/**/*.css&quot; layer(components.fresh);</span></span>
 <span class="line"><span style="color: var(--shiki-token-keyword)">@import-glob</span><span style="color: var(--shiki-color-text)"> &quot;../islands/**/*.css&quot; layer(components.fresh);</span></span>
 <span class="line"></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">@layer</span><span style="color: var(--shiki-color-text)"> base.normalize-overrides {...}</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">@layer</span><span style="color: var(--shiki-color-text)"> overrides {...}</span></span></code></pre>
+<span class="line"><span style="color: var(--shiki-token-keyword)">@layer</span><span style="color: var(--shiki-color-text)"> base.normalize-overrides {…}</span></span>
+<span class="line"><span style="color: var(--shiki-token-keyword)">@layer</span><span style="color: var(--shiki-color-text)"> overrides {…}</span></span></code></pre>
 </code></pre>
-<p><strong>It&#39;s 3 layers</strong>: base, components, overrides. Names sublayers for easier debugging and organization.</p>
+<p><strong>It&#39;s 3 layers</strong>: base, components, overrides. Named sublayers for easier debugging and organization.</p>
 <p>With that in place, I match a classname to a component name and that&#39;s pretty much it. I have global styles and component styles, all sharing the props and <a href="https://github.com/GoogleChromeLabs/postcss-jit-props">JIT Props</a> makes sure I only ship the props I use. Good stuff.</p>
 <q class="info">
   <p>Try the site in Chrome with <a href="chrome://flags/#enable-experimental-web-platform-features">#experimental-web-platform-features</a> enabled. I'll be constantly trialing new features there! I'm currently trialing <a href="https://drafts.csswg.org/scroll-animations-1/">Scroll Linked Animations</a>!</p>
@@ -133,18 +227,18 @@
         </h3>
        <p>Hopefully you noticed there was no &quot;flash of an unwanted color scheme&quot; (FOAUCS) when the page loaded. </p>
 <p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/theme-switch-overview.mp4 
+            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto/argyleink/theme-switch-overview.mp4 
             width="1922" 
             height="1082"
             alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/theme-switch-overview.jpg"
+            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto/argyleink/theme-switch-overview.jpg"
             controls 
             preload="true"
             loop
             muted 
             allowFullScreen
           /></p>
-<p>So many sites strobe light my face with the light theme when the page loads (I&#39;m generally in dark mode), and it makes me feel like a vampire who just got blasted with a sun ray. Sometime they blast me on every single page load.. 😱</p>
+<p>So many sites strobe light my face with the light theme when the page loads (I&#39;m generally in dark mode), and it makes me feel like a vampire who just got blasted with a sun ray. Sometime they blast me on every single page load… 😱</p>
 <p>To make this feature, I followed my own <a href="https://web.dev/building-a-theme-switch-component/">Theme Switch GUI Challenge</a>! I just integrated it into Fresh 🙂</p>
 <p>A <strong>few features</strong> of it that make me happy:</p>
 <ol>
@@ -163,7 +257,7 @@
         </h2>
        <p>I really like the idea of aggregating mentions of my site&#39;s work onto this site itself, and <a href="https://webmention.io">WebMentions.io</a> let me do that. Once set, with Deno I server side fetch mentions for any sub pages and send the data to some components to handle for rendering.</p>
 <p>I think the result is cool. I feel like it&#39;s peer to peer in nature but with a good amount of optional content filtering from the owner side.</p>
-<p>I&#39;m not in any <a href="https://en.wikipedia.org/wiki/Webring">webrings</a> yet.. should I be?</p>
+<p>I&#39;m not in any <a href="https://en.wikipedia.org/wiki/Webring">webrings</a> yet… should I be?</p>
 
         <h2>
           multiple personas
@@ -187,7 +281,7 @@
        <p>Make a <code>_404.tsx</code> handler in the <code>routes/</code> directory and you too can make a custom 404 page. Want to see it? Visit <a href="https://nerdy.dev/you-wont-find-this">https://nerdy.dev/you-wont-find-this</a>.</p>
 <p><img 
             loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/custom-404.png" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,w_auto,dpr_auto,q_auto/argyleink/custom-404.png" 
             alt="" 
             title="The GUI Skull is shown with a message about not finding the page " 
             decoding="async"
@@ -206,7 +300,7 @@
 <p>This feature is both for localization but also for accuracy. The dates shows how long ago the post was made, and by knowing where you are in the world I can provide a date relative to you.</p>
 <p><img 
             loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/localized-dates.png" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,w_auto,dpr_auto,q_auto/argyleink/localized-dates.png" 
             alt="" 
             title="An example card from this site that shows the dates in Japanese " 
             decoding="async"
@@ -221,7 +315,7 @@
        <p>I used <a href="https://web.dev/learn/css/logical-properties/">logical properties</a> everywhere, which means the site can do rad stuff like this:</p>
 <p><img 
             loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/traditional-chinese.png" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,w_auto,dpr_auto,q_auto/argyleink/traditional-chinese.png" 
             alt="" 
             title="Screenshot of the website homepage in a horizontal right to left layout and translated to Chinese, lookin sharp " 
             decoding="async"
@@ -231,14 +325,14 @@
 <p>and i didnt have to do anything, the browser adapts it for me.</p>
 <p><img 
             loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/traditional-chinese-blog.png" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,w_auto,dpr_auto,q_auto/argyleink/traditional-chinese-blog.png" 
             alt="" 
             title="Screenshot of the website blog post in a horizontal right to left layout and translated to Chinese, lookin sharp " 
             decoding="async"
             width="548" 
             height="683"
           /></p>
-<p>Turned out Media Queries made this hard though, and Container Queries saved the day. Blog post will def come out about it. </p>
+<p>Turned out Media Queries made this hard though, and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries">Container Queries</a> saved the day. Blog post will def come out about it.</p>
 
         <h3>
           pretty URLs
@@ -252,7 +346,7 @@
         </h3>
        <p><strong>No client side analytics</strong>. </p>
 <p>I went with <a href="https://pirsch.io/">Pirsch</a>, and am happy! Cost seems right so they stay alive, great APIs and SDKs, and a really nice dashboard that&#39;s simple but powerful.</p>
-<p>I reeeeeeally didn&#39;t want to run some open source containers on the cloud and host my own analytics.. just not my kind of Tuesday night activity. Aka, I&#39;m down with a couple extra bucks for a managed solution.</p>
+<p>I reeeeeeally didn&#39;t want to run some open source containers on the cloud and host my own analytics… just not my kind of Tuesday night activity. Aka, I&#39;m down with a couple extra bucks for a managed solution.</p>
 
         <h3>
           progressive web app
@@ -275,7 +369,7 @@
        <p>Where there are shadows and colors to help distinguish UI elements, they&#39;re replaced with a transparent 1px border so that in <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/forced-colors#:~:text=The%20forced%2Dcolors%20CSS%20media,is%20Windows%20High%20Contrast%20mode."><code>forced-colors-mode</code></a> there are visual affordances for distinguishing elements.</p>
 <p><img 
             loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/forced-colors.png" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,w_auto,dpr_auto,q_auto/argyleink/forced-colors.png" 
             alt="" 
             title="A screenshot of a post item detail view with forced colors enabled " 
             decoding="async"
@@ -303,11 +397,11 @@
         </h3>
        <p>Give it a shot, try navigating around with the keyboard. There&#39;s a <a href="https://css-tricks.com/how-to-create-a-skip-to-content-link/">skip link</a> in the nav bar, special scroll snap UX in the home feed, arrow key support in the filter aside, and great focus styles. </p>
 <p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/site-keyboard-nav-example.mp4 
+            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto/argyleink/site-keyboard-nav-example.mp4 
             width="1920" 
             height="1160"
             alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/site-keyboard-nav-example.jpg"
+            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto/argyleink/site-keyboard-nav-example.jpg"
             controls 
             preload="true"
             loop
@@ -337,7 +431,7 @@
 <li>multiple formats (webp, avif, etc)</li>
 <li>compressed</li>
 <li>delivered from CDNs near you</li>
-<li>videos always offer controls and only loops on demand</li>
+<li>videos always offer controls and only loop on demand</li>
 </ul>
 
         <h3>
@@ -357,16 +451,18 @@
             <category><![CDATA[css]]></category>
             <category><![CDATA[js]]></category>
             <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Sun, 01 Jan 2023 00:00:00 GMT</pubDate>
+            <pubDate>Sun, 01 Jan 2023 00:57:50 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/new-site-2023.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/new-site-2023.png"/>
         </item>
         <item>
             <title><![CDATA[Gradient hue interpolation]]></title>
             <description><![CDATA[
-        <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-hue-interpolation.png" alt="A gradient from blue to purple is shown represented 4 ways, shorter, longer, increasing and decreasing." height="1148"  width="2144" />
-      <p>When a gradient needs to transition from one color to the next, it takes the <a href="https://www.w3.org/TR/css-color-4/#hue-shorter">shortest</a> route it can. But what if the result of that stinks?</p>
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-hue-interpolation.png" alt="A gradient from blue to purple is shown represented 4 ways, shorter, longer, increasing and decreasing." height="1148"  width="2144" />
+        <p>When a gradient needs to transition from one color to the next, it takes the <a href="https://www.w3.org/TR/css-color-4/#hue-shorter">shortest</a> route it can. But what if the result of that stinks?</p>
 <p><img 
             loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-hue-distance.png" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,w_auto,dpr_auto,q_auto/argyleink/gradient-hue-distance.png" 
             alt="" 
             title="A circle gradient representing all hues and is white in the center, where a smaller inner circle shows the difference between shorter and longer routes " 
             decoding="async"
@@ -388,7 +484,15 @@
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>It&#39;s almost like the browser has been Zoolander this whole time, it would only turn right 😂</p>
-<p><img loading="lazy" src="http://www.quickmeme.com/img/2f/2f8b255da81c3885d819a9f639fa37407837dfb14aa5502cda3efaac5d74c923.jpg" alt="" title="null" /></p>
+<p><img 
+            loading="lazy" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,w_auto,dpr_auto,q_auto/argyleink/zoolander-left.jpg" 
+            alt="" 
+            title="null" 
+            decoding="async"
+            undefined
+            undefined
+          /></p>
 <p>Here&#39;s 2 demo&#39;s that use <a href="https://colorjs.io/">ColorJS</a> to help illustrate the effects of this hue interpolation choice. Aka, demo&#39;s that help the browser turn left hehe.</p>
 
         <h3>
@@ -442,16 +546,18 @@
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
             <pubDate>Thu, 29 Dec 2022 21:48:22 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-hue-interpolation.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-hue-interpolation.png"/>
         </item>
         <item>
             <title><![CDATA[Media Query Ranges]]></title>
             <description><![CDATA[<p><a href="https://www.bram.us/2021/10/26/media-queries-level-4-media-query-range-contexts/">Media Query Ranges</a> </p>
 <p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/media-ranges-looper.mp4 
+            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto/argyleink/media-ranges-looper.mp4 
             width="2366" 
             height="1080"
             alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/media-ranges-looper.jpg"
+            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto/argyleink/media-ranges-looper.jpg"
             controls 
             preload="true"
             loop
@@ -542,8 +648,8 @@
         <item>
             <title><![CDATA[CSS Anchor API is lookin rad!]]></title>
             <description><![CDATA[
-        <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-anchor-hero.png" alt="A bar chart shown with 2 popups anchored to the smallest and largest bars." height="414"  width="1063" />
-      <p>I often feel intimidated initially by new CSS things.. I&#39;ve been putting off the new <a href="https://tabatkins.github.io/specs/css-anchor-position/">CSS Anchor</a> api stuff cuz it looked scary. </p>
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-anchor-hero.png" alt="A bar chart shown with 2 popups anchored to the smallest and largest bars." height="414"  width="1063" />
+        <p>I often feel intimidated initially by new CSS things.. I&#39;ve been putting off the new <a href="https://tabatkins.github.io/specs/css-anchor-position/">CSS Anchor</a> api stuff cuz it looked scary. </p>
 <p>But <strong>not 15m minutes</strong> into actually sitting with it, <strong>and I&#39;m stoked</strong>.</p>
 <p><video 
             src=https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/css-anchor.mp4 
@@ -600,6 +706,8 @@
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
             <pubDate>Tue, 20 Dec 2022 23:04:09 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-anchor-hero.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-anchor-hero.png"/>
         </item>
         <item>
             <title><![CDATA[Conditional Snapping With Has]]></title>
@@ -640,18 +748,6 @@
             <pubDate>Mon, 19 Dec 2022 22:10:39 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/logical-flow.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/logical-flow.png"/>
-        </item>
-        <item>
-            <title><![CDATA[Hazzah A Soft Launch]]></title>
-            <description><![CDATA[<p>Domain&#39;s moved 👍  </p>
-<p>Soft launch of <a href="#">nerdy.dev</a> successful 🤘💀   </p>
-<p>Still more work. Expect change!</p>
-]]></description>
-            <link>https://nerdy.dev/hazzah-a-soft-launch?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/hazzah-a-soft-launch?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <dc:creator><![CDATA[Web Master@admin]]></dc:creator>
-            <pubDate>Thu, 15 Dec 2022 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>

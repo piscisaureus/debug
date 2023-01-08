@@ -79,6 +79,7 @@ marked.use({
             preload="true"
             loop
             muted 
+            playsinline 
             allowFullScreen
           />`
         }

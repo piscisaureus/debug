@@ -8,6 +8,7 @@ export default function Footer() {
         </svg>
       </a>
       <a rel="me" href="https://cr8r.gg/@argyleink" style="display: none">Mastodon</a>
+      <a rel="me" href="https://front-end.social/@agyleink" style="display: none">Mastodon</a>
       <a href="https://github.com/argyleink" rel="me" class="icon-button">
         <div class="sr-only">Follow me on Github</div>
         <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">

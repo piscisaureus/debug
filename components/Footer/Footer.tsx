@@ -7,6 +7,7 @@ export default function Footer() {
           <use href="#icon.twitter"/>
         </svg>
       </a>
+      <a rel="me" href="https://cr8r.gg/@argyleink" style="display: none">Mastodon</a>
       <a href="https://github.com/argyleink" rel="me" class="icon-button">
         <div class="sr-only">Follow me on Github</div>
         <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">

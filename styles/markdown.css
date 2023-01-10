@@ -4,9 +4,16 @@ p:empty {
 
 pre {
   overflow: auto;
-  background: var(--surface-1);
   padding: var(--size-3);
   border-radius: var(--radius-3);
+}
+
+pre, :not(pre) > code {
+  background: var(--surface-1);
+
+  @media (--OSdark) {
+    background: var(--gray-11);
+  }
 
   @nest [data-theme="dark"] & {
     background: var(--gray-11);

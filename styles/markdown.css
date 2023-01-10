@@ -9,14 +9,22 @@ pre {
 }
 
 pre, :not(pre) > code {
-  background: var(--surface-1);
+  background: white;
+  border: 1px solid var(--surface-2);
 
   @media (--OSdark) {
     background: var(--gray-11);
+    border: none;
+  }
+
+  @nest [data-theme="light"] & {
+    background: white;
+    border: 1px solid var(--surface-2);
   }
 
   @nest [data-theme="dark"] & {
     background: var(--gray-11);
+    border: none;
   }
 }
 

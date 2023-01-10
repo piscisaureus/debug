@@ -1,13 +1,13 @@
 :root {
-  --_syntax-color-1: var(--pink-9);
-  --_syntax-color-2: var(--blue-9);
-  --_syntax-color-3: var(--purple-9);
+  --_syntax-color-1: var(--neon-pink);
+  --_syntax-color-2: var(--link);
+  --_syntax-color-3: rebeccapurple;
   --_syntax-color-read: var(--text-1);
   --_syntax-color-subdued: var(--text-2);
   --shiki-token-comment: var(--gray-7);
 
   @media (--OSdark) {
-    --_syntax-color-1: var(--link-visited);
+    --_syntax-color-1: var(--neon-purple-on-dark);
     --_syntax-color-2: var(--neon-cyan);
     --_syntax-color-3: var(--neon-pink);
     --shiki-token-comment: var(--gray-6);
@@ -15,14 +15,14 @@
 }
 
 [data-theme="light"] {
-  --_syntax-color-1: var(--pink-9);
-  --_syntax-color-2: var(--blue-9);
-  --_syntax-color-3: var(--purple-9);
+  --_syntax-color-1: var(--neon-pink);
+  --_syntax-color-2: var(--link);
+  --_syntax-color-3: rebeccapurple;
   --shiki-token-comment: var(--gray-7);
 }
 
 [data-theme="dark"] {
-  --_syntax-color-1: var(--link-visited);
+  --_syntax-color-1: var(--neon-purple-on-dark);
   --_syntax-color-2: var(--neon-cyan);
   --_syntax-color-3: var(--neon-pink);
   --shiki-token-comment: var(--gray-6);

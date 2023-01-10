@@ -2,7 +2,7 @@
 type: blog
 persona: google
 title: Text Replace Transitions
-published_at: 2023-01-10T06:24:05.864
+published_at: 2023-01-10T06:46:18.916
 snippet: With view transitions, even replacing text can become a custom animation.
 hero:
   src: argyleink/text-replace-transitions.png

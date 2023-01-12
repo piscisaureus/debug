@@ -44,6 +44,12 @@
         line-height: .85;
         margin-inline-end: var(--size-2);
         text-transform: uppercase;
+
+        @supports (initial-letter: 2) {
+          initial-letter: 2;
+          line-height: 1;
+          float: none;
+        }
       }
       &::first-line {
         font-size: var(--font-size-4);

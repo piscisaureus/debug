@@ -76,7 +76,6 @@ marked.use({
             alt="${text} "
             poster="${poster}"
             controls 
-            preload="true"
             loop
             muted 
             playsinline 

@@ -14,14 +14,9 @@
     }
 
     @media (--lg-n-above) {
-      grid-template-columns: 
-        [aside] var(--size-content-1) 
-        [feed] 1fr 
-      ;
-      max-width: max-content;
       gap: var(--size-9);
-      margin-inline: auto;
       margin-block-start: var(--size-9);
+      margin-inline: auto;
     }
 
     @media (height <= 500px) {

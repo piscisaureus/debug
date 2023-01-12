@@ -3,7 +3,7 @@ type: note
 persona: argyleink
 published_at: 2022-12-24T06:36:29.883
 media:
-  - src: argyleink/individual-transforms-infinite.mp4
+  - src: argyleink/individual-transforms-infinite.gif
     alt: Infinite video example of a CSS snippet changing between syntax options.
     width: 2366
     height: 1080

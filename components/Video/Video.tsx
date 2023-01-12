@@ -13,7 +13,6 @@ export default function Video(media:IHero, style?:string) {
       alt={media.alt} 
       poster={poster}
       controls 
-      preload="true"
       loop
       muted 
       allowFullScreen

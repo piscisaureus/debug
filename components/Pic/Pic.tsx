@@ -1,5 +1,7 @@
 export const urlbase = 'https://res.cloudinary.com/dnpmdb8r8/image/upload'
-const optimizations = 'f_auto,w_auto,dpr_auto,q_auto'
+export const videobase = 'https://res.cloudinary.com/dnpmdb8r8/video/upload'
+
+const optimizations = 'f_auto,dpr_auto,q_auto'
 const lqip = 'e_blur:2000,c_thumb,f_auto,w_auto,dpr_auto,q_auto:low'
 
 export interface Pic {
@@ -32,9 +34,18 @@ export default function Pic(props:Pic) {
 
 export function picPaths({src, cloudinary}:{src:string, cloudinary?:string}) {
   const isCloudinary = src.indexOf('argyleink/') >= 0
+  const isGif = src.includes('.gif')
 
   if (!isCloudinary)
     return {full: src, custom: src, placeholder: src}
+  else if (isGif)
+    return {
+      full: [videobase, optimizations, src].join('/'),
+      custom: cloudinary 
+              ? [videobase, cloudinary + ',' + optimizations, src].join('/') 
+              : [videobase, optimizations, src].join('/'),
+      placeholder: [videobase, lqip, src].join('/'),
+    }
   else
     return {
       full: [urlbase, optimizations, src].join('/'),

@@ -28,6 +28,8 @@ export default function Pic(props:Pic) {
       style={props.style}
       className={`Pic ${props.class || ''}`}
       decoding="async"
+      srcset={`${custom} 350w, ${custom} 768w, ${custom} 1024w`} 
+      sizes="(min-width: 1024px) 640px, (min-width: 768px) 500px, 100vw"
     />
   )
 }

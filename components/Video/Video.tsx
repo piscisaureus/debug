@@ -28,6 +28,6 @@ export function videoPaths(src:string) {
   else
     return {
       src:    [base_url, src].join('/'),
-      poster: [base_url, 'f_auto,dpr_auto,q_auto', src].join('/').replace('.mp4', '.jpg'),
+      poster: [base_url, 'f_auto,w_auto,q_auto', src].join('/').replace('.mp4', '.jpg'),
     }
 }

@@ -2,7 +2,7 @@ export const urlbase = 'https://res.cloudinary.com/dnpmdb8r8/image/upload'
 export const videobase = 'https://res.cloudinary.com/dnpmdb8r8/video/upload'
 
 const optimizations = 'f_auto,c_limit,q_auto,w_auto'
-const lqip = 'e_blur:2000,c_thumb,f_auto,w_auto,dpr_auto,q_auto:low'
+const lqip = 'e_blur:2000,c_thumb,f_auto,w_auto,q_auto:low'
 
 export interface Pic {
   src: string;

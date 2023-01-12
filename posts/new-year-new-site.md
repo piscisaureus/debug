@@ -114,7 +114,7 @@ With that in place, I match a classname to a component name and that's pretty mu
 
 Hopefully you noticed there was no "flash of an unwanted color scheme" (FOAUCS) when the page loaded. 
 
-![](f_auto/argyleink/theme-switch-overview.mp4 "Demo of the theme switch features $$width:1922,height:1082")
+![](f_auto,q_auto/argyleink/theme-switch-overview.mp4 "Demo of the theme switch features $$width:1922,height:1082")
 
 So many sites strobe light my face with the light theme when the page loads (I'm generally in dark mode), and it makes me feel like a vampire who just got blasted with a sun ray. Sometime they blast me on every single page load… 😱
 
@@ -229,7 +229,7 @@ You'll find the [toast](https://web.dev/building-a-toast-component/), [dialog](h
 
 Give it a shot, try navigating around with the keyboard. There's a [skip link](https://css-tricks.com/how-to-create-a-skip-to-content-link/) in the nav bar, special scroll snap UX in the home feed, arrow key support in the filter aside, and great focus styles. 
 
-![](f_auto/argyleink/site-keyboard-nav-example.mp4 "A screen capture demo of the keyboard experience $$width:1920,height:1160")
+![](f_auto,q_auto/argyleink/site-keyboard-nav-example.mp4 "A screen capture demo of the keyboard experience $$width:1920,height:1160")
 
 ### rss
 

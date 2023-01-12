@@ -24,7 +24,7 @@ First up, the good stuff, *the final demo*, as if you skipped to the end.
 
 If that's basically an error message about support, here's a recording of it running in Canary (with [this flag enabled](chrome://flags/#view-transition) 😉.
 
-![](argyleink/view-transitions.mp4 "Spells out view-transitions, fade and scaling each letter change $$width:810,height:608")
+![](f_auto,q_auto/argyleink/view-transitions.mp4 "Spells out view-transitions, fade and scaling each letter change $$width:810,height:608")
 
 **tldr;**  
 [`view-transition`](https://developer.chrome.com/docs/web-platform/view-transitions/)'s let me, **with CSS**, describe how to dismiss the old text state and reveal the new text state.
@@ -50,7 +50,7 @@ setInterval(() => {
 
 When the work finishes in that view transition callback, the browser interpolates between the changes for you, for free. In our case, there was a "V", now there's an "i". One letter disappeared, one letter appeared. We get a crossfade!
 
-![](argyleink/view-transitions-cross.mp4 "video $$width:702,height:286")
+![](f_auto,q_auto/argyleink/view-transitions-cross.mp4 "video $$width:702,height:286")
 
 ![](https://codepen.io/argyleink/embed/preview/BaPWpmQ)
 

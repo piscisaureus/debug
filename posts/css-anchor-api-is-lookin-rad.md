@@ -17,7 +17,7 @@ I often feel intimidated initially by new CSS things.. I've been putting off the
 
 But **not 15m minutes** into actually sitting with it, **and I'm stoked**.
 
-![](argyleink/css-anchor.mp4 "Title $$width:833,height:490")
+![](f_auto,q_auto/argyleink/css-anchor.mp4 "Title $$width:833,height:490")
 
 ## basics
 

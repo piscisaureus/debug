@@ -19,5 +19,5 @@ tags:
 
 ![](https://codepen.io/argyleink/embed/preview/YzveomK)
 
-![](argyleink/media-ranges-looper.mp4 "Title $$width:2366,height:1080")
+![](f_auto,q_auto/argyleink/media-ranges-looper.mp4 "Title $$width:2366,height:1080")
 

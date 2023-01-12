@@ -1,11 +1,11 @@
 .PostList {
   max-inline-size: var(--size-content-3);
+  min-block-size: 100vh;
   margin-inline: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   justify-items: start; 
-  place-self: start;
   gap: var(--size-fluid-3);
   list-style-type: none;
   padding-inline: var(--size-inline-1);
@@ -17,6 +17,7 @@
 
   @media (--lg-n-above) {
     flex-basis: var(--size-content-3);
+    padding-inline: 0;
   }
 
   /* @supports (grid-template-rows: masonry) {

@@ -1,5 +1,6 @@
 .Home {
   display: grid;
+  justify-content: center;
   gap: var(--size-inline-1);
   grid-template-columns: [feed] 1fr;
 
@@ -7,7 +8,7 @@
     @media (--md-n-above) {
       grid-template-columns: 
         [aside] var(--size-content-1) 
-        [feed] 1fr 
+        [feed] minmax(0, var(--size-content-3)) 
       ;
       margin-block-start: var(--size-5);
     }
@@ -18,6 +19,7 @@
         [feed] 1fr 
       ;
       max-width: max-content;
+      gap: var(--size-9);
       margin-inline: auto;
       margin-block-start: var(--size-9);
     }

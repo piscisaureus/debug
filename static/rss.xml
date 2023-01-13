@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 12 Jan 2023 04:47:16 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 13 Jan 2023 20:22:20 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,17 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[2023 Prediction Libraries Move To Deno]]></title>
+            <description><![CDATA[<p><strong>2023 prediction:</strong><br>libraries move to or build upon <a href="https://deno.land">Deno</a> instead of Node.</p>
+]]></description>
+            <link>https://nerdy.dev/2023-prediction-libraries-move-to-deno?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/2023-prediction-libraries-move-to-deno?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[js]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Fri, 13 Jan 2023 20:19:51 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Text Replace Transitions]]></title>
             <description><![CDATA[
@@ -49,13 +60,12 @@
         </p>
 <p>If that&#39;s basically an error message about support, here&#39;s a recording of it running in Canary (with <a href="chrome://flags/#view-transition">this flag enabled</a> 😉.</p>
 <p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/view-transitions.mp4 
+            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,q_auto/argyleink/view-transitions.mp4 
             width="810" 
             height="608"
             alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/view-transitions.jpg"
+            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/view-transitions.jpg"
             controls 
-            preload="true"
             loop
             muted 
             playsinline 
@@ -69,7 +79,7 @@
         </h2>
        <p>This demo idea came from the game <a href="https://store.steampowered.com/agecheck/app/861650/">Session Skate</a>. In the opening credits, &quot;SESSION&quot; has each letter rapidly cross fade. It looked pretty coo and I instantly realized I could do this with <a href="https://developer.chrome.com/docs/web-platform/view-transitions/"><code>view-transition</code></a>&#39;s, <code>setInterval()</code>, and <code>.textContent</code>. So I sent myself the email todo, cuz well, it was time to land a sick trick, not work.</p>
 <p>That turned into a small prototype. Peep these barebones!</p>
-<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">setInterval</span><span style="color: var(--shiki-color-text)">(() </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">setInterval</span><span style="color: var(--shiki-color-text)">(() </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">document</span><span style="color: var(--shiki-token-function)">.startViewTransition</span><span style="color: var(--shiki-color-text)">(() </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">h1</span><span style="color: var(--shiki-color-text)">.textContent </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> word[index</span><span style="color: var(--shiki-token-keyword)">++</span><span style="color: var(--shiki-color-text)">]</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-keyword)">if</span><span style="color: var(--shiki-color-text)"> (index </span><span style="color: var(--shiki-token-keyword)">&gt;=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">word</span><span style="color: var(--shiki-color-text)">.</span><span style="color: var(--shiki-token-constant)">length</span><span style="color: var(--shiki-color-text)">) index </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">0</span></span>
@@ -83,13 +93,12 @@
 </ol>
 <p>When the work finishes in that view transition callback, the browser interpolates between the changes for you, for free. In our case, there was a &quot;V&quot;, now there&#39;s an &quot;i&quot;. One letter disappeared, one letter appeared. We get a crossfade!</p>
 <p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/view-transitions-cross.mp4 
+            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,q_auto/argyleink/view-transitions-cross.mp4 
             width="702" 
             height="286"
             alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/view-transitions-cross.jpg"
+            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/view-transitions-cross.jpg"
             controls 
-            preload="true"
             loop
             muted 
             playsinline 
@@ -120,16 +129,16 @@
        <p>Crossfades are coo (fo real y&#39;all), but what if I want to customize how the text swaps? Perhaps with some <a href="https://open-props.style">Open Props</a>?</p>
 <p><strong>No prob</strong> 🤘💀</p>
 <p>First thing, <code>@import</code> the <a href="https://open-props.style/#easing">easings</a> and <a href="https://open-props.style/#animations">animations</a>:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;https://unpkg.com/open-props/easings.min.css&quot;</span><span style="color: var(--shiki-color-text)">;</span></span>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;https://unpkg.com/open-props/easings.min.css&quot;</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;https://unpkg.com/open-props/animations.min.css&quot;</span><span style="color: var(--shiki-color-text)">;</span></span></code></pre>
 </code></pre>
 <p>Next, as an optimization, tell the whole page to chill and not transition when a document transition snapshot is requested.</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">html</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">html</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">view-transition-name</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">none</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>Now that we said what we dont want to transition, let&#39;s specify what should, the <code>h1</code>!</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* be stable. fix that width. */</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">inline-size</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1</span><span style="color: var(--shiki-token-keyword)">em</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span></span>
@@ -148,7 +157,7 @@
           <a name="now-for-the-best-part" href="#now-for-the-best-part">#</a>
         </h3>
        <p>Use <a href="https://open-props.style/#animations">some of these props</a> to orchestrate the exit and entry of a character / the DOM snapshots. Let&#39;s start with how the old character should exit; let&#39;s see, I want it to scale out, like away from me, and fade out at the same time.</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@media</span><span style="color: var(--shiki-color-text)"> (prefers-reduced-motion</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> no-preference) {</span></span>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@media</span><span style="color: var(--shiki-color-text)"> (prefers-reduced-motion</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> no-preference) {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-string-expression)">html</span><span style="color: var(--shiki-color-text)">::view-transition-old(</span><span style="color: var(--shiki-token-string-expression)">replace-effect</span><span style="color: var(--shiki-color-text)">) {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">animation</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span></span>
 <span class="line"><span style="color: var(--shiki-token-constant)">      </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--animation-fade-out)</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
@@ -158,7 +167,7 @@
 </code></pre>
 <p><strong>Delightful magic.</strong><br>
 Now for the element entering; fade it in while sliding it up!</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@media</span><span style="color: var(--shiki-color-text)"> (prefers-reduced-motion</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> no-preference) {</span></span>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@media</span><span style="color: var(--shiki-color-text)"> (prefers-reduced-motion</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> no-preference) {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-string-expression)">html</span><span style="color: var(--shiki-color-text)">::view-transition-new(</span><span style="color: var(--shiki-token-string-expression)">replace-effect</span><span style="color: var(--shiki-color-text)">) {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">z-index</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">animation</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span></span>
@@ -250,7 +259,7 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
           <a name="what&#39;re-these-good-for?" href="#what&#39;re-these-good-for?">#</a>
         </h2>
        <p>This site uses the line height <code>lh</code> unit for the drop cap at the beginning of the article! Go ahead and inspect it, but I&#39;ll also paste a snippet of it here:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">::first-letter</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">::first-letter</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">font-size</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">7</span><span style="color: var(--shiki-token-keyword)">ex</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">font-size</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">2lh</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">float</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">start</span><span style="color: var(--shiki-color-text)">;</span></span>
@@ -263,7 +272,7 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
           <a name="a-note-on-the-cap-unit" href="#a-note-on-the-cap-unit">#</a>
         </h2>
        <p>Maybe you&#39;re <a href="https://seek-oss.github.io/capsize/">already using</a> a <code>cap</code> (capital letter) unit? Or maybe you knew this has been in Firefox for over a year 👀</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">font-size</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">5cap</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
@@ -290,28 +299,28 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
             <description><![CDATA[
           <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/collections-are-coo.png" alt="CSS selector being compared to a set of JS array methods, doing the same thing." height="511"  width="1351" />
         <p>A fun benefit of always assuming something in your code is an array or collection, is that when its empty, no worries.</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.button</span><span style="color: var(--shiki-color-text)"> {}</span></span></code></pre>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.button</span><span style="color: var(--shiki-color-text)"> {}</span></span></code></pre>
 </code></pre>
 <p><strong>This is a default feature of CSS.</strong> It beautifully handles an empty set of results, iterating over each match when they do arrive. It&#39;s rad, and most CSS selectors work under this assumption; selecting collections.</p>
 <p>Javascript can do this empty handling too:</p>
-<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">let</span><span style="color: var(--shiki-color-text)"> buttons </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> []</span></span>
+<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">let</span><span style="color: var(--shiki-color-text)"> buttons </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> []</span></span>
 <span class="line"><span style="color: var(--shiki-token-constant)">buttons</span><span style="color: var(--shiki-token-function)">.forEach</span><span style="color: var(--shiki-color-text)">(item </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">console</span><span style="color: var(--shiki-token-function)">.log</span><span style="color: var(--shiki-color-text)">(item)) </span></span>
 <span class="line"><span style="color: var(--shiki-token-comment)">// no logs</span></span></code></pre>
 </code></pre>
 <p>So can JSX, cuz &quot;it&#39;s just Javascript&quot; and <code>.map()</code> is an array method like <code>forEach()</code>:</p>
-<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">{</span><span style="color: var(--shiki-token-constant)">buttons</span><span style="color: var(--shiki-token-function)">.map</span><span style="color: var(--shiki-color-text)">(({text}) </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> (</span></span>
+<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">{</span><span style="color: var(--shiki-token-constant)">buttons</span><span style="color: var(--shiki-token-function)">.map</span><span style="color: var(--shiki-color-text)">(({text}) </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> (</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  &lt;</span><span style="color: var(--shiki-token-string-expression)">button</span><span style="color: var(--shiki-color-text)">&gt;{text}&lt;/</span><span style="color: var(--shiki-token-string-expression)">button</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">))}</span></span>
 <span class="line"><span style="color: var(--shiki-token-comment)">// no &lt;button&gt;&#39;s</span></span></code></pre>
 </code></pre>
 <p>And I&#39;m not trying to wage war on if statements, but they stink.</p>
-<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">if</span><span style="color: var(--shiki-color-text)"> (buttons) {</span></span>
+<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">if</span><span style="color: var(--shiki-color-text)"> (buttons) {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">// do stuff</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>Nothing wrong with if statements, you just need to remember to put them in there, they can stack up, nest, and more… or else the dumb computer will try and do an operation on something that doesn&#39;t exist.</p>
 <p>We <em>can</em> get all existential now, which I do enjoy:</p>
-<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-constant)">buttons</span><span style="color: var(--shiki-color-text)">?.text</span></span></code></pre>
+<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-constant)">buttons</span><span style="color: var(--shiki-color-text)">?.text</span></span></code></pre>
 </code></pre>
 <p>Anyway…</p>
 <p>My brain thinks its fun to think about how similar CSS can be to other languages and where it&#39;s got some really killer features. It&#39;s currently back on a kick about how nice it is to work with collections.</p>
@@ -321,7 +330,7 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
           <a name="collections-everywhere" href="#collections-everywhere">#</a>
         </h2>
        <p><a href="https://chrome.google.com/webstore/detail/visbug/cdockenadnadldjbbgcallicgledbeoc?hl=en">VisBug</a> works alot this way under the hood, always assuming the user has selected multiple things or the effects of their change have multiple targets. Taught me alot about systems built on arrays.</p>
-<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">document</span></span>
+<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">document</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-function)">.querySelectorAll</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;.button&#39;</span><span style="color: var(--shiki-color-text)">)</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-function)">.forEach</span><span style="color: var(--shiki-color-text)">(item </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> </span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">console</span><span style="color: var(--shiki-token-function)">.log</span><span style="color: var(--shiki-color-text)">(item))</span></span></code></pre>
@@ -344,19 +353,19 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
           <a name="is-it-apples-and-oranges-and-i&#39;m-trippin?" href="#is-it-apples-and-oranges-and-i&#39;m-trippin?">#</a>
         </h2>
        <p>Just look at this comparison of CSS and JS, selecting the same things!</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.dark</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">.button</span><span style="color: var(--shiki-color-text)"> {}</span></span></code></pre>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.dark</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">.button</span><span style="color: var(--shiki-color-text)"> {}</span></span></code></pre>
 </code></pre>
-<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">let</span><span style="color: var(--shiki-color-text)"> buttons </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> []</span></span>
+<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">let</span><span style="color: var(--shiki-color-text)"> buttons </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> []</span></span>
 <span class="line"><span style="color: var(--shiki-token-keyword)">let</span><span style="color: var(--shiki-color-text)"> dark_buttons </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">buttons</span><span style="color: var(--shiki-token-function)">.filter</span><span style="color: var(--shiki-color-text)">(button </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> </span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">button</span><span style="color: var(--shiki-token-function)">.closest</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;.dark&#39;</span><span style="color: var(--shiki-color-text)">))</span></span></code></pre>
 </code></pre>
 <p><strong>Peep how powerful and succinct CSS is!</strong></p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.blog</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">&gt;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">h2</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.blog</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">&gt;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">h2</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">backgroundColor</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(200 100</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 90</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(200 82</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 15</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
-<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> { assignStyle</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> directDescendants</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> byAttr } </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;./utils.js&#39;</span></span>
+<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> { assignStyle</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> directDescendants</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> byAttr } </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;./utils.js&#39;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color: var(--shiki-color-text)">blogs</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-function)">.flatMap</span><span style="color: var(--shiki-color-text)">(directDescendants)</span></span>
@@ -389,7 +398,7 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
           <a name="i&#39;ve-joined-the-indie-web" href="#i&#39;ve-joined-the-indie-web">#</a>
         </h2>
        <p>Viva RSS, viva owning your content, viva to free expression. Join that <a href="https://indieweb.org/">Indie Web</a> y&#39;all 🤘🏻💀.</p>
-<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">let</span><span style="color: var(--shiki-color-text)"> life </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">new</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">Year</span><span style="color: var(--shiki-color-text)">()</span><span style="color: var(--shiki-token-function)">.next</span><span style="color: var(--shiki-color-text)">()</span></span></code></pre>
+<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">let</span><span style="color: var(--shiki-color-text)"> life </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">new</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">Year</span><span style="color: var(--shiki-color-text)">()</span><span style="color: var(--shiki-token-function)">.next</span><span style="color: var(--shiki-color-text)">()</span></span></code></pre>
 </code></pre>
 <p>Instead of joining a different social network, investing in some new walled garden (Mastadon 👀), I&#39;ve decided to take the popular UX/UI patterns, like a social feed, and build them here, where they can&#39;t be taken away or stifled.</p>
 <q>
@@ -405,7 +414,7 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
        <p>After much testing and research, I chose to invest in <a href="https://deno.land">Deno</a> and their <a href="https://fresh.deno.dev">Fresh</a> framework. I appreciate their investment in web standards and focus on being minimal. </p>
 <p><img 
             loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,w_auto,dpr_auto,q_auto/argyleink/deno-fresh.png" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/argyleink/deno-fresh.png" 
             alt="" 
             title="The next-gen web framework built for speed, reliability and simplicity " 
             decoding="async"
@@ -415,7 +424,7 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
 <p>It&#39;s also a server side rendered framework, at the edge, which means I can fix my site within seconds and don&#39;t have to wait for long static build and deploy times. Deno Fresh also caches at the edge, just in time 😍</p>
 <p><img 
             loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,w_auto,dpr_auto,q_auto/argyleink/fresh-features.png" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/argyleink/fresh-features.png" 
             alt="" 
             title="A screenshot of the feature list from the Deno Fresh website " 
             decoding="async"
@@ -429,7 +438,7 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
           <a name="the-styles" href="#the-styles">#</a>
         </h3>
        <p>Fresh is pretty minimal out of the box, especially in regards to styling. It only offers a just in time atomic stylesheet setup, but I wanted to use <a href="https://open-props.style">Open Props</a> (naturally). So I ended up writing my own file system watcher task that compiles <a href="https://postcss.org/">PostCSS</a> and pops it out to the <code>static/</code> directory for cached serving.</p>
-<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> { debounce } </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;$std/async/mod.ts&#39;</span></span>
+<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> { debounce } </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;$std/async/mod.ts&#39;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color: var(--shiki-token-keyword)">export</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">async</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">function</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">watchAndBuildStyles</span><span style="color: var(--shiki-color-text)">() {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-keyword)">const</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">watcher</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">Deno</span><span style="color: var(--shiki-token-function)">.watchFs</span><span style="color: var(--shiki-color-text)">([</span></span>
@@ -446,7 +455,7 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
 </code></pre>
 <p>This route also means I&#39;m in full control of the stylesheet. That was very critical to me as I want to use my site as a playground for new CSS features, progressively enhancing UX when available but otherwise serving a great static experience.</p>
 <p>Here&#39;s my list of plugins if you&#39;re curious:</p>
-<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> cssNesting </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;npm:postcss-nesting&#39;</span></span>
+<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> cssNesting </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;npm:postcss-nesting&#39;</span></span>
 <span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> customMediaPlugin </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;npm:postcss-custom-media&#39;</span></span>
 <span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> mqRanges </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;npm:postcss-media-minmax&#39;</span></span>
 <span class="line"></span>
@@ -459,7 +468,7 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
 <span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> jitProps </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;npm:postcss-jit-props&#39;</span></span></code></pre>
 </code></pre>
 <p>A small preview of my <code>index.css</code> file. Spoiler, it&#39;s <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@layer">layers</a> all the way, and I looooved it.</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;https://unpkg.com/open-props/normalize.min.css&quot;</span><span style="color: var(--shiki-color-text)"> layer(base.normalize);</span></span>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;https://unpkg.com/open-props/normalize.min.css&quot;</span><span style="color: var(--shiki-color-text)"> layer(base.normalize);</span></span>
 <span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;https://unpkg.com/open-props/theme.light.switch.min.css&quot;</span><span style="color: var(--shiki-color-text)"> layer(base.theme);</span></span>
 <span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;https://unpkg.com/open-props/theme.dark.switch.min.css&quot;</span><span style="color: var(--shiki-color-text)"> layer(base.theme);</span></span>
 <span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;utilities.css&quot;</span><span style="color: var(--shiki-color-text)"> layer(base.utilities);</span></span>
@@ -490,13 +499,12 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
         </h3>
        <p>Hopefully you noticed there was no &quot;flash of an unwanted color scheme&quot; (FOAUCS) when the page loaded. </p>
 <p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto/argyleink/theme-switch-overview.mp4 
+            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,q_auto/argyleink/theme-switch-overview.mp4 
             width="1922" 
             height="1082"
             alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto/argyleink/theme-switch-overview.jpg"
+            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/theme-switch-overview.jpg"
             controls 
-            preload="true"
             loop
             muted 
             playsinline 
@@ -545,7 +553,7 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
        <p>Make a <code>_404.tsx</code> handler in the <code>routes/</code> directory and you too can make a custom 404 page. Want to see it? Visit <a href="https://nerdy.dev/you-wont-find-this">https://nerdy.dev/you-wont-find-this</a>.</p>
 <p><img 
             loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,w_auto,dpr_auto,q_auto/argyleink/custom-404.png" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/argyleink/custom-404.png" 
             alt="" 
             title="The GUI Skull is shown with a message about not finding the page " 
             decoding="async"
@@ -559,12 +567,12 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
           <a name="localized-dates" href="#localized-dates">#</a>
         </h3>
        <p>With a little custom middleware I parse preferred languages from the request headers and then provide a getter to components on the server.</p>
-<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-constant)">req</span><span style="color: var(--shiki-token-function)">.</span><span style="color: var(--shiki-token-constant)">headers</span><span style="color: var(--shiki-token-function)">.get</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;accept-language&#39;</span><span style="color: var(--shiki-color-text)">)</span></span></code></pre>
+<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-constant)">req</span><span style="color: var(--shiki-token-function)">.</span><span style="color: var(--shiki-token-constant)">headers</span><span style="color: var(--shiki-token-function)">.get</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;accept-language&#39;</span><span style="color: var(--shiki-color-text)">)</span></span></code></pre>
 </code></pre>
 <p>This feature is both for localization but also for accuracy. The dates shows how long ago the post was made, and by knowing where you are in the world I can provide a date relative to you.</p>
 <p><img 
             loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,w_auto,dpr_auto,q_auto/argyleink/localized-dates.png" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/argyleink/localized-dates.png" 
             alt="" 
             title="An example card from this site that shows the dates in Japanese " 
             decoding="async"
@@ -579,7 +587,7 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
        <p>I used <a href="https://web.dev/learn/css/logical-properties/">logical properties</a> everywhere, which means the site can do rad stuff like this:</p>
 <p><img 
             loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,w_auto,dpr_auto,q_auto/argyleink/traditional-chinese.png" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/argyleink/traditional-chinese.png" 
             alt="" 
             title="Screenshot of the website homepage in a horizontal right to left layout and translated to Chinese, lookin sharp " 
             decoding="async"
@@ -589,7 +597,7 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
 <p>and i didnt have to do anything, the browser adapts it for me.</p>
 <p><img 
             loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,w_auto,dpr_auto,q_auto/argyleink/traditional-chinese-blog.png" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/argyleink/traditional-chinese-blog.png" 
             alt="" 
             title="Screenshot of the website blog post in a horizontal right to left layout and translated to Chinese, lookin sharp " 
             decoding="async"
@@ -633,7 +641,7 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
        <p>Where there are shadows and colors to help distinguish UI elements, they&#39;re replaced with a transparent 1px border so that in <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/forced-colors#:~:text=The%20forced%2Dcolors%20CSS%20media,is%20Windows%20High%20Contrast%20mode."><code>forced-colors-mode</code></a> there are visual affordances for distinguishing elements.</p>
 <p><img 
             loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,w_auto,dpr_auto,q_auto/argyleink/forced-colors.png" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/argyleink/forced-colors.png" 
             alt="" 
             title="A screenshot of a post item detail view with forced colors enabled " 
             decoding="async"
@@ -661,13 +669,12 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
         </h3>
        <p>Give it a shot, try navigating around with the keyboard. There&#39;s a <a href="https://css-tricks.com/how-to-create-a-skip-to-content-link/">skip link</a> in the nav bar, special scroll snap UX in the home feed, arrow key support in the filter aside, and great focus styles. </p>
 <p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto/argyleink/site-keyboard-nav-example.mp4 
+            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,q_auto/argyleink/site-keyboard-nav-example.mp4 
             width="1920" 
             height="1160"
             alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto/argyleink/site-keyboard-nav-example.jpg"
+            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/site-keyboard-nav-example.jpg"
             controls 
-            preload="true"
             loop
             muted 
             playsinline 
@@ -704,7 +711,7 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
           <a name="pride-moment" href="#pride-moment">#</a>
         </h3>
        <p>this can&#39;t be found in my styles:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">body</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">body</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">overflow-x</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">hidden</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
@@ -727,7 +734,7 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
         <p>When a gradient needs to transition from one color to the next, it takes the <a href="https://www.w3.org/TR/css-color-4/#hue-shorter">shortest</a> route it can. But what if the result of that stinks?</p>
 <p><img 
             loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,w_auto,dpr_auto,q_auto/argyleink/gradient-hue-distance.png" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/argyleink/gradient-hue-distance.png" 
             alt="" 
             title="A circle gradient representing all hues and is white in the center, where a smaller inner circle shows the difference between shorter and longer routes " 
             decoding="async"
@@ -740,7 +747,7 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
           <a name="hue-interpolation" href="#hue-interpolation">#</a>
         </h3>
        <p>That&#39;s where new CSS gradient syntax from <a href="https://www.w3.org/TR/css-color-4">Color 4</a> for <a href="https://www.w3.org/TR/css-color-4/#hue-interpolation">hue interpolation</a> comes in. Here I specify the gradient takes the <a href="https://www.w3.org/TR/css-color-4/#hue-longer">longer</a> route:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.gradient-with-hue-interpolation-specified</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.gradient-with-hue-interpolation-specified</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">linear-gradient</span><span style="color: var(--shiki-token-constant)">(</span></span>
 <span class="line"><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-keyword)">to</span><span style="color: var(--shiki-token-constant)"> right in hsl longer hue</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
 <span class="line"><span style="color: var(--shiki-token-constant)">    oklch(63</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 0.3 317)</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
@@ -751,7 +758,7 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
 <p>It&#39;s almost like the browser has been Zoolander this whole time, it would only turn right 😂</p>
 <p><img 
             loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,w_auto,dpr_auto,q_auto/argyleink/zoolander-left.jpg" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/argyleink/zoolander-left.jpg" 
             alt="" 
             title="null" 
             decoding="async"
@@ -818,20 +825,19 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
             <title><![CDATA[Media Query Ranges]]></title>
             <description><![CDATA[<p><a href="https://www.bram.us/2021/10/26/media-queries-level-4-media-query-range-contexts/">Media Query Ranges</a> </p>
 <p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto/argyleink/media-ranges-looper.mp4 
+            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,q_auto/argyleink/media-ranges-looper.mp4 
             width="2366" 
             height="1080"
             alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto/argyleink/media-ranges-looper.jpg"
+            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/media-ranges-looper.jpg"
             controls 
-            preload="true"
             loop
             muted 
             playsinline 
             allowFullScreen
           /></p>
 <p>I find this so much more readable.</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@media</span><span style="color: var(--shiki-color-text)"> (</span><span style="color: var(--shiki-token-constant)">width</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">&lt;=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">720</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-color-text)">) {}</span></span></code></pre>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@media</span><span style="color: var(--shiki-color-text)"> (</span><span style="color: var(--shiki-token-constant)">width</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">&lt;=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">720</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-color-text)">) {}</span></span></code></pre>
 </code></pre>
 <p><a href="https://caniuse.com/css-media-range-syntax">Caniuse</a> says we&#39;re waitin on Safari to bring it from TechP to Stable; aka plugin still required 😭</p>
 ]]></description>
@@ -875,41 +881,6 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
             <pubDate>Sat, 24 Dec 2022 06:36:29 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/individual-transforms-infinite.gif" length="0" type="image/gif"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/individual-transforms-infinite.gif"/>
-        </item>
-        <item>
-            <title><![CDATA[Things Css Could Still Use In 2023]]></title>
-            <description><![CDATA[<p><a href="https://chriscoyier.net/2022/12/21/things-css-could-still-use-heading-into-2023/">Things CSS Could Still Use Heading Into 2023</a></p>
-<blockquote>
-<p>Just a couple of ideas!<br><cite><a href="https://chriscoyier.net">Chris Coyier</a></cite></p>
-</blockquote>
-<hr>
-
-<details>
-  <summary>They're great ideas</summary>  
-
-<ul>
-<li>Styleable resize handles</li>
-<li>Regions</li>
-<li>Standardized multi-line</li>
-<li>Mixins &amp; extends</li>
-<li>Inline truncation</li>
-<li>Animate to auto</li>
-<li>Nesting 😎</li>
-</ul>
-</details>
-
-<p><strong>Missing</strong> <a href="https://twitter.com/argyleink/status/1531423959362678785"><code>text-wrap</code></a> tho!</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">h2</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">h3</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">text-wrap</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">balance</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-]]></description>
-            <link>https://nerdy.dev/things-css-could-still-use-in-2023?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/things-css-could-still-use-in-2023?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Thu, 22 Dec 2022 05:00:05 GMT</pubDate>
         </item>
     </channel>
 </rss>

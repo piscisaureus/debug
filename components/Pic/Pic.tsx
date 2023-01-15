@@ -16,6 +16,9 @@ export interface Pic {
 
 export default function Pic(props:Pic) {
   const { full, custom, placeholder } = picPaths(props)
+  const sm = custom.replace('w_auto', 'w_auto:100:350')
+  const md = custom.replace('w_auto', 'w_auto:100:768')
+  const lg = custom.replace('w_auto', 'w_auto:100:1024')
 
   return (
     <img 
@@ -28,7 +31,7 @@ export default function Pic(props:Pic) {
       style={props.style}
       className={`Pic ${props.class || ''}`}
       decoding="async"
-      srcset={`${custom} 350w, ${custom} 768w, ${custom} 1024w`} 
+      srcset={`${sm} 350w, ${md} 768w, ${lg} 1024w`} 
       sizes="(min-width: 1024px) 640px, (min-width: 768px) 500px, 100vw"
     />
   )

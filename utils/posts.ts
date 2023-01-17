@@ -8,6 +8,7 @@ export interface IPost {
   slug: string;
   persona: IPersona;
   publishedAt: Date;
+  updatedAt?: Date;
   tags?: ITags;
   content: string;
 }
@@ -93,6 +94,7 @@ export async function getPost(slug: string) {
       slug,
       persona,
       publishedAt: new Date(frontmatter.published_at as string),
+      updatedAt: frontmatter.updated_at ? new Date(frontmatter.updated_at as string) : null,
       tags: frontmatter.tags,
       content,
       media: frontmatter.media,
@@ -104,6 +106,7 @@ export async function getPost(slug: string) {
       slug,
       persona,
       publishedAt: new Date(frontmatter.published_at as string),
+      updatedAt: frontmatter.updated_at ? new Date(frontmatter.updated_at as string) : null,
       tags: frontmatter.tags,
       title: frontmatter.title,
       content,

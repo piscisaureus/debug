@@ -36,6 +36,13 @@ export default function BlogDetail({ post, toc, mentions }: { post: IBlog, toc: 
           month: "long",
           day: "numeric",
         })}</time>
+        {post.updatedAt && 
+          <small>Updated <time>{new Date(post.updatedAt).toLocaleDateString(getLocaleString(), {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })}</time></small>
+        }
         <span class="read-time">
           <svg aria-hidden class="filled-icon" width="20" height="20" viewBox="0 0 24 24">
             <use href="#icon.clock"/>

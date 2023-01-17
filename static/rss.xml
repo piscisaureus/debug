@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 15 Jan 2023 16:33:20 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 17 Jan 2023 02:48:13 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -296,10 +296,10 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
 <p>I also asked about <code>rcap</code>, which seems like a logical friend for the relative unit to have a root relative counterpart.</p>
 
         <h2>
-          44 units, oh my!
-          <a name="44-units,-oh-my!" href="#44-units,-oh-my!">#</a>
+          50 units, oh my!
+          <a name="50-units,-oh-my!" href="#50-units,-oh-my!">#</a>
         </h2>
-       <p>This brings us to a total of <strong>44 CSS length units</strong>. And I don&#39;t think we&#39;re done yet!</p>
+       <p>This brings us to a total of <strong>50 CSS length units</strong>. And I don&#39;t think we&#39;re done yet!</p>
 ]]></description>
             <link>https://nerdy.dev/new-relative-units-ric-rex-rlh-and-rch?utm_source=rss</link>
             <guid isPermaLink="true">https://nerdy.dev/new-relative-units-ric-rex-rlh-and-rch?utm_source=rss</guid>
@@ -392,7 +392,8 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
 <span class="line"><span style="color: var(--shiki-color-text)">  }))</span></span></code></pre>
 </code></pre>
 <p>So yeah, even though it wasn&#39;t intuitive for me at first, treating more things as collections or observables that yield values over time, I like the resilience of the code. The way it&#39;ll be evaluated and decide on its own not to run the loop. The way it doesn&#39;t care. </p>
-<p><strong>I like it when code doesn&#39;t have to care.</strong></p>
+<p><strong>I like it when code doesn&#39;t have to care.</strong>  </p>
+<p><a href="https://twitter.com/argyleink/status/1280245921381380096?t=3cKeXNj8frLOrdBjhOVUyQ&s=19">Here&#39;s a rant I had about it in 2020.</a></p>
 ]]></description>
             <link>https://nerdy.dev/collections-are-coo?utm_source=rss</link>
             <guid isPermaLink="true">https://nerdy.dev/collections-are-coo?utm_source=rss</guid>

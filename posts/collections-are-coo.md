@@ -3,6 +3,7 @@ type: blog
 persona: argyleink
 title: Collections are coo
 published_at: 2023-01-06T06:46:19.618
+updated_at: 2023-01-17T02:21:00.710 
 snippet: Thoughts on arrays in JS and selectors in CSS
 hero:
   src: argyleink/collections-are-coo.png
@@ -120,4 +121,6 @@ blogs
 
 So yeah, even though it wasn't intuitive for me at first, treating more things as collections or observables that yield values over time, I like the resilience of the code. The way it'll be evaluated and decide on its own not to run the loop. The way it doesn't care. 
 
-**I like it when code doesn't have to care.**
+**I like it when code doesn't have to care.**  
+
+[Here's a rant I had about it in 2020.](https://twitter.com/argyleink/status/1280245921381380096?t=3cKeXNj8frLOrdBjhOVUyQ&s=19)

@@ -1,5 +1,6 @@
 import RSSIcon from './rss.tsx'
 import TwitterIcon from './twitter.tsx'
+import MastodonIcon from './mastodon.tsx'
 import ShareIcon from './share.tsx'
 import HeartIcon from './heart.tsx'
 import GithubIcon from './github.tsx'
@@ -24,8 +25,12 @@ export default function PageIcons() {
         <RSSIcon/>
       </symbol>
       <symbol id="icon.twitter">
-        <title>Twitter Profile</title>
+        <title>Twitter</title>
         <TwitterIcon/>
+      </symbol>
+      <symbol id="icon.mastodon">
+        <title>Mastodon</title>
+        <MastodonIcon/>
       </symbol>
       <symbol id="icon.share">
         <title>Share Icon</title>

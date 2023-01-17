@@ -9,9 +9,25 @@ export default function Mentions({mentions}:{mentions:IMention[]}) {
     .filter(mention => mention?.content?.html)
   const reposts = mentions.filter(mention => ['repost-of'].includes(mention['wm-property']))
   const likes = mentions.filter(mention => ['like-of'].includes(mention['wm-property']))
-  
+  const tweet = mentions.find(mention => mention.url.includes('https://twitter.com/argyleink'))
+  const mastodon = mentions.find(mention => mention.url.includes('https://front-end.social/@argyleink'))
+
   return (
-    <>
+    <><div class="join-convo">
+      <p>Join the conversation on</p>
+      {tweet && 
+        <a href={tweet.url} title="Twitter">
+          <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 30 30">
+            <use href="#icon.twitter"/>
+          </svg>
+        </a>}
+      {mastodon && 
+        <a href={mastodon.url} title="Mastodon">
+          <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 30 30">
+            <use href="#icon.mastodon"/>
+          </svg>
+        </a>}
+    </div>
       <div class="block-stack">
         {likes.length >= 1 && <Likes likes={likes}/>}
         {reposts.length >= 1 && <Reposts reposts={reposts}/>}

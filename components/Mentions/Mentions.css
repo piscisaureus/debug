@@ -2,6 +2,12 @@
   display: grid;
   gap: var(--size-7); 
   max-inline-size: var(--size-content-2);
+
+  & .join-convo {
+    display: flex;
+    align-items: center;
+    gap: var(--size-2);
+  }
 }
 
 .Mention {

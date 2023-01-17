@@ -7,6 +7,10 @@
     display: flex;
     align-items: center;
     gap: var(--size-2);
+
+    & a {
+      border-radius: var(--radius-round);
+    }
   }
 }
 

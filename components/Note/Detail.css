@@ -16,7 +16,7 @@
     text-align: center;
   }
 
-  & > article {
+  & > :is(article, .Mentions) {
     margin-inline: var(--size-inline-1);
   }
 }

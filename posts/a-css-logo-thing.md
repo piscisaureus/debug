@@ -28,6 +28,7 @@ A not so serious pair of logos about CSS. Randomly created, but the final "thing
 - trying harder to use `skew()`
 - no accessibility testing
 - not using container queries somehow
+- sticking to system colors
 
 ### Dramatic glowy
 
@@ -44,6 +45,8 @@ Neat-ish. Take away the glow and it still stands.
 I saw a brand do something similar with different letters, and I imagined CSS could do something really similar, but its way. **CSS is about making boxes**, a CSS logo could make a box. 
 
 Then I wanted it to be adaptive to color, resize, more… and well its been fun, but I kinda wanna pass the torch. See what some forks can do? :wink wink: 
+
+**STEAL THIS!** Use this wherever you want; no restrictions.
 
 There's some neat opportunities for 3D rotating on the `transform` of `.cube`; accelerometer or mouse position much?
 

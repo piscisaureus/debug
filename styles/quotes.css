@@ -28,6 +28,14 @@ q {
     content: url("https://api.iconify.design/material-symbols:rocket-launch-rounded.svg?color=%235c7cfa");
   }
 
+  &.twitter::before {
+    content: url("https://api.iconify.design/mdi:twitter.svg?color=%231DA1F2");
+  }
+
+  &.mastodon::before {
+    content: url("https://api.iconify.design/mdi:mastodon.svg?color=%236a43fd");
+  }
+
   &::after {
     display: none;
   }

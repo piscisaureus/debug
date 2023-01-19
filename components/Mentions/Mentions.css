@@ -19,5 +19,21 @@
 
   & q {
     font-size: var(--font-size-2);
+
+    &:has(.reply-gallery) {
+      gap: var(--size-3);
+    }
+  }
+
+  & .reply-gallery {
+    display: flex;
+    gap: var(--size-2);
+    max-block-size: var(--size-content-1);
+
+    & img {
+      border-radius: var(--radius-3);
+      block-size: 100%;
+      object-fit: cover;
+    }
   }
 }

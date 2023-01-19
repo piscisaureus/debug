@@ -11,7 +11,8 @@ export default function Mentions({mentions}:{mentions:IMention[]}) {
   const likes = mentions.filter(mention => ['like-of'].includes(mention['wm-property']))
   const tweet = mentions.find(mention => mention.url.includes('https://twitter.com/argyleink'))
   const mastodon = mentions.find(mention => mention.url.includes('https://front-end.social/@argyleink'))
-
+  
+  // console.log(comments)
   return (
     <><div class="join-convo">
       <p>Join the conversation on</p>
@@ -23,7 +24,7 @@ export default function Mentions({mentions}:{mentions:IMention[]}) {
         </a>}
       {mastodon && 
         <a href={mastodon.url} title="Mastodon">
-          <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 30 30">
+          <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 28 25">
             <use href="#icon.mastodon"/>
           </svg>
         </a>}
@@ -34,8 +35,25 @@ export default function Mentions({mentions}:{mentions:IMention[]}) {
       </div>
       {comments.length >= 1 && comments.map((mention) => 
         <div class="Mention">
-          <q>
+          <q class={
+            mention.url.includes('https://twitter.com') && 'twitter' || 
+            mention.url.includes('https://front-end.social') && 'mastodon'
+          }>
             <div dangerouslySetInnerHTML={{ __html: mention.content.html || mention.content.text }} />
+            {mention?.photo?.length && mention.author.url.includes('argyleink') && 
+              <div class="reply-gallery">
+                {mention.photo.map(url =>
+                  <picture>
+                    <img 
+                      src={url}
+                      height="200"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                )}
+              </div>
+            }
             <cite>
               <a href={mention.author.url}>
                 <img 

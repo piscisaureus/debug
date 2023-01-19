@@ -13,8 +13,12 @@ async function getToken() {
   if (!response.ok) 
     console.error('Could not get token from Pirsch')
 
-  const data = await response.json()
-  state.set('token', data.access_token)
+  try {
+    const data = await response.json()
+    state.set('token', data.access_token)
+  } catch (error) {
+    console.error('Could not get token from Pirsch', error)
+  }
 }
 
 if (Deno.env.get("IS_PROD"))

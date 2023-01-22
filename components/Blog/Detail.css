@@ -1,4 +1,5 @@
 .BlogDetail {
+  max-inline-size: max-content;
   grid-template-columns: 1fr;
   justify-items: start;
   align-items: start;
@@ -11,7 +12,8 @@
     margin-block-start: 20vh;
   }
 
-  @container (min-inline-size: 900px) {
+  /* 900px ~= content-1 + content-3 + gap + margin + padding */
+  @container cq-document-vi (min-inline-size: 900px) {
     margin-block-start: var(--size-10);
     grid-template-columns: var(--size-content-3) var(--size-content-1);
 

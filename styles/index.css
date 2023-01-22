@@ -3,6 +3,7 @@
 @import "https://unpkg.com/open-props/theme.light.switch.min.css" layer(base.theme);
 @import "https://unpkg.com/open-props/theme.dark.switch.min.css" layer(base.theme);
 @import "utilities.css" layer(base.utilities);
+@import "containers.css" layer(base.containers);
 @import "nojs.css" layer(base.nojs);
 
 /* @import "links.css" layer(components.links); */
@@ -31,7 +32,6 @@
   }
 
   body {
-    container-type: inline-size;
     display: grid;
     grid-template-rows: auto 1fr;
 

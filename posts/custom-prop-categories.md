@@ -19,7 +19,9 @@ CSS [custom properties](https://web.dev/learn/css/functions/#custom-properties-a
 <q class="info">be sure to comment if you know more strategies!</q>
 
 ## 1. tokens
-These custom properties are generally just values, named objectively, and are used atomically.
+These custom properties are **generally just global values**, named objectively, and are used atomically.
+
+They create team alignment by naming what are otherwise "magic numbers." They often follow naming conventions.
 
 ```css
 :root {
@@ -32,22 +34,7 @@ These custom properties are generally just values, named objectively, and are us
 }
 ```
 
-It's very likely these tokens will become values of other custom properties in your CSS because they **are generally static / won't change**.
-
-## 2. house props
-
-House, or team, props which are **applications of static tokens for named use** within the system. 
-
-```css
-:root {
-  --brand: var(--blue-1);
-  --card-padding: var(--size-1);
-}
-```
-
-[Open Props](https://open-props.style) offers `--surface-{1-4}` and `--text-{1,2}` house props in the [normalize](https://codepen.io/argyleink/pen/KKvRORE) stylesheet. They're more of less aliases to the gray tokens. 
-
-Usage of house props looks like this:
+**Usage of tokens** looks like:
 
 ```css
 .card {
@@ -57,51 +44,93 @@ Usage of house props looks like this:
 }
 ```
 
-## 3. adaptive props
+It's very likely these tokens will become values of other custom properties in your CSS because they **are generally static and aren't overwritten later.**.
 
-Aka dynamic props; these props will be changed. Once setup for authors, they're very powerful.
+```js
+OpenProps === tokens
+```
 
-Here `--text` is changed within a media query, **becoming a light and dark adaptive custom property**.
+## 2. house props
+
+House props are **named for project reusability**. They also create team alignment, jargon, and can be adaptive (see [#3](#3.-adaptive-props)).
 
 ```css
-/* creation */
+:root {
+  --brand: var(--blue-1);
+  --card-padding: var(--size-1);
+  --surface: #eee;
+
+  @media (prefers-color-scheme: dark) {
+    --surface: #111;  
+  }
+}
+```
+
+**Usage of house props** looks like:
+
+```css
+.card {
+  border-color: var(--brand);
+  padding: var(--card-padding);
+  background: var(--surface);
+}
+```
+
+[Open Props](https://open-props.style) offers `--surface-{1-4}` and `--text-{1,2}` house props (which adapt to light & dark). They come with use of [normalize.css](https://codepen.io/argyleink/pen/KKvRORE). A light and dark card can be created with a mix of house props and tokens:
+
+```css
+.card {
+  background: var(--surface-2); /* surface-1 is the page bg */
+  color: var(--text-1);
+  border-radius: var(--radius-2);
+  padding: var(--size-3);
+  box-shadow: var(--shadow-2);
+}
+```
+
+## 3. adaptive props
+
+Aka dynamic house props; **these will change**, you expect them to change. They need setup though, orchestrated and empowered with CSS conditionals.
+
+```css
 :root {
   --text: var(--gray-0);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: var(--gray-1);
+    --text: var(--gray-10);
   }
 }
+```
 
-/* usage */
+**Usage of adaptive props** looks like:
+
+```css
 body {
   color: var(--text);
 }
 ```
 
-I've developed a more verbose pattern for adaptive props that I find scaled easier and is a bit more self explanatory when authoring and debugging.
+I've got a tinyyyy bit more verbose pattern for adaptive props; create static house props with names that make their usage obvious (no magic values).
 
 ```css
 :root {
-  /* 2 new static props */
+  /* 2 static props */
   --text-dark-mode: var(--gray-0);
-  --text-light-mode: var(--gray-1);
+  --text-light-mode: var(--gray-10);
 
-  /* light theme by default */
+  /* 1 adaptive prop: defaults to light static prop */
   --text: var(--text-light-mode);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* dark mode applies dark static prop */
+  @media (prefers-color-scheme: dark) {
+    /* adaptive prop set to dark static prop */
     --text: var(--text-dark-mode);
   }
 }
 ```
 
-Here's another example, this one of **adaptive sizing**:
+Here's another example; **adaptive sizing**
 
 ```css
 :root {
@@ -113,12 +142,12 @@ Here's another example, this one of **adaptive sizing**:
 }
 ```
 
-## 4. private props
+## 4. pseudo-private props
 
 [Lea Verou calls these pseudo-private custom properties](https://lea.verou.me/2021/10/custom-properties-with-defaults/). I appreciated the throw back to pseudo private properties in Javascript.
 
 ```js
-this._foo = 'some attempt at marking private props'
+this._foo = 'please dont change this'
 ```
 
 Then us mimmicking it in CSS:
@@ -129,29 +158,109 @@ Then us mimmicking it in CSS:
 }
 ```
 
+Which makes them like **static tokens** or **house props**, but **scoped instead of global**. 
+
+[Vanilla Extract](https://vanilla-extract.style) offers scoped custom properties, they use this "pseudo-private" technique in the CSS output.
+
+```css
+.button__1qipc2y2 {
+  --_1qipc2y0: #4263eb;
+  --_1qipc2y1: #edf2ff;
+  background-color: var(--_1qipc2y0);
+  color: var(--_1qipc2y1);
+}
+
+.button__1qipc2y2:active {
+  --_1qipc2y0: #3b5bdb;
+  --_1qipc2y1: white;
+}
+```
+
+[A tweet about this.](https://twitter.com/argyleink/status/1559408336851742720?s=20&t=vz9YNAbMi6zlcLjaBDtaKQ)
+
 ## 5. partial props
+Prop puzzle pieces. **Parts of a full usable prop**. Here, brand color channels as partial props.
 
 ```css
 :root {
   --h: 200;
   --s: 50%;
   --l: 50%;
+}
+```
 
-  --color: hsl(var(--h) var(--s) var(--l));
+**Usage of partial props** to make [adaptive props](#3.-adaptive-props) looks like:
+
+```css
+:root {
+  --brand: hsl(var(--h) var(--s) var(--l));
+  --text: hsl(var(--h) 30% 5%);
+  --surface: hsl(var(--h) 25% 99%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brand: hsl(var(--h) calc(var(--s) / 2) calc(var(--l) / 2));
+    --text: hsl(var(--h) 10% 90%);
+    --surface: hsl(var(--h) 20% 10%);
+  }
 }
 ```
 
 ## 6. mixin props
+I first saw this usage of CSS vars [on Smashing Magazine](https://www.smashingmagazine.com/2019/07/css-custom-properties-cascade/#custom-functions-and-parameters) by [Miriam Suzanne](https://www.oddbird.net/authors/miriam/). Great distillation of it in this [Codepen](https://codepen.io/miriamsuzanne/pen/BEvjbm).
+
+I think of basic mixin props as a collection of [partial props](#5.-partial-props) placed on shorthands (`background-image`, `border`, `border-image`, `mask-image`, etc) . This makes the partial props like params into a greater "mixin" prop, function thing.
 
 ```css
-.scope {
-  --input-1: 10px;
-  --input-2: var(--blue-1);
+* {
+  --input-1: 1px;
+  --input-2: var(--blue-5);
   --border-mixin: var(--input-1) solid var(--input-2);
-
-  border: var(--border-mixin);
 }
 ```
+
+**Usage of basic mixin props** looks like:
+
+```css
+.card {
+  border: var(--border-mixin);
+}
+
+.card.variant {
+  --input-2: var(--purple-5);
+}
+```
+
+[Mia](https://www.oddbird.net/authors/miriam/) adds a nice hook feature by setting "required" prop parameters to `initial`. Then, any element that specifies this required prop, triggers the mixin to be valid, applying its effect.
+
+```css
+* {
+  /* define the mixin with a required parameter */
+  --stripes: linear-gradient(
+    var(--stripes-angle),
+    powderblue 20%, pink 20% 40%, white 40% 60%, pink 60% 80%, powderblue 80%
+  );
+
+  /* reset the required parameter on each element */
+  --stripes-angle: initial;  
+  
+  /* apply the results everywhere */
+  /* (will only display when a valid angle is given) */
+  background-image: var(--stripes);
+}
+```
+
+**Usage of mixin props** looks like:
+
+```css
+.stripes {
+  /* providing a valid angle causes the "mixin" to work */
+  --stripes-angle: 35deg;
+}
+```
+
+[Snippet source](https://codepen.io/smashingmag/pen/ZdXMJx)
 
 ## 7. swap props
 

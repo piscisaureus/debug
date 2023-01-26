@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 26 Jan 2023 18:40:37 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Jan 2023 18:44:08 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -408,6 +408,22 @@
             <pubDate>Thu, 26 Jan 2023 18:40:29 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-prop-categories.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-prop-categories.png"/>
+        </item>
+        <item>
+            <title><![CDATA[A Scrollend Event]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/https://wd.imgix.net/image/vS06HQ1YTsbMKSFTIPl2iogUQP73/TuLoDVklwlps4Akyo9TN.jpg?auto=format&w=1600" alt="END is written on the pavement of a street." height="480"  width="960" />
+        <p>Delete your timeout functions and shake off their bugs, here&#39;s the event you really need: <code>scrollend</code>.  </p>
+<p>Read all about it on <a href="https://developer.chrome.com/blog/scrollend-a-new-javascript-event/">Chrome Developers</a> and checkout the polyfill I wrote on <a href="https://www.npmjs.com/package/scrollyfills">NPM</a>.</p>
+]]></description>
+            <link>https://nerdy.dev/a-scrollend-event?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/a-scrollend-event?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[js]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Wed, 25 Jan 2023 20:22:40 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/https://wd.imgix.net/image/vS06HQ1YTsbMKSFTIPl2iogUQP73/TuLoDVklwlps4Akyo9TN.jpg?auto=format&amp;w=1600" length="0" type="false"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/https://wd.imgix.net/image/vS06HQ1YTsbMKSFTIPl2iogUQP73/TuLoDVklwlps4Akyo9TN.jpg?auto=format&amp;w=1600"/>
         </item>
         <item>
             <title><![CDATA[Mc At Css Day 2023]]></title>
@@ -891,345 +907,6 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
             <pubDate>Fri, 06 Jan 2023 06:46:19 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/collections-are-coo.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/collections-are-coo.png"/>
-        </item>
-        <item>
-            <title><![CDATA[New Year, New Site]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/new-site-2023.png" alt="Background grid of 2023's and the GUI Skull logo in the middle" height="669"  width="1920" />
-        
-        <h2>
-          I&#39;ve joined the indie web
-          <a name="i&#39;ve-joined-the-indie-web" href="#i&#39;ve-joined-the-indie-web">#</a>
-        </h2>
-       <p>Viva RSS, viva owning your content, viva to free expression. Join that <a href="https://indieweb.org/">Indie Web</a> y&#39;all 🤘🏻💀.</p>
-<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">let</span><span style="color: var(--shiki-color-text)"> life </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">new</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">Year</span><span style="color: var(--shiki-color-text)">()</span><span style="color: var(--shiki-token-function)">.next</span><span style="color: var(--shiki-color-text)">()</span></span></code></pre>
-</code></pre>
-<p>Instead of joining a different social network, investing in some new walled garden (Mastadon 👀), I&#39;ve decided to take the popular UX/UI patterns, like a social feed, and build them here, where they can&#39;t be taken away or stifled.</p>
-<q>
-  Ain't no one gonna take my site.
-  <cite>Adam Argyle</cite>
-</q>
-
-
-        <h3>
-          the stack
-          <a name="the-stack" href="#the-stack">#</a>
-        </h3>
-       <p>After much testing and research, I chose to invest in <a href="https://deno.land">Deno</a> and their <a href="https://fresh.deno.dev">Fresh</a> framework. I appreciate their investment in web standards and focus on being minimal. </p>
-<p><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/argyleink/deno-fresh.png" 
-            alt="" 
-            title="The next-gen web framework built for speed, reliability and simplicity " 
-            decoding="async"
-            width="1570" 
-            height="588"
-          /></p>
-<p>It&#39;s also a server side rendered framework, at the edge, which means I can fix my site within seconds and don&#39;t have to wait for long static build and deploy times. Deno Fresh also caches at the edge, just in time 😍</p>
-<p><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/argyleink/fresh-features.png" 
-            alt="" 
-            title="A screenshot of the feature list from the Deno Fresh website " 
-            decoding="async"
-            width="1538" 
-            height="854"
-          /></p>
-<p>SSR and progressive enhancement <strong>FTW</strong>.</p>
-
-        <h3>
-          the styles
-          <a name="the-styles" href="#the-styles">#</a>
-        </h3>
-       <p>Fresh is pretty minimal out of the box, especially in regards to styling. It only offers a just in time atomic stylesheet setup, but I wanted to use <a href="https://open-props.style">Open Props</a> (naturally). So I ended up writing my own file system watcher task that compiles <a href="https://postcss.org/">PostCSS</a> and pops it out to the <code>static/</code> directory for cached serving.</p>
-<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> { debounce } </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;$std/async/mod.ts&#39;</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">export</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">async</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">function</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">watchAndBuildStyles</span><span style="color: var(--shiki-color-text)">() {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-keyword)">const</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">watcher</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">Deno</span><span style="color: var(--shiki-token-function)">.watchFs</span><span style="color: var(--shiki-color-text)">([</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-string-expression)">&#39;./styles/&#39;</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-string-expression)">&#39;./components/&#39;</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-string-expression)">&#39;./islands/&#39;</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  ])</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-keyword)">const</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">protectedBuildCall</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">debounce</span><span style="color: var(--shiki-color-text)">(buildStyles</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">200</span><span style="color: var(--shiki-color-text)">)</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-keyword)">for</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">await</span><span style="color: var(--shiki-color-text)"> (</span><span style="color: var(--shiki-token-keyword)">const</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">_event</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">of</span><span style="color: var(--shiki-color-text)"> watcher)</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-function)">protectedBuildCall</span><span style="color: var(--shiki-color-text)">()</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>This route also means I&#39;m in full control of the stylesheet. That was very critical to me as I want to use my site as a playground for new CSS features, progressively enhancing UX when available but otherwise serving a great static experience.</p>
-<p>Here&#39;s my list of plugins if you&#39;re curious:</p>
-<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> cssNesting </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;npm:postcss-nesting&#39;</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> customMediaPlugin </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;npm:postcss-custom-media&#39;</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> mqRanges </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;npm:postcss-media-minmax&#39;</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> inlineImports </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;npm:postcss-import&#39;</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> importUrl </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;npm:postcss-import-url&#39;</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> importGlob </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;npm:postcss-import-ext-glob&#39;</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> cssnano </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;npm:cssnano&#39;</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> OpenProps </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;npm:open-props&#39;</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> jitProps </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;npm:postcss-jit-props&#39;</span></span></code></pre>
-</code></pre>
-<p>A small preview of my <code>index.css</code> file. Spoiler, it&#39;s <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@layer">layers</a> all the way, and I looooved it.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;https://unpkg.com/open-props/normalize.min.css&quot;</span><span style="color: var(--shiki-color-text)"> layer(base.normalize);</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;https://unpkg.com/open-props/theme.light.switch.min.css&quot;</span><span style="color: var(--shiki-color-text)"> layer(base.theme);</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;https://unpkg.com/open-props/theme.dark.switch.min.css&quot;</span><span style="color: var(--shiki-color-text)"> layer(base.theme);</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;utilities.css&quot;</span><span style="color: var(--shiki-color-text)"> layer(base.utilities);</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;nojs.css&quot;</span><span style="color: var(--shiki-color-text)"> layer(base.nojs);</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;toast.css&quot;</span><span style="color: var(--shiki-color-text)"> layer(components.toast);</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;markdown.css&quot;</span><span style="color: var(--shiki-color-text)"> layer(components.markdown);</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;syntax-highlighting.css&quot;</span><span style="color: var(--shiki-color-text)"> layer(components.syntax);</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;neon.css&quot;</span><span style="color: var(--shiki-color-text)"> layer(components.p3);</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;quotes.css&quot;</span><span style="color: var(--shiki-color-text)"> layer(components.quote);</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">@import-glob</span><span style="color: var(--shiki-color-text)"> &quot;../components/**/*.css&quot; layer(components.fresh);</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">@import-glob</span><span style="color: var(--shiki-color-text)"> &quot;../islands/**/*.css&quot; layer(components.fresh);</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">@layer</span><span style="color: var(--shiki-color-text)"> base.normalize-overrides {…}</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">@layer</span><span style="color: var(--shiki-color-text)"> overrides {…}</span></span></code></pre>
-</code></pre>
-<p><strong>It&#39;s 3 layers</strong>: base, components, overrides. Named sublayers for easier debugging and organization.</p>
-<p>With that in place, I match a classname to a component name and that&#39;s pretty much it. I have global styles and component styles, all sharing the props and <a href="https://github.com/GoogleChromeLabs/postcss-jit-props">JIT Props</a> makes sure I only ship the props I use. Good stuff.</p>
-<q class="info">
-  <p>Try the site in Chrome with <a href="chrome://flags/#enable-experimental-web-platform-features">#experimental-web-platform-features</a> enabled. I'll be constantly trialing new features there! I'm currently trialing <a href="https://drafts.csswg.org/scroll-animations-1/">Scroll Linked Animations</a>!</p>
-</q>
-
-
-        <h3>
-          light n&#39; dark
-          <a name="light-n&#39;-dark" href="#light-n&#39;-dark">#</a>
-        </h3>
-       <p>Hopefully you noticed there was no &quot;flash of an unwanted color scheme&quot; (FOAUCS) when the page loaded. </p>
-<p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,q_auto/argyleink/theme-switch-overview.mp4 
-            width="1922" 
-            height="1082"
-            alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/theme-switch-overview.jpg"
-            controls 
-            loop
-            muted 
-            playsinline 
-            allowFullScreen
-          /></p>
-<p>So many sites strobe light my face with the light theme when the page loads (I&#39;m generally in dark mode), and it makes me feel like a vampire who just got blasted with a sun ray. Sometime they blast me on every single page load… 😱</p>
-<p>To make this feature, I followed my own <a href="https://web.dev/building-a-theme-switch-component/">Theme Switch GUI Challenge</a>! I just integrated it into Fresh 🙂</p>
-<p>A <strong>few features</strong> of it that make me happy:</p>
-<ol>
-<li>Works without JS</li>
-<li>Remembers your choice</li>
-<li>Syncs with the system as it changes</li>
-<li>Has a rad animation between a sun and moon with SVG and transforms</li>
-<li>No FOAUCS anywhere</li>
-<li>Has accessibility considerations</li>
-</ol>
-<p>Also, don&#39;t miss that <a href="https://web.dev/building-an-adaptive-favicon/">adaptive favicon</a> 😎</p>
-
-        <h2>
-          comments and likes
-          <a name="comments-and-likes" href="#comments-and-likes">#</a>
-        </h2>
-       <p>I really like the idea of aggregating mentions of my site&#39;s work onto this site itself, and <a href="https://webmention.io">WebMentions.io</a> let me do that. Once set, with Deno I server side fetch mentions for any sub pages and send the data to some components to handle for rendering.</p>
-<p>I think the result is cool. I feel like it&#39;s peer to peer in nature but with a good amount of optional content filtering from the owner side.</p>
-<p>I&#39;m not in any <a href="https://en.wikipedia.org/wiki/Webring">webrings</a> yet… should I be?</p>
-
-        <h2>
-          multiple personas
-          <a name="multiple-personas" href="#multiple-personas">#</a>
-        </h2>
-       <p>Sometimes people have multiple accounts with a service so they can provide different branded feeds, maybe a personal and a business one for example. I have 6 personas I can be on my site lol:</p>
-<ol>
-<li><code>admin</code>: when I&#39;m making site updates or announcements</li>
-<li><code>google</code>: when posts are related to my work at Google</li>
-<li><code>argyleink</code>: when the posts are rando Adam thoughts or comments</li>
-<li><code>csspodcast</code>: when new episodes or moments happen for the <a href="https://pod.link/csspodcast">CSS Podcast</a></li>
-<li><code>guichallenges</code>: when new episodes or moments happen for the <a href="https://github.com/argyleink/gui-challenges">GUI Challenges</a></li>
-<li><code>pops</code>: dad updates</li>
-</ol>
-<p>I even have an open feature request, to myself, about co-tweeting personas. lol, taking multiple personalities to a new site level.</p>
-
-        <h3>
-          404
-          <a name="404" href="#404">#</a>
-        </h3>
-       <p>Make a <code>_404.tsx</code> handler in the <code>routes/</code> directory and you too can make a custom 404 page. Want to see it? Visit <a href="https://nerdy.dev/you-wont-find-this">https://nerdy.dev/you-wont-find-this</a>.</p>
-<p><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/argyleink/custom-404.png" 
-            alt="" 
-            title="The GUI Skull is shown with a message about not finding the page " 
-            decoding="async"
-            width="766" 
-            height="373"
-          /></p>
-<p>Open Props made this page easy to style because I could easily bring in the normalize and props <a href="https://unpkg.com/open-props">from a CDN</a> and use them in the template.</p>
-
-        <h3>
-          localized dates
-          <a name="localized-dates" href="#localized-dates">#</a>
-        </h3>
-       <p>With a little custom middleware I parse preferred languages from the request headers and then provide a getter to components on the server.</p>
-<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-constant)">req</span><span style="color: var(--shiki-token-function)">.</span><span style="color: var(--shiki-token-constant)">headers</span><span style="color: var(--shiki-token-function)">.get</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;accept-language&#39;</span><span style="color: var(--shiki-color-text)">)</span></span></code></pre>
-</code></pre>
-<p>This feature is both for localization but also for accuracy. The dates shows how long ago the post was made, and by knowing where you are in the world I can provide a date relative to you.</p>
-<p><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/argyleink/localized-dates.png" 
-            alt="" 
-            title="An example card from this site that shows the dates in Japanese " 
-            decoding="async"
-            width="818" 
-            height="206"
-          /></p>
-
-        <h3>
-          logical properties
-          <a name="logical-properties" href="#logical-properties">#</a>
-        </h3>
-       <p>I used <a href="https://web.dev/learn/css/logical-properties/">logical properties</a> everywhere, which means the site can do rad stuff like this:</p>
-<p><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/argyleink/traditional-chinese.png" 
-            alt="" 
-            title="Screenshot of the website homepage in a horizontal right to left layout and translated to Chinese, lookin sharp " 
-            decoding="async"
-            width="1478" 
-            height="880"
-          /></p>
-<p>and i didnt have to do anything, the browser adapts it for me.</p>
-<p><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/argyleink/traditional-chinese-blog.png" 
-            alt="" 
-            title="Screenshot of the website blog post in a horizontal right to left layout and translated to Chinese, lookin sharp " 
-            decoding="async"
-            width="548" 
-            height="683"
-          /></p>
-<p>Turned out Media Queries made this hard though, and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries">Container Queries</a> saved the day. Blog post will def come out about it.</p>
-
-        <h3>
-          pretty URLs
-          <a name="pretty-urls" href="#pretty-urls">#</a>
-        </h3>
-       <p>I really like minimal URLs and with Deno + Fresh it was really easy. I appreciate that it was the default.</p>
-
-        <h3>
-          analytics
-          <a name="analytics" href="#analytics">#</a>
-        </h3>
-       <p><strong>No client side analytics</strong>. </p>
-<p>I went with <a href="https://pirsch.io/">Pirsch</a>, and am happy! Cost seems right so they stay alive, great APIs and SDKs, and a really nice dashboard that&#39;s simple but powerful.</p>
-<p>I reeeeeeally didn&#39;t want to run some open source containers on the cloud and host my own analytics… just not my kind of Tuesday night activity. Aka, I&#39;m down with a couple extra bucks for a managed solution.</p>
-
-        <h3>
-          progressive web app
-          <a name="progressive-web-app" href="#progressive-web-app">#</a>
-        </h3>
-       <p>This site is also a <a href="https://web.dev/progressive-web-apps/">PWA</a>. Go ahead, install it or add it to your homescreen. It launches with a nice splash image, is full screen, and can really feel like a system application.</p>
-<p>I&#39;ve implemented the following PWA features so far:</p>
-<ol>
-<li><code>manifest.json</code></li>
-<li>A service worker, mine is very lightweight</li>
-<li>Custom icon</li>
-<li>Custom install banner image</li>
-</ol>
-<p>It&#39;s also got a great landscape layout when in fullscreen 🤓</p>
-
-        <h3>
-          forced colors
-          <a name="forced-colors" href="#forced-colors">#</a>
-        </h3>
-       <p>Where there are shadows and colors to help distinguish UI elements, they&#39;re replaced with a transparent 1px border so that in <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/forced-colors#:~:text=The%20forced%2Dcolors%20CSS%20media,is%20Windows%20High%20Contrast%20mode."><code>forced-colors-mode</code></a> there are visual affordances for distinguishing elements.</p>
-<p><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/argyleink/forced-colors.png" 
-            alt="" 
-            title="A screenshot of a post item detail view with forced colors enabled " 
-            decoding="async"
-            width="1206" 
-            height="1008"
-          /></p>
-<p>I also think the retro colors are super rad. Sometimes I use this mode if a site doesn&#39;t have a dark theme, it&#39;ll force a cool retro one!</p>
-
-        <h3>
-          works without javascript
-          <a name="works-without-javascript" href="#works-without-javascript">#</a>
-        </h3>
-       <p>The site tries to only use JavaScript to enhance the experience, not relying on it for the baseline behavior.</p>
-
-        <h3>
-          uses some GUI Challenges
-          <a name="uses-some-gui-challenges" href="#uses-some-gui-challenges">#</a>
-        </h3>
-       <p>You&#39;ll find the <a href="https://web.dev/building-a-toast-component/">toast</a>, <a href="https://web.dev/building-a-dialog-component/">dialog</a>, <a href="https://web.dev/building-a-theme-switch-component/">theme switch</a>, <a href="https://web.dev/building-an-adaptive-favicon/">adaptive favicon</a> and more to come.</p>
-<p><a href="https://github.com/argyleink/gui-challenges">Checkout all the GUI Challenges</a></p>
-
-        <h3>
-          keyboard navigation
-          <a name="keyboard-navigation" href="#keyboard-navigation">#</a>
-        </h3>
-       <p>Give it a shot, try navigating around with the keyboard. There&#39;s a <a href="https://css-tricks.com/how-to-create-a-skip-to-content-link/">skip link</a> in the nav bar, special scroll snap UX in the home feed, arrow key support in the filter aside, and great focus styles. </p>
-<p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,q_auto/argyleink/site-keyboard-nav-example.mp4 
-            width="1920" 
-            height="1160"
-            alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/site-keyboard-nav-example.jpg"
-            controls 
-            loop
-            muted 
-            playsinline 
-            allowFullScreen
-          /></p>
-
-        <h3>
-          rss
-          <a name="rss" href="#rss">#</a>
-        </h3>
-       <p><strong>I freakin love RSS</strong>. Peer to peer social interation, nothin in the middle, so good. I&#39;ve been an RSS reader for over 10 years, it&#39;s by far the best place for me to get meaningful information. Well, now I have a feed!</p>
-<p>The RSS feed is the backbone of the site, it&#39;s an artifact that allows the content to travel and adapt to reader&#39;s preferences. You can subscribe from an RSS reader, from Chrome using <a href="https://www.engadget.com/google-chrome-rss-follow-button-android-181659150.html">the follow feature</a>, or just follow along on Twitter where I syndicate the content.</p>
-<p><a href="/rss.xml">Subscribe</a> why don&#39;t ya?!</p>
-
-        <h3>
-          media
-          <a name="media" href="#media">#</a>
-        </h3>
-       <p>Everything is <em>currently</em> uploaded into <a href="https://cloudinary.com">Cloudinary</a> and then I&#39;ve created a few authoring conveniences in Fresh and when writing Markdown that utilize all their great features.</p>
-<p>I try to be respectful with the media delivery: </p>
-<ul>
-<li>reliable <code>alt</code> content</li>
-<li><a href="https://web.dev/browser-level-image-lazy-loading/"><code>lazy</code></a> loading</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/decoding"><code>async</code></a> decoding</li>
-<li><a href="https://web.dev/performance-optimizing-content-efficiency-client-hints/">client hints</a></li>
-<li>multiple formats (webp, avif, etc)</li>
-<li>compressed</li>
-<li>delivered from CDNs near you</li>
-<li>videos always offer controls and only loop on demand</li>
-</ul>
-
-        <h3>
-          pride moment
-          <a name="pride-moment" href="#pride-moment">#</a>
-        </h3>
-       <p>this can&#39;t be found in my styles:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">body</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">overflow-x</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">hidden</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>🤓</p>
-]]></description>
-            <link>https://nerdy.dev/new-year-new-site?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/new-year-new-site?utm_source=rss</guid>
-            <category><![CDATA[blog]]></category>
-            <category><![CDATA[css]]></category>
-            <category><![CDATA[js]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Sun, 01 Jan 2023 00:57:50 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/new-site-2023.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/new-site-2023.png"/>
         </item>
     </channel>
 </rss>

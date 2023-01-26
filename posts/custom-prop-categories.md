@@ -1,20 +1,20 @@
 ---
 type: blog
 persona: argyleink
-title: Custom property categories
-published_at: 2023-01-26T06:26:45.466
+title: 10 powerful ways to use CSS variables
+published_at: 2023-01-26T18:40:29.096
 snippet: |
-  CSS custom property tokens vs house vs adaptive vs private vs fragments
+  Tokens, house props, adaptive props, pseudo-private props, partial props, mixin props, swappy props, style query props, meta lang props and typed props. Oh my!
 hero:
-  src: argyleink/skull-card.png
-  alt: Text emphasized alt text example
-  width: 1366
-  height: 768
+  src: argyleink/css-prop-categories.png
+  alt: Three custom properties are repeated in a grid and 3D tilted a bit. They are var(--party) var(--power) and var(--mix).
+  width: 1280
+  height: 421
 tags: 
   - css
 ---
 
-CSS [custom properties](https://web.dev/learn/css/functions/#custom-properties-and-var) are amazing. I'm going to attempt to name the categories of custom props that I've come across. 
+CSS [custom properties](https://web.dev/learn/css/functions/#custom-properties-and-var) are AMAZING. I'm going to attempt to name and roundup all the categories and strategies of custom props that I've come across. 
 
 <q class="info">be sure to comment if you know more strategies!</q>
 
@@ -76,7 +76,7 @@ House props are **named for project reusability**. They also create team alignme
 }
 ```
 
-[Open Props](https://open-props.style) offers `--surface-{1-4}` and `--text-{1,2}` house props (which adapt to light & dark). They come with use of [normalize.css](https://codepen.io/argyleink/pen/KKvRORE). A light and dark card can be created with a mix of house props and tokens:
+[Open Props](https://open-props.style) offers `--surface-{1-4}` and `--text-{1,2}` house props (which adapt to light & dark). They come with use of [normalize.css](https://codepen.io/argyleink/pen/KKvRORE). A light and dark card can be created with a mix of house props and tokens, no media query required as it's baked into the prop:
 
 ```css
 .card {
@@ -141,6 +141,30 @@ Here's another example; **adaptive sizing**
   @media (width >= 1024px) { --adaptive-padding: 1.5rem }
 }
 ```
+
+Lastly, since media queries aren't required to make this adaptive props, [here's a neat trick](https://ishadeed.com/article/conditional-border-radius/) by [Ahmad Shadeed](https://twitter.com/shadeed9) that bakes the conditions into the math inside the prop. He's got 1 custom property that will adapt to either square corners when full screen, or rounded corners when not.
+
+```css
+.card {
+   border-radius: max(0px, min(8px, calc((100vw - 4px - 100%) * 9999)));
+}
+```
+
+Open Props [offers these](https://github.com/argyleink/open-props/blob/main/src/props.borders.css#L19-L24) now too, heavily inspired by Ahmad. They look like this in Open Props, which will have a `var(--radius-2)` sized rounded corners when it's not full width:
+
+```css
+/* Open Props sets them up like this */
+:root {
+  --radius-conditional-2: clamp(0px, calc(100vw - 100%) * 1e5, var(--radius-2));
+}
+
+/* then authors get to use them like this! */
+.card {
+  border-radius: var(--radius-conditional-2);
+}
+```
+
+**Love it** when a custom property disguises all the implentation details away from other authors. Reminds me of NPM and installing modules or importing functions.
 
 ## 4. pseudo-private props
 
@@ -239,7 +263,11 @@ I think of basic mixin props as a collection of [partial props](#5.-partial-prop
   /* define the mixin with a required parameter */
   --stripes: linear-gradient(
     var(--stripes-angle),
-    powderblue 20%, pink 20% 40%, white 40% 60%, pink 60% 80%, powderblue 80%
+    powderblue 20%, 
+    pink 20% 40%, 
+    white 40% 60%, 
+    pink 60% 80%, 
+    powderblue 80%
   );
 
   /* reset the required parameter on each element */
@@ -256,7 +284,7 @@ I think of basic mixin props as a collection of [partial props](#5.-partial-prop
 ```css
 .stripes {
   /* providing a valid angle causes the "mixin" to work */
-  --stripes-angle: 35deg;
+  --stripes-angle: to bottom right;
 }
 ```
 
@@ -264,7 +292,7 @@ I think of basic mixin props as a collection of [partial props](#5.-partial-prop
 
 ## 7. swap props
 
-These props flip n' flop so other props can swap. Aka, a simple example is a bool prop:
+These props **flip n' flop so other props can swap**. Hehe, a simple example is a bool prop:
 
 ```css
 .house-button {
@@ -299,13 +327,15 @@ He goes further in this [light/dark theme demo switch](https://codepen.io/jh3y/p
 
 ![](https://codepen.io/argyleink/embed/preview/poLBvgO)
 
+And you can't miss [Ana Tudor](https://twitter.com/anatudor)'s post on [Dry Switching with CSS Variables](https://css-tricks.com/dry-switching-with-css-variables-the-difference-of-one-declaration/). This was the first place I ever saw props used as bools to pivot behavior and UI.
+
+There's also [Jane Ori](https://mobile.twitter.com/jane0ri) who's made many games and intense systems out of Dry Switching / swappy props: [CSS Sweeper](https://github.com/propjockey/css-sweeper), [CSS Conways Game of Life](https://github.com/propjockey/css-conways-game-of-life), and [more](https://github.com/propjockey). They've even got this wild library called [CSS Media Vars](https://github.com/propjockey/css-media-vars) which enable responsive design with named breakpoints and props, it's very cool.  
+
 ## 8. style query props
 
-**Container props !** maybe an enum for theming. 
+**Container query props!** Could be used as enums for theming, state machines, you name it. 
 
-[Manuel Matuzović](https://www.matuzo.at/about-me/) has been writing about it with a post on how [style queries work on computed custom property values](https://www.matuzo.at/blog/2023/100daysof-day83/) and how using [@property can help with style queries](https://www.matuzo.at/blog/2023/100daysof-day85/).
-
-Here's the gist though:
+Here's the gist:
 
 ```css
 button {
@@ -326,6 +356,8 @@ button {
 ```
 
 [Try this](https://codepen.io/argyleink/pen/ZEjoaOv) snippet in [Canary](https://www.google.com/chrome/canary/) on Codepen!
+
+[Manuel Matuzović](https://www.matuzo.at/about-me/) has been writing about it with a post on how [style queries work on computed custom property values](https://www.matuzo.at/blog/2023/100daysof-day83/) and how using [@property can help with style queries](https://www.matuzo.at/blog/2023/100daysof-day85/).
 
 ## 9. meta lang props
 
@@ -351,7 +383,20 @@ Setting up this means setting the actual css property `color` with your new name
 
 There, you just created an interface into an interface. These custom properties pass through to the actual CSS property.
 
-So, that was a pretty tame example. Here's a wild example! It's not real, but I'm pretty sure this could all be setup.
+So, that was a pretty tame example. Here's one where I'm adding a new property that matches both padding and gaps.
+
+```css
+* {
+  padding: var(--gapadding);
+  gap: var(--gapadding);
+}
+
+.card {
+  --gapadding: 1rem;
+}
+```
+
+Here's a wild example! It's not real, but I'm pretty sure this could all be setup.
 
 ```css
 .button {
@@ -365,7 +410,7 @@ So, that was a pretty tame example. Here's a wild example! It's not real, but I'
 
 ## 10. typed props
 
-[`@property`](https://web.dev/at-property/) is another really cool custom property category of usage. These provide type safety and can assist browsers in knowing your animation intents.
+[`@property`](https://web.dev/at-property/) is another really cool custom property category of usage. These provide **type safety** and can **assist browsers in knowing your animation** intents.
 
 ```css
 @property --focal-size {
@@ -381,4 +426,6 @@ That definition of `--focal-size` is enough to teach some browsers how to animat
 
 ## Conclusion
 
-Between mixins, `@property`, scoping tricks, and style queries… There still a lot of unexplored territory here 😉
+Between mixins, `@property`, scoping tricks, and style queries… There still a lot of unexplored territory here and tons of power 😉
+
+**Did I miss a category‽**

@@ -2,7 +2,7 @@
 type: blog
 persona: argyleink
 title: Custom property categories
-published_at: 2023-11-26
+published_at: 2023-01-26T06:26:45.466
 snippet: |
   CSS custom property tokens vs house vs adaptive vs private vs fragments
 hero:
@@ -264,6 +264,8 @@ I think of basic mixin props as a collection of [partial props](#5.-partial-prop
 
 ## 7. swap props
 
+These props flip n' flop so other props can swap. Aka, a simple example is a bool prop:
+
 ```css
 .house-button {
   --_hover: 0;
@@ -274,34 +276,109 @@ I think of basic mixin props as a collection of [partial props](#5.-partial-prop
 }
 ```
 
-## 8. meta lang props
+How can I use this? Ask [Jhey](https://jhey.dev/), he's got plenty-o-demo's with bool swappin props. Like [this one](https://codepen.io/jh3y/pen/NWBdbRP) which includes the swap prop `--active`:
+
+```css
+a:is(:hover, :focus) {
+  --active: 1;
+}
+
+:is(svg, .char) {
+  transform:
+    rotate(calc((var(--active, 0) * var(--r, 0)) * 1deg))
+    translate(
+      calc((var(--active, 0) * var(--x, 0)) * 1%),
+      calc((var(--active, 0) * var(--y, 0)) * 1%)
+    );
+}
+```
+
+This one only transforms if `--active` is 1, because otherwise the 0 causes the math to be 0 degrees. Swappin props between 0 and 1, ugh, power.
+
+He goes further in this [light/dark theme demo switch](https://codepen.io/jh3y/pen/poLBvgO), pivoting a color scheme and animations. Rad stuff.
+
+![](https://codepen.io/argyleink/embed/preview/poLBvgO)
+
+## 8. style query props
+
+**Container props !** maybe an enum for theming. 
+
+[Manuel Matuzović](https://www.matuzo.at/about-me/) has been writing about it with a post on how [style queries work on computed custom property values](https://www.matuzo.at/blog/2023/100daysof-day83/) and how using [@property can help with style queries](https://www.matuzo.at/blog/2023/100daysof-day85/).
+
+Here's the gist though:
+
+```css
+button {
+  @container style(--vibe: primary) {
+    --_bg: var(--indigo-5);
+    --_border: var(--indigo-4);
+  }
+  
+  @container style(--vibe: rad) {
+    --_bg: var(--gradient-11);
+    border: none;
+  }
+  
+  @container style(--size: large) {
+    font-size: var(--font-size-4);
+  }
+}
+```
+
+[Try this](https://codepen.io/argyleink/pen/ZEjoaOv) snippet in [Canary](https://www.google.com/chrome/canary/) on Codepen!
+
+## 9. meta lang props
+
+**Make your own CSS API**, in CSS! Mixins are the primary key but other strategies from this post are helpful.
+
+Me using a quick one we'll make:
 
 ```css
 .button {
   --bg: blue;
   --text-color: white;
-  --logical-padding: 1rem;
 }
 ```
+
+Setting up this means setting the actual css property `color` with your new name for it `text`.
 
 ```css
 * {
   background-color: var(--bg);
-  color: var(--text-color);
-  padding-inline: var(--logical-padding);
-  padding-block: var(--logical-padding);
+  color: var(--text);
 }
 ```
+
+There, you just created an interface into an interface. These custom properties pass through to the actual CSS property.
+
+So, that was a pretty tame example. Here's a wild example! It's not real, but I'm pretty sure this could all be setup.
 
 ```css
-:root {
-  /* design token */
-  --blue-4: color(display-p3 0 0 1);
-
-  /* house prop */
-  --brand-blue: var(--blue-4);
+.button {
+  --_type: 3d-primary;
+  --_accent: var(--neon-purple);
+  --_accent-hover: var(--neon-pink);
+  --_3d-depth-level: 2;
+  --_particles: 20;
 }
 ```
 
-This is at least how I distinguish them.
+## 10. typed props
 
+[`@property`](https://web.dev/at-property/) is another really cool custom property category of usage. These provide type safety and can assist browsers in knowing your animation intents.
+
+```css
+@property --focal-size {
+  syntax: '<length-percentage>';
+  initial-value: 100%;
+  inherits: false;
+}
+```
+
+That definition of `--focal-size` is enough to teach some browsers how to animate a gradient used into a mask. Hold alt/opt inside the codepen below, it'll transition if you are in a browser with `@property`.
+
+![](https://codepen.io/argyleink/embed/preview/rNwWwor)
+
+## Conclusion
+
+Between mixins, `@property`, scoping tricks, and style queries… There still a lot of unexplored territory here 😉

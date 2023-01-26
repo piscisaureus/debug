@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 26 Jan 2023 18:44:08 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Jan 2023 18:59:58 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -300,6 +300,29 @@
         </p>
 <p>And you can&#39;t miss <a href="https://twitter.com/anatudor">Ana Tudor</a>&#39;s post on <a href="https://css-tricks.com/dry-switching-with-css-variables-the-difference-of-one-declaration/">Dry Switching with CSS Variables</a>. This was the first place I ever saw props used as bools to pivot behavior and UI.</p>
 <p>There&#39;s also <a href="https://mobile.twitter.com/jane0ri">Jane Ori</a> who&#39;s made many games and intense systems out of Dry Switching / swappy props: <a href="https://github.com/propjockey/css-sweeper">CSS Sweeper</a>, <a href="https://github.com/propjockey/css-conways-game-of-life">CSS Conways Game of Life</a>, and <a href="https://github.com/propjockey">more</a>. They&#39;ve even got this wild library called <a href="https://github.com/propjockey/css-media-vars">CSS Media Vars</a> which enable responsive design with named breakpoints and props, it&#39;s very cool.  </p>
+<p>Also, there&#39;s a sweet <a href="https://postcss.org/">PostCSS</a> plugin from <a href="https://github.com/csstools">@CSStools</a> called <a href="https://www.npmjs.com/package/@csstools/postcss-conditional-values">conditional values</a> that gives some syntactic sugar to this:</p>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.fancy-container</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    --is-fancy</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">true</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: var(--shiki-token-function)">.block</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">csstools-if(--is-fancy pink else red</span><span style="color: var(--shiki-color-text)">);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: var(--shiki-token-comment)">/* becomes */</span></span>
+<span class="line"><span style="color: var(--shiki-token-function)">:root</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    --is-fancy</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)">  ;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: var(--shiki-token-function)">.fancy-container</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    --is-fancy</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">initial</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: var(--shiki-token-function)">.block</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    --is-fancy--0</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--is-fancy) red</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--is-fancy--0</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)">pink)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
 
         <h2>
           8. style query props

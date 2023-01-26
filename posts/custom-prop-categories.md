@@ -331,6 +331,32 @@ And you can't miss [Ana Tudor](https://twitter.com/anatudor)'s post on [Dry Swit
 
 There's also [Jane Ori](https://mobile.twitter.com/jane0ri) who's made many games and intense systems out of Dry Switching / swappy props: [CSS Sweeper](https://github.com/propjockey/css-sweeper), [CSS Conways Game of Life](https://github.com/propjockey/css-conways-game-of-life), and [more](https://github.com/propjockey). They've even got this wild library called [CSS Media Vars](https://github.com/propjockey/css-media-vars) which enable responsive design with named breakpoints and props, it's very cool.  
 
+Also, there's a sweet [PostCSS](https://postcss.org/) plugin from [@CSStools](https://github.com/csstools) called [conditional values](https://www.npmjs.com/package/@csstools/postcss-conditional-values) that gives some syntactic sugar to this:
+
+```css
+.fancy-container {
+	--is-fancy: true;
+}
+
+.block {
+	color: csstools-if(--is-fancy pink else red);
+}
+
+/* becomes */
+:root {
+	--is-fancy:  ;
+}
+
+.fancy-container {
+	--is-fancy: initial;
+}
+
+.block {
+	--is-fancy--0: var(--is-fancy) red;
+	color: var(--is-fancy--0,pink);
+}
+```
+
 ## 8. style query props
 
 **Container query props!** Could be used as enums for theming, state machines, you name it. 

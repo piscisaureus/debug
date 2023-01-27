@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 26 Jan 2023 18:59:58 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 27 Jan 2023 21:25:43 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,22 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Tcss]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/tcss.png" alt="The TS logo and the CSS logo combine into a TcsS logo" height="393"  width="800" />
+        <p><strong>TcsS</strong> - Typed Cascade Style Sheets</p>
+<p>Why hasn&#39;t this been made yet? CSS has all the type information needed to create a comparable experience to TypeScript.</p>
+]]></description>
+            <link>https://nerdy.dev/tcss?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/tcss?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Fri, 27 Jan 2023 21:25:36 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/tcss.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/tcss.png"/>
+        </item>
         <item>
             <title><![CDATA[10 powerful ways to use CSS variables]]></title>
             <description><![CDATA[
@@ -835,101 +851,6 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
             <pubDate>Fri, 06 Jan 2023 16:57:53 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/sizing-units.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/sizing-units.png"/>
-        </item>
-        <item>
-            <title><![CDATA[Collections are coo]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/collections-are-coo.png" alt="CSS selector being compared to a set of JS array methods, doing the same thing." height="511"  width="1351" />
-        <p>A fun benefit of always assuming something in your code is an array or collection, is that when its empty, no worries.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.button</span><span style="color: var(--shiki-color-text)"> {}</span></span></code></pre>
-</code></pre>
-<p><strong>This is a default feature of CSS.</strong> It beautifully handles an empty set of results, iterating over each match when they do arrive. It&#39;s rad, and most CSS selectors work under this assumption; selecting collections.</p>
-<p>Javascript can do this empty handling too:</p>
-<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">let</span><span style="color: var(--shiki-color-text)"> buttons </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> []</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">buttons</span><span style="color: var(--shiki-token-function)">.forEach</span><span style="color: var(--shiki-color-text)">(item </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">console</span><span style="color: var(--shiki-token-function)">.log</span><span style="color: var(--shiki-color-text)">(item)) </span></span>
-<span class="line"><span style="color: var(--shiki-token-comment)">// no logs</span></span></code></pre>
-</code></pre>
-<p>So can JSX, cuz &quot;it&#39;s just Javascript&quot; and <code>.map()</code> is an array method like <code>forEach()</code>:</p>
-<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">{</span><span style="color: var(--shiki-token-constant)">buttons</span><span style="color: var(--shiki-token-function)">.map</span><span style="color: var(--shiki-color-text)">(({text}) </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> (</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  &lt;</span><span style="color: var(--shiki-token-string-expression)">button</span><span style="color: var(--shiki-color-text)">&gt;{text}&lt;/</span><span style="color: var(--shiki-token-string-expression)">button</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">))}</span></span>
-<span class="line"><span style="color: var(--shiki-token-comment)">// no &lt;button&gt;&#39;s</span></span></code></pre>
-</code></pre>
-<p>And I&#39;m not trying to wage war on if statements, but they stink.</p>
-<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">if</span><span style="color: var(--shiki-color-text)"> (buttons) {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">// do stuff</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>Nothing wrong with if statements, you just need to remember to put them in there, they can stack up, nest, and more… or else the dumb computer will try and do an operation on something that doesn&#39;t exist.</p>
-<p>We <em>can</em> get all existential now, which I do enjoy:</p>
-<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-constant)">buttons</span><span style="color: var(--shiki-color-text)">?.text</span></span></code></pre>
-</code></pre>
-<p>Anyway…</p>
-<p>My brain thinks its fun to think about how similar CSS can be to other languages and where it&#39;s got some really killer features. It&#39;s currently back on a kick about how nice it is to work with collections.</p>
-
-        <h2>
-          Collections everywhere
-          <a name="collections-everywhere" href="#collections-everywhere">#</a>
-        </h2>
-       <p><a href="https://chrome.google.com/webstore/detail/visbug/cdockenadnadldjbbgcallicgledbeoc?hl=en">VisBug</a> works alot this way under the hood, always assuming the user has selected multiple things or the effects of their change have multiple targets. Taught me alot about systems built on arrays.</p>
-<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">document</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-function)">.querySelectorAll</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;.button&#39;</span><span style="color: var(--shiki-color-text)">)</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-function)">.forEach</span><span style="color: var(--shiki-color-text)">(item </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">console</span><span style="color: var(--shiki-token-function)">.log</span><span style="color: var(--shiki-color-text)">(item))</span></span></code></pre>
-</code></pre>
-<p>I always have a fun time in that codebase, and it&#39;s hard to crash VisBug because of it.</p>
-
-        <h2>
-          Array hayday
-          <a name="array-hayday" href="#array-hayday">#</a>
-        </h2>
-       <p>I feel arrays are most popular in <a href="https://rxjs.dev">RxJS</a> and <a href="https://github.com/fantasyland/fantasy-land">Functional Programming</a>. It&#39;s something I miss about those styles and tools. </p>
-<q class="info">
-  Fun fact too, RxJS had SQL alias's so you could use select() instead of map(). Don't get me started on how CSS is like SQL!
-</q>
-
-<p><strong>But no one really talks about how CSS is like these.</strong><br><small>I guess <a href="https://www.youtube.com/watch?v=tfw0qv63ZUQ&list=PLpT5nMxKrUl9EWrkCbRDqn-H4E-l1di47">I have</a> before</small></p>
-
-        <h2>
-          Is it apples and oranges and I&#39;m trippin?
-          <a name="is-it-apples-and-oranges-and-i&#39;m-trippin?" href="#is-it-apples-and-oranges-and-i&#39;m-trippin?">#</a>
-        </h2>
-       <p>Just look at this comparison of CSS and JS, selecting the same things!</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.dark</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">.button</span><span style="color: var(--shiki-color-text)"> {}</span></span></code></pre>
-</code></pre>
-<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">let</span><span style="color: var(--shiki-color-text)"> buttons </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> []</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">let</span><span style="color: var(--shiki-color-text)"> dark_buttons </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">buttons</span><span style="color: var(--shiki-token-function)">.filter</span><span style="color: var(--shiki-color-text)">(button </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">button</span><span style="color: var(--shiki-token-function)">.closest</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;.dark&#39;</span><span style="color: var(--shiki-color-text)">))</span></span></code></pre>
-</code></pre>
-<p><strong>Peep how powerful and succinct CSS is!</strong></p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.blog</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">&gt;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">h2</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">backgroundColor</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(200 100</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 90</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(200 82</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 15</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> { assignStyle</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> directDescendants</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> byAttr } </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;./utils.js&#39;</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-color-text)">blogs</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-function)">.flatMap</span><span style="color: var(--shiki-color-text)">(directDescendants)</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-function)">.filter</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-function)">byAttr</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;nodeName&#39;</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;h2&#39;</span><span style="color: var(--shiki-color-text)">))</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-function)">.forEach</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-function)">assignStyle</span><span style="color: var(--shiki-color-text)">({</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    backgroundColor</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;hsl(200 100% 90%)&#39;</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;hsl(200 82% 15%)&#39;</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  }))</span></span></code></pre>
-</code></pre>
-<p>So yeah, even though it wasn&#39;t intuitive for me at first, treating more things as collections or observables that yield values over time, I like the resilience of the code. The way it&#39;ll be evaluated and decide on its own not to run the loop. The way it doesn&#39;t care. </p>
-<p><strong>I like it when code doesn&#39;t have to care.</strong>  </p>
-<p><a href="https://twitter.com/argyleink/status/1280245921381380096?t=3cKeXNj8frLOrdBjhOVUyQ&s=19">Here&#39;s a rant I had about it in 2020.</a></p>
-]]></description>
-            <link>https://nerdy.dev/collections-are-coo?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/collections-are-coo?utm_source=rss</guid>
-            <category><![CDATA[blog]]></category>
-            <category><![CDATA[css]]></category>
-            <category><![CDATA[js]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Fri, 06 Jan 2023 06:46:19 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/collections-are-coo.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/collections-are-coo.png"/>
         </item>
     </channel>
 </rss>

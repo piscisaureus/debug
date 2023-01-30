@@ -1,4 +1,4 @@
-import { extract } from '$std/encoding/front_matter.ts'
+import { extract } from 'https://deno.land/std@0.170.0/encoding/front_matter.ts'
 
 import { ITags } from '~/components/Tags/Tags.tsx'
 import parse from '~/utils/markdown.ts'

@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 30 Jan 2023 16:39:50 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 31 Jan 2023 20:47:05 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,31 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Easy Hsl Rainbow]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/hsl-rainbow.jpg" alt="All colors of the rainbow in a gradient from left to right." height="628"  width="3180" />
+        <p><strong>CSS color tip!</strong></p>
+<p>Need a <a href="https://codepen.io/argyleink/pen/yLqREaq">rainbow gradient</a>? Let <code>&lt;hue-interpolation&gt;</code> do the work.</p>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.vibrant-rainbow</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">linear-gradient</span><span style="color: var(--shiki-token-constant)">(</span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-keyword)">to</span><span style="color: var(--shiki-token-constant)"> right </span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">    in hsl      </span><span style="color: var(--shiki-token-comment)">/* vibrant gradient HSL colorspace */</span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">    longer hue</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-comment)">/* hue-interpolation set to longer */</span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">    red</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> red    </span><span style="color: var(--shiki-token-comment)">/* now red to red goes all the way around */</span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">  )</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+]]></description>
+            <link>https://nerdy.dev/easy-hsl-rainbow?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/easy-hsl-rainbow?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Tue, 31 Jan 2023 20:45:11 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/hsl-rainbow.jpg" length="0" type="image/jpeg"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/hsl-rainbow.jpg"/>
+        </item>
         <item>
             <title><![CDATA[Learn About Color Mix]]></title>
             <description><![CDATA[
@@ -792,20 +817,6 @@ the fade-out animation is reversed so opacity doesn't need set to 0.
             <pubDate>Tue, 10 Jan 2023 17:34:27 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/text-replace-transitions.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/text-replace-transitions.png"/>
-        </item>
-        <item>
-            <title><![CDATA[Coloring With Ollie]]></title>
-            <description><![CDATA[
-          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/coloring-skull.mp4" alt="some title" height="2160"  width="2160" />
-        <p>Art with the kids 🤘💀</p>
-]]></description>
-            <link>https://nerdy.dev/coloring-with-ollie?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/coloring-with-ollie?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <dc:creator><![CDATA[Dad@pops]]></dc:creator>
-            <pubDate>Sun, 08 Jan 2023 20:54:28 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/coloring-skull.mp4" length="0" type="video/mp4"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/coloring-skull.mp4"/>
         </item>
     </channel>
 </rss>

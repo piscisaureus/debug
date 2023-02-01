@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 31 Jan 2023 20:47:05 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Feb 2023 18:40:00 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,53 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Thinking on GLITCH effects]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-glitch.png" alt="Adam avatar smiling in front of a grungy font with the word CYBERPINK." height="1650"  width="3116" />
+        <p>I&#39;ve seen a lot of rad glitch effects as of late and wanted to share <a href="https://www.youtube.com/watch?v=MR7dClW6iBg&list=PLNYkxOF6rcIAaV1wwI9540OC_3XoIzMjQ">my thinking on how to make the effect</a>.</p>
+
+        <h2>
+          Watch it
+          <a name="watch-it" href="#watch-it">#</a>
+        </h2>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/MR7dClW6iBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+        <h3>
+          Chapters:
+          <a name="chapters:" href="#chapters:">#</a>
+        </h3>
+       <p>0:00 - Introduction<br>0:38 - Overview<br>2:00 - Debugging Corner<br>3:34 - clip-path grunge<br>4:41 - transform<br>5:55 - clip-path keyframes<br>6:45 - transform keyframes<br>7:50 - HTML<br>8:17 - CSS<br>9:56 - JS<br>12:46 - Debugging Keyframes<br>13:13 - Outro  </p>
+
+        <h2>
+          Try it
+          <a name="try-it" href="#try-it">#</a>
+        </h2>
+       <p><a href="https://gui-challenges.web.app/glitch/dist/">Checkout the demo</a> which has a generator for grungy <code>clip-path</code> <code>polygon()</code>&#39;s!</p>
+<p><video 
+            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,q_auto/argyleink/gui-glitch-preview.mp4 
+            width="1920" 
+            height="1082"
+            alt=" "
+            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/gui-glitch-preview.jpg"
+            controls 
+            loop
+            muted 
+            playsinline 
+            allowFullScreen
+          /></p>
+<p>Also, see the skull icon in the top right of this page? It&#39;s totally using the technique from this challenge 🤘🏻💀</p>
+]]></description>
+            <link>https://nerdy.dev/thinking-on-ways-to-solve-glitch-effects?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/thinking-on-ways-to-solve-glitch-effects?utm_source=rss</guid>
+            <category><![CDATA[blog]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[Adam@GUIchallenges]]></dc:creator>
+            <pubDate>Wed, 01 Feb 2023 18:29:23 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-glitch.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-glitch.png"/>
+        </item>
         <item>
             <title><![CDATA[Easy Hsl Rainbow]]></title>
             <description><![CDATA[
@@ -632,191 +679,6 @@
             <category><![CDATA[js]]></category>
             <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
             <pubDate>Fri, 13 Jan 2023 20:19:51 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Text Replace Transitions]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/text-replace-transitions.png" alt="setInterval(() => {
-  document.startViewTransition(() => {
-  h1.textContent = word[index++]
-})}, 500)
-" height="626"  width="1820" />
-        <p>First up, the good stuff, <em>the final demo</em>, as if you skipped to the end.</p>
-<p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/KKBWwMr?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/KKBWwMr">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-<p>If that&#39;s basically an error message about support, here&#39;s a recording of it running in Canary (with <a href="chrome://flags/#view-transition">this flag enabled</a> 😉.</p>
-<p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,q_auto/argyleink/view-transitions.mp4 
-            width="810" 
-            height="608"
-            alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/view-transitions.jpg"
-            controls 
-            loop
-            muted 
-            playsinline 
-            allowFullScreen
-          /></p>
-<p><strong>tldr;</strong><br><a href="https://developer.chrome.com/docs/web-platform/view-transitions/"><code>view-transition</code></a>&#39;s let me, <strong>with CSS</strong>, describe how to dismiss the old text state and reveal the new text state.</p>
-
-        <h2>
-          The inspo
-          <a name="the-inspo" href="#the-inspo">#</a>
-        </h2>
-       <p>This demo idea came from the game <a href="https://store.steampowered.com/agecheck/app/861650/">Session Skate</a>. In the opening credits, &quot;SESSION&quot; has each letter rapidly cross fade. It looked pretty coo and I instantly realized I could do this with <a href="https://developer.chrome.com/docs/web-platform/view-transitions/"><code>view-transition</code></a>&#39;s, <code>setInterval()</code>, and <code>.textContent</code>. So I sent myself the email todo, cuz well, it was time to land a sick trick, not work.</p>
-<p>That turned into a small prototype. Peep these barebones!</p>
-<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">setInterval</span><span style="color: var(--shiki-color-text)">(() </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">document</span><span style="color: var(--shiki-token-function)">.startViewTransition</span><span style="color: var(--shiki-color-text)">(() </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">h1</span><span style="color: var(--shiki-color-text)">.textContent </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> word[index</span><span style="color: var(--shiki-token-keyword)">++</span><span style="color: var(--shiki-color-text)">]</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-keyword)">if</span><span style="color: var(--shiki-color-text)"> (index </span><span style="color: var(--shiki-token-keyword)">&gt;=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">word</span><span style="color: var(--shiki-color-text)">.</span><span style="color: var(--shiki-token-constant)">length</span><span style="color: var(--shiki-color-text)">) index </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">0</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  })</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">500</span><span style="color: var(--shiki-color-text)">)</span></span></code></pre>
-</code></pre>
-<ol>
-<li>Every half a second</li>
-<li>Take a quick &quot;before&quot; snapshot</li>
-<li>Set some new text content</li>
-</ol>
-<p>When the work finishes in that view transition callback, the browser interpolates between the changes for you, for free. In our case, there was a &quot;V&quot;, now there&#39;s an &quot;i&quot;. One letter disappeared, one letter appeared. We get a crossfade!</p>
-<p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,q_auto/argyleink/view-transitions-cross.mp4 
-            width="702" 
-            height="286"
-            alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/view-transitions-cross.jpg"
-            controls 
-            loop
-            muted 
-            playsinline 
-            allowFullScreen
-          /></p>
-<p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/BaPWpmQ?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/BaPWpmQ">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-<p>There. We matched the video game.</p>
-
-        <h2>
-          Customizing the transition; aka spinkling props
-          <a name="customizing-the-transition;-aka-spinkling-props" href="#customizing-the-transition;-aka-spinkling-props">#</a>
-        </h2>
-       <p>Crossfades are coo (fo real y&#39;all), but what if I want to customize how the text swaps? Perhaps with some <a href="https://open-props.style">Open Props</a>?</p>
-<p><strong>No prob</strong> 🤘💀</p>
-<p>First thing, <code>@import</code> the <a href="https://open-props.style/#easing">easings</a> and <a href="https://open-props.style/#animations">animations</a>:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;https://unpkg.com/open-props/easings.min.css&quot;</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;https://unpkg.com/open-props/animations.min.css&quot;</span><span style="color: var(--shiki-color-text)">;</span></span></code></pre>
-</code></pre>
-<p>Next, as an optimization, tell the whole page to chill and not transition when a document transition snapshot is requested.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">html</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">view-transition-name</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">none</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>Now that we said what we dont want to transition, let&#39;s specify what should, the <code>h1</code>!</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* be stable. fix that width. */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">inline-size</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1</span><span style="color: var(--shiki-token-keyword)">em</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* required for view-transitions  </span></span>
-<span class="line"><span style="color: var(--shiki-token-comment)">     now it&#39;s not the whole page */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">contain</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">layout</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* yo browser; transition this! */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">view-transition-name</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">replace-effect</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>Remember that <code>view-transition-name</code>, we&#39;ll be able to reference its before and after states in the next section.</p>
-
-        <h3>
-          Now for the best part
-          <a name="now-for-the-best-part" href="#now-for-the-best-part">#</a>
-        </h3>
-       <p>Use <a href="https://open-props.style/#animations">some of these props</a> to orchestrate the exit and entry of a character / the DOM snapshots. Let&#39;s start with how the old character should exit; let&#39;s see, I want it to scale out, like away from me, and fade out at the same time.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@media</span><span style="color: var(--shiki-color-text)"> (prefers-reduced-motion</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> no-preference) {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-string-expression)">html</span><span style="color: var(--shiki-color-text)">::view-transition-old(</span><span style="color: var(--shiki-token-string-expression)">replace-effect</span><span style="color: var(--shiki-color-text)">) {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">animation</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">      </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--animation-fade-out)</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">      </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--animation-scale-down)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  }</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p><strong>Delightful magic.</strong><br>
-Now for the element entering; fade it in while sliding it up!</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@media</span><span style="color: var(--shiki-color-text)"> (prefers-reduced-motion</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> no-preference) {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-string-expression)">html</span><span style="color: var(--shiki-color-text)">::view-transition-new(</span><span style="color: var(--shiki-token-string-expression)">replace-effect</span><span style="color: var(--shiki-color-text)">) {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">z-index</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">animation</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">      </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--animation-fade-out) reverse</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">      </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--animation-slide-in-up)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  }</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<q class="info">
-the fade-out animation is reversed so opacity doesn't need set to 0.
-</q>
-
-<p>Mix and match animation props in that Codepen and have some fun 🙂</p>
-<p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/KKBWwMr?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/KKBWwMr">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-
-        <h2>
-          outro
-          <a name="outro" href="#outro">#</a>
-        </h2>
-       <p><strong>Fun Stuff!</strong>. </p>
-<p>Make a DOM change, describe how to transition the changes. <strong>Love it.</strong> </p>
-<small>
-  Hope this gets picked up by other browsers 🤞 <a href="https://drafts.csswg.org/css-view-transitions-1/">Peep the spec</a>.
-</small>
-]]></description>
-            <link>https://nerdy.dev/text-replace-transitions?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/text-replace-transitions?utm_source=rss</guid>
-            <category><![CDATA[blog]]></category>
-            <category><![CDATA[css]]></category>
-            <category><![CDATA[js]]></category>
-            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
-            <pubDate>Tue, 10 Jan 2023 17:34:27 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/text-replace-transitions.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/text-replace-transitions.png"/>
         </item>
     </channel>
 </rss>

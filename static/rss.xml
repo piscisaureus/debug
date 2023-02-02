@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 01 Feb 2023 18:40:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 02 Feb 2023 17:10:32 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,30 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Hd Color Guide]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-hd-color.png" alt="Wizard of Oz image with Dorothy going from black and white to color." height="714"  width="1180" />
+        <p><a href="https://developer.chrome.com/articles/high-definition-css-color-guide/"><strong>CSS HD Color Guide</strong></a></p>
+<p>Meet the <strong>new web color spaces</strong>!</p>
+<ol>
+<li>What is a color gamut or color space</li>
+<li>Review of the classic color spaces</li>
+<li>Meet the new web color spaces</li>
+<li>Migrating to HD CSS color</li>
+<li>Debugging color</li>
+</ol>
+<p><strong>It&#39;s the article I wish I had</strong> when learning about CSS color updates.</p>
+]]></description>
+            <link>https://nerdy.dev/hd-color-guide?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/hd-color-guide?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Thu, 02 Feb 2023 17:07:46 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-hd-color.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-hd-color.png"/>
+        </item>
         <item>
             <title><![CDATA[Thinking on GLITCH effects]]></title>
             <description><![CDATA[
@@ -58,7 +82,7 @@
             playsinline 
             allowFullScreen
           /></p>
-<p>Also, see the skull icon in the top right of this page? It&#39;s totally using the technique from this challenge 🤘🏻💀</p>
+<p>Also, see the skull icon in the top left of this page? It&#39;s totally using the technique from this challenge 🤘🏻💀</p>
 ]]></description>
             <link>https://nerdy.dev/thinking-on-ways-to-solve-glitch-effects?utm_source=rss</link>
             <guid isPermaLink="true">https://nerdy.dev/thinking-on-ways-to-solve-glitch-effects?utm_source=rss</guid>
@@ -668,17 +692,6 @@
             <category><![CDATA[note]]></category>
             <dc:creator><![CDATA[Web Master@admin]]></dc:creator>
             <pubDate>Sun, 15 Jan 2023 16:29:15 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[2023 Prediction Libraries Move To Deno]]></title>
-            <description><![CDATA[<p><strong>2023 prediction:</strong><br>libraries move to or build upon <a href="https://deno.land">Deno</a> instead of Node.</p>
-]]></description>
-            <link>https://nerdy.dev/2023-prediction-libraries-move-to-deno?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/2023-prediction-libraries-move-to-deno?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[js]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Fri, 13 Jan 2023 20:19:51 GMT</pubDate>
         </item>
     </channel>
 </rss>

@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 02 Feb 2023 17:10:32 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 02 Feb 2023 17:27:27 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -36,6 +36,7 @@
 <li>Debugging color</li>
 </ol>
 <p><strong>It&#39;s the article I wish I had</strong> when learning about CSS color updates.</p>
+<p><a href="https://developer.chrome.com/articles/high-definition-css-color-guide/">Check it out!!</a></p>
 ]]></description>
             <link>https://nerdy.dev/hd-color-guide?utm_source=rss</link>
             <guid isPermaLink="true">https://nerdy.dev/hd-color-guide?utm_source=rss</guid>

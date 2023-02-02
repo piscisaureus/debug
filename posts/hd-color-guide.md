@@ -21,3 +21,5 @@ Meet the **new web color spaces**!
 1. Debugging color
 
 **It's the article I wish I had** when learning about CSS color updates.
+
+[Check it out!!](https://developer.chrome.com/articles/high-definition-css-color-guide/)

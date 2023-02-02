@@ -39,4 +39,4 @@ I've seen a lot of rad glitch effects as of late and wanted to share [my thinkin
 
 ![](f_auto,q_auto/argyleink/gui-glitch-preview.mp4 "Preview of the demo site $$width:1920,height:1082")
 
-Also, see the skull icon in the top right of this page? It's totally using the technique from this challenge 🤘🏻💀
+Also, see the skull icon in the top left of this page? It's totally using the technique from this challenge 🤘🏻💀

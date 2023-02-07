@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 02 Feb 2023 17:27:27 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 07 Feb 2023 18:14:49 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,125 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[A color-contrast() strategy for complimentary translucent backgrounds]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/supportive-translucent-bg.png" alt="Screenshot of the final code snippet from this blog post." height="1992"  width="3699" />
+        <p>The goal I had in mind was to have maximized text contrast against any color. This meant the text color should contrast well, but also I wanted a supportive translucent background to help bump that contrast even further, for situations where it may have otherwise had low contrast.</p>
+<p>To do this:</p>
+<ol>
+<li>I find a good contrasting text color with <code>color-contrast()</code>. </li>
+<li>Then I find a contrasting color for that text color with <code>color-contrast()</code>.</li>
+<li>Use that text contrast color as a supportive translucent background with relative color syntax <code>oklch(from black l c h / 40%)</code></li>
+</ol>
+<p><strong>tldr;</strong>  </p>
+<ol>
+<li>If the text color is white, it&#39;s supportive background should be translucent black.</li>
+<li>If the text color is black, it&#39;s supportive background should be translucent white.</li>
+</ol>
+<p>It&#39;s so <strong>much easier to see</strong>, but you can <a href="https://codepen.io/argyleink/pen/GRBLMoY">try it here</a>:</p>
+<p><video 
+            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,q_auto/argyleink/dynamic-contrast.mp4 
+            width="1280" 
+            height="960"
+            alt=" "
+            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/dynamic-contrast.jpg"
+            controls 
+            loop
+            muted 
+            playsinline 
+            allowFullScreen
+          /></p>
+<p>See how I&#39;ve automated the text color and a supportive background on that text? I don&#39;t have to care about the color I&#39;m overlaying now, the browser handles all of it dynamically!</p>
+
+        <h2>
+          The essentials of the effect
+          <a name="the-essentials-of-the-effect" href="#the-essentials-of-the-effect">#</a>
+        </h2>
+       <p>I use 2 future CSS features that aren&#39;t well supported yet (but are very fun to play with):</p>
+<ol>
+<li><code>color-contrast()</code> - <a href="https://drafts.csswg.org/css-color-6/#colorcontrast">spec</a></li>
+<li>&quot;Relative color syntax&quot; - <a href="https://www.w3.org/TR/css-color-5/#relative-colors">spec</a></li>
+</ol>
+<p><q class="info">Safari Tech Preview is the only browser with support for relative color syntax at the time of writing this post. Chrome Canary has color-contrast() support but won&#39;t have the dynamic supportive background (see generic bg in CSS below).</q></p>
+<p>First, the container background needs to be in a custom property so we can share it with other functions:</p>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">section</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --bg</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(</span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--hue) 50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p>Then, the h1 need to put it&#39;s contrasting text color into a custom property so we can share it too:</p>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* pick either black or white based on --bg */</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --text</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">color-contrast(</span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--bg) vs black</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> white</span><span style="color: var(--shiki-color-text)">);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--text)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* generic semitransparent bg */</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(0 0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> / 40</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p>For the cherry on top, if the browser understands relative color syntax, then create a new semi-transparent color from the contrasting color of <code>--text</code>.</p>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-comment)">/* if relative color syntax is supported */</span></span>
+<span class="line"><span style="color: var(--shiki-token-keyword)">@supports</span><span style="color: var(--shiki-color-text)"> (</span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(from red h s l)</span><span style="color: var(--shiki-color-text)">) {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-comment)">/* pick either black or white </span></span>
+<span class="line"><span style="color: var(--shiki-token-comment)">       depending which contrasts with --text,</span></span>
+<span class="line"><span style="color: var(--shiki-token-comment)">       extract it and make it 40% semitransparent */</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">oklch(from color-contrast(</span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--text) vs black</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)">white</span><span style="color: var(--shiki-color-text)">) </span><span style="color: var(--shiki-token-constant)">l</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">c</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">h</span><span style="color: var(--shiki-color-text)"> / 40%);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  }</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p>All of it together:</p>
+<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@layer</span><span style="color: var(--shiki-color-text)"> demo {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-string-expression)">section</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    --bg</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(</span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--hue) 50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  }</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    --text</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">color-contrast(</span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--bg) vs black</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> white</span><span style="color: var(--shiki-color-text)">);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--text)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(0 0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> / 40</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  }</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-keyword)">@supports</span><span style="color: var(--shiki-color-text)"> (</span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(from red h s l)</span><span style="color: var(--shiki-color-text)">) {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">      </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">oklch(from color-contrast(</span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--text) vs black</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)">white</span><span style="color: var(--shiki-color-text)">) </span><span style="color: var(--shiki-token-constant)">l</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">c</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">h</span><span style="color: var(--shiki-color-text)"> / 40%);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    }</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  }</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+
+        <h2>
+          Conclusion
+          <a name="conclusion" href="#conclusion">#</a>
+        </h2>
+       <p>There you have it, <strong>dynamically contrasting text with a supportive translucent background</strong>. I think that&#39;s pretty rad stuff.</p>
+<p>Here&#39;s the Codepen embedded, so in the future it&#39;ll just work 🤓</p>
+<p>
+          <iframe 
+            class="codepen-embed" 
+            scrolling="no" 
+            title="null" 
+            src="https://codepen.io/argyleink/embed/preview/GRBLMoY?default-tab=result&editable=true&theme-id=43079" 
+            frameborder="no" 
+            loading="lazy" 
+            allowtransparency="true" 
+            allowfullscreen="true"
+          >
+            See the Pen <a href="https://codepen.io/argyleink/embed/preview/GRBLMoY">
+            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        </p>
+]]></description>
+            <link>https://nerdy.dev/color-from-color-contrast-result?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/color-from-color-contrast-result?utm_source=rss</guid>
+            <category><![CDATA[blog]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Tue, 07 Feb 2023 18:12:13 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/supportive-translucent-bg.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/supportive-translucent-bg.png"/>
+        </item>
         <item>
             <title><![CDATA[Hd Color Guide]]></title>
             <description><![CDATA[
@@ -677,22 +796,6 @@
             <pubDate>Wed, 18 Jan 2023 05:42:51 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-logo.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-logo.png"/>
-        </item>
-        <item>
-            <title><![CDATA[Service Worker Updated With Workbox]]></title>
-            <description><![CDATA[<p>Service worker update:</p>
-<ul>
-<li><a href="https://developer.chrome.com/docs/workbox/">Workbox</a> added</li>
-<li>Offline pages (as you visit them)</li>
-<li>Caches images (as you download them)</li>
-</ul>
-<p>Let me know if anything has broken!</p>
-]]></description>
-            <link>https://nerdy.dev/service-worker-updated-with-workbox?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/service-worker-updated-with-workbox?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <dc:creator><![CDATA[Web Master@admin]]></dc:creator>
-            <pubDate>Sun, 15 Jan 2023 16:29:15 GMT</pubDate>
         </item>
     </channel>
 </rss>

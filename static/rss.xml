@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 07 Feb 2023 18:14:49 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Feb 2023 15:36:23 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,17 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Color Palettes And Typography]]></title>
+            <description><![CDATA[<p>Math color palettes = letter spacing<br>Optical color palettes = kerning</p>
+]]></description>
+            <link>https://nerdy.dev/color-palettes-and-typography?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/color-palettes-and-typography?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Wed, 08 Feb 2023 15:31:18 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[A color-contrast() strategy for complimentary translucent backgrounds]]></title>
             <description><![CDATA[
@@ -711,91 +722,6 @@
             <pubDate>Thu, 19 Jan 2023 17:20:56 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-day-2023-mc.jpg" length="0" type="image/jpeg"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-day-2023-mc.jpg"/>
-        </item>
-        <item>
-            <title><![CDATA[A CSS logo‽]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-logo.png" alt="Two logos, they're 3 sides of a box. One logo, each side is a letter, with C as the top face. The other repeats CSS 3 times per side." height="263"  width="617" />
-        <p>A not so serious pair of logos about CSS. Randomly created, but the final &quot;thing&quot; is definitely working in some ways. I think?</p>
-<p><strong>Fun attributes:</strong></p>
-<ul>
-<li>playful use of boxes</li>
-<li>uses the system font (def looks different on my machine 😉)</li>
-<li>light / dark theme adaptive</li>
-<li>resize adaptive</li>
-<li>position in CSS 3D perspective</li>
-<li>no position absolute</li>
-</ul>
-<p><strong>Regrts:</strong></p>
-<ul>
-<li>not loading a font?</li>
-<li>trying harder to use <code>skew()</code></li>
-<li>no accessibility testing</li>
-<li>not using container queries somehow</li>
-<li>sticking to system colors</li>
-</ul>
-
-        <h3>
-          Dramatic glowy
-          <a name="dramatic-glowy" href="#dramatic-glowy">#</a>
-        </h3>
-       <p>Neat-ish. Take away the glow and it still stands.</p>
-<p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/jOpMRGE?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/jOpMRGE">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-
-        <h3>
-          Cube marquee
-          <a name="cube-marquee" href="#cube-marquee">#</a>
-        </h3>
-       <p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/PoBGgJV?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/PoBGgJV">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-
-        <h2>
-          Where did these come from?
-          <a name="where-did-these-come-from?" href="#where-did-these-come-from?">#</a>
-        </h2>
-       <p>I saw a brand do something similar with different letters, and I imagined CSS could do something really similar, but its way. <strong>CSS is about making boxes</strong>, a CSS logo could make a box. </p>
-<p>Then I wanted it to be adaptive to color, resize, more… and well its been fun, but I kinda wanna pass the torch. See what some forks can do? :wink wink: </p>
-<p><strong>STEAL THIS!</strong> Use this wherever you want; no restrictions.</p>
-<p>There&#39;s some neat opportunities for 3D rotating on the <code>transform</code> of <code>.cube</code>; accelerometer or mouse position much?</p>
-<p>Does CSS need a new big 4 instead? 😉</p>
-]]></description>
-            <link>https://nerdy.dev/a-css-logo-thing?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/a-css-logo-thing?utm_source=rss</guid>
-            <category><![CDATA[blog]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Wed, 18 Jan 2023 05:42:51 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-logo.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-logo.png"/>
         </item>
     </channel>
 </rss>

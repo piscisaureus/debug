@@ -42,6 +42,11 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    word-break: break-word;
+
+    @media (--sm-n-below) {
+      font-size: var(--font-size-7);
+    }
 
     @media (--xs-n-below) {
       font-size: var(--font-size-6);

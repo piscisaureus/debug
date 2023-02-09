@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 08 Feb 2023 15:36:23 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 09 Feb 2023 06:04:22 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,96 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[My container query strategy]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png" alt="Text emphasized alt text example" height="768"  width="1366" />
+        <p>todo</p>
+<pre><code class="language-html"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">&lt;</span><span style="color: var(--shiki-token-string-expression)">contain-er</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">style</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;container: layers-panel / inline-size;&quot;</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">&lt;!-- &lt;SomeComponent /&gt; --&gt;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">&lt;/</span><span style="color: var(--shiki-token-string-expression)">contain-er</span><span style="color: var(--shiki-color-text)">&gt;</span></span></code></pre>
+</code></pre>
+]]></description>
+            <link>https://nerdy.dev/a-container-query-strategy?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/a-container-query-strategy?utm_source=rss</guid>
+            <category><![CDATA[blog]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Fri, 10 Feb 2023 00:00:00 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png"/>
+        </item>
+        <item>
+            <title><![CDATA[Another rad use for the line-height unit]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/lh-unit-half-leading.png" alt="Code snippet titled, inline padding like half leading" height="578"  width="1088" />
+        <p>CSS has a unit that represents the current <code>line-height</code> of it&#39;s context. How rad is that. I&#39;ve been having fun finding use cases for this… <code>lh</code>.</p>
+
+        <h2>
+          peep it
+          <a name="peep-it" href="#peep-it">#</a>
+        </h2>
+       <p>
+          <iframe 
+            class="codepen-embed" 
+            scrolling="no" 
+            title="null" 
+            src="https://codepen.io/argyleink/embed/preview/ExpBYVP?default-tab=result&editable=true&theme-id=43079" 
+            frameborder="no" 
+            loading="lazy" 
+            allowtransparency="true" 
+            allowfullscreen="true"
+          >
+            See the Pen <a href="https://codepen.io/argyleink/embed/preview/ExpBYVP">
+            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        </p>
+
+        <h2>
+          the concept
+          <a name="the-concept" href="#the-concept">#</a>
+        </h2>
+       <p>Any <code>line-height</code> value above unitless <code>1</code> will get distributed to the line box as &quot;half leading&quot;. Think of it like equal <code>block</code> spacing distribution. Well now we have <code>lh</code> for use in <code>calc()</code> and to perhaps distribute equal <code>inline</code> spacing.</p>
+<p>That led me to this rad use case for a tiny tag component thingy.</p>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.tag</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">padding-inline</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">.25lh</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p>Which <code>.25lh</code> was because the element already had <code>line-height</code> set to <code>1.5</code>. </p>
+<p>Might as well turn it into a <code>calc()</code> because it matches the intent and makes the computer do the math, plus add the <code>line-height</code> to the demo so it&#39;s all there at a glance:</p>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.tag</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">line-height</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1.5</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">padding-inline</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">calc</span><span style="color: var(--shiki-token-constant)">(.5lh </span><span style="color: var(--shiki-token-keyword)">/</span><span style="color: var(--shiki-token-constant)"> 2)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p>And here&#39;s the developer&#39;s cut:</p>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.tag</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* .5 extra leading */</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">line-height</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1.5</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* we can divvy equal spacing to the inline edges */</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* complimenting extra height half leading */</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* making even spacing all around */</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">padding-inline</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">calc</span><span style="color: var(--shiki-token-constant)">(.5lh </span><span style="color: var(--shiki-token-keyword)">/</span><span style="color: var(--shiki-token-constant)"> 2)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+
+        <h2>
+          outro
+          <a name="outro" href="#outro">#</a>
+        </h2>
+       <p>This isn&#39;t <em>that</em> cool, but also like, <strong>I thought it was</strong> cool. </p>
+]]></description>
+            <link>https://nerdy.dev/another-rad-use-for-the-line-height-unit?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/another-rad-use-for-the-line-height-unit?utm_source=rss</guid>
+            <category><![CDATA[blog]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Thu, 09 Feb 2023 05:40:47 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/lh-unit-half-leading.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/lh-unit-half-leading.png"/>
+        </item>
         <item>
             <title><![CDATA[Color Palettes And Typography]]></title>
             <description><![CDATA[<p>Math color palettes = letter spacing<br>Optical color palettes = kerning</p>
@@ -75,12 +165,12 @@
 </ol>
 <p><q class="info">Safari Tech Preview is the only browser with support for relative color syntax at the time of writing this post. Chrome Canary has color-contrast() support but won&#39;t have the dynamic supportive background (see generic bg in CSS below).</q></p>
 <p>First, the container background needs to be in a custom property so we can share it with other functions:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">section</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">section</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --bg</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(</span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--hue) 50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>Then, the h1 need to put it&#39;s contrasting text color into a custom property so we can share it too:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* pick either black or white based on --bg */</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --text</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">color-contrast(</span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--bg) vs black</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> white</span><span style="color: var(--shiki-color-text)">);</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--text)</span><span style="color: var(--shiki-color-text)">;</span></span>
@@ -90,7 +180,7 @@
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>For the cherry on top, if the browser understands relative color syntax, then create a new semi-transparent color from the contrasting color of <code>--text</code>.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-comment)">/* if relative color syntax is supported */</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-comment)">/* if relative color syntax is supported */</span></span>
 <span class="line"><span style="color: var(--shiki-token-keyword)">@supports</span><span style="color: var(--shiki-color-text)"> (</span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(from red h s l)</span><span style="color: var(--shiki-color-text)">) {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-comment)">/* pick either black or white </span></span>
@@ -101,7 +191,7 @@
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>All of it together:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@layer</span><span style="color: var(--shiki-color-text)"> demo {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@layer</span><span style="color: var(--shiki-color-text)"> demo {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-string-expression)">section</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">    --bg</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(</span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--hue) 50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  }</span></span>
@@ -230,7 +320,7 @@
           <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/hsl-rainbow.jpg" alt="All colors of the rainbow in a gradient from left to right." height="628"  width="3180" />
         <p><strong>CSS color tip!</strong></p>
 <p>Need a <a href="https://codepen.io/argyleink/pen/yLqREaq">rainbow gradient</a>? Let <code>&lt;hue-interpolation&gt;</code> do the work.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.vibrant-rainbow</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.vibrant-rainbow</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">linear-gradient</span><span style="color: var(--shiki-token-constant)">(</span></span>
 <span class="line"><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-keyword)">to</span><span style="color: var(--shiki-token-constant)"> right </span></span>
 <span class="line"><span style="color: var(--shiki-token-constant)">    in hsl      </span><span style="color: var(--shiki-token-comment)">/* vibrant gradient HSL colorspace */</span></span>
@@ -295,7 +385,7 @@
         </h2>
        <p>These custom properties are <strong>generally just global values</strong>, named objectively, and are used atomically.</p>
 <p>They create team alignment by naming what are otherwise &quot;magic numbers.&quot; They often follow naming conventions.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">:root</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">:root</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --size-1</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1</span><span style="color: var(--shiki-token-keyword)">rem</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --size-2</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1.25</span><span style="color: var(--shiki-token-keyword)">rem</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --blue-1</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(200 50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
@@ -305,14 +395,14 @@
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p><strong>Usage of tokens</strong> looks like:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.card</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.card</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--surface-1)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--text-1)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">padding</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--card-padding)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>It&#39;s very likely these tokens will become values of other custom properties in your CSS because they <strong>are generally static and aren&#39;t overwritten later.</strong>.</p>
-<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">OpenProps </span><span style="color: var(--shiki-token-keyword)">===</span><span style="color: var(--shiki-color-text)"> tokens</span></span></code></pre>
+<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">OpenProps </span><span style="color: var(--shiki-token-keyword)">===</span><span style="color: var(--shiki-color-text)"> tokens</span></span></code></pre>
 </code></pre>
 
         <h2>
@@ -320,7 +410,7 @@
           <a name="2.-house-props" href="#2.-house-props">#</a>
         </h2>
        <p>House props are <strong>named for project reusability</strong>. They also create team alignment, jargon, and can be adaptive (see <a href="#3.-adaptive-props">#3</a>).</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">:root</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">:root</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --brand</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--blue-1)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --card-padding</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--size-1)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --surface</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">#eee</span><span style="color: var(--shiki-color-text)">;</span></span>
@@ -331,14 +421,14 @@
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p><strong>Usage of house props</strong> looks like:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.card</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.card</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">border-color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--brand)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">padding</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--card-padding)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--surface)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p><a href="https://open-props.style">Open Props</a> offers <code>--surface-{1-4}</code> and <code>--text-{1,2}</code> house props (which adapt to light &amp; dark). They come with use of <a href="https://codepen.io/argyleink/pen/KKvRORE">normalize.css</a>. A light and dark card can be created with a mix of house props and tokens, no media query required as it&#39;s baked into the prop:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.card</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.card</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--surface-2)</span><span style="color: var(--shiki-color-text)">; </span><span style="color: var(--shiki-token-comment)">/* surface-1 is the page bg */</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--text-1)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">border-radius</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--radius-2)</span><span style="color: var(--shiki-color-text)">;</span></span>
@@ -352,7 +442,7 @@
           <a name="3.-adaptive-props" href="#3.-adaptive-props">#</a>
         </h2>
        <p>Aka dynamic house props; <strong>these will change</strong>, you expect them to change. They need setup though, orchestrated and empowered with CSS conditionals.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">:root</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">:root</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --text</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--gray-0)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span>
 <span class="line"></span>
@@ -363,12 +453,12 @@
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p><strong>Usage of adaptive props</strong> looks like:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">body</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">body</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--text)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>I&#39;ve got a tinyyyy bit more verbose pattern for adaptive props; create static house props with names that make their usage obvious (no magic values).</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">:root</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">:root</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* 2 static props */</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --text-dark-mode</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--gray-0)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --text-light-mode</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--gray-10)</span><span style="color: var(--shiki-color-text)">;</span></span>
@@ -383,7 +473,7 @@
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>Here&#39;s another example; <strong>adaptive sizing</strong></p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">:root</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">:root</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --adaptive-padding</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">.5</span><span style="color: var(--shiki-token-keyword)">rem</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  @</span><span style="color: var(--shiki-token-constant)">media</span><span style="color: var(--shiki-color-text)"> (</span><span style="color: var(--shiki-token-constant)">width</span><span style="color: var(--shiki-color-text)"> &gt;= 320</span><span style="color: var(--shiki-token-constant)">px</span><span style="color: var(--shiki-color-text)">)  { --adaptive-padding</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1</span><span style="color: var(--shiki-token-keyword)">rem</span><span style="color: var(--shiki-color-text)"> }</span></span>
@@ -392,14 +482,14 @@
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>Lastly, since media queries aren&#39;t required to make this adaptive props, <a href="https://ishadeed.com/article/conditional-border-radius/">here&#39;s a neat trick</a> by <a href="https://twitter.com/shadeed9">Ahmad Shadeed</a> that bakes the conditions into the math inside the prop. He&#39;s got 1 custom property that will adapt to either square corners when full screen, or rounded corners when not.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.card</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">   </span><span style="color: var(--shiki-token-constant)">border-radius</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">max(0</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> min(8</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-function)">calc</span><span style="color: var(--shiki-token-constant)">((100</span><span style="color: var(--shiki-token-keyword)">vw</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-keyword)">-</span><span style="color: var(--shiki-token-constant)"> 4</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-keyword)">-</span><span style="color: var(--shiki-token-constant)"> 100</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">) * 9999</span><span style="color: var(--shiki-color-text)">)));</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.card</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">   </span><span style="color: var(--shiki-token-constant)">border-radius</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">max</span><span style="color: var(--shiki-token-constant)">(0</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-function)">min</span><span style="color: var(--shiki-token-constant)">(8</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-function)">calc</span><span style="color: var(--shiki-token-constant)">((100</span><span style="color: var(--shiki-token-keyword)">vw</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-keyword)">-</span><span style="color: var(--shiki-token-constant)"> 4</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-keyword)">-</span><span style="color: var(--shiki-token-constant)"> 100</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">) * 9999))</span><span style="color: var(--shiki-color-text)">);</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>Open Props <a href="https://github.com/argyleink/open-props/blob/main/src/props.borders.css#L19-L24">offers these</a> now too, heavily inspired by Ahmad. They look like this in Open Props, which will have a <code>var(--radius-2)</code> sized rounded corners when it&#39;s not full width:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-comment)">/* Open Props sets them up like this */</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-comment)">/* Open Props sets them up like this */</span></span>
 <span class="line"><span style="color: var(--shiki-token-function)">:root</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --radius-conditional-2</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">clamp(0</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-function)">calc</span><span style="color: var(--shiki-token-constant)">(100</span><span style="color: var(--shiki-token-keyword)">vw</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-keyword)">-</span><span style="color: var(--shiki-token-constant)"> 100</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">) * 1e5</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--radius-2)</span><span style="color: var(--shiki-color-text)">);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --radius-conditional-2</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">clamp</span><span style="color: var(--shiki-token-constant)">(0</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-function)">calc</span><span style="color: var(--shiki-token-constant)">(100</span><span style="color: var(--shiki-token-keyword)">vw</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-keyword)">-</span><span style="color: var(--shiki-token-constant)"> 100</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">) * 1e5</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--radius-2))</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span>
 <span class="line"></span>
 <span class="line"><span style="color: var(--shiki-token-comment)">/* then authors get to use them like this! */</span></span>
@@ -414,16 +504,16 @@
           <a name="4.-pseudo-private-props" href="#4.-pseudo-private-props">#</a>
         </h2>
        <p><a href="https://lea.verou.me/2021/10/custom-properties-with-defaults/">Lea Verou calls these pseudo-private custom properties</a>. I appreciated the throw back to pseudo private properties in Javascript.</p>
-<pre><code class="language-js"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-constant)">this</span><span style="color: var(--shiki-color-text)">._foo </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;please dont change this&#39;</span></span></code></pre>
+<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-constant)">this</span><span style="color: var(--shiki-color-text)">._foo </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;please dont change this&#39;</span></span></code></pre>
 </code></pre>
 <p>Then us mimmicking it in CSS:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.card</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.card</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --_radius</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">10</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>Which makes them like <strong>static tokens</strong> or <strong>house props</strong>, but <strong>scoped instead of global</strong>. </p>
 <p><a href="https://vanilla-extract.style">Vanilla Extract</a> offers scoped custom properties, they use this &quot;pseudo-private&quot; technique in the CSS output.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.button__1qipc2y2</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.button__1qipc2y2</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --_1qipc2y0</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">#4263eb</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --_1qipc2y1</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">#edf2ff</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background-color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--_1qipc2y0)</span><span style="color: var(--shiki-color-text)">;</span></span>
@@ -442,14 +532,14 @@
           <a name="5.-partial-props" href="#5.-partial-props">#</a>
         </h2>
        <p>Prop puzzle pieces. <strong>Parts of a full usable prop</strong>. Here, brand color channels as partial props.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">:root</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">:root</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --h</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">200</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --s</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --l</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p><strong>Usage of partial props</strong> to make <a href="#3.-adaptive-props">adaptive props</a> looks like:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">:root</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">:root</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --brand</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(</span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--h) </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--s) </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--l))</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --text</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(</span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--h) 30</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 5</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --surface</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(</span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--h) 25</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 99</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
@@ -470,14 +560,14 @@
         </h2>
        <p>I first saw this usage of CSS vars <a href="https://www.smashingmagazine.com/2019/07/css-custom-properties-cascade/#custom-functions-and-parameters">on Smashing Magazine</a> by <a href="https://www.oddbird.net/authors/miriam/">Miriam Suzanne</a>. Great distillation of it in this <a href="https://codepen.io/miriamsuzanne/pen/BEvjbm">Codepen</a>.</p>
 <p>I think of basic mixin props as a collection of <a href="#5.-partial-props">partial props</a> placed on shorthands (<code>background-image</code>, <code>border</code>, <code>border-image</code>, <code>mask-image</code>, etc) . This makes the partial props like params into a greater &quot;mixin&quot; prop, function thing.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">*</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">*</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --input-1</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --input-2</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--blue-5)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --border-mixin</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--input-1) solid </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--input-2)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p><strong>Usage of basic mixin props</strong> looks like:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.card</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.card</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">border</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--border-mixin)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span>
 <span class="line"></span>
@@ -486,7 +576,7 @@
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p><a href="https://www.oddbird.net/authors/miriam/">Mia</a> adds a nice hook feature by setting &quot;required&quot; prop parameters to <code>initial</code>. Then, any element that specifies this required prop, triggers the mixin to be valid, applying its effect.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">*</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">*</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* define the mixin with a required parameter */</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --stripes</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">linear-gradient</span><span style="color: var(--shiki-token-constant)">(</span></span>
 <span class="line"><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--stripes-angle)</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
@@ -506,7 +596,7 @@
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p><strong>Usage of mixin props</strong> looks like:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.stripes</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.stripes</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* providing a valid angle causes the &quot;mixin&quot; to work */</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --stripes-angle</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">to bottom right</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
@@ -518,7 +608,7 @@
           <a name="7.-swap-props" href="#7.-swap-props">#</a>
         </h2>
        <p>These props <strong>flip n&#39; flop so other props can swap</strong>. Hehe, a simple example is a bool prop:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.house-button</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.house-button</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --_hover</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">0</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  &amp;</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-token-constant)">hover {</span></span>
@@ -527,7 +617,7 @@
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>How can I use this? Ask <a href="https://jhey.dev/">Jhey</a>, he&#39;s got plenty-o-demo&#39;s with bool swappin props. Like <a href="https://codepen.io/jh3y/pen/NWBdbRP">this one</a> which includes the swap prop <code>--active</code>:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">a</span><span style="color: var(--shiki-color-text)">:is(</span><span style="color: var(--shiki-token-function)">:hover</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">:focus</span><span style="color: var(--shiki-color-text)">) {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">a</span><span style="color: var(--shiki-color-text)">:is(</span><span style="color: var(--shiki-token-function)">:hover</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">:focus</span><span style="color: var(--shiki-color-text)">) {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --active</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span>
 <span class="line"></span>
@@ -561,7 +651,7 @@
 <p>And you can&#39;t miss <a href="https://twitter.com/anatudor">Ana Tudor</a>&#39;s post on <a href="https://css-tricks.com/dry-switching-with-css-variables-the-difference-of-one-declaration/">Dry Switching with CSS Variables</a>. This was the first place I ever saw props used as bools to pivot behavior and UI.</p>
 <p>There&#39;s also <a href="https://mobile.twitter.com/jane0ri">Jane Ori</a> who&#39;s made many games and intense systems out of Dry Switching / swappy props: <a href="https://github.com/propjockey/css-sweeper">CSS Sweeper</a>, <a href="https://github.com/propjockey/css-conways-game-of-life">CSS Conways Game of Life</a>, and <a href="https://github.com/propjockey">more</a>. They&#39;ve even got this wild library called <a href="https://github.com/propjockey/css-media-vars">CSS Media Vars</a> which enable responsive design with named breakpoints and props, it&#39;s very cool.  </p>
 <p>Also, there&#39;s a sweet <a href="https://postcss.org/">PostCSS</a> plugin from <a href="https://github.com/csstools">@CSStools</a> called <a href="https://www.npmjs.com/package/@csstools/postcss-conditional-values">conditional values</a> that gives some syntactic sugar to this:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.fancy-container</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.fancy-container</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">    --is-fancy</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">true</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span>
 <span class="line"></span>
@@ -590,7 +680,7 @@
         </h2>
        <p><strong>Container query props!</strong> Could be used as enums for theming, state machines, you name it. </p>
 <p>Here&#39;s the gist:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">button</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">button</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  @</span><span style="color: var(--shiki-token-constant)">container</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">style</span><span style="color: var(--shiki-color-text)">(--vibe</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">primary</span><span style="color: var(--shiki-color-text)">) {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">    --_bg</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--indigo-5)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">    --_border</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--indigo-4)</span><span style="color: var(--shiki-color-text)">;</span></span>
@@ -615,20 +705,20 @@
         </h2>
        <p><strong>Make your own CSS API</strong>, in CSS! Mixins are the primary key but other strategies from this post are helpful.</p>
 <p>Me using a quick one we&#39;ll make:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.button</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.button</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --bg</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">blue</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --text-color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">white</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>Setting up this means setting the actual css property <code>color</code> with your new name for it <code>text</code>.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">*</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">*</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background-color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--bg)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--text)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>There, you just created an interface into an interface. These custom properties pass through to the actual CSS property.</p>
 <p>So, that was a pretty tame example. Here&#39;s one where I&#39;m adding a new property that matches both padding and gaps.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">*</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">*</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">padding</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--gapadding)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">gap</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--gapadding)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span>
@@ -638,7 +728,7 @@
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>Here&#39;s a wild example! It&#39;s not real, but I&#39;m pretty sure this could all be setup.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.button</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.button</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --_type</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">3d-primary</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --_accent</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--neon-purple)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --_accent-hover</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--neon-pink)</span><span style="color: var(--shiki-color-text)">;</span></span>
@@ -652,7 +742,7 @@
           <a name="10.-typed-props" href="#10.-typed-props">#</a>
         </h2>
        <p><a href="https://web.dev/at-property/"><code>@property</code></a> is another really cool custom property category of usage. These provide <strong>type safety</strong> and can <strong>assist browsers in knowing your animation</strong> intents.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@property</span><span style="color: var(--shiki-color-text)"> --focal-size {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@property</span><span style="color: var(--shiki-color-text)"> --focal-size {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  syntax: &#39;&lt;</span><span style="color: var(--shiki-token-string-expression)">length-percentage</span><span style="color: var(--shiki-token-keyword)">&gt;</span><span style="color: var(--shiki-color-text)">&#39;;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-string-expression)">initial-value</span><span style="color: var(--shiki-color-text)">: 100%;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  inherits: false;</span></span>
@@ -691,37 +781,6 @@
             <pubDate>Thu, 26 Jan 2023 18:40:29 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-prop-categories.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-prop-categories.png"/>
-        </item>
-        <item>
-            <title><![CDATA[A Scrollend Event]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/https://wd.imgix.net/image/vS06HQ1YTsbMKSFTIPl2iogUQP73/TuLoDVklwlps4Akyo9TN.jpg?auto=format&w=1600" alt="END is written on the pavement of a street." height="480"  width="960" />
-        <p>Delete your timeout functions and shake off their bugs, here&#39;s the event you really need: <code>scrollend</code>.  </p>
-<p>Read all about it on <a href="https://developer.chrome.com/blog/scrollend-a-new-javascript-event/">Chrome Developers</a> and checkout the polyfill I wrote on <a href="https://www.npmjs.com/package/scrollyfills">NPM</a>.</p>
-]]></description>
-            <link>https://nerdy.dev/a-scrollend-event?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/a-scrollend-event?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[js]]></category>
-            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
-            <pubDate>Wed, 25 Jan 2023 20:22:40 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/https://wd.imgix.net/image/vS06HQ1YTsbMKSFTIPl2iogUQP73/TuLoDVklwlps4Akyo9TN.jpg?auto=format&amp;w=1600" length="0" type="false"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/https://wd.imgix.net/image/vS06HQ1YTsbMKSFTIPl2iogUQP73/TuLoDVklwlps4Akyo9TN.jpg?auto=format&amp;w=1600"/>
-        </item>
-        <item>
-            <title><![CDATA[Mc At Css Day 2023]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-day-2023-mc.jpg" alt="Screenshot from the CSS Day 2023 website" height="770"  width="2252" />
-        <p><strong>Proud to share</strong> I&#39;ll be MCing <a href="https://cssday.nl/2023">CSS Day 2023</a> with <a href="https://css-irl.info">Michelle Barker</a>.</p>
-]]></description>
-            <link>https://nerdy.dev/mc-at-css-day-2023?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/mc-at-css-day-2023?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
-            <pubDate>Thu, 19 Jan 2023 17:20:56 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-day-2023-mc.jpg" length="0" type="image/jpeg"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-day-2023-mc.jpg"/>
         </item>
     </channel>
 </rss>

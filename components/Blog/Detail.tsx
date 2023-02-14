@@ -69,7 +69,7 @@ export default function BlogDetail({ post, toc, mentions }: { post: IBlog, toc: 
         }
       </main></cq-document-vi>
       {/*todo reduced motion*/}
-      <style dangerouslySetInnerHTML={{ __html: `
+      {/* <style dangerouslySetInnerHTML={{ __html: `
         .BlogHero {
           view-timeline: hero-timeline;
         }
@@ -77,7 +77,7 @@ export default function BlogDetail({ post, toc, mentions }: { post: IBlog, toc: 
           animation: 1s linear hero-scroll-effect both;
           animation-timeline: hero-timeline;
         }
-        /* todo: don't animate avatar on mobile */
+        
         .BlogMeta > .Persona {
           animation: 1s linear author-scroll-effect both;
           animation-timeline: hero-timeline;
@@ -101,7 +101,7 @@ export default function BlogDetail({ post, toc, mentions }: { post: IBlog, toc: 
           }
         }
         ` }}
-      />
+      /> */}
     </>
   )
 }

@@ -15,7 +15,7 @@ export default function Footer() {
           <use href="#icon.github"/>
         </svg>
       </a>
-      <style dangerouslySetInnerHTML={{ __html: `
+      {/* <style dangerouslySetInnerHTML={{ __html: `
         .Footer {
           view-timeline: page-footer;
         }
@@ -34,7 +34,7 @@ export default function Footer() {
           }
         }
         ` }}
-      />
+      /> */}
       {/* <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"/> */}
     </footer>
   )

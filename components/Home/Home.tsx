@@ -33,7 +33,7 @@ export default function Home({ posts }: { posts: IPost[] }) {
       </script>
 
       {/*todo reduced motion*/}
-      <style dangerouslySetInnerHTML={{ __html: `
+      {/* <style dangerouslySetInnerHTML={{ __html: `
         .PostList > li {
           view-timeline: list-item-scroll-effect;
         }
@@ -62,7 +62,7 @@ export default function Home({ posts }: { posts: IPost[] }) {
           }
         }
         ` }}
-      />
+      /> */}
     </>
   )
 }

@@ -6,7 +6,7 @@ tags:
   - css
 ---
 
-This felt like a future of library customization:
+This felt like a future of library customization, using [`@layer`](https://developer.mozilla.org/en-US/docs/Web/CSS/@layer):
 
 ```css
 /* <tool-tip> styles */

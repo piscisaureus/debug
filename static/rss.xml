@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 16 Feb 2023 16:00:11 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 17 Feb 2023 16:22:50 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -23,9 +23,19 @@
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
         <item>
+            <title><![CDATA[Turned 37]]></title>
+            <description><![CDATA[<p>37 today. Maybe I&#39;ll upgrade this 2011 Mac Air.</p>
+]]></description>
+            <link>https://nerdy.dev/turned-37?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/turned-37?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <dc:creator><![CDATA[Dad@pops]]></dc:creator>
+            <pubDate>Fri, 17 Feb 2023 16:20:56 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[Cascade Layer Async Overrides]]></title>
             <description><![CDATA[<p>This felt like a future of library customization, using <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"><code>@layer</code></a>:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-comment)">/* &lt;tool-tip&gt; styles */</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-comment)">/* &lt;tool-tip&gt; styles */</span></span>
 <span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;tool-tip.css&quot;</span><span style="color: var(--shiki-color-text)"> layer(components.tooltip);</span></span>
 <span class="line"></span>
 <span class="line"><span style="color: var(--shiki-token-comment)">/* later, in some-new-context.css */</span></span>
@@ -74,14 +84,14 @@
           <a name="let&#39;s-see-some-code" href="#let&#39;s-see-some-code">#</a>
         </h2>
        <p>Start with making a square, so it&#39;s easy to make a circle.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">#pie</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">#pie</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">aspect-ratio</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">inline-size</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">50</span><span style="color: var(--shiki-token-keyword)">vmin</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">border-radius</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>Now add the mask and conic gradient. Comments are inline as to why or what each part is doing.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">#pie</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">#pie</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --ng</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">120</span><span style="color: var(--shiki-token-keyword)">deg</span><span style="color: var(--shiki-color-text)">; </span><span style="color: var(--shiki-token-comment)">/* can be set via slider */</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --thickness</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">3</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"></span>
@@ -187,19 +197,19 @@
         </h2>
        <p>Any <code>line-height</code> value above unitless <code>1</code> will get distributed to the line box as &quot;half leading&quot;. Think of it like equal <code>block</code> spacing distribution. Well now we have <code>lh</code> for use in <code>calc()</code> and to perhaps distribute equal <code>inline</code> spacing.</p>
 <p>That led me to this rad use case for a tiny tag component thingy.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.tag</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.tag</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">padding-inline</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">.25lh</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>Which <code>.25lh</code> was because the element already had <code>line-height</code> set to <code>1.5</code>. </p>
 <p>Might as well turn it into a <code>calc()</code> because it matches the intent and makes the computer do the math, plus add the <code>line-height</code> to the demo so it&#39;s all there at a glance:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.tag</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.tag</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">line-height</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1.5</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">padding-inline</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">calc</span><span style="color: var(--shiki-token-constant)">(.5lh </span><span style="color: var(--shiki-token-keyword)">/</span><span style="color: var(--shiki-token-constant)"> 2)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>And here&#39;s the developer&#39;s cut:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.tag</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.tag</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* .5 extra leading */</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">line-height</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1.5</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span></span>
@@ -278,12 +288,12 @@
 </ol>
 <p><q class="info">Safari Tech Preview is the only browser with support for relative color syntax at the time of writing this post. Chrome Canary has color-contrast() support but won&#39;t have the dynamic supportive background (see generic bg in CSS below).</q></p>
 <p>First, the container background needs to be in a custom property so we can share it with other functions:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">section</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">section</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --bg</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(</span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--hue) 50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>Then, the h1 need to put it&#39;s contrasting text color into a custom property so we can share it too:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* pick either black or white based on --bg */</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  --text</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">color-contrast(</span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--bg) vs black</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> white</span><span style="color: var(--shiki-color-text)">);</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--text)</span><span style="color: var(--shiki-color-text)">;</span></span>
@@ -293,7 +303,7 @@
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>For the cherry on top, if the browser understands relative color syntax, then create a new semi-transparent color from the contrasting color of <code>--text</code>.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-comment)">/* if relative color syntax is supported */</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-comment)">/* if relative color syntax is supported */</span></span>
 <span class="line"><span style="color: var(--shiki-token-keyword)">@supports</span><span style="color: var(--shiki-color-text)"> (</span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(from red h s l)</span><span style="color: var(--shiki-color-text)">) {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-comment)">/* pick either black or white </span></span>
@@ -304,7 +314,7 @@
 <span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
 </code></pre>
 <p>All of it together:</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@layer</span><span style="color: var(--shiki-color-text)"> demo {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@layer</span><span style="color: var(--shiki-color-text)"> demo {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-string-expression)">section</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">    --bg</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(</span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--hue) 50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  }</span></span>
@@ -433,7 +443,7 @@
           <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/hsl-rainbow.jpg" alt="All colors of the rainbow in a gradient from left to right." height="628"  width="3180" />
         <p><strong>CSS color tip!</strong></p>
 <p>Need a <a href="https://codepen.io/argyleink/pen/yLqREaq">rainbow gradient</a>? Let <code>&lt;hue-interpolation&gt;</code> do the work.</p>
-<pre><code class="language-css"><pre class="shiki" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.vibrant-rainbow</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.vibrant-rainbow</span><span style="color: var(--shiki-color-text)"> {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">linear-gradient</span><span style="color: var(--shiki-token-constant)">(</span></span>
 <span class="line"><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-keyword)">to</span><span style="color: var(--shiki-token-constant)"> right </span></span>
 <span class="line"><span style="color: var(--shiki-token-constant)">    in hsl      </span><span style="color: var(--shiki-token-comment)">/* vibrant gradient HSL colorspace */</span></span>
@@ -451,23 +461,6 @@
             <pubDate>Tue, 31 Jan 2023 20:45:11 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/hsl-rainbow.jpg" length="0" type="image/jpeg"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/hsl-rainbow.jpg"/>
-        </item>
-        <item>
-            <title><![CDATA[Learn About Color Mix]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/color-mix.png" alt="Two color panels are shown on top with the result of their mix, and a code snippet, underneath." height="1082"  width="2316" />
-        <p><strong>CSS color-mix()</strong></p>
-<p>I&#39;ve got a new post on <a href="https://developer.chrome.com/">Chrome Developers</a> with everything you need to know.</p>
-<p>📝 <a href="https://developer.chrome.com/blog/css-color-mix/">Check it out!</a></p>
-]]></description>
-            <link>https://nerdy.dev/learn-about-color-mix?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/learn-about-color-mix?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
-            <pubDate>Mon, 30 Jan 2023 16:39:43 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/color-mix.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/color-mix.png"/>
         </item>
     </channel>
 </rss>

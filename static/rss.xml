@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 19 Feb 2023 05:06:12 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 21 Feb 2023 04:42:56 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,21 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Out To Nature 2023]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/tennessee-2023.jpg" alt="some title" height="1280"  width="1920" />
+        <p>afk.</p>
+]]></description>
+            <link>https://nerdy.dev/out-to-nature-2023?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/out-to-nature-2023?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[media]]></category>
+            <dc:creator><![CDATA[Web Master@admin]]></dc:creator>
+            <pubDate>Tue, 21 Feb 2023 04:40:05 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/tennessee-2023.jpg" length="0" type="image/jpeg"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/tennessee-2023.jpg"/>
+        </item>
         <item>
             <title><![CDATA[Conic gradient Android spinner]]></title>
             <description><![CDATA[
@@ -513,53 +528,6 @@
             <pubDate>Thu, 02 Feb 2023 17:07:46 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-hd-color.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-hd-color.png"/>
-        </item>
-        <item>
-            <title><![CDATA[Thinking on GLITCH effects]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-glitch.png" alt="Adam avatar smiling in front of a grungy font with the word CYBERPINK." height="1650"  width="3116" />
-        <p>I&#39;ve seen a lot of rad glitch effects as of late and wanted to share <a href="https://www.youtube.com/watch?v=MR7dClW6iBg&list=PLNYkxOF6rcIAaV1wwI9540OC_3XoIzMjQ">my thinking on how to make the effect</a>.</p>
-
-        <h2>
-          Watch it
-          <a name="watch-it" href="#watch-it">#</a>
-        </h2>
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/MR7dClW6iBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-        <h3>
-          Chapters:
-          <a name="chapters:" href="#chapters:">#</a>
-        </h3>
-       <p>0:00 - Introduction<br>0:38 - Overview<br>2:00 - Debugging Corner<br>3:34 - clip-path grunge<br>4:41 - transform<br>5:55 - clip-path keyframes<br>6:45 - transform keyframes<br>7:50 - HTML<br>8:17 - CSS<br>9:56 - JS<br>12:46 - Debugging Keyframes<br>13:13 - Outro  </p>
-
-        <h2>
-          Try it
-          <a name="try-it" href="#try-it">#</a>
-        </h2>
-       <p><a href="https://gui-challenges.web.app/glitch/dist/">Checkout the demo</a> which has a generator for grungy <code>clip-path</code> <code>polygon()</code>&#39;s!</p>
-<p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,q_auto/argyleink/gui-glitch-preview.mp4 
-            width="1920" 
-            height="1082"
-            alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/gui-glitch-preview.jpg"
-            controls 
-            loop
-            muted 
-            playsinline 
-            allowFullScreen
-          /></p>
-<p>Also, see the skull icon in the top left of this page? It&#39;s totally using the technique from this challenge 🤘🏻💀</p>
-]]></description>
-            <link>https://nerdy.dev/thinking-on-ways-to-solve-glitch-effects?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/thinking-on-ways-to-solve-glitch-effects?utm_source=rss</guid>
-            <category><![CDATA[blog]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[Adam@GUIchallenges]]></dc:creator>
-            <pubDate>Wed, 01 Feb 2023 18:29:23 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-glitch.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-glitch.png"/>
         </item>
     </channel>
 </rss>

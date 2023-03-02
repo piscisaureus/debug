@@ -81,6 +81,7 @@
     font-size: var(--font-size-4);
     margin-block: var(--size-3) calc(var(--size-2) * -1);
     grid-column: -1 / 1;
+    text-wrap: balance;
   }
 
   & h3 {

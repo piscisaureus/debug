@@ -9,8 +9,8 @@
     "@preact/signals": "https://esm.sh/*@preact/signals@1.0.3",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.0.1",
     "open-props": "https://unpkg.com/open-props/dist/open-props.module.js",
-    "date-fns": "https://esm.sh/date-fns",
-    "date-fns/": "https://esm.sh/date-fns/",
+    "date-fns": "https://unpkg.com/date-fns",
+    "date-fns/": "https://unpkg.com/date-fns/",
     "~/": "./"
   }
 }

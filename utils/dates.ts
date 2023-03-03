@@ -1,5 +1,5 @@
-import { formatDistance, isToday } from 'https://esm.sh/date-fns'
-import * as Locales from 'https://esm.sh/date-fns/locale'
+import { formatDistance, isToday } from 'date-fns'
+import * as Locales from 'date-fns/locale'
 import { getLocale } from '~/utils/locale.ts'
 
 export function relDate(date:Date) {

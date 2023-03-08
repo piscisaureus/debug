@@ -83,6 +83,10 @@
     justify-self: center;
   }
 
+  & code {
+    font-size: max(1em, var(--font-size-1));
+  }
+
   & pre {
     max-inline-size: 100%;
   }

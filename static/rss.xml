@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 08 Mar 2023 17:09:53 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Mar 2023 17:10:50 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -36,6 +36,112 @@
             <pubDate>Wed, 08 Mar 2023 17:07:30 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-nesting-on-dcc.jpg" length="0" type="image/jpeg"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-nesting-on-dcc.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Stable Diffusion Gui Challenges Skull]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-challenges-1.png" alt="slightly twisted and dripping with evil" height="512"  width="512" />
+        <p>hehe</p>
+]]></description>
+            <link>https://nerdy.dev/stable-diffusion-gui-challenges-skull?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/stable-diffusion-gui-challenges-skull?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[media]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Wed, 08 Mar 2023 05:23:18 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-challenges-1.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-challenges-1.png"/>
+        </item>
+        <item>
+            <title><![CDATA[Deno And Dependencies]]></title>
+            <description><![CDATA[<p><a href="https://deno.land/">Deno</a> &amp; <a href="https://fresh.deno.dev/">Fresh</a> have been rad.<br>Same goes for <a href="https://deno.com/deploy">Deploy</a>.</p>
+<p><strong>but…</strong></p>
+<p>95% of the issues have been deps.</p>
+<p>I have deps on <a href="npmjs.com/">NPM</a>, <a href="https://deno.land/">deno.land</a>, <a href="https://esm.sh/">esm.sh</a>, and <a href="https://unpkg.com/">unpkg</a>…  if any of these services hiccup, and I try and build; builds fail.</p>
+<p>No single service can serve all the modules I need, and I don&#39;t need that many </p>
+<p><span style="font-size: 4rem">💩🌈</span></p>
+]]></description>
+            <link>https://nerdy.dev/deno-and-dependencies?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/deno-and-dependencies?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <dc:creator><![CDATA[Web Master@admin]]></dc:creator>
+            <pubDate>Wed, 08 Mar 2023 04:34:39 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[A use case for CSS overflow-clip-margin, nested border radii]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/nested-border-radius.png" alt="Text emphasized alt text example" height="1124"  width="2976" />
+        <p>With a <a href="https://twitter.com/lilykonings/status/1567317037126680576">mega viral tweet</a> on nesting border radii and <a href="https://twitter.com/piccalilli_/status/1630889802059874310">Andy mentioning it as well</a>, I felt I should blog about my thoughts real quick! Here&#39;s one of the things I learned after <a href="https://github.com/w3c/csswg-drafts/issues/7707">requesting CSS get a nice way to draw nested radii</a>:</p>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.the-trick-tldr</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">overflow</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">clip</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">overflow-clip-margin</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">content-box</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p>If you&#39;re like me, you saw that and said…</p>
+<p><img loading="lazy" src="https://media.giphy.com/media/kc0kqKNFu7v35gPkwB/giphy.gif" alt="" title="null" /></p>
+
+        <h2>
+          The prob
+          <a name="the-prob" href="#the-prob">#</a>
+        </h2>
+       <p><strong>Nested border curves.</strong></p>
+<p>When you&#39;ve got a rounded card with a rounded button inside, or a rounded footer inside a rounded section, you may not have noticed, but there&#39;s a wobble in there.</p>
+<p>See the nested radii on the left here 🙈,<br>vs the radii on the right ✅:</p>
+<p><img loading="lazy" src="https://user-images.githubusercontent.com/1134620/188928131-74bfa790-f31d-49c8-95b9-5567af367b51.png" alt="" title="Corners compared, one is clearly concentric " /></p>
+<p>Click those tweets or read <a href="https://github.com/w3c/csswg-drafts/issues/7707">the CSSWG proposal</a> for more about the problem space and calculations for solutions.</p>
+
+        <h2>
+          Using overflow-clip-margin to solve it
+          <a name="using-overflow-clip-margin-to-solve-it" href="#using-overflow-clip-margin-to-solve-it">#</a>
+        </h2>
+       <p>In the comments of the CSSWG issue, <a href="https://github.com/Loirooriol">Oriol Brufau</a> politely <a href="https://github.com/w3c/csswg-drafts/issues/7707#issuecomment-1239884828">mentions</a> using <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow"><code>overflow</code></a> on the <code>content-box</code> with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-clip-margin"><code>overflow-clip-margin</code></a>. And it works great, but <a href="https://caniuse.com/mdn-css_properties_overflow-clip-margin">Caniuse</a> shows you how it&#39;s not really viable yet:</p>
+<p><img 
+            loading="lazy" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/argyleink/overflow-clip-margin.png" 
+            alt="" 
+            title="Alt " 
+            decoding="async"
+            width="2276" 
+            height="504"
+          /></p>
+<p>tldr;</p>
+<ul>
+<li>No Safari</li>
+<li>Firefox doesn&#39;t support the <code>content-box</code> value</li>
+<li>… Chrome only.</li>
+</ul>
+
+        <h2>
+          Try yourself
+          <a name="try-yourself" href="#try-yourself">#</a>
+        </h2>
+       <p>Here&#39;s <a href="https://codepen.io/argyleink/embed/preview/mdGMqOJ">a Codepen</a> where I show the problem space and offer a custom property and <code>overflow-clip-margin</code> solution, for testing and comparing.</p>
+<p>
+          <iframe 
+            class="codepen-embed" 
+            scrolling="no" 
+            title="null" 
+            src="https://codepen.io/argyleink/embed/preview/mdGMqOJ?default-tab=result&editable=true&theme-id=43079" 
+            frameborder="no" 
+            loading="lazy" 
+            allowtransparency="true" 
+            allowfullscreen="true"
+          >
+            See the Pen <a href="https://codepen.io/argyleink/embed/preview/mdGMqOJ">
+            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        </p>
+<p>It&#39;s totally worth opening in a tab in Chrome and inspecting that card for it&#39;s funky coo <code>content-box</code> <code>overflow: clip</code> solution, and kickin the tires 🤓</p>
+]]></description>
+            <link>https://nerdy.dev/perfect-nested-radius-with-overflow-clip-margin?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/perfect-nested-radius-with-overflow-clip-margin?utm_source=rss</guid>
+            <category><![CDATA[blog]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Tue, 07 Mar 2023 04:25:16 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/nested-border-radius.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/nested-border-radius.png"/>
         </item>
         <item>
             <title><![CDATA[I Cant Keep Up Right Now With 2023 Css]]></title>
@@ -305,185 +411,6 @@
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
             <pubDate>Thu, 16 Feb 2023 15:52:44 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Circular gradient stroke chart]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/conic-chart-hero.png" alt="Three example states of the chart" height="441"  width="1179" />
-        <p>CSS masks and gradients are so rad, there&#39;s so much you can do with them.</p>
-<p>This trick uses two gradients;</p>
-<ol>
-<li>a radial gradient mask, hiding the inner part of the conic</li>
-<li>a conic gradient, visible up to the angle, then transparent</li>
-</ol>
-<p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,q_auto/argyleink/conic-chart.mp4 
-            width="492" 
-            height="492"
-            alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/conic-chart.jpg"
-            controls 
-            loop
-            muted 
-            playsinline 
-            allowFullScreen
-          /></p>
-
-        <h2>
-          Let&#39;s see some code
-          <a name="let&#39;s-see-some-code" href="#let&#39;s-see-some-code">#</a>
-        </h2>
-       <p>Start with making a square, so it&#39;s easy to make a circle.</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">#pie</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">aspect-ratio</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">inline-size</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">50</span><span style="color: var(--shiki-token-keyword)">vmin</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">border-radius</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>Now add the mask and conic gradient. Comments are inline as to why or what each part is doing.</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">#pie</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --ng</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">120</span><span style="color: var(--shiki-token-keyword)">deg</span><span style="color: var(--shiki-color-text)">; </span><span style="color: var(--shiki-token-comment)">/* can be set via slider */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --thickness</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">3</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --_inner</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">calc</span><span style="color: var(--shiki-token-constant)">(70</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-keyword)">-</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--thickness))</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --_outer</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">calc</span><span style="color: var(--shiki-token-constant)">(</span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--_inner) </span><span style="color: var(--shiki-token-keyword)">+</span><span style="color: var(--shiki-token-constant)"> 1</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">; </span><span style="color: var(--shiki-token-comment)">/* fixes aliasing */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* hides the inner part of the conic gradient/element */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">mask</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">radial-gradient</span><span style="color: var(--shiki-token-constant)">(circle</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> #0000 </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--_inner)</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> #000 </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--_outer))</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* gradient up to --ng, transparent after --ng */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background-image</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">conic-gradient</span><span style="color: var(--shiki-token-constant)">(deeppink</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> cyan </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--ng)</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> #0000 0)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>The conic gives us the smooth gradient and the angle, while the mask and overall element shape, isolate a thin line of visibility into the conic gradient, completing the illusion.</p>
-<p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,q_auto/argyleink/conic-chart-devtools.mp4 
-            width="1190" 
-            height="668"
-            alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/conic-chart-devtools.jpg"
-            controls 
-            loop
-            muted 
-            playsinline 
-            allowFullScreen
-          /></p>
-
-        <h2>
-          Try it
-          <a name="try-it" href="#try-it">#</a>
-        </h2>
-       <p>The Codepen hooks up a slider to the angle and some text, to help debug and control the effect.</p>
-<p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/MWBNZbO?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/MWBNZbO">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-]]></description>
-            <link>https://nerdy.dev/gradient-outline-circular-chart?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/gradient-outline-circular-chart?utm_source=rss</guid>
-            <category><![CDATA[blog]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
-            <pubDate>Sun, 12 Feb 2023 01:02:12 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/conic-chart-hero.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/conic-chart-hero.png"/>
-        </item>
-        <item>
-            <title><![CDATA[Night Light Dance Party]]></title>
-            <description><![CDATA[
-          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/kids-party.mp4" alt="Kids sped up night bedroom dance party" height="720"  width="1280" />
-        <p>Gettin the wiggles out before bedtime;<br>kids night club style.</p>
-]]></description>
-            <link>https://nerdy.dev/night-light-dance-party?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/night-light-dance-party?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <dc:creator><![CDATA[Dad@pops]]></dc:creator>
-            <pubDate>Sat, 11 Feb 2023 23:36:33 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/kids-party.mp4" length="0" type="video/mp4"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/kids-party.mp4"/>
-        </item>
-        <item>
-            <title><![CDATA[Another rad use for the line-height unit]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/lh-unit-half-leading.png" alt="Code snippet titled, inline padding like half leading" height="578"  width="1088" />
-        <p>CSS has a unit that represents the current <code>line-height</code> of it&#39;s context. How rad is that. I&#39;ve been having fun finding use cases for this… <code>lh</code>.</p>
-
-        <h2>
-          peep it
-          <a name="peep-it" href="#peep-it">#</a>
-        </h2>
-       <p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/ExpBYVP?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/ExpBYVP">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-
-        <h2>
-          the concept
-          <a name="the-concept" href="#the-concept">#</a>
-        </h2>
-       <p>Any <code>line-height</code> value above unitless <code>1</code> will get distributed to the line box as &quot;half leading&quot;. Think of it like equal <code>block</code> spacing distribution. Well now we have <code>lh</code> for use in <code>calc()</code> and to perhaps distribute equal <code>inline</code> spacing.</p>
-<p>That led me to this rad use case for a tiny tag component thingy.</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.tag</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">padding-inline</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">.25lh</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>Which <code>.25lh</code> was because the element already had <code>line-height</code> set to <code>1.5</code>. </p>
-<p>Might as well turn it into a <code>calc()</code> because it matches the intent and makes the computer do the math, plus add the <code>line-height</code> to the demo so it&#39;s all there at a glance:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.tag</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">line-height</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1.5</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">padding-inline</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">calc</span><span style="color: var(--shiki-token-constant)">(.5lh </span><span style="color: var(--shiki-token-keyword)">/</span><span style="color: var(--shiki-token-constant)"> 2)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>And here&#39;s the developer&#39;s cut:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.tag</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* .5 extra leading */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">line-height</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1.5</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* we can divvy equal spacing to the inline edges */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* complimenting extra height half leading */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* making even spacing all around */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">padding-inline</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">calc</span><span style="color: var(--shiki-token-constant)">(.5lh </span><span style="color: var(--shiki-token-keyword)">/</span><span style="color: var(--shiki-token-constant)"> 2)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-
-        <h2>
-          outro
-          <a name="outro" href="#outro">#</a>
-        </h2>
-       <p>This isn&#39;t <em>that</em> cool, but also like, <strong>I thought it was</strong> cool. </p>
-]]></description>
-            <link>https://nerdy.dev/another-rad-use-for-the-line-height-unit?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/another-rad-use-for-the-line-height-unit?utm_source=rss</guid>
-            <category><![CDATA[blog]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Thu, 09 Feb 2023 05:40:47 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/lh-unit-half-leading.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/lh-unit-half-leading.png"/>
         </item>
     </channel>
 </rss>

@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 08 Mar 2023 04:46:39 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Mar 2023 04:51:36 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -29,7 +29,7 @@
 <p>95% of the issues have been deps.</p>
 <p>I have deps on <a href="npmjs.com/">NPM</a>, <a href="https://deno.land/">deno.land</a>, <a href="https://esm.sh/">esm.sh</a>, and <a href="https://unpkg.com/">unpkg</a>…  if any of these services hiccup, and I try and build; builds fail.</p>
 <p>No single service can serve all the modules I need, and I don&#39;t need that many </p>
-<p>💩🌈</p>
+<p><span style="font-size: 4rem">💩🌈</span></p>
 ]]></description>
             <link>https://nerdy.dev/deno-and-dependencies?utm_source=rss</link>
             <guid isPermaLink="true">https://nerdy.dev/deno-and-dependencies?utm_source=rss</guid>

@@ -15,4 +15,4 @@ I have deps on [NPM](npmjs.com/), [deno.land](https://deno.land/), [esm.sh](http
 
 No single service can serve all the modules I need, and I don't need that many 
 
-💩🌈
+<span style="font-size: 4rem">💩🌈</span>

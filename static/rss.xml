@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 07 Mar 2023 05:23:45 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Mar 2023 04:46:39 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,21 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Deno And Dependencies]]></title>
+            <description><![CDATA[<p><a href="https://deno.land/">Deno</a> &amp; <a href="https://fresh.deno.dev/">Fresh</a> have been rad.<br>Same goes for <a href="https://deno.com/deploy">Deploy</a>.</p>
+<p><strong>but…</strong></p>
+<p>95% of the issues have been deps.</p>
+<p>I have deps on <a href="npmjs.com/">NPM</a>, <a href="https://deno.land/">deno.land</a>, <a href="https://esm.sh/">esm.sh</a>, and <a href="https://unpkg.com/">unpkg</a>…  if any of these services hiccup, and I try and build; builds fail.</p>
+<p>No single service can serve all the modules I need, and I don&#39;t need that many </p>
+<p>💩🌈</p>
+]]></description>
+            <link>https://nerdy.dev/deno-and-dependencies?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/deno-and-dependencies?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <dc:creator><![CDATA[Web Master@admin]]></dc:creator>
+            <pubDate>Wed, 08 Mar 2023 04:34:39 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[A use case for CSS overflow-clip-margin, nested border radii]]></title>
             <description><![CDATA[
@@ -474,77 +489,6 @@
             <pubDate>Sat, 11 Feb 2023 23:36:33 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/kids-party.mp4" length="0" type="video/mp4"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/kids-party.mp4"/>
-        </item>
-        <item>
-            <title><![CDATA[Another rad use for the line-height unit]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/lh-unit-half-leading.png" alt="Code snippet titled, inline padding like half leading" height="578"  width="1088" />
-        <p>CSS has a unit that represents the current <code>line-height</code> of it&#39;s context. How rad is that. I&#39;ve been having fun finding use cases for this… <code>lh</code>.</p>
-
-        <h2>
-          peep it
-          <a name="peep-it" href="#peep-it">#</a>
-        </h2>
-       <p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/ExpBYVP?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/ExpBYVP">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-
-        <h2>
-          the concept
-          <a name="the-concept" href="#the-concept">#</a>
-        </h2>
-       <p>Any <code>line-height</code> value above unitless <code>1</code> will get distributed to the line box as &quot;half leading&quot;. Think of it like equal <code>block</code> spacing distribution. Well now we have <code>lh</code> for use in <code>calc()</code> and to perhaps distribute equal <code>inline</code> spacing.</p>
-<p>That led me to this rad use case for a tiny tag component thingy.</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.tag</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">padding-inline</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">.25lh</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>Which <code>.25lh</code> was because the element already had <code>line-height</code> set to <code>1.5</code>. </p>
-<p>Might as well turn it into a <code>calc()</code> because it matches the intent and makes the computer do the math, plus add the <code>line-height</code> to the demo so it&#39;s all there at a glance:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.tag</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">line-height</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1.5</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">padding-inline</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">calc</span><span style="color: var(--shiki-token-constant)">(.5lh </span><span style="color: var(--shiki-token-keyword)">/</span><span style="color: var(--shiki-token-constant)"> 2)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>And here&#39;s the developer&#39;s cut:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.tag</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* .5 extra leading */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">line-height</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1.5</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* we can divvy equal spacing to the inline edges */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* complimenting extra height half leading */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* making even spacing all around */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">padding-inline</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">calc</span><span style="color: var(--shiki-token-constant)">(.5lh </span><span style="color: var(--shiki-token-keyword)">/</span><span style="color: var(--shiki-token-constant)"> 2)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-
-        <h2>
-          outro
-          <a name="outro" href="#outro">#</a>
-        </h2>
-       <p>This isn&#39;t <em>that</em> cool, but also like, <strong>I thought it was</strong> cool. </p>
-]]></description>
-            <link>https://nerdy.dev/another-rad-use-for-the-line-height-unit?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/another-rad-use-for-the-line-height-unit?utm_source=rss</guid>
-            <category><![CDATA[blog]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Thu, 09 Feb 2023 05:40:47 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/lh-unit-half-leading.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/lh-unit-half-leading.png"/>
         </item>
     </channel>
 </rss>

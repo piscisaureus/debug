@@ -6,7 +6,7 @@ media:
   - src: argyleink/css-nesting-on-dcc.jpg
     alt: Two colorful origami cranes
     width: 2400
-    height: 904
+    height: 904 
 tags: 
   - css
 ---

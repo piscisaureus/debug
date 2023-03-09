@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 09 Mar 2023 18:10:16 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 09 Mar 2023 19:34:55 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,26 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Thinking On Ways To Solve Switch Groups]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-switch-group.jpg" alt="GUI Challenges character next to" height="720"  width="1280" />
+        <p><a href="https://www.youtube.com/watch?v=l7kmBCRqfLw">Thinking on ways to solve <strong>Switch Groups</strong></a>  </p>
+<p>In this <a href="https://goo.gle/GUIchallenges">GUI Challenge</a>, 
+<a href="https://www.youtube.com/channel/UCBGr3ZMcV5jke40_Wrv3fNA">I</a> show how to take a fieldset packed with a radio group, and turn it into a switch group that controls text alignment.</p>
+<p><a href="https://gui-challenges.web.app/switch-group/dist/">demo</a> · 
+<a href="https://github.com/argyleink/gui-challenges">source</a></p>
+]]></description>
+            <link>https://nerdy.dev/thinking-on-ways-to-solve-switch-groups?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/thinking-on-ways-to-solve-switch-groups?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[media]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[Adam@GUIchallenges]]></dc:creator>
+            <pubDate>Thu, 09 Mar 2023 19:34:47 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-switch-group.jpg" length="0" type="image/jpeg"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-switch-group.jpg"/>
+        </item>
         <item>
             <title><![CDATA[Use color-mix() to give opacity to opaque colors]]></title>
             <description><![CDATA[
@@ -476,16 +496,6 @@
             <pubDate>Sun, 19 Feb 2023 05:03:10 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/conic-spinner-hero-bg.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/conic-spinner-hero-bg.png"/>
-        </item>
-        <item>
-            <title><![CDATA[Turned 37]]></title>
-            <description><![CDATA[<p>37 today. Maybe I&#39;ll upgrade this 2011 Mac Air.</p>
-]]></description>
-            <link>https://nerdy.dev/turned-37?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/turned-37?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <dc:creator><![CDATA[Dad@pops]]></dc:creator>
-            <pubDate>Fri, 17 Feb 2023 16:20:56 GMT</pubDate>
         </item>
     </channel>
 </rss>

@@ -10,7 +10,7 @@ hero:
   width: 2198
   height: 812
 tags: 
-  - CSS
+  - css
 ---
 
 CSS [trig functions](https://web.dev/css-trig-functions/ ) can do some neat layout stuff, like circles! In this bite size blog post I quickly share how I turned the cyclical roving tab index feature of a radio group, into a circle so it can cycle seamlessly.

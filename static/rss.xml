@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 10 Mar 2023 23:52:17 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 15 Mar 2023 14:53:04 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,28 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[6 Css Snippets Every Front End Developer Should Know In 2023]]></title>
+            <description><![CDATA[<p>🆕 post on <a href="https://web.dev/blog/">web.dev</a></p>
+<p><a href="https://web.dev/6-css-snippets-every-front-end-developer-should-know-in-2023/">6 CSS snippets every front-end developer should know in 2023</a></p>
+<p>Toolbelt worthy, powerful, and stable CSS you can use today.</p>
+<p><img 
+            loading="lazy" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/w_1024/argyleink/tools-on-bench.png" 
+            alt="" 
+            title="A wooden table with a hammer and a wrench neatly placed on it. " 
+            decoding="async"
+            width="3200" 
+            height="960"
+          /></p>
+]]></description>
+            <link>https://nerdy.dev/6-css-snippets-every-front-end-developer-should-know-in-2023?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/6-css-snippets-every-front-end-developer-should-know-in-2023?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Wed, 15 Mar 2023 14:52:59 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Cyclical keyboard UX with a radio group and CSS trig functions]]></title>
             <description><![CDATA[
@@ -120,7 +142,7 @@
             <link>https://nerdy.dev/cyclical-radio-group-with-trig-functions-and-grid?utm_source=rss</link>
             <guid isPermaLink="true">https://nerdy.dev/cyclical-radio-group-with-trig-functions-and-grid?utm_source=rss</guid>
             <category><![CDATA[blog]]></category>
-            <category><![CDATA[CSS]]></category>
+            <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
             <pubDate>Fri, 10 Mar 2023 23:44:41 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cyclical-radio-cover.png" length="0" type="image/png"/>
@@ -461,21 +483,6 @@
             <pubDate>Sat, 25 Feb 2023 06:03:35 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/retro-wave.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/retro-wave.png"/>
-        </item>
-        <item>
-            <title><![CDATA[Out To Nature 2023]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/tennessee-2023.jpg" alt="some title" height="1280"  width="1920" />
-        <p>afk.</p>
-]]></description>
-            <link>https://nerdy.dev/out-to-nature-2023?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/out-to-nature-2023?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[media]]></category>
-            <dc:creator><![CDATA[Web Master@admin]]></dc:creator>
-            <pubDate>Tue, 21 Feb 2023 04:40:05 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/tennessee-2023.jpg" length="0" type="image/jpeg"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/tennessee-2023.jpg"/>
         </item>
     </channel>
 </rss>

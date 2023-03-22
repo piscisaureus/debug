@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 15 Mar 2023 14:53:04 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 22 Mar 2023 16:35:15 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,24 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Visbug Award Top Favorite Of 2022]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/visbug-favorites-award.jpg" alt="Hefty Chrome logo inside an acryllic trophy square." height="4032"  width="3024" />
+        <p><a href="https://twitter.com/search?q=%23visbug&src=typed_query">#VisBug</a> won an award 🤯   </p>
+<p><a href="https://chrome.google.com/webstore/detail/visbug/cdockenadnadldjbbgcallicgledbeoc?hl=en">Chrome Web Store</a><br><strong>Favorite of 2022</strong>  </p>
+<p>This award is legit! Heavy, clever and minimal. Truly a trophy I&#39;ll keep around for a long time!</p>
+<p>Thanks everyone for the support!</p>
+]]></description>
+            <link>https://nerdy.dev/visbug-award-top-favorite-of-2022?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/visbug-award-top-favorite-of-2022?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[media]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Wed, 22 Mar 2023 16:33:40 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/visbug-favorites-award.jpg" length="0" type="image/jpeg"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/visbug-favorites-award.jpg"/>
+        </item>
         <item>
             <title><![CDATA[6 Css Snippets Every Front End Developer Should Know In 2023]]></title>
             <description><![CDATA[<p>🆕 post on <a href="https://web.dev/blog/">web.dev</a></p>
@@ -406,83 +424,6 @@
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
             <pubDate>Fri, 03 Mar 2023 15:57:55 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Retro Wave Gradient]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/retro-wave.png" alt="A orange and purple gradient sun with a striped mask on the bottom half" height="1104"  width="2520" />
-        <p>The mask for this circle gradient is a set of gradient hard lines. As the visible area increases from the bottom, the 7 lines of invisible area decreases. </p>
-<p>A receding hard line (like receding hair line.. get it‽)</p>
-<p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/XWPjzgR?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/XWPjzgR">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-<p>The <a href="#">#CSS</a> <strong>Math and Magic</strong> ™️ is that hard lines are made easy (IMO at least) with gradient <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient#:~:text=the%20gradient%27s%20axis).-,%3Ccolor%2Dhint%3E,-An%20interpolation%20hint">color hints</a>. And the visibility and invisibility math is relative (changes of ±1%) but exist along an absolute percentage length.</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.retro-wave</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--gradient-1)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">mask</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">linear-gradient</span><span style="color: var(--shiki-token-constant)">(</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-keyword)">to</span><span style="color: var(--shiki-token-constant)"> top</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    #000 1</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)">     </span><span style="color: var(--shiki-token-comment)">/* 1% visible */</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)">          </span><span style="color: var(--shiki-token-comment)">/* hard line */</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    #0000 8</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-comment)">/* 7% masked */</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    #000 10</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-comment)">/* 2% visible */</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    #0000 16</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)">   </span><span style="color: var(--shiki-token-comment)">/* 6% masked */</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    #000 19</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-comment)">/* 3% visible */</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    #0000 24</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)">   </span><span style="color: var(--shiki-token-comment)">/* 5% masked */</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    #000 28</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-comment)">/* 4% visible */</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    #0000 32</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)">   </span><span style="color: var(--shiki-token-comment)">/* 4% masked */</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    #000 37</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-comment)">/* 5% visible */</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    #0000 40</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)">   </span><span style="color: var(--shiki-token-comment)">/* 3% masked */</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    #000 46</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-comment)">/* 6% visible */</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    #0000 48</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)">   </span><span style="color: var(--shiki-token-comment)">/* 2% masked */</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    #000 55</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-comment)">/* 7% visible */</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    #0000 56</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)">   </span><span style="color: var(--shiki-token-comment)">/* 1% invisible */</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    #000 57</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">     </span><span style="color: var(--shiki-token-comment)">/* visible til end */</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">  )</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>Def loop worthy right? 
-<small>Took longer to write the comments then it did the code.</small></p>
-<p>See how those color hints (aka &quot;transition&quot; hints) bottom out the fade between the colors black and transparent? Then each color just needs to consider how how long it is. I felt it was helpful to think of it like that at least.</p>
-<p>How would you do this?</p>
-<p>Here&#39;s the snippet unexpanded, <strong>fer the takin&#39;!</strong></p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">mask</span><span style="color: var(--shiki-color-text)">: linear-gradient(to top</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> #000 1%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> 0%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> #0000 8%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> 0%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> #000 10%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> 0%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> #0000 16%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> 0%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> #000 19%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> 0%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> #0000 24%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> 0%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> #000 28%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> 0%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> #0000 32%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> 0%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> #000 37%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> 0%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> #0000 40%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> 0%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> #000 46%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> 0%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> #0000 48%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> 0%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> #000 55%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> 0%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> #0000 56%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> 0%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> #000 57%);</span></span></code></pre>
-</code></pre>
-]]></description>
-            <link>https://nerdy.dev/retro-wave-sun?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/retro-wave-sun?utm_source=rss</guid>
-            <category><![CDATA[blog]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Sat, 25 Feb 2023 06:03:35 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/retro-wave.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/retro-wave.png"/>
         </item>
     </channel>
 </rss>

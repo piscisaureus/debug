@@ -16,12 +16,12 @@ tags:
 .classic-gradient {
   background-image: 
     linear-gradient(45deg, 
-      #fff, 
-      #000 0% 20%, 
-      #fff 0% 40%, 
-      #000 0% 60%, 
-      #fff 0% 80%, 
-      #000 0% 100%
+      white, 
+      black 0% 20%, 
+      white 0% 40%, 
+      black 0% 60%, 
+      white 0% 80%, 
+      black 0% 100%
     )
   ;
 }

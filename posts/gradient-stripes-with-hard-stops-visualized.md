@@ -12,4 +12,17 @@ tags:
   - color
 ---
 
-😎
+```css
+.classic-gradient {
+  background-image: 
+    linear-gradient(45deg, 
+      #fff, 
+      #000 0% 20%, 
+      #fff 0% 40%, 
+      #000 0% 60%, 
+      #fff 0% 80%, 
+      #000 0% 100%
+    )
+  ;
+}
+```

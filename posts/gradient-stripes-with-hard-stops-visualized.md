@@ -9,7 +9,6 @@ media:
     height: 1132
 tags: 
   - css
-  - color
 ---
 
 ```css

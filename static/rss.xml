@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 05 Apr 2023 03:49:09 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 05 Apr 2023 05:12:59 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -31,7 +31,6 @@
             <guid isPermaLink="true">https://nerdy.dev/hue-light-travel-planet-morph?utm_source=rss</guid>
             <category><![CDATA[note]]></category>
             <category><![CDATA[css]]></category>
-            <category><![CDATA[color]]></category>
             <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
             <pubDate>Wed, 05 Apr 2023 03:49:01 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/hue-travel.mp4" length="0" type="video/mp4"/>
@@ -45,7 +44,6 @@
             <guid isPermaLink="true">https://nerdy.dev/device-width-is-like-device-color-gamut?utm_source=rss</guid>
             <category><![CDATA[note]]></category>
             <category><![CDATA[css]]></category>
-            <category><![CDATA[color]]></category>
             <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
             <pubDate>Wed, 05 Apr 2023 03:36:31 GMT</pubDate>
         </item>
@@ -71,7 +69,6 @@
             <guid isPermaLink="true">https://nerdy.dev/gradient-stripes-with-hard-stops-visualized?utm_source=rss</guid>
             <category><![CDATA[note]]></category>
             <category><![CDATA[css]]></category>
-            <category><![CDATA[color]]></category>
             <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
             <pubDate>Tue, 04 Apr 2023 04:09:00 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-stripes.mp4" length="0" type="video/mp4"/>
@@ -300,6 +297,24 @@
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/oklch-palette.png"/>
         </item>
         <item>
+            <title><![CDATA[On The Podrocket Pod Again]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/podrocket-grab-bag.png" alt="Me, Stacy and Stephanie on a title card with the show name on it and the PodRocket logo." height="487"  width="730" />
+        <p>Was on the <a href="https://twitter.com/PodRocketpod">@PodRocketPod</a>!</p>
+<p>Me, <a href="https://twitter.com/5t3ph">Stephanie Eckles</a>, and <a href="https://twitter.com/StacyKvernmo">Stacy Kvernmo</a> team up and answer questions about UI and UX.</p>
+<p>🎶 <a href="https://open.spotify.com/episode/4qeDMbldJjPJ6lmS81Xh05">Listen on Spotify</a></p>
+]]></description>
+            <link>https://nerdy.dev/on-the-podrocket-pod-again?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/on-the-podrocket-pod-again?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <category><![CDATA[media]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Thu, 23 Mar 2023 00:00:00 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/podrocket-grab-bag.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/podrocket-grab-bag.png"/>
+        </item>
+        <item>
             <title><![CDATA[Visbug Award Top Favorite Of 2022]]></title>
             <description><![CDATA[
           <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/visbug-favorites-award.jpg" alt="Hefty Chrome logo inside an acryllic trophy square." height="4032"  width="3024" />
@@ -462,105 +477,6 @@
             <pubDate>Thu, 09 Mar 2023 19:34:47 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-switch-group.jpg" length="0" type="image/jpeg"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-switch-group.jpg"/>
-        </item>
-        <item>
-            <title><![CDATA[Use color-mix() to give opacity to opaque colors]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rgb-color-mix.png" alt="RGB and CMYK mixed with circles" height="1026"  width="3048" />
-        <p>A very common task is to programmatically create non-opaque versions of brand colors. Comes in handy for hover effects, edge highlights, shadows, etc. Here&#39;s one way to achieve that with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix"><code>color-mix()</code></a>.</p>
-<p>This post was prompted by <a href="https://twitter.com/adamwathan">Adam Wathan</a> on <a href="https://twitter.com/adamwathan/status/1633632073012457472">Twitter</a>:</p>
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">For someone smarter than me (<a href="https://twitter.com/argyleink?ref_src=twsrc%5Etfw">@argyleink</a>?) can the new `color-mix()` function be used to adjust the opacity of a color with the right concoction of clever arguments?<br><br>color-mix(something, color-whose-opacity-i-want-to-override, some-way-to-specify-that-opacity)</p>&mdash; Adam Wathan (@adamwathan) <a href="https://twitter.com/adamwathan/status/1633632073012457472?ref_src=twsrc%5Etfw">March 9, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-        <h2>
-          The trick
-          <a name="the-trick" href="#the-trick">#</a>
-        </h2>
-       <p>Ok browser, make red 25% opacity:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.make-transparent</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">color-mix(</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    in oklab</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    red</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    transparent 75</span><span style="color: var(--shiki-token-keyword)">%</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  );</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>To get that result, we mixed a <code>75%</code> transparent hueless color with a fully opaque <code>red</code>, the result is a <code>red</code> at <code>25%</code> opacity. <code>25%</code> because specified in the mix that the <code>transparent</code> color is <code>75%</code> dominant in the mix, leaving a remainder of <code>25%</code> opacity for the <code>red</code> color.</p>
-<p>Also, I chose <code>oklab</code> very specifically here, it gave me the mix I expected. Other color spaces did not. <em>Glad I knew my color spaces.</em></p>
-<p><strong>Here&#39;s another one.</strong></p>
-<p>Make this <code>10%</code> red, even more transparent. In fact, make it half as transparent as it is now.</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.make-more-transparent</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">color-mix(</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    in srgb</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-function)">rgb</span><span style="color: var(--shiki-token-constant)">(255 0 0 / 10</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    transparent 50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-color-text)">)</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  ;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>Result  is <code>rgb(255 0 0 / 5%)</code>. See on <a href="https://codepen.io/argyleink/pen/NWLwNxE">Codepen</a>.</p>
-
-        <h3>
-          Try it
-          <a name="try-it" href="#try-it">#</a>
-        </h3>
-       <p>Chrome Canary, Firefox and Safari Tech Preview have <code>color-mix()</code>, we&#39;ll very likely see it cross browser by summer.</p>
-<p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/yLxPeYj?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/yLxPeYj">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-
-        <h2>
-          The better way
-          <a name="the-better-way" href="#the-better-way">#</a>
-        </h2>
-       <p><a href="https://drafts.csswg.org/css-color-5/#relative-colors">Relative color syntax</a> is much cleaner for this task.</p>
-<p><q>It&#39;s also badass overall. Can&#39;t wait for it.</q></p>
-<p>Make the red 25% opacity:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.make-transparent</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">rgb</span><span style="color: var(--shiki-token-constant)">(from red r g b / 25</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>or the other example, you can either absolutely squash it by just setting it, or you can perform math on it, like cut it in half:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.squash-transparency</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">rgb</span><span style="color: var(--shiki-token-constant)">(from </span><span style="color: var(--shiki-token-function)">rgb</span><span style="color: var(--shiki-token-constant)">(255 0 0 / 10</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">) r g b / 5</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>or</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.cut-transparent-in-half</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">rgb</span><span style="color: var(--shiki-token-constant)">(from </span><span style="color: var(--shiki-token-function)">rgb</span><span style="color: var(--shiki-token-constant)">(255 0 0 / 10</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">) r g b / </span><span style="color: var(--shiki-token-function)">calc</span><span style="color: var(--shiki-token-constant)">(a </span><span style="color: var(--shiki-token-keyword)">/</span><span style="color: var(--shiki-token-constant)"> 2))</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-
-        <h2>
-          Resources
-          <a name="resources" href="#resources">#</a>
-        </h2>
-       <ol>
-<li>Try my color-mix tool at <a href="https://color-mix.style">https://color-mix.style</a></li>
-<li>In depth <code>color-mix()</code> post at <a href="https://developer.chrome.com/blog/css-color-mix/">https://developer.chrome.com/blog/css-color-mix/</a></li>
-<li>Get more familiar with colorspaces at <a href="https://developer.chrome.com/articles/high-definition-css-color-guide/">https://developer.chrome.com/articles/high-definition-css-color-guide/</a></li>
-</ol>
-]]></description>
-            <link>https://nerdy.dev/use-color-mix-to-make-an-opaque-color-transparent?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/use-color-mix-to-make-an-opaque-color-transparent?utm_source=rss</guid>
-            <category><![CDATA[blog]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Thu, 09 Mar 2023 17:41:05 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rgb-color-mix.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rgb-color-mix.png"/>
         </item>
     </channel>
 </rss>

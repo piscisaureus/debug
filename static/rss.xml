@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 05 Apr 2023 05:12:59 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 07 Apr 2023 20:33:21 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,21 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Farthest Corner Visualized]]></title>
+            <description><![CDATA[
+          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/farthest-corner.mp4" alt="Radial gradient moving back and forth changing size as it gets nearer or farther from a corner." height="958"  width="1586" />
+        <p>Multiple hard stops in a radial gradient sized as <code>farthest-corner</code>, this is me changing the <code>x</code> position first from <code>0</code> to <code>-100</code>, then the <code>y</code> in the same manor. </p>
+]]></description>
+            <link>https://nerdy.dev/farthest-corner-visualized?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/farthest-corner-visualized?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Fri, 07 Apr 2023 20:25:23 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/farthest-corner.mp4" length="0" type="video/mp4"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/farthest-corner.mp4"/>
+        </item>
         <item>
             <title><![CDATA[Hue Light Travel Planet Morph]]></title>
             <description><![CDATA[
@@ -457,26 +472,6 @@
             <pubDate>Fri, 10 Mar 2023 23:44:41 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cyclical-radio-cover.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cyclical-radio-cover.png"/>
-        </item>
-        <item>
-            <title><![CDATA[Thinking On Ways To Solve Switch Groups]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-switch-group.jpg" alt="GUI Challenges character next to" height="720"  width="1280" />
-        <p><a href="https://www.youtube.com/watch?v=l7kmBCRqfLw">Thinking on ways to solve <strong>Switch Groups</strong></a>  </p>
-<p>In this <a href="https://goo.gle/GUIchallenges">GUI Challenge</a>, 
-<a href="https://www.youtube.com/channel/UCBGr3ZMcV5jke40_Wrv3fNA">I</a> show how to take a fieldset packed with a radio group, and turn it into a switch group that controls text alignment.</p>
-<p><a href="https://gui-challenges.web.app/switch-group/dist/">demo</a> · 
-<a href="https://github.com/argyleink/gui-challenges">source</a></p>
-]]></description>
-            <link>https://nerdy.dev/thinking-on-ways-to-solve-switch-groups?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/thinking-on-ways-to-solve-switch-groups?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[media]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[Adam@GUIchallenges]]></dc:creator>
-            <pubDate>Thu, 09 Mar 2023 19:34:47 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-switch-group.jpg" length="0" type="image/jpeg"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-switch-group.jpg"/>
         </item>
     </channel>
 </rss>

@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 07 Apr 2023 20:33:21 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 11 Apr 2023 15:45:40 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,22 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Google Io 23 Talk Recorded]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/argyle-23-io.jpg" alt="some title" height="2179"  width="2178" />
+        <p><a href="https://io.google/2023/">Google IO</a> talk <strong>done!</strong></p>
+<p>Success selfie at the 🆕 Seattle office&#39;s <strong>Neon Staircase</strong> 🤘🏻💀</p>
+]]></description>
+            <link>https://nerdy.dev/google-io-23-talk-recorded?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/google-io-23-talk-recorded?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[media]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Tue, 11 Apr 2023 15:39:25 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/argyle-23-io.jpg" length="0" type="image/jpeg"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/argyle-23-io.jpg"/>
+        </item>
         <item>
             <title><![CDATA[Farthest Corner Visualized]]></title>
             <description><![CDATA[
@@ -368,110 +384,6 @@
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
             <pubDate>Wed, 15 Mar 2023 14:52:59 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Cyclical keyboard UX with a radio group and CSS trig functions]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cyclical-radio-cover.png" alt="Screen of the demo" height="812"  width="2198" />
-        <p>CSS <a href="https://web.dev/css-trig-functions/">trig functions</a> can do some neat layout stuff, like circles! In this bite size blog post I quickly share how I turned the cyclical roving tab index feature of a radio group, into a circle so it can cycle seamlessly.</p>
-<p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,q_auto/argyleink/cyclical-radios.mp4 
-            width="1476" 
-            height="1476"
-            alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/cyclical-radios.jpg"
-            controls 
-            loop
-            muted 
-            playsinline 
-            allowFullScreen
-          /></p>
-<p><q class="info">I&#39;m just inside a radio group usin arrow keys.</q></p>
-
-        <h2>
-          The gist
-          <a name="the-gist" href="#the-gist">#</a>
-        </h2>
-       <p>Bramus <a href="https://web.dev/css-trig-functions/">wrote a great post</a> on the new <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/sin">CSS trigonometry functions</a>, and it got me thinking. Those thoughts led to <a href="https://codepen.io/argyleink/pen/OJozxrB">this demo</a>, where I wanted the infinite cycling of focus of a radio group, to tail call itself via a circle layout.</p>
-<pre><code class="language-html"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">&lt;</span><span style="color: var(--shiki-token-string-expression)">fieldset</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">style</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;--sibling-count: 8&quot;</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  &lt;</span><span style="color: var(--shiki-token-string-expression)">input</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">style</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;--sibling-index: 1&quot;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">type</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;radio&quot;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">name</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;cyclical-group&quot;</span><span style="color: var(--shiki-color-text)"> checked&gt;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  &lt;</span><span style="color: var(--shiki-token-string-expression)">input</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">style</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;--sibling-index: 2&quot;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">type</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;radio&quot;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">name</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;cyclical-group&quot;</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  &lt;</span><span style="color: var(--shiki-token-string-expression)">input</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">style</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;--sibling-index: 3&quot;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">type</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;radio&quot;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">name</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;cyclical-group&quot;</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  &lt;</span><span style="color: var(--shiki-token-string-expression)">input</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">style</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;--sibling-index: 4&quot;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">type</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;radio&quot;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">name</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;cyclical-group&quot;</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  &lt;</span><span style="color: var(--shiki-token-string-expression)">input</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">style</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;--sibling-index: 5&quot;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">type</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;radio&quot;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">name</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;cyclical-group&quot;</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  &lt;</span><span style="color: var(--shiki-token-string-expression)">input</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">style</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;--sibling-index: 6&quot;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">type</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;radio&quot;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">name</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;cyclical-group&quot;</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  &lt;</span><span style="color: var(--shiki-token-string-expression)">input</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">style</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;--sibling-index: 7&quot;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">type</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;radio&quot;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">name</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;cyclical-group&quot;</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  &lt;</span><span style="color: var(--shiki-token-string-expression)">input</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">style</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;--sibling-index: 8&quot;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">type</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;radio&quot;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">name</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;cyclical-group&quot;</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">&lt;/</span><span style="color: var(--shiki-token-string-expression)">fieldset</span><span style="color: var(--shiki-color-text)">&gt;</span></span></code></pre>
-</code></pre>
-<p>I also used a custom property version of <a href="https://github.com/w3c/csswg-drafts/issues/4559">this spec proposal</a> I have open with the CSSWG for <code>sibling-count()</code> and <code>sibling-index()</code>, where an element could know how many siblings it has and which index it currently is. By &quot;used a version of this proposal&quot; I mean, I hand wrote the values 😅</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">fieldset</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* divide circle by total children */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --_offset</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">calc</span><span style="color: var(--shiki-token-constant)">(360</span><span style="color: var(--shiki-token-keyword)">deg</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-keyword)">/</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--sibling-count))</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* size also used for circle translateX and Y */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --_circle-size</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">25</span><span style="color: var(--shiki-token-keyword)">vmin</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">inline-size</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--_circle-size)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">block-size</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--_circle-size)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* 1x1 centered cell */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --_cell-size</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">10</span><span style="color: var(--shiki-token-keyword)">vmin</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">display</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">grid</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">place-content</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">center</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">grid</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--_cell-size) / </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--_cell-size)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* stack them together in 1 cell */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  &gt; * {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">grid-area</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1/1</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  }</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p><q>Get used to that nesting syntax!! woot woot!</q></p>
-<p>With a grid layout setup with all the radios aligned in the middle, and the radius known of the circle, we can do the math.</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">input</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* take child index * circle fraction offset */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --_angle</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">calc</span><span style="color: var(--shiki-token-constant)">(</span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--sibling-index) </span><span style="color: var(--shiki-token-keyword)">*</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--_offset))</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/* cos() translateX, sin() translateY */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">translate</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-function)">calc</span><span style="color: var(--shiki-token-constant)">(cos(</span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--_angle)) * </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--_circle-size)</span><span style="color: var(--shiki-color-text)">)</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">calc</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-constant)">sin</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-constant)">var</span><span style="color: var(--shiki-color-text)">(--_angle)) * </span><span style="color: var(--shiki-token-constant)">var</span><span style="color: var(--shiki-color-text)">(--_circle-size))</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  ;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>And that&#39;s that, <a href="https://web.dev/css-individual-transform-properties/">individual transforms</a> making <code>x</code> and <code>y</code> easy to set. Each radio takes it&#39;s current index and multiplies it by the ratio in offset, then uses that angle against the circle radius with <code>cos()</code> and <code>sin()</code>. </p>
-<p><strong>Rad.</strong></p>
-
-        <h2>
-          Try it on Codepen
-          <a name="try-it-on-codepen" href="#try-it-on-codepen">#</a>
-        </h2>
-       <p>I used <a href="https://developer.chrome.com/articles/css-nesting/">CSS nesting</a> and trig functions, so you&#39;ll need Canary with web experiements turns on, for now.</p>
-<p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/OJozxrB?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/OJozxrB">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-]]></description>
-            <link>https://nerdy.dev/cyclical-radio-group-with-trig-functions-and-grid?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/cyclical-radio-group-with-trig-functions-and-grid?utm_source=rss</guid>
-            <category><![CDATA[blog]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Fri, 10 Mar 2023 23:44:41 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cyclical-radio-cover.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cyclical-radio-cover.png"/>
         </item>
     </channel>
 </rss>

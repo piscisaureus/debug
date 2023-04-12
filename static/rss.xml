@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 11 Apr 2023 15:45:40 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 12 Apr 2023 03:42:56 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -34,7 +34,7 @@
             <category><![CDATA[note]]></category>
             <category><![CDATA[media]]></category>
             <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
-            <pubDate>Tue, 11 Apr 2023 15:39:25 GMT</pubDate>
+            <pubDate>Wed, 12 Apr 2023 03:42:47 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/argyle-23-io.jpg" length="0" type="image/jpeg"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/argyle-23-io.jpg"/>
         </item>

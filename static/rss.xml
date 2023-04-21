@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 20 Apr 2023 22:10:23 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 21 Apr 2023 20:03:25 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,55 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[A next-gen HDR CSS gradient builder]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-style.png" alt="Screenshot of the tool open in Safari and the browser chrome matches the colors of the gradient." height="2132"  width="3328" />
+        <p>Still a lot to do but also already offering a lot to learn! So stoked to release this for public availability 🤘🏻💀</p>
+
+        <h2>
+          get started
+          <a name="get-started" href="#get-started">#</a>
+        </h2>
+       <p>Try the tool at <a href="https://gradient.style">https://gradient.style</a></p>
+<p><a href="https://discord.gg/Kt7ksqRM4V">Joining the Discord</a> channel:</p>
+<ul>
+<li>ask questions</li>
+<li>give feedback</li>
+<li>request features</li>
+<li>get help</li>
+</ul>
+
+        <h2>
+          cross browser
+          <a name="cross-browser" href="#cross-browser">#</a>
+        </h2>
+       <p>It&#39;s a little ahead of it&#39;s time, as Firefox doesn&#39;t fully support all the features yet, but it will and this tool is worth investing time into now.</p>
+
+        <h2>
+          special features
+          <a name="special-features" href="#special-features">#</a>
+        </h2>
+       <p>Learning opportunities for:</p>
+<ul>
+<li>double position syntax</li>
+<li>transition hints</li>
+<li>wide gamut color picking</li>
+<li>hue interpolation methods</li>
+<li>linear angle keywords</li>
+<li>radial size keywords</li>
+</ul>
+<p>Hope it helps you as much as it&#39;s already helped me!</p>
+]]></description>
+            <link>https://nerdy.dev/a-next-gen-css-gradient-builder?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/a-next-gen-css-gradient-builder?utm_source=rss</guid>
+            <category><![CDATA[blog]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[Web Master@admin]]></dc:creator>
+            <pubDate>Fri, 21 Apr 2023 19:55:14 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-style.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-style.png"/>
+        </item>
         <item>
             <title><![CDATA[A conic gradient diamond and okLCH]]></title>
             <description><![CDATA[
@@ -424,24 +473,6 @@
             <pubDate>Fri, 31 Mar 2023 06:29:59 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/oklch-palette.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/oklch-palette.png"/>
-        </item>
-        <item>
-            <title><![CDATA[On The Podrocket Pod Again]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/podrocket-grab-bag.png" alt="Me, Stacy and Stephanie on a title card with the show name on it and the PodRocket logo." height="487"  width="730" />
-        <p>Was on the <a href="https://twitter.com/PodRocketpod">@PodRocketPod</a>!</p>
-<p>Me, <a href="https://twitter.com/5t3ph">Stephanie Eckles</a>, and <a href="https://twitter.com/StacyKvernmo">Stacy Kvernmo</a> team up and answer questions about UI and UX.</p>
-<p>🎶 <a href="https://open.spotify.com/episode/4qeDMbldJjPJ6lmS81Xh05">Listen on Spotify</a></p>
-]]></description>
-            <link>https://nerdy.dev/on-the-podrocket-pod-again?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/on-the-podrocket-pod-again?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <category><![CDATA[media]]></category>
-            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
-            <pubDate>Thu, 23 Mar 2023 00:00:00 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/podrocket-grab-bag.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/podrocket-grab-bag.png"/>
         </item>
     </channel>
 </rss>

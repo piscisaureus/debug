@@ -1,6 +1,6 @@
 ---
 type: blog
-persona: admin
+persona: argyleink
 title: A next-gen HDR CSS gradient builder
 published_at: 2023-04-21T19:55:14.241
 snippet: Currently in beta, this tool empowers designers and developers with tooling for the latest syntax and features of CSS gradients and wide gamut colors.

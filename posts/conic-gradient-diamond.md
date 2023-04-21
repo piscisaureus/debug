@@ -1,6 +1,6 @@
 ---
 type: blog
-persona: admin
+persona: argyleink
 title: A conic gradient diamond and okLCH
 published_at: 2023-04-20T21:57:54.314
 snippet: Two conic gradients, Open Props beta okLCH prop pack and a hue slider.

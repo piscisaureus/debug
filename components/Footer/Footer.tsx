@@ -17,6 +17,8 @@ export default function Footer() {
       <span class="h-card" style="display: none">
         <a class="p-name u-url" href="https://nerdy.dev">Adam Argyle</a>
         <img class="u-photo" src="https://nerdy.dev/favicon.svg"/>
+        <p class="p-note">
+          <a href="https://web.dev/authors/adamargyle/">CSS DevRel</a> @Google on Chrome, <a href="https://w3.org/groups/wg/css/participants/">@CSSWG</a>, co-host <a href="https://pod.link/thecsspodcast">@CSS Podcast</a>, host <a href="https://goo.gle/GUIchallenges">@GUI Challenges</a>. Web design & development tips & tricks: CSS, JS, HTML, Design, & UX.</p> 
       </span>
       {/* <style dangerouslySetInnerHTML={{ __html: `
         .Footer {

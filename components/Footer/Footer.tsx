@@ -7,7 +7,6 @@ export default function Footer() {
           <use href="#icon.twitter"/>
         </svg>
       </a>
-      <a rel="me" href="https://cr8r.gg/@argyleink" style="display: none">Mastodon</a>
       <a rel="me" href="https://front-end.social/@argyleink" style="display: none">Mastodon</a>
       <a href="https://github.com/argyleink" rel="me" class="icon-button">
         <div class="sr-only">Follow me on Github</div>
@@ -15,6 +14,10 @@ export default function Footer() {
           <use href="#icon.github"/>
         </svg>
       </a>
+      <span class="h-card" style="display: none">
+        <a class="p-name u-url" href="https://nerdy.dev">Adam Argyle</a>
+        <img class="u-photo" src="https://nerdy.dev/favicon.svg"/>
+      </span>
       {/* <style dangerouslySetInnerHTML={{ __html: `
         .Footer {
           view-timeline: page-footer;

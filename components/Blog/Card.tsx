@@ -12,17 +12,17 @@ export default function BlogPost({post}:{post:IBlog}) {
   post.tags = post.tags as ITags || []
 
   return (
-    <article class="PostItem blogpost" data-slug={post.slug} tabIndex={tabindex} data-tags={post.tags?.join(' ')}>
+    <article class="PostItem blogpost h-entry" data-slug={post.slug} tabIndex={tabindex} data-tags={post.tags?.join(' ')}>
       <Persona persona={post.persona}/>
       <header class="inline-wrap">
         <span class="truncate">
-          <span class="username">{post.persona.name}</span>
+          <span class="username p-author">{post.persona.name}</span>
           <span>@{post.persona.handle}</span>
         </span>
-        <time>{relDate(post.publishedAt)}</time>
+        <time class="dt-published">{relDate(post.publishedAt)}</time>
       </header>
       {post.tags.length > 0 && <Tags tags={post.tags as ITags}/>}
-      <h2><a href={`/${post.slug}`}>{post.title}</a></h2>
+      <h2 class="p-name"><a href={`/${post.slug}`}>{post.title}</a></h2>
       {post.hero &&
         <figure>
           <Pic 
@@ -33,7 +33,7 @@ export default function BlogPost({post}:{post:IBlog}) {
           />
         </figure>
       }
-      <p 
+      <p class="p-summary" 
         dangerouslySetInnerHTML={{ __html: post.snippet as string }} 
       />
       <footer>

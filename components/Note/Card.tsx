@@ -12,20 +12,20 @@ export default function Note({post,addTabIndex = true}:{post:INote, addTabIndex:
   post.tags = post.tags as ITags || []
 
   return (
-    <article class="PostItem note" data-slug={post.slug} tabIndex={addTabIndex && tabindex} data-topics={post.tags.join(' ')}>
+    <article class="PostItem note h-entry" data-slug={post.slug} tabIndex={addTabIndex && tabindex} data-topics={post.tags.join(' ')}>
       <Persona persona={post.persona}/>
       <header class="inline-wrap">
         <span class="truncate">
-          <span class="username">{post.persona.name}</span>
+          <span class="username p-author">{post.persona.name}</span>
           <span>@{post.persona.handle}</span>
         </span>
-        <time>{relDate(post.publishedAt)}</time>
+        <time class="dt-published">{relDate(post.publishedAt)}</time>
       </header>
       {post.tags.length > 0 && <Tags tags={post.tags}/>}
-      {post.content && <section dangerouslySetInnerHTML={{ __html: post.content }} />}
+      {post.content && <section class="e-content" dangerouslySetInnerHTML={{ __html: post.content }} />}
       {post.media?.length && <Media media={post.media}/>}
       <footer>
-        <a class="nojs" href={`/${post.slug}`}>Full note</a>
+        <a class="nojs" href={`/${post.slug}`} class="u-url">Full note</a>
         <a href={`javascript: navigator.clipboard.writeText(window.location.href + "${post.slug}");Toast("Link <b>copied!</b>")`} class="icon-button share-button">
           <div class="sr-only">Share a direct link to this post</div>
           <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">

@@ -47,20 +47,21 @@
     inset-block-start: var(--size-inline-1);
   }
 
-  & ol {
+  & :is(ul, ol) {
     padding: 0;
+
+    & > li:hover {
+      list-style-type: disc;
+    }
   }
 
   & ul {
     gap: 0;
-
-    & > li:not(:hover) {
-      list-style-type: circle;
-    }
   }
 
   & li {
     padding: 0;
+    list-style-type: circle;
 
     &::marker {
       color: var(--gray-6);

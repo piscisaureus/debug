@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 21 Apr 2023 20:59:35 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 02 May 2023 04:25:12 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,21 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[2023 Speaking Docket]]></title>
+            <description><![CDATA[<p>Upcoming talks!</p>
+<ul>
+<li><a href="https://smashingconf.com/sf-2023">Smashing Conf San Francisco</a></li>
+<li><a href="https://cssday.nl/2023">CSS Day</a> (🎤 MC)</li>
+<li><a href="https://config.figma.com/configspeakers">Figma&#39;s Config</a> with <a href="https://una.im/">@Una</a></li>
+</ul>
+]]></description>
+            <link>https://nerdy.dev/2023-speaking-docket?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/2023-speaking-docket?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Tue, 02 May 2023 04:19:53 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[A next-gen HDR CSS gradient builder]]></title>
             <description><![CDATA[
@@ -269,210 +284,6 @@
             <pubDate>Mon, 03 Apr 2023 18:17:56 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/text-wrap-balance.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/text-wrap-balance.png"/>
-        </item>
-        <item>
-            <title><![CDATA[Open Props okLCH beta]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/oklch-palette.png" alt="Text emphasized alt text example" height="1728"  width="3024" />
-        <p>Set a hue with a nice <a href="#named-hues">named prop</a> or any <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/angle">angle</a>, get back a <strong>15 shade palette</strong>.</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">*</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --color-hue</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--hue-indigo)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p><strong>Boom.</strong><br>Now <code>var(--color-0)</code> to <code>var(--color-15)</code> are indigo.</p>
-<p><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/w_400/argyleink/indigo-palette.png" 
-            alt="" 
-            title="Title " 
-            decoding="async"
-            width="2346" 
-            height="382"
-          /></p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">*</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --color-hue</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">2</span><span style="color: var(--shiki-token-keyword)">rad</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-
-        <h2>
-          What to try
-          <a name="what-to-try" href="#what-to-try">#</a>
-        </h2>
-       <p>You don&#39;t even need any other <a href="https://open-props.style/">Open Props</a> to try this beta. Snag some props that attach to <code>*</code>, and starting customizing!</p>
-<p><q>You&#39;ll need a browser with oklch() support.</q></p>
-
-        <h3>
-          Color palettes
-          <a name="color-palettes" href="#color-palettes">#</a>
-        </h3>
-       <p>Import 17 <strong>beta Open Props</strong>:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;https://unpkg.com/open-props/colors-oklch.min.css&quot;</span><span style="color: var(--shiki-color-text)">;</span></span></code></pre>
-</code></pre>
-<p>Then set the hue for the palette:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">*</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --color-hue</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">90</span><span style="color: var(--shiki-token-keyword)">deg</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>And build something rad. </p>
-<p>You now have all these available to you, with <code>0</code> as the lightest, <code>15</code> as the darkest, and <code>bright</code> as the high vibrancy palette puncher color.</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.dark-card</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--color-15)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--color-1)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">border-color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--color-14)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">border-top-color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--color-bright)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">box-shadow</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--shadow-3)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-
-        <h2>
-          Named hues
-          <a name="named-hues" href="#named-hues">#</a>
-        </h2>
-       <p>Here&#39;s each of the <a href="#named-hues">named props</a> in one nice preview. These make it convenient to <a href="#surface-and-text-tinting">try out some themes for</a> your design.</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;https://unpkg.com/open-props/oklch-hues.min.css&quot;</span><span style="color: var(--shiki-color-text)">;</span></span></code></pre>
-</code></pre>
-<p>Which gives you named <strong>beta hues</strong> like this:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">*</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --color-hue</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--hue-pink)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>These are handy because <code>oklch</code> has a slightly different hue angle setup than the others, so you can&#39;t just straight transfer from <code>hsl</code> or <code>hwb</code>. Yerp.</p>
-<p><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/w_400/argyleink/oklch-palette.png" 
-            alt="" 
-            title="Title " 
-            decoding="async"
-            width="3024" 
-            height="1728"
-          /></p>
-<p>See it in <em>your</em> browser here</p>
-<p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/abarGpJ?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/abarGpJ">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-
-        <h3>
-          Gray palettes
-          <a name="gray-palettes" href="#gray-palettes">#</a>
-        </h3>
-       <p>Grab the <strong>beta props</strong>:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;https://unpkg.com/open-props/gray-oklch.min.css&quot;</span><span style="color: var(--shiki-color-text)">;</span></span></code></pre>
-</code></pre>
-<p>Without any customization, it&#39;s this neutral set:</p>
-<p><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/w_400/argyleink/neutral-palette.png" 
-            alt="" 
-            title="Title " 
-            decoding="async"
-            width="2344" 
-            height="382"
-          /></p>
-<p><strong>BUUUUUTTTT</strong><br>tint them:</p>
-<p><strong>Cool:</strong></p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.gray-cool</span><span style="color: var(--shiki-color-text)"> { </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --gray-hue</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">270</span><span style="color: var(--shiki-color-text)">; </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --gray-chroma</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">.02</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/w_400/argyleink/cool-palette.png" 
-            alt="" 
-            title="Title " 
-            decoding="async"
-            width="2346" 
-            height="382"
-          /></p>
-<p><strong>or stone:</strong></p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.gray-warm</span><span style="color: var(--shiki-color-text)"> { </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --gray-hue</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">50</span><span style="color: var(--shiki-color-text)">; </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --gray-chroma</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">.01</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/w_400/argyleink/stone-palette.png" 
-            alt="" 
-            title="Title " 
-            decoding="async"
-            width="2344" 
-            height="380"
-          /></p>
-<p>with just a few lines of CSS!</p>
-
-        <h2>
-          Surface and text tinting
-          <a name="surface-and-text-tinting" href="#surface-and-text-tinting">#</a>
-        </h2>
-       <p>The Open Props <a href="https://codepen.io/argyleink/pen/KKvRORE">normalize</a> has 4 surface colors and 2 text colors that are based on the current gray palette. You can easily tint your whole design now if you used them! </p>
-<p>Here&#39;s me doing it to an old demo. </p>
-<p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,q_auto/argyleink/oklch-android-palette.mp4 
-            width="1510" 
-            height="1132"
-            alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/oklch-android-palette.jpg"
-            controls 
-            loop
-            muted 
-            playsinline 
-            allowFullScreen
-          /></p>
-<p>I&#39;m just in devtools just changing the <code>hue</code> and <code>chroma</code> with the keyboard 🤓</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">*</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --gray-hue</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">50</span><span style="color: var(--shiki-token-keyword)">deg</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --gray-chroma</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">.05</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>Check it out here:</p>
-<p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/OJoYwgx?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/OJoYwgx">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-
-        <h2>
-          Lemme know!
-          <a name="lemme-know!" href="#lemme-know!">#</a>
-        </h2>
-       <p>Yellow does not generate well.. so hopefully that&#39;s not your brand color. Still trying to figure out the best way to make one-o-dem.</p>
-<p>But yeah, you&#39;re otherwise <strong>not stuck to a fixed set of palettes</strong>. There&#39;s <strong>no huge download</strong> to just prototype. Just <code>oklch</code> kickin ass and chewin bubble gum. Though it&#39;s def funky under <code>10%</code> lightness.. and if chroma is high and lightness is <code>100%</code>, it might not be white like you&#39;d think. 🤷 </p>
-<p>Thoughts on this‽ </p>
-<p>Come hang out on the <a href="https://discord.gg/AqA4fU886r">Open Props Discord</a>.</p>
-]]></description>
-            <link>https://nerdy.dev/open-props-oklch-palettes-beta?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/open-props-oklch-palettes-beta?utm_source=rss</guid>
-            <category><![CDATA[blog]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Fri, 31 Mar 2023 06:29:59 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/oklch-palette.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/oklch-palette.png"/>
         </item>
     </channel>
 </rss>

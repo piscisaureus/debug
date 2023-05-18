@@ -1,5 +1,6 @@
 .Modal {
   display: grid;
+  place-content: center;
   padding: 0;
   position: fixed;
   inset: 0;
@@ -29,6 +30,5 @@
     max-block-size: 90vh;
     max-block-size: 90svh;
     max-inline-size: 90vw;
-    inline-size: auto;
   }
 }

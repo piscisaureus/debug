@@ -1,5 +1,5 @@
 .TopicsAside {
-  display: none;
+  display: inline-grid;
   border: none;
   padding: 0;
   align-items: center;
@@ -9,10 +9,6 @@
   position: sticky;
   inset-block-start: calc(var(--nav-height) + var(--size-5));
   inset-inline-start: calc(var(--size-inline-1) - var(--size-3));
-
-  @supports(selector(:has(*))) {
-    display: inline-grid;
-  }
 
   @media (--lg-n-above) {
     inset-block-start: calc(var(--nav-height) + var(--size-9));

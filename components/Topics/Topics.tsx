@@ -36,24 +36,16 @@ export default function Aside() {
           }`
       }).join('\n')}}/>
       <script dangerouslySetInnerHTML={{ __html: `
+      if (!CSS.supports('selector(:has(> *))')) {
         document.querySelector('.TopicsAside').addEventListener('change', e => {
           const topic = e.target.value
-
-          if (document.startViewTransition) {
-            document.startViewTransition(() => {
-              document.querySelectorAll('.PostList > li').forEach(li => {
-                let hasTopic = li.querySelector('[data-topic="'+topic+'"]')
-                li.style.display = hasTopic || topic === 'all' ? 'block' : 'none'
-              })
-            })
-          }
-          else {
-            document.querySelectorAll('.PostList > li').forEach(li => {
-              let hasTopic = li.querySelector('[data-topic="'+topic+'"]')
-              li.style.display = hasTopic || topic === 'all' ? 'block' : 'none'
-            })
-          }
+          
+          document.querySelectorAll('.PostList > li').forEach(li => {
+            let hasTopic = li.querySelector('[data-topic="'+topic+'"]')
+            li.style.display = hasTopic || topic === 'all' ? 'block' : 'none'
+          })
         })
+      }
         ` }}
       />
     </fieldset>

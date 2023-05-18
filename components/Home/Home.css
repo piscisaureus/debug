@@ -4,24 +4,22 @@
   gap: var(--size-inline-1);
   grid-template-columns: [feed] 1fr;
 
-  @supports(selector(:has(*))) {
-    @media (--md-n-above) {
-      grid-template-columns: 
-        [aside] var(--size-content-1) 
-        [feed] minmax(0, var(--size-content-3)) 
-      ;
-      margin-block-start: var(--size-5);
-    }
+  @media (--md-n-above) {
+    grid-template-columns: 
+      [aside] var(--size-content-1) 
+      [feed] minmax(0, var(--size-content-3)) 
+    ;
+    margin-block-start: var(--size-5);
+  }
 
-    @media (--lg-n-above) {
-      gap: var(--size-9);
-      margin-block-start: var(--size-9);
-      margin-inline: auto;
-    }
+  @media (--lg-n-above) {
+    gap: var(--size-9);
+    margin-block-start: var(--size-9);
+    margin-inline: auto;
+  }
 
-    @media (height <= 500px) {
-      margin-block-start: 0;
-    }
+  @media (height <= 500px) {
+    margin-block-start: 0;
   }
 
   @media (--md-n-above) {

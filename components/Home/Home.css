@@ -27,4 +27,13 @@
       grid-column: 2;
     }
   }
+
+  @media (horizontal-viewport-segments: 2) {
+    --col-padding: calc(var(--size-inline-1) * 2);
+    grid-template-columns: 
+      [aside] calc(env(viewport-segment-width 1 0) - var(--col-padding)) 
+      [feed] calc(env(viewport-segment-width 0 0) - var(--col-padding))
+    ;
+    gap: calc(env(viewport-segment-left 1 0) - env(viewport-segment-right 0 0) + var(--col-padding));
+  }
 }

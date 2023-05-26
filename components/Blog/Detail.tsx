@@ -23,14 +23,15 @@ export default function BlogDetail({ post, toc, mentions }: { post: IBlog, toc: 
               alt={post.hero.alt}
               height={post.hero.height}
               width={post.hero.width}
+              style={`view-transition-name: ${post.slug}-hero`}
             />
           </div>
         </header>
       }
       <section class="BlogMeta block-stack">
-        <Persona persona={post.persona}/>
+        <Persona persona={post.persona} style={`view-transition-name: ${post.slug}-avatar`}/>
 
-        <h1>{post.title}</h1>
+        <h1 style={`view-transition-name: ${post.slug}-title`}>{post.title}</h1>
         <time>{new Date(post.publishedAt).toLocaleDateString(getLocaleString(), {
           year: "numeric",
           month: "long",

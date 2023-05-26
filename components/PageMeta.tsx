@@ -22,6 +22,8 @@ export default function PageMeta(props:any) {
 
       <link rel="manifest" href="/manifest.json"/>
       <meta name="color-scheme" content="dark light"/>
+      <meta name="view-transition" content="same-origin" />
+
       <OgMeta {...props} description={description} video={video} gif={gif} />
 
       <link rel="webmention" href="https://webmention.io/nerdy.dev/webmention" />
@@ -48,7 +50,7 @@ export default function PageMeta(props:any) {
 
       <script type="speculationrules" dangerouslySetInnerHTML={{ __html: `
         {
-          "prerender": [
+          "prefetch": [
             {
               "source": "list",
               "urls": [${prerenderables.map(url => `"/${url}"`).join(',')}]

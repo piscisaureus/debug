@@ -1,3 +1,20 @@
+@media (--motionOK) {
+  .TopicsAside {
+    view-transition-name: sidenav;
+  }
+
+  ::view-transition-old(sidenav) {
+    animation: 
+      var(--animation-fade-out) forwards,
+      var(--animation-scale-down) forwards;
+  }
+  ::view-transition-new(sidenav) {
+    animation: 
+      var(--animation-fade-in) forwards,
+      var(--animation-slide-in-right) forwards;
+  }
+}
+
 .TopicsAside {
   display: inline-grid;
   border: none;

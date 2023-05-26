@@ -1,3 +1,15 @@
+@media (--motionNotOK) {
+  .PostItem {
+    view-transition-name: none !important;
+
+    & > figure > img,
+    & > h2,
+    & > img:first-of-type {
+      view-transition-name: none !important;
+    }
+  }
+}
+
 .PostItem {
   --_avatar-column-size: 40px;
 

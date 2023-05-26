@@ -10,9 +10,9 @@ export default function Home({ posts }: { posts: IPost[] }) {
       <main class="Home">
         <Topics/>
         <ul class="PostList" id="feed">
-          {posts.map((post) => 
+          {posts.map((post, index) => 
             <li>
-              <PostItem post={post as IBlog | INote} />
+              <PostItem post={post as IBlog | INote} index={index} />
             </li>
           )}
         </ul>

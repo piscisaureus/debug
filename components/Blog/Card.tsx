@@ -7,13 +7,14 @@ import Pic from '~/components/Pic/Pic.tsx'
 import Tags from '~/components/Tags/Tags.tsx'
 import Persona from '~/components/Persona/Persona.tsx'
 
-export default function BlogPost({post}:{post:IBlog}) {
+export default function BlogPost({post,index}:{post:IBlog,index:Number}) {
   const tabindex = 0
   post.tags = post.tags as ITags || []
+  const shouldVT = index < 10
 
   return (
-    <article class="PostItem blogpost h-entry" data-slug={post.slug} tabIndex={tabindex} data-tags={post.tags?.join(' ')}>
-      <Persona persona={post.persona}/>
+    <article class="PostItem blogpost h-entry" data-index={index} data-slug={post.slug} tabIndex={tabindex} data-tags={post.tags?.join(' ')}>
+      <Persona persona={post.persona} style={shouldVT && `view-transition-name: ${post.slug}-avatar`}/>
       <header class="inline-wrap">
         <span class="truncate">
           <span class="username p-author">{post.persona.name}</span>
@@ -22,7 +23,7 @@ export default function BlogPost({post}:{post:IBlog}) {
         <time class="dt-published">{relDate(post.publishedAt)}</time>
       </header>
       {post.tags.length > 0 && <Tags tags={post.tags as ITags}/>}
-      <h2 class="p-name"><a href={`/${post.slug}`}>{post.title}</a></h2>
+      <h2 class="p-name" style={shouldVT && `view-transition-name: ${post.slug}-title`}><a href={`/${post.slug}`}>{post.title}</a></h2>
       {post.hero &&
         <figure>
           <Pic 
@@ -30,6 +31,7 @@ export default function BlogPost({post}:{post:IBlog}) {
             alt={post.hero.alt}
             height={post.hero.height}
             width={post.hero.width}
+            style={shouldVT && `view-transition-name: ${post.slug}-hero`}
           />
         </figure>
       }

@@ -7,12 +7,13 @@ import Tags from '~/components/Tags/Tags.tsx'
 import Persona from '~/components/Persona/Persona.tsx'
 import Media from '~/components/Posts/Media.tsx'
 
-export default function Note({post,addTabIndex = true}:{post:INote, addTabIndex:Boolean}) {
+export default function Note({post,addTabIndex = true,index}:{post:INote, addTabIndex:Boolean, index:Number}) {
   const tabindex = 0
   post.tags = post.tags as ITags || []
+  const shouldVT = index < 10
 
   return (
-    <article class="PostItem note h-entry" data-slug={post.slug} tabIndex={addTabIndex && tabindex} data-topics={post.tags.join(' ')}>
+    <article class="PostItem note h-entry" data-index={index} data-slug={post.slug} style={shouldVT && `view-transition-name: ${post.slug}`} tabIndex={addTabIndex && tabindex} data-topics={post.tags.join(' ')}>
       <Persona persona={post.persona}/>
       <header class="inline-wrap">
         <span class="truncate">

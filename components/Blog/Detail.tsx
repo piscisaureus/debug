@@ -69,40 +69,6 @@ export default function BlogDetail({ post, toc, mentions }: { post: IBlog, toc: 
           </section>
         }
       </main></cq-document-vi>
-      {/*todo reduced motion*/}
-      {/* <style dangerouslySetInnerHTML={{ __html: `
-        .BlogHero {
-          view-timeline: hero-timeline;
-        }
-        .BlogHero img {
-          animation: 1s linear hero-scroll-effect both;
-          animation-timeline: hero-timeline;
-        }
-        
-        .BlogMeta > .Persona {
-          animation: 1s linear author-scroll-effect both;
-          animation-timeline: hero-timeline;
-        }
-        @keyframes hero-scroll-effect {
-          exit -5%, 0% {
-            opacity: 1;
-            transform: scale(1);
-          }
-          exit 50%, exit 100% {
-            opacity: 0;
-            transform: scale(0.9) translateY(10vh);
-          }
-        }
-        @keyframes author-scroll-effect {
-          exit -5%, 0% {
-            transform: scale(1);
-          }
-          exit 50%, exit 100% {
-            transform: scale(0.8) translateY(10vh);
-          }
-        }
-        ` }}
-      /> */}
     </>
   )
 }

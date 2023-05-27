@@ -1,3 +1,12 @@
+@keyframes author-scroll-effect {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.8) translateY(10vh);
+  }
+}
+
 .BlogMeta {
   margin-inline: auto;
   padding-inline: var(--size-inline-1);
@@ -76,6 +85,13 @@
 
     @media (--md-n-above) {
       --_avatar-size: calc(var(--size-content-1) * .75);
+    }
+
+    @media (--motionOK) {
+      animation-name: author-scroll-effect;
+      animation-fill-mode: both;
+      animation-timeline: scroll();
+      animation-range: 0vh 90vh;
     }
   }
 

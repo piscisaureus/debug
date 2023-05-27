@@ -15,5 +15,24 @@
   & img {
     border-radius: var(--radius-5);
     box-shadow: var(--shadow-5);
+
+    @media (--motionOK) {
+      animation-name: hero-scroll-effect;
+      animation-fill-mode: both;
+      animation-timeline: scroll();
+      animation-range: 0vh 90vh;
+    }
+  }
+}
+
+@keyframes hero-scroll-effect {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  to {
+    opacity: 0;
+    transform: scale(0.9) translateY(10vh);
   }
 }

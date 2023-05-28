@@ -20,27 +20,6 @@ export default function Footer() {
         <p class="p-note">
           <a href="https://web.dev/authors/adamargyle/">CSS DevRel</a> @Google on Chrome, <a href="https://w3.org/groups/wg/css/participants/">@CSSWG</a>, co-host <a href="https://pod.link/thecsspodcast">@CSS Podcast</a>, host <a href="https://goo.gle/GUIchallenges">@GUI Challenges</a>. Web design & development tips & tricks: CSS, JS, HTML, Design, & UX.</p> 
       </span>
-      {/* <style dangerouslySetInnerHTML={{ __html: `
-        .Footer {
-          view-timeline: page-footer;
-        }
-        .Footer > a {
-          animation: 1s linear footer-scroll-effect both;
-          animation-timeline: page-footer;
-        }
-        @keyframes footer-scroll-effect {
-          enter 0% {
-            opacity: 0;
-            transform: scale(0.5) translateY(10vh);
-          }
-          enter 100%, 100% {
-            opacity: 1;
-            transform: scale(1)  translateY(0);
-          }
-        }
-        ` }}
-      /> */}
-      {/* <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"/> */}
     </footer>
   )
 }

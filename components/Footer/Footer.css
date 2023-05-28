@@ -1,5 +1,25 @@
 .Footer {
+  view-timeline-name: --footer-timeline;
   flex-direction: row;
   padding-block: var(--size-10);
   gap: var(--size-5);
+}
+
+.Footer > a {
+  @media (--motionOK) {
+    animation-name: footer-scroll-effect;
+    animation-fill-mode: both;
+    animation-timeline: --footer-timeline;
+  }
+}
+
+@keyframes footer-scroll-effect {
+  entry 75% {
+    opacity: 0;
+    transform: scale(0.5) translateY(10vh);
+  }
+  entry 99% {
+    opacity: 1;
+    transform: scale(1)  translateY(0);
+  }
 }

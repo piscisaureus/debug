@@ -1,12 +1,3 @@
-@keyframes author-scroll-effect {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0.8) translateY(10vh);
-  }
-}
-
 .BlogMeta {
   margin-inline: auto;
   padding-inline: var(--size-inline-1);
@@ -107,5 +98,14 @@
     @media (--md-n-below) {
       grid-column: -1/1;
     }
+  }
+}
+
+@keyframes author-scroll-effect {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.8) translateY(10vh);
   }
 }

@@ -46,3 +46,20 @@ a:has(code) {
   max-inline-size: 100%; 
   aspect-ratio: var(--ratio-widescreen);
 }
+
+.BlogDetail article li {
+  @media (--motionOK) {
+    view-timeline-name: --list-item-timeline;
+    animation-name: list-item-scroll-effect;
+    animation-fill-mode: both;
+    animation-timeline: --list-item-timeline;
+    animation-range: entry 25% cover 50%;
+  }
+}
+
+@keyframes list-item-scroll-effect {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+}

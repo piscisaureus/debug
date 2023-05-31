@@ -31,38 +31,6 @@ export default function Home({ posts }: { posts: IPost[] }) {
         }
       `}}>
       </script>
-
-      {/*todo reduced motion*/}
-      {/* <style dangerouslySetInnerHTML={{ __html: `
-        .PostList > li {
-          view-timeline: list-item-scroll-effect;
-        }
-        .PostItem {
-          animation: 1s linear list-transition forwards;
-          animation-timeline: list-item-scroll-effect;
-        }
-        @keyframes list-transition {
-          enter 0% {
-            opacity: .25;
-            transform: scale(0.85);
-          }
-          enter 50% {
-            opacity: 1;
-            transform: scale(1);
-          }
-          exit 75% {
-            opacity: 1;
-          }
-          exit 85% {
-            transform: scale(1);
-          }
-          exit 100% {
-            opacity: .25;
-            transform: scale(0.95);
-          }
-        }
-        ` }}
-      /> */}
     </>
   )
 }

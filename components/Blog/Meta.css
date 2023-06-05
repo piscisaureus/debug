@@ -78,11 +78,13 @@
       --_avatar-size: calc(var(--size-content-1) * .75);
     }
 
-    @media (--motionOK) {
-      animation-name: author-scroll-effect;
-      animation-fill-mode: both;
-      animation-timeline: scroll();
-      animation-range: 0vh 90vh;
+    @supports (animation-timeline: scroll()) {
+      @media (--motionOK) {
+        animation-name: author-scroll-effect;
+        animation-fill-mode: both;
+        animation-timeline: scroll();
+        animation-range: 0vh 90vh;
+      }
     }
   }
 

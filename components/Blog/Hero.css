@@ -16,11 +16,13 @@
     border-radius: var(--radius-5);
     box-shadow: var(--shadow-5);
 
-    @media (--motionOK) {
-      animation-name: hero-scroll-effect;
-      animation-fill-mode: both;
-      animation-timeline: scroll();
-      animation-range: 0vh 90vh;
+    @supports (animation-timeline: scroll()) {
+      @media (--motionOK) {
+        animation-name: hero-scroll-effect;
+        animation-fill-mode: both;
+        animation-timeline: scroll();
+        animation-range: 0vh 90vh;
+      }
     }
   }
 }

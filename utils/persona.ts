@@ -66,6 +66,16 @@ const personas = {
     },
     handle: "GUIchallenges",
     name: "Adam",
+  },
+  evil: {
+    img: {
+      src: "argyleink/evil-adam.jpg",
+      alt: "Evil cyborg Adam",
+      width: 1280,
+      height: 1280
+    },
+    handle: "atom",
+    name: "evil",
   }
 }
 

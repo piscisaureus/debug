@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 16 May 2023 14:29:40 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 13 Jun 2023 15:39:11 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,18 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Evil Adam Unleashed]]></title>
+            <description><![CDATA[<p>I&#39;ve been unleashed.<br>What <strong>evil</strong> will I do first?  </p>
+<p>Perhaps, I&#39;ll change one char somewhere..<br>and break the build.</p>
+<p>muahahahaHAHAHAAAAA</p>
+]]></description>
+            <link>https://nerdy.dev/evil-adam-unleashed?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/evil-adam-unleashed?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <dc:creator><![CDATA[evil@atom]]></dc:creator>
+            <pubDate>Tue, 13 Jun 2023 15:39:02 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Spoke At Google Io 2023]]></title>
             <description><![CDATA[
@@ -256,33 +268,6 @@
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
             <pubDate>Wed, 05 Apr 2023 03:36:31 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Gradient Stripes With Hard Stops Visualized]]></title>
-            <description><![CDATA[
-          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-stripes.mp4" alt="some title" height="1132"  width="1510" />
-        <pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.classic-gradient</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background-image</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-function)">linear-gradient</span><span style="color: var(--shiki-token-constant)">(45</span><span style="color: var(--shiki-token-keyword)">deg</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">      white</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">      black 0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 20</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">      white 0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 40</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">      black 0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 60</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">      white 0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 80</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">      black 0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 100</span><span style="color: var(--shiki-token-keyword)">%</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    )</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  ;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-]]></description>
-            <link>https://nerdy.dev/gradient-stripes-with-hard-stops-visualized?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/gradient-stripes-with-hard-stops-visualized?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Tue, 04 Apr 2023 04:09:00 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-stripes.mp4" length="0" type="video/mp4"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-stripes.mp4"/>
         </item>
     </channel>
 </rss>

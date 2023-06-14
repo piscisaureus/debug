@@ -1,0 +1,13 @@
+.Webring {
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-1);
+	place-items: center;
+	padding-block-end: var(--size-5);
+	text-align: center;
+
+	& > div {
+		display: flex;
+		gap: var(--size-5);
+	}
+}

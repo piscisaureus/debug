@@ -1,3 +1,5 @@
+@import "./Webring.css";
+
 .Footer {
   view-timeline-name: --footer-timeline;
   flex-direction: row;

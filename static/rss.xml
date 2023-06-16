@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 14 Jun 2023 05:38:54 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 16 Jun 2023 05:02:59 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,22 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Vertical Rhythm With Rlh]]></title>
+            <description><![CDATA[
+          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/vertical-rhythm.mp4" alt="some title" height="1082"  width="1920" />
+        <p><a href="https://codepen.io/argyleink/full/RweXyRq">Vertical rhythm</a> thanks to the <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#:~:text=of%20the%20element.-,rlh,-Line%20height%20of"><code>rlh</code></a> unit.</p>
+<p><strong>Bonus:</strong><br>scales with the user&#39;s font size pref 😎</p>
+]]></description>
+            <link>https://nerdy.dev/vertical-rhythm-with-rlh?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/vertical-rhythm-with-rlh?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Fri, 16 Jun 2023 04:59:30 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/vertical-rhythm.mp4" length="0" type="video/mp4"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/vertical-rhythm.mp4"/>
+        </item>
         <item>
             <title><![CDATA[Joined A Css Webring]]></title>
             <description><![CDATA[<p>I&#39;ve <a href="https://CS.Sjoy.lol">joined</a> a CSS <a href="https://en.wikipedia.org/wiki/Webring">webring</a>!</p>
@@ -255,20 +271,6 @@
             <pubDate>Fri, 07 Apr 2023 20:25:23 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/farthest-corner.mp4" length="0" type="video/mp4"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/farthest-corner.mp4"/>
-        </item>
-        <item>
-            <title><![CDATA[Hue Light Travel Planet Morph]]></title>
-            <description><![CDATA[
-          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/hue-travel.mp4" alt="Radial gradient like a sun but changing colors and kinda morphing to different planets." height="1132"  width="1510" />
-        ]]></description>
-            <link>https://nerdy.dev/hue-light-travel-planet-morph?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/hue-light-travel-planet-morph?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Wed, 05 Apr 2023 03:49:01 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/hue-travel.mp4" length="0" type="video/mp4"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/hue-travel.mp4"/>
         </item>
     </channel>
 </rss>

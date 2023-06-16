@@ -69,10 +69,10 @@ const personas = {
   },
   evil: {
     img: {
-      src: "argyleink/evil-adam.jpg",
+      src: "argyleink/evil-argyleink.png",
       alt: "Evil cyborg Adam",
-      width: 1280,
-      height: 1280
+      width: 767,
+      height: 767
     },
     handle: "atom",
     name: "evil",

@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 26 Jun 2023 16:21:31 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 26 Jun 2023 18:04:45 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -43,6 +43,23 @@
             <pubDate>Thu, 22 Jun 2023 15:30:11 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/figma-config-2023.jpg" length="0" type="image/jpeg"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/figma-config-2023.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Cloudinary Dev Jams Podcast]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cloudinary-devjams.jpg" alt="Thumbnail from the event, title is Elevating User Experience with Cloudinary, Markdown and Deno's Fresh" height="720"  width="1280" />
+        <p>Was on the <a href="https://training.cloudinary.com/">Cloudinary DevJams</a> Podcast!</p>
+<p>🎙️ <a href="https://www.youtube.com/watch?v=RsCv1lHS85w">Watch it (or listen)</a></p>
+<p>We chat about making the <a href="https://nerdy.dev/">nerdy.dev</a> site with <a href="https://deno.com/runtime">Deno</a> and <a href="https://fresh.deno.dev/">Fresh</a>, and of course we chat all about how I&#39;m serving images 🙂</p>
+]]></description>
+            <link>https://nerdy.dev/cloudinary-dev-jams-podcast?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/cloudinary-dev-jams-podcast?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[media]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Tue, 20 Jun 2023 15:30:11 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cloudinary-devjams.jpg" length="0" type="image/jpeg"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cloudinary-devjams.jpg"/>
         </item>
         <item>
             <title><![CDATA[Vertical Rhythm With Rlh]]></title>
@@ -207,84 +224,6 @@
             <pubDate>Fri, 21 Apr 2023 19:55:14 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-style.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-style.png"/>
-        </item>
-        <item>
-            <title><![CDATA[A conic gradient diamond and okLCH]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/conic-diamond-header.png" alt="Text emphasized alt text example" height="1098"  width="3510" />
-        <p>You may recognize this diamond, it&#39;s certainly inspired by a classic icon: Sketch.</p>
-<p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,q_auto/argyleink/conic-gradient-diamond.mp4 
-            width="1884" 
-            height="1884"
-            alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/conic-gradient-diamond.jpg"
-            controls 
-            loop
-            muted 
-            playsinline 
-            allowFullScreen
-          /></p>
-
-        <h2>
-          Effect breakdown
-          <a name="effect-breakdown" href="#effect-breakdown">#</a>
-        </h2>
-       <p>Not sure how much this sketch will help y&#39;all, but it totally helped me:</p>
-<p><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/w_400/argyleink/conic-diamond-sketch.png" 
-            alt="" 
-            title="Sketch of the two conic gradients overlaying the diamond " 
-            decoding="async"
-            width="2442" 
-            height="2442"
-          /></p>
-<p>Two specifically placed conic gradients show as two circles. The bottom one uses transparency to achieve the triangle effect. The top one is simpler but required a <code>clip-path</code> to notch the corners.</p>
-<p>I also used <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient#:~:text=An%20interpolation%20hint,two%20color%20stops.">transition hints</a> to manage the hard stops. I think most people prefer to use double stop syntax for this, but I&#39;ve really come to love transition hints.</p>
-
-        <h2>
-          It&#39;s not perfect
-          <a name="it&#39;s-not-perfect" href="#it&#39;s-not-perfect">#</a>
-        </h2>
-       <p>There&#39;s a few magic numbers in there. It is responsive and holds it&#39;s fidelity, but there&#39;s definitely a better way to make this where it&#39;s less magic and more geometric. I also think it turned out a little tall.</p>
-<p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/VwEKJjJ?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/VwEKJjJ">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-
-        <h2>
-          The colors
-          <a name="the-colors" href="#the-colors">#</a>
-        </h2>
-       <p>I used <a href="open-props-oklch-palettes-beta">the okLCH palettes beta from Open Props</a> for the colors. I knew they&#39;d have all the shades I needed and I also <a href="https://codepen.io/argyleink/pen/JjmRbvZ">already had a slider demo</a> that let you play with changing the hue. Put it all together on top of this diamond, easy peasy!</p>
-
-        <h2>
-          Closing thoughts
-          <a name="closing-thoughts" href="#closing-thoughts">#</a>
-        </h2>
-       <p>I used my recently announced beta tool <a href="https://gradient.style">gradient.style</a> to prototype the positions of the conic gradient. <a href="https://gradient.style/#type=conic&space=oklab&conic_angle=327&conic_position=%7B%22x%22%3Anull%2C%22y%22%3Anull%7D&conic_named_position=center&stops=%7B%22kind%22%3A%22stop%22%2C%22color%22%3A%22oklch%2870%25+0.5+340%29%22%2C%22auto%22%3A0%2C%22position1%22%3A0%2C%22position2%22%3A0%7D&stops=%7B%22kind%22%3A%22hint%22%2C%22auto%22%3A17%2C%22percentage%22%3A6%7D&stops=%7B%22kind%22%3A%22stop%22%2C%22color%22%3A%22oklch%2850%25+0.5+340%29%22%2C%22auto%22%3A33%2C%22position1%22%3A0%2C%22position2%22%3A0%7D&stops=%7B%22kind%22%3A%22hint%22%2C%22percentage%22%3A12%2C%22auto%22%3A50%7D&stops=%7B%22kind%22%3A%22stop%22%2C%22color%22%3A%22oklch%2840%25+0.5+340%29%22%2C%22position1%22%3A0%2C%22position2%22%3A0%2C%22auto%22%3A66%7D&stops=%7B%22kind%22%3A%22hint%22%2C%22percentage%22%3A18%2C%22auto%22%3A83%7D&stops=%7B%22kind%22%3A%22stop%22%2C%22color%22%3A%22transparent%22%2C%22position1%22%3A0%2C%22position2%22%3A0%2C%22auto%22%3A100%7D">Here is a link to the prototype gradient</a> for the bottom half of the diamond. Hope this tool helps you learn as much as it&#39;s helped me!</p>
-]]></description>
-            <link>https://nerdy.dev/conic-gradient-diamond?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/conic-gradient-diamond?utm_source=rss</guid>
-            <category><![CDATA[blog]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Thu, 20 Apr 2023 21:57:54 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/conic-diamond-header.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/conic-diamond-header.png"/>
         </item>
     </channel>
 </rss>

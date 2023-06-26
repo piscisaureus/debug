@@ -23,8 +23,9 @@
     scroll-padding-inline: var(--_inline-offset);
 
     & :is(img,video) {
+      object-fit: cover;
       scroll-snap-align: start;
-      max-inline-size: min-content;
+      /* max-inline-size: min-content; */
       border-radius: var(--radius-3);
     }
   }

@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 16 Jun 2023 05:02:59 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 26 Jun 2023 16:21:31 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,28 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Spoke At Figma Config 2023]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/figma-config-2023.jpg" alt="Thumbnail from the event, title is The Future of Responsive Design" height="720"  width="1280" />
+        <p>Spoke at <a href="https://config.figma.com">Figma Config</a> with <a href="https://twitter.com/Una">Una</a>!</p>
+<p><strong>The Future of Responsive Design</strong></p>
+<p>All about how the width of the viewport was never that relevant, it&#39;s more about the space a component has, the children type and count, and so much more.</p>
+<ul>
+<li><a href="https://youtu.be/APhECDy2U3U">Watch it</a></li>
+<li><a href="https://config.figma.com/video-on-demand/6329932796112">Config page</a></li>
+</ul>
+]]></description>
+            <link>https://nerdy.dev/spoke-at-figma-config-2023?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/spoke-at-figma-config-2023?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[media]]></category>
+            <category><![CDATA[talks]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Thu, 22 Jun 2023 15:30:11 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/figma-config-2023.jpg" length="0" type="image/jpeg"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/figma-config-2023.jpg"/>
+        </item>
         <item>
             <title><![CDATA[Vertical Rhythm With Rlh]]></title>
             <description><![CDATA[
@@ -61,6 +83,49 @@
             <category><![CDATA[note]]></category>
             <dc:creator><![CDATA[evil@atom]]></dc:creator>
             <pubDate>Tue, 13 Jun 2023 15:39:02 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Css Day 2023]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cssday-2023-1.webp" alt="Me on stage MCing like a dork" height="1066"  width="1600" />
+        <p>MC&#39;ed <a href="https://cssday.nl/2023">CSS Day 2023</a> 🤘🏻💀</p>
+<p><small>You can <a href="https://cssday.nl/2023/speakers">catch up on all the talks here</a></small></p>
+<p>What a blast, totally was with my people. I&#39;m especially proud of a few dad jokes:</p>
+<ol>
+<li>&quot;Why don&#39;t you <code>&lt;popover&gt;</code> and have a <code>&lt;dialog&gt;</code> with me&quot;</li>
+<li>&quot;It&#39;s not the PacMan rule, it&#39;s the conic gradient rule: leave room for another color stop in your circle.&quot;</li>
+</ol>
+]]></description>
+            <link>https://nerdy.dev/CSS-Day-2023?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/CSS-Day-2023?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[media]]></category>
+            <category><![CDATA[talks]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Thu, 08 Jun 2023 15:30:11 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cssday-2023-1.webp" length="0" type="image/webp"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cssday-2023-1.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[View Transitions At Smashing Conf In San Francisco]]></title>
+            <description><![CDATA[
+          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/smashing-slides-2023.mp4" alt="Speed run through the slides and they're morphing all over and looking sweet" height="1200"  width="1920" />
+        <p>Spoke at <a href="https://smashingconf.com/sf-2023/schedule#day2">Smashing Conf</a>!</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=P6Mk03isfZ8&list=PLxQqv_fazRs1euwYI0DxHXAZRvhntOwPn&index=12">Watch it</a></li>
+<li><a href="https://smashing-transitions.netlify.app/">Check out the slides</a></li>
+<li><a href="https://github.com/argyleink/morphull">DIY</a></li>
+</ul>
+]]></description>
+            <link>https://nerdy.dev/view-transitions-at-smashing-conf-in-san-francisco?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/view-transitions-at-smashing-conf-in-san-francisco?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[media]]></category>
+            <category><![CDATA[talks]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Wed, 24 May 2023 15:30:11 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/smashing-slides-2023.mp4" length="0" type="video/mp4"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/smashing-slides-2023.mp4"/>
         </item>
         <item>
             <title><![CDATA[Spoke At Google Io 2023]]></title>
@@ -220,57 +285,6 @@
             <pubDate>Thu, 20 Apr 2023 21:57:54 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/conic-diamond-header.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/conic-diamond-header.png"/>
-        </item>
-        <item>
-            <title><![CDATA[Thinking On Ways To Solve 3 D Scifi Text Effects]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/scifi-scroll-gui.jpg" alt="GUI Challenges character next to a preview of the 3D tilt vanishing effect" height="720"  width="1280" />
-        <p><a href="https://www.youtube.com/watch?v=JeI_TsADXQA&list=PLNYkxOF6rcIAaV1wwI9540OC_3XoIzMjQ">Thinking on ways to do <strong>3D SciFi Text</strong></a>  </p>
-<p>In this <a href="https://goo.gle/GUIchallenges">GUI Challenge</a>, 
-<a href="https://www.youtube.com/channel/UCBGr3ZMcV5jke40_Wrv3fNA">I</a> use <a href="https://www.w3.org/TR/scroll-animations-1/">CSS Scroll Linked Animations</a> to 3D tilt a few paragraphs of text, and <strong>on scroll</strong>, make them appear to vanish into the far edges of the galaxy.</p>
-<p><a href="https://www.youtube.com/watch?v=JeI_TsADXQA&list=PLNYkxOF6rcIAaV1wwI9540OC_3XoIzMjQ">watch</a> · 
-<a href="https://gui-challenges.web.app/scifi-scroll/dist/">demo</a> · 
-<a href="https://github.com/argyleink/gui-challenges">source</a></p>
-]]></description>
-            <link>https://nerdy.dev/thinking-on-ways-to-solve-3D-scifi-text-effects?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/thinking-on-ways-to-solve-3D-scifi-text-effects?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[media]]></category>
-            <dc:creator><![CDATA[Adam@GUIchallenges]]></dc:creator>
-            <pubDate>Wed, 12 Apr 2023 17:33:59 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/scifi-scroll-gui.jpg" length="0" type="image/jpeg"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/scifi-scroll-gui.jpg"/>
-        </item>
-        <item>
-            <title><![CDATA[Google Io 23 Talk Recorded]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/argyle-23-io.jpg" alt="some title" height="2179"  width="2178" />
-        <p><a href="https://io.google/2023/">Google IO</a> talk <strong>done!</strong></p>
-<p>Success selfie at the 🆕 Seattle office&#39;s <strong>Neon Staircase</strong> 🤘🏻💀</p>
-]]></description>
-            <link>https://nerdy.dev/google-io-23-talk-recorded?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/google-io-23-talk-recorded?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[media]]></category>
-            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
-            <pubDate>Wed, 12 Apr 2023 03:42:47 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/argyle-23-io.jpg" length="0" type="image/jpeg"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/argyle-23-io.jpg"/>
-        </item>
-        <item>
-            <title><![CDATA[Farthest Corner Visualized]]></title>
-            <description><![CDATA[
-          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/farthest-corner.mp4" alt="Radial gradient moving back and forth changing size as it gets nearer or farther from a corner." height="958"  width="1586" />
-        <p>Multiple hard stops in a radial gradient sized as <code>farthest-corner</code>, this is me changing the <code>x</code> position first from <code>0</code> to <code>-100</code>, then the <code>y</code> in the same manor. </p>
-]]></description>
-            <link>https://nerdy.dev/farthest-corner-visualized?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/farthest-corner-visualized?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Fri, 07 Apr 2023 20:25:23 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/farthest-corner.mp4" length="0" type="video/mp4"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/farthest-corner.mp4"/>
         </item>
     </channel>
 </rss>

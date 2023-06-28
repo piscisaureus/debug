@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 28 Jun 2023 16:36:16 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 Jun 2023 16:36:40 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -311,12 +311,12 @@
             <title><![CDATA[Css Day 2023]]></title>
             <description><![CDATA[
           <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cssday-2023-1.webp" alt="Me on stage MCing like a dork" height="1066"  width="1600" />
-        <p>MC&#39;ed <a href="https://cssday.nl/2023">CSS Day 2023</a> 🤘🏻💀</p>
-<p><small>You can <a href="https://cssday.nl/2023/speakers">catch up on all the talks here</a></small></p>
+        <p>Co-MC&#39;ed <a href="https://cssday.nl/2023">CSS Day 2023</a> with <a href="https://css-irl.info">Michelle Barker</a> 🤘🏻💀</p>
+<p><small><a href="https://cssday.nl/2023/speakers">catch up on all the talks here</a></small></p>
 <p>What a blast, totally was with my people. I&#39;m especially proud of a few dad jokes:</p>
 <ol>
 <li>&quot;Why don&#39;t you <code>&lt;popover&gt;</code> and have a <code>&lt;dialog&gt;</code> with me&quot;</li>
-<li>&quot;It&#39;s not the PacMan rule, it&#39;s the conic gradient rule: leave room for another color stop in your circle.&quot;</li>
+<li>&quot;It&#39;s not the PacMan rule, it&#39;s the conic gradient rule: leave room for another color stop in your chat circle.&quot;</li>
 </ol>
 ]]></description>
             <link>https://nerdy.dev/CSS-Day-2023?utm_source=rss</link>

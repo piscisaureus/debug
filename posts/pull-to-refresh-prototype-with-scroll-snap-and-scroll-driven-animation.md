@@ -17,7 +17,7 @@ Here's a classic UI feature, pull-to-refresh:
 
 ![](f_auto,q_auto/argyleink/ptr-with-snap.mp4 "Title $$width:1646,height:1236")
 
-Lemme swiftly break down the effect and how I made [this prototype](![](https://codepen.io/argyleink/embed/preview/YzveomK)).
+Lemme swiftly break down the effect and how I made [this prototype](https://codepen.io/argyleink/full/ExOWjMe).
 
 ## Overview
 
@@ -83,7 +83,7 @@ So this says, after `2ms`, assign the refresh `10px` tall pseudo element a snap 
 So far we've setup our HTML, got the page to render with the main element as the starting scroll position, and then made a `10px` tall snap element for the PTR target. Next, we get to animate the elements inside the PTR container to rotate and fade in as they enter the viewport.
 
 <q class="info">
-<p>If you're new to SDA, you gotta check out <a href="https://twitter.com/bramus">Bramus</a>'s website <a href="https://scroll-driven-animations.style/">scroll-driven-animation.style</a>. It's absolute fuckin gold.</p>
+<p>If you're new to SDA, you gotta check out <a href="https://twitter.com/bramus">Bramus</a>'s website <a href="https://scroll-driven-animations.style/">scroll-driven-animations.style</a>. It's absolute fuckin gold.</p>
 </q>
 
 First, let's make the keyframes, since at least for me, I first think about the animation I want and I can articulate in the keyframes pretty quickly. The first one is pretty unexciting, a classic fade in. This will be used for the text prompt in the PTR element:

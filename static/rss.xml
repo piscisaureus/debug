@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 28 Jun 2023 16:36:48 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 Jun 2023 16:45:07 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -39,7 +39,7 @@
             playsinline 
             allowFullScreen
           /></p>
-<p>Lemme swiftly break down the effect and how I made <a href="!%5B%5D(https://codepen.io/argyleink/embed/preview/YzveomK)">this prototype</a>.</p>
+<p>Lemme swiftly break down the effect and how I made <a href="https://codepen.io/argyleink/full/ExOWjMe">this prototype</a>.</p>
 
         <h2>
           Overview
@@ -98,7 +98,7 @@
         </h2>
        <p>So far we&#39;ve setup our HTML, got the page to render with the main element as the starting scroll position, and then made a <code>10px</code> tall snap element for the PTR target. Next, we get to animate the elements inside the PTR container to rotate and fade in as they enter the viewport.</p>
 <q class="info">
-<p>If you're new to SDA, you gotta check out <a href="https://twitter.com/bramus">Bramus</a>'s website <a href="https://scroll-driven-animations.style/">scroll-driven-animation.style</a>. It's absolute fuckin gold.</p>
+<p>If you're new to SDA, you gotta check out <a href="https://twitter.com/bramus">Bramus</a>'s website <a href="https://scroll-driven-animations.style/">scroll-driven-animations.style</a>. It's absolute fuckin gold.</p>
 </q>
 
 <p>First, let&#39;s make the keyframes, since at least for me, I first think about the animation I want and I can articulate in the keyframes pretty quickly. The first one is pretty unexciting, a classic fade in. This will be used for the text prompt in the PTR element:</p>

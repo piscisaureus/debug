@@ -9,7 +9,7 @@ media:
     height: 720
 tags: 
   - media
-  - CSS
+  - css
 ---
 
 Was on the [@coderyan](https://www.youtube.com/@coderyan) show!

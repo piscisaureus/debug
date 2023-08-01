@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 01 Aug 2023 18:20:15 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 01 Aug 2023 18:21:01 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -40,6 +40,22 @@
             <pubDate>Tue, 01 Aug 2023 18:13:41 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/csspod-why-no-zindex.jpg" length="0" type="image/jpeg"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/csspod-why-no-zindex.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Front End Feud Round 3 On Js Party]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/js-party-fef-round-3.png" alt="Thumbnail from the event, with the event title and names of the folks" height="688"  width="1218" />
+        <p>Was on <a href="https://changelog.com/jsparty">JS Party</a>!</p>
+<p>🎙️ <a href="https://changelog.com/jsparty/285">Watch it (or listen)</a></p>
+]]></description>
+            <link>https://nerdy.dev/front-end-feud-round-3-on-js-party?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/front-end-feud-round-3-on-js-party?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[media]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Fri, 28 Jul 2023 15:28:52 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/js-party-fef-round-3.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/js-party-fef-round-3.png"/>
         </item>
         <item>
             <title><![CDATA[Thinking On Ways To Solve Morphing Buttons]]></title>
@@ -366,18 +382,6 @@
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[Web Master@admin]]></dc:creator>
             <pubDate>Wed, 14 Jun 2023 05:38:34 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Evil Adam Unleashed]]></title>
-            <description><![CDATA[<p>I&#39;ve been unleashed.<br>What <strong>evil</strong> will I do first?  </p>
-<p>Perhaps, I&#39;ll change one char somewhere..<br>and break the build.</p>
-<p>muahahahaHAHAHAAAAA</p>
-]]></description>
-            <link>https://nerdy.dev/evil-adam-unleashed?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/evil-adam-unleashed?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <dc:creator><![CDATA[evil@atom]]></dc:creator>
-            <pubDate>Tue, 13 Jun 2023 15:39:02 GMT</pubDate>
         </item>
     </channel>
 </rss>

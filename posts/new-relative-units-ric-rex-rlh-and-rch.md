@@ -3,7 +3,7 @@ type: blog
 persona: argyleink
 title: New CSS Relative Units
 published_at: 2023-01-06T16:57:53.648
-updated_at: 2023-01-17T02:21:00.710 
+updated_at: 2023-08-03T15:35:47.389
 snippet: This brings us to a total of 50 CSS length units.
 hero:
   src: argyleink/sizing-units.png
@@ -46,6 +46,6 @@ Chrome doesn't support `cap` yet.
 
 I also asked about `rcap`, which seems like a logical friend for the relative unit to have a root relative counterpart.
 
-## 50 units, oh my!
+## 54 units, oh my!
 
-This brings us to a total of **50 CSS length units**. And I don't think we're done yet!
+This brings us to a total of **54 CSS length units**. And I don't think we're done yet!

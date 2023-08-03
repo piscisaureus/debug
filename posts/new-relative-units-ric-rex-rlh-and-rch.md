@@ -4,7 +4,7 @@ persona: argyleink
 title: New CSS Relative Units
 published_at: 2023-01-06T16:57:53.648
 updated_at: 2023-08-03T15:35:47.389
-snippet: This brings us to a total of 50 CSS length units.
+snippet: This brings us to a total of 54 CSS length units.
 hero:
   src: argyleink/sizing-units.png
   alt: H1 shown using the vmin sizing, with a dropdown element for choosing a different unit.

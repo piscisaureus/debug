@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 16 Aug 2023 19:48:13 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Aug 2023 22:17:28 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,27 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Introducing The Bad At Css Podcast]]></title>
+            <description><![CDATA[
+          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/announcing-bad-at-css.mp4" alt="David and Adam quick cut about all the CSS things they're bad at." height="1080"  width="1920" />
+        <p>🎙️ <strong>The Bad At CSS Podcast</strong>  </p>
+<p><a href="https://twitter.com/_davideast">David East</a> and I host, and sometimes bring on an occasional guest 🤓</p>
+<p>Subscribe and listen on:<br>
+<a href="https://open.spotify.com/show/5vtb28Q1QNzgv07v9LzpGp">Spotify</a> · 
+<a href="https://podcasts.apple.com/us/podcast/bad-at-css/id1702605487">Apple</a> · 
+<a href="https://www.youtube.com/watch?v=N3S0GQ-oK_4&t=1s">YouTube</a></p>
+]]></description>
+            <link>https://nerdy.dev/introducing-the-bad-at-css-podcast?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/introducing-the-bad-at-css-podcast?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <category><![CDATA[media]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Wed, 16 Aug 2023 22:17:22 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/announcing-bad-at-css.mp4" length="0" type="video/mp4"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/announcing-bad-at-css.mp4"/>
+        </item>
         <item>
             <title><![CDATA[Thinking On Ways To Solve Adaptive Typography]]></title>
             <description><![CDATA[
@@ -159,7 +180,7 @@
             width="1646" 
             height="1236"
             alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/ptr-with-snap.jpg"
+            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/so_0.5,f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/ptr-with-snap.jpg"
             controls 
             loop
             muted 
@@ -248,7 +269,7 @@
             width="928" 
             height="522"
             alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/ptr-exit-phase.jpg"
+            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/so_0.5,f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/ptr-exit-phase.jpg"
             controls 
             loop
             muted 
@@ -274,7 +295,7 @@
             width="1034" 
             height="558"
             alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/ptr-zoomed.jpg"
+            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/so_0.5,f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/ptr-zoomed.jpg"
             controls 
             loop
             muted 
@@ -376,23 +397,6 @@
             <pubDate>Thu, 22 Jun 2023 15:30:11 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/figma-config-2023.jpg" length="0" type="image/jpeg"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/figma-config-2023.jpg"/>
-        </item>
-        <item>
-            <title><![CDATA[Cloudinary Dev Jams Podcast]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cloudinary-devjams.jpg" alt="Thumbnail from the event, title is Elevating User Experience with Cloudinary, Markdown and Deno's Fresh" height="720"  width="1280" />
-        <p>Was on the <a href="https://training.cloudinary.com/">Cloudinary DevJams</a> Podcast!</p>
-<p>🎙️ <a href="https://www.youtube.com/watch?v=RsCv1lHS85w">Watch it (or listen)</a></p>
-<p>We chat about making the <a href="https://nerdy.dev/">nerdy.dev</a> site with <a href="https://deno.com/runtime">Deno</a> and <a href="https://fresh.deno.dev/">Fresh</a>, and of course we chat all about how I&#39;m serving images 🙂</p>
-]]></description>
-            <link>https://nerdy.dev/cloudinary-dev-jams-podcast?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/cloudinary-dev-jams-podcast?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[media]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Tue, 20 Jun 2023 15:30:11 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cloudinary-devjams.jpg" length="0" type="image/jpeg"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cloudinary-devjams.jpg"/>
         </item>
     </channel>
 </rss>

@@ -8,7 +8,7 @@
 
   position: sticky;
   inset-block-start: 0;
-  z-index: var(--layer-1);
+  z-index: var(--layer-2);
 
   view-transition-name: site-nav;
 

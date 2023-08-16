@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 16 Aug 2023 17:20:36 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Aug 2023 19:48:13 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,26 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Thinking On Ways To Solve Adaptive Typography]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-adaptive-type.jpg" alt="GUI Challenges avatar is next to a piece of CSS code and the title Adaptive Typography" height="720"  width="1280" />
+        <p><a href="https://www.youtube.com/watch?v=8B7xOgp5Aow&list=PLNYkxOF6rcIAaV1wwI9540OC_3XoIzMjQ&index=1">Thinking on ways to solve <strong>Adaptive Typography</strong></a></p>
+<p>In this <a href="https://goo.gle/GUIchallenges">GUI Challenge</a>, 
+<a href="https://www.youtube.com/channel/UCBGr3ZMcV5jke40_Wrv3fNA">I</a> show how to use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-contrast"><code>prefers-contrast</code></a> media query to adapt both system and adaptive fonts to match user&#39;s contrast preferences.</p>
+<p><strong>Contrast is more than just color</strong></p>
+<p><a href="https://gui-challenges.web.app/adaptive-typography/dist/">demo</a> · 
+<a href="https://github.com/argyleink/gui-challenges">source</a></p>
+]]></description>
+            <link>https://nerdy.dev/thinking-on-ways-to-solve-adaptive-typography?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/thinking-on-ways-to-solve-adaptive-typography?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[media]]></category>
+            <dc:creator><![CDATA[Adam@GUIchallenges]]></dc:creator>
+            <pubDate>Wed, 16 Aug 2023 19:41:30 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-adaptive-type.jpg" length="0" type="image/jpeg"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-adaptive-type.jpg"/>
+        </item>
         <item>
             <title><![CDATA[Scroll Driven Hue Changing Carousel]]></title>
             <description><![CDATA[
@@ -373,22 +393,6 @@
             <pubDate>Tue, 20 Jun 2023 15:30:11 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cloudinary-devjams.jpg" length="0" type="image/jpeg"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cloudinary-devjams.jpg"/>
-        </item>
-        <item>
-            <title><![CDATA[Vertical Rhythm With Rlh]]></title>
-            <description><![CDATA[
-          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/vertical-rhythm.mp4" alt="some title" height="1082"  width="1920" />
-        <p><a href="https://codepen.io/argyleink/full/RweXyRq">Vertical rhythm</a> thanks to the <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#:~:text=of%20the%20element.-,rlh,-Line%20height%20of"><code>rlh</code></a> unit.</p>
-<p><strong>Bonus:</strong><br>scales with the user&#39;s font size pref 😎</p>
-]]></description>
-            <link>https://nerdy.dev/vertical-rhythm-with-rlh?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/vertical-rhythm-with-rlh?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Fri, 16 Jun 2023 04:59:30 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/vertical-rhythm.mp4" length="0" type="video/mp4"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/vertical-rhythm.mp4"/>
         </item>
     </channel>
 </rss>

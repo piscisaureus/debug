@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 16 Aug 2023 22:17:28 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Aug 2023 15:29:28 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,25 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[The Css Podcast Why Do I Have Overflow]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-podcast-overflow.jpg" alt="Una and I happy and excited for this episode on why you might have unwanted overflow" height="720"  width="1280" />
+        <p>Next up on <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIAx_S2LSfXQLorIeehsPL3q">The CSS Podcast</a>…</p>
+<p><span class="Tag">Ep #68</span><br><strong>Why is it overflowing?</strong> </p>
+<p><a href="https://www.youtube.com/watch?v=e7PLvudkTE0&list=PLNYkxOF6rcIAx_S2LSfXQLorIeehsPL3q&index=1">Watch</a> · 
+<a href="https://thecsspodcast.libsyn.com/69-why-is-it-overflowing">Listen</a></p>
+]]></description>
+            <link>https://nerdy.dev/the-css-podcast-why-do-i-have-overflow?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/the-css-podcast-why-do-i-have-overflow?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[media]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[Adam@theCSSpodcast]]></dc:creator>
+            <pubDate>Thu, 17 Aug 2023 15:28:42 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-podcast-overflow.jpg" length="0" type="image/jpeg"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-podcast-overflow.jpg"/>
+        </item>
         <item>
             <title><![CDATA[Introducing The Bad At Css Podcast]]></title>
             <description><![CDATA[
@@ -375,28 +394,6 @@
             <pubDate>Wed, 28 Jun 2023 14:43:37 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/ptr-proto.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/ptr-proto.png"/>
-        </item>
-        <item>
-            <title><![CDATA[Spoke At Figma Config 2023]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/figma-config-2023.jpg" alt="Thumbnail from the event, title is The Future of Responsive Design" height="720"  width="1280" />
-        <p>Spoke at <a href="https://config.figma.com">Figma Config</a> with <a href="https://twitter.com/Una">Una</a>!</p>
-<p><strong>The Future of Responsive Design</strong></p>
-<p>All about how the width of the viewport was never that relevant, it&#39;s more about the space a component has, the children type and count, and so much more.</p>
-<ul>
-<li><a href="https://youtu.be/APhECDy2U3U">Watch it</a></li>
-<li><a href="https://config.figma.com/video-on-demand/6329932796112">Config page</a></li>
-</ul>
-]]></description>
-            <link>https://nerdy.dev/spoke-at-figma-config-2023?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/spoke-at-figma-config-2023?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[media]]></category>
-            <category><![CDATA[talks]]></category>
-            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
-            <pubDate>Thu, 22 Jun 2023 15:30:11 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/figma-config-2023.jpg" length="0" type="image/jpeg"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/figma-config-2023.jpg"/>
         </item>
     </channel>
 </rss>

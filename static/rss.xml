@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 17 Aug 2023 15:29:28 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 18 Aug 2023 04:45:39 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,24 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[History About The Bad At Css Podcast Logo]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bad-at-css-pod-wide.png" alt="some title" height="518"  width="1158" />
+        <p><strong>Bad At CSS Podcast</strong><br>⮑ logo made in the browser</p>
+<p>✅ intentionally no font<br>✅ lack of any styles 😉<br>✅ looks like you&#39;re in devtools<br>✅ bad layout<br>✅ bad colors<br>✅ box around bad is bad  </p>
+<p><a href="https://codepen.io/argyleink/full/bGOGwNV">Codepen</a> · <a href="https://open.spotify.com/show/5vtb28Q1QNzgv07v9LzpGp">Spotify</a></p>
+]]></description>
+            <link>https://nerdy.dev/history-about-the-bad-at-css-podcast-logo?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/history-about-the-bad-at-css-podcast-logo?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <category><![CDATA[media]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Fri, 18 Aug 2023 04:44:42 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bad-at-css-pod-wide.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bad-at-css-pod-wide.png"/>
+        </item>
         <item>
             <title><![CDATA[The Css Podcast Why Do I Have Overflow]]></title>
             <description><![CDATA[
@@ -188,212 +206,6 @@
             <category><![CDATA[note]]></category>
             <dc:creator><![CDATA[evil@atom]]></dc:creator>
             <pubDate>Fri, 30 Jun 2023 05:14:01 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Pull to Refresh with Scroll Snap and Scroll Driven Animation]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/ptr-proto.png" alt="screenshot of the prototype in its refreshing state" height="1032"  width="2166" />
-        <p>Here&#39;s a classic UI feature, pull-to-refresh:</p>
-<p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,q_auto/argyleink/ptr-with-snap.mp4 
-            width="1646" 
-            height="1236"
-            alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/so_0.5,f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/ptr-with-snap.jpg"
-            controls 
-            loop
-            muted 
-            playsinline 
-            allowFullScreen
-          /></p>
-<p>Lemme swiftly break down the effect and how I made <a href="https://codepen.io/argyleink/full/ExOWjMe">this prototype</a>.</p>
-
-        <h2>
-          Overview
-          <a name="overview" href="#overview">#</a>
-        </h2>
-       <p>The markup is a <code>&lt;header&gt;</code> and a <code>&lt;main&gt;</code> element, where the header is the PTR (pull-to-refresh) visual indicator and the main element is the primary document to be refreshed:</p>
-<pre><code class="language-html"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">&lt;</span><span style="color: var(--shiki-token-string-expression)">header</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">id</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;refresh&quot;</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  &lt;</span><span style="color: var(--shiki-token-string-expression)">svg</span><span style="color: var(--shiki-color-text)">&gt;…&lt;/</span><span style="color: var(--shiki-token-string-expression)">svg</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  &lt;</span><span style="color: var(--shiki-token-string-expression)">span</span><span style="color: var(--shiki-color-text)">&gt;Pull to refresh&lt;/</span><span style="color: var(--shiki-token-string-expression)">span</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">&lt;/</span><span style="color: var(--shiki-token-string-expression)">header</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">&lt;</span><span style="color: var(--shiki-token-string-expression)">main</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">id</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;refresh-main&quot;</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  &lt;</span><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)">&gt;…&lt;/</span><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  &lt;</span><span style="color: var(--shiki-token-string-expression)">p</span><span style="color: var(--shiki-color-text)">&gt;…&lt;/</span><span style="color: var(--shiki-token-string-expression)">p</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">&lt;/</span><span style="color: var(--shiki-token-string-expression)">main</span><span style="color: var(--shiki-color-text)">&gt;</span></span></code></pre>
-</code></pre>
-<p>Then, setup the snap scroller on <code>:root</code> and give it smoooth scroll behavior so that programmatic scroll position assignment (like when the refresh task is complete and main is scrolled to) interpolates:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">html</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">scroll-snap-type</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">y mandatory</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">overscroll-behavior</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">contain</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">scroll-behavior</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">smooth</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-
-        <h2>
-          Hacky scroll-start
-          <a name="hacky-scroll-start" href="#hacky-scroll-start">#</a>
-        </h2>
-       <p>Next give the main element a snap align position, and since it&#39;s the only child of the scroller that has an assignment AND since the scroller has <code>snap-type</code> set to <code>mandatory</code>, the main element will be snapped when the page is first rendered:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">main</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/*  the only child with snap alignment is &quot;scroll start&quot;  */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">scroll-snap-align</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">start</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">/*  it&#39;s not &quot;toss to refresh&quot;  */</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">scroll-snap-stop</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">always</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>So that&#39;s a bit tricky, because the PTR element also needs to be a scroll snap point so it&#39;s snaps when we scroll up… This is where this first tricky trick comes in; where we&#39;re going to give the PTR element a snap-align position, but after a delay. The delay is to trick the browser into rendering the main element as a pseudo <a href="https://drafts.csswg.org/css-scroll-snap-2/#scroll-start"><code>scroll-start</code></a> element, and then right after, to give the PTR element a snap position so a user can snap to it. </p>
-<p>The 2nd part of this trick is the snapping element is a pseudo element that&#39;s much smaller than the PTR element (<code>10px</code> tall), and this makes the snap point require a very deliberate user gesture, like the user needs to scroll the refresh element quite far into view before it takes snapping away from <code>&lt;main&gt;</code>:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">#refresh::before</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">content</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;&quot;</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">position</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">absolute</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">inset</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">0</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">block-size</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">10</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">animation</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">delayed-snap-point 2</span><span style="color: var(--shiki-token-keyword)">ms</span><span style="color: var(--shiki-token-constant)"> forwards</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">@keyframes</span><span style="color: var(--shiki-color-text)"> delayed-snap-point {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  to { </span><span style="color: var(--shiki-token-constant)">scroll-snap-align</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">start</span><span style="color: var(--shiki-color-text)"> }</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>So this says, after <code>2ms</code>, assign the refresh <code>10px</code> tall pseudo element a snap alignment of start.</p>
-
-        <h2>
-          Scroll Driven Animation
-          <a name="scroll-driven-animation" href="#scroll-driven-animation">#</a>
-        </h2>
-       <p>So far we&#39;ve setup our HTML, got the page to render with the main element as the starting scroll position, and then made a <code>10px</code> tall snap element for the PTR target. Next, we get to animate the elements inside the PTR container to rotate and fade in as they enter the viewport.</p>
-<q class="info">
-<p>If you're new to SDA, you gotta check out <a href="https://twitter.com/bramus">Bramus</a>'s website <a href="https://scroll-driven-animations.style/">scroll-driven-animations.style</a>. It's absolute fuckin gold.</p>
-</q>
-
-<p>First, let&#39;s make the keyframes, since at least for me, I first think about the animation I want and I can articulate in the keyframes pretty quickly. The first one is pretty unexciting, a classic fade in. This will be used for the text prompt in the PTR element:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@keyframes</span><span style="color: var(--shiki-color-text)"> rotate-in {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    to {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">        </span><span style="color: var(--shiki-token-constant)">transform</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">rotateZ</span><span style="color: var(--shiki-token-constant)">(.5</span><span style="color: var(--shiki-token-keyword)">turn</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    }</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">@keyframes</span><span style="color: var(--shiki-color-text)"> fade-out {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    to {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">        </span><span style="color: var(--shiki-token-constant)">opacity</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">0</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    }</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>These keyframes will apply as the element is leaving the viewport (the top), which interestingly feels like it&#39;s entering the viewport because we&#39;re scrolling it in from the top with a user gesture. </p>
-<p>This can be difficult to imagine in your mind, and <a href="https://twitter.com/bramus">Bramus</a> has got your back again! He&#39;s <a href="https://scroll-driven-animations.style/tools/view-timeline/ranges/#range-start-name=exit&range-start-percentage=0&range-end-name=exit&range-end-percentage=100&view-timeline-axis=block&view-timeline-inset=0&subject-size=smaller&subject-animation=reveal&interactivity=clicktodrag&show-areas=yes&show-fromto=yes&show-labels=yes">made a tool to see the phases and their viewport intersections</a>. Here I&#39;ve recorded me using it to show the phase these keyframes will run for:</p>
-<p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,q_auto/argyleink/ptr-exit-phase.mp4 
-            width="928" 
-            height="522"
-            alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/so_0.5,f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/ptr-exit-phase.jpg"
-            controls 
-            loop
-            muted 
-            playsinline 
-            allowFullScreen
-          /></p>
-<p>This should help you see how the <code>exit</code> phase maps so closely to the pull-to-refresh scroll linked effect we&#39;re going for!</p>
-<p>Next we can use the keyframes and tie them to a view-timeline for each element we want to animate:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">#refresh</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">&gt;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">svg</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">animation</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">linear rotate-in</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">animation-timeline</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">view(</span><span style="color: var(--shiki-color-text)">);</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">animation-range</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">exit 0</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> exit 100</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-token-function)">#refresh</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">&gt;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">span</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">animation</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">linear fade-out</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">animation-timeline</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">view(</span><span style="color: var(--shiki-color-text)">);</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">animation-range</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">exit -200</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> exit 100</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,q_auto/argyleink/ptr-zoomed.mp4 
-            width="1034" 
-            height="558"
-            alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/so_0.5,f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/ptr-zoomed.jpg"
-            controls 
-            loop
-            muted 
-            playsinline 
-            allowFullScreen
-          /></p>
-<p>The elements use their own viewport presence <code>view()</code> as the animation range. The range phase is specified as <code>exit</code> and each instance tailors that range a little bit since their own presence is so small (their own size).</p>
-
-        <h2>
-          Some JS to complete the UX
-          <a name="some-js-to-complete-the-ux" href="#some-js-to-complete-the-ux">#</a>
-        </h2>
-       <p>The <a href="https://developer.chrome.com/blog/scrollend-a-new-javascript-event/"><code>scrollend</code></a> event is clutch here for us to know when the user&#39;s scroll gesture has completed. Then we can check <code>scrollTop</code> to see if scroll ended at the top, at which point we can trigger some data fetching, or in this case, simulate it.</p>
-<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> {scrollend} </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;https://cdn.jsdelivr.net/gh/argyleink/scrollyfills@latest/dist/scrollyfills.modern.js&#39;</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">const</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">ptr_scrollport</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">document</span><span style="color: var(--shiki-token-function)">.querySelector</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;html&#39;</span><span style="color: var(--shiki-color-text)">)</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">const</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">ptr</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">document</span><span style="color: var(--shiki-token-function)">.querySelector</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;#refresh&#39;</span><span style="color: var(--shiki-color-text)">)</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">const</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">main</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">document</span><span style="color: var(--shiki-token-function)">.querySelector</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;#refresh-main&#39;</span><span style="color: var(--shiki-color-text)">)</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">const</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">determinePTR</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> event </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-keyword)">if</span><span style="color: var(--shiki-color-text)"> (</span><span style="color: var(--shiki-token-constant)">event</span><span style="color: var(--shiki-color-text)">.</span><span style="color: var(--shiki-token-constant)">target</span><span style="color: var(--shiki-color-text)">.scrollTop </span><span style="color: var(--shiki-token-keyword)">&lt;=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">0</span><span style="color: var(--shiki-color-text)">) {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-comment)">// fetch()</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">ptr</span><span style="color: var(--shiki-token-function)">.querySelector</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;span&#39;</span><span style="color: var(--shiki-color-text)">).textContent </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;refreshing...&#39;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">ptr</span><span style="color: var(--shiki-token-function)">.setAttribute</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;loading-state&#39;</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;loading&#39;</span><span style="color: var(--shiki-color-text)">)</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-comment)">// sim response</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-function)">setTimeout</span><span style="color: var(--shiki-color-text)">(() </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">      </span><span style="color: var(--shiki-token-constant)">ptr</span><span style="color: var(--shiki-token-function)">.querySelector</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;span&#39;</span><span style="color: var(--shiki-color-text)">).textContent </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;done!&#39;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">      </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">      </span><span style="color: var(--shiki-token-function)">setTimeout</span><span style="color: var(--shiki-color-text)">(() </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">        </span><span style="color: var(--shiki-token-constant)">ptr</span><span style="color: var(--shiki-token-function)">.removeAttribute</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;loading-state&#39;</span><span style="color: var(--shiki-color-text)">)</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">        </span><span style="color: var(--shiki-token-constant)">main</span><span style="color: var(--shiki-token-function)">.scrollIntoView</span><span style="color: var(--shiki-color-text)">({ behavior</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;smooth&#39;</span><span style="color: var(--shiki-color-text)"> })</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-color-text)">        </span><span style="color: var(--shiki-token-comment)">// wait half a second so the user can see the done! message</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">        </span><span style="color: var(--shiki-token-constant)">window</span><span style="color: var(--shiki-token-function)">.addEventListener</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;scrollend&#39;</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> e </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">          </span><span style="color: var(--shiki-token-constant)">ptr</span><span style="color: var(--shiki-token-function)">.querySelector</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;span&#39;</span><span style="color: var(--shiki-color-text)">).textContent </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;Pull to refresh&#39;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">        }</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> {once</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">true</span><span style="color: var(--shiki-color-text)">})</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">      }</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">500</span><span style="color: var(--shiki-color-text)">)</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    }</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">2000</span><span style="color: var(--shiki-color-text)">)</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  }</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">window</span><span style="color: var(--shiki-token-function)">.addEventListener</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;scrollend&#39;</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> e </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-function)">determinePTR</span><span style="color: var(--shiki-color-text)">({target</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> ptr_scrollport})</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">})</span></span></code></pre>
-</code></pre>
-<p>At the end of all this logic, it scrolls <code>&lt;main&gt;</code> back into view with <code>scrollIntoView()</code> and then the user can trigger it all over again if they like!</p>
-
-        <h2>
-          Try it
-          <a name="try-it" href="#try-it">#</a>
-        </h2>
-       <p>Here&#39;s the Codepen, give it a shot. It&#39;s best in Chrome Canary until SDA has better support.</p>
-<p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/ExOWjMe?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/ExOWjMe">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-<p>Worth double noting this is a prototype and isn&#39;t production ready, but does give you many tools to help round out interactions that are linked to scroll.</p>
-]]></description>
-            <link>https://nerdy.dev/pull-to-refresh-prototype-with-scroll-snap-and-scroll-driven-animation?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/pull-to-refresh-prototype-with-scroll-snap-and-scroll-driven-animation?utm_source=rss</guid>
-            <category><![CDATA[blog]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Wed, 28 Jun 2023 14:43:37 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/ptr-proto.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/ptr-proto.png"/>
         </item>
     </channel>
 </rss>

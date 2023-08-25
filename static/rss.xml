@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 24 Aug 2023 21:06:27 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 25 Aug 2023 23:37:19 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,24 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[State Of Css 2023 Party]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/state-of-css-2023-party.png" alt="Me, Stacy and Stephanie on a title card with the show name on it and the PodRocket logo." height="1377"  width="2540" />
+        <p>Was on <strong>The CSS Survey&#39;s</strong> <a href="https://www.twitch.tv/videos/1908492849">Live Stream Party</a>!</p>
+<p>✅ give <a href="https://twitter.com/SachaGreif">Sacha</a> and <a href="https://chenhuijing.com/#%F0%9F%96%8C">Hui</a> a follow!<br>✅ sink your teeth into that <a href="https://2023.stateofcss.com">juicy data</a><br>✅ hear predictions and suprises!  </p>
+<p><a href="https://2023.stateofcss.com">Just take me to the results</a></p>
+]]></description>
+            <link>https://nerdy.dev/state-of-css-2023-party?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/state-of-css-2023-party?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <category><![CDATA[media]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Fri, 25 Aug 2023 23:35:50 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/state-of-css-2023-party.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/state-of-css-2023-party.png"/>
+        </item>
         <item>
             <title><![CDATA[2023 Summer Cabin Vacation]]></title>
             <description><![CDATA[
@@ -187,28 +205,6 @@
             <pubDate>Thu, 13 Jul 2023 16:19:32 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/morphing-button.jpg" length="0" type="image/jpeg"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/morphing-button.jpg"/>
-        </item>
-        <item>
-            <title><![CDATA[The New Responsive With Code Ryan]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/code-ryan-podcast.jpg" alt="Me and Ryan shown with the text Better Responsive Design" height="720"  width="1280" />
-        <p>Was on the <a href="https://www.youtube.com/@coderyan">@coderyan</a> show!</p>
-<p><a href="https://www.youtube.com/watch?v=3YLGePxg6EI">Watch it‽</a> </p>
-<ul>
-<li>Designing for more than the viewport</li>
-<li>Overview of the <a href="/spoke-at-figma-config-2023">talk from Config 2023</a></li>
-<li>CSS stuff 🤓</li>
-</ul>
-]]></description>
-            <link>https://nerdy.dev/the-new-responsive-with-code-ryan?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/the-new-responsive-with-code-ryan?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[media]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Mon, 10 Jul 2023 17:05:19 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/code-ryan-podcast.jpg" length="0" type="image/jpeg"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/code-ryan-podcast.jpg"/>
         </item>
     </channel>
 </rss>

@@ -82,7 +82,7 @@ When learning Rust or TypeScript, a great place is to start with the type primit
 </div>
 
 <q class="info">
-  <div>Full list <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Type">on MDN</a></div>
+  <div>Full list <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Types">on MDN</a></div>
 </q>
 
 Peep another typed prop definition:

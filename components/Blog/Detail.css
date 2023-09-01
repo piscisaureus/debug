@@ -89,6 +89,10 @@
 
   & pre {
     max-inline-size: 100%;
+
+    @media (--OSlight) {
+      box-shadow: var(--shadow-6);
+    }
   }
 
   & > article > pre {

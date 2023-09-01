@@ -17,7 +17,13 @@ q {
     transform: translateX(-50%) translateY(-50%);
     background-color: var(--surface-document);
     padding: var(--size-3);
-    clip-path: circle(40%);
+    border-radius: var(--radius-round);
+    aspect-ratio: 1;
+    line-height: 0;
+
+    @media (--OSlight) {
+      border: 1px solid var(--link);
+    }
   }
 
   &.warning::before {

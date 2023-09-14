@@ -1,4 +1,4 @@
-import { Handlers, PageProps } from '$fresh/server.ts'
+import { Handlers, AppProps } from '$fresh/server.ts'
 import { Head } from '$fresh/runtime.ts'
 
 import { recordRequest } from '~/utils/analytics.ts'
@@ -21,7 +21,7 @@ export const handler: Handlers<IPost[]> = {
   }
 }
 
-export default function BlogIndexPage(props: PageProps<IPost[]>) {
+export default function BlogIndexPage(props: AppProps<IPost[]>) {
   const posts = props.data
 
   return (

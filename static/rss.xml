@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 14 Sep 2023 16:27:25 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 20 Sep 2023 04:02:14 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,36 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Oklch Stepped Palette With A Bit Of A Hue Rotate]]></title>
+            <description><![CDATA[
+          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/hue-list.mp4" alt="undefined" height="964"  width="1714" />
+        <p><a href="https://codepen.io/argyleink/pen/YzdEapM">View Source</a></p>
+]]></description>
+            <link>https://nerdy.dev/oklch-stepped-palette-with-a-bit-of-a-hue-rotate?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/oklch-stepped-palette-with-a-bit-of-a-hue-rotate?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Wed, 20 Sep 2023 03:56:20 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/hue-list.mp4" length="0" type="video/mp4"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/hue-list.mp4"/>
+        </item>
+        <item>
+            <title><![CDATA[Relative Color Rocks]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-rcs.png" alt="rgb(from green r g b / alpha)" height="545"  width="1020" />
+        <p>CSS <a href="https://web.dev/state-of-css-2022/#relative-color-syntax">relative color</a> syntax</p>
+]]></description>
+            <link>https://nerdy.dev/relative-color-rocks?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/relative-color-rocks?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Mon, 18 Sep 2023 03:54:56 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-rcs.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-rcs.png"/>
+        </item>
         <item>
             <title><![CDATA[Chris Coyier Is Bad At Css Too]]></title>
             <description><![CDATA[
@@ -358,47 +388,6 @@
             <pubDate>Thu, 17 Aug 2023 15:28:42 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-podcast-overflow.jpg" length="0" type="image/jpeg"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-podcast-overflow.jpg"/>
-        </item>
-        <item>
-            <title><![CDATA[Introducing The Bad At Css Podcast]]></title>
-            <description><![CDATA[
-          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/announcing-bad-at-css.mp4" alt="David and Adam quick cut about all the CSS things they're bad at." height="1080"  width="1920" />
-        <p>🎙️ <strong>The Bad At CSS Podcast</strong>  </p>
-<p><a href="https://twitter.com/_davideast">David East</a> and I host, and sometimes bring on an occasional guest 🤓</p>
-<p>Subscribe and listen on:<br>
-<a href="https://open.spotify.com/show/5vtb28Q1QNzgv07v9LzpGp">Spotify</a> · 
-<a href="https://podcasts.apple.com/us/podcast/bad-at-css/id1702605487">Apple</a> · 
-<a href="https://www.youtube.com/watch?v=N3S0GQ-oK_4&t=1s">YouTube</a></p>
-]]></description>
-            <link>https://nerdy.dev/introducing-the-bad-at-css-podcast?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/introducing-the-bad-at-css-podcast?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <category><![CDATA[media]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Wed, 16 Aug 2023 22:17:22 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/announcing-bad-at-css.mp4" length="0" type="video/mp4"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/announcing-bad-at-css.mp4"/>
-        </item>
-        <item>
-            <title><![CDATA[Thinking On Ways To Solve Adaptive Typography]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-adaptive-type.jpg" alt="GUI Challenges avatar is next to a piece of CSS code and the title Adaptive Typography" height="720"  width="1280" />
-        <p><a href="https://www.youtube.com/watch?v=8B7xOgp5Aow&list=PLNYkxOF6rcIAaV1wwI9540OC_3XoIzMjQ&index=1">Thinking on ways to solve <strong>Adaptive Typography</strong></a></p>
-<p>In this <a href="https://goo.gle/GUIchallenges">GUI Challenge</a>, 
-<a href="https://www.youtube.com/channel/UCBGr3ZMcV5jke40_Wrv3fNA">I</a> show how to use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-contrast"><code>prefers-contrast</code></a> media query to adapt both system and adaptive fonts to match user&#39;s contrast preferences.</p>
-<p><strong>Contrast is more than just color</strong></p>
-<p><a href="https://gui-challenges.web.app/adaptive-typography/dist/">demo</a> · 
-<a href="https://github.com/argyleink/gui-challenges">source</a></p>
-]]></description>
-            <link>https://nerdy.dev/thinking-on-ways-to-solve-adaptive-typography?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/thinking-on-ways-to-solve-adaptive-typography?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[media]]></category>
-            <dc:creator><![CDATA[Adam@GUIchallenges]]></dc:creator>
-            <pubDate>Wed, 16 Aug 2023 19:41:30 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-adaptive-type.jpg" length="0" type="image/jpeg"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-adaptive-type.jpg"/>
         </item>
     </channel>
 </rss>

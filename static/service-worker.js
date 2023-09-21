@@ -3,7 +3,7 @@ importScripts(
 )
 const {strategies, routing, recipes} = workbox
 
-recipes.pageCache()
+// recipes.pageCache()
 recipes.staticResourceCache()
 recipes.imageCache()
 

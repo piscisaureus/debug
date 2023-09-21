@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 20 Sep 2023 04:02:14 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 21 Sep 2023 04:26:34 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -40,7 +40,7 @@
         <item>
             <title><![CDATA[Relative Color Rocks]]></title>
             <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-rcs.png" alt="rgb(from green r g b / alpha)" height="545"  width="1020" />
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-rcs.png" alt="rgb(from green r g b / alpha)" height="712"  width="1075" />
         <p>CSS <a href="https://web.dev/state-of-css-2022/#relative-color-syntax">relative color</a> syntax</p>
 ]]></description>
             <link>https://nerdy.dev/relative-color-rocks?utm_source=rss</link>

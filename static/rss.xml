@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 05 Oct 2023 03:42:18 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Oct 2023 03:50:09 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -23,7 +23,7 @@
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
         <item>
-            <title><![CDATA[Css Scope In Chrome With Rad Coverage By Bramus]]></title>
+            <title><![CDATA[CSS Scope In Chrome With Coverage By Bramus]]></title>
             <description><![CDATA[<p><a href="https://twitter.com/bramus">Bramus</a> explains <code>@scope</code> on <a href="https://developer.chrome.com/articles/at-scope/">developer.chrome.com</a> and his <a href="https://www.bram.us">personal blog</a> with this <a href="https://www.bram.us/2023/08/22/a-quick-introduction-to-css-scope/">quick introduction.</a></p>
 <pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@scope</span><span style="color: var(--shiki-color-text)"> (.Card) {</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-keyword)">&gt;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">header</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
@@ -34,15 +34,15 @@
 </code></pre>
 <p><code>@scope</code> is new in <strong>Chrome 118</strong></p>
 ]]></description>
-            <link>https://nerdy.dev/css-@scope-in-chrome-with-rad-coverage-by-bramus?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/css-@scope-in-chrome-with-rad-coverage-by-bramus?utm_source=rss</guid>
+            <link>https://nerdy.dev/css-@scope-in-chrome-with-coverage-by-bramus?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/css-@scope-in-chrome-with-coverage-by-bramus?utm_source=rss</guid>
             <category><![CDATA[note]]></category>
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
             <pubDate>Thu, 05 Oct 2023 03:28:48 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Bad At Css I Love Typescript For You]]></title>
+            <title><![CDATA[Bad At CSS I Love Typescript For You]]></title>
             <description><![CDATA[
           <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bad-at-css-lewis.png" alt="Hand drawn CSS bursting out the box" height="984"  width="1065" />
         <p><span class="Tag">NEW</span><br>🎙️ <strong>Bad At CSS Podcast</strong>  </p>
@@ -94,7 +94,7 @@
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-rcs.png"/>
         </item>
         <item>
-            <title><![CDATA[Chris Coyier Is Bad At Css Too]]></title>
+            <title><![CDATA[Chris Coyier Is Bad At CSS Too]]></title>
             <description><![CDATA[
           <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/chris-bad-at-css.jpg" alt="Chris Coyier quoted with 'Im not really good at trickery.'" height="720"  width="1280" />
         <p><span class="Tag">NEW</span><br>🎙️ <strong>Bad At CSS Podcast</strong>  </p>
@@ -324,7 +324,7 @@
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/at-property-typed.png"/>
         </item>
         <item>
-            <title><![CDATA[The Css Podcast Why Do I Have Layout Shift]]></title>
+            <title><![CDATA[The CSS Podcast Why Do I Have Layout Shift]]></title>
             <description><![CDATA[
           <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/csspod-layout-shift.jpg" alt="Una and I happy and excited for this episode on why you might have layout shift" height="720"  width="1280" />
         <p>Next up on <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIAx_S2LSfXQLorIeehsPL3q">The CSS Podcast</a>…</p>
@@ -343,7 +343,7 @@
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/csspod-layout-shift.jpg"/>
         </item>
         <item>
-            <title><![CDATA[State Of Css 2023 Party]]></title>
+            <title><![CDATA[State Of CSS 2023 Party]]></title>
             <description><![CDATA[
           <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/state-of-css-2023-party.png" alt="Me, Stacy and Stephanie on a title card with the show name on it and the PodRocket logo." height="1377"  width="2540" />
         <p>Was on <strong>The CSS Survey&#39;s</strong> <a href="https://www.twitch.tv/videos/1908492849">Live Stream Party</a>!</p>
@@ -361,7 +361,7 @@
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/state-of-css-2023-party.png"/>
         </item>
         <item>
-            <title><![CDATA[The Css Podcast Why Is My Image Distorted]]></title>
+            <title><![CDATA[The CSS Podcast Why Is My Image Distorted]]></title>
             <description><![CDATA[
           <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/csspod-image-distorted.jpg" alt="Una and I happy and excited for this episode on why you might have a distorted image" height="720"  width="1280" />
         <p>Next up on <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIAx_S2LSfXQLorIeehsPL3q">The CSS Podcast</a>…</p>

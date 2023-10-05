@@ -50,7 +50,7 @@ function makeRSS(posts:IPost[]) {
     const title = post?.title || titleCase(post.slug.replaceAll('-', ' '))
     
     const futureXMLItemObject = {
-      title:  title,
+      title:  title.replaceAll('Css', 'CSS'),
       description: post.content,
       url: 'https://nerdy.dev/'+post.slug+'?utm_source=rss',
       categories: post?.tags?.length != 0

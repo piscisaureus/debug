@@ -9,6 +9,8 @@ media:
     height: 320
 tags: 
   - git
+  - css
+  - tools
 ---
 
 Announcing [transition.style](https://transition.style)

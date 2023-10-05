@@ -16,6 +16,7 @@ import HtmlIcon from './html.tsx'
 import MediaIcon from './media.tsx'
 import GitIcon from './git.tsx'
 import SpeakingIcon from './speaking.tsx'
+import ToolsIcon from './tools.tsx'
 
 export default function PageIcons() {
   return (
@@ -91,6 +92,11 @@ export default function PageIcons() {
       <symbol id="icon.talks">
         <title>Speaking Icon</title>
         <SpeakingIcon/>
+      </symbol>
+
+      <symbol id="icon.tools">
+        <title>Tools Icon</title>
+        <ToolsIcon/>
       </symbol>
     </svg>
   )

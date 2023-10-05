@@ -9,6 +9,7 @@ media:
     height: 400
 tags: 
   - git
+  - tools
 ---
 
 [VisBug](https://github.com/GoogleChromeLabs/ProjectVisBug) was made open source! Plus an [interactive tutorial website](http://visbug.web.app/) that looks like a bunch of artboards that need fixed.

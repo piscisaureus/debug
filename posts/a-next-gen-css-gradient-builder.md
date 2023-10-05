@@ -11,6 +11,7 @@ hero:
   height: 2132
 tags: 
   - css
+  - tools
 ---
 
 Still a lot to do but also already offering a lot to learn! So stoked to release this for public availability 🤘🏻💀

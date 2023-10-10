@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 05 Oct 2023 04:19:32 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 Oct 2023 15:22:59 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,26 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[A CSS Container Query Pattern]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cq-messages-pattern.png" alt=".Message { display: flex;
+@container Column (width < 40ch) { flex-direction: column; text-align: center; } }" height="802"  width="1032" />
+        <p><code>@Container</code> pattern  </p>
+<p>✅ nice inline flex layout when there&#39;s room in it&#39;s <code>Column</code> container  </p>
+<p>if not?  </p>
+<p>✅ switch to a nice block layout and center the text</p>
+<p>I like the <code>ch</code> unit for this since I&#39;m wanting to switch based on available reading length for the text 🤓</p>
+]]></description>
+            <link>https://nerdy.dev/a-css-container-query-pattern?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/a-css-container-query-pattern?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Tue, 10 Oct 2023 15:21:32 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cq-messages-pattern.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/cq-messages-pattern.png"/>
+        </item>
         <item>
             <title><![CDATA[How To Use CSS Relative Colors Syntax On The Latest GUI Challenge]]></title>
             <description><![CDATA[
@@ -385,25 +405,6 @@
             <pubDate>Fri, 25 Aug 2023 23:35:50 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/state-of-css-2023-party.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/state-of-css-2023-party.png"/>
-        </item>
-        <item>
-            <title><![CDATA[The CSS Podcast Why Is My Image Distorted]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/csspod-image-distorted.jpg" alt="Una and I happy and excited for this episode on why you might have a distorted image" height="720"  width="1280" />
-        <p>Next up on <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIAx_S2LSfXQLorIeehsPL3q">The CSS Podcast</a>…</p>
-<p><span class="Tag">Ep #70</span><br><strong>Why do I have a distorted image?</strong> </p>
-<p><a href="https://www.youtube.com/watch?v=bxz-sOxXQsA&list=PLNYkxOF6rcIAx_S2LSfXQLorIeehsPL3q">Watch</a> · 
-<a href="https://thecsspodcast.libsyn.com/70-why-is-my-image-distorted">Listen</a></p>
-]]></description>
-            <link>https://nerdy.dev/the-css-podcast-why-is-my-image-distorted?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/the-css-podcast-why-is-my-image-distorted?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[media]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[Adam@theCSSpodcast]]></dc:creator>
-            <pubDate>Fri, 25 Aug 2023 18:14:39 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/csspod-image-distorted.jpg" length="0" type="image/jpeg"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/csspod-image-distorted.jpg"/>
         </item>
     </channel>
 </rss>

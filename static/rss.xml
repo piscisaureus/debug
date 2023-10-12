@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 12 Oct 2023 05:34:48 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Oct 2023 22:43:20 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,19 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Laser Cut Skull Mandala]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-mandala.jpg" alt="A wood cut circle with a complex SVG mandala cut into it, with a laser cut skull in the middle" height="800"  width="800" />
+        ]]></description>
+            <link>https://nerdy.dev/laser-cut-skull-mandala?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/laser-cut-skull-mandala?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Thu, 12 Oct 2023 22:42:31 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-mandala.jpg" length="0" type="image/jpeg"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-mandala.jpg"/>
+        </item>
         <item>
             <title><![CDATA[New Chrome Developers Article On CSS Relative Color Syntax]]></title>
             <description><![CDATA[
@@ -384,25 +397,6 @@
             <pubDate>Fri, 01 Sep 2023 17:59:18 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/at-property-typed.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/at-property-typed.png"/>
-        </item>
-        <item>
-            <title><![CDATA[The CSS Podcast Why Do I Have Layout Shift]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/csspod-layout-shift.jpg" alt="Una and I happy and excited for this episode on why you might have layout shift" height="720"  width="1280" />
-        <p>Next up on <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIAx_S2LSfXQLorIeehsPL3q">The CSS Podcast</a>…</p>
-<p><span class="Tag">Ep #71</span><br><strong>Why do I have layout shift?</strong> </p>
-<p><a href="https://www.youtube.com/watch?v=bffwdyKoS8Q&list=PLNYkxOF6rcIAx_S2LSfXQLorIeehsPL3q">Watch</a> · 
-<a href="https://thecsspodcast.libsyn.com">Listen</a></p>
-]]></description>
-            <link>https://nerdy.dev/the-css-podcast-why-do-i-have-layout-shift?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/the-css-podcast-why-do-i-have-layout-shift?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[media]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[Adam@theCSSpodcast]]></dc:creator>
-            <pubDate>Wed, 30 Aug 2023 18:14:39 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/csspod-layout-shift.jpg" length="0" type="image/jpeg"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/csspod-layout-shift.jpg"/>
         </item>
     </channel>
 </rss>

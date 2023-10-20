@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 18 Oct 2023 17:23:21 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Oct 2023 15:36:32 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,27 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Bounce Easing Made Easy With Open Props]]></title>
+            <description><![CDATA[
+          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bounce_rsxyt9.mp4" alt="some title" height="852"  width="1136" />
+        <p><span class="Tag">NEW</span></p>
+<p>5 <strong>bounce easings</strong> added to <a href="https://open-props.style/#easing">Open Props</a>!</p>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.box</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">animation</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">drop 1</span><span style="color: var(--shiki-token-keyword)">s</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--ease-bounce-2)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p><a href="https://codepen.io/argyleink/pen/qBgWaym">try it out!</a></p>
+]]></description>
+            <link>https://nerdy.dev/bounce-easing-made-easy-with-open-props?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/bounce-easing-made-easy-with-open-props?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Fri, 20 Oct 2023 15:22:57 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bounce_rsxyt9.mp4" length="0" type="video/mp4"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bounce_rsxyt9.mp4"/>
+        </item>
         <item>
             <title><![CDATA[Thinking On Ways To Make Spoopy Halloween Projections]]></title>
             <description><![CDATA[
@@ -188,21 +209,6 @@ emulate a Halloween projector effect I saw on a wall.</p>
             <pubDate>Wed, 20 Sep 2023 03:56:20 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/hue-list.mp4" length="0" type="video/mp4"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/hue-list.mp4"/>
-        </item>
-        <item>
-            <title><![CDATA[Relative Color Rocks]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-rcs.png" alt="rgb(from green r g b / alpha)" height="712"  width="1075" />
-        <p>CSS <a href="https://web.dev/state-of-css-2022/#relative-color-syntax">relative color</a> syntax</p>
-]]></description>
-            <link>https://nerdy.dev/relative-color-rocks?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/relative-color-rocks?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Mon, 18 Sep 2023 03:54:56 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-rcs.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-rcs.png"/>
         </item>
     </channel>
 </rss>

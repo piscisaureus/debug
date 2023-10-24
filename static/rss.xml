@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 20 Oct 2023 15:36:32 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Oct 2023 16:22:41 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,26 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[How Do I Center This Div]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-pod-centering.jpg" alt="Una and Adam smiling with a title that says How do I center this div?" height="720"  width="1280" />
+        <p><strong>How do I center this div?</strong> </p>
+<p><a href="https://una.im/">Una</a> and I discuss CSS centering, and all the different ways CSS has your back.</p>
+<p>Turns out, there&#39;s A LOT of ways to center.</p>
+<p><a href="https://www.youtube.com/watch?v=0qL3OiTJbSc&list=PLNYkxOF6rcIAx_S2LSfXQLorIeehsPL3q">Watch</a> · 
+<a href="https://thecsspodcast.libsyn.com/74-how-do-i-center-a-div">Listen</a></p>
+]]></description>
+            <link>https://nerdy.dev/how-do-I-center-this-div?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/how-do-I-center-this-div?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <category><![CDATA[media]]></category>
+            <dc:creator><![CDATA[Adam@theCSSpodcast]]></dc:creator>
+            <pubDate>Tue, 24 Oct 2023 16:21:24 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-pod-centering.jpg" length="0" type="image/jpeg"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-pod-centering.jpg"/>
+        </item>
         <item>
             <title><![CDATA[Bounce Easing Made Easy With Open Props]]></title>
             <description><![CDATA[
@@ -194,21 +214,6 @@ emulate a Halloween projector effect I saw on a wall.</p>
             <pubDate>Thu, 21 Sep 2023 20:01:11 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bad-at-css-lewis.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bad-at-css-lewis.png"/>
-        </item>
-        <item>
-            <title><![CDATA[Oklch Stepped Palette With A Bit Of A Hue Rotate]]></title>
-            <description><![CDATA[
-          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/hue-list.mp4" alt="undefined" height="964"  width="1714" />
-        <p><a href="https://codepen.io/argyleink/pen/YzdEapM">View Source</a></p>
-]]></description>
-            <link>https://nerdy.dev/oklch-stepped-palette-with-a-bit-of-a-hue-rotate?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/oklch-stepped-palette-with-a-bit-of-a-hue-rotate?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Wed, 20 Sep 2023 03:56:20 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/hue-list.mp4" length="0" type="video/mp4"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/hue-list.mp4"/>
         </item>
     </channel>
 </rss>

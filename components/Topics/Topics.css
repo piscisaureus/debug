@@ -101,6 +101,7 @@
       &:nth-child(6) > .filled-icon { fill: var(--neon-pink) }
       &:nth-child(7) > .filled-icon { fill: var(--neon-orange) }
       &:nth-child(8) > .filled-icon { fill: var(--neon-red) }
+      &:nth-child(9) > .filled-icon { fill: var(--neon-yellow) }
     }
 
     & > svg {

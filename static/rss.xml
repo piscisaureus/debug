@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 25 Oct 2023 19:26:06 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Oct 2023 19:35:30 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,21 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[CSS Prefers Reduced Transparency]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/prefers-reduced-transparency-2.png" alt="a comparison is shown between a transparent blurry white card design with white text next to a reduced transparency equivalent that is dark and nearly opaque" height="1018"  width="2202" />
+        <p>I wrote about <a href="https://developer.chrome.com/blog/css-prefers-reduced-transparency/">CSS prefers-reduced-transparency</a> on <a href="https://developer.chrome.com/">developer.chrome.com</a> 🤓</p>
+]]></description>
+            <link>https://nerdy.dev/css-prefers-reduced-transparency?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/css-prefers-reduced-transparency?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Wed, 25 Oct 2023 19:31:30 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/prefers-reduced-transparency-2.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/prefers-reduced-transparency-2.png"/>
+        </item>
         <item>
             <title><![CDATA[Meaningful Ways To Use Radio And Checkbox Groups]]></title>
             <description><![CDATA[
@@ -190,25 +205,6 @@ emulate a Halloween projector effect I saw on a wall.</p>
             <pubDate>Thu, 05 Oct 2023 03:54:11 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-relative-color.jpg" length="0" type="image/jpeg"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-relative-color.jpg"/>
-        </item>
-        <item>
-            <title><![CDATA[CSS Scope In Chrome With Coverage By Bramus]]></title>
-            <description><![CDATA[<p><a href="https://twitter.com/bramus">Bramus</a> explains <code>@scope</code> on <a href="https://developer.chrome.com/articles/at-scope/">developer.chrome.com</a> and his <a href="https://www.bram.us">personal blog</a> with this <a href="https://www.bram.us/2023/08/22/a-quick-introduction-to-css-scope/">quick introduction.</a></p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@scope</span><span style="color: var(--shiki-color-text)"> (.Card) {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-keyword)">&gt;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">header</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-keyword)">&gt;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">footer</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">hsl</span><span style="color: var(--shiki-token-constant)">(none none none / 20</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)">)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  }</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p><code>@scope</code> is new in <strong>Chrome 118</strong></p>
-]]></description>
-            <link>https://nerdy.dev/css-@scope-in-chrome-with-coverage-by-bramus?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/css-@scope-in-chrome-with-coverage-by-bramus?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
-            <pubDate>Thu, 05 Oct 2023 03:28:48 GMT</pubDate>
         </item>
     </channel>
 </rss>

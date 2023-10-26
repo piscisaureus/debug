@@ -32,6 +32,12 @@ export function recordRequest(title, {request, context}) {
     user_agent: request.headers.get('User-Agent'),
     accept_language:  request.headers.get('accept-language'),
     referrer : request.headers.get('referer'),
+    sec_ch_ua: request.headers.get('Sec-CH-UA'), 
+    sec_ch_ua_mobile: request.headers.get('Sec-CH-UA-Mobile'),
+    sec_ch_ua_platform: request.headers.get('Sec-CH-UA-Platform'),
+    sec_ch_ua_platform_version: request.headers.get('Sec-CH-UA-Platform-Version'),
+    sec_ch_width: request.headers.get('Sec-CH-Width'),
+    sec_ch_viewport_width: request.headers.get('Sec-CH-Viewport-Width'),
   })
 }
 

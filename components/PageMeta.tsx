@@ -13,7 +13,7 @@ export default function PageMeta(props:any) {
       <meta charSet="utf-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <meta http-equiv="Accept-CH" content="Viewport-Width, Width, Downlink, DPR"></meta>
-      <meta http-equiv="delegate-ch" content="sec-ch-viewport-width https://res.cloudinary.com; sec-ch-dpr https://res.cloudinary.com; sec-ch-width https://res.cloudinary.com; sec-ch-downlink https://res.cloudinary.com;"/>
+      <meta http-equiv="delegate-ch" content="sec-ch-viewport-width https://res.cloudinary.com https://api.pirsch.io; sec-ch-dpr https://res.cloudinary.com https://api.pirsch.io; sec-ch-width https://res.cloudinary.com https://api.pirsch.io; sec-ch-downlink https://res.cloudinary.com https://api.pirsch.io;"/>
       <meta name="mobile-web-app-capable" content="yes"/>
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
       <meta name="theme-color" content="#e9ecef" media="(prefers-color-scheme: light)"/>

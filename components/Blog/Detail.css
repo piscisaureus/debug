@@ -36,6 +36,21 @@
       line-height: var(--font-lineheight-4);
     }
 
+    & pre {
+      line-height: var(--font-lineheight-4);
+
+      @supports (animation-timeline: scroll()) {
+        @media (--motionOK) {
+          --foo: var(--animation-fade-in-bloom);
+          animation-name: fade-in-bloom;
+          animation-fill-mode: both;
+          animation-timing-function: linear;
+          animation-timeline: view();
+          animation-range: entry;
+        }
+      }
+    }
+
     & > p:first-of-type {
       &::first-letter {
         font-size: 7ex;

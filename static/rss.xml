@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 13 Nov 2023 23:50:56 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 17 Nov 2023 06:54:36 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,65 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Custom range input progress fill]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/range-with-view-timeline.png" alt="A slider input half filled with a vibrant gradient." height="356"  width="1930" />
+        <p>Roman Komarov forked a demo of mine the other day and showed how CSS <a href="https://scroll-driven-animations.style">scroll driven animation</a> could map the <code>input[type=range]</code> slider&#39;s thumb pseudo element position and use it to power a percentage in a gradient mask. </p>
+<p>Roman explains it all very well <a href="https://blog.kizu.dev/input-range-thumb/">here on their blog</a>.</p>
+<p>
+          <iframe 
+            class="codepen-embed" 
+            scrolling="no" 
+            title="null" 
+            src="https://codepen.io/argyleink/embed/preview/RwvLBqM?default-tab=result&editable=true&theme-id=43079" 
+            frameborder="no" 
+            loading="lazy" 
+            allowtransparency="true" 
+            allowfullscreen="true"
+          >
+            See the Pen <a href="https://codepen.io/argyleink/embed/preview/RwvLBqM">
+            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        </p>
+<p>It&#39;s <strong>super rad</strong>. And totally triggered 2 ideas…</p>
+
+        <h2>
+          FORK THE FORK!!!
+          <a name="fork-the-fork!!!" href="#fork-the-fork!!!">#</a>
+        </h2>
+       <p>The first idea I was able to finish tonight, and the 2nd I&#39;ll do sometime soon. <em>Ssssecretssss</em></p>
+<p>Here&#39;s my fork of their fork, repurposed their mapping to power the fill of a range slider. A task that&#39;s not so easy.</p>
+<p>
+          <iframe 
+            class="codepen-embed" 
+            scrolling="no" 
+            title="null" 
+            src="https://codepen.io/argyleink/embed/preview/vYbpNVm?default-tab=result&editable=true&theme-id=43079" 
+            frameborder="no" 
+            loading="lazy" 
+            allowtransparency="true" 
+            allowfullscreen="true"
+          >
+            See the Pen <a href="https://codepen.io/argyleink/embed/preview/vYbpNVm">
+            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        </p>
+<p>I left a good chunk of comments in there!</p>
+<p>While this may not have great support at the moment, and is quite a little web of CSS to setup… it&#39;s a very promising path forward for styling <code>input[type=range]</code> and <strong>other components with moveable parts</strong>. </p>
+<p>I&#39;ll be stashing this into my CSS tricks 🪦</p>
+]]></description>
+            <link>https://nerdy.dev/add-a-rad-gradient-progress-fill-to-a-range-input-with-no-JS?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/add-a-rad-gradient-progress-fill-to-a-range-input-with-no-JS?utm_source=rss</guid>
+            <category><![CDATA[blog]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Fri, 17 Nov 2023 06:26:56 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/range-with-view-timeline.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/range-with-view-timeline.png"/>
+        </item>
         <item>
             <title><![CDATA[Compare Stuff With This Minimal Setup]]></title>
             <description><![CDATA[
@@ -173,22 +232,6 @@ emulate a Halloween projector effect I saw on a wall.</p>
             <pubDate>Thu, 12 Oct 2023 22:42:31 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-mandala.jpg" length="0" type="image/jpeg"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-mandala.jpg"/>
-        </item>
-        <item>
-            <title><![CDATA[New Chrome Developers Article On CSS Relative Color Syntax]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/https://wd.imgix.net/image/vS06HQ1YTsbMKSFTIPl2iogUQP73/NJussb4uxzLcabHjaQ2m.png?auto=format&w=1600" alt="A corridor of multi-colors frames, creating a rainbow hallway, is well lit and the light is blending colors inside the corridor." height="500"  width="1500" />
-        <p>I&#39;ve got a new post over on <a href="https://developer.chrome.com">developer.chrome.com</a>!</p>
-<p>Everything you need to know about<br><a href="https://developer.chrome.com/blog/css-relative-color-syntax/">CSS Relative Color Syntax</a> 🤓</p>
-]]></description>
-            <link>https://nerdy.dev/new-chrome-developers-article-on-CSS-relative-color-syntax?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/new-chrome-developers-article-on-CSS-relative-color-syntax?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
-            <pubDate>Thu, 12 Oct 2023 05:32:29 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/https://wd.imgix.net/image/vS06HQ1YTsbMKSFTIPl2iogUQP73/NJussb4uxzLcabHjaQ2m.png?auto=format&amp;w=1600" length="0" type="false"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/https://wd.imgix.net/image/vS06HQ1YTsbMKSFTIPl2iogUQP73/NJussb4uxzLcabHjaQ2m.png?auto=format&amp;w=1600"/>
         </item>
     </channel>
 </rss>

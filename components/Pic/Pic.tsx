@@ -32,7 +32,7 @@ export default function Pic(props:Pic) {
       className={`Pic ${props.class || ''}`}
       decoding="async"
       srcset={`${sm} 350w, ${md} 768w, ${lg} 1024w`} 
-      sizes="(min-width: 1024px) 640px, (min-width: 768px) 500px, 100vw"
+      sizes="auto (min-width: 1024px) 640px, (min-width: 768px) 500px, 100vw"
     />
   )
 }

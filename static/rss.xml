@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 27 Nov 2023 22:19:39 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 30 Nov 2023 05:28:21 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,19 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[One Atom Of Time In CSS]]></title>
+            <description><![CDATA[<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">--atom: 0.15957s;</span></span></code></pre>
+</code></pre>
+<p>via <a href="https://github.com/argyleink/open-props/blob/main/src/extra/durations.css">Open Props</a></p>
+]]></description>
+            <link>https://nerdy.dev/one-atom-of-time-in-css?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/one-atom-of-time-in-css?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Thu, 30 Nov 2023 05:23:09 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Percentage Chroma]]></title>
             <description><![CDATA[<p>I learned <strong>you can use <code>%</code> for chroma</strong>!</p>
@@ -220,27 +233,6 @@
             <pubDate>Tue, 24 Oct 2023 16:21:24 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-pod-centering.jpg" length="0" type="image/jpeg"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-pod-centering.jpg"/>
-        </item>
-        <item>
-            <title><![CDATA[Bounce Easing Made Easy With Open Props]]></title>
-            <description><![CDATA[
-          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bounce_rsxyt9.mp4" alt="some title" height="852"  width="1136" />
-        <p><span class="Tag">NEW</span></p>
-<p>5 <strong>bounce easings</strong> added to <a href="https://open-props.style/#easing">Open Props</a>!</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.box</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">animation</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">drop 1</span><span style="color: var(--shiki-token-keyword)">s</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--ease-bounce-2)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p><a href="https://codepen.io/argyleink/pen/qBgWaym">try it out!</a></p>
-]]></description>
-            <link>https://nerdy.dev/bounce-easing-made-easy-with-open-props?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/bounce-easing-made-easy-with-open-props?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Fri, 20 Oct 2023 15:22:57 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bounce_rsxyt9.mp4" length="0" type="video/mp4"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bounce_rsxyt9.mp4"/>
         </item>
     </channel>
 </rss>

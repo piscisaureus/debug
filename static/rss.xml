@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 30 Nov 2023 05:28:21 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 06 Dec 2023 23:24:09 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,183 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Open Props in Next with StyleX]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/next-stylex-op.png" alt="Next logo, StyleX logo, Open Props logo" height="369"  width="1440" />
+        <p><a href="https://stylexjs.com">StyleX</a> outsourced tokens to <a href="https://open-props.style">Open Props</a>, so a new <a href="https://react.dev/">React</a> app with StyleX, Open Props and <a href="https://nextjs.org/">NextJS</a> is pretty quick to setup. Let&#39;s dive in and get y&#39;all started.</p>
+
+        <h2>
+          Spin up a new Next app
+          <a name="spin-up-a-new-next-app" href="#spin-up-a-new-next-app">#</a>
+        </h2>
+       <p>We&#39;re starting from scratch, so let&#39;s use <code>create-next-app</code> in directory of your choosing:</p>
+<pre><code class="language-shell"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">npx </span><span style="color: var(--shiki-token-string)">create-next-app@latest</span></span></code></pre>
+</code></pre>
+<p>I chose <strong>yes</strong> to TypeScript, ESLint and App Router; <strong>no</strong> to Tailwind CSS, <code>src/</code> directory, amd <code>import alias</code>. </p>
+<p>You do you though.</p>
+<p><code>cd</code> into the newly created Next app.</p>
+
+        <h2>
+          Install StyleX
+          <a name="install-stylex" href="#install-stylex">#</a>
+        </h2>
+       <p>We need to add a few dependencies to the base Next app to get StyleX up and running:</p>
+<pre><code class="language-shell"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">npm </span><span style="color: var(--shiki-token-string)">i</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string)">@stylexjs/stylex</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string)">@stylexjs/open-props</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string)">@stylexjs/babel-plugin</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string)">@stylexjs/nextjs-plugin</span></span></code></pre>
+</code></pre>
+<ol>
+<li><code>@stylexjs/stylex</code> is the new React styling freshness</li>
+<li><code>@stylexjs/open-props</code> is the prepackaged and typed Open Props tokens for use with StyleX</li>
+<li><code>@stylexjs/babel-plugin</code> for use with <code>.babelrc.js</code></li>
+<li><code>@stylexjs/nextjs-plugin</code> for use with Next to know about the custom Babel configuration</li>
+</ol>
+
+        <h2>
+          Add a .babelrc.js file
+          <a name="add-a-.babelrc.js-file" href="#add-a-.babelrc.js-file">#</a>
+        </h2>
+       <p>Make a new file at the root of your Next app and fill it with this configuration:</p>
+<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-constant)">module</span><span style="color: var(--shiki-color-text)">.</span><span style="color: var(--shiki-token-constant)">exports</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  presets</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> [</span><span style="color: var(--shiki-token-string-expression)">&#39;next/babel&#39;</span><span style="color: var(--shiki-color-text)">]</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  plugins</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> [</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    [</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">      </span><span style="color: var(--shiki-token-string-expression)">&#39;@stylexjs/babel-plugin&#39;</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">      {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">        dev</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">process</span><span style="color: var(--shiki-color-text)">.</span><span style="color: var(--shiki-token-constant)">env</span><span style="color: var(--shiki-color-text)">.</span><span style="color: var(--shiki-token-constant)">NODE_ENV</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">===</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;development&quot;</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">        stylexSheetName</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;&lt;&gt;&#39;</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">        genConditionalClasses</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">true</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">        unstable_moduleResolution</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">          type</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39;commonJS&#39;</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">          rootDir</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> __dirname</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">        }</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">      }</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    ]</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  ]</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">};</span></span></code></pre>
+</code></pre>
+<p>Notice one of the dependencies we installed is in there <code>@stylexjs/babel-plugin</code>.</p>
+
+        <h2>
+          Add to next.config.js
+          <a name="add-to-next.config.js" href="#add-to-next.config.js">#</a>
+        </h2>
+       <p>Tell Next about StyleX via the provided Next plugin <code>@stylexjs/nextjs-plugin</code>:</p>
+<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-comment)">/** </span><span style="color: var(--shiki-token-keyword)">@type</span><span style="color: var(--shiki-token-comment)"> </span><span style="color: var(--shiki-token-function)">{import(&#39;next&#39;).NextConfig}</span><span style="color: var(--shiki-token-comment)"> */</span></span>
+<span class="line"><span style="color: var(--shiki-token-keyword)">const</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">stylexPlugin</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">require</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&quot;@stylexjs/nextjs-plugin&quot;</span><span style="color: var(--shiki-color-text)">);</span></span>
+<span class="line"><span style="color: var(--shiki-token-keyword)">const</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">nextConfig</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  pageExtensions</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> [</span><span style="color: var(--shiki-token-string-expression)">&quot;js&quot;</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;jsx&quot;</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;ts&quot;</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;tsx&quot;</span><span style="color: var(--shiki-color-text)">]</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">module</span><span style="color: var(--shiki-color-text)">.</span><span style="color: var(--shiki-token-constant)">exports</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">stylexPlugin</span><span style="color: var(--shiki-color-text)">({</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  filename</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;stylex-bundle.css&quot;</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  rootDir</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> __dirname</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">})(nextConfig);</span></span></code></pre>
+</code></pre>
+
+        <h2>
+          Patch a next/font issue
+          <a name="patch-a-next/font-issue" href="#patch-a-next/font-issue">#</a>
+        </h2>
+       <p>The Babel file we added conflicts with Next and the included font strategy. I removed these references from the project, a problem to be solved at another time perhaps.</p>
+<p>In <code>app/layout.tsx</code>, <strong>remove</strong> the following references to the font strategy:</p>
+<ol>
+<li><code>import { Inter } from &#39;next/font/google&#39;</code></li>
+<li><code>const inter = Inter({ subsets: [&#39;latin&#39;] })</code></li>
+<li><code>className={inter.className}</code></li>
+</ol>
+<p>With those removed, <code>npm run dev</code> is free to compile and be loaded at <code>localhost:3000</code>.</p>
+
+        <h2>
+          Bring in StyleX and Open Props
+          <a name="bring-in-stylex-and-open-props" href="#bring-in-stylex-and-open-props">#</a>
+        </h2>
+       <p>Lastly, let&#39;s write some StyleX and use Open Props for values. Open <code>app/page.tsx</code> and add the following to the top of the file:</p>
+<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> stylex </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;@stylexjs/stylex&quot;</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;@stylexjs/open-props/lib/colors.stylex&quot;</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> { colors } </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;@stylexjs/open-props/lib/colors.stylex&quot;</span><span style="color: var(--shiki-color-text)">;</span></span></code></pre>
+</code></pre>
+<p>Now we have <code>stylex</code> and it&#39;s API for creating styles for this component, the props have been imported for StyleX to create, and <code>colors</code> from <a href="https://open-props.style/#colors">Open Props</a> have been imported which hold all the color tokens.</p>
+<p><q>Enjoy the autocomplete from TypeScript if you have it.</q></p>
+<p>Next, we finally get to create some StyleX styles:</p>
+<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">const</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">X</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">stylex</span><span style="color: var(--shiki-token-function)">.create</span><span style="color: var(--shiki-color-text)">({</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  test</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">colors</span><span style="color: var(--shiki-color-text)">.red5</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  }</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">});</span></span></code></pre>
+</code></pre>
+<p>I used <code>const X</code> here since Next has already created a <code>styles</code> variable from CSS modules. This is changeable later, after all the CSS modules have been replaced with StyleX. I also used the classic CSS debugging color <code>red</code> as a text color so we can easily see if things have worked. </p>
+<p>Test your changes by providing the classname returned by StyleX onto an element in the <code>Home()</code> function:</p>
+<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">&lt;</span><span style="color: var(--shiki-token-string-expression)">main</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">className</span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)">{</span><span style="color: var(--shiki-token-constant)">styles</span><span style="color: var(--shiki-color-text)">.main</span><span style="color: var(--shiki-token-keyword)">+</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&#39; &#39;</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">+</span><span style="color: var(--shiki-token-function)">stylex</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-constant)">X</span><span style="color: var(--shiki-color-text)">.test)}&gt;</span></span></code></pre>
+</code></pre>
+<p>Save and check your next app to see all the text has gone red. Success.</p>
+
+        <h2>
+          More props
+          <a name="more-props" href="#more-props">#</a>
+        </h2>
+       <p>For a full list of the importable Open Props from the StyleX package, <a href="https://github.com/facebook/stylex/blob/main/packages/open-props/package.json#L6-L25">check it out on Github</a>. </p>
+<p>I&#39;ll share a prettier version of the list here, to save you from bouncing and reading a <code>package.json</code>:</p>
+<pre><code class="language-shell"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">animations</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">animationNames</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">aspects</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">borders</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">colors</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">colorsHSL</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">colorsOKLCH</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">colorsOKLCHHues</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">grayOKLCH</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">easings</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">fonts</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">gradients</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">highlights</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">layouts</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">masksCornerCuts</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">masksEdges</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">shadows</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">sizes</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">svg</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">zIndex</span></span></code></pre>
+</code></pre>
+<p>Since we removed the Next app font, let&#39;s fix that by using what Open Props provides:</p>
+<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;@stylexjs/open-props/lib/fonts.stylex&quot;</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-token-keyword)">import</span><span style="color: var(--shiki-color-text)"> { fonts } </span><span style="color: var(--shiki-token-keyword)">from</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;@stylexjs/open-props/lib/fonts.stylex&quot;</span><span style="color: var(--shiki-color-text)">;</span></span></code></pre>
+</code></pre>
+<p>With the font tokens loaded, we can use the <code>fonts.sans</code> token to bring in a system ui font string:</p>
+<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">const</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">X</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">stylex</span><span style="color: var(--shiki-token-function)">.create</span><span style="color: var(--shiki-color-text)">({</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  test</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">colors</span><span style="color: var(--shiki-color-text)">.red5</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    fontFamily</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">fonts</span><span style="color: var(--shiki-color-text)">.sans</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  }</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">});</span></span></code></pre>
+</code></pre>
+<p><img 
+            loading="lazy" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/argyleink/stylex-next-result.png" 
+            alt="" 
+            title="A NextJS app homepage with red text and a sans serif font " 
+            decoding="async"
+            width="1213" 
+            height="602"
+          /></p>
+<p>At this point, you&#39;re off to the races with StyleX and <a href="https://stylexjs.com/docs/learn/styling-ui/using-styles/">their docs will help you continue styling</a>, theming and extending your design system. You can delete the <code>test</code> style object and begin more finite control with the StyleX API.</p>
+
+        <h2>
+          Outro
+          <a name="outro" href="#outro">#</a>
+        </h2>
+       <p><a href="https://stackblitz.com/edit/next-stylex-openprops?file=app%2Fpage.tsx">Here&#39;s a StackBlitz</a> with all this already setup in a new NextJS project, for reference or forking.</p>
+]]></description>
+            <link>https://nerdy.dev/using-open-props-with-nextjs-and-the-brand-new-react-style-library-stylex?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/using-open-props-with-nextjs-and-the-brand-new-react-style-library-stylex?utm_source=rss</guid>
+            <category><![CDATA[blog]]></category>
+            <category><![CDATA[css]]></category>
+            <category><![CDATA[js]]></category>
+            <dc:creator><![CDATA[Web Master@admin]]></dc:creator>
+            <pubDate>Wed, 06 Dec 2023 23:24:00 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/next-stylex-op.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/next-stylex-op.png"/>
+        </item>
         <item>
             <title><![CDATA[One Atom Of Time In CSS]]></title>
             <description><![CDATA[<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">--atom: 0.15957s;</span></span></code></pre>
@@ -213,26 +390,6 @@
             <pubDate>Wed, 25 Oct 2023 19:24:17 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/picklist.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/picklist.png"/>
-        </item>
-        <item>
-            <title><![CDATA[How Do I Center This Div]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-pod-centering.jpg" alt="Una and Adam smiling with a title that says How do I center this div?" height="720"  width="1280" />
-        <p><strong>How do I center this div?</strong> </p>
-<p><a href="https://una.im/">Una</a> and I discuss CSS centering, and all the different ways CSS has your back.</p>
-<p>Turns out, there&#39;s A LOT of ways to center.</p>
-<p><a href="https://www.youtube.com/watch?v=0qL3OiTJbSc&list=PLNYkxOF6rcIAx_S2LSfXQLorIeehsPL3q">Watch</a> · 
-<a href="https://thecsspodcast.libsyn.com/74-how-do-i-center-a-div">Listen</a></p>
-]]></description>
-            <link>https://nerdy.dev/how-do-I-center-this-div?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/how-do-I-center-this-div?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <category><![CDATA[media]]></category>
-            <dc:creator><![CDATA[Adam@theCSSpodcast]]></dc:creator>
-            <pubDate>Tue, 24 Oct 2023 16:21:24 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-pod-centering.jpg" length="0" type="image/jpeg"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-pod-centering.jpg"/>
         </item>
     </channel>
 </rss>

@@ -55,10 +55,11 @@ module.exports = {
       '@stylexjs/babel-plugin',
       {
         dev: process.env.NODE_ENV === "development",
-        stylexSheetName: '<>',
+        runtimeInjection: false,
         genConditionalClasses: true,
+        treeshakeCompensation: true,
         unstable_moduleResolution: {
-          type: 'commonJS',
+          type: "commonJS",
           rootDir: __dirname,
         },
       },
@@ -81,7 +82,6 @@ const nextConfig = {
 }
 
 module.exports = stylexPlugin({
-  filename: "stylex-bundle.css",
   rootDir: __dirname,
 })(nextConfig);
 ```
@@ -104,11 +104,10 @@ Lastly, let's write some StyleX and use Open Props for values. Open `app/page.ts
 ```js
 import stylex from "@stylexjs/stylex";
 
-import "@stylexjs/open-props/lib/colors.stylex";
 import { colors } from "@stylexjs/open-props/lib/colors.stylex";
 ```
 
-Now we have `stylex` and it's API for creating styles for this component, the props have been imported for StyleX to create, and `colors` from [Open Props](https://open-props.style/#colors) have been imported which hold all the color tokens.
+Now we have `stylex` and it's API for creating styles for this component and `colors` from [Open Props](https://open-props.style/#colors) have been imported which hold all the color tokens.
 
 <q>Enjoy the autocomplete from TypeScript if you have it.</q>
 
@@ -164,7 +163,6 @@ zIndex
 Since we removed the Next app font, let's fix that by using what Open Props provides:
 
 ```js
-import "@stylexjs/open-props/lib/fonts.stylex";
 import { fonts } from "@stylexjs/open-props/lib/fonts.stylex";
 ```
 

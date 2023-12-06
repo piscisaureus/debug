@@ -126,4 +126,8 @@
   & ol > li:hover::marker {
     font-weight: var(--font-weight-8);
   }
+
+  & li code {
+    text-wrap: wrap;
+  }
 }

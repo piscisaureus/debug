@@ -1,6 +1,6 @@
 ---
 type: blog
-persona: admin
+persona: google
 title: Open Props in Next with StyleX
 published_at: 2023-12-06T23:24:00.785
 snippet: A guide to getting started with Next, StyleX and Open Props.

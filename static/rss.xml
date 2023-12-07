@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 07 Dec 2023 18:54:33 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 07 Dec 2023 23:42:58 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,21 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[CSS Wrapped 2023]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-wrapped-2023.png" alt="Playful title says CSS Wrapped 2023" height="742"  width="1296" />
+        <p><a href="https://una.im">Una</a>, <a href="https://bram.us">Bramus</a> and I put together a <a href="https://developer.chrome.com/blog/css-wrapped-2023">2023 Wrapped for CSS</a> 🤓</p>
+]]></description>
+            <link>https://nerdy.dev/css-wrapped-2023?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/css-wrapped-2023?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Thu, 07 Dec 2023 23:39:20 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-wrapped-2023.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-wrapped-2023.png"/>
+        </item>
         <item>
             <title><![CDATA[Neat Bouncy Focus Effect With Linear And Box Shadow]]></title>
             <description><![CDATA[
@@ -208,7 +223,7 @@
             <category><![CDATA[blog]]></category>
             <category><![CDATA[css]]></category>
             <category><![CDATA[js]]></category>
-            <dc:creator><![CDATA[Web Master@admin]]></dc:creator>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
             <pubDate>Wed, 06 Dec 2023 23:24:00 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/next-stylex-op.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/next-stylex-op.png"/>
@@ -372,21 +387,6 @@
             <pubDate>Thu, 26 Oct 2023 20:33:14 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-glowing-text.mp4" length="0" type="video/mp4"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-glowing-text.mp4"/>
-        </item>
-        <item>
-            <title><![CDATA[CSS Prefers Reduced Transparency]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/prefers-reduced-transparency-2.png" alt="a comparison is shown between a transparent blurry white card design with white text next to a reduced transparency equivalent that is dark and nearly opaque" height="1018"  width="2202" />
-        <p>I wrote about <a href="https://developer.chrome.com/blog/css-prefers-reduced-transparency/">CSS prefers-reduced-transparency</a> on <a href="https://developer.chrome.com/">developer.chrome.com</a> 🤓</p>
-]]></description>
-            <link>https://nerdy.dev/css-prefers-reduced-transparency?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/css-prefers-reduced-transparency?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
-            <pubDate>Wed, 25 Oct 2023 19:31:30 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/prefers-reduced-transparency-2.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/prefers-reduced-transparency-2.png"/>
         </item>
     </channel>
 </rss>

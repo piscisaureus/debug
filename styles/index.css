@@ -178,7 +178,7 @@
     body {
       background-image: url(https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gingerbread.png);
       background-attachment: fixed;
-      background-position: -1% 101%;
+      background-position: calc(0% - 5px) calc(100% + 15px);
       background-size: 100px;
     }
   }

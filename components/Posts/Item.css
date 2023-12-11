@@ -203,6 +203,10 @@
     margin-block-end: var(--size-3);
   }
 
+  & a {
+    word-break: break-all;
+  }
+
   &:has(figure) {
     & > footer, & > figure, & > p {
       grid-column: span 2;

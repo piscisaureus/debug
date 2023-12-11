@@ -1,4 +1,5 @@
 import PageIcons from '~/components/Icons/PageIcons.tsx'
+import { asset } from "$fresh/runtime.ts";
 
 export default function PageMeta(props:any) {
   const {title, prerenderables=[]}:{title:string, prerenderables?:string[]} = props
@@ -36,7 +37,7 @@ export default function PageMeta(props:any) {
       <link rel="alternate" type="application/rss+xml" href="https://nerdy.dev/rss.xml" title="RSS Feed for Adam Argyle: Web design & development tips & tricks: CSS, JS, HTML, Design, & UX."/>
 
       <link rel="preconnect" href="https://res.cloudinary.com/"/>
-      <link rel="stylesheet" href="/style.css"/>
+      <link rel="stylesheet" href={asset("/style.css")}/>
 
       <script async src="/toast.js"/>
 

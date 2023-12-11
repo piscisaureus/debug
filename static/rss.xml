@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 07 Dec 2023 23:42:58 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 11 Dec 2023 22:46:06 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2023 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,22 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Subtle Scroll Driven Animation For Grid Images]]></title>
+            <description><![CDATA[
+          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/holiday-peeps-sda.mp4" alt="A grid of cute holiday characters is scrolled and each image scales slightly with the page" height="1280"  width="1920" />
+        <p>✅ 2 lines of CSS<br>✅ a courtesy media query<br>✅ a keyframe  </p>
+<p><a href="https://codepen.io/argyleink/pen/LYqvedp">Check it out on Codepen</a></p>
+]]></description>
+            <link>https://nerdy.dev/subtle-scroll-driven-animation-for-grid-images?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/subtle-scroll-driven-animation-for-grid-images?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Mon, 11 Dec 2023 22:43:54 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/holiday-peeps-sda.mp4" length="0" type="video/mp4"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/holiday-peeps-sda.mp4"/>
+        </item>
         <item>
             <title><![CDATA[CSS Wrapped 2023]]></title>
             <description><![CDATA[
@@ -372,21 +388,6 @@
             <pubDate>Mon, 13 Nov 2023 23:50:51 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/compare.mp4" length="0" type="video/mp4"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/compare.mp4"/>
-        </item>
-        <item>
-            <title><![CDATA[Gradient Glowing Text Effect]]></title>
-            <description><![CDATA[
-          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-glowing-text.mp4" alt="a rotating preview of the glowing gradient text in a few color combinations" height="1080"  width="1920" />
-        <p><a href="https://codepen.io/argyleink/pen/abXvVME">View source</a></p>
-]]></description>
-            <link>https://nerdy.dev/gradient-glowing-text-effect?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/gradient-glowing-text-effect?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Thu, 26 Oct 2023 20:33:14 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-glowing-text.mp4" length="0" type="video/mp4"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-glowing-text.mp4"/>
         </item>
     </channel>
 </rss>

@@ -6,7 +6,7 @@
   stroke-width: 8px;
   stroke: #8929ff;
 
-  @nest [data-theme="dark"] & {
+  [data-theme="dark"] & {
     --hat: var(--cyan-3);
   }
 }

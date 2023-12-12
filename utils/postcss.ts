@@ -1,5 +1,5 @@
 import postcss from '$deno/x/postcss/mod.js'
-import cssNesting from 'https://esm.sh/postcss-nesting'
+// import cssNesting from 'https://esm.sh/postcss-nesting'
 import customMediaPlugin from 'https://esm.sh/postcss-custom-media@8.x.x'
 import mqRanges from 'https://esm.sh/postcss-media-minmax'
 import inlineImports from 'https://esm.sh/postcss-import@15.0.1'
@@ -23,7 +23,7 @@ const config = {
       path: ['styles'],
     }),
     importUrl(),
-    cssNesting(),
+    // cssNesting(),
     mqRanges(),
     jitProps({
       ...OpenProps,

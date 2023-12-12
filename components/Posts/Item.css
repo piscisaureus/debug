@@ -38,7 +38,7 @@
     scroll-snap-align: start;
   }
 
-  @nest .PostDetail & footer,
+  .PostDetail & footer,
   & .like-button {
     display: none;
   } 
@@ -149,11 +149,11 @@
       background: var(--gray-11);
     }
 
-    @nest [data-theme="light"] & {
+    [data-theme="light"] & {
       background: var(--gray-0);
     }
 
-    @nest [data-theme="dark"] & {
+    [data-theme="dark"] & {
       background: var(--gray-11);
     }
   }

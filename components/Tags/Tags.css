@@ -18,13 +18,13 @@
     color: var(--indigo-2);
   }
 
-  @nest [data-theme="light"] & {
+  [data-theme="light"] & {
     background-color: var(--indigo-0);
     color: var(--indigo-8);
     border: var(--border-size-1) solid var(--indigo-1);
   }
 
-  @nest [data-theme="dark"] & {
+  [data-theme="dark"] & {
     background-color: hsl(var(--indigo-12-hsl) / 50%);
     border-color: hsl(var(--indigo-12-hsl) / 75%);
     color: var(--indigo-2);

@@ -14,7 +14,7 @@
 
   /* todo: if 1 child, fit it's width */
 
-  @nest .PostItem & {
+  .PostItem & {
     --_inline-offset: calc(var(--size-inline-1) * 2 + var(--_avatar-column-size));
     
     grid-column: span 2;

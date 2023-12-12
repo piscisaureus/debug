@@ -45,7 +45,7 @@
     word-break: break-word;
     text-wrap: balance;
 
-    @nest [data-theme="dark"] & {
+    [data-theme="dark"] & {
       --color-1: var(--neon-purple-on-dark);
       --color-2: var(--neon-pink);
       --color-3: var(--neon-cyan);

@@ -40,7 +40,7 @@
       margin-inline-end: auto;
     }
 
-    @nest [page-type="detail"] & {
+    [page-type="detail"] & {
       margin-inline-end: auto;
     }
   }

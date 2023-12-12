@@ -8,7 +8,7 @@
   padding-inline: var(--size-inline-1);
   gap: var(--size-8);
 
-  @nest :not(.BlogHero) + .BlogMeta + & {
+  :not(.BlogHero) + .BlogMeta + & {
     margin-block-start: 20vh;
   }
 

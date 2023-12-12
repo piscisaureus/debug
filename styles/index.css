@@ -36,7 +36,7 @@
     display: grid;
     grid-template-rows: auto 1fr;
 
-    @nest [data-theme="dark"] &:has(.PostDetail .note) {
+    [data-theme="dark"] &:has(.PostDetail .note) {
       background: 
         radial-gradient(circle at 35% 50%, hsl(220deg 100% 51% / 15%), transparent 50%), 
         radial-gradient(circle at 65% 50%, hsl(325deg 100% 25% / 15%), transparent 50%), 
@@ -61,7 +61,7 @@
       }
     }
 
-    @nest [data-theme="light"] &:has(.BlogDetail) {
+    [data-theme="light"] &:has(.BlogDetail) {
       background-image: linear-gradient(to bottom,
         #fff 100vh, 
         300vh, 
@@ -75,7 +75,7 @@
       );
     }
 
-    @nest [data-theme="dark"] &:has(.BlogDetail) {
+    [data-theme="dark"] &:has(.BlogDetail) {
       background-image: none;
     }
   }
@@ -93,11 +93,11 @@
       font-weight: var(--font-weight-3);
     }
 
-    @nest [data-theme="light"] & {
+    [data-theme="light"] & {
       font-weight: var(--font-weight-3);
     }
 
-    @nest [data-theme="dark"] & {
+    [data-theme="dark"] & {
       font-weight: var(--font-weight-2);
     }
   }
@@ -113,11 +113,11 @@
       font-weight: var(--font-weight-4);
     }
 
-    @nest [data-theme="light"] & {
+    [data-theme="light"] & {
       font-weight: var(--font-weight-4);
     }
 
-    @nest [data-theme="dark"] & {
+    [data-theme="dark"] & {
       font-weight: var(--font-weight-3);
     }
   }

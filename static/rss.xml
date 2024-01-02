@@ -9,9 +9,9 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 11 Dec 2023 22:46:06 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 02 Jan 2024 18:25:48 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
-        <copyright><![CDATA[2023 Adam Argyle]]></copyright>
+        <copyright><![CDATA[2024 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
         <webMaster><![CDATA[adam.is@nerdy.dev (Adam Argyle)]]></webMaster>
         <ttl>60</ttl>
@@ -22,6 +22,40 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Happy New Years 2024]]></title>
+            <description><![CDATA[
+          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/new-years-2024.mp4" alt="A slowly spinning disco ball" height="2160"  width="3840" />
+        <p>Happy New Year!</p>
+]]></description>
+            <link>https://nerdy.dev/happy-new-years-2024?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/happy-new-years-2024?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <dc:creator><![CDATA[Web Master@admin]]></dc:creator>
+            <pubDate>Mon, 01 Jan 2024 18:12:27 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/new-years-2024.mp4" length="0" type="video/mp4"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/new-years-2024.mp4"/>
+        </item>
+        <item>
+            <title><![CDATA[Thinking On Ways To Solve Comparison Components]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-compare.jpg" alt="GUI Challenges character next to a preview of the comparison component showing 2 images" height="720"  width="1280" />
+        <p><a href="https://www.youtube.com/watch?v=hCbSRNE4WUI&list=PLNYkxOF6rcIAaV1wwI9540OC_3XoIzMjQ">Thinking on ways to make a <strong>Comparison</strong></a> component  </p>
+<p>In this <a href="https://goo.gle/GUIchallenges">GUI Challenge</a>, 
+<a href="https://www.youtube.com/channel/UCBGr3ZMcV5jke40_Wrv3fNA">I</a> use grid, masks and an <code>&lt;input type=&quot;range&quot;&gt;</code> to stack and compare 2 elements and their contents.</p>
+<p><a href="https://www.youtube.com/watch?v=hCbSRNE4WUI&list=PLNYkxOF6rcIAaV1wwI9540OC_3XoIzMjQ">watch</a> · 
+<a href="https://gui-challenges.web.app/compare/dist/">demo</a> · 
+<a href="https://github.com/argyleink/gui-challenges">source</a></p>
+]]></description>
+            <link>https://nerdy.dev/thinking-on-ways-to-solve-comparison-components?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/thinking-on-ways-to-solve-comparison-components?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[media]]></category>
+            <dc:creator><![CDATA[Adam@GUIchallenges]]></dc:creator>
+            <pubDate>Mon, 18 Dec 2023 17:33:59 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-compare.jpg" length="0" type="image/jpeg"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-compare.jpg"/>
+        </item>
         <item>
             <title><![CDATA[Subtle Scroll Driven Animation For Grid Images]]></title>
             <description><![CDATA[
@@ -314,80 +348,6 @@
             <pubDate>Mon, 20 Nov 2023 18:18:25 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/jason-lengstorf-bad-at-css.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/jason-lengstorf-bad-at-css.png"/>
-        </item>
-        <item>
-            <title><![CDATA[Custom range input progress fill]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/range-with-view-timeline.png" alt="A slider input half filled with a vibrant gradient." height="356"  width="1930" />
-        <p>Roman Komarov forked a demo of mine the other day and showed how CSS <a href="https://scroll-driven-animations.style">scroll driven animation</a> could map the <code>input[type=range]</code> slider&#39;s thumb pseudo element position and use it to power a percentage in a gradient mask. </p>
-<p>Roman explains it all very well <a href="https://blog.kizu.dev/input-range-thumb/">here on their blog</a>.</p>
-<p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/RwvLBqM?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/RwvLBqM">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-<p>It&#39;s <strong>super rad</strong>. And totally triggered 2 ideas…</p>
-
-        <h2>
-          FORK THE FORK!!!
-          <a name="fork-the-fork!!!" href="#fork-the-fork!!!">#</a>
-        </h2>
-       <p>The first idea I was able to finish tonight, and the 2nd I&#39;ll do sometime soon. <em>Ssssecretssss</em></p>
-<p>Here&#39;s my fork of their fork, repurposed their mapping to power the fill of a range slider. A task that&#39;s not so easy.</p>
-<p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/vYbpNVm?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/vYbpNVm">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-<p>I left a good chunk of comments in there!</p>
-<p>While this may not have great support at the moment, and is quite a little web of CSS to setup… it&#39;s a very promising path forward for styling <code>input[type=range]</code> and <strong>other components with moveable parts</strong>. </p>
-<p>I&#39;ll be stashing this into my CSS tricks 🪦</p>
-]]></description>
-            <link>https://nerdy.dev/add-a-rad-gradient-progress-fill-to-a-range-input-with-no-JS?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/add-a-rad-gradient-progress-fill-to-a-range-input-with-no-JS?utm_source=rss</guid>
-            <category><![CDATA[blog]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Fri, 17 Nov 2023 06:26:56 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/range-with-view-timeline.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/range-with-view-timeline.png"/>
-        </item>
-        <item>
-            <title><![CDATA[Compare Stuff With This Minimal Setup]]></title>
-            <description><![CDATA[
-          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/compare.mp4" alt="some title" height="1440"  width="1920" />
-        <p><a href="https://codepen.io/argyleink/pen/XWOaazZ">Steal this minimal code setup</a> for a nice comparison component.</p>
-]]></description>
-            <link>https://nerdy.dev/compare-stuff-with-this-minimal-setup?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/compare-stuff-with-this-minimal-setup?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Mon, 13 Nov 2023 23:50:51 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/compare.mp4" length="0" type="video/mp4"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/compare.mp4"/>
         </item>
     </channel>
 </rss>

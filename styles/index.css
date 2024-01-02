@@ -172,15 +172,3 @@
     }
   }
 }
-
-@layer base.fun {
-  @media (--md-n-above) {
-    body {
-      background-image: url(https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gingerbread.png);
-      background-attachment: fixed;
-      background-position: calc(0% - 5px) calc(100% + 15px);
-      background-size: 100px;
-      background-repeat: no-repeat;
-    }
-  }
-}

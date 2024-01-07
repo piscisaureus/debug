@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 02 Jan 2024 18:25:48 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 07 Jan 2024 05:34:00 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2024 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,18 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Is It Time To Throw Out Physical Properties]]></title>
+            <description><![CDATA[<p>is it time to forget about physical properties like <code>margin-top</code> and <code>left</code>?</p>
+<p><small>Can&#39;t throw out the x/y transforms tho 😭</small></p>
+]]></description>
+            <link>https://nerdy.dev/is-it-time-to-throw-out-physical-properties?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/is-it-time-to-throw-out-physical-properties?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Sun, 07 Jan 2024 05:29:43 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Happy New Years 2024]]></title>
             <description><![CDATA[
@@ -327,27 +339,6 @@
             <pubDate>Tue, 21 Nov 2023 17:11:58 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-picklists.jpg" length="0" type="image/jpeg"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-picklists.jpg"/>
-        </item>
-        <item>
-            <title><![CDATA[Jason Lengstorf Is Bad At CSS Too]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/jason-lengstorf-bad-at-css.png" alt="What CSS is Jason Lengstorf bad at?" height="458"  width="1088" />
-        <p>🎙️ <strong>Bad At CSS Podcast</strong>  </p>
-<p><a href="https://jason.energy/posts/">Jason Lengstorf</a>, <a href="https://twitter.com/_davideast">David East</a> and I chaotically discuss CSS, container queries, and that pesky <code>clamp()</code> function 🖕.</p>
-<p>Subscribe, listen or watch<br>
-<a href="https://open.spotify.com/episode/5k8sEqKp3mXAWwhepgyjqR">Spotify</a> · 
-<a href="https://podcasts.apple.com/us/podcast/what-css-is-jason-lengstorf-bad-at/id1702605487?i=1000635425578">Apple</a> · 
-<a href="https://www.youtube.com/watch?v=BYaU3ftTXfQ">YouTube</a></p>
-]]></description>
-            <link>https://nerdy.dev/jason-lengstorf-is-bad-at-CSS-too?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/jason-lengstorf-is-bad-at-CSS-too?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <category><![CDATA[media]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Mon, 20 Nov 2023 18:18:25 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/jason-lengstorf-bad-at-css.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/jason-lengstorf-bad-at-css.png"/>
         </item>
     </channel>
 </rss>

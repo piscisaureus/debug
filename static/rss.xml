@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 07 Jan 2024 05:34:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 08 Jan 2024 22:34:40 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2024 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,23 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Neue Bento Layouts With Grid Has And Container Queries]]></title>
+            <description><![CDATA[
+          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/vt-bento-cqueries.mp4" alt="video demo of the grid responding to the number of boxes and orientation" height="1270"  width="1692" />
+        <p>A CSS bento-like grid that&#39;s aware of the number of children and aspect ratio available thanks to <code>:has()</code> and <code>@container</code>.</p>
+<p><a href="https://codepen.io/argyleink/pen/RwdRaVg">Try the demo</a></p>
+<p>Shout out to <code>view-transition</code>&#39;s for making the interactive demo so much more compelling.</p>
+]]></description>
+            <link>https://nerdy.dev/neue-bento-layouts-with-grid-has-and-container-queries?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/neue-bento-layouts-with-grid-has-and-container-queries?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Mon, 08 Jan 2024 22:30:47 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/vt-bento-cqueries.mp4" length="0" type="video/mp4"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/vt-bento-cqueries.mp4"/>
+        </item>
         <item>
             <title><![CDATA[Is It Time To Throw Out Physical Properties]]></title>
             <description><![CDATA[<p>is it time to forget about physical properties like <code>margin-top</code> and <code>left</code>?</p>
@@ -319,26 +336,6 @@
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
             <pubDate>Mon, 27 Nov 2023 22:19:33 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Thinking On Ways To Style Checkbox And Radio Groups]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-picklists.jpg" alt="GUI Challenges avatar is next to a piece of CSS code and the title Picklists" height="720"  width="1280" />
-        <p><a href="https://www.youtube.com/watch?v=d2O-8n-UnrI&list=PLNYkxOF6rcIAaV1wwI9540OC_3XoIzMjQ">Thinking on ways to solve <strong>Picklists</strong></a></p>
-<p>In this <a href="https://goo.gle/GUIchallenges">GUI Challenge</a>, 
-<a href="https://www.youtube.com/channel/UCBGr3ZMcV5jke40_Wrv3fNA">I</a> show how to use leverage the <strong>power of checkbox and radio groups</strong> for beautiful and accessible picking UX.</p>
-<p><a href="https://gui-challenges.web.app/picklists/dist/">demo</a> · 
-<a href="https://github.com/argyleink/gui-challenges">source</a></p>
-]]></description>
-            <link>https://nerdy.dev/thinking-on-ways-to-style-checkbox-and-radio-groups?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/thinking-on-ways-to-style-checkbox-and-radio-groups?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <category><![CDATA[media]]></category>
-            <dc:creator><![CDATA[Adam@GUIchallenges]]></dc:creator>
-            <pubDate>Tue, 21 Nov 2023 17:11:58 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-picklists.jpg" length="0" type="image/jpeg"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-picklists.jpg"/>
         </item>
     </channel>
 </rss>

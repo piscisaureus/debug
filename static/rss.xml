@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 08 Jan 2024 22:34:40 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 11 Jan 2024 22:31:27 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2024 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,24 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[A Squishy Radio Group]]></title>
+            <description><![CDATA[
+          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/squishy-radio-group.mp4" alt="some title" height="1440"  width="1920" />
+        <p>Radio groups are so powerful! Combine them with <code>:has()</code>, animated <code>grid-template-columns</code> 
+and <code>linear()</code> <a href="https://open-props.style/#easing">easing</a> and you&#39;ve got yourself 
+a neat little single picker UX.</p>
+<p><a href="https://codepen.io/argyleink/pen/ExMgWLe">Try it on Codepen</a></p>
+]]></description>
+            <link>https://nerdy.dev/a-squishy-radio-group?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/a-squishy-radio-group?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Thu, 11 Jan 2024 22:30:28 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/squishy-radio-group.mp4" length="0" type="video/mp4"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/squishy-radio-group.mp4"/>
+        </item>
         <item>
             <title><![CDATA[Neue Bento Layouts With Grid Has And Container Queries]]></title>
             <description><![CDATA[
@@ -319,23 +337,6 @@
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
             <pubDate>Thu, 30 Nov 2023 05:23:09 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Percentage Chroma]]></title>
-            <description><![CDATA[<p>I learned <strong>you can use <code>%</code> for chroma</strong>!</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.percentage-chroma</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">lch</span><span style="color: var(--shiki-token-constant)">(50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 200)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">color</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">oklch(50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 50</span><span style="color: var(--shiki-token-keyword)">%</span><span style="color: var(--shiki-token-constant)"> 200</span><span style="color: var(--shiki-color-text)">);</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>Added 2 examples to my <a href="https://codepen.io/argyleink/pen/RwyOyeq">CSS Color Syntax Mega List</a>.  </p>
-]]></description>
-            <link>https://nerdy.dev/percentage-chroma?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/percentage-chroma?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
-            <pubDate>Mon, 27 Nov 2023 22:19:33 GMT</pubDate>
         </item>
     </channel>
 </rss>

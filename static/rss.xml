@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 11 Jan 2024 22:31:27 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 17 Jan 2024 17:46:43 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2024 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,22 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[A Practical Introduction To Scroll Driven Animations With CSS Scroll And View]]></title>
+            <description><![CDATA[
+          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/codrops-carousel.mp4" alt="A preview of the carousel features" height="1080"  width="1922" />
+        <p><a href="https://tympanus.net/codrops/2024/01/17/a-practical-introduction-to-scroll-driven-animations-with-css-scroll-and-view/">A practical introduction to Scroll Driven Animations with CSS <code>scroll()</code> and <code>view()</code></a></p>
+<p>My first <a href="https://tympanus.net/codrops/">Codrops</a> article 🤓</p>
+]]></description>
+            <link>https://nerdy.dev/a-practical-introduction-to-scroll-driven-animations-with-css-scroll-and-view?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/a-practical-introduction-to-scroll-driven-animations-with-css-scroll-and-view?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Wed, 17 Jan 2024 17:42:46 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/codrops-carousel.mp4" length="0" type="video/mp4"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/codrops-carousel.mp4"/>
+        </item>
         <item>
             <title><![CDATA[A Squishy Radio Group]]></title>
             <description><![CDATA[
@@ -324,19 +340,6 @@ a neat little single picker UX.</p>
             <pubDate>Wed, 06 Dec 2023 23:24:00 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/next-stylex-op.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/next-stylex-op.png"/>
-        </item>
-        <item>
-            <title><![CDATA[One Atom Of Time In CSS]]></title>
-            <description><![CDATA[<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">--atom: 0.15957s;</span></span></code></pre>
-</code></pre>
-<p>via <a href="https://github.com/argyleink/open-props/blob/main/src/extra/durations.css">Open Props</a></p>
-]]></description>
-            <link>https://nerdy.dev/one-atom-of-time-in-css?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/one-atom-of-time-in-css?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
-            <pubDate>Thu, 30 Nov 2023 05:23:09 GMT</pubDate>
         </item>
     </channel>
 </rss>

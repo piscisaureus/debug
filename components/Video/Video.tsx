@@ -27,7 +27,7 @@ export function videoPaths(src:string) {
     return {full: src, placeholder: undefined}
   else
     return {
-      src:    [base_url, src].join('/'),
+      src:    [base_url, 'f_auto,w_auto,q_auto', src].join('/'),
       poster: [base_url, 'so_0.5,f_auto,w_auto,q_auto', src].join('/').replace('.mp4', '.jpg'),
     }
 }

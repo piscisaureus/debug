@@ -22,4 +22,43 @@
     color: var(--text-2);
     text-transform: capitalize;
   }
+
+  & > a {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      opacity: 0;
+      display: inline-block;
+      content: "";
+      inset-inline-start: -2ch;
+      margin-inline-end: var(--size-2);
+      inline-size: var(--size-1);
+      block-size: 1em;
+      border-radius: var(--radius-round);
+      background: var(--neon-pink);
+      animation: scroll-spy linear both;
+      animation-range: entry-crossing 0% contain 100%;
+    }
+
+    @media (--OSdark) {
+      &::before {
+        background: var(--neon-yellow);
+      }
+    }
+
+    &:nth-of-type(1)::before { animation-timeline: --section-1 }
+    &:nth-of-type(2)::before { animation-timeline: --section-2 }
+    &:nth-of-type(3)::before { animation-timeline: --section-3 }
+    &:nth-of-type(4)::before { animation-timeline: --section-4 }
+    &:nth-of-type(5)::before { animation-timeline: --section-5 }
+    &:nth-of-type(6)::before { animation-timeline: --section-6 }
+  }
+}
+
+@keyframes scroll-spy {
+  50% {
+    opacity: 1;
+  }
 }

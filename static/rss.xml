@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 22 Jan 2024 05:54:03 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 22 Jan 2024 06:11:39 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2024 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -167,7 +167,7 @@
             <guid isPermaLink="true">https://nerdy.dev/hacky-css-noise-with-repeating-gradients?utm_source=rss</guid>
             <category><![CDATA[blog]]></category>
             <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[Web Master@admin]]></dc:creator>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
             <pubDate>Mon, 22 Jan 2024 05:08:40 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-noise-stack.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-noise-stack.png"/>

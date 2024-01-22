@@ -1,6 +1,6 @@
 ---
 type: blog
-persona: admin
+persona: argyleink
 title: Make some hacky noise with CSS gradients
 published_at: 2024-01-22T05:08:40.947
 snippet: Gradient on gradient action.

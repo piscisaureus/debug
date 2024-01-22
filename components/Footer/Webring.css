@@ -6,6 +6,14 @@
 	padding-block-end: var(--size-5);
 	text-align: center;
 
+	@media (--OSdark) {
+		background: radial-gradient(
+			45vw circle at 50% 45vw, 
+			var(--neon-pink), 
+			#0000
+		);
+	}
+
 	& > div {
 		display: flex;
 		gap: var(--size-5);

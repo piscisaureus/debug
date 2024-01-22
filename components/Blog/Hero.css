@@ -20,8 +20,8 @@
       @media (--motionOK) {
         animation-name: hero-scroll-effect;
         animation-fill-mode: both;
-        animation-timeline: scroll();
-        animation-range: 0vh 90vh;
+        animation-timeline: view();
+        animation-range: exit -25% exit 100%;
       }
     }
   }

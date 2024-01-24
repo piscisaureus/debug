@@ -37,21 +37,6 @@
       line-height: var(--font-lineheight-4);
     }
 
-    & pre {
-      line-height: var(--font-lineheight-4);
-
-      @supports (animation-timeline: scroll()) {
-        @media (--motionOK) {
-          --foo: var(--animation-fade-in-bloom);
-          animation-name: fade-in-bloom;
-          animation-fill-mode: both;
-          animation-timing-function: linear;
-          animation-timeline: view();
-          animation-range: entry;
-        }
-      }
-    }
-
     & > p:first-of-type {
       &::first-letter {
         font-size: 7ex;
@@ -72,6 +57,32 @@
       &::first-line {
         font-size: var(--font-size-4);
         font-weight: var(--font-weight-4);
+      }
+    }
+
+    & pre {
+      line-height: var(--font-lineheight-4);
+
+      @supports (animation-timeline: scroll()) {
+        @media (--motionOK) {
+          animation-name: polygon-in-opposing-corners;
+          animation-fill-mode: both;
+          animation-timing-function: linear;
+          animation-timeline: view();
+          animation-range: entry 50% entry 100%;
+        }
+      }
+    }
+
+    & :is(video, iframe) {
+      @supports (animation-timeline: scroll()) {
+        @media (--motionOK) {
+          animation-name: wipe-cinematic-in;
+          animation-fill-mode: both;
+          animation-timing-function: linear;
+          animation-timeline: view();
+          animation-range: entry 50% entry 100%;
+        }
       }
     }
 
@@ -142,5 +153,23 @@
 
   & li code {
     white-space: pre-wrap;
+  }
+}
+
+@keyframes wipe-cinematic-in {
+  0% {
+    clip-path: inset(100% 0 100% 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes polygon-in-opposing-corners {
+  from {
+    clip-path: polygon(0 0, 50% 50%, 100% 100%, 50% 50%);
+  }
+  to {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
   }
 }

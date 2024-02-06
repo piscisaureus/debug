@@ -74,7 +74,7 @@
       }
     }
 
-    & :is(video, iframe) {
+    & :is(video, img) {
       @supports (animation-timeline: scroll()) {
         @media (--motionOK) {
           animation-name: wipe-cinematic-in;

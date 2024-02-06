@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 22 Jan 2024 06:11:39 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 06 Feb 2024 06:27:09 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2024 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,21 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Kelvin Show]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/kelvin-show.jpg" alt="some title" height="1536"  width="3024" />
+        <p><a href="https://www.youtube.com/watch?v=nCVm-8YaD_g">Hung out</a> with the super fun <a href="https://www.youtube.com/@dominuskelvin">Kelvin Omereshone</a> and chatted about, you guessed it, <strong>CSS</strong>!</p>
+]]></description>
+            <link>https://nerdy.dev/kelvin-show?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/kelvin-show?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Thu, 01 Feb 2024 04:22:05 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/kelvin-show.jpg" length="0" type="image/jpeg"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/kelvin-show.jpg"/>
+        </item>
         <item>
             <title><![CDATA[Make some hacky noise with CSS gradients]]></title>
             <description><![CDATA[
@@ -306,21 +321,6 @@ a neat little single picker UX.</p>
             <pubDate>Mon, 11 Dec 2023 22:43:54 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/holiday-peeps-sda.mp4" length="0" type="video/mp4"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/holiday-peeps-sda.mp4"/>
-        </item>
-        <item>
-            <title><![CDATA[CSS Wrapped 2023]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-wrapped-2023.png" alt="Playful title says CSS Wrapped 2023" height="742"  width="1296" />
-        <p><a href="https://una.im">Una</a>, <a href="https://bram.us">Bramus</a> and I put together a <a href="https://developer.chrome.com/blog/css-wrapped-2023">2023 Wrapped for CSS</a> 🤓</p>
-]]></description>
-            <link>https://nerdy.dev/css-wrapped-2023?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/css-wrapped-2023?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
-            <pubDate>Thu, 07 Dec 2023 23:39:20 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-wrapped-2023.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-wrapped-2023.png"/>
         </item>
     </channel>
 </rss>

@@ -8,7 +8,7 @@ media:
     width: 3024
     height: 1536
 tags: 
-  - css
+  - media
 ---
 
 [Hung out](https://www.youtube.com/watch?v=nCVm-8YaD_g) with the super fun [Kelvin Omereshone](https://www.youtube.com/@dominuskelvin) and chatted about, you guessed it, **CSS**!

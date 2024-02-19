@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 07 Feb 2024 05:56:51 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 19 Feb 2024 17:10:27 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2024 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,29 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Interview With Jason About The Devrel Career]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/learn-with-jason-interview.png" alt="Jason and Adam looking at a food menu in a punky lunch location." height="1440"  width="2560" />
+        <p><strong>Beautifully shot</strong> <time>8m</time> interview with <a href="https://learnwithjason.dev/">Jason Lengstorf</a> about:</p>
+<ul>
+<li>how people love shredding nice things</li>
+<li>is there a &quot;dream job&quot;?</li>
+<li>how to know when you&#39;re successful?</li>
+<li>a secret for faster career growth?</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=hlRVMknHSqM">Watch on YouTube</a></p>
+]]></description>
+            <link>https://nerdy.dev/interview-with-jason-about-the-devrel-career?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/interview-with-jason-about-the-devrel-career?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[media]]></category>
+            <category><![CDATA[talks]]></category>
+            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <pubDate>Mon, 19 Feb 2024 16:53:21 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/learn-with-jason-interview.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/learn-with-jason-interview.png"/>
+        </item>
         <item>
             <title><![CDATA[Learn With Jason (live in studio)]]></title>
             <description><![CDATA[
@@ -552,26 +575,6 @@ a neat little single picker UX.</p>
             <pubDate>Mon, 01 Jan 2024 18:12:27 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/new-years-2024.mp4" length="0" type="video/mp4"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/new-years-2024.mp4"/>
-        </item>
-        <item>
-            <title><![CDATA[Thinking On Ways To Solve Comparison Components]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-compare.jpg" alt="GUI Challenges character next to a preview of the comparison component showing 2 images" height="720"  width="1280" />
-        <p><a href="https://www.youtube.com/watch?v=hCbSRNE4WUI&list=PLNYkxOF6rcIAaV1wwI9540OC_3XoIzMjQ">Thinking on ways to make a <strong>Comparison</strong></a> component  </p>
-<p>In this <a href="https://goo.gle/GUIchallenges">GUI Challenge</a>, 
-<a href="https://www.youtube.com/channel/UCBGr3ZMcV5jke40_Wrv3fNA">I</a> use grid, masks and an <code>&lt;input type=&quot;range&quot;&gt;</code> to stack and compare 2 elements and their contents.</p>
-<p><a href="https://www.youtube.com/watch?v=hCbSRNE4WUI&list=PLNYkxOF6rcIAaV1wwI9540OC_3XoIzMjQ">watch</a> · 
-<a href="https://gui-challenges.web.app/compare/dist/">demo</a> · 
-<a href="https://github.com/argyleink/gui-challenges">source</a></p>
-]]></description>
-            <link>https://nerdy.dev/thinking-on-ways-to-solve-comparison-components?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/thinking-on-ways-to-solve-comparison-components?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[media]]></category>
-            <dc:creator><![CDATA[Adam@GUIchallenges]]></dc:creator>
-            <pubDate>Mon, 18 Dec 2023 17:33:59 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-compare.jpg" length="0" type="image/jpeg"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gui-compare.jpg"/>
         </item>
     </channel>
 </rss>

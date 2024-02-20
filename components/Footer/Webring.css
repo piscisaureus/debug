@@ -6,6 +6,10 @@
 	padding-block-end: var(--size-5);
 	text-align: center;
 
+	@media (--md-n-above) {
+		grid-column: span 2;
+	}
+
 	@media (--OSdark) {
 		background: radial-gradient(
 			45vw circle at 50% 45vw, 

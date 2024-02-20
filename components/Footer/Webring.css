@@ -6,8 +6,10 @@
 	padding-block-end: var(--size-5);
 	text-align: center;
 
-	@media (--md-n-above) {
-		grid-column: span 2;
+	[page-type="home"] & {
+		@media (--md-n-above) {
+			grid-column: span 2;
+		}
 	}
 
 	@media (--OSdark) {

@@ -83,12 +83,12 @@ function makeRSS(posts:IPost[]) {
 
       if (media.includes('mp4')) {
         futureXMLItemObject.description = `
-          <video style="display: none" src="${media}" alt="${hero.alt}" height="${hero.height}"  width="${hero.width}" />
+          <video style="display: none" src="${media.replace('/image/', '/video/')}" alt="${hero.alt}" height="${hero.height}" width="${hero.width}" />
         ` + futureXMLItemObject.description
       }
       else {
         futureXMLItemObject.description = `
-          <img style="display: none" src="${media}" alt="${hero.alt}" height="${hero.height}"  width="${hero.width}" />
+          <img style="display: none" src="${media}" alt="${hero.alt}" height="${hero.height}" width="${hero.width}" />
         ` + futureXMLItemObject.description
       }
     }

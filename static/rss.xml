@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 19 Feb 2024 17:10:27 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 03 Mar 2024 22:08:29 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2024 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -25,7 +25,7 @@
         <item>
             <title><![CDATA[Interview With Jason About The Devrel Career]]></title>
             <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/learn-with-jason-interview.png" alt="Jason and Adam looking at a food menu in a punky lunch location." height="1440"  width="2560" />
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/learn-with-jason-interview.png" alt="Jason and Adam looking at a food menu in a punky lunch location." height="1440" width="2560" />
         <p><strong>Beautifully shot</strong> <time>8m</time> interview with <a href="https://learnwithjason.dev/">Jason Lengstorf</a> about:</p>
 <ul>
 <li>how people love shredding nice things</li>
@@ -48,7 +48,7 @@
         <item>
             <title><![CDATA[Learn With Jason (live in studio)]]></title>
             <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/noisee-mind-blown.png" alt="asdf" height="720"  width="1280" />
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/noisee-mind-blown.png" alt="asdf" height="720" width="1280" />
         <p><a href="https://noisee.netlify.app/">Noisee</a> is an ephemeral visual audio experience shared with friends <a href="https://noisee.netlify.app/room/1337">in a room</a>. Everyone connects a microphone, then sees their noise combined with everyone elses noise. </p>
 <p>Watch me rock it solo 🤘🏻💀 it&#39;s fun, and weird.</p>
 <p><video 
@@ -315,7 +315,7 @@
         <item>
             <title><![CDATA[Kelvin Show]]></title>
             <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/kelvin-show.jpg" alt="some title" height="1536"  width="3024" />
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/kelvin-show.jpg" alt="some title" height="1536" width="3024" />
         <p><a href="https://www.youtube.com/watch?v=nCVm-8YaD_g">Hung out</a> with the super fun <a href="https://www.youtube.com/@dominuskelvin">Kelvin Omereshone</a> and chatted about, you guessed it, <strong>CSS</strong>!</p>
 ]]></description>
             <link>https://nerdy.dev/kelvin-show?utm_source=rss</link>
@@ -330,7 +330,7 @@
         <item>
             <title><![CDATA[Make some hacky noise with CSS gradients]]></title>
             <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-noise-stack.png" alt="Text emphasized alt text example" height="1396"  width="1576" />
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-noise-stack.png" alt="Text emphasized alt text example" height="1396" width="1576" />
         <p>Here&#39;s an effect I stumbled on and thought was kinda cool. I found it by animating the size of the ring in a repeating radial gradient to <code>0px</code> with <code>@property</code>, really <em>slowly</em>, and notice that when it got near 0, it started to freak out.</p>
 <p><video 
             src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/radial-gradient-noise.mp4 
@@ -502,7 +502,7 @@
         <item>
             <title><![CDATA[A Practical Introduction To Scroll Driven Animations With CSS Scroll And View]]></title>
             <description><![CDATA[
-          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/codrops-carousel.mp4" alt="A preview of the carousel features" height="1080"  width="1922" />
+          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/codrops-carousel.mp4" alt="A preview of the carousel features" height="1080" width="1922" />
         <p><a href="https://tympanus.net/codrops/2024/01/17/a-practical-introduction-to-scroll-driven-animations-with-css-scroll-and-view/">A practical introduction to Scroll Driven Animations with CSS <code>scroll()</code> and <code>view()</code></a></p>
 <p>My first <a href="https://tympanus.net/codrops/">Codrops</a> article 🤓</p>
 ]]></description>
@@ -518,7 +518,7 @@
         <item>
             <title><![CDATA[A Squishy Radio Group]]></title>
             <description><![CDATA[
-          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/squishy-radio-group.mp4" alt="some title" height="1440"  width="1920" />
+          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/squishy-radio-group.mp4" alt="some title" height="1440" width="1920" />
         <p>Radio groups are so powerful! Combine them with <code>:has()</code>, animated <code>grid-template-columns</code> 
 and <code>linear()</code> <a href="https://open-props.style/#easing">easing</a> and you&#39;ve got yourself 
 a neat little single picker UX.</p>
@@ -536,7 +536,7 @@ a neat little single picker UX.</p>
         <item>
             <title><![CDATA[Neue Bento Layouts With Grid Has And Container Queries]]></title>
             <description><![CDATA[
-          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/vt-bento-cqueries.mp4" alt="video demo of the grid responding to the number of boxes and orientation" height="1270"  width="1692" />
+          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/vt-bento-cqueries.mp4" alt="video demo of the grid responding to the number of boxes and orientation" height="1270" width="1692" />
         <p>A CSS bento-like grid that&#39;s aware of the number of children and aspect ratio available thanks to <code>:has()</code> and <code>@container</code>.</p>
 <p><a href="https://codepen.io/argyleink/pen/RwdRaVg">Try the demo</a></p>
 <p>Shout out to <code>view-transition</code>&#39;s for making the interactive demo so much more compelling.</p>
@@ -565,7 +565,7 @@ a neat little single picker UX.</p>
         <item>
             <title><![CDATA[Happy New Years 2024]]></title>
             <description><![CDATA[
-          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/new-years-2024.mp4" alt="A slowly spinning disco ball" height="2160"  width="3840" />
+          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/new-years-2024.mp4" alt="A slowly spinning disco ball" height="2160" width="3840" />
         <p>Happy New Year!</p>
 ]]></description>
             <link>https://nerdy.dev/happy-new-years-2024?utm_source=rss</link>

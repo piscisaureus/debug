@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 08 Mar 2024 18:56:31 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 08 Mar 2024 18:57:56 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2024 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -538,7 +538,7 @@ A look at me and <a href="https://twitter.com/_davideast">David&#39;s</a> CSS go
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[atom@argyleink]]></dc:creator>
             <pubDate>Wed, 17 Jan 2024 17:42:46 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/codrops-carousel.mp4" length="0" type="video/mp4"/>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/codrops-carousel.mp4" length="0" type="video/mp4"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/codrops-carousel.mp4"/>
         </item>
         <item>
@@ -556,7 +556,7 @@ a neat little single picker UX.</p>
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[atom@argyleink]]></dc:creator>
             <pubDate>Thu, 11 Jan 2024 22:30:28 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/squishy-radio-group.mp4" length="0" type="video/mp4"/>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/squishy-radio-group.mp4" length="0" type="video/mp4"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/squishy-radio-group.mp4"/>
         </item>
         <item>
@@ -573,7 +573,7 @@ a neat little single picker UX.</p>
             <category><![CDATA[css]]></category>
             <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
             <pubDate>Mon, 08 Jan 2024 22:30:47 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/vt-bento-cqueries.mp4" length="0" type="video/mp4"/>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/vt-bento-cqueries.mp4" length="0" type="video/mp4"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/vt-bento-cqueries.mp4"/>
         </item>
         <item>

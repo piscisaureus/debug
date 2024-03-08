@@ -38,7 +38,9 @@ export default function PostPage(props: PageProps<IBlog | INote>) {
 
   const title = isBlog
     ? props.data.title + ' · ' + date
-    : titleCase(props.data.slug.replaceAll('-', ' ')) + ' · ' + date
+    : titleCase(props.data.slug.replaceAll('-', ' '))
+      .replaceAll('Css', 'CSS').replaceAll('Gui', 'GUI').replaceAll('Html', 'HTML')
+       + ' · ' + date
 
   const tableOfContents = isBlog
     ? extractTOC(props.data.content)

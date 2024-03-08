@@ -1,6 +1,6 @@
 ---
 type: note
-persona: argyleink
+persona: badatcss
 published_at: 2023-08-16T22:17:22.926
 media:
   - src: argyleink/announcing-bad-at-css.mp4

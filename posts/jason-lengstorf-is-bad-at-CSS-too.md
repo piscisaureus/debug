@@ -1,6 +1,6 @@
 ---
 type: note
-persona: argyleink
+persona: badatcss
 published_at: 2023-11-20T18:18:25.108
 media:
   - src: argyleink/jason-lengstorf-bad-at-css.png
@@ -12,6 +12,7 @@ tags:
   - media
 ---
 
+<span class="Tag">Ep #5</span> 
 🎙️ **Bad At CSS Podcast**  
 
 [Jason Lengstorf](https://jason.energy/posts/), [David East](https://twitter.com/_davideast) and I chaotically discuss CSS, container queries, and that pesky `clamp()` function 🖕.

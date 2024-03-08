@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 03 Mar 2024 22:08:29 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 08 Mar 2024 18:56:31 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2024 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,32 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Bad At CSS 2024 Resolutions]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-in-2024.png" alt="CSS in 2024 on some grunge texture" height="498" width="1012" />
+        <p><span class="Tag">Ep #6</span><br><strong>New Year, New Resolutions:</strong><br>
+A look at me and <a href="https://twitter.com/_davideast">David&#39;s</a> CSS goals for 2024 </p>
+<ul>
+<li>Finish <a href="https://unpkg.com/open-props@beta/">Open Props v2</a></li>
+<li>Build with CSS Anchor</li>
+<li>New uses for Container Queries</li>
+<li>Multiple backgrounds on <a href="http://gradient.style">gradient.style</a> </li>
+<li>Get weirder with <a href="https://scroll-driven-animations.style">Scroll-Driven Animations</a></li>
+<li>Help DevTools evolve with modern CSS</li>
+</ul>
+<p>⤷ <a href="https://badatcss.com">badatcss.com</a></p>
+]]></description>
+            <link>https://nerdy.dev/bad-at-css-2024-resolutions?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/bad-at-css-2024-resolutions?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <category><![CDATA[media]]></category>
+            <dc:creator><![CDATA[adam.is.bad@css]]></dc:creator>
+            <pubDate>Fri, 08 Mar 2024 18:12:59 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-in-2024.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-in-2024.png"/>
+        </item>
         <item>
             <title><![CDATA[Interview With Jason About The Devrel Career]]></title>
             <description><![CDATA[
@@ -40,7 +66,7 @@
             <category><![CDATA[note]]></category>
             <category><![CDATA[media]]></category>
             <category><![CDATA[talks]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <dc:creator><![CDATA[atom@argyleink]]></dc:creator>
             <pubDate>Mon, 19 Feb 2024 16:53:21 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/learn-with-jason-interview.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/learn-with-jason-interview.png"/>
@@ -307,7 +333,7 @@
             <category><![CDATA[css]]></category>
             <category><![CDATA[js]]></category>
             <category><![CDATA[git]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <dc:creator><![CDATA[atom@argyleink]]></dc:creator>
             <pubDate>Wed, 07 Feb 2024 05:53:45 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/noisee-mind-blown.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/noisee-mind-blown.png"/>
@@ -472,7 +498,7 @@
             <guid isPermaLink="true">https://nerdy.dev/hacky-css-noise-with-repeating-gradients?utm_source=rss</guid>
             <category><![CDATA[blog]]></category>
             <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <dc:creator><![CDATA[atom@argyleink]]></dc:creator>
             <pubDate>Mon, 22 Jan 2024 05:08:40 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-noise-stack.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-noise-stack.png"/>
@@ -510,7 +536,7 @@
             <guid isPermaLink="true">https://nerdy.dev/a-practical-introduction-to-scroll-driven-animations-with-css-scroll-and-view?utm_source=rss</guid>
             <category><![CDATA[note]]></category>
             <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <dc:creator><![CDATA[atom@argyleink]]></dc:creator>
             <pubDate>Wed, 17 Jan 2024 17:42:46 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/codrops-carousel.mp4" length="0" type="video/mp4"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/codrops-carousel.mp4"/>
@@ -528,7 +554,7 @@ a neat little single picker UX.</p>
             <guid isPermaLink="true">https://nerdy.dev/a-squishy-radio-group?utm_source=rss</guid>
             <category><![CDATA[note]]></category>
             <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <dc:creator><![CDATA[atom@argyleink]]></dc:creator>
             <pubDate>Thu, 11 Jan 2024 22:30:28 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/squishy-radio-group.mp4" length="0" type="video/mp4"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/squishy-radio-group.mp4"/>
@@ -559,22 +585,8 @@ a neat little single picker UX.</p>
             <guid isPermaLink="true">https://nerdy.dev/is-it-time-to-throw-out-physical-properties?utm_source=rss</guid>
             <category><![CDATA[note]]></category>
             <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[adam@argyleink]]></dc:creator>
+            <dc:creator><![CDATA[atom@argyleink]]></dc:creator>
             <pubDate>Sun, 07 Jan 2024 05:29:43 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Happy New Years 2024]]></title>
-            <description><![CDATA[
-          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/new-years-2024.mp4" alt="A slowly spinning disco ball" height="2160" width="3840" />
-        <p>Happy New Year!</p>
-]]></description>
-            <link>https://nerdy.dev/happy-new-years-2024?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/happy-new-years-2024?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <dc:creator><![CDATA[Web Master@admin]]></dc:creator>
-            <pubDate>Mon, 01 Jan 2024 18:12:27 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/new-years-2024.mp4" length="0" type="video/mp4"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/new-years-2024.mp4"/>
         </item>
     </channel>
 </rss>

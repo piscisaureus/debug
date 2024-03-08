@@ -1,6 +1,6 @@
 ---
 type: note
-persona: argyleink
+persona: badatcss
 published_at: 2023-09-21T20:01:11.736
 media:
   - src: argyleink/bad-at-css-lewis.png
@@ -12,7 +12,7 @@ tags:
   - media
 ---
 
-<span class="Tag">NEW</span>  
+<span class="Tag">Ep #4</span>  
 🎙️ **Bad At CSS Podcast**  
 
 [David East](https://twitter.com/_davideast) and I discuss TypeScript; David defends it, and I attack it. I'll probably get mega roasted for this.

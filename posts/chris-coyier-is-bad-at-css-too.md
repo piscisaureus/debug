@@ -1,6 +1,6 @@
 ---
 type: note
-persona: argyleink
+persona: badatcss
 published_at: 2023-09-14T16:22:36.858
 media:
   - src: argyleink/chris-bad-at-css.jpg

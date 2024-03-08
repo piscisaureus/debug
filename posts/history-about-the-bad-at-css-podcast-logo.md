@@ -1,6 +1,6 @@
 ---
 type: note
-persona: argyleink
+persona: badatcss
 published_at: 2023-08-18T04:44:42.485
 media:
   - src: argyleink/bad-at-css-pod-wide.png
@@ -13,7 +13,7 @@ tags:
 ---
 
 **Bad At CSS Podcast**  
-⮑ logo made in the browser
+⤷ logo made in the browser
 
 ✅ intentionally no font  
 ✅ lack of any styles 😉  

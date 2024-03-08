@@ -35,7 +35,7 @@ const personas = {
       height: 382,
     },
     handle: "argyleink",
-    name: "adam",
+    name: "atom",
   },
   pops: {
     img: {
@@ -45,7 +45,7 @@ const personas = {
       height: 512,
     },
     handle: "pops",
-    name: "Dad",
+    name: "dad",
   },
   csspodcast: {
     img: {
@@ -55,7 +55,17 @@ const personas = {
       height: 2000,
     },
     handle: "theCSSpodcast",
-    name: "Adam",
+    name: "adam",
+  },
+  badatcss: {
+    img: {
+      src: "argyleink/badatcss-icon.jpg",
+      alt: "Bad At CSS",
+      width: 491,
+      height: 486,
+    },
+    handle: "css",
+    name: "adam.is.bad",
   },
   guichallenges: {
     img: {

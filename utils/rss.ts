@@ -73,7 +73,9 @@ function makeRSS(posts:IPost[]) {
       const media = urlbase + '/' + hero.src
 
       futureXMLItemObject.enclosure = { 
-        url: media,
+        url: media.includes('mp4')
+          ? media.replace('/image/', '/video/')
+          : media,
         alt: hero.alt,
       }
 

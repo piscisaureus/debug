@@ -13,7 +13,7 @@ export default function Mentions({mentions}:{mentions:IMention[]}) {
   const mastodon = mentions.find(mention => mention.url.includes('https://front-end.social/@argyleink'))
   const bluesky = mentions.find(mention => mention.url.includes('https://bsky.app/profile/nerdy.dev'))
   
-  // console.log(comments)
+  console.log(mentions)
   return (
     <><div class="join-convo">
       <p>Join the conversation on</p>

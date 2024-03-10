@@ -8,7 +8,18 @@ export default function Footer() {
             <use href="#icon.twitter"/>
           </svg>
         </a>
-        <a rel="me" href="https://front-end.social/@argyleink" style="display: none">Mastodon</a>
+        <a rel="me" href="https://front-end.social/@argyleink">
+          <div class="sr-only">Follow me on Mastodon</div>
+          <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">
+            <use href="#icon.mastodon"/>
+          </svg>
+        </a>
+        <a href="https://bsky.app/profile/nerdy.dev" rel="me" class="icon-button">
+          <div class="sr-only">Follow me on Bluesky</div>
+          <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">
+            <use href="#icon.bluesky"/>
+          </svg>
+        </a>
         <a href="https://github.com/argyleink" rel="me" class="icon-button">
           <div class="sr-only">Follow me on Github</div>
           <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 24 24">

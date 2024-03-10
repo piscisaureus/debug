@@ -15,14 +15,19 @@ q {
     inset-inline-start: 0;
     inset-block-start: 0;
     transform: translateX(-50%) translateY(-50%);
-    background-color: var(--surface-document);
+    background-color: var(--surface-1);
+    box-shadow: var(--shadow-2);
+    border: 1px solid var(--surface-2);
     padding: var(--size-3);
     border-radius: var(--radius-round);
     aspect-ratio: 1;
     line-height: 0;
+  }
 
-    @media (--OSlight) {
-      border: 1px solid var(--link);
+  @media (--OSdark) {
+    &::before {
+      background-color: var(--surface-document);
+      border: none;
     }
   }
 
@@ -46,13 +51,18 @@ q {
     display: none;
   }
 
+  & > div a.u-mention {
+    display: none;
+  }
+
   & > cite {
     display: flex;
     gap: var(--size-2);
     align-items: center;
     justify-self: end;
     border: none;
-    background: var(--surface-2);
+    background: var(--surface-1);
+    border: 1px solid var(--surface-2);
     box-shadow: var(--shadow-2);
     color: var(--text-1);
     position: relative;
@@ -73,7 +83,7 @@ q {
     }
 
     &:has(img) {
-      padding-inline: var(--size-1) var(--size-2);
+      padding-inline: var(--size-1) 1.25ch;
     }
   }
 }

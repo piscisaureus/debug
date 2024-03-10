@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 08 Mar 2024 18:57:56 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 10 Mar 2024 06:50:33 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2024 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,20 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[This Site Now Supports At Protocol Mentions And Interactions]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bluesky-mentions.png" alt="A screenshot of a post from this site with Bluesky mentions linked with an icon." height="1058" width="1360" />
+        <p><a href="https://bsky.app/profile/nerdy.dev">Bluesky</a> mentions are now collected and shown on notes and blog posts on this site, just like <a href="https://elk.zone/front-end.social/@argyleink">Mastodon</a>.</p>
+]]></description>
+            <link>https://nerdy.dev/this-site-now-supports-at-protocol-mentions-and-interactions?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/this-site-now-supports-at-protocol-mentions-and-interactions?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <dc:creator><![CDATA[Web Master@admin]]></dc:creator>
+            <pubDate>Sun, 10 Mar 2024 06:44:00 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bluesky-mentions.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/bluesky-mentions.png"/>
+        </item>
         <item>
             <title><![CDATA[Bad At CSS 2024 Resolutions]]></title>
             <description><![CDATA[
@@ -575,18 +589,6 @@ a neat little single picker UX.</p>
             <pubDate>Mon, 08 Jan 2024 22:30:47 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/vt-bento-cqueries.mp4" length="0" type="video/mp4"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/vt-bento-cqueries.mp4"/>
-        </item>
-        <item>
-            <title><![CDATA[Is It Time To Throw Out Physical Properties]]></title>
-            <description><![CDATA[<p>is it time to forget about physical properties like <code>margin-top</code> and <code>left</code>?</p>
-<p><small>Can&#39;t throw out the x/y transforms tho 😭</small></p>
-]]></description>
-            <link>https://nerdy.dev/is-it-time-to-throw-out-physical-properties?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/is-it-time-to-throw-out-physical-properties?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[atom@argyleink]]></dc:creator>
-            <pubDate>Sun, 07 Jan 2024 05:29:43 GMT</pubDate>
         </item>
     </channel>
 </rss>

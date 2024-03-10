@@ -23,7 +23,7 @@
     --_shadow-size: 1.5em;
   }
 
-  &:nth-of-type(2n) { --_shadow-color: var(--pink-5) }
-  &:nth-of-type(3n) { --_shadow-color: var(--lime-5) }
-  &:nth-of-type(4n) { --_shadow-color: var(--cyan-5) }
+  &:nth-of-type(2n) { --_shadow-color: var(--neon-pink) }
+  &:nth-of-type(3n) { --_shadow-color: var(--neon-yellow) }
+  &:nth-of-type(4n) { --_shadow-color: var(--neon-blue) }
 }

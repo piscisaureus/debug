@@ -11,6 +11,7 @@ export default function Mentions({mentions}:{mentions:IMention[]}) {
   const likes = mentions.filter(mention => ['like-of'].includes(mention['wm-property']))
   const tweet = mentions.find(mention => mention.url.includes('https://twitter.com/argyleink'))
   const mastodon = mentions.find(mention => mention.url.includes('https://front-end.social/@argyleink'))
+  const bluesky = mentions.find(mention => mention.url.includes('https://bsky.app/profile/nerdy.dev'))
   
   // console.log(comments)
   return (
@@ -26,6 +27,12 @@ export default function Mentions({mentions}:{mentions:IMention[]}) {
         <a href={mastodon.url} title="Mastodon">
           <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 28 25">
             <use href="#icon.mastodon"/>
+          </svg>
+        </a>}
+      {bluesky && 
+        <a href={bluesky.url} title="Bluesky">
+          <svg aria-hidden class="filled-icon" width="24" height="24" viewBox="0 0 28 25">
+            <use href="#icon.bluesky"/>
           </svg>
         </a>}
     </div>

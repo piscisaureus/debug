@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <opml version="1.0">
   <head>
-    <title>Export from Palabre</title>
-    <url>https://play.google.com/store/apps/details?id=com.levelup.palabre</url>
+    <title>Adam Argyle's RSS Subs</title>
+    <url>https://nerdy.dev/subscriptions.opml.xml</url>
   </head>
   <body>
     <outline text="High quality " title="High quality ">

@@ -220,6 +220,7 @@
       <outline type="rss" text="Ui General Blog" title="Ui General Blog" xmlUrl="http://ui-animations.tumblr.com/rss" htmlUrl="https://ui-animations.tumblr.com/" />
       <outline type="rss" text="Chromium Blog" title="Chromium Blog" xmlUrl="http://blog.chromium.org/atom.xml" htmlUrl="http://blog.chromium.org/" />
       <outline type="rss" text="Roma’s Unpolished Posts" title="Roma’s Unpolished Posts" xmlUrl="https://blog.kizu.dev/rss.xml" htmlUrl="https://blog.kizu.dev/" />
+      <outline type="rss" text="ComiCSS" title="ComiCSS" xmlUrl="https://comicss.art/rss.xml" htmlUrl="https://comicss.art/" />
       <outline type="rss" text="Adam Argyle" title="Adam Argyle" xmlUrl="https://nerdy.dev/rss.xml" htmlUrl="https://nerdy.dev" />
     </outline>
   </body>

@@ -5,6 +5,7 @@
 import * as $_name_ from "./routes/[name].tsx";
 import * as $_404 from "./routes/_404.tsx";
 import * as $_middleware from "./routes/_middleware.tsx";
+import * as $follows from "./routes/follows.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $Modal from "./islands/Modal.tsx";
 import { type Manifest } from "$fresh/server.ts";
@@ -14,6 +15,7 @@ const manifest = {
     "./routes/[name].tsx": $_name_,
     "./routes/_404.tsx": $_404,
     "./routes/_middleware.tsx": $_middleware,
+    "./routes/follows.tsx": $follows,
     "./routes/index.tsx": $index,
   },
   islands: {

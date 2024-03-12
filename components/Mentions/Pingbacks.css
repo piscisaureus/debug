@@ -4,7 +4,6 @@
   gap: var(--size-2);
   list-style-type: none;
   padding-inline: 0 var(--size-5);
-  margin-block-start: var(--size-1);
 
   & > li {
     display: flex;

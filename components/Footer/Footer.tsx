@@ -35,12 +35,13 @@ export default function Footer() {
       </footer>
 
       <div class="Webring">
-        <p>Member of a <a href="https://CS.Sjoy.lol">CSS</a> <a href="https://en.wikipedia.org/wiki/Webring">Webring</a></p>
-        <small>Try a site in the ring!</small>
+        <p>Crawl the <a href="https://CS.Sjoy.lol">CSS Webring</a>?</p>
         <div>
-          <a href="https://webri.ng/webring/cssjoy/previous?via=https%3A%2F%2Fnerdy.dev">Previous</a>
-          <a href="https://webri.ng/webring/cssjoy/random?via=https%3A%2F%2Fnerdy.dev">Random</a>
-          <a href="https://webri.ng/webring/cssjoy/next?via=https%3A%2F%2Fnerdy.dev">Next</a>
+          <a href="https://webri.ng/webring/cssjoy/previous?via=https%3A%2F%2Fnerdy.dev">previous site</a>
+          <a href="https://webri.ng/webring/cssjoy/next?via=https%3A%2F%2Fnerdy.dev">next site</a>
+        </div>
+        <div>
+          <a href="https://webri.ng/webring/cssjoy/random?via=https%3A%2F%2Fnerdy.dev">a random site</a>
         </div>
       </div>
     </>

@@ -3,7 +3,10 @@ import { IMention } from '~/utils/webmentions.ts'
 export default function Pingbacks({pingbacks}:{pingbacks:IMention[]}) {
   return (
     <section>
-      <span>{pingbacks.length} pingbacks</span>
+      <div class="mention-header">
+        <span class="Tag">{pingbacks.length}</span>
+        <span> pingbacks</span>
+      </div>
       <ul class="Pingbacks">
         {pingbacks.map(ping => (
           <li title={ping.url}>

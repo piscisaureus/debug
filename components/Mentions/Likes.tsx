@@ -3,7 +3,10 @@ import { IMention } from '~/utils/webmentions.ts'
 export default function Likes({likes}:{likes:IMention[]}) {
   return (
     <section>
-      <span>{likes.length} likes</span>
+      <div class="mention-header">
+        <span class="Tag">{likes.length}</span>
+        <span> likes</span>
+      </div>
       <ul class="Likes">
         {likes.map(like => (
           <li title={like.author.name}><a href={like.url}>

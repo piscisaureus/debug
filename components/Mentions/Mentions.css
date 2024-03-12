@@ -3,7 +3,7 @@
   gap: var(--size-7); 
   max-inline-size: var(--size-content-2);
 
-  & .join-convo {
+  & > .join-convo {
     display: flex;
     align-items: center;
     gap: var(--size-2);
@@ -11,6 +11,10 @@
     & a {
       border-radius: var(--radius-round);
     }
+  }
+
+  & > .stats {
+    margin-block-end: var(--size-10);
   }
 }
 
@@ -35,5 +39,16 @@
       block-size: 100%;
       object-fit: cover;
     }
+  }
+}
+
+.mention-header {
+  display: flex;
+  align-items: center;
+  gap: var(--size-2);
+  padding-block-end: var(--size-2);
+
+  & .Tag {
+    font-size: var(--font-size-1);
   }
 }

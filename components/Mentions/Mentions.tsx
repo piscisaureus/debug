@@ -16,7 +16,7 @@ export default function Mentions({mentions}:{mentions:IMention[]}) {
   const mastodon = mentions.find(mention => mention.url.includes('https://front-end.social/@argyleink'))
   const bluesky = mentions.find(mention => mention.url.includes('https://bsky.app/profile/nerdy.dev'))
   
-  console.log(pingbacks)
+  // console.log(pingbacks)
   return (
     <><div class="join-convo">
       <p>Join the conversation on</p>
@@ -39,7 +39,7 @@ export default function Mentions({mentions}:{mentions:IMention[]}) {
           </svg>
         </a>}
     </div>
-      <div class="block-stack">
+      <div class="stats block-stack">
         {likes.length >= 1 && <Likes likes={likes}/>}
         {reposts.length >= 1 && <Reposts reposts={reposts}/>}
         {pingbacks.length >= 1 && <Pingbacks pingbacks={pingbacks}/>}

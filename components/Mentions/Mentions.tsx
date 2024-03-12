@@ -48,7 +48,8 @@ export default function Mentions({mentions}:{mentions:IMention[]}) {
         <div class="Mention">
           <q class={
             mention.url.includes('https://twitter.com') && 'twitter' || 
-            mention.url.includes('https://front-end.social') && 'mastodon'
+            mention.url.includes('https://front-end.social') && 'mastodon' || 
+            mention.url.includes('https://bsky.app') && 'bluesky'
           }>
             <div dangerouslySetInnerHTML={{ __html: mention.content.html || mention.content.text }} />
             {mention?.photo?.length && mention.author.url.includes('argyleink') && 
@@ -66,7 +67,7 @@ export default function Mentions({mentions}:{mentions:IMention[]}) {
               </div>
             }
             <cite>
-              <a href={mention.author.url}>
+              <a href={mention.author.url} rel="noopener">
                 <img 
                   src={mention.author.photo} 
                   alt={mention.author.name}
@@ -76,7 +77,7 @@ export default function Mentions({mentions}:{mentions:IMention[]}) {
                   decoding="async"
                 />
               </a>
-              <a href={mention.url}>{mention.author.name}</a>
+              <a href={mention.url} rel="noopener">{mention.author.name}</a>
             </cite>
           </q>
         </div>

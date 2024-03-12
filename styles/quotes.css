@@ -47,6 +47,10 @@ q {
     content: url("https://api.iconify.design/mdi:mastodon.svg?color=%236a43fd");
   }
 
+  &.bluesky::before {
+    content: url("https://api.iconify.design/ri:bluesky-fill.svg?color=%236a43fd");
+  }
+
   &::after {
     display: none;
   }

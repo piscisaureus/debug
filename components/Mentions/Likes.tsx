@@ -9,7 +9,7 @@ export default function Likes({likes}:{likes:IMention[]}) {
       </div>
       <ul class="Likes">
         {likes.map(like => (
-          <li title={like.author.name}><a href={like.url}>
+          <li title={like.author.name}><a href={like.url} rel="noopener">
             <img 
               src={like.author.photo} 
               alt={like.author.name}

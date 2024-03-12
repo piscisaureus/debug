@@ -10,7 +10,7 @@ export default function Pingbacks({pingbacks}:{pingbacks:IMention[]}) {
       <ul class="Pingbacks">
         {pingbacks.map(ping => (
           <li title={ping.url}>
-            <a href={ping.url}>
+            <a href={ping.url} rel="noopener">
               {new URL(ping.url)['hostname']}  
             </a>
           </li>

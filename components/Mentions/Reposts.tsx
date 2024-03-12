@@ -9,7 +9,7 @@ export default function Reposts({reposts}:{reposts:IMention[]}) {
       </div>
       <ul class="Reposts">
         {reposts.map(repost => (
-          <li title={repost.author.name}><a href={repost.url}>
+          <li title={repost.author.name}><a href={repost.url} rel="noopener">
             <img 
               src={repost.author.photo} 
               alt={repost.author.name}

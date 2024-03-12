@@ -2,18 +2,21 @@ import { IMention } from '~/utils/webmentions.ts'
 
 import Likes from './Likes.tsx'
 import Reposts from './Reposts.tsx'
+import Pingbacks from './Pingbacks.tsx'
 
 export default function Mentions({mentions}:{mentions:IMention[]}) {
   const comments = mentions
     .filter(mention => ['mention-of','in-reply-to'].includes(mention['wm-property']))
+    .filter(mention => !['pingback'].includes(mention['wm-protocol']))
     .filter(mention => mention?.content?.html)
   const reposts = mentions.filter(mention => ['repost-of'].includes(mention['wm-property']))
   const likes = mentions.filter(mention => ['like-of'].includes(mention['wm-property']))
+  const pingbacks = mentions.filter(mention => ['pingback'].includes(mention['wm-protocol']))
   const tweet = mentions.find(mention => mention.url.includes('https://twitter.com/argyleink'))
   const mastodon = mentions.find(mention => mention.url.includes('https://front-end.social/@argyleink'))
   const bluesky = mentions.find(mention => mention.url.includes('https://bsky.app/profile/nerdy.dev'))
   
-  // console.log(mentions)
+  console.log(pingbacks)
   return (
     <><div class="join-convo">
       <p>Join the conversation on</p>
@@ -39,6 +42,7 @@ export default function Mentions({mentions}:{mentions:IMention[]}) {
       <div class="block-stack">
         {likes.length >= 1 && <Likes likes={likes}/>}
         {reposts.length >= 1 && <Reposts reposts={reposts}/>}
+        {pingbacks.length >= 1 && <Pingbacks pingbacks={pingbacks}/>}
       </div>
       {comments.length >= 1 && comments.map((mention) => 
         <div class="Mention">

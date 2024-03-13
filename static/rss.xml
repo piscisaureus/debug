@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 10 Mar 2024 06:50:33 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 13 Mar 2024 05:06:39 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2024 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,111 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Can you feel the rhythm‽]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/logical-rhythm.png" alt="Screenshot of the devtools grid overlay on top of the demo from this post." height="940" width="2266" />
+        <p>It&#39;s much more than vertical rhythm on the web. Flex and grid logical layouts and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values">logical props</a> make the concept of baseline grids an international reality. </p>
+<p><video 
+            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/vertical-rtl_zmftpq.mp4 
+            width="1920" 
+            height="1442"
+            alt=" "
+            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/so_0.5,f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/vertical-rtl_zmftpq.jpg"
+            controls 
+            loop
+            muted 
+            playsinline 
+            allowFullScreen
+          /></p>
+<p>Here&#39;s the technique in a <a href="https://www.youtube.com/shorts/PyBa0u_Cs0o">YouTube Short</a>.</p>
+<p>Or try it for yourself, here&#39;s the Codepen.</p>
+<p>
+          <iframe 
+            class="codepen-embed" 
+            scrolling="no" 
+            title="null" 
+            src="https://codepen.io/argyleink/embed/preview/RweXyRq?default-tab=result&editable=true&theme-id=43079" 
+            frameborder="no" 
+            loading="lazy" 
+            allowtransparency="true" 
+            allowfullscreen="true"
+          >
+            See the Pen <a href="https://codepen.io/argyleink/embed/preview/RweXyRq">
+            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        </p>
+
+        <h2>
+          Logical rhythm: ltr
+          <a name="logical-rhythm:-ltr" href="#logical-rhythm:-ltr">#</a>
+        </h2>
+       <p>Looks like regular vertical rhythm here yeah?</p>
+<p><video 
+            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/ltr_lublfy.mp4 
+            width="1920" 
+            height="1442"
+            alt=" "
+            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/so_0.5,f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/ltr_lublfy.jpg"
+            controls 
+            loop
+            muted 
+            playsinline 
+            allowFullScreen
+          /></p>
+
+        <h2>
+          Logical rhythm: rtl
+          <a name="logical-rhythm:-rtl" href="#logical-rhythm:-rtl">#</a>
+        </h2>
+       <p>Looks like regular vertical rhythm here too.</p>
+<p><video 
+            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/rtl_qbup5o.mp4 
+            width="1920" 
+            height="1442"
+            alt=" "
+            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/so_0.5,f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/rtl_qbup5o.jpg"
+            controls 
+            loop
+            muted 
+            playsinline 
+            allowFullScreen
+          /></p>
+
+        <h2>
+          Logical rhythm: vertical rtl
+          <a name="logical-rhythm:-vertical-rtl" href="#logical-rhythm:-vertical-rtl">#</a>
+        </h2>
+       <p>But here! Oh yeah, <strong>that&#39;s special</strong>.</p>
+<p><video 
+            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/vertical-rtl_zmftpq.mp4 
+            width="1920" 
+            height="1442"
+            alt=" "
+            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/so_0.5,f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/vertical-rtl_zmftpq.jpg"
+            controls 
+            loop
+            muted 
+            playsinline 
+            allowFullScreen
+          /></p>
+
+        <h2>
+          Outro
+          <a name="outro" href="#outro">#</a>
+        </h2>
+       <p>CSS let&#39;s us authors be lazy and care less. Offering baked in, contextual, and adaptive directionalities via <code>inline</code> and <code>block</code>. Rad.</p>
+]]></description>
+            <link>https://nerdy.dev/css-logical-rhythm?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/css-logical-rhythm?utm_source=rss</guid>
+            <category><![CDATA[blog]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[atom@argyleink]]></dc:creator>
+            <pubDate>Wed, 13 Mar 2024 04:30:17 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/logical-rhythm.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/logical-rhythm.png"/>
+        </item>
         <item>
             <title><![CDATA[This Site Now Supports At Protocol Mentions And Interactions]]></title>
             <description><![CDATA[
@@ -572,23 +677,6 @@ a neat little single picker UX.</p>
             <pubDate>Thu, 11 Jan 2024 22:30:28 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/squishy-radio-group.mp4" length="0" type="video/mp4"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/squishy-radio-group.mp4"/>
-        </item>
-        <item>
-            <title><![CDATA[Neue Bento Layouts With Grid Has And Container Queries]]></title>
-            <description><![CDATA[
-          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/vt-bento-cqueries.mp4" alt="video demo of the grid responding to the number of boxes and orientation" height="1270" width="1692" />
-        <p>A CSS bento-like grid that&#39;s aware of the number of children and aspect ratio available thanks to <code>:has()</code> and <code>@container</code>.</p>
-<p><a href="https://codepen.io/argyleink/pen/RwdRaVg">Try the demo</a></p>
-<p>Shout out to <code>view-transition</code>&#39;s for making the interactive demo so much more compelling.</p>
-]]></description>
-            <link>https://nerdy.dev/neue-bento-layouts-with-grid-has-and-container-queries?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/neue-bento-layouts-with-grid-has-and-container-queries?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
-            <pubDate>Mon, 08 Jan 2024 22:30:47 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/vt-bento-cqueries.mp4" length="0" type="video/mp4"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/vt-bento-cqueries.mp4"/>
         </item>
     </channel>
 </rss>

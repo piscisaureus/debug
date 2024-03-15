@@ -68,7 +68,7 @@
   }
 
   & ul {
-    gap: 0;
+    gap: var(--size-1);
   }
 
   & li {

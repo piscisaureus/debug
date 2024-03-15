@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 13 Mar 2024 05:06:39 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 15 Mar 2024 04:34:08 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2024 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,175 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Steal this popover code]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/steal-this-code.png" alt="Text emphasized alt text example" height="102" width="481" />
+        <p>Popovers are pretty rad, as are <a href="https://web.dev/articles/building/a-dialog-component">dialogs</a>, but animating them isn&#39;t easy.</p>
+<ol>
+<li>the browser toggles <code>display</code></li>
+<li>the elements enter and exit the <a href="https://developer.mozilla.org/docs/Glossary/Top_layer">top layer</a> <br>(aka: the DOM penthouse)</li>
+</ol>
+<p><a href="https://developer.mozilla.org/docs/Web/HTML/Global_attributes/popover">Popovers</a> are basically being <a href="https://developer.mozilla.org/docs/Web/API/Node/appendChild">appended</a> or <a href="https://developer.mozilla.org/docs/Web/API/Node/removeChild">removed</a>, and <a href="https://developer.mozilla.org/docs/Web/CSS/display"><code>display</code></a> is toggled between <code>block</code> and <code>none</code>. </p>
+<br>
+
+<p><q class="info">Ew, how do we deal with that?</q></p>
+
+        <h2>
+          Steal this basic setup
+          <a name="steal-this-basic-setup" href="#steal-this-basic-setup">#</a>
+        </h2>
+       <p>This next section is optimized for you to steal, but you can also just <a href="https://codepen.io/argyleink/pen/JjzqXee">peep the Codepen</a> and take it from there.</p>
+
+        <h2>
+          HTML
+          <a name="html" href="#html">#</a>
+        </h2>
+       <p>Button that opens the popover:</p>
+<pre><code class="language-html"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">&lt;</span><span style="color: var(--shiki-token-string-expression)">button</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">popovertarget</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;my-tooltip&quot;</span><span style="color: var(--shiki-color-text)">&gt;?&lt;/</span><span style="color: var(--shiki-token-string-expression)">button</span><span style="color: var(--shiki-color-text)">&gt;</span></span></code></pre>
+</code></pre>
+<p>The <code>[popover]</code>:</p>
+<pre><code class="language-html"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">&lt;</span><span style="color: var(--shiki-token-string-expression)">p</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">id</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;my-tooltip&quot;</span><span style="color: var(--shiki-color-text)"> popover&gt;tip&lt;/</span><span style="color: var(--shiki-token-string-expression)">p</span><span style="color: var(--shiki-color-text)">&gt;</span></span></code></pre>
+</code></pre>
+
+        <h2>
+          CSS
+          <a name="css" href="#css">#</a>
+        </h2>
+       <p>This is a bit tricky. At least I think so.</p>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">[</span><span style="color: var(--shiki-token-function)">popover</span><span style="color: var(--shiki-color-text)">] {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  &amp;, &amp;</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-token-constant)">:backdrop {</span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">    transition: </span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">      display .5</span><span style="color: var(--shiki-token-keyword)">s</span><span style="color: var(--shiki-token-constant)"> allow-discrete</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">      overlay .5</span><span style="color: var(--shiki-token-keyword)">s</span><span style="color: var(--shiki-token-constant)"> allow-discrete</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">      opacity .5</span><span style="color: var(--shiki-token-keyword)">s</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">opacity</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">0</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  &amp;</span><span style="color: var(--shiki-token-function)">::backdrop</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">background</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">black</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  &amp;:</span><span style="color: var(--shiki-token-string-expression)">popover-open</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">opacity</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">1</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    &amp;</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-token-constant)">:backdrop {</span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">      opacity: 0.5</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    }</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-keyword)">@starting-style</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    &amp;:</span><span style="color: var(--shiki-token-string-expression)">popover-open</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    &amp;:</span><span style="color: var(--shiki-token-string-expression)">popover-open</span><span style="color: var(--shiki-token-function)">::backdrop</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">      </span><span style="color: var(--shiki-token-constant)">opacity</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">0</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    }</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  }</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+
+        <h2>
+          CSS snippet explained
+          <a name="css-snippet-explained" href="#css-snippet-explained">#</a>
+        </h2>
+       <p>This isn&#39;t a deep dive, find <a href="https://developer.chrome.com/blog/entry-exit-animations">a good one from Una here</a>, but is a <code>2m</code> overview.</p>
+
+        <h2>
+          Transition setup
+          <a name="transition-setup" href="#transition-setup">#</a>
+        </h2>
+       <ol>
+<li>sets any popover and their backdrops to <code>0</code> opacity</li>
+<li>sets up a transition for that opacity</li>
+<li>with a matching duration to opacity, <code>display</code> and <a href="https://developer.mozilla.org/docs/Web/CSS/overlay"><code>overlay</code></a> use a new keyword <a href="https://developer.mozilla.org/docs/Web/CSS/transition-behavior"><code>allow-discrete</code></a> that signals these properties toggle any new values <strong>after</strong> the duration has run</li>
+</ol>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">[</span><span style="color: var(--shiki-token-function)">popover</span><span style="color: var(--shiki-color-text)">] {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  &amp;, &amp;</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-token-constant)">:backdrop {</span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">    transition: </span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">      display .5</span><span style="color: var(--shiki-token-keyword)">s</span><span style="color: var(--shiki-token-constant)"> allow-discrete</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">      overlay .5</span><span style="color: var(--shiki-token-keyword)">s</span><span style="color: var(--shiki-token-constant)"> allow-discrete</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">      opacity .5</span><span style="color: var(--shiki-token-keyword)">s</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    </span><span style="color: var(--shiki-token-constant)">opacity</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">0</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  }</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p><q>Display and entering/exiting the top-layer will now only change after opacity has finished fading</q></p>
+
+        <h2>
+          Popover showing
+          <a name="popover-showing" href="#popover-showing">#</a>
+        </h2>
+       <ol>
+<li>sets any popover to opacity <code>1</code> when <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:popover-open"><code>:popover-open</code></a></li>
+<li>sets the backdrop to half opacity</li>
+</ol>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">[</span><span style="color: var(--shiki-token-function)">popover</span><span style="color: var(--shiki-color-text)">] {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  &amp;</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-token-constant)">popover-open {</span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">    opacity: 1</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    &amp;</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-token-constant)">:backdrop {</span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">      opacity: 0.5</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    }</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  }</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+
+        <h2>
+          Entry animation prep
+          <a name="entry-animation-prep" href="#entry-animation-prep">#</a>
+        </h2>
+       <p>Since popovers enter the top layer, and we&#39;re using transitions, we need a way to tell the browser what styles to start the transition from. Enter <a href="https://developer.mozilla.org/docs/Web/CSS/@starting-style"><code>@starting-style</code></a></p>
+<ol>
+<li>When the popover is opened</li>
+<li>Start the backdrop and popover with opacity 0</li>
+</ol>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">[</span><span style="color: var(--shiki-token-function)">popover</span><span style="color: var(--shiki-color-text)">] {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  @</span><span style="color: var(--shiki-token-constant)">starting-style</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    &amp;</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-token-constant)">popover-open</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">    &amp;:popover-open::backdrop {</span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">      opacity: 0</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    }</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  }</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p><q>This will then transition from the starting style, to the popover showing styles.</q></p>
+
+        <h2>
+          JS
+          <a name="js" href="#js">#</a>
+        </h2>
+       <p>Nothing to see here.</p>
+
+        <h3>
+          Try it
+          <a name="try-it" href="#try-it">#</a>
+        </h3>
+       <p>
+          <iframe 
+            class="codepen-embed" 
+            scrolling="no" 
+            title="null" 
+            src="https://codepen.io/argyleink/embed/preview/JjzqXee?default-tab=result&editable=true&theme-id=43079" 
+            frameborder="no" 
+            loading="lazy" 
+            allowtransparency="true" 
+            allowfullscreen="true"
+          >
+            See the Pen <a href="https://codepen.io/argyleink/embed/preview/JjzqXee">
+            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        </p>
+]]></description>
+            <link>https://nerdy.dev/steal-this-popover-starter-kit?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/steal-this-popover-starter-kit?utm_source=rss</guid>
+            <category><![CDATA[blog]]></category>
+            <category><![CDATA[css]]></category>
+            <category><![CDATA[html]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Fri, 15 Mar 2024 03:45:30 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/steal-this-code.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/steal-this-code.png"/>
+        </item>
         <item>
             <title><![CDATA[Can you feel the rhythm‽]]></title>
             <description><![CDATA[
@@ -659,24 +828,6 @@ A look at me and <a href="https://twitter.com/_davideast">David&#39;s</a> CSS go
             <pubDate>Wed, 17 Jan 2024 17:42:46 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/codrops-carousel.mp4" length="0" type="video/mp4"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/codrops-carousel.mp4"/>
-        </item>
-        <item>
-            <title><![CDATA[A Squishy Radio Group]]></title>
-            <description><![CDATA[
-          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/squishy-radio-group.mp4" alt="some title" height="1440" width="1920" />
-        <p>Radio groups are so powerful! Combine them with <code>:has()</code>, animated <code>grid-template-columns</code> 
-and <code>linear()</code> <a href="https://open-props.style/#easing">easing</a> and you&#39;ve got yourself 
-a neat little single picker UX.</p>
-<p><a href="https://codepen.io/argyleink/pen/ExMgWLe">Try it on Codepen</a></p>
-]]></description>
-            <link>https://nerdy.dev/a-squishy-radio-group?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/a-squishy-radio-group?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[atom@argyleink]]></dc:creator>
-            <pubDate>Thu, 11 Jan 2024 22:30:28 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/squishy-radio-group.mp4" length="0" type="video/mp4"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/squishy-radio-group.mp4"/>
         </item>
     </channel>
 </rss>

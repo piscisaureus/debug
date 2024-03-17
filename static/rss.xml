@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 15 Mar 2024 16:12:44 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 17 Mar 2024 02:17:08 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2024 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,34 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Vibe check]]></title>
+            <description><![CDATA[<p>A vibe check, like <a href="https://daverupert.com/2024/03/vibe-check-31/">Dave does</a>!</p>
+<ol>
+<li>Hackin on a <a href="https://bsky.app/profile/nerdy.dev/post/3kkhttsup7c26">fretless mountain banjo</a>;<br><a href="https://recorder.google.com/e2138a86-b06f-4afe-aca6-a2b95cb3acc6">listen to a clip</a></li>
+<li>Ridin <a href="https://twitter.com/argyleink/status/1663651252293758976">the onewheel</a> with friends</li>
+<li>Wrote a couple blog posts, tryin to be short n sweet</li>
+<li>New episodes of the <a href="https://badatcss.com/">Bad@CSS</a> podcast landed</li>
+<li>Updated some OSS</li>
+<li>Was Dad a lot</li>
+<li>Beat <a href="https://store.steampowered.com/app/535480/Sundered_Eldritch_Edition/?curator_clanid=36850605">Sundered</a> and <a href="https://store.steampowered.com/app/1092790/Inscryption/?curator_clanid=34803254">Inscryption</a>, working on <a href="https://store.steampowered.com/app/600990/The_Gardens_Between/?l=english&curator_clanid=41196567">The Gardens Between Us</a> with the kids</li>
+</ol>
+<p><img 
+            loading="lazy" 
+            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/w_800/argyleink/onewheel-spring-2024.jpg" 
+            alt="" 
+            title="Adam and friends on a trail in Seattle " 
+            decoding="async"
+            width="2160" 
+            height="2621"
+          /></p>
+]]></description>
+            <link>https://nerdy.dev/march-vibe-check?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/march-vibe-check?utm_source=rss</guid>
+            <category><![CDATA[blog]]></category>
+            <dc:creator><![CDATA[atom@argyleink]]></dc:creator>
+            <pubDate>Sun, 17 Mar 2024 01:49:02 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Bad At CSS With Dave Rupert And Randy Standards]]></title>
             <description><![CDATA[
@@ -815,28 +843,6 @@ A look at me and <a href="https://twitter.com/_davideast">David&#39;s</a> CSS go
             <pubDate>Mon, 22 Jan 2024 05:08:40 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-noise-stack.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-noise-stack.png"/>
-        </item>
-        <item>
-            <title><![CDATA[View Transition Alias]]></title>
-            <description><![CDATA[<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-constant)">document</span><span style="color: var(--shiki-color-text)">.startViewTransition</span></span>
-<span class="line"><span style="color: var(--shiki-token-comment)">// too much to write</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-token-comment)">// makes alias: short for transition</span></span>
-<span class="line"><span style="color: var(--shiki-token-keyword)">const</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">txn</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">document</span><span style="color: var(--shiki-color-text)">.startViewTransition</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-token-function)">txn</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-keyword)">async</span><span style="color: var(--shiki-color-text)"> () </span><span style="color: var(--shiki-token-keyword)">=&gt;</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-comment)">// much better</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">})</span></span></code></pre>
-</code></pre>
-<p>One alias <em>could</em> save a lot of characters.</p>
-<p><small>sounds like a Geico commercial…</small></p>
-]]></description>
-            <link>https://nerdy.dev/view-transition-alias?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/view-transition-alias?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[js]]></category>
-            <dc:creator><![CDATA[evil@atom]]></dc:creator>
-            <pubDate>Wed, 17 Jan 2024 22:18:51 GMT</pubDate>
         </item>
     </channel>
 </rss>

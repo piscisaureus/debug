@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 18 Mar 2024 04:42:13 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 18 Mar 2024 21:05:00 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2024 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -123,7 +123,7 @@
           <a name="adaptive-utilities" href="#adaptive-utilities">#</a>
         </h2>
        <p>On to my favorite part, creating adaptive utililities.</p>
-<p>I really like <a href="http://localhost:3030/custom-prop-categories#3.-adaptive-props">adaptive custom properties</a>, and I wanted Tailwind to generate adaptive utility classes for me.</p>
+<p>I really like <a href="/custom-prop-categories#3.-adaptive-props">adaptive custom properties</a>, and I wanted Tailwind to generate adaptive utility classes for me.</p>
 <p>Instead of:</p>
 <pre><code class="language-html"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">&lt;</span><span style="color: var(--shiki-token-string-expression)">div</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">class</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;bg-gray-2 dark:bg-gray-12&quot;</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
 <span class="line"><span style="color: var(--shiki-color-text)">  …</span></span>

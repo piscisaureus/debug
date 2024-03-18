@@ -30,6 +30,8 @@
     --color-4: var(--neon-cyan);
     --color-5: var(--neon-purple);
   
+    line-height: 1.25cap;
+    padding-block-end: 0.25ch; /* Prevents the last line from being cut off */
     margin-block-start: var(--size-3);
     background: linear-gradient(
       to top right, 

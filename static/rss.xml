@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 17 Mar 2024 02:17:08 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 18 Mar 2024 04:42:13 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2024 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,184 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[BYO CSS tokens to Tailwind v4's new CSS centric config]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/tailwindv4-open-props-theme-config.png" alt="@import "tailwindcss"; @import "open-props/style";
+@theme {
+  --color-ink-1: var(--ink-1);
+  --color-ink-2: var(--ink-2);
+  --color-surface-1: var(--surface-1);
+  --color-surface-2: var(--surface-2);
+  --color-link: var(--link);
+}
+" height="892" width="1672" />
+        <p><strong>Tailwind v4 alpha</strong> brings CSS configuration, here&#39;s a quick intro to using it. </p>
+<p><a href="https://x.com/argyleink/status/1766726636811256037?s=20">Original Tweet</a></p>
+
+        <h2>
+          Basic setup
+          <a name="basic-setup" href="#basic-setup">#</a>
+        </h2>
+       <p>I got most my information from <a href="https://tailwindcss.com/blog/tailwindcss-v4-alpha">the announcement post on Tailwindcss.com</a>, it has good pointers for getting started.</p>
+<p>I chose to set up a <a href="https://remix.run/docs/en/main/future/vite">Remix app with Vite</a>. Once that&#39;s running, the new Tailwind default looks like this, a new magical <code>@theme</code> rule:</p>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;tailwindcss&quot;</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: var(--shiki-token-keyword)">@theme</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+
+        <h2>
+          BYO props
+          <a name="byo-props" href="#byo-props">#</a>
+        </h2>
+       <p>At this point, you&#39;ll need your props in a CSS format. <a href="https://open-props.style/">Open Props</a> has always offered both JS and CSS versions of the variables, so getting them into this new config was swift.</p>
+<p><q>This isn&#39;t an Open Props pitch I promise! It&#39;s much more about CSS focused prop supported as configuration values.</q></p>
+<pre><code class="language-shell"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">npm </span><span style="color: var(--shiki-token-string)">i</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string)">open-props</span></span></code></pre>
+</code></pre>
+<p>Vite supports the alias imports, so the props import into the config looks short n sweet like this:</p>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;tailwindcss&quot;</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;open-props/style&quot;</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: var(--shiki-token-keyword)">@theme</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p><strong>We&#39;re ready to start mapping.</strong></p>
+
+        <h2>
+          Font Sizes
+          <a name="font-sizes" href="#font-sizes">#</a>
+        </h2>
+       <p>Tailwind v4 alpha has proposed a simple way to opt out of <a href="https://github.com/tailwindlabs/tailwindcss/blob/next/packages/tailwindcss/theme.css#L372">their defaults</a> with a swift entry into the CSS config:</p>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@theme</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --font-size-</span><span style="color: var(--shiki-token-string-expression)">*</span><span style="color: var(--shiki-color-text)">: initial;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p>Now we can add our own <code>--font-size</code> mappings and Tailwind will generate utility classes for it. </p>
+<p>The rules look like naming hooks, where if the custom property name on the left has <code>--font-size</code> in it, then it will generate <a href="https://tailwindcss.com/docs/font-size">font size utilities</a>. </p>
+<p>The trick is to hook into the naming while also supplying your own design tokens as values.</p>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@theme</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --font-size-</span><span style="color: var(--shiki-token-string-expression)">*</span><span style="color: var(--shiki-color-text)">: initial;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --font-size-00: var(--font-size-00);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --font-size-0: var(--font-size-0);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --font-size-1: var(--font-size-1);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --font-size-2: var(--font-size-2);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --font-size-3: var(--font-size-3);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --font-size-4: var(--font-size-4);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --font-size-5: var(--font-size-5);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --font-size-6: var(--font-size-6);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --font-size-7: var(--font-size-7);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --font-size-8: var(--font-size-8);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p>Usage:</p>
+<pre><code class="language-html"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">&lt;</span><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">class</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;text-5&quot;</span><span style="color: var(--shiki-color-text)">&gt;…&lt;/</span><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)">&gt;</span></span></code></pre>
+</code></pre>
+<p>This same process was easily repeatable for colors, shadows, and <a href="https://github.com/argyleink/twop/blob/main/app/tailwind.css">more</a>.</p>
+
+        <h2>
+          Gradients
+          <a name="gradients" href="#gradients">#</a>
+        </h2>
+       <p>Going off the beaten path a bit, I followed the naming hook pattern idea and cross referenced it with the <a href="https://github.com/tailwindlabs/tailwindcss/blob/next/packages/tailwindcss/theme.css">theme.css</a> published in the v4 repo; I found I could bring all of the <a href="https://open-props.style/#gradients">Open Props gradients</a> in and Tailwind makes them available via the <a href="https://tailwindcss.com/docs/background-image">background-image utilities</a>.</p>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@theme</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --background-image-gradient-1: var(--gradient-1);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --background-image-gradient-2: var(--gradient-2);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --background-image-gradient-3: var(--gradient-3);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  …</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --background-image-gradient-30: var(--gradient-30);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<pre><code class="language-html"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">&lt;</span><span style="color: var(--shiki-token-string-expression)">div</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">class</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;bg-gradient-30 dark:bg-gradient-8&quot;</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  …</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">&lt;/</span><span style="color: var(--shiki-token-string-expression)">div</span><span style="color: var(--shiki-color-text)">&gt;</span></span></code></pre>
+</code></pre>
+<p>Glad I went off the path. There&#39;s <strong>more to explore</strong>.</p>
+
+        <h2>
+          Adaptive utilities
+          <a name="adaptive-utilities" href="#adaptive-utilities">#</a>
+        </h2>
+       <p>On to my favorite part, creating adaptive utililities.</p>
+<p>I really like <a href="http://localhost:3030/custom-prop-categories#3.-adaptive-props">adaptive custom properties</a>, and I wanted Tailwind to generate adaptive utility classes for me.</p>
+<p>Instead of:</p>
+<pre><code class="language-html"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">&lt;</span><span style="color: var(--shiki-token-string-expression)">div</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">class</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;bg-gray-2 dark:bg-gray-12&quot;</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  …</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">&lt;/</span><span style="color: var(--shiki-token-string-expression)">div</span><span style="color: var(--shiki-color-text)">&gt;</span></span></code></pre>
+</code></pre>
+<p>I&#39;d write:</p>
+<pre><code class="language-html"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">&lt;</span><span style="color: var(--shiki-token-string-expression)">div</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">class</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;bg-surface&quot;</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  …</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">&lt;/</span><span style="color: var(--shiki-token-string-expression)">div</span><span style="color: var(--shiki-color-text)">&gt;</span></span></code></pre>
+</code></pre>
+<p>It&#39;s possible, and easy to setup.</p>
+<p><q class="info">I was happy to see I could configure Tailwind v4 to enable the workflow. </q></p>
+<p>Utility classes are just backed by props now right? And with colors, there&#39;s a clear naming hook. So what if instead of using Open Props values inside <code>@theme</code>, I make up some new ones, then I provide values for in light and dark media queries?</p>
+<p>So here&#39;s the light and dark theme: </p>
+<ul>
+<li>2 text &quot;ink&quot; colors</li>
+<li>2 surfaces</li>
+<li>a link color</li>
+</ul>
+<p>Tailwind sees the <code>--color</code> prefix hook and builds utilities.</p>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@theme</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --color-ink-1: var(--ink-1);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --color-ink-2: var(--ink-2);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --color-surface-1: var(--surface-1);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --color-surface-2: var(--surface-2);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --color-link: var(--link);</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p><strong>But</strong>, <code>--ink-1</code> and friends havn&#39;t been defined anywhere. </p>
+<p>So let&#39;s do that, with our design tokens. </p>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">:root</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --ink-1</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--gray-9)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --ink-2</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--gray-7)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --surface-1</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--gray-2)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --surface-2</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--gray-1)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  --link</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--indigo-6)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: var(--shiki-token-keyword)">@media</span><span style="color: var(--shiki-color-text)"> (prefers-color-scheme</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> dark) {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-function)">:root</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    --ink-1</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--gray-1)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    --ink-2</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--gray-5)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    --surface-1</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--gray-11)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    --surface-2</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--gray-10)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    --link</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--indigo-4)</span><span style="color: var(--shiki-color-text)">;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  }</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+<p><strong>That&#39;s it</strong>, now I have a workflow like this, no noise about light or dark, that&#39;s configured higher up in the stack and templates don&#39;t need to deal with it.</p>
+<pre><code class="language-html"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">&lt;</span><span style="color: var(--shiki-token-string-expression)">div</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">class</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;bg-surface-2&quot;</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  &lt;</span><span style="color: var(--shiki-token-string-expression)">header</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    &lt;</span><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">cssName</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;text-ink-1&quot;</span><span style="color: var(--shiki-color-text)">&gt;…&lt;/</span><span style="color: var(--shiki-token-string-expression)">h1</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">    &lt;</span><span style="color: var(--shiki-token-string-expression)">p</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">className</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;text-ink-2&quot;</span><span style="color: var(--shiki-color-text)">&gt;…&lt;/</span><span style="color: var(--shiki-token-string-expression)">p</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  &lt;/</span><span style="color: var(--shiki-token-string-expression)">header</span><span style="color: var(--shiki-color-text)">&gt;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">&lt;/</span><span style="color: var(--shiki-token-string-expression)">div</span><span style="color: var(--shiki-color-text)">&gt;</span></span></code></pre>
+</code></pre>
+<p><img loading="lazy" src="https://pbs.twimg.com/media/GISrjchbAAAOZYH?format=jpg" alt="" title="Title " />
+<img loading="lazy" src="https://pbs.twimg.com/media/GISrSfZbMAAemI9?format=jpg" alt="" title="Title " /></p>
+
+        <h2>
+          Outro
+          <a name="outro" href="#outro">#</a>
+        </h2>
+       <p>I stashed this work in a repo called <a href="https://github.com/argyleink/twop">TWOP</a> (TailWind OpenProps). Definitely checkout the <a href="https://github.com/argyleink/twop/blob/main/app/tailwind.css">theme.css</a> file. </p>
+<p>Let me know what else you discover you can configure!</p>
+]]></description>
+            <link>https://nerdy.dev/BYO-CSS-tokens-to-tailwind-v4s-new-CSS-centric-config?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/BYO-CSS-tokens-to-tailwind-v4s-new-CSS-centric-config?utm_source=rss</guid>
+            <category><![CDATA[blog]]></category>
+            <category><![CDATA[css]]></category>
+            <category><![CDATA[git]]></category>
+            <dc:creator><![CDATA[atom@argyleink]]></dc:creator>
+            <pubDate>Mon, 18 Mar 2024 03:51:22 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/tailwindv4-open-props-theme-config.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/tailwindv4-open-props-theme-config.png"/>
+        </item>
         <item>
             <title><![CDATA[Vibe check]]></title>
             <description><![CDATA[<p>A vibe check, like <a href="https://daverupert.com/2024/03/vibe-check-31/">Dave does</a>!</p>
@@ -693,156 +871,6 @@ A look at me and <a href="https://twitter.com/_davideast">David&#39;s</a> CSS go
             <pubDate>Thu, 01 Feb 2024 04:22:05 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/kelvin-show.jpg" length="0" type="image/jpeg"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/kelvin-show.jpg"/>
-        </item>
-        <item>
-            <title><![CDATA[Make some hacky noise with CSS gradients]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-noise-stack.png" alt="Text emphasized alt text example" height="1396" width="1576" />
-        <p>Here&#39;s an effect I stumbled on and thought was kinda cool. I found it by animating the size of the ring in a repeating radial gradient to <code>0px</code> with <code>@property</code>, really <em>slowly</em>, and notice that when it got near 0, it started to freak out.</p>
-<p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/radial-gradient-noise.mp4 
-            width="1644" 
-            height="926"
-            alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/so_0.5,f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/radial-gradient-noise.jpg"
-            controls 
-            loop
-            muted 
-            playsinline 
-            allowFullScreen
-          /></p>
-<p>Then I started to wonder.</p>
-
-        <h2>
-          The Setup
-          <a name="the-setup" href="#the-setup">#</a>
-        </h2>
-       <p>Here&#39;s the mask I was working with at first, a nice reasonale <code>5px</code> and <code>5px</code> gap radial repeating mask:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.noise</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --lines</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">4</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">mask</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">repeating-radial-gradient</span><span style="color: var(--shiki-token-constant)">(</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    circle </span><span style="color: var(--shiki-token-keyword)">at</span><span style="color: var(--shiki-token-constant)"> center</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    #000</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--lines)</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    #000</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    0</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-comment)">/* transition hints make code easier to manage */</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    #0000</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-function)">calc</span><span style="color: var(--shiki-token-constant)">(</span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--lines) </span><span style="color: var(--shiki-token-keyword)">*</span><span style="color: var(--shiki-token-constant)"> 2)</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    #0000 0 </span><span style="color: var(--shiki-token-comment)">/* trailing 0 is part of the hard stop logic */</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">  )</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/wvOeEwr?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/wvOeEwr">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-<p>Still a pretty sweet effect over some text I think!</p>
-
-        <h2>
-          The Trick
-          <a name="the-trick" href="#the-trick">#</a>
-        </h2>
-       <p>BUT, when you change that <code>--lines</code> value to something super small, it starts to distort and go into subpixel rounding stuff? </p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.noise</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  --lines</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">0.0003</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/JjzJEMV?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/JjzJEMV">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-<p>And boom, noise. At certain times it looks like radial noise too. Trails of its origins.</p>
-
-        <h2>
-          Animating it
-          <a name="animating-it" href="#animating-it">#</a>
-        </h2>
-       <p>I already knew that <code>@property</code> could animate the noise because of how I stumbled upon the effect. What I didn&#39;t know yet, was what were the fun knobs I could turn?!</p>
-<p>Kick off the gradient animation fun with an <code>@property</code>:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@property</span><span style="color: var(--shiki-color-text)"> --lines {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  syntax: &quot;&lt;length</span><span style="color: var(--shiki-token-keyword)">&gt;</span><span style="color: var(--shiki-color-text)">&quot;;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  inherits: false;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-string-expression)">initial-value</span><span style="color: var(--shiki-color-text)">: 0.00010px;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>And some keyframes, <em>subtly</em> animating from one <small>tiny</small> little subpixel value to another.</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@keyframes</span><span style="color: var(--shiki-color-text)"> liner {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  50% {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    --lines</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">0.00012</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  }</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>Link these things up for animation on our element:</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">@import</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-string-expression)">&quot;https://unpkg.com/open-props/durations.min.css&quot;</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: var(--shiki-token-function)">.noise</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">animation</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">liner </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--hour) linear infinite</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>and <strong>watch the noise</strong>!  </p>
-<p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/vYPZgXB?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/vYPZgXB">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-<p>Also, observe the absolute chaos while the power of CSS handles it like a 60fps game engine.</p>
-
-        <h2>
-          Outro
-          <a name="outro" href="#outro">#</a>
-        </h2>
-       <p>The levers / what you should toy with:</p>
-<ol>
-<li>the delta in values</li>
-<li>values themselves</li>
-<li>duration</li>
-</ol>
-<p>Even try adding reasonable values, like <code>10px</code> lines with a reasonable duration like <code>.5s</code> or <code>var(--atom)</code>.</p>
-]]></description>
-            <link>https://nerdy.dev/hacky-css-noise-with-repeating-gradients?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/hacky-css-noise-with-repeating-gradients?utm_source=rss</guid>
-            <category><![CDATA[blog]]></category>
-            <category><![CDATA[css]]></category>
-            <dc:creator><![CDATA[atom@argyleink]]></dc:creator>
-            <pubDate>Mon, 22 Jan 2024 05:08:40 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-noise-stack.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/gradient-noise-stack.png"/>
         </item>
     </channel>
 </rss>

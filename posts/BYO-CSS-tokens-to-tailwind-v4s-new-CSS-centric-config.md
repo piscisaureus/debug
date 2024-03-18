@@ -131,7 +131,7 @@ Glad I went off the path. There's **more to explore**.
 
 On to my favorite part, creating adaptive utililities.
 
-I really like [adaptive custom properties](http://localhost:3030/custom-prop-categories#3.-adaptive-props), and I wanted Tailwind to generate adaptive utility classes for me.
+I really like [adaptive custom properties](/custom-prop-categories#3.-adaptive-props), and I wanted Tailwind to generate adaptive utility classes for me.
 
 Instead of:
 ```html

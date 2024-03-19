@@ -6,7 +6,7 @@
   grid-template-columns: auto minmax(0, var(--size-content-3));
   margin-block-end: var(--size-fluid-4);
 
-  [page-type="detail"]:has(:not(.BlogHero)) & {
+  [page-type="detail"]:not(:has(.BlogHero)) & {
     margin-block-start: var(--size-10);
   }
 

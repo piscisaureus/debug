@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 18 Mar 2024 21:05:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 19 Mar 2024 21:28:41 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2024 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,22 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Smoothly Handling Device Rotation With View Transitions]]></title>
+            <description><![CDATA[
+          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/vt-device-rotate.mp4" alt="some title" height="1440" width="1920" />
+        <p>Gallery layout <strong>rotation and interaction</strong> animation with <a href="https://codepen.io/collection/GoGOGK">View Transitions</a>.</p>
+<p><a href="https://codepen.io/argyleink/pen/dyLNgpX">Try it on Codepen</a></p>
+]]></description>
+            <link>https://nerdy.dev/smoothly-handling-device-rotation-with-view-transitions?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/smoothly-handling-device-rotation-with-view-transitions?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
+            <pubDate>Tue, 19 Mar 2024 21:25:32 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/vt-device-rotate.mp4" length="0" type="video/mp4"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/vt-device-rotate.mp4"/>
+        </item>
         <item>
             <title><![CDATA[BYO CSS tokens to Tailwind v4's new CSS centric config]]></title>
             <description><![CDATA[
@@ -856,21 +872,6 @@ A look at me and <a href="https://twitter.com/_davideast">David&#39;s</a> CSS go
             <pubDate>Wed, 07 Feb 2024 05:53:45 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/noisee-mind-blown.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/noisee-mind-blown.png"/>
-        </item>
-        <item>
-            <title><![CDATA[Kelvin Show]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/kelvin-show.jpg" alt="some title" height="1536" width="3024" />
-        <p><a href="https://www.youtube.com/watch?v=nCVm-8YaD_g">Hung out</a> with the super fun <a href="https://www.youtube.com/@dominuskelvin">Kelvin Omereshone</a> and chatted about, you guessed it, <strong>CSS</strong>!</p>
-]]></description>
-            <link>https://nerdy.dev/kelvin-show?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/kelvin-show?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[media]]></category>
-            <dc:creator><![CDATA[DevRel@Google]]></dc:creator>
-            <pubDate>Thu, 01 Feb 2024 04:22:05 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/kelvin-show.jpg" length="0" type="image/jpeg"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/kelvin-show.jpg"/>
         </item>
     </channel>
 </rss>

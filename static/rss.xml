@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 19 Mar 2024 21:28:41 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 31 Mar 2024 02:55:22 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2024 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,32 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[Rad Border Image CSS One Liner]]></title>
+            <description><![CDATA[
+          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/border-image-trick-1.png" alt="example with the effect on inline borders" height="642" width="1248" />
+        <p>A gradient border image, transparent at the edges, looks like it thins out as it fades out.</p>
+<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">.effect</span><span style="color: var(--shiki-color-text)"> {</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">border-image</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-function)">linear-gradient</span><span style="color: var(--shiki-token-constant)">(</span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">      transparent</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">      </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--indigo-6)</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">      transparent</span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">    ) </span></span>
+<span class="line"><span style="color: var(--shiki-token-constant)">    1 / 4</span><span style="color: var(--shiki-token-keyword)">px</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-comment)">/* slice n&#39; size */</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">  ;</span></span>
+<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
+</code></pre>
+]]></description>
+            <link>https://nerdy.dev/rad-border-image-css-one-liner?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/rad-border-image-css-one-liner?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[atom@argyleink]]></dc:creator>
+            <pubDate>Sun, 31 Mar 2024 02:49:33 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/border-image-trick-1.png" length="0" type="image/png"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/border-image-trick-1.png"/>
+        </item>
         <item>
             <title><![CDATA[Smoothly Handling Device Rotation With View Transitions]]></title>
             <description><![CDATA[
@@ -605,273 +631,6 @@ A look at me and <a href="https://twitter.com/_davideast">David&#39;s</a> CSS go
             <pubDate>Mon, 19 Feb 2024 16:53:21 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/learn-with-jason-interview.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/learn-with-jason-interview.png"/>
-        </item>
-        <item>
-            <title><![CDATA[Learn With Jason (live in studio)]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/noisee-mind-blown.png" alt="asdf" height="720" width="1280" />
-        <p><a href="https://noisee.netlify.app/">Noisee</a> is an ephemeral visual audio experience shared with friends <a href="https://noisee.netlify.app/room/1337">in a room</a>. Everyone connects a microphone, then sees their noise combined with everyone elses noise. </p>
-<p>Watch me rock it solo 🤘🏻💀 it&#39;s fun, and weird.</p>
-<p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/noisee-walkthrough.mp4 
-            width="1920" 
-            height="1082"
-            alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/so_0.5,f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/noisee-walkthrough.jpg"
-            controls 
-            loop
-            muted 
-            playsinline 
-            allowFullScreen
-          /></p>
-<p>You can be soft, loud, or connect a <a href="https://teenage.engineering/store/po-128-mega-man/">Megaman Pocket Operator</a> like a nerd.</p>
-<p><a href="https://youtu.be/tSfSY3Ni3X0?t=3486"><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/w_800/argyleink/noisee-po-128.png" 
-            alt="" 
-            title="Me holding a pocket operator in the stream. " 
-            decoding="async"
-            width="225" 
-            height="127"
-          /></a></p>
-<p>I got to hang out <a href="https://www.learnwithjason.dev/learn-with-jason-live-live-the-css-stravaganza"><strong>in studio</strong></a> with <a href="https://www.learnwithjason.dev/">Jason Lengstorf</a> to share the tech, and CSS, that power the app.</p>
-<div style="display: flex; flex-flow: row wrap;">
-  <picture>
-    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.webp" type="image/webp">
-    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="100" height="100">
-  </picture>
-  <picture>
-    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f913/512.webp" type="image/webp">
-    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f913/512.gif" alt="🤓" width="100" height="100">
-  </picture>
-  <picture>
-    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f913/512.webp" type="image/webp">
-    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f913/512.gif" alt="🤓" width="100" height="100">
-  </picture>
-  <picture>
-    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.webp" type="image/webp">
-    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="100" height="100">
-  </picture>
-</div>
-
-<p><a href="https://www.youtube.com/watch?v=tSfSY3Ni3X0"><img loading="lazy" src="https://www.learnwithjason.dev/learn-with-jason-live-live-the-css-stravaganza/w_2560/video-poster.jpg" alt="" title="Title " /></a></p>
-<p><a href="https://www.youtube.com/watch?v=tSfSY3Ni3X0">Binge on YouTube</a>.</p>
-<p><small>See if you can find the 4 easer eggs in the app without watching the video 😈</small></p>
-
-        <h2>
-          The idea
-          <a name="the-idea" href="#the-idea">#</a>
-        </h2>
-       <p>When Jason and I brewed up this in person shindig, I wanted to have a punky moment with him, like play electric guitar. Which we did!</p>
-<p><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/w_640/argyleink/noisee-stairway-to-heaven.png" 
-            alt="" 
-            title="Title " 
-            decoding="async"
-            width="640" 
-            height="360"
-          /></p>
-<p>I also wanted it to be somethin weird, connected, and expressive. </p>
-<p><strong>How about audio over <a href="https://www.partykit.io/">PartyKit</a>, visualised with gradients‽</strong></p>
-<p>Rad.</p>
-
-        <h2>
-          Stream.start()
-          <a name="stream.start()" href="#stream.start()">#</a>
-        </h2>
-       <p>I came prepared with some process artifacts to help folks see the dots I connected with web tech.</p>
-<p>The <a href="https://codepen.io/argyleink/pen/bGZaXXq">first artifact/demo</a> is an introduction to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@property"><code>@property</code></a>. </p>
-<p>
-          <iframe 
-            class="codepen-embed" 
-            scrolling="no" 
-            title="null" 
-            src="https://codepen.io/argyleink/embed/preview/bGZaXXq?default-tab=result&editable=true&theme-id=43079" 
-            frameborder="no" 
-            loading="lazy" 
-            allowtransparency="true" 
-            allowfullscreen="true"
-          >
-            See the Pen <a href="https://codepen.io/argyleink/embed/preview/bGZaXXq">
-            Hot text-emphasis</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </p>
-<p>It delightfully derailed into details about CSS <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"><code>@layer</code></a> and <a href="https://drafts.csswg.org/css-color/#css-system-colors">System Colors</a> like <code>Highlight</code> and <code>Canvas</code>. </p>
-<p><a href="https://youtu.be/tSfSY3Ni3X0?t=700"><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/w_1280/argyleink/noisee-at-property.png" 
-            alt="" 
-            title="Title " 
-            decoding="async"
-            width="1280" 
-            height="720"
-          /></a></p>
-<p>But also took a trip down memory lane for an early JS feature:</p>
-<pre><code class="language-html"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-color-text)">&lt;</span><span style="color: var(--shiki-token-string-expression)">button</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">id</span><span style="color: var(--shiki-color-text)">=</span><span style="color: var(--shiki-token-string-expression)">&quot;yo&quot;</span><span style="color: var(--shiki-color-text)">&gt;…&lt;/</span><span style="color: var(--shiki-token-string-expression)">button</span><span style="color: var(--shiki-color-text)">&gt;</span></span></code></pre>
-</code></pre>
-<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-constant)">yo</span><span style="color: var(--shiki-color-text)">.onclick </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> …</span></span></code></pre>
-</code></pre>
-<p>No <code>document.querySelector()</code> needed, <strong>element ID&#39;s are on the <code>window</code> object</strong>. Woot woot.</p>
-<p>I love it for demos.</p>
-
-        <h2>
-          Finally a gradient demo
-          <a name="finally-a-gradient-demo" href="#finally-a-gradient-demo">#</a>
-        </h2>
-       <p>Once we&#39;d ramped up on <code>@property</code> and kickflipped off it, I had another demo ready, this one on how the gradient reacting to audio would work. </p>
-<p>In classic argyleink fashion, I use the gradient <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient#color-hint">transition hint</a> to control a hard line gradient.</p>
-<pre><code class="language-css"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-string-expression)">html</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">transition</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">--size 1</span><span style="color: var(--shiki-token-keyword)">s</span><span style="color: var(--shiki-token-constant)"> </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--ease-spring-4)</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-constant)">background-image</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">radial-gradient</span><span style="color: var(--shiki-token-constant)">(</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    circle </span><span style="color: var(--shiki-token-keyword)">at</span><span style="color: var(--shiki-token-constant)"> center</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    black 0</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    </span><span style="color: var(--shiki-token-function)">var</span><span style="color: var(--shiki-token-constant)">(--size)</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-token-constant)"> </span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">    white 0</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">  )</span><span style="color: var(--shiki-color-text)">;</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">}</span></span></code></pre>
-</code></pre>
-<p>Hook that hint up to a range input, add some springyness for flare, and you got yourself an animated hard line gradient. Ready for a brutalist experiment, or a mask if you so fancy!</p>
-<p><video 
-            src=https://res.cloudinary.com/dnpmdb8r8/video/upload/f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/noisee-slider.mp4 
-            width="1024" 
-            height="578"
-            alt=" "
-            poster="https://res.cloudinary.com/dnpmdb8r8/video/upload/so_0.5,f_auto,w_auto,q_auto/f_auto,q_auto/argyleink/noisee-slider.jpg"
-            controls 
-            loop
-            muted 
-            playsinline 
-            allowFullScreen
-          /></p>
-<p><a href="https://codepen.io/argyleink/pen/vYPdBOO">Try it for yourself</a> if you like!</p>
-<p>If you&#39;re interested in gradient transition hints, Jason and I visualize it on <a href="https://gradient.style">gradient.style</a>. I show him how to make a radial gradient, 0 out the stop positions, then <a href="https://gradient.style/#type=radial&space=oklab&radial_shape=circle&radial_position=%7B%22x%22%3A50%2C%22y%22%3A50%7D&radial_named_position=center&radial_size=farthest-corner&stops=%7B%22kind%22%3A%22stop%22%2C%22color%22%3A%22oklch%2870%25+0.5+340%29%22%2C%22auto%22%3A%220%22%2C%22position1%22%3A%220%22%2C%22position2%22%3A%220%22%7D&stops=%7B%22kind%22%3A%22hint%22%2C%22auto%22%3A%2250%22%2C%22percentage%22%3A64%7D&stops=%7B%22kind%22%3A%22stop%22%2C%22color%22%3A%22%230000%22%2C%22auto%22%3A%22100%22%2C%22position1%22%3A0%2C%22position2%22%3A%22100%22%7D">adjust the transition hint</a>.</p>
-<p><a href="https://youtu.be/tSfSY3Ni3X0?t=2550"><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/w_1280/argyleink/noisee-gradient-style.png" 
-            alt="" 
-            title="Title " 
-            decoding="async"
-            width="1280" 
-            height="720"
-          /></a></p>
-
-        <h2>
-          Connecting audio streams to CSS
-          <a name="connecting-audio-streams-to-css" href="#connecting-audio-streams-to-css">#</a>
-        </h2>
-       <p>The next prototype is all about hooking up transition hints to audio streams. The UX here requires a few steps:</p>
-<ol>
-<li>Asking for mic access</li>
-<li>Choosing a mic (optional, a default will be chosen)</li>
-<li>Making some noise</li>
-</ol>
-<p>Javascript asks for the user&#39;s mic permission with:</p>
-<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-keyword)">await</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">navigator</span><span style="color: var(--shiki-color-text)">.mediaDevices</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  </span><span style="color: var(--shiki-token-function)">.getUserMedia</span><span style="color: var(--shiki-color-text)">({</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    audio</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> {</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">      autoGainControl</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">false</span><span style="color: var(--shiki-token-punctuation)">,</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">      latency</span><span style="color: var(--shiki-token-keyword)">:</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">0</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">    }</span></span>
-<span class="line"><span style="color: var(--shiki-color-text)">  })</span></span></code></pre>
-</code></pre>
-<p>Then I create an <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioContext">AudioContext</a> to interface with the streaming audio:</p>
-<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-constant)">state</span><span style="color: var(--shiki-color-text)">.</span><span style="color: var(--shiki-token-constant)">stream</span><span style="color: var(--shiki-color-text)">.audio </span><span style="color: var(--shiki-token-keyword)">=</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-keyword)">new</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-function)">AudioContext</span><span style="color: var(--shiki-color-text)">()</span></span></code></pre>
-</code></pre>
-<p>Then I do some fancy work to filter out a highpass and lowpass subset of stream data. This let&#39;s me have two pieces per person to use as fun data. </p>
-<p>I then read values from the mic stream audio context at the animation framerate:</p>
-<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-function)">requestAnimationFrame</span><span style="color: var(--shiki-color-text)">(readMicStream)</span></span></code></pre>
-</code></pre>
-<p>Eventually I derive a lowpass low number and a highpass high number, and set the custom properties. This also means I no longer need to transition the <code>@property</code> because I&#39;m now setting values with <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame">rAF</a>.</p>
-<pre><code class="language-js"><pre class="shiki css-variables" style="background-color: var(--shiki-color-background)"><code><span class="line"><span style="color: var(--shiki-token-constant)">html</span><span style="color: var(--shiki-token-function)">.</span><span style="color: var(--shiki-token-constant)">style</span><span style="color: var(--shiki-token-function)">.setProperty</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;--frequency-low&#39;</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">low</span><span style="color: var(--shiki-color-text)">.value </span><span style="color: var(--shiki-token-keyword)">+</span><span style="color: var(--shiki-token-string-expression)">&#39;%&#39;</span><span style="color: var(--shiki-color-text)">)</span></span>
-<span class="line"><span style="color: var(--shiki-token-constant)">html</span><span style="color: var(--shiki-token-function)">.</span><span style="color: var(--shiki-token-constant)">style</span><span style="color: var(--shiki-token-function)">.setProperty</span><span style="color: var(--shiki-color-text)">(</span><span style="color: var(--shiki-token-string-expression)">&#39;--frequency-high&#39;</span><span style="color: var(--shiki-token-punctuation)">,</span><span style="color: var(--shiki-color-text)"> </span><span style="color: var(--shiki-token-constant)">high</span><span style="color: var(--shiki-color-text)">.value </span><span style="color: var(--shiki-token-keyword)">+</span><span style="color: var(--shiki-token-string-expression)">&#39;%&#39;</span><span style="color: var(--shiki-color-text)">)</span></span></code></pre>
-</code></pre>
-<p>Since the demo needs HTML5 mic access, open <a href="https://cdpn.io/pen/debug/BabQazP">this debug link</a> and give the basic demo a try. Or <a href="https://youtu.be/tSfSY3Ni3X0?t=2850">watch Jason and I give the demo a whirl</a>.</p>
-<p><a href="https://youtu.be/tSfSY3Ni3X0?t=2865"><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/w_1280/argyleink/noisee-audio-test.png" 
-            alt="" 
-            title="Title " 
-            decoding="async"
-            width="3020" 
-            height="1356"
-          /></a></p>
-
-        <h2>
-          Go live while live streaming
-          <a name="go-live-while-live-streaming" href="#go-live-while-live-streaming">#</a>
-        </h2>
-       <p>With that proof of concept demo, I took it and ran. Spent a week or so making a sweet app that connected your mic created gradients with other people. </p>
-<p><a href="https://youtu.be/tSfSY3Ni3X0?t=3409"><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/w_1280/argyleink/noisee-release.png" 
-            alt="" 
-            title="Title " 
-            decoding="async"
-            width="1540" 
-            height="922"
-          /></a></p>
-<p>Jason and I make the deployment URL official and sent it to the folks on the live stream. Def a highlight moment of the stream. <a href="https://youtu.be/tSfSY3Ni3X0?t=3409">Tune into the recording</a>, see the chaos that ensues!</p>
-<p><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/w_1280/argyleink/noisee-chaos.png" 
-            alt="" 
-            title="Title " 
-            decoding="async"
-            width="2050" 
-            height="968"
-          /></p>
-<p><a href="https://youtu.be/tSfSY3Ni3X0?t=3614">We go on</a> to discuss <a href="https://kit.svelte.dev/">Svelte</a> and <a href="https://partykit.dev/">PartyKit</a>, diving into the <a href="https://github.com/learnwithjason/noisee">code on GitHub</a>.</p>
-
-        <h2>
-          Four easter eggs
-          <a name="four-easter-eggs" href="#four-easter-eggs">#</a>
-        </h2>
-       <p>Can you find the 4 easter eggs without <a href="https://youtu.be/tSfSY3Ni3X0?t=4083">watching us find them on video</a>?</p>
-<ol>
-<li>Life after death</li>
-<li>Turquoise</li>
-<li>Give it the time of day</li>
-<li>Take me with you</li>
-</ol>
-<p>I had <strong>such a blast</strong> hangin out with Jason; and I&#39;m happy to share <em>we may have shot some more video</em> while I was there… so maybe there&#39;s more to come!</p>
-<p><a href="https://noisee.netlify.app"><img 
-            loading="lazy" 
-            src="https://res.cloudinary.com/dnpmdb8r8/image/upload/f_auto,c_limit,q_auto,w_auto/w_800/argyleink/noisee.png" 
-            alt="" 
-            title="Title " 
-            decoding="async"
-            width="2944" 
-            height="1010"
-          /></a></p>
-<p>Links and resources:</p>
-<ul>
-<li><a href="https://www.learnwithjason.dev">https://www.learnwithjason.dev</a></li>
-<li><a href="https://www.youtube.com/@learnwithjason">https://www.youtube.com/@learnwithjason</a></li>
-<li><a href="https://www.twitch.tv/jlengstorf">https://www.twitch.tv/jlengstorf</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@property">https://developer.mozilla.org/en-US/docs/Web/CSS/@property</a></li>
-<li><a href="https://open-props.style">https://open-props.style</a></li>
-<li><a href="https://www.learnwithjason.dev/build-custom-interfaces-using-css-open-props/">https://www.learnwithjason.dev/build-custom-interfaces-using-css-open-props/</a></li>
-<li><a href="https://gradient.style">https://gradient.style</a></li>
-<li><a href="https://mdn.io/audiocontext">https://mdn.io/audiocontext</a></li>
-<li><a href="https://kit.svelte.dev">https://kit.svelte.dev</a></li>
-<li><a href="https://github.com/learnwithjason/noisee/tree/main">https://github.com/learnwithjason/noisee/tree/main</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/system-color">https://developer.mozilla.org/en-US/docs/Web/CSS/system-color</a></li>
-<li><a href="https://www.youtube.com/live/tSfSY3Ni3X0?si=3e7bYhuTrAOCQOI8">https://www.youtube.com/live/tSfSY3Ni3X0?si=3e7bYhuTrAOCQOI8</a></li>
-</ul>
-]]></description>
-            <link>https://nerdy.dev/jason-and-adam-do-portland?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/jason-and-adam-do-portland?utm_source=rss</guid>
-            <category><![CDATA[blog]]></category>
-            <category><![CDATA[media]]></category>
-            <category><![CDATA[css]]></category>
-            <category><![CDATA[js]]></category>
-            <category><![CDATA[git]]></category>
-            <dc:creator><![CDATA[atom@argyleink]]></dc:creator>
-            <pubDate>Wed, 07 Feb 2024 05:53:45 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/noisee-mind-blown.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/noisee-mind-blown.png"/>
         </item>
     </channel>
 </rss>

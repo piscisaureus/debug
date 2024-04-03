@@ -9,7 +9,7 @@
             <link>https://nerdy.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 31 Mar 2024 02:55:22 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 03 Apr 2024 04:48:34 GMT</lastBuildDate>
         <atom:link href="https://nerdy.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2024 Adam Argyle]]></copyright>
         <language><![CDATA[en]]></language>
@@ -22,6 +22,22 @@
         <category><![CDATA[Design]]></category>
         <icon>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/rss-icon.png</icon>
         <logo>https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/skull-card.png</logo>
+        <item>
+            <title><![CDATA[A Screen Shake Web Animation]]></title>
+            <description><![CDATA[
+          <video style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/screenshake.mp4" alt="some title" height="1080" width="1888" />
+        <p>Screen shakes are so cool in video games…</p>
+<p><strong>Web buttons</strong> <a href="https://codepen.io/argyleink/full/xxepgOJ">can do that</a>!</p>
+]]></description>
+            <link>https://nerdy.dev/a-screen-shake-web-animation?utm_source=rss</link>
+            <guid isPermaLink="true">https://nerdy.dev/a-screen-shake-web-animation?utm_source=rss</guid>
+            <category><![CDATA[note]]></category>
+            <category><![CDATA[css]]></category>
+            <dc:creator><![CDATA[atom@argyleink]]></dc:creator>
+            <pubDate>Wed, 03 Apr 2024 04:43:07 GMT</pubDate>
+            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/video/upload/argyleink/screenshake.mp4" length="0" type="video/mp4"/>
+            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/screenshake.mp4"/>
+        </item>
         <item>
             <title><![CDATA[Rad Border Image CSS One Liner]]></title>
             <description><![CDATA[
@@ -608,29 +624,6 @@ A look at me and <a href="https://twitter.com/_davideast">David&#39;s</a> CSS go
             <pubDate>Fri, 08 Mar 2024 18:12:59 GMT</pubDate>
             <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-in-2024.png" length="0" type="image/png"/>
             <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/css-in-2024.png"/>
-        </item>
-        <item>
-            <title><![CDATA[Interview With Jason About The Devrel Career]]></title>
-            <description><![CDATA[
-          <img style="display: none" src="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/learn-with-jason-interview.png" alt="Jason and Adam looking at a food menu in a punky lunch location." height="1440" width="2560" />
-        <p><strong>Beautifully shot</strong> <time>8m</time> interview with <a href="https://learnwithjason.dev/">Jason Lengstorf</a> about:</p>
-<ul>
-<li>how people love shredding nice things</li>
-<li>is there a &quot;dream job&quot;?</li>
-<li>how to know when you&#39;re successful?</li>
-<li>a secret for faster career growth?</li>
-</ul>
-<p><a href="https://www.youtube.com/watch?v=hlRVMknHSqM">Watch on YouTube</a></p>
-]]></description>
-            <link>https://nerdy.dev/interview-with-jason-about-the-devrel-career?utm_source=rss</link>
-            <guid isPermaLink="true">https://nerdy.dev/interview-with-jason-about-the-devrel-career?utm_source=rss</guid>
-            <category><![CDATA[note]]></category>
-            <category><![CDATA[media]]></category>
-            <category><![CDATA[talks]]></category>
-            <dc:creator><![CDATA[atom@argyleink]]></dc:creator>
-            <pubDate>Mon, 19 Feb 2024 16:53:21 GMT</pubDate>
-            <enclosure url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/learn-with-jason-interview.png" length="0" type="image/png"/>
-            <media:thumbnail url="https://res.cloudinary.com/dnpmdb8r8/image/upload/argyleink/learn-with-jason-interview.png"/>
         </item>
     </channel>
 </rss>
